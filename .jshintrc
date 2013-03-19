@@ -1,0 +1,26 @@
+{
+  "globals": {
+    "console": false
+  },
+  "trailing": true,
+  "strict": false,
+  "undef": true,
+  "unused": true,
+  "nonew": true,
+  "noempty": true,
+  "newcap": true,
+  "latedef": false,
+  "immed": true,
+  "forin": true,
+  "eqeqeq": true,
+  "camelcase": true,
+  "bitwise": true,
+  "maxparams": 5,
+  "maxdepth": 5,
+  "maxstatements": 25,
+  "maxcomplexity": 8,
+  "es5": true,
+  "esnext": true,
+  "node": true,
+  "smarttabs": true
+}

@@ -1,0 +1,10 @@
+{
+  "name": "big-pharma-data",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "lodash": "~1.0.1",
+    "backbone": "~0.9.10",
+    "tgm-bootstrap": "git@github.com:TheGlobalMail/tgm-bootstrap.git#0.3.1",
+    "bootstrap": "2.3.0"
+  }
+}

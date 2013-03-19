@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "template"]
+	fetch = +refs/heads/*:refs/remotes/template/*
+	url = git@github.com:TheGlobalMail/frontend-project-template.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "_template"]
+	remote = template
+	merge = refs/heads/master
+[remote "origin"]
+	url = git@github.com:TheGlobalMail/big-pharma-data.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
