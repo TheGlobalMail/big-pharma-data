@@ -85,7 +85,7 @@ module.exports = function(grunt) {
     // develpment server
     connect: {
       options: {
-        port: 9000,
+        port: 9010,
         // Use 0.0.0.0 to listen from anywhere
         // Can be changed to localhost to lock it down
         hostname: '0.0.0.0'
@@ -249,12 +249,12 @@ module.exports = function(grunt) {
     cdn: {
       dist: {
         src: ['<%= project.dist %>/index.html'],
-        cdn: 'http://newproject-assets.theglobalmail.org'
+        cdn: 'http://big-pharma-data-assets.theglobalmail.org'
       },
 
       staging: {
         src: ['<%= cdn.dist.src %>'],
-        cdn: 'http://newproject-staging-assets.theglobalmail.org'
+        cdn: 'http://big-pharma-data-staging-assets.theglobalmail.org'
       }
     },
 
@@ -263,7 +263,7 @@ module.exports = function(grunt) {
         user: 'theglobalmail',
         key: process.env.RACKSPACE_API_KEY,
         upload: [{
-          container: 'newproject-staging',
+          container: 'big-pharma-data-staging',
           src: '<%= project.dist %>/**/*',
           dist: '',
           stripcomponents: 1
@@ -274,7 +274,7 @@ module.exports = function(grunt) {
         user: 'theglobalmail',
         key: process.env.RACKSPACE_API_KEY,
         upload: [{
-          container: 'newproject',
+          container: 'big-pharma-data',
           src: '<%= project.dist %>/**/*',
           dist: '',
           stripcomponents: 1

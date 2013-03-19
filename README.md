@@ -1,31 +1,9 @@
-<!--- Strip out this top section when starting a new project -->
-# Front-end Project Template
+# Big Pharma Data
 
-## Starting a new project
+Data visualisations and downloads for Medicines Australia data
 
-1. `$ git clone --depth 1 -o template git@github.com:TheGlobalMail/frontend-project-template.git new-project`
-   This will clone the template into `./new-project` without history and the remote is named `templated` (isntead of `origin`)
-2. *Optional.* Immediately checkout master to a template branch (`$ git checkout -b _template template/master`)... this will serve as a middleman for integrating changes back-and-forth between the project and the template. Switch back to master.
-3. Update `name` in `component.json` and `package.json`. Update this `README.md` stripping out this info, updating the title, etc. Update `<title/>` in `app/index.html`.
-4. Commit the name changes
-5. Create a new repo on GitHub/whatever for the project and do `$ git remote add origin git@somerepo.git`
-6. Now you can `$ git push origin master -u` to push the project and set master to push/fetch from the project repo
-7. Running `git remote -v` should give you something like this:
-    ```
-    origin  git@github.com:TheGlobalMail/RockArt.git (fetch)
-    origin  git@github.com:TheGlobalMail/RockArt.git (push)
-    template  git@github.com:TheGlobalMail/frontend-project-template.git (fetch)
-    template  git@github.com:TheGlobalMail/frontend-project-template.git (push)
-    ```
-8. Make awesome shiz...
-
-<!-- Update below with project details -->
-# {Project Name}
-
-> {A short description about the project.}
-
-* **Staging URL:** [http://cool-project.herokuapp.com/](http://cool-project.herokuapp.com/)
-* **Production URL:** [http://cool-project.theglobalmail.org/](http://cool-project.theglobalmail.org/)
+* **Staging URL:** [http://big-pharma-data.herokuapp.com/](http://big-pharma-data.herokuapp.com/)
+* **Production URL:** [http://big-pharma-data.theglobalmail.org/](http://big-pharma-data.theglobalmail.org/)
 
 ## Installing
 
