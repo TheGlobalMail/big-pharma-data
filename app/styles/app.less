@@ -394,8 +394,21 @@
           position: relative;
           width: 12px;
           background: @blue;
-          height: 15px;
+          height: 14px;
           .border-bottom-radius(6px);
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right:15%;
+            top:0;
+            background: white;
+            width: 2px;
+            height: 10px;
+            .border-radius(2px);
+            .box-shadow(0 0 4px white);
+            .opacity(30);
+          }
           &.top {
             margin-bottom: 1px;
             background: @pink;
@@ -406,13 +419,13 @@
               display: block;
               position: absolute;
               right:15%;
-              top:15%;
+              top:35%;
               background: white;
-              width: 4px;
-              height: 4px;
-              .border-radius(50%);
+              width: 2px;
+              height: 10px;
+              .border-radius(2px);
               .box-shadow(0 0 4px white);
-              .opacity(50);
+              .opacity(30);
             }
           }
         }
