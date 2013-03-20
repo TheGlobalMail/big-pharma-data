@@ -32,7 +32,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
   .navbar.special-feature {
     .brand.brand-center {
       float: none;
@@ -43,13 +43,6 @@
   #main {
     .container {
       width: 95%;
-    }
-    .subsection {
-      .left, .right {
-        float:none;
-        width: auto;
-        text-align: left;
-      }
     }
     #title {
       margin-bottom: 20px;
@@ -104,6 +97,20 @@
         td {
           .font-size(11);
         }
+      }
+    }
+    .subsection {
+      .left, .right {
+        float:none;
+        clear: both;
+        width: auto;
+        text-align: left;
+      }
+      .right {
+        padding-top: 20px;
+      }
+      &.not-much {
+        padding-right: 0;
       }
     }
   }

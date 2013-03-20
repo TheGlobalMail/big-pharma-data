@@ -203,7 +203,6 @@
       width: 48%;
       float: left;
       margin-bottom: 20px;
-      clear: both;
     }
     .left {
       text-align: right;
@@ -284,7 +283,7 @@
             li {
             .font-size(16);
             position: relative;
-            width: 90%;
+            width: 85%;
             list-style: none;
             padding: 6px;
             font-style: italic;
@@ -377,7 +376,7 @@
       em {
         float: left;
         width: 35%;
-        margin-top: 20px;
+        margin-top: 8.5%;
       }
       p {
         clear: both;
@@ -440,10 +439,24 @@
       }
     }
     &.not-much {
-      padding-right: 40%;
-      strong, em {
-        .font-size(30);
-        line-height: 1.2;
+      position: relative;
+      height: 300px;
+      .text {
+        max-width: 60%;
+        float: left;
+        strong, em {
+          .font-size(32);
+          line-height: 1.2;
+        }
+      }
+      .thermometer {
+        position: absolute;
+        right:22%;
+        top: -10%;
+        background: url(../images/thermometer.svg) center center no-repeat;
+        width:72px;
+        height: 425px;
+        .rotate(50deg);
       }
     }
   }
