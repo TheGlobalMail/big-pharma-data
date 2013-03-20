@@ -383,6 +383,40 @@
         .font-size(14);
         padding-right: 20%;
       }
+      ul {
+        margin: 0;
+      }
+      li {
+        list-style: none;
+        float: left;
+        margin: 0 5px 5px 0;
+        .pill {
+          position: relative;
+          width: 12px;
+          background: @blue;
+          height: 15px;
+          .border-bottom-radius(6px);
+          &.top {
+            margin-bottom: 1px;
+            background: @pink;
+            .border-bottom-radius(0);
+            .border-top-radius(6px);
+            &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              right:15%;
+              top:15%;
+              background: white;
+              width: 4px;
+              height: 4px;
+              .border-radius(50%);
+              .box-shadow(0 0 4px white);
+              .opacity(50);
+            }
+          }
+        }
+      }
     }
     &.australia {
       text-align: center;
