@@ -1,6 +1,7 @@
-{
-  "globals": {
-    "console": false
+{ "globals": {
+    "console": false,
+    "_": false,
+    "$": false
   },
   "trailing": true,
   "strict": false,
@@ -22,5 +23,6 @@
   "es5": true,
   "esnext": true,
   "node": true,
+  "browser": true,
   "smarttabs": true
 }
