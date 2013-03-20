@@ -1,0 +1,402 @@
+.navbar.special-feature .brand {
+  background-size: auto;
+}
+#main {
+  // GLOBAL STYLES
+  .container {
+    max-width: 1100px;
+    min-width: 700px;
+    width: 90%;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h3 {
+    font-family: @serifFontFamily;
+    .font-size(36);
+    text-transform: uppercase;
+    text-align: center;
+    &.line {
+      width: 100%;
+      margin: 5% 0 2.5%;
+        &:before {
+          position: relative;
+          top: 20px;
+          z-index: 1;
+          display: block;
+          border-bottom: 1px solid #333;
+          content: '';
+        }
+        span {
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          padding: 0 10px;
+          background-color: #fff;
+        }
+    }
+  }
+  p {
+    .font-size(18);
+    line-height: 1.4;
+  }
+  .table-hover tbody tr:hover td,
+  .table-hover tbody tr:hover th {
+    background-color: rgba(0,0,0,0.03);
+  }
+  // TITLE
+  #title {
+    text-align: center;
+    background: url(../images/fade.png) no-repeat bottom center transparent;
+    background-size:contain;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+    h1 {
+      .font-size(76);
+      letter-spacing: -0.03em;
+    }
+    h2 {
+      margin: 0 auto;
+      .font-size(16);
+      line-height: 1.4;
+      font-weight: normal;
+      max-width: 640px;
+    }
+  }
+  // NAVIGATION
+  #nav {
+    margin: 20px 0 0;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    li {
+      border-bottom: 1px solid #e5e5e5;
+      &:last-child{
+        border-bottom: none;
+      }
+      a {
+        display: block;
+        padding: 10px 14px;
+      }
+      &.active a {
+        color: #222;
+        background: url(../images/nav-arrow.png) no-repeat 95% center transparent;
+      }
+    }
+  }
+  // SECTIONS
+  #introduction {
+    text-align: center;
+    p {
+      padding: 0 5%;
+    }
+  }
+  #status {
+    h3 span {
+      background: url(../images/status.svg) no-repeat right 2px white;
+      padding-right: 50px;
+    }
+    table {
+      tr {
+        display: inline-table; //Fix for background image repeats
+        width: 100%;
+        &:last-child {
+          border-bottom: 1px solid @tableBorder;
+        }
+        &.shadow {
+          background: url(../images/fade.png) no-repeat 0 0 transparent;
+          background-size: contain;
+        }
+        &.incomplete {
+          background: url(../images/table-bg.png) repeat-y top right transparent;
+          &.ninety {
+            background-size: 10% auto;
+          }
+          &.eighty {
+            background-size: 20% auto;
+          }
+        }
+        td, th {
+          .font-size(18);
+          font-weight: 700;
+          font-style: italic;
+          line-height: 1;
+          color: @grayLight;
+          padding: 12px 8px;
+          vertical-align: middle;
+          &.company {
+            color: @grayDark;
+            font-style: normal;
+            width: 30%;
+          }
+          &.dollars {
+            width: 20%;
+          }
+          &.attendees {
+            width: 10%;
+          }
+          &.events {
+            width: 10%;
+          }
+          &.data {
+            width: 15%;
+          }
+          &.site {
+            .font-size(11);
+            font-weight: normal;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: center
+            width: 15%;
+          }
+        }
+      }
+      thead {
+        tr:last-child {
+          border: none;
+        }
+        th, th.company, th.site {
+          vertical-align: bottom;
+          color: @grayLight;
+          .font-size(11);
+          font-weight: normal;
+          font-style: italic;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  .subsection {
+    margin-bottom: 20px;
+    padding: 20px 0 40px;
+    border-bottom: 1px solid @grayLighter;
+    strong, em {
+      .font-size(20);
+    }
+    h4 {
+      font-weight: bolder;
+      font-style: italic;
+      letter-spacing: -0.05em;
+      margin: 0 0 6px;
+      &.large {
+        .font-size(110);
+        margin-top: -10px;
+      }
+      &.xlarge {
+        .font-size(150);
+        letter-spacing: -0.07em;
+      }
+    }
+    h5 {
+      .font-size(12);
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+    .left, .right {
+      width: 48%;
+      float: left;
+      margin-bottom: 20px;
+    }
+    .left {
+      text-align: right;
+      margin-right: 2%;
+    }
+    .right {
+      margin-left: 2%;
+    }
+    .chart.placeholder {
+      clear: both;
+      background: @grayLighter;
+      color: @grayLight;
+      height: 120px;
+      text-align: center;
+      .font-size(20);
+      font-weight: bolder;
+      text-transform: uppercase;
+      padding-top: 90px;
+    }
+
+    &.total {
+      .pill {
+        margin: 0 auto;
+        position: relative;
+        background: @blue;
+        width: 90%;
+        height: 212px;
+        .border-radius(106px);
+        h4, strong, em {
+          color: white;
+          display: inline-block;
+          line-height: 1;
+          text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+        }
+        h4 {
+          margin: -10px 0 4px 11%;
+        }
+        strong {
+          margin: 24px 0 0 12%;
+
+          font-weight: bold;
+          font-style: normal;
+          }
+        em {
+          margin: 0 0 0 12%;
+          font-weight: normal;
+        }
+        span {
+          display: block;
+          position: absolute;
+          top:0;
+          right: 0;
+          width: 12%;
+          height: 212px;
+          background: rgba(255,255,255,.1) url(../images/pill-stripes.png) 0 0 no-repeat;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: 0;
+          width: 0;
+          height: 100%;
+          border-left: 1px solid rgba(255,255,255,.1);
+          border-right: 1px solid rgba(0,0,0,.1);
+        }
+      }
+    }
+    &.spending {
+      min-height: 212px;
+      h4 {
+        .font-size(50);
+      }
+      .bar-chart {
+        ul {
+          margin: 0;
+            li {
+            .font-size(16);
+            position: relative;
+            width: 90%;
+            list-style: none;
+            padding: 6px;
+            font-style: italic;
+            background: url(../images/spending-bg.png) top left no-repeat;
+            margin-bottom: 4px;
+            margin-left: 10%;
+            &:nth-child(2) {
+              background-position: -300px 0;
+            }
+            &:nth-child(3) {
+              background-position: -320px 0;
+            }
+            &:nth-child(4) {
+              background-position: -340px 0;
+            }
+            &:nth-child(5) {
+              background-position: -380px 0;
+            }
+            strong {
+              .font-size(16);
+            }
+            span {
+              position: absolute;
+              color: @grayLight;
+              right: 6px;
+            }
+          }
+        }
+      }
+    }
+    &.cost {
+      min-height: 212px;
+      .left {
+        text-align: left;
+          li.pp {
+          float: left;
+          .font-size(16);
+          text-transform: uppercase;
+          font-style: italic;
+          list-style: none;
+          padding: 10px 20px 0 30px;
+          strong {
+            display: block;
+            .font-size(26);
+            font-weight: bolder;
+
+          }
+        }
+      }
+    }
+    &.alcohol {
+      color: white;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+
+      .bottle {
+        position: relative;
+        height: 185px;
+        width: 650px;
+        margin: -17px auto 0;
+        background: url(../images/bottle.svg) center center no-repeat;
+        .text-container {
+          position: relative;
+          width: 100%;
+          margin-left: 40px;
+          padding-top: 10px;
+        }
+        h4 {
+
+          sup {
+            .font-size(90);
+            padding-left: 4px;
+          }
+        }
+        em {
+          position: absolute;
+          left: 165px;
+          margin-top: -58px;
+          width: 160px;
+        }
+      }
+    }
+    &.daily {
+      min-height: 230px;
+      position: relative;
+      h4 {
+        float: left;
+        margin-right: 14px;
+        margin-top: -10px;
+      }
+      em {
+        float: left;
+        width: 35%;
+        margin-top: 20px;
+      }
+      p {
+        clear: both;
+        .font-size(14);
+        padding-right: 20%;
+      }
+    }
+    &.australia {
+      text-align: center;
+      strong {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    &.not-much {
+      padding-right: 40%;
+      strong, em {
+        .font-size(30);
+        line-height: 1.2;
+      }
+    }
+  }
+}

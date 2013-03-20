@@ -1,0 +1,103 @@
+// TABLET PORTRAIT
+@media only screen and (max-width: 1020px) {
+  .row-fluid .offset3 {
+    margin: initial;
+  }
+  .row-fluid .span3.nav-col  {
+    display: none;
+  }
+}
+
+// SMALL SCREEN
+
+@media only screen and (max-width: 950px) {
+  .navbar.special-feature {
+    padding: 8px 20px;
+    .brand.brand-center {
+
+      background-position: left center;
+      float: left;
+      margin: 0;
+    }
+  }
+  #main {
+    .container {
+      width: 80%;
+    }
+    #title {
+      h1 {
+        .font-size(60);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar.special-feature {
+    .brand.brand-center {
+      float: none;
+      margin: 0 auto;
+      width: 190px;
+    }
+  }
+  #main {
+    .container {
+      width: 95%;
+    }
+    #title {
+      margin-bottom: 20px;
+      padding-bottom: 40px;
+      h1 {
+        .font-size(30);
+      }
+      h2 {
+        .font-size(12);
+      }
+    }
+    h3 {
+        .font-size(20);
+        &.line {
+          &:before {
+            top:10px;
+          }
+        }
+    }
+    #introduction {
+      p {
+        .font-size(14);
+      }
+    }
+    #status {
+      table tr {
+        td, th {
+          padding: 12px 5px;
+          &.company {
+            width: auto;
+          }
+          &.dollars {
+            width: auto;
+            font-weight: normal;
+          }
+          &.attendees {
+            width: auto;
+            font-weight: normal;
+          }
+          &.events {
+            width: auto;
+            font-weight: normal;
+          }
+          &.data {
+            width: auto;
+            font-weight: normal;
+          }
+        }
+        td.site, th.site {
+          display: none;
+        }
+        td {
+          .font-size(11);
+        }
+      }
+    }
+  }
+}
