@@ -290,17 +290,39 @@
             background: url(../images/spending-bg.png) top left no-repeat;
             margin-bottom: 4px;
             margin-left: 10%;
+            &:before {
+              content: '';
+              position: absolute;
+              display: block;
+              margin-left: -40px;
+              top: 2px;
+              width: 26px;
+              height: 28px;
+              background: url(../images/totals-icons.svg) left 0 no-repeat;
+            }
             &:nth-child(2) {
               background-position: -300px 0;
+              &:before {
+                background-position: 0 -50px;
+              }
             }
             &:nth-child(3) {
               background-position: -320px 0;
+              &:before {
+                background-position: 0 -102px;
+              }
             }
             &:nth-child(4) {
               background-position: -340px 0;
+              &:before {
+                background-position: 0 -154px;
+              }
             }
             &:nth-child(5) {
               background-position: -380px 0;
+              &:before {
+                background-position: 0 -205px;
+              }
             }
             strong {
               .font-size(16);
