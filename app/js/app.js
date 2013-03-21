@@ -45,7 +45,7 @@
 
   // Render the companies table. Order it by total $
   function populateConditions(){
-    var conditions = _.sortBy(stats.conditions, 'cost').reverse();
+    var conditions = _.sortBy(stats.conditions, 'cost').reverse().slice(0, 5);
     var $conditions = $('#conditions');
     var maxCost = conditions[0].cost;
     var html = _.map(conditions, function(condition){
