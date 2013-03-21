@@ -70,25 +70,25 @@
     #status {
       table tr {
         td, th {
-          padding: 12px 5px;
+          padding: 10px 2px;
           &.company {
-            width: 100px;
+            width: 42%;
           }
           &.dollars {
-            width: 90px;
+            width: 23%;
             font-weight: normal;
           }
           &.attendees {
-            width: auto;
+            width: 15%;
             font-weight: normal;
             display:none;
           }
           &.events {
-            width: auto;
+            width: 10%;
             font-weight: normal;
           }
           &.data {
-            width: auto;
+            width: 10%;
             font-weight: normal;
           }
         }
@@ -133,12 +133,13 @@
     }
   }
   #main {
+
     .container {
       min-width: 300px;
     }
     #title {
-      margin-bottom: 10px;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
+      padding-bottom: 30px;
     }
     #status {
       h3 {
@@ -150,8 +151,6 @@
       }
     }
     .subsection {
-      padding: 10px 0 20px;
-      margin-bottom: 10px;
       strong,em {
         .font-size(18);
       }
@@ -167,10 +166,10 @@
           height: 110px;
           strong {
             margin: 9px 0 0 35px;
-            .font-size(16);
+            .font-size(14);
           }
           em {
-            .font-size(16);
+            .font-size(14);
           }
           h4 {
             margin: -8px 0 0 28px;
@@ -179,26 +178,20 @@
         }
       }
       &.spending {
+        .left {
+          text-align: center;
+          max-width: 380px;
+        }
+
         .bar-chart {
           ul li {
             margin-left: 34px;
-            &:nth-child(2) {
-              background-position: -380px 0;
-            }
-            &:nth-child(3) {
-              background-position: -400px 0;
-            }
-            &:nth-child(4) {
-              background-position: -420px 0;
-            }
-            &:nth-child(5) {
-              background-position: -440px 0;
-            }
           }
         }
       }
       &.cost {
         .left {
+          max-width: 380px;
           li.pp {
             padding-top: 20px;
             .font-size(12);
@@ -208,6 +201,11 @@
             }
           }
         }
+        .right {
+          text-align: center;
+          max-width: 340px;
+          margin-bottom: 20px;
+        }
       }
       &.alcohol {
         .bottle {
@@ -215,9 +213,12 @@
           padding-top: 30px;
           background-position: center bottom;
           .text-container {
-            margin: -48px 0 0 8%;
+            margin: -48px 0 0 6%;
             text-shadow: none;
             color: @pink;
+            h4 {
+              margin-left: -10px;
+            }
             em {
               color: white;
               position: relative;
@@ -228,11 +229,20 @@
         }
       }
       &.daily {
+
         li {
           .pill {
             width: 10px;
             height: 11px;
           }
+        }
+        p {
+          text-align: center;
+          padding-right: 0;
+        }
+        .right {
+          padding-top: 0;
+          max-width: 340px;
         }
       }
       &.australia {
@@ -245,28 +255,29 @@
               .font-size(16);
             }
             &:first-child {
-              margin-top: 50px;
+              margin-top: 56px;
             }
             &:nth-child(2) {
-              margin-top: 70px;
+              margin-top: 75px;
             }
             &:nth-child(3) {
-              margin-top: 131px;
+              margin-top: 132px;
             }
             &:nth-child(4) {
-              margin-top: 158px;
+              margin-top: 160px;
+              right: 8px;
             }
             &:nth-child(5) {
-              margin-top: 177px;
+              margin-top: 178px;
             }
             &:nth-child(6) {
               margin-top: 205px;
             }
             &:nth-child(7) {
-              margin-top: 111px;
+              margin-top: 115px;
             }
             &:nth-child(8) {
-              margin-top: 87px;
+              margin-top: 94px;
             }
           }
         }
@@ -276,8 +287,9 @@
         .text {
           float: none;
           max-width: none;
+          text-align: center;
           strong,em {
-            .font-size(20);
+            .font-size(18);
           }
         }
         .thermometer {
@@ -287,6 +299,9 @@
           width: 100%;
           height: 240px;
         }
+      }
+      &.data {
+        border-bottom: none;
       }
     }
   }
