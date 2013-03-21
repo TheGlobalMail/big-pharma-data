@@ -48,7 +48,7 @@
       margin-bottom: 20px;
       padding-bottom: 40px;
       h1 {
-        .font-size(30);
+        .font-size(26);
       }
       h2 {
         .font-size(12);
@@ -122,21 +122,79 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .navbar {
+    margin-bottom: 10px;
+    &.special-feature {
+      padding: 2px 0;
+      .special-feature-misc {
+        display: none;
+      }
+    }
+  }
   #main {
     .container {
       min-width: 300px;
+    }
+    #title {
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+    }
+    #status {
+      h3 {
+        span {
+          padding-right: 30px;
+          background-size: 25px auto;
+          background-position: right 0;
+        }
+      }
     }
     .subsection {
       padding: 10px 0 20px;
       margin-bottom: 10px;
       strong,em {
-        .font-size(16);
+        .font-size(18);
       }
       h4.large {
         .font-size(80);
       }
       &.spending h4 {
         .font-size(40);
+      }
+      &.total {
+        .pill {
+          width: 300px;
+          height: 110px;
+          strong {
+            margin: 11px 0 0 35px;
+            .font-size(16);
+          }
+          em {
+            .font-size(16);
+          }
+          h4 {
+            margin: -8px 0 0 28px;
+            .font-size(64);
+          }
+        }
+      }
+      &.spending {
+        .bar-chart {
+          ul li {
+            margin-left: 34px;
+            &:nth-child(2) {
+              background-position: -380px 0;
+            }
+            &:nth-child(3) {
+              background-position: -400px 0;
+            }
+            &:nth-child(4) {
+              background-position: -420px 0;
+            }
+            &:nth-child(5) {
+              background-position: -440px 0;
+            }
+          }
+        }
       }
       &.cost {
         .left {
@@ -152,18 +210,27 @@
       }
       &.alcohol {
         .bottle {
-          width: 80%;
-          padding-top: 60px;
+          width: 280px;
+          padding-top: 30px;
           background-position: center bottom;
           .text-container {
-            margin: -80px 0 0 0;
+            margin: -48px 0 0 8%;
             text-shadow: none;
-            color: @grayDark;
+            color: @pink;
             em {
+              color: white;
               position: relative;
               left: 0;
-              top: -6px;
+              top: 18px;
             }
+          }
+        }
+      }
+      &.daily {
+        li {
+          .pill {
+            width: 10px;
+            height: 11px;
           }
         }
       }
@@ -175,6 +242,30 @@
             .font-size(11);
             span {
               .font-size(16);
+            }
+            &:first-child {
+              margin-top: 50px;
+            }
+            &:nth-child(2) {
+              margin-top: 70px;
+            }
+            &:nth-child(3) {
+              margin-top: 131px;
+            }
+            &:nth-child(4) {
+              margin-top: 158px;
+            }
+            &:nth-child(5) {
+              margin-top: 177px;
+            }
+            &:nth-child(6) {
+              margin-top: 205px;
+            }
+            &:nth-child(7) {
+              margin-top: 111px;
+            }
+            &:nth-child(8) {
+              margin-top: 87px;
             }
           }
         }
