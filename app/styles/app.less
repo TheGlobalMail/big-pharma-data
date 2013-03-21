@@ -21,7 +21,10 @@
   }
   section {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    background: url(../images/fade.png) no-repeat bottom center transparent;
+    background-size:100% 12px;
+
   }
   h3 {
     font-family: @serifFontFamily;
@@ -59,20 +62,18 @@
   // TITLE
   #title {
     text-align: center;
-    background: url(../images/fade.png) no-repeat bottom center transparent;
-    background-size:contain;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 60px;
     h1 {
       .font-size(76);
       letter-spacing: -0.03em;
+      margin-bottom: -10px;
     }
     h2 {
       margin: 0 auto;
       .font-size(16);
-      line-height: 1.4;
+      line-height: 1.2;
       font-weight: normal;
-      max-width: 640px;
     }
   }
   // NAVIGATION
@@ -106,11 +107,12 @@
   #introduction {
     text-align: center;
     p {
-      padding: 0 5%;
+      padding: 0 5% 60px;
     }
   }
   #status {
-    margin-bottom: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
     h3 span {
       background: url(../images/status.svg) no-repeat right 2px white;
       padding-right: 50px;
@@ -122,9 +124,9 @@
         &:last-child {
           border-bottom: 1px solid @tableBorder;
         }
-        &.shadow {
-          background: url(../images/fade.png) no-repeat 0 0 transparent;
-          background-size: contain;
+        &:first-child {
+          background: url(../images/fade.png) no-repeat center top transparent;
+          background-size:100% 12px;
         }
         &.incomplete {
           background: url(../images/table-bg.png) repeat-y top right transparent;
@@ -165,7 +167,7 @@
             font-weight: normal;
             font-style: normal;
             text-transform: uppercase;
-            text-align: center
+            text-align: right;
             width: 15%;
           }
         }
@@ -176,6 +178,9 @@
       thead {
         tr:last-child {
           border: none;
+        }
+        tr:first-child {
+          background: none;
         }
         th, th.company, th.site {
           vertical-align: bottom;
@@ -290,7 +295,7 @@
       }
     }
     &.spending {
-      min-height: 212px;
+      overflow: hidden;
       h4 {
         .font-size(50);
       }
@@ -405,12 +410,14 @@
       h4 {
         float: left;
         margin-right: 14px;
-        margin-top: -10px;
+        margin-top: -26px;
+        margin-bottom: -4px;
       }
       em {
         float: left;
         width: 35%;
-        margin-top: 8.5%;
+        margin-top: 3.5%;
+        font-weight: bold;
       }
       p {
         clear: both;
@@ -546,6 +553,7 @@
     &.not-much {
       position: relative;
       height: 300px;
+      border-bottom: none;
       .text {
         max-width: 60%;
         float: left;
@@ -563,6 +571,16 @@
         width:344px;
         height: 292px;
       }
+    }
+  }
+  #data {
+    background: none;
+    margin-top: 0;
+    .data {
+      margin-top: 0;
+      padding-top:0;
+      border-bottom: none;
+
     }
   }
 }

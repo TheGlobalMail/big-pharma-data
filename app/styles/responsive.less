@@ -48,7 +48,8 @@
       margin-bottom: 20px;
       padding-bottom: 40px;
       h1 {
-        .font-size(26);
+        .font-size(30);
+        margin-bottom: 0;
       }
       h2 {
         .font-size(12);
@@ -68,18 +69,25 @@
       }
     }
     #status {
+      h3 {
+        span {
+          padding-right: 30px;
+          background-size: 25px auto;
+          background-position: right 0;
+        }
+      }
+
       table tr {
         td, th {
-          padding: 10px 2px;
           &.company {
-            width: 42%;
+            width: 40%;
           }
           &.dollars {
             width: 23%;
             font-weight: normal;
           }
           &.attendees {
-            width: 15%;
+            width: 12%;
             font-weight: normal;
             display:none;
           }
@@ -92,11 +100,9 @@
             font-weight: normal;
           }
         }
-        td.site, th.site {
-          display: none;
-        }
+
         td {
-          .font-size(11);
+          .font-size(16);
         }
       }
     }
@@ -133,20 +139,23 @@
     }
   }
   #main {
-
     .container {
       min-width: 300px;
     }
     #title {
-      margin-bottom: 20px;
-      padding-bottom: 30px;
+      margin-bottom: 10px;
+      padding-bottom: 40px;
     }
     #status {
-      h3 {
-        span {
-          padding-right: 30px;
-          background-size: 25px auto;
-          background-position: right 0;
+      table tr {
+        td,th {
+          padding: 10px 2px;
+        }
+        td {
+          .font-size(11);
+        }
+        td.site, th.site {
+          display: none;
         }
       }
     }
@@ -157,6 +166,9 @@
       h4.large {
         .font-size(80);
       }
+      h5 {
+        text-align: center;
+      }
       &.spending h4 {
         .font-size(40);
       }
@@ -164,15 +176,17 @@
         .pill {
           width: 300px;
           height: 110px;
+          text-align: center;
           strong {
-            margin: 9px 0 0 35px;
+            margin: 9px 0 0 0;
             .font-size(14);
           }
           em {
             .font-size(14);
+            margin-left: 0;
           }
           h4 {
-            margin: -8px 0 0 28px;
+            margin: -8px 0 0 0;
             .font-size(64);
           }
         }
@@ -182,7 +196,9 @@
           text-align: center;
           max-width: 380px;
         }
-
+        .right {
+          margin-top: 20px;
+        }
         .bar-chart {
           ul li {
             margin-left: 34px;
@@ -241,7 +257,6 @@
           padding-right: 0;
         }
         .right {
-          padding-top: 0;
           max-width: 340px;
         }
       }
@@ -299,9 +314,6 @@
           width: 100%;
           height: 240px;
         }
-      }
-      &.data {
-        border-bottom: none;
       }
     }
   }
