@@ -179,6 +179,7 @@
     border-bottom: 1px solid @grayLighter;
     strong, em {
       .font-size(20);
+      line-height: 1.1;
     }
     h4 {
       font-weight: bolder;
@@ -349,19 +350,22 @@
           li.pp {
           float: left;
           .font-size(16);
+          line-height: 1;
           text-transform: uppercase;
           font-style: italic;
           list-style: none;
-          padding: 15px 20px 10px 55px;
+          padding: 15px 5% 10px 55px;
           background: url(../images/events-icons.svg) left 12px no-repeat;
           &:nth-child(2) {
             background-position: left -65px;
+            padding-right: 0;
           }
           &:nth-child(3) {
             background-position: left -235px;
           }
           &:nth-child(4) {
             background-position: left -155px;
+            padding-right: 0;
           }
           strong {
             display: block;
@@ -381,6 +385,7 @@
         width: 650px;
         margin: -17px auto 0;
         background: url(../images/bottle.svg) center center no-repeat;
+        background-size: contain;
         .text-container {
           position: relative;
           width: 100%;
@@ -560,6 +565,7 @@
         right:2%;
         top: 5%;
         background: url(../images/thermometer.svg) center center no-repeat transparent;
+        background-size: contain;
         width:344px;
         height: 292px;
       }
