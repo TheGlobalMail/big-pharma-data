@@ -318,18 +318,33 @@
       min-height: 212px;
       .left {
         text-align: left;
+          h5 {
+            margin-bottom: 0;
+          }
+          ul {
+            margin: 0;
+          }
           li.pp {
           float: left;
           .font-size(16);
           text-transform: uppercase;
           font-style: italic;
           list-style: none;
-          padding: 10px 20px 0 30px;
+          padding: 15px 20px 10px 55px;
+          background: url(../images/events-icons.svg) left 12px no-repeat;
+          &:nth-child(2) {
+            background-position: left -65px;
+          }
+          &:nth-child(3) {
+            background-position: left -235px;
+          }
+          &:nth-child(4) {
+            background-position: left -155px;
+          }
           strong {
             display: block;
-            .font-size(26);
+            .font-size(28);
             font-weight: bolder;
-
           }
         }
       }
