@@ -2,9 +2,11 @@
 @media only screen and (max-width: 1020px) {
   .row-fluid .offset3 {
     margin: initial;
+    margin-left: 0;
   }
   .row-fluid .span3.nav-col  {
     display: none;
+    width: 0;
   }
 }
 
@@ -116,6 +118,11 @@
       }
       .right {
         padding-top: 20px;
+      }
+      &.daily {
+        ul {
+          margin: 0;
+        }
       }
       &.not-much {
         padding-right: 0;
@@ -245,7 +252,6 @@
         }
       }
       &.daily {
-
         li {
           .pill {
             width: 10px;
@@ -270,29 +276,31 @@
               .font-size(16);
             }
             &:first-child {
-              margin-top: 56px;
+              margin-top: 54px;
+              left: 43%;
             }
             &:nth-child(2) {
-              margin-top: 75px;
+              margin-top: 67px;
             }
             &:nth-child(3) {
-              margin-top: 132px;
+              margin-top: 125px;
             }
             &:nth-child(4) {
-              margin-top: 160px;
-              right: 8px;
+              margin-top: 153px;
+              right: -12px;
             }
             &:nth-child(5) {
-              margin-top: 178px;
+              margin-top: 159px;
+              right: 13%;
             }
             &:nth-child(6) {
               margin-top: 205px;
             }
             &:nth-child(7) {
-              margin-top: 115px;
+              margin-top: 109px;
             }
             &:nth-child(8) {
-              margin-top: 94px;
+              margin-top: 86px;
             }
           }
         }
