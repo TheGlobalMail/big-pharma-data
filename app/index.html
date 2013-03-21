@@ -85,7 +85,7 @@
         </section>
         <section id="status" class="offset3">
           <h3 class="line"><span>Current status</span></h3>
-          <table class="table status-table table-hover">
+          <table id="companies" class="table status-table table-hover">
             <thead>
                 <tr>
                     <th class="company">Company</th>
@@ -97,63 +97,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="shadow">
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-                <tr>
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-                <tr>
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-                <tr>
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-                <tr>
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-                <tr class="incomplete ninety">
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-                <tr class="incomplete eighty">
-                  <td class="company">Pfizer</td>
-                  <td class="dollars">$6,527,665</td>
-                  <td class="attendees">10,976</td>
-                  <td class="events">390</td>
-                  <td class="data">10/10</td>
-                  <td class="site"><a href="#">Company site</a></td>
-                </tr>
-              </tbody>
+            </tbody>
           </table>
         </section>
 
@@ -165,10 +109,8 @@
           <div class="subsection total">
             <div class="pill">
               <strong>Education events processed:</strong>
-              <h4 class="large">
-                155,587
-              </h4>
-              <em>That’s about 88% of the data</em>
+              <h4 class="large" id="total-events"></h4>
+              <em>That’s about ??% of the data</em>
               <span></span>
             </div>
           </div>
@@ -176,20 +118,13 @@
           <div class="subsection spending">
             <div class="left">
               <strong>From the data processed so far, pharmaceutical companies have spent</strong>
-              <h4>
-                $312,994,020
-              </h4>
+              <h4 id="total-cost"></h4>
               <em>on education events since reporting began in 2007</em>
             </div>
             <div class="right">
               <div class="bar-chart">
                 <h5>Spending by major disease type</h5>
-                <ul>
-                  <li><strong>Cardiovascular</strong><span>$2,345,678</span></li>
-                  <li><strong>Mental Health</strong><span>$2,345,678</span></li>
-                  <li><strong>Cancer</strong><span>$2,345,678</span></li>
-                  <li><strong>Fertility</strong><span>$2,345,678</span></li>
-                  <li><strong>Diabetes</strong><span>$2,345,678</span></li>
+                <ul id="conditions">
                 </ul>
               </div>
             </div>
@@ -201,27 +136,25 @@
               <ul>
               <li class="pp">
                 Under $10 pp
-                <strong>257,890</strong>
+                <strong>??</strong>
               </li>
               <li class="pp">
                 Under $10 pp
-                <strong>257,890</strong>
+                <strong>??</strong>
               </li>
               <li class="pp">
                 Under $10 pp
-                <strong>257,890</strong>
+                <strong>??</strong>
               </li>
               <li class="pp">
                 Under $10 pp
-                <strong>257,890</strong>
+                <strong>??</strong>
               </li>
 
             </div>
             <div class="right">
               <strong>The average cost per person at one of these events is</strong>
-              <h4 class="large">
-                $72.50
-              </h4>
+              <h4 class="large" id="perperson"></h4>
             </div>
             <div class="chart placeholder">Chart</div>
           </div>
@@ -230,7 +163,7 @@
             <div class="bottle">
               <div class="text-container">
                 <h4 class="xlarge">
-                  22<sup>%</sup>
+                  <span id="total-alcohol-percentage"></span><sup>%</sup>
                 </h4>
                 <em>of events served alcohol</em>
               </div>
@@ -240,422 +173,11 @@
           <div class="subsection daily">
             <div class="left">
               <div class="chart">
-                <ul>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 10 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 20 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 30 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 40 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 50 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 60 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 70 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 80 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- 90 -->
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <!-- <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li>
-                <li>
-                  <div class="pill top"></div>
-                  <div class="pill"></div>
-                </li> -->
-                <!-- 100 -->
-              </ul>
+                <ul id="pills"></ul>
               </div>
             </div>
             <div class="right">
-              <h4 class="xlarge">98</h4>
+              <h4 class="xlarge" id="events-per-day"></h4>
               <em>education events happen in an average day</em>
               <p>Because of the lack of detail we don’t know exactly which days they were.</p>
             </div>
@@ -664,40 +186,7 @@
           <div class="subsection australia">
             <strong>These events happen all over the country</strong>
             <div class="map">
-              <ul>
-                <li>
-                  NT
-                  <span>22,345</span>
-                </li>
-                <li>
-                  QLD
-                  <span>22,345</span>
-                </li>
-                <li>
-                  NSW
-                  <span>22,345</span>
-                </li>
-                <li>
-                  ACT
-                  <span>22,345</span>
-                </li>
-                <li>
-                  VIC
-                  <span>22,345</span>
-                </li>
-                <li>
-                  TAS
-                  <span>22,345</span>
-                </li>
-                <li>
-                  SA
-                  <span>22,345</span>
-                </li>
-                <li>
-                  WA
-                  <span>22,345</span>
-                </li>
-              </ul>
+              <ul id="states"></ul>
             </div>
             <strong>but if you’re lucky, they might just send you overseas</strong>
             <div class="chart placeholder">Chart</div>
@@ -734,6 +223,7 @@
   <script src="/components/jquery/jquery.js"></script>
   <script src="/components/lodash/lodash.js"></script>
   <script src="/components/backbone/backbone.js"></script>
+  <script src="/js/libs/to-dollars.js"></script>
   <script src="/js/loading-overlay.js"></script>
   <script src="/js/stats.js"></script>
   <script src="/js/app.js"></script>
