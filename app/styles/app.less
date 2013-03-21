@@ -9,21 +9,30 @@
   z-index: 20;
 }
 
+* {
+
+}
+
 .navbar.special-feature .brand {
   background-size: auto;
 }
 #main {
   // GLOBAL STYLES
+
   .container {
     max-width: 1100px;
     width: 95%;
+    .transition(all 200ms linear);
   }
   section {
     margin-top: 20px;
     margin-bottom: 30px;
     background: url(../images/fade.png) no-repeat bottom center transparent;
     background-size:100% 12px;
-
+    .transition(all 200ms linear);
+  }
+  h1,h2,h3,h4,h5,p {
+    .transition(all 200ms linear);
   }
   h3 {
     font-family: @serifFontFamily;
@@ -368,7 +377,7 @@
           text-transform: uppercase;
           font-style: italic;
           list-style: none;
-          padding: 15px 5% 10px 55px;
+          padding: 15px 5% 10px 50px;
           background: url(../images/events-icons.svg) left 12px no-repeat;
           &:nth-child(2) {
             background-position: left -65px;
@@ -407,7 +416,6 @@
           padding-top: 10px;
         }
         h4 {
-
           sup {
             .font-size(90);
             padding-left: 4px;
@@ -415,8 +423,9 @@
         }
         em {
           position: absolute;
+          font-weight: bold;
           left: 165px;
-          margin-top: -58px;
+          margin-top: -62px;
           width: 160px;
         }
       }
@@ -597,7 +606,9 @@
       margin-top: 0;
       padding-top:0;
       border-bottom: none;
-
+      p {
+        text-align: center;
+      }
     }
   }
 }

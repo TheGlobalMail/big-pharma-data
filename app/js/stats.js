@@ -201,7 +201,7 @@ window.stats = {
       "completed": 4
     },
     {
-      "company": "inovapharmaceuticals",
+      "company": "inova - pharmaceuticals",
       "cost": 141535.82,
       "attendees": 829,
       "events": 46,
