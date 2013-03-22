@@ -201,7 +201,7 @@ window.stats = {
       "completed": 4
     },
     {
-      "company": "inova - pharmaceuticals",
+      "company": "inovapharmaceuticals",
       "cost": 141535.82,
       "attendees": 829,
       "events": 46,
@@ -5114,6 +5114,64 @@ window.stats = {
       "lower": 22425,
       "upper": 22449,
       "count": 0
+    }
+  ],
+  "professions": [
+    {
+      "profession": "oncologists",
+      "cost": 24407464.62,
+      "attendees": 432039,
+      "events": 19698,
+      "alcohol": 825,
+      "perperson": 56.49
+    },
+    {
+      "profession": "rehab",
+      "cost": 4244077.97,
+      "attendees": 71479,
+      "events": 1654,
+      "alcohol": 112,
+      "perperson": 59.38
+    },
+    {
+      "profession": "gps",
+      "cost": 105217589.4,
+      "attendees": 907114,
+      "events": 34148,
+      "alcohol": 13101,
+      "perperson": 115.99
+    },
+    {
+      "profession": "mentalhealth",
+      "cost": 27776513.84,
+      "attendees": 288215,
+      "events": 12344,
+      "alcohol": 2519,
+      "perperson": 96.37
+    },
+    {
+      "profession": "nurses",
+      "cost": 79824684.6,
+      "attendees": 1236083,
+      "events": 49368,
+      "alcohol": 4411,
+      "perperson": 64.58
+    },
+    {
+      "profession": "pharmacists",
+      "cost": 23545299.75,
+      "attendees": 300120,
+      "events": 9551,
+      "alcohol": 1419,
+      "perperson": 78.45
+    },
+    {
+      "profession": "other",
+      "cost": 105239282.23,
+      "attendees": 1876072,
+      "events": 57720,
+      "alcohol": 3855,
+      "perperson": 56.1
     }
   ]
 };

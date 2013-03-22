@@ -22,6 +22,10 @@
 
     populateStatesMap();
 
+    populatePerPerson();
+
+    populateProfessions();
+
     loadingOverlay.dismiss();
   }
 
@@ -97,5 +101,71 @@
     $states.html(html);
   }
 
+  function populatePerPerson(){
+    var cutoff = 15;
+    var data = stats.perheadBins.slice(0, cutoff);
+    var rest = stats.perheadBins.slice(cutoff);
+    var finalPoint = {upper: rest[0].upper + '-' + _.last(rest).upper, count: _.reduce(rest, function(sum, d){
+        return sum + d.count;
+    }, 0)};
+    data.push(finalPoint);
+    console.error(finalPoint);
+    barChart("#perperson-chart", data, 'upper', 'count');
+  }
+
+  function populateProfessions(){
+    barChart('#professions', stats.professions, 'profession', 'cost');
+    barChart('#professions-attendees', stats.professions, 'profession', 'attendees');
+    barChart('#professions-perperson', stats.professions, 'profession', 'perperson');
+  }
+
+  function barChart(id, data, label, metric){
+    var $professions = $(id);
+    var margin = {top: 10, right: 0, bottom: 20, left: 80},
+        width = $professions.width() - margin.left - margin.right,
+        height = 210 - margin.top - margin.bottom;
+    var x = d3.scale.ordinal()
+      .rangeRoundBands([0, width], .1);
+    var y = d3.scale.linear()
+      .range([height, 0]);
+    var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom");
+    var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left")
+    var svg = d3.select(id).append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    x.domain(data.map(function(d) { return d[label]; }));
+    y.domain([0, d3.max(data, function(d) { return d[metric]; })]);
+
+    svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+
+    svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+      .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text(metric);
+
+    svg.selectAll(".bar")
+      .data(data)
+      .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d[label]); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d[metric]); })
+      .attr("height", function(d) { return height - y(d[metric]); });
+  }
 
 }($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber));
