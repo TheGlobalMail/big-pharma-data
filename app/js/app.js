@@ -171,7 +171,7 @@
   }
 
   function disableD3Elements(){
-    $('.attendees, #perperson-chart').css('display', 'none');
+    $('.attendees, #perperson-chart').addClass('no-ie');
   }
 
 }($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3));
