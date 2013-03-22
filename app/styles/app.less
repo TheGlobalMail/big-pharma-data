@@ -73,9 +73,11 @@
       .box-shadow(none);
       color: @blue;
       padding: 9px 13px 7px;
+      .transition(background 100ms ease-in-out);
       &:hover, &.active {
           background-color: #f5f5f5;
           color: @grayDark;
+          .transition(background 100ms ease-in-out);
         }
       &.active {
         color: @grayDark;

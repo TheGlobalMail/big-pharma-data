@@ -127,7 +127,7 @@
         width = $professions.width() - margin.left - margin.right,
         height = 320 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
-      .rangeRoundBands([0, width], 0.1);
+      .rangeRoundBands([0, width], 0.4);
     var y = d3.scale.linear()
       .range([height, 0]);
     var xAxis = d3.svg.axis()
