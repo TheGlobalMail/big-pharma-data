@@ -633,37 +633,37 @@ window.stats = {
     {
       "bin": 10,
       "count": 46352,
-      "hospitalitycount": 46352
+      "hospitalitycount": 58454
     },
     {
       "bin": 20,
       "count": 53221,
-      "hospitalitycount": 53221
+      "hospitalitycount": 52373
     },
     {
       "bin": 50,
       "count": 13588,
-      "hospitalitycount": 13588
+      "hospitalitycount": 13316
     },
     {
       "bin": 200,
       "count": 33910,
-      "hospitalitycount": 33910
+      "hospitalitycount": 28022
     },
     {
       "bin": 1000,
       "count": 5841,
-      "hospitalitycount": 5841
+      "hospitalitycount": 1514
     },
     {
       "bin": 10000,
       "count": 1177,
-      "hospitalitycount": 1177
+      "hospitalitycount": 414
     },
     {
       "bin": 100000,
       "count": 50,
-      "hospitalitycount": 50
+      "hospitalitycount": 46
     }
   ],
   "professions": [
