@@ -65,10 +65,29 @@
     .font-size(18);
     line-height: 1.4;
   }
-  .table-hover tbody tr:hover td,
-  .table-hover tbody tr:hover th {
-    background-color: rgba(0,0,0,0.03);
+
+  .btn-group {
+    margin: 10px auto;
+    .btn {
+      background-color: white;
+      border: 1px solid #e5e5e5;
+      .box-shadow(none);
+      color: @blue;
+      &:hover, &.active {
+          background-color: #f5f5f5;
+          color: @grayDark;
+        }
+      &.active {
+        color: @grayDark;
+        background-color: #f5f5f5;
+        &:hover, &.active {
+          cursor: default;
+        }
+      }
+    }
   }
+
+
   // TITLE
   #title {
     text-align: center;
@@ -97,6 +116,7 @@
     list-style: none;
     border: 1px solid #e5e5e5;
     .border-radius(8px);
+    behavior: url(../js/libs//PIE.htc);
     overflow: hidden;
     li {
       border-bottom: 1px solid #e5e5e5;
@@ -109,20 +129,21 @@
         padding: 10px 14px;
         background-color: white;
         .transition(background 100ms ease-in-out);
-        &:hover {
+        &:hover, &.active {
           text-decoration:none;
           background-color: #f5f5f5;
           .transition(background 100ms ease-in-out);
         }
         &:last-child{
           .border-bottom-radius(6px);
+          behavior: url(../js/libs//PIE.htc);
           overflow: hidden;
         }
       }
       &.active a {
         color: #222;
         background: url(../images/nav-arrow.png) no-repeat 95% center transparent;
-        &:hover {
+        &:hover, &.active {
           cursor: default;
         }
       }
@@ -282,6 +303,7 @@
         width: 600px;
         height: 200px;
         .border-radius(106px);
+        behavior: url(../js/libs//PIE.htc);
         z-index: 1;
         h4, strong, em {
           color: white;
@@ -403,6 +425,13 @@
           }
         }
       }
+      #perperson-chart {
+        clear: both;
+        padding-top: 20px;
+        text-align: center;
+        background: url(../images/fade.png) no-repeat center top transparent;
+        background-size:100% 12px;
+      }
     }
     &.alcohol {
       color: white;
@@ -469,6 +498,7 @@
           background: @blue;
           height: 16px;
           .border-bottom-radius(7px);
+          behavior: url(../js/libs//PIE.htc);
           &:after {
             content: '';
             display: block;
@@ -481,12 +511,14 @@
             .border-radius(2px);
             .box-shadow(0 0 4px white);
             .opacity(30);
+            behavior: url(../js/libs//PIE.htc);
           }
           &.top {
             margin-bottom: 1px;
             background: @pink;
             .border-bottom-radius(0);
             .border-top-radius(7px);
+            behavior: url(../js/libs//PIE.htc);
             &:after {
               content: '';
               display: block;
@@ -499,6 +531,7 @@
               .border-radius(2px);
               .box-shadow(0 0 4px white);
               .opacity(30);
+              behavior: url(../js/libs//PIE.htc);
             }
           }
         }
@@ -582,6 +615,9 @@
           }
         }
       }
+    }
+    &.attendees {
+      text-align: center;
     }
     &.not-much {
       position: relative;

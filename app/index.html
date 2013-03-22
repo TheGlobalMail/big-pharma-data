@@ -71,7 +71,7 @@
 
     <div class="container">
       <div class="row-fluid">
-        <div class="span3 nav-col">
+        <div class="span3 nav-col affix">
           <ul id="nav" role="menu">
             <li class="active"><a href="#">Introduction</a></li>
             <li><a href="#">Current status</a></li>
@@ -156,7 +156,14 @@
               <strong>The average cost per person at one of these events is</strong>
               <h4 class="large" id="perperson"></h4>
             </div>
-            <div id="perperson-chart" class="chart"></div>
+
+            <div id="perperson-chart" class="chart">
+              <div class="btn-group">
+                <button class="btn active">Default</button>
+                <button class="btn">Option Two</button>
+                <button class="btn">Option Three</button>
+              </div>
+            </div>
           </div>
 
           <div class="subsection alcohol">
@@ -193,6 +200,11 @@
           </div>
 
           <div class="subsection attendees">
+            <div class="btn-group">
+              <button class="btn active">Default</button>
+              <button class="btn">Option Two</button>
+              <button class="btn">Option Three</button>
+            </div>
             <div id="professions" class="chart"></div>
           </div>
 
