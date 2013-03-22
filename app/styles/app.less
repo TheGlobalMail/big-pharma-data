@@ -9,10 +9,6 @@
   z-index: 20;
 }
 
-* {
-
-}
-
 .navbar.special-feature .brand {
   background-size: auto;
   .transition(all 200ms linear);
@@ -32,7 +28,7 @@
     background-size:100% 12px;
     .transition(all 200ms linear);
   }
-  h1,h2,h3,h4,h5,p {
+  h1,h2,h3,h4,h5,p,strong,em {
     .transition(all 200ms linear);
   }
   h3 {
@@ -68,6 +64,9 @@
 
   .btn-group {
     margin: 10px auto;
+    display: block;
+    width: 100%;
+    clear: both;
     .btn {
       background-color: white;
       border: 1px solid #e5e5e5;
@@ -678,9 +677,14 @@
   }
 }
 
-  // IE8 hacks
+// IE8 hacks
+
+
 
 .lt-ie9 {
+  .no-ie {
+    display:none;
+  }
   #main {
     .subsection {
       &.spending {

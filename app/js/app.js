@@ -123,9 +123,9 @@
 
   function barChart(id, data, label, metric){
     var $professions = $(id);
-    var margin = {top: 10, right: 0, bottom: 20, left: 80},
+    var margin = {top: 10, right: 20, bottom: 20, left: 60},
         width = $professions.width() - margin.left - margin.right,
-        height = 210 - margin.top - margin.bottom;
+        height = 320 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
       .rangeRoundBands([0, width], 0.1);
     var y = d3.scale.linear()
