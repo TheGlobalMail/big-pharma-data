@@ -156,7 +156,7 @@
               <strong>The average cost per person at one of these events is</strong>
               <h4 class="large" id="perperson"></h4>
             </div>
-            <div class="chart placeholder">Chart</div>
+            <div id="perperson-chart" class="chart"></div>
           </div>
 
           <div class="subsection alcohol">
@@ -193,7 +193,15 @@
           </div>
 
           <div class="subsection attendees">
-            <div class="chart placeholder">Attendee Chart?</div>
+            <div id="professions" class="chart"></div>
+          </div>
+
+          <div class="subsection attendees">
+            <div id="professions-perperson" class="chart"></div>
+          </div>
+
+          <div class="subsection attendees">
+            <div id="professions-attendees" class="chart"></div>
           </div>
 
           <div class="subsection not-much">
@@ -224,6 +232,7 @@
   <script src="/components/jquery/jquery.js"></script>
   <script src="/components/lodash/lodash.js"></script>
   <script src="/components/backbone/backbone.js"></script>
+  <script src="/components/d3/d3.js"></script>
   <script src="/js/libs/to-dollars.js"></script>
   <script src="/js/loading-overlay.js"></script>
   <script src="/js/stats.js"></script>
