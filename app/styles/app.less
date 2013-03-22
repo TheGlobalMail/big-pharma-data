@@ -73,6 +73,7 @@
       border: 1px solid #e5e5e5;
       .box-shadow(none);
       color: @blue;
+      padding: 9px 13px 7px;
       &:hover, &.active {
           background-color: #f5f5f5;
           color: @grayDark;
@@ -374,6 +375,21 @@
               height: 28px;
               background: url(../images/totals-icons.svg) left 0 no-repeat;
             }
+            &:nth-child(2) {
+              &:before {
+                background-position: left -50px;
+              }
+            }
+            &:nth-child(3) {
+              &:before {
+                background-position: left -102px;
+              }
+            }
+            &:nth-child(4) {
+              &:before {
+                background-position: left -206px;
+              }
+            }
             strong {
               .font-size(16);
             }
@@ -613,6 +629,13 @@
             }
           }
         }
+      }
+      .world {
+        background: url(../images/world.svg) center center no-repeat transparent;
+        background-size: 100% auto;
+        width: 640px;
+        height: 265px;
+        margin: 20px auto;
       }
     }
     &.attendees {
