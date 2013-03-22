@@ -15,7 +15,7 @@
 }
 #main {
   // GLOBAL STYLES
-
+  @blueDark: #084975;
   .container {
     max-width: 1100px;
     width: 95%;
@@ -281,18 +281,7 @@
     .right {
       margin-left: 2%;
     }
-    .chart.placeholder {
-      clear: both;
-      background: @grayLighter;
-      color: @grayLight;
-      height: 120px;
-      text-align: center;
-      .font-size(20);
-      font-weight: bold;
-      font-weight: 800;
-      text-transform: uppercase;
-      padding-top: 90px;
-    }
+
 
     &.total {
       .pill {
@@ -652,6 +641,7 @@
       border-bottom: none;
       .text {
         max-width: 60%;
+        margin-left: 2%;
         float: left;
         strong, em {
           .font-size(32);
@@ -678,6 +668,49 @@
       border-bottom: none;
       p {
         text-align: center;
+      }
+      .data-container {
+        clear: both;
+        color: white;
+        text-align: left;
+        .font-size(16);
+        font-weight: bold;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 20px 10px;
+        ul {
+          margin: 0 auto;
+          display: block;
+          text-align: center;
+          li {
+            list-style: none;
+            display: inline-block;
+            text-align: left;
+
+            a {
+              display: inline-block;
+              color: white;
+              .border-radius(8px);
+              margin: 0 10px 10px;
+              width: 60%;
+              padding: 12px 14px 12px 60px;
+              background: @blue url(../images/doc-icons.svg) 6px 9px no-repeat;
+              &:hover {
+                text-decoration: none;
+                background-color: @blueDark;
+              }
+            }
+            &.pdf a {
+              background-position: 6px -60px;
+            }
+            span {
+              .font-size(12);
+              font-weight: normal;
+              display: block;
+              text-transform: none;
+            }
+          }
+        }
       }
     }
   }
