@@ -627,35 +627,43 @@ window.stats = {
   "perheadBins": [
     {
       "bin": 0,
-      "count": 2533
+      "count": 2533,
+      "hospitalitycount": 16004
     },
     {
       "bin": 10,
-      "count": 46352
+      "count": 46352,
+      "hospitalitycount": 46352
     },
     {
       "bin": 20,
-      "count": 53221
+      "count": 53221,
+      "hospitalitycount": 53221
     },
     {
       "bin": 50,
-      "count": 13588
+      "count": 13588,
+      "hospitalitycount": 13588
     },
     {
       "bin": 200,
-      "count": 33910
+      "count": 33910,
+      "hospitalitycount": 33910
     },
     {
       "bin": 1000,
-      "count": 5841
+      "count": 5841,
+      "hospitalitycount": 5841
     },
     {
       "bin": 10000,
-      "count": 1177
+      "count": 1177,
+      "hospitalitycount": 1177
     },
     {
       "bin": 100000,
-      "count": 50
+      "count": 50,
+      "hospitalitycount": 50
     }
   ],
   "professions": [

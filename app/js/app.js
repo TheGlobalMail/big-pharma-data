@@ -108,23 +108,23 @@
 
   function populateQuickPerPerson(){
     $('#under-10-person').text(
-        niceNumber(stats.perheadBins[0].count + stats.perheadBins[1].count)
+        niceNumber(stats.perheadBins[0].hospitalitycount + stats.perheadBins[1].count)
     );
     $('#under-20-person').text(
-        niceNumber(stats.perheadBins[2].count)
+        niceNumber(stats.perheadBins[2].hospitalitycount)
     );
     $('#under-50-person').text(
-        niceNumber(stats.perheadBins[3].count)
+        niceNumber(stats.perheadBins[3].hospitalitycount)
     );
     var rest = _.inject(stats.perheadBins.slice(3), function(sum, datum){
-      return sum + datum.count;
+      return sum + datum.hospitalitycount;
     }, 0);
     $('#over-50-person').text(niceNumber(rest));
   }
 
   function populatePerPerson(){
     var data = stats.perheadBins;
-    data[0].bin = 'Unknown';
+    data[0].bin = 'No cost!?';
     _.each(data.slice(1, data.length), function(datum){
       datum.bin = toDollars(datum.bin, "remove-cents");
     });
@@ -132,7 +132,7 @@
       datum.bin = "Up to " + datum.bin;
     });
     _.last(data).bin = 'Over ' + _.last(data).bin;
-    barChart("#perperson-chart", stats.perheadBins, 'bin', 'count');
+    barChart("#perperson-chart", stats.perheadBins, 'bin', 'hospitalitycount');
   }
 
   function populateProfessions(){
