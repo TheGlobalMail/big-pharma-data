@@ -43,7 +43,7 @@
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
       row += '  <td class="events">' + niceNumber(company.events) + '</td>';
       row += '  <td class="data">' + company.completed + '/?</td>';
-      row += '  <td class="site"><a href="#">Company site</a></td>';
+      row += '  <td class="site"><a href="#">Company Info</a></td>';
       row += '</tr>';
       return row;
     }).join("\n");
