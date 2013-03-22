@@ -5,6 +5,10 @@ Data visualisations and downloads for Medicines Australia data
 * **Staging URL:** [http://big-pharma-data.herokuapp.com/](http://big-pharma-data.herokuapp.com/)
 * **Production URL:** [http://big-pharma-data.theglobalmail.org/](http://big-pharma-data.theglobalmail.org/)
 
+## TODO
+
+* handle ie8 
+* toggles on graphs
 
 ## Installing
 

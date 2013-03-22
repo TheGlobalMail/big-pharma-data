@@ -1,4 +1,4 @@
-(function($, loadingOverlay, stats, toDollars, niceNumber) {
+(function($, loadingOverlay, stats, toDollars, niceNumber, d3) {
   'use strict';
 
   // Load the stats when the page is ready
@@ -22,9 +22,12 @@
 
     populateStatesMap();
 
-    populatePerPerson();
-
-    populateProfessions();
+    if (d3){
+      populatePerPerson();
+      populateProfessions();
+    }else{
+      disableD3Elements();
+    }
 
     loadingOverlay.dismiss();
   }
@@ -109,7 +112,6 @@
         return sum + d.count;
     }, 0)};
     data.push(finalPoint);
-    console.error(finalPoint);
     barChart("#perperson-chart", data, 'upper', 'count');
   }
 
@@ -125,7 +127,7 @@
         width = $professions.width() - margin.left - margin.right,
         height = 210 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
-      .rangeRoundBands([0, width], .1);
+      .rangeRoundBands([0, width], 0.1);
     var y = d3.scale.linear()
       .range([height, 0]);
     var xAxis = d3.svg.axis()
@@ -133,14 +135,14 @@
       .orient("bottom");
     var yAxis = d3.svg.axis()
       .scale(y)
-      .orient("left")
+      .orient("left");
     var svg = d3.select(id).append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    x.domain(data.map(function(d) { return d[label]; }));
+    x.domain(_.map(data, function(d) { return d[label]; }));
     y.domain([0, d3.max(data, function(d) { return d[metric]; })]);
 
     svg.append("g")
@@ -168,4 +170,8 @@
       .attr("height", function(d) { return height - y(d[metric]); });
   }
 
-}($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber));
+  function disableD3Elements(){
+    $('.attendees, #perperson-chart').css('display', 'none');
+  }
+
+}($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3));
