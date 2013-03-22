@@ -7,19 +7,14 @@ Data visualisations and downloads for Medicines Australia data
 
 ## TODO
 
-* fix spendratio
-* do bins
-  * zero
-  * 10
-  * 50
-  * 200
-  * 1000
-  * 100000
 * navigation
 * toggles on graphs
 * google map for international
   * use https://github.com/mledoze/countries/blob/master/countries.json
 * data downloads
+* icons for diseases
+* nice names
+* google analytics
 
 ## Installing
 
