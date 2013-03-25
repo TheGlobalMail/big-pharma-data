@@ -8,7 +8,6 @@
     var $activeSection;
 
     $nav.find('a').click(function(e){
-      console.error("got " + $(this).attr('href'));
       var href = $(this).attr('href');
       $.scrollTo(href, {duration: 'slow', onAfter: function(){
         var id = href.slice(1);
@@ -21,10 +20,8 @@
 
     $('#section-container section').waypoint({
       handler: function(){
-        console.error("got " + this.id);
         makeActive(this.id);
       }
-      //offset: '75%'
     });
 
     function makeActive(id){
@@ -34,8 +31,6 @@
       $activeSection = $nav.find('#' + id + '-link');
       $activeSection.addClass('active');
     }
-
-    // Scroll to initiall section
   }
 
 }($));
