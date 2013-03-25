@@ -11,9 +11,9 @@
   BarChart.prototype.render = function(){
     var convertedData = this.convertData();
     var $professions = $(this.id);
-    var margin = {top: 10, right: 20, bottom: 20, left: 80},
+    var margin = {top: 10, right: 20, bottom: 20, left: 65},
         width = $professions.width() - margin.left - margin.right;
-    var height = this.height = 320 - margin.top - margin.bottom;
+    var height = this.height = 260 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
       .rangeRoundBands([0, width], 0.4);
     var y = this.yScale = d3.scale.linear()
