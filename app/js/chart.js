@@ -71,7 +71,7 @@
     this.yAxis.scale(yScale);
     this.chart.select(".y").transition().duration(10).call(this.yAxis);
     this.barData.data(convertedData)
-      .transition().duration(2000).delay(200)
+      .transition().duration(500).delay(50)
       .attr("y", function(d) { return yScale(d.y); })
       .attr("height", function(d) { return height - yScale(d.y); });
   };
