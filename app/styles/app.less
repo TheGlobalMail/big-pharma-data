@@ -13,6 +13,34 @@
   background-size: auto;
   .transition(all 200ms linear);
 }
+
+h3 {
+  font-family: @serifFontFamily;
+  .font-size(36);
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  &.line {
+    width: 100%;
+    margin: 5% 0 2.5%;
+      &:before {
+        position: relative;
+        top: 20px;
+        z-index: 1;
+        display: block;
+        border-bottom: 1px solid #333;
+        content: '';
+      }
+      span {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        padding: 0 10px;
+        background-color: #fff;
+      }
+  }
+}
+
 #main {
   // GLOBAL STYLES
   @blueDark: #084975;
@@ -31,32 +59,7 @@
   h1,h2,h3,h4,h5,p,strong,em {
     .transition(all 200ms linear);
   }
-  h3 {
-    font-family: @serifFontFamily;
-    .font-size(36);
-    font-style: normal;
-    text-transform: uppercase;
-    text-align: center;
-    &.line {
-      width: 100%;
-      margin: 5% 0 2.5%;
-        &:before {
-          position: relative;
-          top: 20px;
-          z-index: 1;
-          display: block;
-          border-bottom: 1px solid #333;
-          content: '';
-        }
-        span {
-          position: relative;
-          z-index: 2;
-          display: inline-block;
-          padding: 0 10px;
-          background-color: #fff;
-        }
-    }
-  }
+
   p {
     .font-size(18);
     line-height: 1.4;
@@ -130,8 +133,13 @@
     li {
       border-bottom: 1px solid #e5e5e5;
       position: relative;
+      background-color: white;
+      &:first-child {
+        .border-top-radius(6px);
+      }
       &:last-child{
         border-bottom: none;
+        .border-bottom-radius(6px);
       }
       a {
         display: block;
@@ -140,6 +148,9 @@
         &:hover, &.active {
           text-decoration:none;
           background-color: #f5f5f5;
+        }
+        &:first-child {
+          .border-top-radius(6px);
         }
         &:last-child{
           .border-bottom-radius(6px);
@@ -713,8 +724,7 @@
   #data {
     background: none;
     margin-top: 0;
-    // required so that waypoint is triggered when you scroll right to bottom
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     .data {
       margin-top: 0;
       padding-top:0;
@@ -766,6 +776,23 @@
   }
 }
 
+footer {
+  background-color: #333334;
+  #gradient.vertical-three-colors(#222,#333,3%,#343539);
+  padding: 20px 0 40px;
+  height: 260px;
+  h4 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  ul {
+    li {
+      color: white;
+    }
+  }
+}
+
 // IE8 hacks
 
 
@@ -810,15 +837,33 @@
   font-size: 1rem !important;
   .axis path, .axis line {
     fill: none;
-    stroke: #000;
+    stroke: #e5e5e5;
     shape-rendering: crispEdges;
   }
 
   .bar {
-    fill: steelblue;
+    fill: @blue;
   }
 
-  .x.axis path {
-    display: none;
+  .y.axis path {
+    stroke: none;
+  }
+
+  .x.axis line {
+    stroke: none;
+  }
+
+  .x.axis text,
+  .y.axis text {
+    fill: @grayLight;
+  }
+
+  .y.axis text {
+    font-style: italic;
+  }
+
+  .x.axis text {
+    font-weight: bold;
+    .font-size(12);
   }
 }
