@@ -1,10 +1,11 @@
 (function($, d3) {
 
-  var BarChart = window.BarChart = function(id, data, label, metric){
+  var BarChart = window.BarChart = function(id, data, label, metric, keepScale){
     this.data = data;
     this.id = id;
     this.label = label;
     this.metric = metric;
+    this.keepScale = keepScale;
   };
 
   BarChart.prototype.render = function(){
@@ -67,9 +68,11 @@
     var height = this.height;
     var yScale = this.yScale;
     var convertedData = this.convertData();
-    yScale.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
-    this.yAxis.scale(yScale);
-    this.chart.select(".y").transition().duration(10).call(this.yAxis);
+    if (!this.keepScale){
+      yScale.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
+      this.yAxis.scale(yScale);
+      this.chart.select(".y").transition().duration(10).call(this.yAxis);
+    }
     this.barData.data(convertedData)
       .transition().duration(500).delay(50)
       .attr("y", function(d) { return yScale(d.y); })
