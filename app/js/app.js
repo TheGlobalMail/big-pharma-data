@@ -132,13 +132,13 @@
       datum.bin = "Up to " + datum.bin;
     });
     _.last(data).bin = 'Over ' + _.last(data).bin;
-    var chart = new BarChart("#perperson-chart", stats.perheadBins, 'bin', 'hospitalitycount');
+    var chart = new BarChart("#perperson-chart", stats.perheadBins, 'bin', 'hospitalitycount', !!'keepScale');
     chart.render();
     bindButtons('#perperson-chart button', chart);
   }
 
   function populateProfessions(){
-    var chart = new BarChart('#professions', stats.professions, 'profession', 'attendees');
+    var chart = new BarChart('#professions', stats.professions, 'profession', 'attendees', !'keepScale');
     chart.render();
     bindButtons('#attendees button', chart);
   }
