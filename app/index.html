@@ -163,8 +163,8 @@
               <strong>But for the vast majority it amounts to the cost of a coffee and a muffin</strong>
               <p>Hospitality is just the cost of food and beverages. Total cost can include sponsorships, flights and other things related to events - these costs are not manditory to provide (CHECK THIS).</p>
               <div class="btn-group">
-                <button class="btn active">Hospitality only</button>
-                <button class="btn">Total Cost</button>
+                <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
+                <button data-metric="count" class="btn">Total Cost</button>
               </div>
             </div>
           </div>
@@ -202,14 +202,14 @@
             <div class="world"></div>
           </div>
 
-          <div class="subsection attendees">
+          <div id="attendees" class="subsection attendees">
             <strong>Medical professionals of all kinds attend these events</strong>
             <div class="btn-group">
-              <button class="btn active"># attendees</button>
-              <button class="btn">Total Spend</button>
-              <button class="btn">Spend PP</button>
+              <button data-metric="attendees" class="btn active">Number of attendees</button>
+              <button data-metric="cost" class="btn">Total Spend</button>
+              <button data-metric="perperson" class="btn">Spend PP</button>
             </div>
-            <div id="professions-attendees" class="chart"></div>
+            <div id="professions" class="chart"></div>
           </div>
 
 
@@ -307,6 +307,7 @@
   <script src="/components/tgm-bootstrap/js/bootstrap-affix.js"></script>
   <script src="/js/libs/to-dollars.js"></script>
   <script src="/js/loading-overlay.js"></script>
+  <script src="/js/chart.js"></script>
   <script src="/js/stats.js"></script>
   <script src="/js/navigation.js"></script>
   <script src="/js/app.js"></script>

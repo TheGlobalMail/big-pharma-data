@@ -1,4 +1,4 @@
-(function($, loadingOverlay, stats, toDollars, niceNumber, d3) {
+(function($, loadingOverlay, stats, toDollars, niceNumber, d3, BarChart) {
   'use strict';
 
   // Load the stats when the page is ready
@@ -132,66 +132,29 @@
       datum.bin = "Up to " + datum.bin;
     });
     _.last(data).bin = 'Over ' + _.last(data).bin;
-    barChart("#perperson-chart", stats.perheadBins, 'bin', 'hospitalitycount');
+    var chart = new BarChart("#perperson-chart", stats.perheadBins, 'bin', 'hospitalitycount');
+    chart.render();
+    bindButtons('#perperson-chart button', chart);
   }
 
   function populateProfessions(){
-    barChart('#professions', stats.professions, 'profession', 'cost');
-    barChart('#professions-attendees', stats.professions, 'profession', 'attendees');
-    barChart('#professions-perperson', stats.professions, 'profession', 'perperson');
-  }
-
-  function barChart(id, data, label, metric){
-    var $professions = $(id);
-    var margin = {top: 10, right: 20, bottom: 20, left: 60},
-        width = $professions.width() - margin.left - margin.right,
-        height = 320 - margin.top - margin.bottom;
-    var x = d3.scale.ordinal()
-      .rangeRoundBands([0, width], 0.4);
-    var y = d3.scale.linear()
-      .range([height, 0]);
-    var xAxis = d3.svg.axis()
-      .scale(x)
-      .orient("bottom");
-    var yAxis = d3.svg.axis()
-      .scale(y)
-      .orient("left");
-    var svg = d3.select(id).append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    x.domain(_.map(data, function(d) { return d[label]; }));
-    y.domain([0, d3.max(data, function(d) { return d[metric]; })]);
-
-    svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
-
-    svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text(metric);
-
-    svg.selectAll(".bar")
-      .data(data)
-      .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return x(d[label]); })
-      .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d[metric]); })
-      .attr("height", function(d) { return height - y(d[metric]); });
+    var chart = new BarChart('#professions', stats.professions, 'profession', 'attendees');
+    chart.render();
+    bindButtons('#attendees button', chart);
   }
 
   function disableD3Elements(){
     $('.attendees, #perperson-chart').addClass('no-ie');
   }
 
-}($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3));
+  function bindButtons(buttons, chart){
+    var $buttons = $(buttons);
+    $buttons.click(function(){
+      var $button = $(this);
+      chart.updateMetric($button.data('metric'));
+      $buttons.removeClass('active');
+      $button.addClass('active');
+    });
+  }
+
+}($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3, window.BarChart));
