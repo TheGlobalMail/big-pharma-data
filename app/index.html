@@ -73,10 +73,10 @@
       <div class="row-fluid">
         <div class="span3 nav-col">
           <ul id="nav" role="menu">
-            <li class="active"><a href="#">Introduction</a></li>
-            <li><a href="#">Current status</a></li>
-            <li><a href="#">Stats so far</a></li>
-            <li><a href="#">Get the data</a></li>
+            <li id="introduction-link"><a href="#introduction">Introduction</a></li>
+            <li id="status-link"><a href="#status">Current status</a></li>
+            <li id="stats-link"><a href="#stats">Stats so far</a></li>
+            <li id="data-link"><a href="#data">Get the data</a></li>
           </ul>
         </div>
         <section id="introduction" class="offset3">
@@ -228,9 +228,9 @@
             <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
             <div class="data-container">
               <ul>
-                <li class="csv"><a href="#" target="_blank">All the data <span>Single CSV - 5?mb</span></a></li>
-                <li class="csv"><a href="#" target="_blank">By company <span>MUltiple CSVs - 5?mb</span></a></li>
-                <li class="pdf"><a href="#" target="_blank">Original PDFs<span> 149mb</span></a></li>
+                <li class="csv"><a href="/downloads/complete_data_all.zip">All the data <span>Single CSV - 13MB</span></a></li>
+                <li class="csv"><a href="/downloads/complete_data_by_year.zip">By year <span>Multiple CSVs - 9MB</span></a></li>
+                <li class="pdf"><a href="/downloads/Original-PDF.zip">Original PDFs<span>Multiple PDFs - 149MB</span></a></li>
               </ul>
             </div>
           </div>
@@ -251,9 +251,12 @@
   <script src="/components/jquery/jquery.js"></script>
   <script src="/components/lodash/lodash.js"></script>
   <script src="/components/backbone/backbone.js"></script>
+  <script src="/components/jquery-waypoints/waypoints.js"></script>
+  <script src="/components/jquery.scrollTo/jquery.scrollTo.js"></script>
   <script src="/js/libs/to-dollars.js"></script>
   <script src="/js/loading-overlay.js"></script>
   <script src="/js/stats.js"></script>
+  <script src="/js/navigation.js"></script>
   <script src="/js/app.js"></script>
   <!-- endbuild -->
 </body>

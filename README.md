@@ -7,12 +7,13 @@ Data visualisations and downloads for Medicines Australia data
 
 ## TODO
 
-* navigation
 * toggles on graphs
 * google map for international
   * use https://github.com/mledoze/countries/blob/master/countries.json
 * data downloads
+  * need pdfs
 * icons for diseases
+* percentage complete on table
 * nice names
 * google analytics
 
