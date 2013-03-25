@@ -656,36 +656,38 @@
     .subsection {
       position: relative;
       .text {
-        max-width: 62%;
+        max-width: 60%;
         margin-left: 2%;
-        float: left;
-        strong, em {
+        p,strong, em {
           .font-size(24);
           line-height: 1.3;
+          text-align: left;
         }
       }
       &.doctors {
-        height: 230px;
         .doctor {
           position: absolute;
           right:2%;
           top: 5%;
           background: url(../images/doctor.svg) center center no-repeat white;
           background-size: 96% auto;
-          width:250px;
-          height: 225px;
+          width:220px;
+          height: 200px;
           border: 1px solid #e5e5e5;
           .border-radius(2px);
           .box-shadow(0 1px 3px #e5e5e5);
         }
       }
       &.drugs {
-        height: 200px;
+        .text {
+          float: none;
+          margin-left: 300px;
+        }
         .drug {
           position: absolute;
-          right:2%;
-          top: 5%;
-          background: url(../images/drugs-in-question.svg) center center no-repeat white;
+          left:2%;
+          top: -45px;
+          background: url(../images/drugs-in-question.svg) center center no-repeat transparent;
           background-size: contain;
           width:280px;
           height: 239px;
@@ -694,11 +696,11 @@
       }
       &.not-much {
         border-bottom: none;
-        height: 300px;
+        min-height: 190px;
         .thermometer {
           position: absolute;
           right:2%;
-          top: 5%;
+          top: -70px;
           background: url(../images/thermometer.svg) center center no-repeat transparent;
           background-size: contain;
           width:300px;

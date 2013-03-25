@@ -132,7 +132,7 @@
       .subsection {
         .text {
             text-align: left;
-            em, strong {
+            p,em, strong {
             .font-size(26);
             }
           }
@@ -332,7 +332,7 @@
           float: none;
           max-width: none;
           text-align: center;
-            strong,em {
+            p,strong,em {
               .font-size(18);
             }
           }
@@ -347,6 +347,9 @@
         }
         &.drugs {
           height: auto;
+          .text {
+            margin-left: 0;
+          }
           .drug {
             position: relative;
             right: initial;
