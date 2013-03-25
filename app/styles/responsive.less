@@ -1,5 +1,8 @@
-// TABLET PORTRAIT
-@media only screen and (max-width: 1020px) {
+
+
+// SMALL SCREEN
+
+@media only screen and (max-width: 980px) {
   .row-fluid .offset3 {
     margin: initial;
     margin-left: 0;
@@ -8,11 +11,6 @@
     display: none;
     width: 0;
   }
-}
-
-// SMALL SCREEN
-
-@media only screen and (max-width: 950px) {
   .navbar.special-feature {
     padding: 8px 20px;
     .brand.brand-center {
@@ -124,15 +122,22 @@
           margin: 0;
         }
       }
-      &.not-much {
-        padding-right: 0;
-        .text em, .text strong {
-          .font-size(26);
-        }
-      }
       &.alcohol {
         .bottle {
           width: auto;
+        }
+      }
+    }
+    #dont-know {
+      .subsection {
+        .text {
+            text-align: left;
+            em, strong {
+            .font-size(26);
+            }
+          }
+        &.not-much {
+          padding-right: 0;
         }
       }
     }
@@ -320,22 +325,26 @@
           height: 120px;
         }
       }
-      &.not-much {
-        height: auto;
+    }
+    #dont-know {
+      .subsection {
         .text {
-          float: none;
+            float: none;
           max-width: none;
           text-align: center;
           strong,em {
             .font-size(18);
           }
-        }
-        .thermometer {
-          position: relative;
-          right: initial;
-          top: initial;
-          width: 100%;
-          height: 240px;
+          }
+        &.not-much {
+          height: auto;
+          .thermometer {
+            position: relative;
+            right: initial;
+            top: initial;
+            width: 100%;
+            height: 240px;
+          }
         }
       }
     }
