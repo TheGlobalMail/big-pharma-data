@@ -329,13 +329,31 @@
     #dont-know {
       .subsection {
         .text {
-            float: none;
+          float: none;
           max-width: none;
           text-align: center;
-          strong,em {
-            .font-size(18);
+            strong,em {
+              .font-size(18);
+            }
           }
+        &.doctors {
+          height: auto;
+          .doctor {
+            position: relative;
+            right: initial;
+            top: initial;
+            margin: 10px auto 0;
           }
+        }
+        &.drugs {
+          height: auto;
+          .drug {
+            position: relative;
+            right: initial;
+            top: initial;
+            margin: 10px auto 0;
+          }
+        }
         &.not-much {
           height: auto;
           .thermometer {
