@@ -1,6 +1,8 @@
 (function($) {
   'use strict';
 
+  var scrollOffset = 60;
+
   $(setupWaypoints);
 
   function setupWaypoints(){
@@ -9,7 +11,8 @@
 
     $nav.find('a').click(function(e){
       var href = $(this).attr('href');
-      $.scrollTo(href, {duration: 'slow', onAfter: function(){
+      var scrollY = $(href).offset().top - scrollOffset;
+      $.scrollTo({top: scrollY, left: 0}, {duration: 'slow', onAfter: function(){
         var id = href.slice(1);
         // XXX should we update the hash?
         // window.location.hash = href;
@@ -29,7 +32,6 @@
         $activeSection.removeClass('active');
       }
       $activeSection = $nav.find('li[data-link=' + id + ']');
-      console.error($activeSection.length);
       $activeSection.addClass('active');
     }
   }
