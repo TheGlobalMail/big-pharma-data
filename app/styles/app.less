@@ -700,6 +700,37 @@
     }
     &.world {
       text-align: center;
+      ul#countries {
+        width:90%;
+        margin: 20px auto 0;
+        min-height: 200px;
+        li {
+          list-style: none;
+          text-align: left;
+          .font-size(16);
+          ul {
+            float: left;
+            margin: 0 3% 0 0;
+            li {
+              font-style: italic;
+              &:first-child {
+                font-weight: bold;
+                font-style: normal;
+                &:before {
+                  content: '';
+                  display: block;
+                  width: 110px;
+                  height: 65px;
+                  background: url(../images/flags.svg) left top no-repeat transparent;
+                }
+              }
+            }
+            &:nth-child(2) li:first-child:before {
+                background-position: -100px left;
+              }
+          }
+        }
+      }
     }
     &.attendees {
       text-align: center;
