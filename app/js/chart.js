@@ -49,6 +49,16 @@
       .attr("dy", ".71em")
       .style("text-anchor", "end");
 
+    svg.selectAll("line.y")
+      .data(y.ticks(6))
+      .enter().append("line")
+      .attr("class", "y")
+      .attr("x1", 0)
+      .attr("x2", width)
+      .attr("y1", y)
+      .attr("y2", y)
+      .style("stroke", "#f5f5f5");
+
     this.barData = svg.selectAll(".bar")
       .data(convertedData)
       .enter().append("rect")
@@ -58,15 +68,7 @@
       .attr("y", function(d) { return y(d.y); })
       .attr("height", function(d) { return height - y(d.y); });
 
-    svg.selectAll("line.y")
-      .data(y.ticks(6))
-      .enter().append("line")
-      .attr("class", "y")
-      .attr("x1", 0)
-      .attr("x2", width)
-      .attr("y1", y)
-      .attr("y2", y)
-      .style("stroke", "#ccc");
+
   };
 
   BarChart.prototype.convertData = function(){
