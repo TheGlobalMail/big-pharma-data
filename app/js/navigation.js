@@ -4,7 +4,7 @@
   $(setupWaypoints);
 
   function setupWaypoints(){
-    var $nav = $('#nav');
+    var $nav = $('.nav');
     var $activeSection;
 
     $nav.find('a').click(function(e){
@@ -28,7 +28,8 @@
       if ($activeSection){
         $activeSection.removeClass('active');
       }
-      $activeSection = $nav.find('#' + id + '-link');
+      $activeSection = $nav.find('li[data-link=' + id + ']');
+      console.error($activeSection.length);
       $activeSection.addClass('active');
     }
   }
