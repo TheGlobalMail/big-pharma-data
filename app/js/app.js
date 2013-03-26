@@ -7,6 +7,7 @@
   // Render the stats into the html and dismiss loading overlay when done
   function populateStats(){
     $('#total-cost').text(toDollars(stats.summary.cost));
+    $('#per-year-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365)));
     $('#total-events').text(niceNumber(stats.summary.events));
 
     populateCompanies();
