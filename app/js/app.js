@@ -153,21 +153,15 @@
       .data(stats.countries.slice(0, maxCountries))
       .enter()
       .append("li")
-      .append("ul");
-    rows.selectAll("li")
-      .data(function(row){
-        return columns.map(function(column){
-          return {column: column, value: row[column]};
-        });
-      })
-      .enter()
-      .append("li")
-      .text(function(d){
-        if (d.column === 'cost'){
-          return toDollars(d.value);
-        }else{
-          return d.value;
-        }
+      .attr('class', function(row){ return row.country.toLowerCase().replace(/ /g, '-'); })
+      .append("dl")
+      .html(function(row){
+        return _.map(columns, function(column){
+          var html = "<dt>" + column + "</dt>";
+          var value = row[column];
+          html += "<dd>" + (column === 'cost' ? toDollars(value) : value) + "</dd>";
+          return html;
+        }).join('');
       });
   }
 
