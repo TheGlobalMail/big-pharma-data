@@ -146,21 +146,22 @@
   }
 
   function populateWorld(){
-    var maxCountries = 20;
+    var maxCountries = 5;
     var columns = ['country', 'events', 'attendees', 'cost'];
-    var tbody = d3.select('#world tbody');
-    var rows = tbody.selectAll("tr")
+    var countries = d3.select('#world #countries');
+    var rows = countries.selectAll("li")
       .data(stats.countries.slice(0, maxCountries))
       .enter()
-      .append("tr");
-    rows.selectAll("td")
+      .append("li")
+      .append("ul");
+    rows.selectAll("li")
       .data(function(row){
         return columns.map(function(column){
           return {column: column, value: row[column]};
         });
       })
       .enter()
-      .append("td")
+      .append("li")
       .text(function(d){
         if (d.column === 'cost'){
           return toDollars(d.value);
