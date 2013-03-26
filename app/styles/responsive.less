@@ -136,7 +136,28 @@
           width: auto;
         }
       }
+      &.world {
+      text-align: center;
+        ul#countries {
+          width:300px;
+          li {
+            .font-size(14);
+            line-height: 1.2;
+            ul {
+              float: none;
+              padding-left: 120px;
+              position: relative;
+              li:first-child:before {
+                position: absolute;
+                left: 0;
+                top: 4px;
+              }
+            }
+          }
+        }
+      }
     }
+
     #dont-know {
       .subsection {
         .text {
