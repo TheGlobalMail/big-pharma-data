@@ -351,6 +351,11 @@
     }
     p {
         text-align: center;
+        &.subhead {
+          .font-size(14);
+          color: @grayLight;
+          padding: 6px 8% 0;
+        }
       }
 
 
@@ -507,12 +512,6 @@
         background-size:100% 12px;
         .btn-group {
           margin-top: 20px;
-        }
-        p {
-          .font-size(14);
-          // text-transform: uppercase;
-          color: @grayLight;
-          padding: 6px 8% 0;
         }
       }
     }
@@ -698,13 +697,9 @@
           }
         }
       }
-      .world {
-        background: url(../images/world.svg) center center no-repeat transparent;
-        background-size: 100% auto;
-        width: 640px;
-        height: 265px;
-        margin: 20px auto;
-      }
+    }
+    &.world {
+      text-align: center;
     }
     &.attendees {
       text-align: center;
