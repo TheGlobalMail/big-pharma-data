@@ -22,12 +22,29 @@
     }
   }
   #main {
+    .nav-mob{
+      display: block;
+      z-index: 999;
+      #nav {
+        margin: 0;
+        &.affix {
+          position: fixed;
+          top: 0;
+          left: 0;
+          .box-shadow(0 3px 20px rgba(0,0,0,0.2));
+        }
+      }
+    }
     .container {
       width: 90%;
     }
     #title {
+      padding-bottom: 20px;
       h1 {
         .font-size(60);
+      }
+      h2 {
+        margin-bottom: 10px;
       }
     }
   }
@@ -46,8 +63,9 @@
       width: 85%;
     }
     #title {
-      margin-bottom: 20px;
-      padding-bottom: 40px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
       h1 {
         .font-size(30);
         margin-bottom: 0;
@@ -160,7 +178,7 @@
     }
     #title {
       margin-bottom: 10px;
-      padding-bottom: 40px;
+      padding-bottom: 20px;
     }
     #status {
       table tr {

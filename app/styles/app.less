@@ -113,7 +113,7 @@ h3 {
   // NAVIGATION
 
 
-  #nav {
+  .nav-col #nav {
     margin: 20px 0 0;
     font-size: 14px;
     font-size: 1.4rem;
@@ -258,6 +258,35 @@ h3 {
           line-height: 1;
         }
       }
+    }
+  }
+
+  .nav-mob {
+    text-align: center;
+    display: none;
+      #nav {
+        display: block;
+        height: 29px;
+        width: 100%;
+        background-color: white;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 9999;
+        margin-top: 10px;
+        padding-top: 11px;
+        li {
+          margin: 0;
+          list-style: none;
+          display: inline-block;
+          .font-size(12);
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 0px 8px;
+          border-right: 1px solid #e5e5e5;
+          &:last-child {
+            border: none;
+          }
+        }
     }
   }
 
