@@ -553,74 +553,74 @@ window.stats = {
   "states": [
     {
       "state": null,
-      "cost": 33166546.45,
-      "attendees": 756395,
-      "events": 21253,
-      "perperson": 93.83,
-      "alcohol": 4661
+      "cost": 32473981.64,
+      "attendees": 733317,
+      "events": 20233,
+      "perperson": 97.2,
+      "alcohol": 4655
     },
     {
       "state": "qld",
-      "cost": 42534813.46,
-      "attendees": 616615,
-      "events": 23646,
-      "perperson": 65.53,
-      "alcohol": 3320
+      "cost": 42948191.09,
+      "attendees": 630730,
+      "events": 24314,
+      "perperson": 64.54,
+      "alcohol": 3324
     },
     {
       "state": "nsw",
-      "cost": 102238793.72,
-      "attendees": 1115670,
-      "events": 42706,
-      "perperson": 62.58,
+      "cost": 102336647.67,
+      "attendees": 1118143,
+      "events": 42825,
+      "perperson": 62.49,
       "alcohol": 5106
     },
     {
       "state": "nt",
-      "cost": 3432591.05,
-      "attendees": 52681,
-      "events": 1173,
-      "perperson": 157.75,
+      "cost": 3382613.48,
+      "attendees": 51493,
+      "events": 1132,
+      "perperson": 161.69,
       "alcohol": 85
     },
     {
       "state": "tas",
-      "cost": 4299521.97,
-      "attendees": 67069,
-      "events": 2426,
-      "perperson": 70.6,
+      "cost": 4336581.25,
+      "attendees": 68687,
+      "events": 2488,
+      "perperson": 69.32,
       "alcohol": 361
     },
     {
       "state": "wa",
-      "cost": 20344648.77,
-      "attendees": 350331,
-      "events": 13090,
+      "cost": 20350179.5,
+      "attendees": 350369,
+      "events": 13087,
       "perperson": 67.35,
-      "alcohol": 1519
+      "alcohol": 1521
     },
     {
       "state": "act",
-      "cost": 4393503.91,
-      "attendees": 58272,
-      "events": 2212,
-      "perperson": 74.79,
+      "cost": 4521466.9,
+      "attendees": 61792,
+      "events": 2331,
+      "perperson": 72.22,
       "alcohol": 375
     },
     {
       "state": "vic",
-      "cost": 80040746.98,
-      "attendees": 934526,
-      "events": 35426,
-      "perperson": 60.27,
+      "cost": 80086063.03,
+      "attendees": 936627,
+      "events": 35505,
+      "perperson": 60.18,
       "alcohol": 3643
     },
     {
       "state": "sa",
-      "cost": 19956972.13,
-      "attendees": 335975,
-      "events": 12207,
-      "perperson": 65.68,
+      "cost": 19972413.88,
+      "attendees": 336376,
+      "events": 12224,
+      "perperson": 65.63,
       "alcohol": 1636
     }
   ],
@@ -722,6 +722,376 @@ window.stats = {
       "events": 57720,
       "alcohol": 3855,
       "perperson": 56.1
+    }
+  ],
+  "countries": [
+    {
+      "country": "United States",
+      "cost": 2300025,
+      "attendees": 17146,
+      "events": 487,
+      "perperson": 413.59,
+      "alcohol": 179
+    },
+    {
+      "country": "New Zealand",
+      "cost": 2540214.77,
+      "attendees": 35452,
+      "events": 172,
+      "perperson": 122.73,
+      "alcohol": 39
+    },
+    {
+      "country": "Spain",
+      "cost": 373022.47,
+      "attendees": 1615,
+      "events": 89,
+      "perperson": 624.08,
+      "alcohol": 37
+    },
+    {
+      "country": "Germany",
+      "cost": 368500.83,
+      "attendees": 1026,
+      "events": 86,
+      "perperson": 713.96,
+      "alcohol": 25
+    },
+    {
+      "country": "France",
+      "cost": 101921.68,
+      "attendees": 762,
+      "events": 76,
+      "perperson": 265.97,
+      "alcohol": 13
+    },
+    {
+      "country": "Italy",
+      "cost": 240490.85,
+      "attendees": 988,
+      "events": 70,
+      "perperson": 602.12,
+      "alcohol": 21
+    },
+    {
+      "country": "Sweden",
+      "cost": 235891.1,
+      "attendees": 799,
+      "events": 64,
+      "perperson": 286.03,
+      "alcohol": 27
+    },
+    {
+      "country": "Canada",
+      "cost": 63567.04,
+      "attendees": 511,
+      "events": 46,
+      "perperson": 206.06,
+      "alcohol": 10
+    },
+    {
+      "country": "Austria",
+      "cost": 140497.21,
+      "attendees": 587,
+      "events": 46,
+      "perperson": 322.03,
+      "alcohol": 22
+    },
+    {
+      "country": "Netherlands",
+      "cost": 165594.92,
+      "attendees": 590,
+      "events": 36,
+      "perperson": 608.88,
+      "alcohol": 11
+    },
+    {
+      "country": "Switzerland",
+      "cost": 237665.54,
+      "attendees": 328,
+      "events": 31,
+      "perperson": 1270.54,
+      "alcohol": 18
+    },
+    {
+      "country": "Portugal",
+      "cost": 26199.77,
+      "attendees": 290,
+      "events": 28,
+      "perperson": 74.56,
+      "alcohol": 17
+    },
+    {
+      "country": "Denmark",
+      "cost": 398719.73,
+      "attendees": 322,
+      "events": 27,
+      "perperson": 2313.69,
+      "alcohol": 4
+    },
+    {
+      "country": "Thailand",
+      "cost": 133351.07,
+      "attendees": 372,
+      "events": 22,
+      "perperson": 1365.68,
+      "alcohol": 6
+    },
+    {
+      "country": "Turkey",
+      "cost": 98365.23,
+      "attendees": 411,
+      "events": 22,
+      "perperson": 621.13,
+      "alcohol": 7
+    },
+    {
+      "country": "Australia",
+      "cost": 35921.9,
+      "attendees": 469,
+      "events": 22,
+      "perperson": 57.12,
+      "alcohol": 9
+    },
+    {
+      "country": "China",
+      "cost": 65546.23,
+      "attendees": 732,
+      "events": 19,
+      "perperson": 620.01,
+      "alcohol": 6
+    },
+    {
+      "country": "Czech Republic",
+      "cost": 61814.74,
+      "attendees": 255,
+      "events": 18,
+      "perperson": 298.73,
+      "alcohol": 2
+    },
+    {
+      "country": "Japan",
+      "cost": 12243.87,
+      "attendees": 102,
+      "events": 18,
+      "perperson": 122.1,
+      "alcohol": 2
+    },
+    {
+      "country": "Hong Kong",
+      "cost": 150904.63,
+      "attendees": 3490,
+      "events": 16,
+      "perperson": 735.18,
+      "alcohol": 8
+    },
+    {
+      "country": "Singapore",
+      "cost": 44635.61,
+      "attendees": 463,
+      "events": 16,
+      "perperson": 688.51,
+      "alcohol": 0
+    },
+    {
+      "country": "Argentina",
+      "cost": 53050.34,
+      "attendees": 131,
+      "events": 14,
+      "perperson": 860.49,
+      "alcohol": 9
+    },
+    {
+      "country": "Greece",
+      "cost": 51693.1,
+      "attendees": 33,
+      "events": 10,
+      "perperson": 2534.93,
+      "alcohol": 3
+    },
+    {
+      "country": "Georgia",
+      "cost": 12628.12,
+      "attendees": 99,
+      "events": 8,
+      "perperson": 160.79,
+      "alcohol": 1
+    },
+    {
+      "country": "Belgium",
+      "cost": 79428.08,
+      "attendees": 52,
+      "events": 8,
+      "perperson": 1398.07,
+      "alcohol": 0
+    },
+    {
+      "country": "Brazil",
+      "cost": 18465.84,
+      "attendees": 146,
+      "events": 7,
+      "perperson": 120.62,
+      "alcohol": 3
+    },
+    {
+      "country": "United Kingdom",
+      "cost": 16214.1,
+      "attendees": 147,
+      "events": 7,
+      "perperson": 94.3,
+      "alcohol": 0
+    },
+    {
+      "country": "India",
+      "cost": 61703.1,
+      "attendees": 62,
+      "events": 6,
+      "perperson": 1415.94,
+      "alcohol": 4
+    },
+    {
+      "country": "Mexico",
+      "cost": 2907.47,
+      "attendees": 54,
+      "events": 5,
+      "perperson": 80.2,
+      "alcohol": 3
+    },
+    {
+      "country": "Finland",
+      "cost": 82057.45,
+      "attendees": 29,
+      "events": 5,
+      "perperson": 2345.1,
+      "alcohol": 5
+    },
+    {
+      "country": "Malaysia",
+      "cost": 16550.21,
+      "attendees": 58,
+      "events": 5,
+      "perperson": 1218.63,
+      "alcohol": 1
+    },
+    {
+      "country": "South Africa",
+      "cost": 2308.47,
+      "attendees": 42,
+      "events": 4,
+      "perperson": 34.71,
+      "alcohol": 1
+    },
+    {
+      "country": "Monaco",
+      "cost": 6702,
+      "attendees": 42,
+      "events": 4,
+      "perperson": 150.63,
+      "alcohol": 3
+    },
+    {
+      "country": "South Korea",
+      "cost": 19339,
+      "attendees": 176,
+      "events": 4,
+      "perperson": 112.25,
+      "alcohol": 3
+    },
+    {
+      "country": "Indonesia",
+      "cost": 8756.11,
+      "attendees": 3162,
+      "events": 3,
+      "perperson": 69.75,
+      "alcohol": 0
+    },
+    {
+      "country": "Puerto Rico",
+      "cost": 11688.04,
+      "attendees": 8,
+      "events": 2,
+      "perperson": 5594.15,
+      "alcohol": 0
+    },
+    {
+      "country": "Ireland",
+      "cost": 1788.19,
+      "attendees": 11,
+      "events": 2,
+      "perperson": 172.08,
+      "alcohol": 1
+    },
+    {
+      "country": "Iceland",
+      "cost": 1615,
+      "attendees": 24,
+      "events": 2,
+      "perperson": 70.57,
+      "alcohol": 0
+    },
+    {
+      "country": "Norway",
+      "cost": 1236.5,
+      "attendees": 10,
+      "events": 2,
+      "perperson": 123.65,
+      "alcohol": 2
+    },
+    {
+      "country": "Hungary",
+      "cost": 36979,
+      "attendees": 3,
+      "events": 1,
+      "perperson": 12326.33,
+      "alcohol": 1
+    },
+    {
+      "country": "Samoa",
+      "cost": 1589,
+      "attendees": 41,
+      "events": 1,
+      "perperson": 38.76,
+      "alcohol": 0
+    },
+    {
+      "country": "Peru",
+      "cost": 84470,
+      "attendees": 8,
+      "events": 1,
+      "perperson": 10558.75,
+      "alcohol": 0
+    },
+    {
+      "country": "Cuba",
+      "cost": 3830.4,
+      "attendees": 24,
+      "events": 1,
+      "perperson": 159.6,
+      "alcohol": 0
+    },
+    {
+      "country": "Jordan",
+      "cost": 4.94,
+      "attendees": 1,
+      "events": 1,
+      "perperson": 4.94,
+      "alcohol": 0
+    },
+    {
+      "country": "Philippines",
+      "cost": 25300,
+      "attendees": 11,
+      "events": 1,
+      "perperson": 2300,
+      "alcohol": 1
+    },
+    {
+      "country": "Israel",
+      "cost": 590,
+      "attendees": 7,
+      "events": 1,
+      "perperson": 84.29,
+      "alcohol": 0
     }
   ]
 };
