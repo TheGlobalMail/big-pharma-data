@@ -149,7 +149,7 @@
     var maxCountries = 5;
     var columns = ['country', 'events', 'attendees', 'cost'];
     var countries = d3.select('#world #countries');
-    var rows = countries.selectAll("li")
+    countries.selectAll("li")
       .data(stats.countries.slice(0, maxCountries))
       .enter()
       .append("li")

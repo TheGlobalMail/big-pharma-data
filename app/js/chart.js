@@ -23,6 +23,7 @@
       .orient("bottom");
     var yAxis = this.yAxis = d3.svg.axis()
       .scale(y)
+      .ticks(6)
       .orient("left");
     var svg = this.chart = d3.select(this.id).append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -43,6 +44,7 @@
       .call(yAxis)
       .append("text")
       .attr("transform", "rotate(-90)")
+      //.attr("transform", "translate(" + width + ", 0)")
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end");
@@ -55,6 +57,16 @@
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.y); })
       .attr("height", function(d) { return height - y(d.y); });
+
+    svg.selectAll("line.y")
+      .data(y.ticks(6))
+      .enter().append("line")
+      .attr("class", "y")
+      .attr("x1", 0)
+      .attr("x2", width)
+      .attr("y1", y)
+      .attr("y2", y)
+      .style("stroke", "#ccc");
   };
 
   BarChart.prototype.convertData = function(){
