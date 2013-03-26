@@ -40,12 +40,11 @@
     var html = _.map(companies, function(company){
       // TODO: add incomplete and percentage classes
       var row = '<tr>';
-      row += '<td class="company">' + company.company + '</td>';
+      row += '<td class="company">' + '<a href="#">' + company.company + '</a>' + '</td>';
       row += '  <td class="dollars">' + toDollars(company.cost) + '</td>';
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
       row += '  <td class="events">' + niceNumber(company.events) + '</td>';
       row += '  <td class="data">' + company.completed + '/?</td>';
-      row += '  <td class="site"><a href="#">Company Info</a></td>';
       row += '</tr>';
       return row;
     }).join("\n");
