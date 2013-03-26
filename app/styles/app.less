@@ -176,7 +176,7 @@
 
   // MOBILE NAVIGATION
 
-  .nav-mob {
+  #nav-mob {
     text-align: center;
     display: none;
       .nav {
@@ -193,13 +193,25 @@
           margin: 0;
           list-style: none;
           display: inline-block;
-          .font-size(12);
+          .font-size(11);
           text-transform: uppercase;
-          font-weight: bold;
-          padding: 0px 6px;
+          padding: 0px 5px 0 4px;
           border-right: 1px solid #e5e5e5;
+          .sml {
+            display: none;
+          }
+          a:hover {
+            background-color: transparent;
+          }
           &:last-child {
             border: none;
+          }
+          &.active a {
+            color: #222;
+            &:hover, &.active {
+              cursor: default;
+              background-color: none;
+            }
           }
         }
       }
