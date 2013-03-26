@@ -31,6 +31,8 @@
       disableD3Elements();
     }
 
+    populateWorld();
+
     loadingOverlay.dismiss();
   }
 
@@ -142,8 +144,33 @@
     bindButtons('#attendees button', chart);
   }
 
+  function populateWorld(){
+    var maxCountries = 20;
+    var columns = ['country', 'events', 'attendees', 'cost'];
+    var tbody = d3.select('#world tbody');
+    var rows = tbody.selectAll("tr")
+      .data(stats.countries.slice(0, maxCountries))
+      .enter()
+      .append("tr");
+    rows.selectAll("td")
+      .data(function(row){
+        return columns.map(function(column){
+          return {column: column, value: row[column]};
+        });
+      })
+      .enter()
+      .append("td")
+      .text(function(d){
+        if (d.column === 'cost'){
+          return toDollars(d.value);
+        }else{
+          return d.value;
+        }
+      });
+  }
+
   function disableD3Elements(){
-    $('.attendees, #perperson-chart').addClass('no-ie');
+    $('.datavis').addClass('no-ie');
   }
 
   function bindButtons(buttons, chart){
