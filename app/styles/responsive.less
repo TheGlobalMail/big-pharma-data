@@ -143,16 +143,37 @@
           li {
             .font-size(14);
             line-height: 1.2;
-            ul {
+            position: relative;
+            float: none;
+            &:before {
+              position: absolute;
+              top:0;
+            }
+            dl {
               float: none;
+              clear: both;
               padding-left: 120px;
+              height: 90px;
               position: relative;
-              li:first-child:before {
-                position: absolute;
-                left: 0;
-                top: 4px;
+                dt {
+                  .font-size(12);
+                  float: left;
+                  margin-top: 0;
+                  margin-right: 5px;
+                }
+                dd {
+                  .font-size(12);
+                  float: left;
+                  margin-right: 55px;
+                  &:first-of-type {
+                    padding-bottom: 6px;
+                    .font-size(14);
+                    float: none;
+                  }
+
               }
             }
+
           }
         }
       }

@@ -707,23 +707,54 @@
         li {
           list-style: none;
           text-align: left;
-          .font-size(16);
-          ul {
+          .font-size(14);
+          display: block;
+          float: left;
+          margin: 0 7px;
+          &:before {
+            content: '';
+            display: block;
+            width: 110px;
+            height: 64px;
+            margin: 0 5px 8px 0;
+            background: url(../images/flags.svg) left top no-repeat transparent;
+          }
+          &.new-zealand:before {
+            background-position: left -96px;
+          }
+          &.spain:before {
+            background-position: left -191px;
+          }
+          &.germany:before {
+            background-position: left -286px;
+          }
+          &.france:before {
+            background-position: left -382px;
+          }
+          dl {
             float: left;
-            margin: 0 7px;
-            li {
-              font-style: italic;
+            margin: 0;
+
+            dt {
+              font-style: normal;
+              font-weight: normal;
+              text-transform: uppercase;
+              .font-size(11);
+              margin-top: 4px;
+              line-height: 1;
               &:first-child {
-                font-weight: bold;
+                display: none;
+              }
+            }
+            dd {
+              font-style: italic;
+              font-weight: bold;
+              margin-left: 0;
+              line-height: 1.1;
+              &:first-of-type {
                 font-style: normal;
-                &:before {
-                  content: '';
-                  display: block;
-                  width: 110px;
-                  height: 65px;
-                  margin: 0 5px 5px 0;
-                  background: url(../images/flags.svg) left top no-repeat transparent;
-                }
+                .font-size(16);
+                padding-bottom: 4px;
               }
             }
           }
