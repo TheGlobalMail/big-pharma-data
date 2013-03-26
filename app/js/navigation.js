@@ -12,7 +12,7 @@
     $nav.find('a').click(function(e){
       var href = $(this).attr('href');
       var scrollY = $(href).offset().top - scrollOffset;
-      $.scrollTo({top: scrollY, left: 0}, {duration: 'slow', onAfter: function(){
+      $.scrollTo({top: scrollY, left: 0}, {duration: 350, onAfter: function(){
         var id = href.slice(1);
         // XXX should we update the hash?
         // window.location.hash = href;
