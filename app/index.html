@@ -99,100 +99,29 @@
           <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
         </section>
 
-        <section id="status" class="offset3">
-          <h3 class="line"><span>Current status</span></h3>
-          <table id="companies" class="table status-table">
-            <thead>
-                <tr>
-                    <th class="company">Company</th>
-                    <th class="dollars">Dollars spent</th>
-                    <th class="attendees">Attendees</th>
-                    <th class="events">Events</th>
-                    <th class="data">Data</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-          <p>This is a paragraph that explains that this is just a fraction of pharmaceutical companies.</p>
-        </section>
+
 
         <section id="stats" class="offset3">
           <h3 class="line">
             <span>Some stats so far</span>
           </h3>
 
+
+
+          <div class="subsection spending">
+              <strong>From the data processed so far,<br /> pharmaceutical companies have spent</strong>
+              <h4 class="large" id="total-cost"></h4>
+              <em>on education events since reporting began in 2007, <br />which equals <span id="per-year-estimate"></span> a year.</em>
+          </div>
+
           <div class="subsection total">
             <div class="pill">
               <strong>Education events processed:</strong>
               <h4 class="large" id="total-events"></h4>
-              <em>That’s about ??% of the data</em>
+
               <span></span>
             </div>
-          </div>
-
-          <div class="subsection spending">
-            <div class="left">
-              <strong>From the data processed so far, pharmaceutical companies have spent</strong>
-              <h4 id="total-cost"></h4>
-              <em>on education events since reporting began in 2007, which equals <span id="per-year-estimate"></span> a year.</em>
-            </div>
-            <div class="right">
-              <div class="bar-chart">
-                <h5>Spending by major disease type</h5>
-                <ul id="conditions">
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="subsection cost">
-            <div class="left">
-              <h5>events per price range</h5>
-              <ul>
-              <li class="pp">
-                Under $10 pp
-                <strong id="under-10-person"></strong>
-              </li>
-              <li class="pp">
-                Under $20 pp
-                <strong id="under-20-person"></strong>
-              </li>
-              <li class="pp">
-                Under $50 pp
-                <strong id="under-50-person"></strong>
-              </li>
-              <li class="pp">
-                Over $50 pp
-                <strong id="over-50-person"></strong>
-              </li>
-              </ul>
-
-            </div>
-            <div class="right">
-              <strong>The average cost per person at one of these events is</strong>
-              <h4 class="large" id="perperson"></h4>
-            </div>
-
-            <div id="perperson-chart" class="chart datavis">
-              <strong>But for the vast majority it amounts to the cost of a coffee and a muffin</strong>
-              <p class="subhead">Hospitality is just the cost of food and beverages. Total cost can include sponsorships, flights and other things related to events - these costs are not manditory to provide (CHECK THIS).</p>
-              <div class="btn-group">
-                <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
-                <button data-metric="count" class="btn">Total Cost</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="subsection alcohol">
-            <div class="bottle">
-              <div class="text-container">
-                <h4 class="xlarge">
-                  <span id="total-alcohol-percentage"></span><sup>%</sup>
-                </h4>
-                <em>of events served alcohol</em>
-              </div>
-            </div>
+            <em>That’s about ??% of the data</em>
           </div>
 
           <div class="subsection daily">
@@ -231,7 +160,83 @@
             <div id="professions" class="chart"></div>
           </div>
 
+          <div class="subsection disease">
+              <div class="bar-chart">
+                <strong>Spending by major disease type</strong>
+                <ul id="conditions">
+                </ul>
+              </div>
+            </div>
 
+          <div class="subsection cost">
+
+            <div class="left">
+              <strong>The average cost per person<br /> at one of these events is</strong>
+              <h4 class="large" id="perperson"></h4>
+            </div>
+
+            <div class="right">
+              <h5>events per price range</h5>
+              <ul>
+              <li class="pp">
+                Under $10 pp
+                <strong id="under-10-person"></strong>
+              </li>
+              <li class="pp">
+                Under $20 pp
+                <strong id="under-20-person"></strong>
+              </li>
+              <li class="pp">
+                Under $50 pp
+                <strong id="under-50-person"></strong>
+              </li>
+              <li class="pp">
+                Over $50 pp
+                <strong id="over-50-person"></strong>
+              </li>
+              </ul>
+
+            </div>
+
+            <div id="perperson-chart" class="chart datavis">
+              <strong>But for the vast majority it amounts to the cost of a coffee and a muffin</strong>
+              <p class="subhead">Hospitality is just the cost of food and beverages. Total cost can include sponsorships, flights and other things related to events - these costs are not manditory to provide (CHECK THIS).</p>
+              <div class="btn-group">
+                <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
+                <button data-metric="count" class="btn">Total Cost</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="subsection alcohol">
+            <div class="bottle">
+              <div class="text-container">
+                <h4 class="xlarge">
+                  <span id="total-alcohol-percentage"></span><sup>%</sup>
+                </h4>
+                <em>of events served alcohol</em>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="status" class="offset3">
+          <h3 class="line"><span>Top 5 companies</span></h3>
+          <table id="companies" class="table status-table">
+            <thead>
+                <tr>
+                    <th class="company">Company</th>
+                    <th class="dollars">Dollars spent</th>
+                    <th class="attendees">Attendees</th>
+                    <th class="events">Events</th>
+                    <th class="data">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <p>This is a paragraph that explains that this is just a fraction of pharmaceutical companies.</p>
         </section>
 
         <section id="dont-know" class="offset3">
