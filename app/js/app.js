@@ -37,7 +37,6 @@
     loadingOverlay.dismiss();
 
     if (window.location.hash){
-      console.error(window.location.hash);
       loadCompany(window.location.hash.replace(/#*profile-/, ''));
     }
   }
@@ -45,8 +44,7 @@
   // Render the companies table. Order it by total $
   function populateCompanies(){
     var companies = _.sortBy(stats.companies, 'events').reverse();
-    var top5 = companies.slice(0, 5);
-    var html = _.map(top5, function(company){
+    var companiesHtml = _.map(companies, function(company){
       // TODO: add incomplete and percentage classes
       var row = '<tr>';
       row += '<td class="company">' + '<a data-company="' + company.company + '" href="/profiles/' + company.company + '">' + company.company + '</a>' + '</td>';
@@ -56,8 +54,10 @@
       row += '  <td class="data">' + company.completed + '/?</td>';
       row += '</tr>';
       return row;
-    }).join("\n");
-    $('#companies tbody').html(html).find('tbody tr:first').addClass('shadow');
+    });
+    var top5Html = companiesHtml.slice(0, 5);
+    $('#top5 tbody').html(top5Html.join('')).find('tbody tr:first').addClass('shadow');
+    $('#companies tbody').html(companiesHtml.join('')).find('tbody tr:first').addClass('shadow');
 
     // Handle displaying of profile
     $('a[data-company]').click(function(e){
@@ -69,12 +69,11 @@
 
   function loadCompany(companyName){
     var company = _.detect(stats.companies, function(c){ return c.company === companyName; });
-    console.error(companyName);
     if (!company){
       return;
     }
     $('#company-name').text(company.company);
-    $('#profile').modal({ modalOverflow: true });
+    $('#profile').modal();
   }
 
   // Render the companies table. Order it by total $
@@ -201,5 +200,7 @@
       $button.addClass('active');
     });
   }
+
+  $.fn.modal.defaults.modalOverflow = true;
 
 }($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3, window.BarChart));
