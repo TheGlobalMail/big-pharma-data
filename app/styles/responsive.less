@@ -48,6 +48,9 @@
         margin-bottom: 10px;
       }
     }
+    .subsection h4.large {
+      .font-size(100);
+    }
   }
 }
 
@@ -259,6 +262,9 @@
       h4.large {
         .font-size(80);
       }
+      h4.xlarge {
+        .font-size(150);
+      }
       h5 {
         text-align: center;
       }
@@ -276,6 +282,7 @@
       }
       &.spending h4 {
         .font-size(44);
+        margin-top: 0;
       }
       &.total {
         .pill {
@@ -283,7 +290,7 @@
           height: 110px;
           text-align: center;
           strong {
-            margin: 9px 0 0 0;
+            margin: 18px 0 0 0;
             .font-size(14);
           }
           em {
@@ -304,15 +311,24 @@
         .right {
           margin-top: 20px;
         }
+
+      }
+      &.disease {
         .bar-chart {
           ul li {
             margin-left: 34px;
+            .font-size(18);
+            strong {
+              .font-size(18);
+            }
           }
         }
       }
       &.cost {
-        .left {
+        .right {
           max-width: 380px;
+          height: 150px;
+          padding-top: 10px;
           ul {
             margin: 0 auto;
             width: 300px;
@@ -326,13 +342,15 @@
             }
           }
         }
-        .right {
+        .left {
           text-align: center;
           max-width: 340px;
-          margin-bottom: 20px;
         }
-        #perperson-chart p {
+        #perperson-chart {
+          margin-top: 20px;
+          p {
           padding: 6px 0 0;
+          }
         }
       }
       &.alcohol {

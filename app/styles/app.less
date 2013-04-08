@@ -224,85 +224,7 @@
       padding: 0 5% 60px;
     }
   }
-  #status {
-    padding-bottom: 20px;
 
-    table {
-      tr {
-        display: inline-table; //Fix for background image repeats
-        width: 100%;
-        &:last-child {
-          border-bottom: 1px solid @tableBorder;
-        }
-        &:first-child {
-          background: url(../images/fade.png) no-repeat center top transparent;
-          background-size:100% 12px;
-        }
-        &.incomplete {
-          background: url(../images/table-bg.png) repeat-y top right transparent;
-          &.ninety {
-            background-size: 10% auto;
-          }
-          &.eighty {
-            background-size: 20% auto;
-          }
-        }
-        td, th {
-          .font-size(18);
-          font-weight: 700;
-          font-style: italic;
-          line-height: 1;
-          color: @grayLight;
-          padding: 12px 8px;
-          vertical-align: middle;
-          &.company {
-            color: @grayDark;
-            font-style: normal;
-            width: 35%;
-          }
-          &.dollars {
-            width: 18%;
-          }
-          &.attendees {
-            width: 13%;
-          }
-          &.events {
-            width: 10%;
-          }
-          &.data {
-            width: 10%;
-          }
-          &.site {
-            .font-size(11);
-            font-weight: normal;
-            font-style: normal;
-            text-transform: uppercase;
-            text-align: right;
-            width: 15%;
-          }
-        }
-        td.company {
-          text-transform: capitalize;
-        }
-      }
-      thead {
-        tr:last-child {
-          border: none;
-        }
-        tr:first-child {
-          background: none;
-        }
-        th, th.company, th.site {
-          vertical-align: bottom;
-          color: @grayLight;
-          .font-size(11);
-          font-weight: normal;
-          font-style: italic;
-          line-height: 1;
-        }
-      }
-    }
-  }
 
   .subsection {
     margin-bottom: 20px;
@@ -323,7 +245,7 @@
         margin-top: -10px;
       }
       &.xlarge {
-        .font-size(150);
+        .font-size(160);
         letter-spacing: -0.07em;
       }
     }
@@ -408,27 +330,27 @@
           top: 0;
           width: 0;
           height: 100%;
-          border-left: 1px solid white;
+          border-left: 2px solid white;
           z-index: -1;
         }
-        &:before {
-          content: '';
-          position: absolute;
-          .opacity(25);
-          display: block;
-          background: white;
-          left: 15%;
-          top: 15%;
-          width: 70%;
-          height: 10%;
-          z-index: 1;
-          .border-radius(10px);
-          .box-shadow(0 0 30px 20px white);
-        }
+        // &:before {
+        //   content: '';
+        //   position: absolute;
+        //   .opacity(25);
+        //   display: block;
+        //   background: white;
+        //   left: 15%;
+        //   top: 15%;
+        //   width: 70%;
+        //   height: 10%;
+        //   z-index: 1;
+        //   .border-radius(10px);
+        //   .box-shadow(0 0 30px 20px white);
+        // }
       }
       em {
         .font-size(16);
-        text-transform: uppercase;
+        font-style: normal;
       }
     }
 
@@ -589,7 +511,7 @@
       ul#countries {
         width:650px;
         margin: 20px auto 0;
-        min-height: 200px;
+        min-height: 260px;
         li {
           list-style: none;
           text-align: left;
@@ -601,23 +523,22 @@
             content: '';
             display: block;
             width: 110px;
-            height: 64px;
+            height: 140px;
             margin: 0 5px 8px 0;
-            background: url(../images/flags.svg) left top no-repeat transparent;
+            background: url(../images/countries.svg) left top no-repeat transparent;
             .border-radius(2px);
-            .box-shadow(inset 0 2px 5px rgba(0,0,0,0.1));
           }
           &.new-zealand:before {
-            background-position: left -96px;
+            background-position: left -166px;
           }
           &.spain:before {
-            background-position: left -191px;
+            background-position: left -328px;
           }
           &.germany:before {
-            background-position: left -286px;
+            background-position: left -490px;
           }
           &.france:before {
-            background-position: left -382px;
+            background-position: left -666px;
           }
           dl {
             float: left;
@@ -661,6 +582,7 @@
             text-align: left;
             .font-size(24);
             line-height: 1.1;
+            text-shadow: 0 1px 0 white;
             position: relative;
             width: 85%;
             list-style: none;
@@ -717,8 +639,10 @@
       min-height: 212px;
       .right {
         text-align: left;
+        margin-bottom: 50px;
           h5 {
             margin-bottom: 0;
+            margin-top: 5px;
           }
           ul {
             margin: 0;
@@ -766,6 +690,7 @@
       color: white;
       text-shadow: 0 -1px 0 rgba(0,0,0,.2);
       border-bottom: none;
+      padding: 40px 0 60px;
 
       .bottle {
         position: relative;
@@ -789,9 +714,89 @@
         em {
           position: absolute;
           font-weight: bold;
-          left: 165px;
+          left: 173px;
           margin-top: -62px;
           width: 160px;
+        }
+      }
+    }
+  }
+
+  #status {
+    padding-bottom: 20px;
+
+    table {
+      tr {
+        display: inline-table; //Fix for background image repeats
+        width: 100%;
+        &:last-child {
+          border-bottom: 1px solid @tableBorder;
+        }
+        &:first-child {
+          background: url(../images/fade.png) no-repeat center top transparent;
+          background-size:100% 12px;
+        }
+        &.incomplete {
+          background: url(../images/table-bg.png) repeat-y top right transparent;
+          &.ninety {
+            background-size: 10% auto;
+          }
+          &.eighty {
+            background-size: 20% auto;
+          }
+        }
+        td, th {
+          .font-size(18);
+          font-weight: 700;
+          font-style: italic;
+          line-height: 1;
+          color: @grayLight;
+          padding: 12px 8px;
+          vertical-align: middle;
+          &.company {
+            color: @grayDark;
+            font-style: normal;
+            width: 35%;
+          }
+          &.dollars {
+            width: 18%;
+          }
+          &.attendees {
+            width: 13%;
+          }
+          &.events {
+            width: 10%;
+          }
+          &.data {
+            width: 10%;
+          }
+          &.site {
+            .font-size(11);
+            font-weight: normal;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: right;
+            width: 15%;
+          }
+        }
+        td.company {
+          text-transform: capitalize;
+        }
+      }
+      thead {
+        tr:last-child {
+          border: none;
+        }
+        tr:first-child {
+          background: none;
+        }
+        th, th.company, th.site {
+          vertical-align: bottom;
+          color: @grayLight;
+          .font-size(11);
+          font-weight: normal;
+          font-style: italic;
+          line-height: 1;
         }
       }
     }
