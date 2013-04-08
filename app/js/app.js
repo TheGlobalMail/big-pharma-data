@@ -168,7 +168,7 @@
   }
 
   function populateWorld(){
-    var maxCountries = 5;
+    var maxCountries = 3;
     var columns = ['country', 'events', 'attendees', 'cost'];
     var countries = d3.select('#world #countries');
     countries.selectAll("li")
