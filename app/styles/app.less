@@ -753,17 +753,18 @@
           }
         }
         td, th {
-          .font-size(18);
+          .font-size(20);
           font-weight: 700;
           font-style: italic;
           line-height: 1;
           color: @grayLight;
-          padding: 12px 8px;
+          padding: 14px 10px;
           vertical-align: middle;
           &.company {
             color: @grayDark;
             font-style: normal;
             width: 35%;
+            .font-size(22);
           }
           &.dollars {
             width: 18%;
@@ -1029,7 +1030,49 @@ footer {
   }
 }
 
-// This appears necessary to get the modal scrolling
-.modal{
-  position: relative;
+.modal-scrollable {
+  margin-top: 10%;
 }
+.modal{
+  position: relative; // This appears necessary to get the modal scrolling
+  .box-shadow(0 0 0 4px rgba(0,0,0,0.1));
+  .border-radius(4px);
+  margin-top: 4px;
+  .modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    .box-shadow(0 4px 10px -6px rgba(0,0,0,0.4));
+    padding: 20px;
+    h5 {
+      border: none;
+      padding-top: 0;
+      margin-top: 10px;
+    }
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .close {
+    .font-size(40);
+  }
+  h5 {
+    .font-size(12);
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 20px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    color: @grayLight;
+  }
+  h4 {
+    .font-size(30);
+    margin: 4px 0 10px 0;
+  }
+  h3 {
+    .font-size(30);
+  }
+  p {
+    .font-size(14);
+    line-height: 1.5;
+  }
+}
+
