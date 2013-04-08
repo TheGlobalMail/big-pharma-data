@@ -16,9 +16,6 @@
 
 
 #main {
-
-
-
   @blueDark: #084975;
 
   .container {
@@ -28,7 +25,7 @@
   }
   section {
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background: url(../images/fade.png) no-repeat bottom center transparent;
     background-size:100% 12px;
     .transition(all 200ms linear);
@@ -369,11 +366,10 @@
       .pill {
         margin: 0 auto 10px;
         position: relative;
-        background: @pink;
+        #gradient.vertical-three-colors(@pink,@pink,50%,#87247c);
         width: 600px;
         height: 200px;
         .border-radius(106px);
-        .box-shadow(inset 0 3px 5px rgba(0,0,0,0.2));
         behavior: url(../js/libs//PIE.htc);
         z-index: 1;
         overflow: hidden;
@@ -382,6 +378,7 @@
           display: inline-block;
           line-height: 1;
           text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+          z-index: 100;
         }
         h4 {
           margin: -16px 0 4px;
@@ -400,6 +397,7 @@
           width: 50%;
           height: 212px;
           background: @blue;
+          #gradient.vertical-three-colors(@blue,@blue,50%,#205273);
           z-index: -1;
         }
         &:after {
@@ -410,9 +408,22 @@
           top: 0;
           width: 0;
           height: 100%;
-          border-left: 1px solid rgba(255,255,255,.2);
-          border-right: 1px solid rgba(0,0,0,.2);
+          border-left: 1px solid white;
           z-index: -1;
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          .opacity(25);
+          display: block;
+          background: white;
+          left: 15%;
+          top: 15%;
+          width: 70%;
+          height: 10%;
+          z-index: 1;
+          .border-radius(10px);
+          .box-shadow(0 0 30px 20px white);
         }
       }
       em {
@@ -442,7 +453,7 @@
         padding-right: 20%;
       }
       ul {
-        margin: 0 0 0 5%;
+        margin: 0 0 0 15%;
       }
       li {
         list-style: none;
