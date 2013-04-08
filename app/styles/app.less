@@ -226,7 +226,6 @@
   }
   #status {
     padding-bottom: 20px;
-    margin-bottom: 40px;
 
     table {
       tr {
@@ -259,10 +258,10 @@
           &.company {
             color: @grayDark;
             font-style: normal;
-            width: 30%;
+            width: 35%;
           }
           &.dollars {
-            width: 23%;
+            width: 18%;
           }
           &.attendees {
             width: 13%;
@@ -320,7 +319,7 @@
       letter-spacing: -0.05em;
       margin: 0 0 6px;
       &.large {
-        .font-size(110);
+        .font-size(120);
         margin-top: -10px;
       }
       &.xlarge {
@@ -366,7 +365,8 @@
       .pill {
         margin: 0 auto 10px;
         position: relative;
-        #gradient.vertical-three-colors(@pink,@pink,50%,#87247c);
+        background: @pink;
+        // #gradient.vertical-three-colors(@pink,@pink,50%,#87247c);
         width: 600px;
         height: 200px;
         .border-radius(106px);
@@ -397,7 +397,7 @@
           width: 50%;
           height: 212px;
           background: @blue;
-          #gradient.vertical-three-colors(@blue,@blue,50%,#205273);
+          // #gradient.vertical-three-colors(@blue,@blue,50%,#205273);
           z-index: -1;
         }
         &:after {
@@ -659,46 +659,48 @@
           margin: 20px 0 0;
             li {
             text-align: left;
-            .font-size(16);
+            .font-size(24);
+            line-height: 1.1;
             position: relative;
             width: 85%;
             list-style: none;
-            padding: 6px;
+            padding: 6px 6px 6px 12px;
             font-style: italic;
             background: url(../images/spending-bg.png) top left no-repeat;
-            margin-bottom: 4px;
+            margin-bottom: 14px;
             margin-left: 10%;
             &:before {
               content: '';
               position: absolute;
               display: block;
-              margin-left: -40px;
-              top: 2px;
-              width: 26px;
-              height: 28px;
+              margin-left: -55px;
+              top: 0;
+              width: 40px;
+              height: 39px;
               background: url(../images/totals-icons.svg) left 0 no-repeat;
             }
             &:nth-child(2) {
               &:before {
-                background-position: left -50px;
+                background-position: left -70px;
               }
             }
             &:nth-child(3) {
               &:before {
-                background-position: left -102px;
+                background-position: left -143px;
               }
             }
             &:nth-child(4) {
               &:before {
-                background-position: left -206px;
+                background-position: left -287px;
               }
             }
             strong {
-              .font-size(16);
+              .font-size(24);
+              text-transform: Capitalize;
             }
             span {
               position: absolute;
-              color: @grayLight;
+              color: rgba(0,0,0,0.4);
               right: 6px;
             }
           }
