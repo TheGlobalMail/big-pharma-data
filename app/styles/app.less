@@ -295,6 +295,7 @@
         behavior: url(../js/libs//PIE.htc);
         z-index: 1;
         overflow: hidden;
+        .box-shadow(0 10px 30px -10px rgba(0,0,0,.5));
         h4, strong {
           color: white;
           display: inline-block;
@@ -330,23 +331,24 @@
           top: 0;
           width: 0;
           height: 100%;
-          border-left: 2px solid white;
+          border-left: 1px solid rgba(0,0,0,.2);
+          border-left: 1px solid rgba(255,255,255,.2);
           z-index: -1;
         }
-        // &:before {
-        //   content: '';
-        //   position: absolute;
-        //   .opacity(25);
-        //   display: block;
-        //   background: white;
-        //   left: 15%;
-        //   top: 15%;
-        //   width: 70%;
-        //   height: 10%;
-        //   z-index: 1;
-        //   .border-radius(10px);
-        //   .box-shadow(0 0 30px 20px white);
-        // }
+        &:before {
+          content: '';
+          position: absolute;
+          .opacity(25);
+          display: block;
+          background: white;
+          left: 15%;
+          top: 25%;
+          width: 70%;
+          height: 10%;
+          z-index: 1;
+          .border-radius(10px);
+          .box-shadow(0 0 30px 20px white);
+        }
       }
       em {
         .font-size(16);
@@ -509,36 +511,41 @@
     &.world {
       text-align: center;
       ul#countries {
-        width:650px;
+        width:605px;
         margin: 20px auto 0;
-        min-height: 260px;
+        min-height: 280px;
         li {
           list-style: none;
           text-align: left;
-          .font-size(14);
+          .font-size(18);
           display: block;
           float: left;
-          margin: 0 7px;
+          margin: 0 9px;
           &:before {
             content: '';
             display: block;
-            width: 110px;
-            height: 140px;
-            margin: 0 5px 8px 0;
-            background: url(../images/countries.svg) left top no-repeat transparent;
-            .border-radius(2px);
+            width: 198px;
+            height: 118px;
+            margin: 0 0 18px -15px;
+            background: url(../images/postcards.svg) center -176px no-repeat transparent;
+            .box-shadow(0 4px 8px -4px black);
+            -webkit-backface-visibility: hidden; // Smooth edges in chrome
+            .rotate(5deg);
           }
           &.new-zealand:before {
-            background-position: left -166px;
-          }
-          &.spain:before {
-            background-position: left -328px;
+            background-position: left -1px;
+            .rotate(-8deg);
           }
           &.germany:before {
-            background-position: left -490px;
+            background-position: left -348px;
+            .rotate(-2deg);
           }
-          &.france:before {
-            background-position: left -666px;
+          &.spain {
+            display: none;
+          }
+
+          &.france {
+            display: none;
           }
           dl {
             float: left;
@@ -562,7 +569,7 @@
               line-height: 1.1;
               &:first-of-type {
                 font-style: normal;
-                .font-size(16);
+                .font-size(20);
                 padding-bottom: 4px;
               }
             }
