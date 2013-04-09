@@ -9,6 +9,7 @@
     $('#total-cost').text(toDollars(stats.summary.cost));
     $('#per-year-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365)));
     $('#total-events').text(niceNumber(stats.summary.events));
+    $('#total-attendees').text(niceNumber(stats.summary.attendees));
 
     populateCompanies();
 
@@ -28,16 +29,14 @@
     if (d3){
       populatePerPerson();
       populateProfessions();
+      populateWorld();
     }else{
       disableD3Elements();
     }
 
-    populateWorld();
-
     loadingOverlay.dismiss();
 
     if (window.location.hash){
-      console.error(window.location.hash);
       loadCompany(window.location.hash.replace(/#*profile-/, ''));
     }
   }
@@ -45,10 +44,9 @@
   // Render the companies table. Order it by total $
   function populateCompanies(){
     var companies = _.sortBy(stats.companies, 'events').reverse();
-    var top5 = companies.slice(0, 5);
-    var html = _.map(top5, function(company){
+    var companiesHtml = _.map(companies, function(company){
       // TODO: add incomplete and percentage classes
-      var row = '<tr>';
+      var row = '<tr style="display:none">';
       row += '<td class="company">' + '<a data-company="' + company.company + '" href="/profiles/' + company.company + '">' + company.company + '</a>' + '</td>';
       row += '  <td class="dollars">' + toDollars(company.cost) + '</td>';
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
@@ -56,8 +54,12 @@
       row += '  <td class="data">' + company.completed + '/?</td>';
       row += '</tr>';
       return row;
-    }).join("\n");
-    $('#companies tbody').html(html).find('tbody tr:first').addClass('shadow');
+    });
+    $('#top5 tbody')
+      .html(companiesHtml.join(''))
+      .find('tbody tr:first').addClass('shadow');
+    $('#top5 tbody')
+      .find('tr:lt(5)').show();
 
     // Handle displaying of profile
     $('a[data-company]').click(function(e){
@@ -65,16 +67,31 @@
       var companyName = $(this).data('company');
       loadCompany(companyName);
     });
+
+    // Handle displaying of profile
+    $('#full-list').click(function(e){
+      var altText = $(this).data('alt-text');
+      e.preventDefault();
+      if ($(this).data('full-list') === 'true'){
+        $('#top5').find('tr:gt(5)').fadeOut();
+        $(this).data('full-list', 'false');
+        $.scrollTo('#status');
+      }else{
+        $('#top5').find('tr:gt(5)').fadeIn();
+        $(this).data('full-list', 'true');
+      }
+      $(this).data('alt-text', $(this).text());
+      $(this).text(altText);
+    });
   }
 
   function loadCompany(companyName){
     var company = _.detect(stats.companies, function(c){ return c.company === companyName; });
-    console.error(companyName);
     if (!company){
       return;
     }
     $('#company-name').text(company.company);
-    $('#profile').modal({ modalOverflow: true });
+    $('#profile').modal();
   }
 
   // Render the companies table. Order it by total $
@@ -97,7 +114,7 @@
     var width = $conditions.find('li:first').width();
     _.each(conditions.slice(1), function(condition){
       var adjustRatio = (maxCost - condition.cost) / maxCost;
-      var adjust = width * adjustRatio * -1 - (600 - width); // 600 is the width of the background image
+      var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
       $conditions.find('#condition-' + condition.condition).css('background-position', adjust + "px 0");
     });
   }
@@ -163,13 +180,13 @@
   }
 
   function populateProfessions(){
-    var chart = new BarChart('#professions', stats.professions, 'profession', 'attendees', !'keepScale');
+    var chart = new BarChart('#professions', stats.professions, 'profession', 'events', !'keepScale');
     chart.render();
     bindButtons('#attendees button', chart);
   }
 
   function populateWorld(){
-    var maxCountries = 5;
+    var maxCountries = 3;
     var columns = ['country', 'events', 'attendees', 'cost'];
     var countries = d3.select('#world #countries');
     countries.selectAll("li")
@@ -201,5 +218,7 @@
       $button.addClass('active');
     });
   }
+
+  $.fn.modal.defaults.modalOverflow = true;
 
 }($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3, window.BarChart));

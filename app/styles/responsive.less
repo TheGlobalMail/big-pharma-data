@@ -52,6 +52,15 @@
       .font-size(100);
     }
   }
+  // Overwrite bootstrap modal
+  .modal, .modal.container, .modal.modal-overflow {
+    width: 560px !important;
+    margin: 4px auto 0 !important;
+  }
+  .modal-body, .modal-overflow .modal-body  {
+    height: 400px !important;
+    overflow: auto !important;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -124,14 +133,37 @@
         clear: both;
         width: 90%;
         margin: 0 auto;
-        text-align: left;
+        text-align: center;
       }
       .right {
         padding-top: 20px;
+
       }
       &.daily {
         ul {
           margin: 0;
+        }
+      }
+      &.cost {
+        .right {
+          width: 60%;
+          height: 145px;
+          text-align: center;
+          li {
+            text-align: left;
+          }
+        }
+      }
+      &.total-attendees {
+        background-size: auto 180px;
+        background-position: center bottom;
+        .text {
+          text-align: center;
+          margin-left: 0;
+          margin-bottom: 135px;
+          h4.large {
+            .font-size(60);
+          }
         }
       }
       &.alcohol {
@@ -142,20 +174,29 @@
       &.world {
       text-align: center;
         ul#countries {
-          width:300px;
+          width:290px;
           li {
             .font-size(14);
             line-height: 1.2;
             position: relative;
             float: none;
+            height: 94px;
             &:before {
               position: absolute;
               top:0;
+              width: 154px;
+              height: 90px;
+              background-size: 100% auto;
+              background-position: left -135px;
+            }
+            &.germany:before {
+              background-position: left -269px;
             }
             dl {
               float: none;
               clear: both;
-              padding-left: 120px;
+              padding-left: 160px;
+              padding-top: 10px;
               height: 90px;
               position: relative;
                 dt {
@@ -167,7 +208,6 @@
                 dd {
                   .font-size(12);
                   float: left;
-                  margin-right: 55px;
                   &:first-of-type {
                     padding-bottom: 6px;
                     .font-size(14);
@@ -211,6 +251,12 @@
     p {
       .font-size(14);
     }
+    section {
+      margin-bottom: 0;
+    }
+    h3.line {
+      margin-top: 0;
+    }
     #title {
       h1 {
         .font-size(30);
@@ -247,8 +293,8 @@
         td,th {
           padding: 10px 2px;
         }
-        td {
-          .font-size(11);
+        td, td.company {
+          .font-size(13);
         }
         td.site, th.site {
           display: none;
@@ -263,7 +309,7 @@
         .font-size(80);
       }
       h4.xlarge {
-        .font-size(150);
+        .font-size(110);
       }
       h5 {
         text-align: center;
@@ -286,7 +332,7 @@
       }
       &.total {
         .pill {
-          width: 295px;
+          width: 290px;
           height: 110px;
           text-align: center;
           strong {
@@ -300,6 +346,9 @@
           h4 {
             margin: -8px 0 0 0;
             .font-size(64);
+          }
+          span {
+            height: 110px;
           }
         }
       }
@@ -316,10 +365,14 @@
       &.disease {
         .bar-chart {
           ul li {
-            margin-left: 34px;
-            .font-size(18);
+            margin-left: 44px;
+            width: 75%;
+            .font-size(16);
+            padding-top:11px;
+            padding-bottom: 11px;
+            margin-bottom: 6px;
             strong {
-              .font-size(18);
+              .font-size(16);
             }
           }
         }
@@ -327,11 +380,13 @@
       &.cost {
         .right {
           max-width: 380px;
+          width: auto;
           height: 150px;
           padding-top: 10px;
+          margin-bottom: 30px;
           ul {
             margin: 0 auto;
-            width: 300px;
+            width: 260px;
           }
           li.pp {
             padding-top: 20px;
@@ -356,6 +411,7 @@
       &.alcohol {
         .bottle {
           width: 280px;
+          height: 135px;
           padding-top: 30px;
           background-position: center bottom;
           .text-container {
@@ -364,6 +420,9 @@
             color: @pink;
             h4 {
               margin-left: -10px;
+              sup {
+                .font-size(65);
+              }
             }
             em {
               color: white;
@@ -375,18 +434,22 @@
         }
       }
       &.daily {
-        li {
-          .pill {
-            width: 10px;
-            height: 11px;
-          }
+        h4 {
+          margin-right: 8px;
+
         }
         p {
           text-align: center;
           padding-right: 0;
+          .font-size(12);
+          width: 90%;
         }
-        .right {
-          max-width: 340px;
+        em {
+          .font-size(14);
+        }
+        .calendar {
+          width: 260px;
+          height: 224px;
         }
       }
       &.australia {
@@ -406,16 +469,24 @@
               margin-top: 67px;
             }
             &:nth-child(3) {
-              margin-top: 125px;
+              margin-top: 123px;
               right: 11%;
             }
             &:nth-child(4) {
-              margin-top: 153px;
-              right: -12px;
+              margin-top: 148px;
+              right: 0px;
+              .font-size(11);
+                span {
+                  .font-size(16);
+                }
             }
             &:nth-child(5) {
-              margin-top: 159px;
+              margin-top: 163px;
               right: 13%;
+              .font-size(11);
+                span {
+                  .font-size(16);
+                }
             }
             &:nth-child(6) {
               margin-top: 205px;
@@ -428,10 +499,6 @@
             }
           }
         }
-        .world {
-          width: 290px;
-          height: 120px;
-        }
       }
     }
     #dont-know {
@@ -440,6 +507,7 @@
           float: none;
           max-width: none;
           text-align: center;
+          margin-left: 0;
             p,strong,em {
               .font-size(18);
               text-align: center;
@@ -452,6 +520,8 @@
             right: initial;
             top: initial;
             margin: 10px auto 0;
+            width: 200px;
+            height: 180px;
           }
         }
         &.drugs {
@@ -464,6 +534,8 @@
             right: initial;
             top: initial;
             margin: 10px auto 0;
+            width: 51%;
+            height: 200px;
           }
         }
         &.not-much {
@@ -472,8 +544,9 @@
             position: relative;
             right: initial;
             top: initial;
-            width: 100%;
-            height: 240px;
+            margin: 0 auto;
+            width: 70%;
+            height: 190px;
           }
         }
       }
@@ -498,5 +571,41 @@
         }
       }
     }
+  }
+    // Overwrite bootstrap modal
+  .modal-scrollable {
+    margin-top: 0;
+    z-index: 9999;
+  }
+  .modal {
+    .border-radius(0);
+    border: none;
+    .box-shadow(none);
+    .modal-header {
+      position: fixed;
+
+      width: 90%;
+      height: 40px;
+      background-color: white;
+      padding: 20px 5%;
+      h5 {
+        margin-top: 0;
+      }
+    }
+    .modal-body {
+      padding-top: 100px;
+    }
+  }
+
+
+  .modal, .modal.container, .modal.modal-overflow {
+    width: auto !important;
+    margin: 0 !important;
+    right: 0;
+    left: 0;
+  }
+  .modal-body, .modal-overflow .modal-body  {
+    height: auto !important;
+    overflow: visible !important;
   }
 }

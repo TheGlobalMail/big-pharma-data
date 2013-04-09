@@ -185,7 +185,7 @@
         background-color: white;
         margin: 0 auto;
         text-align: center;
-        z-index: 9999;
+        z-index: 999;
         margin-top: 10px;
         padding-top: 15px;
         li {
@@ -238,7 +238,7 @@
       font-weight: bold;
       font-weight: 800;
       font-style: italic;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.06em;
       margin: 0 0 6px;
       &.large {
         .font-size(120);
@@ -295,6 +295,7 @@
         behavior: url(../js/libs//PIE.htc);
         z-index: 1;
         overflow: hidden;
+        .box-shadow(0 10px 30px -10px rgba(0,0,0,.5));
         h4, strong {
           color: white;
           display: inline-block;
@@ -317,10 +318,11 @@
           top:0;
           right: 0;
           width: 50%;
-          height: 212px;
+          height: 200px;
           background: @blue;
           // #gradient.vertical-three-colors(@blue,@blue,50%,#205273);
           z-index: -1;
+          .border-right-radius(106px);
         }
         &:after {
           content: '';
@@ -330,27 +332,37 @@
           top: 0;
           width: 0;
           height: 100%;
-          border-left: 2px solid white;
+          border-left: 1px solid rgba(0,0,0,.2);
+          border-left: 1px solid rgba(255,255,255,.2);
           z-index: -1;
         }
-        // &:before {
-        //   content: '';
-        //   position: absolute;
-        //   .opacity(25);
-        //   display: block;
-        //   background: white;
-        //   left: 15%;
-        //   top: 15%;
-        //   width: 70%;
-        //   height: 10%;
-        //   z-index: 1;
-        //   .border-radius(10px);
-        //   .box-shadow(0 0 30px 20px white);
-        // }
+        &:before {
+          content: '';
+          position: absolute;
+          .opacity(25);
+          display: block;
+          background: white;
+          left: 15%;
+          top: 25%;
+          width: 70%;
+          height: 10%;
+          z-index: 1;
+          .border-radius(10px);
+          .box-shadow(0 0 30px 20px white);
+        }
       }
       em {
         .font-size(16);
         font-style: normal;
+      }
+    }
+
+    &.total-attendees {
+        background: url(../images/doctor+nurse.svg) left bottom no-repeat transparent;
+        background-size: contain;
+
+      .text {
+        margin-left: 275px;
       }
     }
 
@@ -359,71 +371,30 @@
       position: relative;
       h4 {
         float: left;
-        margin-right: 14px;
-        margin-top: -15px;
-        margin-bottom: -4px;
+        margin: 24% 14px -4px 12%;
       }
       em {
         float: left;
         width: 35%;
-        margin-top: 3.5%;
+        margin-top: 32%;
         font-weight: bold;
       }
       p {
         clear: both;
         .font-size(14);
-        padding-right: 20%;
+        width: 70%;
+        margin: 0 auto;
       }
-      ul {
-        margin: 0 0 0 15%;
-      }
-      li {
-        list-style: none;
-        float: left;
-        margin: 0 4px 4px 0;
-        .pill {
-          position: relative;
-          width: 14px;
-          background: @blue;
-          height: 16px;
-          .border-bottom-radius(7px);
-          behavior: url(../js/libs//PIE.htc);
-          &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            right:15%;
-            top:0;
-            background: white;
-            width: 2px;
-            height: 10px;
-            .border-radius(2px);
-            .box-shadow(0 0 4px white);
-            .opacity(30);
-            behavior: url(../js/libs//PIE.htc);
-          }
-          &.top {
-            margin-bottom: 1px;
-            background: @pink;
-            .border-bottom-radius(0);
-            .border-top-radius(7px);
-            behavior: url(../js/libs//PIE.htc);
-            &:after {
-              content: '';
-              display: block;
-              position: absolute;
-              right:15%;
-              top:35%;
-              background: white;
-              width: 2px;
-              height: 10px;
-              .border-radius(2px);
-              .box-shadow(0 0 4px white);
-              .opacity(30);
-              behavior: url(../js/libs//PIE.htc);
-            }
-          }
-        }
+      .calendar {
+        position: relative;
+        background: url(../images/calendar.svg) center center no-repeat transparent;
+        background-size: contain;
+        width: 383px;
+        height: 330px;
+        margin: 0 auto;
+        .box-shadow(0 10px 20px -10px rgba(0,0,0,.5));
+        .rotate(-5deg);
+        -ms-transform: rotate(0); //Cause IE sucks
       }
     }
 
@@ -445,7 +416,7 @@
           position: relative;
           height: 440px;
           li {
-            .font-size(14);
+            .font-size(18);
             font-weight: bold;
             list-style: none;
             text-align: left;
@@ -454,11 +425,12 @@
             position: absolute;
             text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
             span {
-              .font-size(24);
+              .font-size(40);
               font-weight: bold;
               font-weight: 800;
               font-style: italic;
               display: block;
+              letter-spacing: -0.03em;
             }
             &:first-child {
               margin-top: 106px;
@@ -467,37 +439,46 @@
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
             }
             &:nth-child(2) {
-              margin-top: 140px;
-              right:16%;
+              margin-top: 123px;
+              right:14%;
             }
             &:nth-child(3) {
-              margin-top: 245px;
-              right: 14%;
+              margin-top: 234px;
+              right: 8%;
             }
             &:nth-child(4) {
               margin-top: 298px;
-              right:2%;
+              right: -9px;
               color:@grayDark;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
+              .font-size(12);
+              span {
+                .font-size(24);
+              }
             }
             &:nth-child(5) {
               margin-top: 315px;
               right: 17%;
+              .font-size(12);
+              span {
+                .font-size(24);
+              }
+
             }
             &:nth-child(6) {
-              margin-top: 387px;
-              right: 12%;
+              margin-top: 378px;
+              right: 10%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
             }
             &:nth-child(7) {
-              margin-top: 211px;
-              right:40%;
+              margin-top: 206px;
+              right:35%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
             }
             &:nth-child(8) {
-              margin-top: 175px;
+              margin-top: 157px;
               left:13%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -509,36 +490,37 @@
     &.world {
       text-align: center;
       ul#countries {
-        width:650px;
+        width:605px;
         margin: 20px auto 0;
-        min-height: 260px;
+        min-height: 280px;
         li {
           list-style: none;
           text-align: left;
-          .font-size(14);
+          .font-size(18);
           display: block;
           float: left;
-          margin: 0 7px;
+          margin: 0 9px;
           &:before {
             content: '';
             display: block;
-            width: 110px;
-            height: 140px;
-            margin: 0 5px 8px 0;
-            background: url(../images/countries.svg) left top no-repeat transparent;
-            .border-radius(2px);
+            width: 198px;
+            height: 118px;
+            margin: 0 0 18px -15px;
+            background: url(../images/postcards.svg) center -176px no-repeat transparent;
+            .box-shadow(0 4px 8px -4px black);
+            // -webkit-backface-visibility: hidden; // Smooth edges in chrome
+            .rotate(5deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
           &.new-zealand:before {
-            background-position: left -166px;
-          }
-          &.spain:before {
-            background-position: left -328px;
+            background-position: left -1px;
+            .rotate(-8deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
           &.germany:before {
-            background-position: left -490px;
-          }
-          &.france:before {
-            background-position: left -666px;
+            background-position: left -348px;
+            .rotate(-2deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
           dl {
             float: left;
@@ -562,7 +544,7 @@
               line-height: 1.1;
               &:first-of-type {
                 font-style: normal;
-                .font-size(16);
+                .font-size(20);
                 padding-bottom: 4px;
               }
             }
@@ -690,20 +672,19 @@
       color: white;
       text-shadow: 0 -1px 0 rgba(0,0,0,.2);
       border-bottom: none;
-      padding: 40px 0 60px;
+      padding: 35px 0 60px;
 
       .bottle {
         position: relative;
-        height: 185px;
-        width: 650px;
+        height: 170px;
+        width: 600px;
         margin: -17px auto 0;
         background: url(../images/bottle.svg) center center no-repeat;
         background-size: contain;
         .text-container {
           position: relative;
           width: 100%;
-          margin-left: 40px;
-          padding-top: 10px;
+          margin-left: 30px;
         }
         h4 {
           sup {
@@ -725,13 +706,27 @@
   #status {
     padding-bottom: 20px;
 
+    .btn {
+      display: block;
+      width: 272px;
+      margin: 10px auto 30px;
+      padding: 8px;
+      border: none;
+      background-color: @blue;
+      .box-shadow(none);
+      .font-size(16);
+      &:hover {
+        background-color: @blueDark;
+      }
+    }
+
     table {
+      tbody {
+        border-bottom: 1px solid @tableBorder;
+      }
       tr {
         display: inline-table; //Fix for background image repeats
         width: 100%;
-        &:last-child {
-          border-bottom: 1px solid @tableBorder;
-        }
         &:first-child {
           background: url(../images/fade.png) no-repeat center top transparent;
           background-size:100% 12px;
@@ -746,17 +741,18 @@
           }
         }
         td, th {
-          .font-size(18);
+          .font-size(20);
           font-weight: 700;
           font-style: italic;
           line-height: 1;
           color: @grayLight;
-          padding: 12px 8px;
+          padding: 14px 10px;
           vertical-align: middle;
           &.company {
             color: @grayDark;
             font-style: normal;
             width: 35%;
+            .font-size(22);
           }
           &.dollars {
             width: 18%;
@@ -826,6 +822,8 @@
           border: 1px solid #e5e5e5;
           .border-radius(2px);
           .box-shadow(0 1px 3px #e5e5e5);
+          .rotate(5deg);
+          -ms-transform: rotate(0); //Cause IE sucks
         }
       }
       &.drugs {
@@ -1055,7 +1053,48 @@ footer {
   }
 }
 
-// This appears necessary to get the modal scrolling
+.modal-scrollable {
+  margin-top: 10%;
+}
 .modal {
-  position: relative;
+  position: relative; // This appears necessary to get the modal scrolling
+  .box-shadow(0 0 0 4px rgba(0,0,0,0.1));
+  .border-radius(4px);
+  margin-top: 4px !important;
+  .modal-header {
+    border-bottom: 1px solid #e5e5e5;
+    .box-shadow(0 4px 10px -6px rgba(0,0,0,0.4));
+    padding: 20px;
+    h5 {
+      border: none;
+      padding-top: 0;
+      margin-top: 10px;
+    }
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .close {
+    .font-size(40);
+  }
+  h5 {
+    .font-size(12);
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 20px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    color: @grayLight;
+  }
+  h4 {
+    .font-size(30);
+    margin: 4px 0 10px 0;
+  }
+  h3 {
+    .font-size(30);
+  }
+  p {
+    .font-size(14);
+    line-height: 1.5;
+  }
 }

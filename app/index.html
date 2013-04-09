@@ -113,7 +113,7 @@
           <div class="subsection spending">
               <strong>From the data processed so far,<br /> pharmaceutical companies have spent</strong>
               <h4 class="large" id="total-cost"></h4>
-              <em>on education events since reporting began in 2007, <br />which equals <span id="per-year-estimate"></span> a year.</em>
+              <em>on education events since reporting began in 2007, <br /><strong>which equals <span id="per-year-estimate"></span> a year.</strong></em>
           </div>
 
           <div class="subsection total">
@@ -126,13 +126,17 @@
             <em>That’s about ??% of the data</em>
           </div>
 
-          <div class="subsection daily">
-            <div class="left">
-              <div class="chart">
-                <ul id="pills"></ul>
-              </div>
+          <div class="subsection total-attendees">
+            <div class="text">
+              <strong>Total number of attendees:</strong>
+              <h4 class="large" id="total-attendees"></h4>
+              <em>That’s about ??% every year</em>
             </div>
-            <div class="right">
+
+          </div>
+
+          <div class="subsection daily">
+            <div class="calendar">
               <h4 class="xlarge" id="events-per-day"></h4>
               <em>education events happen in an average day</em>
               <p>Because of the lack of detail we don’t know exactly which days they were.</p>
@@ -146,16 +150,16 @@
             </div>
           </div>
 
-          <div id="world" class="subsection world">
+          <div id="world" class="subsection world datavis">
             <strong>but if you’re lucky, they might just send you overseas</strong>
-            <p class="subhead">There were over 40 overseas destinations listed, but these are the five most visited:</p>
+            <p class="subhead">There were over 40 overseas destinations listed, but these are the most visited:</p>
             <ul id="countries"></ul>
           </div>
 
           <div id="attendees" class="subsection attendees datavis">
             <strong>Medical professionals of all kinds attend these events</strong>
             <div class="btn-group">
-              <button data-metric="attendees" class="btn active"># attendees</button>
+              <button data-metric="events" class="btn active"># Events</button>
               <button data-metric="cost" class="btn">Total Spend</button>
               <button data-metric="perperson" class="btn">Spend PP</button>
             </div>
@@ -225,7 +229,7 @@
 
         <section id="status" class="offset3">
           <h3 class="line"><span>Top 5 companies</span></h3>
-          <table id="companies" class="table status-table">
+          <table id="top5" class="table status-table">
             <thead>
                 <tr>
                     <th class="company">Company</th>
@@ -238,7 +242,7 @@
             <tbody>
             </tbody>
           </table>
-          <p>This is a paragraph that explains that this is just a fraction of pharmaceutical companies. <a href="#">View the full list</a></p>
+          <p>This is a paragraph that explains that this is just a fraction of pharmaceutical companies. <a data-full-list="false" id="full-list" data-alt-text="Collapse the list" href="#full-list" class="btn">View the full list</a></p>
         </section>
 
         <section id="dont-know" class="offset3">
@@ -322,26 +326,46 @@
   </div>
 
 
-  <div id="profile" class="modal hide fade container" tabindex="-1" data-replace="true">
+  <div id="profile" class="modal hide fade offset3" tabindex="-1">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h3>Company Profile: <span id="company-name"></span></h3>
+      <h5>Company Profile</h5>
+      <h3><span id="company-name"></span></h3>
     </div>
     <div class="modal-body">
       <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
-      <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
+      <h5>Number of drugs on Australian market</h5>
+      <h4>???</h4>
+      <h5>Significant company events</h5>
+      <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      <h5>Taxpayer money paid via PBS</h5>
+      <h4>???</h4>
+      <h5>Money spent on Educational Events (since 2007)</h5>
+      <h4>???</h4>
+      <h5>Total number of events reported</h5>
+      <h4>???</h4>
+      <h5>Events per price range</h5>
+      <h4>???</h4>
+      <h5>Most expensive event reported</h5>
+      <h4>???</h4>
+      <h5>Top three attendee types</h5>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h5>Top three diseases</h5>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h5>Revenue - Global</h5>
+      <h4>???</h4>
+      <h5>Revenue - Australia</h5>
+      <h4>???</h4>
     </div>
-    <div class="modal-footer">
-      <button type="button" data-dismiss="modal" class="btn">Close</button>
-    </div>
+
   </div>
 
 </div>
