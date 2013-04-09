@@ -52,6 +52,15 @@
       .font-size(100);
     }
   }
+  // Overwrite bootstrap modal
+  .modal, .modal.container, .modal.modal-overflow {
+    width: 560px !important;
+    margin: 4px auto 0 !important;
+  }
+  .modal-body, .modal-overflow .modal-body  {
+    height: 400px !important;
+    overflow: auto !important;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -549,5 +558,41 @@
         }
       }
     }
+  }
+    // Overwrite bootstrap modal
+  .modal-scrollable {
+    margin-top: 0;
+    z-index: 9999;
+  }
+  .modal {
+    .border-radius(0);
+    border: none;
+    .box-shadow(none);
+    .modal-header {
+      position: fixed;
+
+      width: 90%;
+      height: 40px;
+      background-color: white;
+      padding: 20px 5%;
+      h5 {
+        margin-top: 0;
+      }
+    }
+    .modal-body {
+      padding-top: 100px;
+    }
+  }
+
+
+  .modal, .modal.container, .modal.modal-overflow {
+    width: auto !important;
+    margin: 0 !important;
+    right: 0;
+    left: 0;
+  }
+  .modal-body, .modal-overflow .modal-body  {
+    height: auto !important;
+    overflow: visible !important;
   }
 }

@@ -7,7 +7,7 @@
 <rect x="8" y="23.123" fill="#CBDEEB" width="462" height="381.754"/>
 <path fill="#FFFFFF" d="M469.5,314c0-47,0-290.877,0-290.877H290H187.5H8C8,23.123,8,267,8,314c0,69-5,86-5,86l471.5-10
 	C474.5,390,469.5,384,469.5,314z"/>
-<rect x="8" y="23.123" fill="#79B5E0" width="462" height="90"/>
+<rect x="8" y="23.123" fill="#E0ADD9" width="462" height="90"/>
 <g>
 	<path fill="#FFFFFF" d="M161.065,86.31h-7.915V55.572h-10.135v-6.586h28.185v6.586h-10.135V86.31z"/>
 	<path fill="#FFFFFF" d="M210.823,67.597c0,6.178-1.532,10.927-4.596,14.246c-3.063,3.319-7.455,4.979-13.173,4.979
@@ -27,7 +27,7 @@
 <path fill="#FFFFFF" d="M187.5,23.123"/>
 <circle fill="#0B6EB8" cx="85.5" cy="68.123" r="17.5"/>
 <circle fill="#0B6EB8" cx="377.5" cy="68.123" r="17.5"/>
-<line fill="none" stroke="#BDDCF2" stroke-width="2" stroke-miterlimit="10" x1="8" y1="23.123" x2="470" y2="23.123"/>
+<line fill="none" stroke="#F2E6F0" stroke-miterlimit="10" x1="8" y1="23.123" x2="470" y2="23.123"/>
 <g>
 	<path fill="#D0E3F0" d="M97,14c0-7.7-5.4-14-12-14S73,6.3,73,14v51c0,7.7,5.4,14,12,14s12-6.3,12-14V14z"/>
 </g>

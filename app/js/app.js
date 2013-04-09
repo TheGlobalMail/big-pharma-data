@@ -9,6 +9,7 @@
     $('#total-cost').text(toDollars(stats.summary.cost));
     $('#per-year-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365)));
     $('#total-events').text(niceNumber(stats.summary.events));
+    $('#total-attendees').text(niceNumber(stats.summary.attendees));
 
     populateCompanies();
 
