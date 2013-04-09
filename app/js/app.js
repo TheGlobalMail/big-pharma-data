@@ -180,7 +180,7 @@
   }
 
   function populateProfessions(){
-    var chart = new BarChart('#professions', stats.professions, 'profession', 'attendees', !'keepScale');
+    var chart = new BarChart('#professions', stats.professions, 'profession', 'events', !'keepScale');
     chart.render();
     bindButtons('#attendees button', chart);
   }
