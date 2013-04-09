@@ -28,11 +28,10 @@
     if (d3){
       populatePerPerson();
       populateProfessions();
+      populateWorld();
     }else{
       disableD3Elements();
     }
-
-    populateWorld();
 
     loadingOverlay.dismiss();
 
