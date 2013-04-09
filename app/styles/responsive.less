@@ -124,14 +124,25 @@
         clear: both;
         width: 90%;
         margin: 0 auto;
-        text-align: left;
+        text-align: center;
       }
       .right {
         padding-top: 20px;
+
       }
       &.daily {
         ul {
           margin: 0;
+        }
+      }
+      &.cost {
+        .right {
+          width: 60%;
+          height: 145px;
+          text-align: center;
+          li {
+            text-align: left;
+          }
         }
       }
       &.alcohol {
@@ -142,20 +153,29 @@
       &.world {
       text-align: center;
         ul#countries {
-          width:300px;
+          width:310px;
           li {
             .font-size(14);
             line-height: 1.2;
             position: relative;
             float: none;
+            height: 94px;
             &:before {
               position: absolute;
               top:0;
+              width: 154px;
+              height: 90px;
+              background-size: 100% auto;
+              background-position: left -135px;
+            }
+            &.germany:before {
+              background-position: left -269px;
             }
             dl {
               float: none;
               clear: both;
-              padding-left: 120px;
+              padding-left: 160px;
+              padding-top: 10px;
               height: 90px;
               position: relative;
                 dt {
@@ -167,7 +187,6 @@
                 dd {
                   .font-size(12);
                   float: left;
-                  margin-right: 55px;
                   &:first-of-type {
                     padding-bottom: 6px;
                     .font-size(14);
@@ -211,6 +230,12 @@
     p {
       .font-size(14);
     }
+    section {
+      margin-bottom: 0;
+    }
+    h3.line {
+      margin-top: 0;
+    }
     #title {
       h1 {
         .font-size(30);
@@ -247,7 +272,7 @@
         td,th {
           padding: 10px 2px;
         }
-        td {
+        td, td.company {
           .font-size(11);
         }
         td.site, th.site {
@@ -263,7 +288,7 @@
         .font-size(80);
       }
       h4.xlarge {
-        .font-size(150);
+        .font-size(110);
       }
       h5 {
         text-align: center;
@@ -316,10 +341,14 @@
       &.disease {
         .bar-chart {
           ul li {
-            margin-left: 34px;
-            .font-size(18);
+            margin-left: 44px;
+            width: 75%;
+            .font-size(16);
+            padding-top:11px;
+            padding-bottom: 11px;
+            margin-bottom: 6px;
             strong {
-              .font-size(18);
+              .font-size(16);
             }
           }
         }
@@ -356,6 +385,7 @@
       &.alcohol {
         .bottle {
           width: 280px;
+          height: 135px;
           padding-top: 30px;
           background-position: center bottom;
           .text-container {
@@ -364,6 +394,9 @@
             color: @pink;
             h4 {
               margin-left: -10px;
+              sup {
+                .font-size(65);
+              }
             }
             em {
               color: white;
@@ -375,18 +408,22 @@
         }
       }
       &.daily {
-        li {
-          .pill {
-            width: 10px;
-            height: 11px;
-          }
+        h4 {
+          margin-right: 8px;
+
         }
         p {
           text-align: center;
           padding-right: 0;
+          .font-size(12);
+          width: 90%;
         }
-        .right {
-          max-width: 340px;
+        em {
+          .font-size(14);
+        }
+        .calendar {
+          width: 260px;
+          height: 224px;
         }
       }
       &.australia {
@@ -412,10 +449,18 @@
             &:nth-child(4) {
               margin-top: 153px;
               right: -12px;
+              .font-size(11);
+                span {
+                  .font-size(16);
+                }
             }
             &:nth-child(5) {
               margin-top: 159px;
               right: 13%;
+              .font-size(11);
+                span {
+                  .font-size(16);
+                }
             }
             &:nth-child(6) {
               margin-top: 205px;
