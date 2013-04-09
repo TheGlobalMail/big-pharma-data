@@ -46,7 +46,7 @@
     var companies = _.sortBy(stats.companies, 'events').reverse();
     var companiesHtml = _.map(companies, function(company){
       // TODO: add incomplete and percentage classes
-      var row = '<tr>';
+      var row = '<tr style="display:none">';
       row += '<td class="company">' + '<a data-company="' + company.company + '" href="/profiles/' + company.company + '">' + company.company + '</a>' + '</td>';
       row += '  <td class="dollars">' + toDollars(company.cost) + '</td>';
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
@@ -55,15 +55,33 @@
       row += '</tr>';
       return row;
     });
-    var top5Html = companiesHtml.slice(0, 5);
-    $('#top5 tbody').html(top5Html.join('')).find('tbody tr:first').addClass('shadow');
-    $('#companies tbody').html(companiesHtml.join('')).find('tbody tr:first').addClass('shadow');
+    $('#top5 tbody')
+      .html(companiesHtml.join(''))
+      .find('tbody tr:first').addClass('shadow');
+    $('#top5 tbody')
+      .find('tr:lt(5)').show();
 
     // Handle displaying of profile
     $('a[data-company]').click(function(e){
       e.preventDefault();
       var companyName = $(this).data('company');
       loadCompany(companyName);
+    });
+
+    // Handle displaying of profile
+    $('#full-list').click(function(e){
+      var altText = $(this).data('alt-text');
+      e.preventDefault();
+      if ($(this).data('full-list') === 'true'){
+        $('#top5').find('tr:gt(5)').fadeOut();
+        $(this).data('full-list', 'false');
+        $.scrollTo('#status');
+      }else{
+        $('#top5').find('tr:gt(5)').fadeIn();
+        $(this).data('full-list', 'true');
+      }
+      $(this).data('alt-text', $(this).text());
+      $(this).text(altText);
     });
   }
 
