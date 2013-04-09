@@ -361,71 +361,29 @@
       position: relative;
       h4 {
         float: left;
-        margin-right: 14px;
-        margin-top: -15px;
-        margin-bottom: -4px;
+        margin: 24% 14px -4px 12%;
       }
       em {
         float: left;
         width: 35%;
-        margin-top: 3.5%;
+        margin-top: 32%;
         font-weight: bold;
       }
       p {
         clear: both;
         .font-size(14);
-        padding-right: 20%;
+        width: 70%;
+        margin: 0 auto;
       }
-      ul {
-        margin: 0 0 0 15%;
-      }
-      li {
-        list-style: none;
-        float: left;
-        margin: 0 4px 4px 0;
-        .pill {
-          position: relative;
-          width: 14px;
-          background: @blue;
-          height: 16px;
-          .border-bottom-radius(7px);
-          behavior: url(../js/libs//PIE.htc);
-          &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            right:15%;
-            top:0;
-            background: white;
-            width: 2px;
-            height: 10px;
-            .border-radius(2px);
-            .box-shadow(0 0 4px white);
-            .opacity(30);
-            behavior: url(../js/libs//PIE.htc);
-          }
-          &.top {
-            margin-bottom: 1px;
-            background: @pink;
-            .border-bottom-radius(0);
-            .border-top-radius(7px);
-            behavior: url(../js/libs//PIE.htc);
-            &:after {
-              content: '';
-              display: block;
-              position: absolute;
-              right:15%;
-              top:35%;
-              background: white;
-              width: 2px;
-              height: 10px;
-              .border-radius(2px);
-              .box-shadow(0 0 4px white);
-              .opacity(30);
-              behavior: url(../js/libs//PIE.htc);
-            }
-          }
-        }
+      .calendar {
+        position: relative;
+        background: url(../images/calendar.svg) center center no-repeat transparent;
+        background-size: contain;
+        width: 383px;
+        height: 330px;
+        margin: 0 auto;
+        .box-shadow(0 10px 30px -10px rgba(0,0,0,.5));
+        .rotate(-5deg);
       }
     }
 
@@ -529,7 +487,7 @@
             margin: 0 0 18px -15px;
             background: url(../images/postcards.svg) center -176px no-repeat transparent;
             .box-shadow(0 4px 8px -4px black);
-            -webkit-backface-visibility: hidden; // Smooth edges in chrome
+            // -webkit-backface-visibility: hidden; // Smooth edges in chrome
             .rotate(5deg);
           }
           &.new-zealand:before {
@@ -834,6 +792,7 @@
           border: 1px solid #e5e5e5;
           .border-radius(2px);
           .box-shadow(0 1px 3px #e5e5e5);
+          .rotate(5deg);
         }
       }
       &.drugs {
