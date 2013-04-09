@@ -34,11 +34,13 @@
     x.domain(_.map(convertedData, function(d) { return d.x; }));
     y.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
 
+    // X axis
     svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
 
+    // Y axis
     this.yAxisSvg = svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
@@ -49,6 +51,7 @@
       .attr("dy", ".71em")
       .style("text-anchor", "end");
 
+    // Y axis lines
     svg.selectAll("line.y")
       .data(y.ticks(6))
       .enter().append("line")
@@ -59,16 +62,69 @@
       .attr("y2", y)
       .style("stroke", "#f5f5f5");
 
+    // Bars
     this.barData = svg.selectAll(".bar")
       .data(convertedData)
-      .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return x(d.x); })
-      .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d.y); })
-      .attr("height", function(d) { return height - y(d.y); });
+      .enter().append("g")
+        .classed("bar-group", true)
+          .append("rect")
+          .classed("bar", true)
+          .attr("x", function(d) { return x(d.x); })
+          .attr("width", x.rangeBand())
+          .attr("y", function(d) { return y(d.y); })
+          .attr("height", function(d) { return height - y(d.y); })
+          .on("mouseover", function() {
+            d3.select(this)
+              // Denote the current bar as active
+              .classed("active", true)
+              // Bring the active bar group to the front
+              .each(function() {
+                var barGroup = this.parentNode;
+                barGroup.parentNode.appendChild(barGroup);
+              });
+            // Add `inactive` classes to the other bars
+            svg.selectAll(".bar")
+              .filter(":not(.active)")
+              .classed("inactive", true);
+          })
+          .on("mouseout", function() {
+            // Remove `inactive` classes from the other bars
+            d3.select(this).classed("active", false);
+            svg.selectAll(".bar")
+              .filter(":not(.active)")
+              .classed("inactive", false);
+          });
 
-
+    // Bar info boxes
+    this.barInfo = svg.selectAll(".bar-group")
+      .append("g")
+      .classed("bar-info", true)
+      .attr("transform", function(d) {
+        // Position them next to the associated bar
+        var xPos = x(d.x) + x.rangeBand() + 4;
+        var yPos = y(d.y);
+        // If there is enough space, move the info box down
+        if ((height - yPos) >= 40) {
+          yPos += 40;
+        }
+        return "translate(" + xPos + "," + yPos + ")";
+      });
+    // Info box background
+    this.barInfo.append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", 100)
+      .attr("height", 100)
+      .classed("background", true);
+    // Info box title
+    this.barInfo.append("text")
+      .classed("title", true)
+      .text(function(d) { return d3.format("0,000")(d.y); });
+    // Info box content
+    this.barInfo.append("text")
+      .classed("text", true)
+      .text(function(d) { return d.x; })
+      .attr("y", 20);
   };
 
   BarChart.prototype.convertData = function(){

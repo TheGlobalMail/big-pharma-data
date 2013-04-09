@@ -996,7 +996,40 @@ footer {
   }
 
   .bar {
+    .transition(fill 0.75s);
     fill: @blue;
+    &.inactive {
+      fill: @grayLighter;
+    }
+    &.active + .bar-info {
+      display: block;
+      .background {
+        .opacity(70);
+      }
+    }
+  }
+
+  .bar-info {
+    fill: white;
+    display: none;
+    .title,
+    .text {
+      fill: #333;
+    }
+    .title {
+      font-size: 3em;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .text {
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+    .background {
+      fill: white;
+      .opacity(70);
+      stroke: #aaa;
+    }
   }
 
   .y.axis path {
@@ -1023,6 +1056,6 @@ footer {
 }
 
 // This appears necessary to get the modal scrolling
-.modal{
+.modal {
   position: relative;
 }
