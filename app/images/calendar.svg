@@ -4,7 +4,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="476px" height="411px" viewBox="0 0 476 411" enable-background="new 0 0 476 411" xml:space="preserve">
 <rect y="15" fill="#0B6EB8" width="476" height="396"/>
-<rect x="8" y="23.123" fill="#D0E3F0" width="462" height="381.754"/>
+<rect x="8" y="23.123" fill="#CBDEEB" width="462" height="381.754"/>
 <path fill="#FFFFFF" d="M469.5,314c0-47,0-290.877,0-290.877H290H187.5H8C8,23.123,8,267,8,314c0,69-5,86-5,86l471.5-10
 	C474.5,390,469.5,384,469.5,314z"/>
 <rect x="8" y="23.123" fill="#79B5E0" width="462" height="90"/>
@@ -27,6 +27,7 @@
 <path fill="#FFFFFF" d="M187.5,23.123"/>
 <circle fill="#0B6EB8" cx="85.5" cy="68.123" r="17.5"/>
 <circle fill="#0B6EB8" cx="377.5" cy="68.123" r="17.5"/>
+<line fill="none" stroke="#BDDCF2" stroke-width="2" stroke-miterlimit="10" x1="8" y1="23.123" x2="470" y2="23.123"/>
 <g>
 	<path fill="#D0E3F0" d="M97,14c0-7.7-5.4-14-12-14S73,6.3,73,14v51c0,7.7,5.4,14,12,14s12-6.3,12-14V14z"/>
 </g>

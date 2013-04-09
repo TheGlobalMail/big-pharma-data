@@ -114,7 +114,7 @@
     var width = $conditions.find('li:first').width();
     _.each(conditions.slice(1), function(condition){
       var adjustRatio = (maxCost - condition.cost) / maxCost;
-      var adjust = width * adjustRatio * -1 - (600 - width); // 600 is the width of the background image
+      var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
       $conditions.find('#condition-' + condition.condition).css('background-position', adjust + "px 0");
     });
   }
