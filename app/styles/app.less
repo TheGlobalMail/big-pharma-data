@@ -997,7 +997,7 @@ footer {
     .transition(fill 0.75s);
     fill: @blue;
     &.inactive {
-      fill: @grayLighter;
+      fill: fadeout(@blue, 80%);
     }
     &.active + .bar-info {
       display: block;
@@ -1010,18 +1010,11 @@ footer {
   .bar-info {
     fill: white;
     display: none;
-    .title,
-    .text {
-      fill: #333;
-    }
     .title {
-      font-size: 3em;
+      .font-size(30);
+      fill: #333;
       font-style: italic;
-      font-weight: 600;
-    }
-    .text {
-      font-size: 1.5em;
-      text-transform: uppercase;
+      font-weight: 800;
     }
     .background {
       fill: white;
@@ -1050,6 +1043,21 @@ footer {
   .x.axis text {
     font-weight: bold;
     .font-size(12);
+  }
+}
+
+// Embedded XHTML docs in the SVG
+#main .svg-foreign-object {
+  background: transparent;
+  &.bar-chart {
+    // Info box text
+    p {
+      .font-size(14);
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0;
+      text-align: left;
+    }
   }
 }
 

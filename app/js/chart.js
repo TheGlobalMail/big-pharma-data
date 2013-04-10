@@ -1,4 +1,5 @@
 (function($, d3) {
+  'use strict';
 
   var BarChart = window.BarChart = function(id, data, label, metric, keepScale){
     this.data = data;
@@ -109,22 +110,54 @@
         }
         return "translate(" + xPos + "," + yPos + ")";
       });
-    // Info box background
+    // Background
     this.barInfo.append("rect")
       .attr("x", 0)
       .attr("y", 0)
       .attr("width", 100)
       .attr("height", 100)
       .classed("background", true);
-    // Info box title
+    // Title
     this.barInfo.append("text")
       .classed("title", true)
       .text(function(d) { return d3.format("0,000")(d.y); });
-    // Info box content
-    this.barInfo.append("text")
+    // Textual content
+    this.barInfo.append("foreignObject")
       .classed("text", true)
-      .text(function(d) { return d.x; })
-      .attr("y", 20);
+      .attr("x", 0)
+      .attr("y", 0)
+      .append("xhtml:body")
+        .classed("svg-foreign-object bar-chart", true)
+        .append("p")
+          .text(function(d) { return d.x; });
+
+    // Position and size the bar info box's elements
+    this.barInfo.each(function() {
+      var barInfo = d3.select(this);
+      var background = $(barInfo.select('.background')[0]);
+      var title = $(barInfo.select('.title')[0]);
+      var text = $(barInfo.select('.text')[0]);
+      var padding = 10;
+      title.attr("x", padding);
+      text.attr({
+        // Wrap the text at the title's width
+        "width": title.width(),
+        // The height of the foreignObject's body element
+        "height": text.children().height(),
+        // Left margin
+        "x": padding,
+        // Spacing between the title and the text
+        "y": 3
+      });
+      background.attr({
+        // Sum of the elements' height
+        "height": text.offset().top - title.offset().top + text.height() + padding * 1.5,
+        // Widest element + padding
+        "width": title.width() + (padding * 2),
+        // Top margin
+        "y": -title.height()
+      })
+    });
   };
 
   BarChart.prototype.convertData = function(){
