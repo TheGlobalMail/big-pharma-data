@@ -160,7 +160,8 @@
           </div>
 
           <div id="attendees" class="subsection attendees datavis">
-            <strong>Medical professionals of all kinds attend these events</strong>
+            <strong>Who gets invited?</strong>
+            <p class="subhead">Top 5 professions targeted by Big Pharma</p>
             <div class="btn-group">
               <button data-metric="events" class="btn active"># Events</button>
               <button data-metric="cost" class="btn">Total Spend ($)</button>
@@ -171,7 +172,8 @@
 
           <div class="subsection disease">
               <div class="bar-chart">
-                <strong>These are the areas where the most money is spent</strong>
+                <strong>Pharma companies favour educating about chronic diseases. </strong>
+                <p class="subhead">Top 5 disease types by spend:</p>
                 <ul id="conditions">
                 </ul>
               </div>
@@ -180,7 +182,7 @@
           <div class="subsection cost">
 
             <div class="left">
-              <strong>The average cost per person<br /> at one of these events is</strong>
+              <strong>The average cost per person (PP)<br /> at one of these events is</strong>
               <h4 class="large" id="perperson"></h4>
             </div>
 
@@ -192,11 +194,11 @@
                 <strong id="under-10-person"></strong>
               </li>
               <li class="pp twenty">
-                Under $20 pp
+                $10-$20 PP
                 <strong id="under-20-person"></strong>
               </li>
               <li class="pp fifty">
-                Under $50 pp
+                $20-$50 PP
                 <strong id="under-50-person"></strong>
               </li>
               <li class="pp over">
@@ -208,8 +210,8 @@
             </div>
 
             <div id="perperson-chart" class="chart datavis">
-              <strong>But for the vast majority it amounts to the cost of a coffee and a muffin</strong>
-              <p class="subhead">Hospitality is just the cost of food and beverages. Total cost can include sponsorships, flights and other things related to events - these costs are not manditory to provide (CHECK THIS).</p>
+              <strong>But for the majority of events, companies supply hospitality equivalent to a coffee and a muffin.</strong>
+              <p class="subhead">Hospitality shows the cost of food and beverages. Total cost can include sponsorships, flights, speakers’ fees, room hire etc.</p>
               <div class="btn-group">
                 <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
                 <button data-metric="count" class="btn">Total Cost</button>
@@ -283,7 +285,8 @@
             <h3 class="line">
               <span>Get the data</span>
             </h3>
-            <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            <p>Please download our data below and conduct your own investigation into drugs you and your loved ones are prescribed. <a href="#about" data-toggle="modal" data-bypass="">About this data</a></p>
+            <p>If you have any feedback on how we can improve this resource, you find any errors in the data, or if you find anything you would like us to investigate further - <br/> email clare.blumer AT theglobalmail.org</p>
             <div class="data-container">
               <ul>
                 <li class="csv"><a href="/downloads/complete_data_all.zip">All the data <span>Single CSV - 13MB</span></a></li>
@@ -409,7 +412,16 @@
         <h4>???</h4>
       </div>
     </div>
+  </div>
 
+  <div id="about" class="modal hide fade offset3" tabindex="-1">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3>About</h3>
+    </div>
+    <div class="modal-body">
+      <p>Pharmaceutical companies that are members companies of Medicines Australia were required to publish information about each educational activity they run or sponsor for health care practitioners. These have been published in six month blocks, in portable document form (PDF) on the Medicines Australia website. </p>
+    </div>
   </div>
 
 </div>
