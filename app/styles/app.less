@@ -274,13 +274,11 @@
     p {
         text-align: center;
         &.subhead {
-          .font-size(14);
-          color: @grayLight;
+          .font-size(16);
+          color: #777;
           padding: 6px 8% 0;
         }
       }
-
-
 
     &.spending {
       overflow: hidden;
@@ -395,8 +393,8 @@
         position: relative;
         background: url(../images/calendar.svg) center center no-repeat transparent;
         background-size: contain;
-        width: 383px;
-        height: 330px;
+        width: 370px;
+        height: 320px;
         margin: 0 auto;
         .box-shadow(0 10px 20px -10px rgba(0,0,0,.5));
         .rotate(-5deg);
@@ -695,7 +693,7 @@
         h4 {
           sup {
             .font-size(90);
-            padding-left: 4px;
+            padding-left: 16px;
           }
         }
         em {
@@ -939,13 +937,15 @@ footer {
   }
   ul {
     margin-left: 0;
-
     li {
       color: @grayLight;
       .font-size(14);
       list-style: none;
       float: left;
-      margin-right: 10%;
+      margin-right: 10px;
+      ul {
+        margin-right: 40px;
+      }
       h5 {
         text-transform: uppercase;
         .font-size(12);
@@ -1062,7 +1062,7 @@ footer {
     h5 {
       border: none;
       padding-top: 0;
-      margin-top: 10px;
+      margin-top: 0;
     }
   }
   .modal-body {
@@ -1070,6 +1070,13 @@ footer {
   }
   .close {
     .font-size(40);
+    margin-top: 0;
+    position: absolute;
+    right: 5%;
+  }
+  .pull-left, .pull-right {
+    width: 50%;
+    min-height: 98px;
   }
   h5 {
     .font-size(12);
@@ -1079,10 +1086,13 @@ footer {
     padding-top: 20px;
     border-top: 1px solid #e5e5e5;
     color: @grayLight;
+    clear: both;
   }
   h4 {
-    .font-size(30);
-    margin: 4px 0 10px 0;
+    .font-size(36);
+    font-weight: 800;
+    font-style: italic;
+    margin: 0 0 6px 0;
   }
   h3 {
     .font-size(30);
@@ -1090,6 +1100,77 @@ footer {
   p {
     .font-size(14);
     line-height: 1.5;
+    padding-right: 5%;
+  }
+  ul {
+    margin-left: 0;
+    li {
+      list-style: none;
+      .font-size(16);
+      font-weight: bold;
+      margin: 10px 0;
+      display: block;
+      max-width: 260px;
+      span {
+        font-weight: normal;
+        font-style: italic;
+        color:@gray;
+        float: right;
+      }
+    }
+  }
+  ul#company-top-event {
+    li {
+      .font-size(11);
+      text-transform: uppercase;
+      line-height: 1.4;
+      max-width: none;
+      span {
+        display: block;
+        .font-size(14);
+        text-transform: none;
+        font-style: normal;
+        color: @grayDark;
+        float: none;
+      }
+      span#company-expensive-event-description {
+        font-weight: bold;
+        .font-size(16);
+        color: @grayDark;
+        font-style: normal;
+        line-height: 1.2;
+      }
+    }
+  }
+  ul#company-perperson {
+    min-height: 70px;
+    li.pp {
+      float: left;
+      .font-size(12);
+      line-height: 1;
+      text-transform: uppercase;
+      font-style: italic;
+      list-style: none;
+      padding: 7px 11px 6px 52px;
+      background: url(../images/events-icons.svg) left 0 no-repeat;
+      &.twenty {
+        background-position: left -76px;
+        padding-right: 0;
+      }
+      &.fifty {
+        background-position: left -244px;
+      }
+      &.more {
+        background-position: left -162px;
+        padding-right: 0;
+      }
+      strong {
+        display: block;
+        .font-size(26);
+        font-weight: bold;
+        font-weight: 800;
+      }
+    }
   }
 }
 

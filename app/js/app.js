@@ -121,7 +121,7 @@
     var top3 = _.sortBy(list, 'events').reverse().slice(0, 3);
     $(id).html(_.map(top3, function(item){
       var itemName = item[name] === 'gp' ? 'General Practioners' : item[name];
-      return '<li>' + _.string.humanize(itemName) + ' (' + niceNumber(item.events) + ' events)</li>';
+      return '<li>' + _.string.humanize(itemName) + ' <span>' + niceNumber(item.events) + ' events</span></li>';
     }).join(''));
   }
 

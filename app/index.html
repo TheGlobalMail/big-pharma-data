@@ -126,7 +126,7 @@
 
               <span></span>
             </div>
-            <em>That’s about 95% of the data</em>
+            <em>(That’s about 95% of the data)</em>
           </div>
 
           <div class="subsection total-attendees">
@@ -160,7 +160,8 @@
           </div>
 
           <div id="attendees" class="subsection attendees datavis">
-            <strong>Medical professionals of all kinds attend these events</strong>
+            <strong>Who gets invited?</strong>
+            <p class="subhead">Top 5 professions targeted by Big Pharma</p>
             <div class="btn-group">
               <button data-metric="events" class="btn active"># Events</button>
               <button data-metric="cost" class="btn">Total Spend ($)</button>
@@ -171,7 +172,8 @@
 
           <div class="subsection disease">
               <div class="bar-chart">
-                <strong>These are the areas where the most money is spent</strong>
+                <strong>Pharma companies favour educating about chronic diseases. </strong>
+                <p class="subhead">Top 5 disease types by spend:</p>
                 <ul id="conditions">
                 </ul>
               </div>
@@ -180,7 +182,7 @@
           <div class="subsection cost">
 
             <div class="left">
-              <strong>The average cost per person<br /> at one of these events is</strong>
+              <strong>The average cost per person (PP)<br /> at one of these events is</strong>
               <h4 class="large" id="perperson"></h4>
             </div>
 
@@ -192,11 +194,11 @@
                 <strong id="under-10-person"></strong>
               </li>
               <li class="pp twenty">
-                Under $20 pp
+                $10-$20 PP
                 <strong id="under-20-person"></strong>
               </li>
               <li class="pp fifty">
-                Under $50 pp
+                $20-$50 PP
                 <strong id="under-50-person"></strong>
               </li>
               <li class="pp over">
@@ -208,8 +210,8 @@
             </div>
 
             <div id="perperson-chart" class="chart datavis">
-              <strong>But for the vast majority it amounts to the cost of a coffee and a muffin</strong>
-              <p class="subhead">Hospitality is just the cost of food and beverages. Total cost can include sponsorships, flights and other things related to events - these costs are not manditory to provide (CHECK THIS).</p>
+              <strong>But for the majority of events, companies supply hospitality equivalent to a coffee and a muffin.</strong>
+              <p class="subhead">Hospitality shows the cost of food and beverages. Total cost can include sponsorships, flights, speakers’ fees, room hire etc.</p>
               <div class="btn-group">
                 <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
                 <button data-metric="count" class="btn">Total Cost</button>
@@ -283,7 +285,8 @@
             <h3 class="line">
               <span>Get the data</span>
             </h3>
-            <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            <p>Please download our data below and conduct your own investigation into drugs you and your loved ones are prescribed. <a href="#about" data-toggle="modal" data-bypass="">About this data</a></p>
+            <p>If you have any feedback on how we can improve this resource, you find any errors in the data, or if you find anything you would like us to investigate further - <br/> email clare.blumer AT theglobalmail.org</p>
             <div class="data-container">
               <ul>
                 <li class="csv"><a href="/downloads/complete_data_all.zip">All the data <span>Single CSV - 13MB</span></a></li>
@@ -304,20 +307,30 @@
         <ul>
           <li>
             <ul>
-              <li><h5>Data-mining and Development</h5></li>
-              <li>B.J. Rossiter</li>
-              <li><h5>Design</h5></li>
-              <li>Jamie Ferguson</li>
+              <li><h5>Lead Journalists</h5></li>
+              <li>Joel Tozer</li>
+              <li>Clare Blumer</li>
             </ul>
           </li>
           <li>
-            <h5>Research and fact-checking</h5>
             <ul>
-              <li>Joel Tozer</li>
+              <li><h5>Data-mining</h5></li>
+              <li>B.J. Rossiter</li>
+              <li><h5>Design and Development</h5></li>
+              <li>Jamie Ferguson</li>
+              <li>B.J. Rossiter</li>
+              <li>Mark Finger</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><h5>Data Research</h5></li>
               <li>Julian de Lorenzo</li>
               <li>Chloe Potvin</li>
-              <li>Clare Blumer</li>
               <li>Squirrel Main</li>
+              <li>Emily King</li>
+              <li>Hayleigh Gowans</li>
+              <li>Zoe Ferguson</li>
             </ul>
           </li>
 
@@ -343,50 +356,72 @@
       <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
       <h5>Taxpayer money paid via PBS</h5>
       <h4>???</h4>
-      <h5>Money spent on Educational Events (since 2007)</h5>
-      <h4 id="company-total-cost"></h4>
-      <h5>Total number of events reported</h5>
-      <h4 id="company-total-events"></h4>
+      <div class="pull-left">
+        <h5>Total spent on Education Events (since 2007)</h5>
+        <h4 id="company-total-cost"></h4>
+      </div>
+      <div class="pull-right">
+        <h5>Total number of events reported</h5>
+        <h4 id="company-total-events"></h4>
+      </div>
       <h5>Events per price range</h5>
       <ul id="company-perperson">
       <li class="pp">
         Under $10 pp
         <strong data-perperson="under-10-person"></strong>
       </li>
-      <li class="pp">
+      <li class="pp twenty">
         Under $20 pp
         <strong data-perperson="under-20-person"></strong>
       </li>
-      <li class="pp">
+      <li class="pp fifty">
         Under $50 pp
         <strong data-perperson="under-50-person"></strong>
       </li>
-      <li class="pp">
+      <li class="pp more">
         Over $50 pp
         <strong data-perperson="over-50-person"></strong>
       </li>
       </ul>
       <h5>Most expensive event reported</h5>
-      <ul id="company-most-expensive"></ul>
-      <h5>Top three attendee types</h5>
-      <ul>
-        <li>Description <strong id="company-expensive-event-description"></strong></li>
-        <li>Venue <strong id="company-expensive-event-venue"></strong></li>
-        <li>Hospitality <strong id="company-expensive-event-hospitality"></strong></li>
-        <li>Hospitality cost <strong id="company-expensive-event-hospitalitycost"></strong></li>
-        <li>Total cost <strong id="company-expensive-event-cost"></strong></li>
-        <li>Attendees <strong id="company-expensive-event-attendees"></strong></li>
-        <li>Hospitality Per Person <strong id="company-expensive-event-hospitality_spendratio"></strong></li>
+      <ul id="company-top-event">
+        <li><span id="company-expensive-event-description"></span></li>
+        <li>Venue <span id="company-expensive-event-venue"></span></li>
+        <li>Type of Hospitality <span id="company-expensive-event-hospitality"></span></li>
+        <li>Cost of Hospitality <span id="company-expensive-event-hospitalitycost"></span></li>
+        <li>Total cost <span id="company-expensive-event-cost"></span></li>
+        <li>Number of Attendees <span id="company-expensive-event-attendees"></span></li>
+        <li>Cost of Hospitality Per Person <span id="company-expensive-event-hospitality_spendratio"></span></li>
       </ul>
+      <div class="pull-left">
+        <h5>Top three attendee types</h5>
+        <ul id="company-top-professions">
+        </ul>
+      </div>
+      <div class="pull-right">
       <h5>Top three diseases</h5>
-      <ul id="company-top-conditions">
-      </ul>
-      <h5>Revenue - Global</h5>
-      <h4>???</h4>
-      <h5>Revenue - Australia</h5>
-      <h4>???</h4>
+        <ul id="company-top-conditions">
+        </ul>
+      </div>
+      <div class="pull-left">
+        <h5>Revenue - Global</h5>
+        <h4>???</h4>
+      </div>
+      <div class="pull-right">
+        <h5>Revenue - Australia</h5>
+        <h4>???</h4>
+      </div>
     </div>
+  </div>
 
+  <div id="about" class="modal hide fade offset3" tabindex="-1">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3>About</h3>
+    </div>
+    <div class="modal-body">
+      <p>Pharmaceutical companies that are members companies of Medicines Australia were required to publish information about each educational activity they run or sponsor for health care practitioners. These have been published in six month blocks, in portable document form (PDF) on the Medicines Australia website. </p>
+    </div>
   </div>
 
 </div>
