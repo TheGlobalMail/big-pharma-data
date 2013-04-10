@@ -215,7 +215,7 @@
       label: 'binLabel',
       metric: 'hospitalitycount',
       keepScale: !!'keepScale',
-      yAxisLabel: 'TBC'
+      yAxisLabel: 'Number of attendees'
     });
     chart.render();
     bindButtons('#perperson-chart button', chart);
@@ -229,7 +229,7 @@
       label: 'profession',
       metric: 'events',
       keepScale: !'keepScale',
-      yAxisLabel: 'Number of attendees'
+      yAxisLabel: 'TBC'
     });
     chart.render();
     bindButtons('#attendees button', chart);
