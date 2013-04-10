@@ -124,6 +124,7 @@
     list-style: none;
     border: 1px solid #e5e5e5;
     .border-radius(8px);
+    behavior: url(../js/libs//PIE.htc);
     overflow: hidden;
     width: 220px;
 
@@ -139,10 +140,12 @@
       background-color: white;
       &:first-child {
         .border-top-radius(6px);
+        behavior: url(../js/libs//PIE.htc);
       }
       &:last-child{
         border-bottom: none;
         .border-bottom-radius(6px);
+        behavior: url(../js/libs//PIE.htc);
       }
       a {
         display: block;
@@ -154,6 +157,7 @@
         }
         &:first-child {
           .border-top-radius(6px);
+          behavior: url(../js/libs//PIE.htc);
         }
         &:last-child{
           .border-bottom-radius(6px);
@@ -295,7 +299,7 @@
         behavior: url(../js/libs//PIE.htc);
         z-index: 1;
         overflow: hidden;
-        .box-shadow(0 10px 30px -10px rgba(0,0,0,.5));
+        .box-shadow(0 10px 30px -10px #999);
         h4, strong {
           color: white;
           display: inline-block;
@@ -323,6 +327,7 @@
           // #gradient.vertical-three-colors(@blue,@blue,50%,#205273);
           z-index: -1;
           .border-right-radius(106px);
+          behavior: url(../js/libs//PIE.htc);
         }
         &:after {
           content: '';
@@ -432,21 +437,21 @@
               display: block;
               letter-spacing: -0.03em;
             }
-            &:first-child {
+            &#state-nt {
               margin-top: 106px;
               left:44%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
             }
-            &:nth-child(2) {
+            &#state-qld {
               margin-top: 123px;
               right:14%;
             }
-            &:nth-child(3) {
+            &#state-nsw {
               margin-top: 234px;
               right: 8%;
             }
-            &:nth-child(4) {
+            &#state-act {
               margin-top: 298px;
               right: -9px;
               color:@grayDark;
@@ -456,7 +461,7 @@
                 .font-size(24);
               }
             }
-            &:nth-child(5) {
+            &#state-vic {
               margin-top: 315px;
               right: 17%;
               .font-size(12);
@@ -465,19 +470,19 @@
               }
 
             }
-            &:nth-child(6) {
+            &#state-tas {
               margin-top: 378px;
               right: 10%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
             }
-            &:nth-child(7) {
+            &#state-sa {
               margin-top: 206px;
               right:35%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
             }
-            &:nth-child(8) {
+            &#state-wa {
               margin-top: 157px;
               left:13%;
               color:@pink;
@@ -638,14 +643,14 @@
           list-style: none;
           padding: 15px 5% 10px 50px;
           background: url(../images/events-icons.svg) left 12px no-repeat;
-          &:nth-child(2) {
+          &.twenty {
             background-position: left -65px;
             padding-right: 0;
           }
-          &:nth-child(3) {
+          &.fifty {
             background-position: left -235px;
           }
-          &:nth-child(4) {
+          &.more {
             background-position: left -155px;
             padding-right: 0;
           }
@@ -715,6 +720,8 @@
       background-color: @blue;
       .box-shadow(none);
       .font-size(16);
+      .border-radius(4px);
+      behavior: url(../js/libs//PIE.htc);
       &:hover {
         background-color: @blueDark;
       }
@@ -821,6 +828,7 @@
           height: 200px;
           border: 1px solid #e5e5e5;
           .border-radius(2px);
+          behavior: url(../js/libs//PIE.htc);
           .box-shadow(0 1px 3px #e5e5e5);
           .rotate(5deg);
           -ms-transform: rotate(0); //Cause IE sucks
@@ -883,11 +891,11 @@
             list-style: none;
             display: inline-block;
             text-align: left;
-
             a {
               display: inline-block;
               color: white;
               .border-radius(6px);
+              behavior: url(../js/libs//PIE.htc);
               .box-shadow(inset 0 1px 3px rgba(0,0,0,0.4));
               margin: 0 10px 10px;
               width: 60%;
@@ -944,44 +952,7 @@ footer {
   }
 }
 
-// IE8 hacks
 
-
-
-.lt-ie9 {
-  .no-ie {
-    display:none;
-  }
-  #main {
-    .subsection {
-      &.spending {
-        .bar-chart ul li {
-          margin-left: 0;
-        }
-      }
-      &.cost {
-        .left li.pp {
-          background-image: url(../images/events-icons.png);
-        }
-      }
-      &.alcohol {
-        .bottle {
-          background-image: url(../images/bottle.png);
-        }
-      }
-      &.australia {
-        .map {
-          background-image: url(../images/aus-map.png);
-        }
-      }
-      &.not-much {
-        .thermometer {
-          background-image: url(../images/thermometer.png);
-        }
-      }
-    }
-  }
-}
 
 // Bar chart styles
 .attendees .chart,
@@ -1060,6 +1031,7 @@ footer {
   position: relative; // This appears necessary to get the modal scrolling
   .box-shadow(0 0 0 4px rgba(0,0,0,0.1));
   .border-radius(4px);
+  behavior: url(../js/libs//PIE.htc);
   margin-top: 4px !important;
   .modal-header {
     border-bottom: 1px solid #e5e5e5;
@@ -1096,5 +1068,107 @@ footer {
   p {
     .font-size(14);
     line-height: 1.5;
+  }
+}
+
+// IE8 hacks
+
+
+
+.lt-ie9 {
+  .no-ie {
+    display:none;
+  }
+  #main {
+    h1, h2, h3 {
+      font-family: 'Georgia', serif;
+    }
+    .subsection {
+      h4, h4.large, h4.xlarge {
+        font-family: 'Arial', sans-serif;
+      }
+      &.spending {
+        .bar-chart ul li {
+          margin-left: 0;
+        }
+      }
+      &.cost {
+        min-height: 170px;
+        .right li.pp {
+          font-family: 'Arial', sans-serif;
+          background-image: url(../images/events-icons.png);
+        }
+      }
+      &.daily {
+        .calendar {
+          background-image: url(../images/calendar.png);
+        }
+      }
+      &.disease .bar-chart ul li {
+        font-family: 'Arial', sans-serif;
+      }
+      &.total {
+        .pill {
+          background: url(../images/pill.png) center center no-repeat transparent;
+          height: 218px;
+          &:after, span {
+            display: none;
+          }
+          &:before {
+            display: none;
+            .box-shadow(none);
+          }
+        }
+      }
+      &.total-attendees {
+        background-image: url(../images/doctor+nurse.png);
+      }
+      &.alcohol {
+        .bottle {
+          width: 650px;
+          height: 185px;
+          background-image: url(../images/bottle.png);
+        }
+      }
+      &.australia {
+        .map {
+          font-family: 'Arial', sans-serif;
+          background-image: url(../images/aus-map.png);
+        }
+      }
+      &.world {
+        ul#countries li:before {
+          background-image: url(../images/postcards.png);
+        }
+      }
+    }
+    #dont-know {
+        .subsection{
+          &.doctors {
+            .doctor {
+              background-image: url(../images/doctor.png);
+            }
+          }
+          &.drugs {
+            .drug {
+              background-image: url(../images/drugs-in-question.png);
+            }
+          }
+          &.not-much {
+            .thermometer {
+              background-image: url(../images/thermometer.png);
+            }
+          }
+        }
+      }
+      #data {
+        .data {
+          .data-container {
+            ul li a {
+              background-image: url(../images/doc-icons.png);
+            }
+          }
+        }
+      }
   }
 }
