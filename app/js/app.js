@@ -58,7 +58,7 @@
       row += '  <td class="dollars">' + toDollars(company.cost) + '</td>';
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
       row += '  <td class="events">' + niceNumber(company.events) + '</td>';
-      row += '  <td class="data">' + company.completed + '/?</td>';
+      row += '  <td class="data">' + company.completed + '/' + (company.completed + (company.incomplete || 0)) + '</td>';
       row += '</tr>';
       return row;
     });

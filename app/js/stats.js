@@ -11622,11 +11622,11 @@ window.stats = {
     },
     {
       "company": "smith",
-      "cost": 13250,
-      "attendees": 307,
-      "events": 3,
+      "cost": 24750,
+      "attendees": 687,
+      "events": 7,
       "alcohol": 0,
-      "completed": 3,
+      "completed": 6,
       "professions": [
         {
           "profession": "nurse",
@@ -11677,14 +11677,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gp",
-          "cost": 13250,
-          "attendees": 307,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 43.16
-        },
-        {
           "profession": "registrar",
           "cost": null,
           "attendees": null,
@@ -11731,6 +11723,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "gp",
+          "cost": 24750,
+          "attendees": 687,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 36.03
         },
         {
           "profession": "gastroenterologist",
@@ -11850,7 +11850,7 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3
+          "hospitalitycount": 7
         },
         {
           "bin": 20,
@@ -11883,273 +11883,6 @@ window.stats = {
         "cost": 6500,
         "hospitality": null,
         "attendees": 117,
-        "hospitalitycost": 0,
-        "hospitality_spendratio": 0
-      }
-    },
-    {
-      "company": "smithnephew",
-      "cost": 11500,
-      "attendees": 380,
-      "events": 4,
-      "alcohol": 0,
-      "completed": 3,
-      "professions": [
-        {
-          "profession": "nurse",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "pharmacist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "gp",
-          "cost": 11500,
-          "attendees": 380,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 30.26
-        },
-        {
-          "profession": "specialist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "neurologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "physician",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "registrar",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "haematologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "consultant",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "urologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "oncologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "paedology",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "hypertension",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "sexual",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "heart_disease",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "mental_illness",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "hiv",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "diabetes",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "fertility",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "cancer",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "dementia",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "osteoporosis",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "ageing",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        }
-      ],
-      "perheadBins": [
-        {
-          "bin": 10,
-          "hospitalitycount": 4
-        },
-        {
-          "bin": 20,
-          "hospitalitycount": 0
-        },
-        {
-          "bin": 50,
-          "hospitalitycount": 0
-        },
-        {
-          "bin": 200,
-          "hospitalitycount": 0
-        },
-        {
-          "bin": 1000,
-          "hospitalitycount": 0
-        },
-        {
-          "bin": 10000,
-          "hospitalitycount": 0
-        },
-        {
-          "bin": 100000,
-          "hospitalitycount": 0
-        }
-      ],
-      "mostExpensive": {
-        "description": "The Australasian College of Phlebology; 14th Annual Scientific Meeting & Workshop 30 March - 2 April 2011. Smith & Nephew Pty. Ltd. contributed to the sponsorship of the event via trade display attendance. The event was organised by the Australasian College of Phlebology Smith & Nephew Pty. Ltd. was not responsible for inviting the attendees or organising the educational content; the hospitality; accommodation or travel. Four day program. Duration of educational content delivered: 28 hours.",
-        "venue": "Sofitel Hotel Melbourne",
-        "cost": 5700,
-        "hospitality": "No",
-        "attendees": 150,
         "hospitalitycost": 0,
         "hospitality_spendratio": 0
       }
