@@ -70,8 +70,8 @@
 
     <section id="title" class="container">
       <div class="row-fluid">
-        <h1>Pharma in the deli</h1>
-        <h2>An investigation into the influence of Pharmaceutical companies on Australian doctors.</h2>
+        <h1>Pills for bills</h1>
+        <h2>Tracking Big Pharma’s marketing in education events</h2>
         <div id="nav-mob">
           <ul class="nav" role="menu" data-spy="affix" data-offset-top="125">
             <li data-link="introduction"><a href="#introduction"><span class="lge">Introduction</span><span class="sml">Intro</span></a></li>
@@ -98,14 +98,17 @@
         </div>
         <section id="introduction" class="offset3">
           <h3>Introduction</h3>
-          <p>This briefly explains the concept of education events and the process we went through. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. <em>Numbers have been rounded to nearest dollar or percent.</em></p>
+          <p>Pharmaceutical companies are banned from advertising prescription drugs to Australians. One of their remaining options is to market products directly to doctors through sponsored education events.</p>
+          <p>The Global Mail has created a database of events sponsored by pharmaceutical companies medical education. This is limited to members of Medicines Australia - who supply 86% of medicines subsidised by the Australian government and are forced to report on education events as part of their code of conduct.</p>
+          <p>We can now reveal meals and wine quaffed, the dollars spent and the practitioners targeted, all in the name of education.
+          <em>Numbers have been rounded to nearest dollar or percent.</em></p>
         </section>
 
 
 
         <section id="stats" class="offset3">
           <h3 class="line">
-            <span>Some stats so far</span>
+            <span>Stats so far</span>
           </h3>
 
 
@@ -118,19 +121,19 @@
 
           <div class="subsection total">
             <div class="pill">
-              <strong>Education events processed:</strong>
+              <strong>Pharma-sponsored education events:</strong>
               <h4 class="large" id="total-events"></h4>
 
               <span></span>
             </div>
-            <em>That’s about ??% of the data</em>
+            <em>That’s about 95% of the data</em>
           </div>
 
           <div class="subsection total-attendees">
             <div class="text">
               <strong>Total number of attendees:</strong>
               <h4 class="large" id="total-attendees"></h4>
-              <em>That’s about ??% every year</em>
+              <em>That’s about <span id="attendees-per-year"></span> every year</em>
             </div>
 
           </div>
@@ -138,7 +141,7 @@
           <div class="subsection daily">
             <div class="calendar">
               <h4 class="xlarge" id="events-per-day"></h4>
-              <em>education events happen in an average day</em>
+              <em>education events per day</em>
               <p>Because of the lack of detail we don’t know exactly which days they were.</p>
             </div>
           </div>
@@ -152,7 +155,7 @@
 
           <div id="world" class="subsection world datavis">
             <strong>but if you’re lucky, they might just send you overseas</strong>
-            <p class="subhead">There were over 40 overseas destinations listed, but these are the most visited:</p>
+            <p class="subhead">There were over 40 overseas destinations listed. These are the top three most visited.</p>
             <ul id="countries"></ul>
           </div>
 
@@ -160,8 +163,8 @@
             <strong>Medical professionals of all kinds attend these events</strong>
             <div class="btn-group">
               <button data-metric="events" class="btn active"># Events</button>
-              <button data-metric="cost" class="btn">Total Spend</button>
-              <button data-metric="perperson" class="btn">Spend PP</button>
+              <button data-metric="cost" class="btn">Total Spend ($)</button>
+              <button data-metric="perperson" class="btn">Spend PP ($)</button>
             </div>
             <div id="professions" class="chart"></div>
           </div>
@@ -188,15 +191,15 @@
                 Under $10 pp
                 <strong id="under-10-person"></strong>
               </li>
-              <li class="pp">
+              <li class="pp twenty">
                 Under $20 pp
                 <strong id="under-20-person"></strong>
               </li>
-              <li class="pp">
+              <li class="pp fifty">
                 Under $50 pp
                 <strong id="under-50-person"></strong>
               </li>
-              <li class="pp">
+              <li class="pp over">
                 Over $50 pp
                 <strong id="over-50-person"></strong>
               </li>
@@ -229,7 +232,7 @@
 
         <section id="status" class="offset3">
           <h3 class="line"><span>Top 5 companies</span></h3>
-          <table id="top5" class="table status-table">
+          <table id="top5" class="table status-table table-hover">
             <thead>
                 <tr>
                     <th class="company">Company</th>
@@ -341,24 +344,42 @@
       <h5>Taxpayer money paid via PBS</h5>
       <h4>???</h4>
       <h5>Money spent on Educational Events (since 2007)</h5>
-      <h4>???</h4>
+      <h4 id="company-total-cost"></h4>
       <h5>Total number of events reported</h5>
-      <h4>???</h4>
+      <h4 id="company-total-events"></h4>
       <h5>Events per price range</h5>
-      <h4>???</h4>
+      <ul id="company-perperson">
+      <li class="pp">
+        Under $10 pp
+        <strong data-perperson="under-10-person"></strong>
+      </li>
+      <li class="pp">
+        Under $20 pp
+        <strong data-perperson="under-20-person"></strong>
+      </li>
+      <li class="pp">
+        Under $50 pp
+        <strong data-perperson="under-50-person"></strong>
+      </li>
+      <li class="pp">
+        Over $50 pp
+        <strong data-perperson="over-50-person"></strong>
+      </li>
+      </ul>
       <h5>Most expensive event reported</h5>
-      <h4>???</h4>
+      <ul id="company-most-expensive"></ul>
       <h5>Top three attendee types</h5>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Description <strong id="company-expensive-event-description"></strong></li>
+        <li>Venue <strong id="company-expensive-event-venue"></strong></li>
+        <li>Hospitality <strong id="company-expensive-event-hospitality"></strong></li>
+        <li>Hospitality cost <strong id="company-expensive-event-hospitalitycost"></strong></li>
+        <li>Total cost <strong id="company-expensive-event-cost"></strong></li>
+        <li>Attendees <strong id="company-expensive-event-attendees"></strong></li>
+        <li>Hospitality Per Person <strong id="company-expensive-event-hospitality_spendratio"></strong></li>
       </ul>
       <h5>Top three diseases</h5>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul id="company-top-conditions">
       </ul>
       <h5>Revenue - Global</h5>
       <h4>???</h4>
@@ -379,6 +400,7 @@
   <!-- build:js /js/main.js -->
   <script src="/components/jquery/jquery.js"></script>
   <script src="/components/lodash/lodash.js"></script>
+  <script src="/components/underscore.string/lib/underscore.string.js"></script>
   <script src="/components/backbone/backbone.js"></script>
   <script src="/components/jquery-waypoints/waypoints.js"></script>
   <script src="/components/jquery.scrollTo/jquery.scrollTo.js"></script>
