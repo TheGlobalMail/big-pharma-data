@@ -1,12 +1,19 @@
 (function($, d3) {
   'use strict';
 
-  var BarChart = window.BarChart = function(id, data, label, metric, keepScale){
-    this.data = data;
-    this.id = id;
-    this.label = label;
-    this.metric = metric;
-    this.keepScale = keepScale;
+  var BarChart = window.BarChart = function(options){
+
+    this.data = options.data;
+    this.id = options.id;
+    this.label = options.label;
+    this.metric = options.metric;
+    this.keepScale = options.keepScale;
+
+    var defaultOptions = {
+      yAxisLabel: null
+    };
+
+    this.options = _.extend(defaultOptions, options);
   };
 
   BarChart.prototype.render = function(){
@@ -35,22 +42,18 @@
     x.domain(_.map(convertedData, function(d) { return d.x; }));
     y.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
 
-    // X axis
+    // Insert the X axis
     svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
 
-    // Y axis
+    // Insert the Y axis
     this.yAxisSvg = svg.append("g")
       .attr("class", "y axis")
-      .call(yAxis)
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      //.attr("transform", "translate(" + width + ", 0)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end");
+      .call(yAxis);
+
+    this.renderYAxisLabel();
 
     // Y axis lines
     svg.selectAll("line.y")
@@ -151,12 +154,12 @@
       });
       background.attr({
         // Sum of the elements' height
-        "height": text.offset().top - title.offset().top + text.height() + padding * 1.5,
+        "height": text.offset().top - title.offset().top + text.height() + padding,
         // Widest element + padding
         "width": title.width() + (padding * 2),
         // Top margin
         "y": -title.height()
-      })
+      });
     });
   };
 
@@ -181,4 +184,34 @@
       .attr("y", function(d) { return yScale(d.y); })
       .attr("height", function(d) { return height - yScale(d.y); });
   };
+
+  BarChart.prototype.renderYAxisLabel = function() {
+    if (this.options.yAxisLabel) {
+      // Add the label
+      var $yAxisSvg = $(this.yAxisSvg[0]);
+      var label = this.yAxisSvg.append("text")
+        .classed("y-axis-label", true)
+        .attr("transform", "rotate(-90)")
+        .style("text-anchor", "end")
+        .text(this.options.yAxisLabel);
+
+      // Position the label
+      var $label = $(label[0]);
+      var smallestLeftOffset = _.min(
+        _.map(
+          $(this.yAxisSvg.selectAll('.tick text')[0]),
+          function(el) {
+            return $(el).offset().left;
+          }
+        )
+      );
+      label.attr({
+        "x": -((this.height - $label.width()) / 2),
+        // Position the y axis label slightly offset from
+        // the left-most tick value
+        "y": -($label.offset().left - smallestLeftOffset) - $label.height() - 9 // magical constant
+      });
+    }
+  };
+
 }($, window.d3));

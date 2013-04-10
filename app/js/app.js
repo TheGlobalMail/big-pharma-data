@@ -209,14 +209,28 @@
       datum.binLabel = previousBin + '-' + datum.bin;
     });
     _.last(data).binLabel = 'Over ' + _.last(data).bin;
-    var chart = new BarChart("#perperson-chart", stats.perheadBins, 'binLabel', 'hospitalitycount', !!'keepScale');
+    var chart = new BarChart({
+      id: "#perperson-chart",
+      data: stats.perheadBins,
+      label: 'binLabel',
+      metric: 'hospitalitycount',
+      keepScale: !!'keepScale',
+      yAxisLabel: 'TBC'
+    });
     chart.render();
     bindButtons('#perperson-chart button', chart);
   }
 
   function populateProfessions(){
     var topProfessions = _.sortBy(stats.professions, 'events').reverse().slice(0, 8);
-    var chart = new BarChart('#professions', topProfessions, 'profession', 'events', !'keepScale');
+    var chart = new BarChart({
+      id: '#professions',
+      data: topProfessions,
+      label: 'profession',
+      metric: 'events',
+      keepScale: !'keepScale',
+      yAxisLabel: 'Number of attendees'
+    });
     chart.render();
     bindButtons('#attendees button', chart);
   }
