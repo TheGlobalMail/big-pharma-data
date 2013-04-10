@@ -70,34 +70,34 @@
     this.barData = svg.selectAll(".bar")
       .data(convertedData)
       .enter().append("g")
-        .classed("bar-group", true)
-          .append("rect")
-          .classed("bar", true)
-          .attr("x", function(d) { return x(d.x); })
-          .attr("width", x.rangeBand())
-          .attr("y", function(d) { return y(d.y); })
-          .attr("height", function(d) { return height - y(d.y); })
-          .on("mouseover", function() {
-            d3.select(this)
-              // Denote the current bar as active
-              .classed("active", true)
-              // Bring the active bar group to the front
-              .each(function() {
-                var barGroup = this.parentNode;
-                barGroup.parentNode.appendChild(barGroup);
-              });
-            // Add `inactive` classes to the other bars
-            svg.selectAll(".bar")
-              .filter(":not(.active)")
-              .classed("inactive", true);
-          })
-          .on("mouseout", function() {
-            // Remove `inactive` classes from the other bars
-            d3.select(this).classed("active", false);
-            svg.selectAll(".bar")
-              .filter(":not(.active)")
-              .classed("inactive", false);
-          });
+      .classed("bar-group", true)
+        .append("rect")
+        .classed("bar", true)
+        .attr("x", function(d) { return x(d.x); })
+        .attr("width", x.rangeBand())
+        .attr("y", function(d) { return y(d.y); })
+        .attr("height", function(d) { return height - y(d.y); })
+        .on("mouseover", function() {
+          d3.select(this)
+            // Denote the current bar as active
+            .classed("active", true)
+            // Bring the active bar group to the front
+            .each(function() {
+              var barGroup = this.parentNode;
+              barGroup.parentNode.appendChild(barGroup);
+            });
+          // Add `inactive` classes to the other bars
+          svg.selectAll(".bar")
+            .filter(":not(.active)")
+            .classed("inactive", true);
+        })
+        .on("mouseout", function() {
+          // Remove `inactive` classes from the other bars
+          d3.select(this).classed("active", false);
+          svg.selectAll(".bar")
+            .filter(":not(.active)")
+            .classed("inactive", false);
+        });
 
     // Bar info boxes
     this.barInfo = svg.selectAll(".bar-group")
@@ -117,29 +117,30 @@
     this.barInfo.append("rect")
       .attr("x", 0)
       .attr("y", 0)
-      .attr("width", 100)
-      .attr("height", 100)
       .classed("background", true);
     // Title
     this.barInfo.append("text")
       .classed("title", true)
       .text(function(d) { return d3.format("0,000")(d.y); });
     // Textual content
-    this.barInfo.append("foreignObject")
+    this.barInfo.append("g")
       .classed("text", true)
-      .attr("x", 0)
-      .attr("y", 0)
-      .append("xhtml:body")
-        .classed("svg-foreign-object bar-chart", true)
-        .append("p")
-          .text(function(d) { return d.x; });
+      .append("foreignObject")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", 100)
+        .attr("height", 100)
+          .append("xhtml:body")
+            .classed("svg-foreign-object bar-chart", true)
+            .append("p")
+              .text(function(d) { return d.x; });
 
     // Position and size the bar info box's elements
     this.barInfo.each(function() {
       var barInfo = d3.select(this);
       var background = $(barInfo.select('.background')[0]);
       var title = $(barInfo.select('.title')[0]);
-      var text = $(barInfo.select('.text')[0]);
+      var text = $(barInfo.select('.text')[0]).children('foreignObject');
       var padding = 10;
       title.attr("x", padding);
       text.attr({
