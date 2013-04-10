@@ -395,8 +395,8 @@
         position: relative;
         background: url(../images/calendar.svg) center center no-repeat transparent;
         background-size: contain;
-        width: 383px;
-        height: 330px;
+        width: 370px;
+        height: 320px;
         margin: 0 auto;
         .box-shadow(0 10px 20px -10px rgba(0,0,0,.5));
         .rotate(-5deg);
@@ -695,7 +695,7 @@
         h4 {
           sup {
             .font-size(90);
-            padding-left: 4px;
+            padding-left: 16px;
           }
         }
         em {
@@ -939,13 +939,15 @@ footer {
   }
   ul {
     margin-left: 0;
-
     li {
       color: @grayLight;
       .font-size(14);
       list-style: none;
       float: left;
-      margin-right: 10%;
+      margin-right: 10px;
+      ul {
+        margin-right: 40px;
+      }
       h5 {
         text-transform: uppercase;
         .font-size(12);
@@ -1066,15 +1068,22 @@ footer {
   .close {
     .font-size(40);
     margin-top: 0;
+    position: absolute;
+    right: 5%;
+  }
+  .pull-left, .pull-right {
+    width: 50%;
+    min-height: 98px;
   }
   h5 {
     .font-size(12);
     text-transform: uppercase;
     font-weight: normal;
-    margin: 15px 0 0;
-    padding-top: 15px;
+    margin: 20px 0 0;
+    padding-top: 20px;
     border-top: 1px solid #e5e5e5;
     color: @grayLight;
+    clear: both;
   }
   h4 {
     .font-size(36);
@@ -1096,16 +1105,15 @@ footer {
       list-style: none;
       .font-size(16);
       font-weight: bold;
-      margin: 4px 0 6px;
+      margin: 10px 0;
       display: block;
-      max-width: 330px;
+      max-width: 260px;
       span {
         font-weight: normal;
         font-style: italic;
         color:@gray;
         float: right;
       }
-
     }
   }
   ul#company-top-event {
@@ -1124,7 +1132,7 @@ footer {
       }
       span#company-expensive-event-description {
         font-weight: bold;
-        .font-size(18);
+        .font-size(16);
         color: @grayDark;
         font-style: normal;
         line-height: 1.2;
@@ -1140,17 +1148,17 @@ footer {
       text-transform: uppercase;
       font-style: italic;
       list-style: none;
-      padding: 18px 14px 4px 52px;
-      background: url(../images/events-icons.svg) left 12px no-repeat;
+      padding: 7px 11px 6px 52px;
+      background: url(../images/events-icons.svg) left 0 no-repeat;
       &.twenty {
-        background-position: left -65px;
+        background-position: left -76px;
         padding-right: 0;
       }
       &.fifty {
-        background-position: left -235px;
+        background-position: left -244px;
       }
       &.more {
-        background-position: left -155px;
+        background-position: left -162px;
         padding-right: 0;
       }
       strong {

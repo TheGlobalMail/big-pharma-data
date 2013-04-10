@@ -236,6 +236,9 @@
       }
     }
   }
+  footer ul li {
+    float: none;
+  }
 }
 @media only screen and (max-width: 680px) {
   .navbar {
@@ -306,7 +309,8 @@
         .font-size(18);
       }
       h4.large {
-        .font-size(80);
+        .font-size(85);
+        margin-left: -10px;
       }
       h4.xlarge {
         .font-size(110);
@@ -597,8 +601,13 @@
     ul#company-perperson {
       min-height: 140px;
     }
+    .pull-left, .pull-right {
+      float: none;
+      display: block;
+      width: 100%;
+      min-height: auto;
+    }
   }
-
 
   .modal, .modal.container, .modal.modal-overflow {
     width: auto !important;
