@@ -230,23 +230,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 799
+          "hospitalitycount": 816
         },
         {
           "bin": 20,
-          "hospitalitycount": 1009
+          "hospitalitycount": 1007
         },
         {
           "bin": 50,
-          "hospitalitycount": 383
+          "hospitalitycount": 371
         },
         {
           "bin": 200,
-          "hospitalitycount": 718
+          "hospitalitycount": 716
         },
         {
           "bin": 1000,
-          "hospitalitycount": 19
+          "hospitalitycount": 18
         },
         {
           "bin": 10000,
@@ -497,15 +497,15 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 200
+          "hospitalitycount": 207
         },
         {
           "bin": 20,
-          "hospitalitycount": 274
+          "hospitalitycount": 268
         },
         {
           "bin": 50,
-          "hospitalitycount": 57
+          "hospitalitycount": 56
         },
         {
           "bin": 200,
@@ -768,11 +768,11 @@ window.stats = {
         },
         {
           "bin": 20,
-          "hospitalitycount": 6
+          "hospitalitycount": 7
         },
         {
           "bin": 50,
-          "hospitalitycount": 27
+          "hospitalitycount": 26
         },
         {
           "bin": 200,
@@ -1031,19 +1031,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 317
+          "hospitalitycount": 319
         },
         {
           "bin": 20,
-          "hospitalitycount": 209
+          "hospitalitycount": 216
         },
         {
           "bin": 50,
-          "hospitalitycount": 601
+          "hospitalitycount": 602
         },
         {
           "bin": 200,
-          "hospitalitycount": 436
+          "hospitalitycount": 426
         },
         {
           "bin": 1000,
@@ -1298,19 +1298,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 298
+          "hospitalitycount": 406
         },
         {
           "bin": 20,
-          "hospitalitycount": 289
+          "hospitalitycount": 184
         },
         {
           "bin": 50,
-          "hospitalitycount": 63
+          "hospitalitycount": 62
         },
         {
           "bin": 200,
-          "hospitalitycount": 61
+          "hospitalitycount": 59
         },
         {
           "bin": 1000,
@@ -1565,19 +1565,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2536
+          "hospitalitycount": 2608
         },
         {
           "bin": 20,
-          "hospitalitycount": 2613
+          "hospitalitycount": 2550
         },
         {
           "bin": 50,
-          "hospitalitycount": 442
+          "hospitalitycount": 434
         },
         {
           "bin": 200,
-          "hospitalitycount": 430
+          "hospitalitycount": 429
         },
         {
           "bin": 1000,
@@ -1832,11 +1832,11 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 12
+          "hospitalitycount": 14
         },
         {
           "bin": 20,
-          "hospitalitycount": 14
+          "hospitalitycount": 12
         },
         {
           "bin": 50,
@@ -2099,19 +2099,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 5750
+          "hospitalitycount": 5889
         },
         {
           "bin": 20,
-          "hospitalitycount": 6697
+          "hospitalitycount": 6576
         },
         {
           "bin": 50,
-          "hospitalitycount": 1308
+          "hospitalitycount": 1315
         },
         {
           "bin": 200,
-          "hospitalitycount": 4526
+          "hospitalitycount": 4501
         },
         {
           "bin": 1000,
@@ -2366,19 +2366,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 383
+          "hospitalitycount": 388
         },
         {
           "bin": 20,
-          "hospitalitycount": 217
+          "hospitalitycount": 212
         },
         {
           "bin": 50,
-          "hospitalitycount": 56
+          "hospitalitycount": 57
         },
         {
           "bin": 200,
-          "hospitalitycount": 59
+          "hospitalitycount": 58
         },
         {
           "bin": 1000,
@@ -2633,19 +2633,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2453
+          "hospitalitycount": 2465
         },
         {
           "bin": 20,
-          "hospitalitycount": 213
+          "hospitalitycount": 210
         },
         {
           "bin": 50,
-          "hospitalitycount": 118
+          "hospitalitycount": 113
         },
         {
           "bin": 200,
-          "hospitalitycount": 321
+          "hospitalitycount": 317
         },
         {
           "bin": 1000,
@@ -3167,19 +3167,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 444
+          "hospitalitycount": 484
         },
         {
           "bin": 20,
-          "hospitalitycount": 1063
+          "hospitalitycount": 1054
         },
         {
           "bin": 50,
-          "hospitalitycount": 463
+          "hospitalitycount": 442
         },
         {
           "bin": 200,
-          "hospitalitycount": 591
+          "hospitalitycount": 581
         },
         {
           "bin": 1000,
@@ -3434,7 +3434,7 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 62
+          "hospitalitycount": 63
         },
         {
           "bin": 20,
@@ -3442,11 +3442,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 662
+          "hospitalitycount": 664
         },
         {
           "bin": 200,
-          "hospitalitycount": 2500
+          "hospitalitycount": 2497
         },
         {
           "bin": 1000,
@@ -3701,15 +3701,15 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 87
+          "hospitalitycount": 91
         },
         {
           "bin": 20,
-          "hospitalitycount": 257
+          "hospitalitycount": 256
         },
         {
           "bin": 50,
-          "hospitalitycount": 59
+          "hospitalitycount": 56
         },
         {
           "bin": 200,
@@ -3968,19 +3968,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1104
+          "hospitalitycount": 1142
         },
         {
           "bin": 20,
-          "hospitalitycount": 717
+          "hospitalitycount": 679
         },
         {
           "bin": 50,
-          "hospitalitycount": 126
+          "hospitalitycount": 128
         },
         {
           "bin": 200,
-          "hospitalitycount": 441
+          "hospitalitycount": 439
         },
         {
           "bin": 1000,
@@ -4235,19 +4235,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3060
+          "hospitalitycount": 3174
         },
         {
           "bin": 20,
-          "hospitalitycount": 2261
+          "hospitalitycount": 2173
         },
         {
           "bin": 50,
-          "hospitalitycount": 542
+          "hospitalitycount": 527
         },
         {
           "bin": 200,
-          "hospitalitycount": 1725
+          "hospitalitycount": 1714
         },
         {
           "bin": 1000,
@@ -4510,11 +4510,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 12
+          "hospitalitycount": 13
         },
         {
           "bin": 200,
-          "hospitalitycount": 17
+          "hospitalitycount": 16
         },
         {
           "bin": 1000,
@@ -4769,11 +4769,11 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 174
+          "hospitalitycount": 177
         },
         {
           "bin": 20,
-          "hospitalitycount": 202
+          "hospitalitycount": 199
         },
         {
           "bin": 50,
@@ -5036,19 +5036,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 753
+          "hospitalitycount": 774
         },
         {
           "bin": 20,
-          "hospitalitycount": 408
+          "hospitalitycount": 393
         },
         {
           "bin": 50,
-          "hospitalitycount": 88
+          "hospitalitycount": 83
         },
         {
           "bin": 200,
-          "hospitalitycount": 35
+          "hospitalitycount": 34
         },
         {
           "bin": 1000,
@@ -5303,19 +5303,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 704
+          "hospitalitycount": 741
         },
         {
           "bin": 20,
-          "hospitalitycount": 1151
+          "hospitalitycount": 1155
         },
         {
           "bin": 50,
-          "hospitalitycount": 321
+          "hospitalitycount": 283
         },
         {
           "bin": 200,
-          "hospitalitycount": 209
+          "hospitalitycount": 206
         },
         {
           "bin": 1000,
@@ -5570,19 +5570,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2415
+          "hospitalitycount": 2477
         },
         {
           "bin": 20,
-          "hospitalitycount": 2055
+          "hospitalitycount": 2008
         },
         {
           "bin": 50,
-          "hospitalitycount": 430
+          "hospitalitycount": 421
         },
         {
           "bin": 200,
-          "hospitalitycount": 1327
+          "hospitalitycount": 1321
         },
         {
           "bin": 1000,
@@ -6112,11 +6112,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 39
+          "hospitalitycount": 40
         },
         {
           "bin": 200,
-          "hospitalitycount": 91
+          "hospitalitycount": 90
         },
         {
           "bin": 1000,
@@ -6638,15 +6638,15 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 832
+          "hospitalitycount": 853
         },
         {
           "bin": 20,
-          "hospitalitycount": 1041
+          "hospitalitycount": 1025
         },
         {
           "bin": 50,
-          "hospitalitycount": 121
+          "hospitalitycount": 116
         },
         {
           "bin": 200,
@@ -6905,19 +6905,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3506
+          "hospitalitycount": 3756
         },
         {
           "bin": 20,
-          "hospitalitycount": 2723
+          "hospitalitycount": 2523
         },
         {
           "bin": 50,
-          "hospitalitycount": 615
+          "hospitalitycount": 577
         },
         {
           "bin": 200,
-          "hospitalitycount": 1601
+          "hospitalitycount": 1589
         },
         {
           "bin": 1000,
@@ -7180,11 +7180,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 17
+          "hospitalitycount": 18
         },
         {
           "bin": 200,
-          "hospitalitycount": 54
+          "hospitalitycount": 53
         },
         {
           "bin": 1000,
@@ -7439,19 +7439,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 481
+          "hospitalitycount": 486
         },
         {
           "bin": 20,
-          "hospitalitycount": 763
+          "hospitalitycount": 762
         },
         {
           "bin": 50,
-          "hospitalitycount": 290
+          "hospitalitycount": 287
         },
         {
           "bin": 200,
-          "hospitalitycount": 608
+          "hospitalitycount": 607
         },
         {
           "bin": 1000,
@@ -7706,27 +7706,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3037
+          "hospitalitycount": 3356
         },
         {
           "bin": 20,
-          "hospitalitycount": 3269
+          "hospitalitycount": 3033
         },
         {
           "bin": 50,
-          "hospitalitycount": 649
+          "hospitalitycount": 584
         },
         {
           "bin": 200,
-          "hospitalitycount": 1326
+          "hospitalitycount": 1308
         },
         {
           "bin": 1000,
-          "hospitalitycount": 117
+          "hospitalitycount": 118
         },
         {
           "bin": 10000,
-          "hospitalitycount": 26
+          "hospitalitycount": 25
         },
         {
           "bin": 100000,
@@ -7973,23 +7973,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 365
+          "hospitalitycount": 373
         },
         {
           "bin": 20,
-          "hospitalitycount": 483
+          "hospitalitycount": 478
         },
         {
           "bin": 50,
-          "hospitalitycount": 185
+          "hospitalitycount": 182
         },
         {
           "bin": 200,
-          "hospitalitycount": 374
+          "hospitalitycount": 375
         },
         {
           "bin": 1000,
-          "hospitalitycount": 20
+          "hospitalitycount": 19
         },
         {
           "bin": 10000,
@@ -8240,19 +8240,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1293
+          "hospitalitycount": 1309
         },
         {
           "bin": 20,
-          "hospitalitycount": 560
+          "hospitalitycount": 548
         },
         {
           "bin": 50,
-          "hospitalitycount": 301
+          "hospitalitycount": 298
         },
         {
           "bin": 200,
-          "hospitalitycount": 798
+          "hospitalitycount": 797
         },
         {
           "bin": 1000,
@@ -8507,19 +8507,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 88
+          "hospitalitycount": 91
         },
         {
           "bin": 20,
-          "hospitalitycount": 57
+          "hospitalitycount": 54
         },
         {
           "bin": 50,
-          "hospitalitycount": 56
+          "hospitalitycount": 57
         },
         {
           "bin": 200,
-          "hospitalitycount": 44
+          "hospitalitycount": 43
         },
         {
           "bin": 1000,
@@ -8774,27 +8774,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3021
+          "hospitalitycount": 3196
         },
         {
           "bin": 20,
-          "hospitalitycount": 5729
+          "hospitalitycount": 5633
         },
         {
           "bin": 50,
-          "hospitalitycount": 1293
+          "hospitalitycount": 1223
         },
         {
           "bin": 200,
-          "hospitalitycount": 2227
+          "hospitalitycount": 2218
         },
         {
           "bin": 1000,
-          "hospitalitycount": 112
+          "hospitalitycount": 113
         },
         {
           "bin": 10000,
-          "hospitalitycount": 38
+          "hospitalitycount": 37
         },
         {
           "bin": 100000,
@@ -9041,15 +9041,15 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1064
+          "hospitalitycount": 1082
         },
         {
           "bin": 20,
-          "hospitalitycount": 986
+          "hospitalitycount": 971
         },
         {
           "bin": 50,
-          "hospitalitycount": 213
+          "hospitalitycount": 210
         },
         {
           "bin": 200,
@@ -9308,7 +9308,7 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 359
+          "hospitalitycount": 360
         },
         {
           "bin": 20,
@@ -9316,11 +9316,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 108
+          "hospitalitycount": 109
         },
         {
           "bin": 200,
-          "hospitalitycount": 144
+          "hospitalitycount": 142
         },
         {
           "bin": 1000,
@@ -9575,19 +9575,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 137
+          "hospitalitycount": 149
         },
         {
           "bin": 20,
-          "hospitalitycount": 123
+          "hospitalitycount": 117
         },
         {
           "bin": 50,
-          "hospitalitycount": 62
+          "hospitalitycount": 57
         },
         {
           "bin": 200,
-          "hospitalitycount": 164
+          "hospitalitycount": 163
         },
         {
           "bin": 1000,
@@ -9842,19 +9842,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 7128
+          "hospitalitycount": 7576
         },
         {
           "bin": 20,
-          "hospitalitycount": 5675
+          "hospitalitycount": 5301
         },
         {
           "bin": 50,
-          "hospitalitycount": 1191
+          "hospitalitycount": 1147
         },
         {
           "bin": 200,
-          "hospitalitycount": 2046
+          "hospitalitycount": 2016
         },
         {
           "bin": 1000,
@@ -10109,11 +10109,11 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 58
+          "hospitalitycount": 72
         },
         {
           "bin": 20,
-          "hospitalitycount": 88
+          "hospitalitycount": 74
         },
         {
           "bin": 50,
@@ -10376,23 +10376,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3315
+          "hospitalitycount": 3466
         },
         {
           "bin": 20,
-          "hospitalitycount": 4928
+          "hospitalitycount": 4800
         },
         {
           "bin": 50,
-          "hospitalitycount": 726
+          "hospitalitycount": 709
         },
         {
           "bin": 200,
-          "hospitalitycount": 911
+          "hospitalitycount": 906
         },
         {
           "bin": 1000,
-          "hospitalitycount": 56
+          "hospitalitycount": 55
         },
         {
           "bin": 10000,
@@ -10643,27 +10643,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 4360
+          "hospitalitycount": 4512
         },
         {
           "bin": 20,
-          "hospitalitycount": 2466
+          "hospitalitycount": 2327
         },
         {
           "bin": 50,
-          "hospitalitycount": 503
+          "hospitalitycount": 496
         },
         {
           "bin": 200,
-          "hospitalitycount": 834
+          "hospitalitycount": 833
         },
         {
           "bin": 1000,
-          "hospitalitycount": 110
+          "hospitalitycount": 107
         },
         {
           "bin": 10000,
-          "hospitalitycount": 47
+          "hospitalitycount": 45
         },
         {
           "bin": 100000,
@@ -10910,27 +10910,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1757
+          "hospitalitycount": 1969
         },
         {
           "bin": 20,
-          "hospitalitycount": 1552
+          "hospitalitycount": 1365
         },
         {
           "bin": 50,
-          "hospitalitycount": 245
+          "hospitalitycount": 234
         },
         {
           "bin": 200,
-          "hospitalitycount": 855
+          "hospitalitycount": 846
         },
         {
           "bin": 1000,
-          "hospitalitycount": 118
+          "hospitalitycount": 121
         },
         {
           "bin": 10000,
-          "hospitalitycount": 84
+          "hospitalitycount": 76
         },
         {
           "bin": 100000,
@@ -11177,11 +11177,11 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2967
+          "hospitalitycount": 2973
         },
         {
           "bin": 20,
-          "hospitalitycount": 400
+          "hospitalitycount": 396
         },
         {
           "bin": 50,
@@ -11189,7 +11189,7 @@ window.stats = {
         },
         {
           "bin": 200,
-          "hospitalitycount": 1272
+          "hospitalitycount": 1270
         },
         {
           "bin": 1000,
@@ -11444,11 +11444,11 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 245
+          "hospitalitycount": 249
         },
         {
           "bin": 20,
-          "hospitalitycount": 374
+          "hospitalitycount": 370
         },
         {
           "bin": 50,
@@ -12253,11 +12253,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 78
+          "hospitalitycount": 79
         },
         {
           "bin": 200,
-          "hospitalitycount": 248
+          "hospitalitycount": 247
         },
         {
           "bin": 1000,
@@ -12779,15 +12779,15 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 306
+          "hospitalitycount": 320
         },
         {
           "bin": 20,
-          "hospitalitycount": 383
+          "hospitalitycount": 370
         },
         {
           "bin": 50,
-          "hospitalitycount": 49
+          "hospitalitycount": 48
         },
         {
           "bin": 200,
@@ -13313,19 +13313,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 742
+          "hospitalitycount": 763
         },
         {
           "bin": 20,
-          "hospitalitycount": 396
+          "hospitalitycount": 376
         },
         {
           "bin": 50,
-          "hospitalitycount": 159
+          "hospitalitycount": 160
         },
         {
           "bin": 200,
-          "hospitalitycount": 641
+          "hospitalitycount": 639
         },
         {
           "bin": 1000,
@@ -13358,7 +13358,7 @@ window.stats = {
     "alcohol": 25616,
     "perperson": 62.15,
     "max_perperson": 45574.5,
-    "completed": 11,
+    "completed": 399,
     "days": 1888,
     "eventsPerDay": 81,
     "attendeesPerDay": 2301
@@ -13538,33 +13538,33 @@ window.stats = {
   "perheadBins": [
     {
       "bin": 10,
-      "count": 45621,
-      "hospitalitycount": 57142
+      "count": 48388,
+      "hospitalitycount": 59676
     },
     {
       "bin": 20,
-      "count": 53394,
-      "hospitalitycount": 52453
+      "count": 51279,
+      "hospitalitycount": 50484
     },
     {
       "bin": 50,
-      "count": 13642,
-      "hospitalitycount": 13255
+      "count": 13402,
+      "hospitalitycount": 12881
     },
     {
       "bin": 200,
-      "count": 35252,
-      "hospitalitycount": 29080
+      "count": 34878,
+      "hospitalitycount": 28902
     },
     {
       "bin": 1000,
-      "count": 4732,
-      "hospitalitycount": 1374
+      "count": 4727,
+      "hospitalitycount": 1373
     },
     {
       "bin": 10000,
-      "count": 1021,
-      "hospitalitycount": 359
+      "count": 988,
+      "hospitalitycount": 347
     },
     {
       "bin": 100000,
