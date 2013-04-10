@@ -126,13 +126,14 @@
 
               <span></span>
             </div>
+            <em>That’s about 95% of the data</em>
           </div>
 
           <div class="subsection total-attendees">
             <div class="text">
               <strong>Total number of attendees:</strong>
               <h4 class="large" id="total-attendees"></h4>
-              <em>That’s about ??% every year</em>
+              <em>That’s about <span id="attendees-per-year"></span> every year</em>
             </div>
 
           </div>
@@ -162,8 +163,8 @@
             <strong>Medical professionals of all kinds attend these events</strong>
             <div class="btn-group">
               <button data-metric="events" class="btn active"># Events</button>
-              <button data-metric="cost" class="btn">Total Spend</button>
-              <button data-metric="perperson" class="btn">Spend PP</button>
+              <button data-metric="cost" class="btn">Total Spend ($)</button>
+              <button data-metric="perperson" class="btn">Spend PP ($)</button>
             </div>
             <div id="professions" class="chart"></div>
           </div>
@@ -343,24 +344,42 @@
       <h5>Taxpayer money paid via PBS</h5>
       <h4>???</h4>
       <h5>Money spent on Educational Events (since 2007)</h5>
-      <h4>???</h4>
+      <h4 id="company-total-cost"></h4>
       <h5>Total number of events reported</h5>
-      <h4>???</h4>
+      <h4 id="company-total-events"></h4>
       <h5>Events per price range</h5>
-      <h4>???</h4>
+      <ul id="company-perperson">
+      <li class="pp">
+        Under $10 pp
+        <strong data-perperson="under-10-person"></strong>
+      </li>
+      <li class="pp">
+        Under $20 pp
+        <strong data-perperson="under-20-person"></strong>
+      </li>
+      <li class="pp">
+        Under $50 pp
+        <strong data-perperson="under-50-person"></strong>
+      </li>
+      <li class="pp">
+        Over $50 pp
+        <strong data-perperson="over-50-person"></strong>
+      </li>
+      </ul>
       <h5>Most expensive event reported</h5>
-      <h4>???</h4>
+      <ul id="company-most-expensive"></ul>
       <h5>Top three attendee types</h5>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Description <strong id="company-expensive-event-description"></strong></li>
+        <li>Venue <strong id="company-expensive-event-venue"></strong></li>
+        <li>Hospitality <strong id="company-expensive-event-hospitality"></strong></li>
+        <li>Hospitality cost <strong id="company-expensive-event-hospitalitycost"></strong></li>
+        <li>Total cost <strong id="company-expensive-event-cost"></strong></li>
+        <li>Attendees <strong id="company-expensive-event-attendees"></strong></li>
+        <li>Hospitality Per Person <strong id="company-expensive-event-hospitality_spendratio"></strong></li>
       </ul>
       <h5>Top three diseases</h5>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul id="company-top-conditions">
       </ul>
       <h5>Revenue - Global</h5>
       <h4>???</h4>
@@ -381,6 +400,7 @@
   <!-- build:js /js/main.js -->
   <script src="/components/jquery/jquery.js"></script>
   <script src="/components/lodash/lodash.js"></script>
+  <script src="/components/underscore.string/lib/underscore.string.js"></script>
   <script src="/components/backbone/backbone.js"></script>
   <script src="/components/jquery-waypoints/waypoints.js"></script>
   <script src="/components/jquery.scrollTo/jquery.scrollTo.js"></script>

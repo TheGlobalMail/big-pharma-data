@@ -129,7 +129,7 @@
 
   BarChart.prototype.convertData = function(){
     return _.map(this.data, function(datum){
-      return {x: datum[this.label], y: datum[this.metric]};
+      return {x: _.string.capitalize(datum[this.label]), y: datum[this.metric]};
     }, this);
   };
 

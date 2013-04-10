@@ -12,7 +12,7 @@
 
   window.niceNumber = function(n){
     var t = ',';
-    var i = n.toString();
+    var i = Math.round(n).toString();
     var j = (j = i.length) > 3 ? j % 3 : 0;
     return (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t);
   };

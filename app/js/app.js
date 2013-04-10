@@ -8,6 +8,7 @@
   function populateStats(){
     $('#total-cost').text(toDollars(stats.summary.cost));
     $('#per-year-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365)));
+    $('#attendees-per-year').text(niceNumber(stats.summary.attendees / (stats.summary.days / 365)));
     $('#total-events').text(niceNumber(stats.summary.events));
     $('#total-attendees').text(niceNumber(stats.summary.attendees));
 
@@ -90,8 +91,38 @@
     if (!company){
       return;
     }
+    window.company = company;
     $('#company-name').text(company.company);
+    $('#company-total-cost').text(toDollars(company.cost));
+    $('#company-total-events').text(niceNumber(company.events));
+    companyList('#company-top-professions', company.professions, 'profession');
+    companyList('#company-top-conditions', company.conditions, 'condition');
+    var bins = extractBins(company.perheadBins);
+    $('#company-perperson strong[data-perperson=under-10-person]').text(bins[0]);
+    $('#company-perperson strong[data-perperson=under-20-person]').text(bins[1]);
+    $('#company-perperson strong[data-perperson=under-50-person]').text(bins[2]);
+    $('#company-perperson strong[data-perperson=over-50-person]').text(bins[3]);
+    _.each(['description', 'venue', 'hospitality', 'hospitalitycost', 'cost', 'attendees', 'hospitality_spendratio'], function(metric){
+      var value = company.mostExpensive[metric];
+      var text;
+      if (metric.match(/cost|spend/)){
+        text = toDollars(value);
+      }else if (metric.match(/attendees/)){
+        text = niceNumber(value);
+      }else{
+        text = value && value.replace(/;/gm, ',');
+      }
+      $('#company-expensive-event-' + metric).text(text);
+    });
     $('#profile').modal();
+  }
+
+  function companyList(id, list, name){
+    var top3 = _.sortBy(list, 'events').reverse().slice(0, 3);
+    $(id).html(_.map(top3, function(item){
+      var itemName = item[name] === 'gp' ? 'General Practioners' : item[name];
+      return '<li>' + _.string.humanize(itemName) + ' (' + niceNumber(item.events) + ' events)</li>';
+    }).join(''));
   }
 
   // Render the companies table. Order it by total $
@@ -149,38 +180,43 @@
   }
 
   function populateQuickPerPerson(){
-    $('#under-10-person').text(
-        niceNumber(stats.perheadBins[0].hospitalitycount + stats.perheadBins[1].count)
-    );
-    $('#under-20-person').text(
-        niceNumber(stats.perheadBins[2].hospitalitycount)
-    );
-    $('#under-50-person').text(
-        niceNumber(stats.perheadBins[3].hospitalitycount)
-    );
+    var bins = extractBins(stats.perheadBins);
+    $('#under-10-person').text(bins[0]);
+    $('#under-20-person').text(bins[1]);
+    $('#under-50-person').text(bins[2]);
+    $('#over-50-person').text(bins[3]);
+  }
+
+  function extractBins(bins){
     var rest = _.inject(stats.perheadBins.slice(3), function(sum, datum){
       return sum + datum.hospitalitycount;
     }, 0);
-    $('#over-50-person').text(niceNumber(rest));
+    return [
+      niceNumber(bins[0].hospitalitycount),
+      niceNumber(bins[1].hospitalitycount),
+      niceNumber(bins[2].hospitalitycount),
+      niceNumber(rest)
+    ];
   }
 
   function populatePerPerson(){
     var data = stats.perheadBins;
-    data[0].bin = 'No cost!?';
-    _.each(data.slice(1, data.length), function(datum){
+    _.each(data, function(datum){
       datum.bin = toDollars(datum.bin, "remove-cents");
     });
-    _.each(data.slice(1, data.length - 1), function(datum){
-      datum.bin = "Up to " + datum.bin;
+    _.each(data.slice(0, data.length - 1), function(datum, index){
+      var previousBin = data[index - 1] ? data[index - 1].bin : 0;
+      datum.binLabel = previousBin + '-' + datum.bin;
     });
-    _.last(data).bin = 'Over ' + _.last(data).bin;
-    var chart = new BarChart("#perperson-chart", stats.perheadBins, 'bin', 'hospitalitycount', !!'keepScale');
+    _.last(data).binLabel = 'Over ' + _.last(data).bin;
+    var chart = new BarChart("#perperson-chart", stats.perheadBins, 'binLabel', 'hospitalitycount', !!'keepScale');
     chart.render();
     bindButtons('#perperson-chart button', chart);
   }
 
   function populateProfessions(){
-    var chart = new BarChart('#professions', stats.professions, 'profession', 'events', !'keepScale');
+    var topProfessions = _.sortBy(stats.professions, 'events').reverse().slice(0, 8);
+    var chart = new BarChart('#professions', topProfessions, 'profession', 'events', !'keepScale');
     chart.render();
     bindButtons('#attendees button', chart);
   }
