@@ -19,7 +19,7 @@
   BarChart.prototype.render = function(){
     var convertedData = this.convertData();
     var $professions = $(this.id);
-    var margin = {top: 10, right: 20, bottom: 20, left: 65},
+    var margin = {top: 10, right: 20, bottom: 80, left: 65},
         width = $professions.width() - margin.left - margin.right;
     var height = this.height = 260 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
@@ -46,7 +46,14 @@
     svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+      .call(xAxis)
+      .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-5px")
+            .attr("dy", "15px")
+            .attr("transform", function(d) {
+                return "rotate(-45)"
+                });
 
     // Insert the Y axis
     this.yAxisSvg = svg.append("g")
