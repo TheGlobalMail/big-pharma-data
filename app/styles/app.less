@@ -1008,6 +1008,7 @@ footer {
     // Visibility hack is so we can get the size of the
     // text before hiding it
     visibility: hidden;
+    position: relative;
     &.post-render {
       display: none;
       visibility: visible;
@@ -1020,7 +1021,7 @@ footer {
     }
     .background {
       fill: white;
-      .opacity(70);
+      .opacity(80);
       stroke: #aaa;
     }
   }
@@ -1059,7 +1060,7 @@ footer {
   &.bar-chart {
     // Info box text
     p {
-      .font-size(14);
+      .font-size(11);
       text-transform: uppercase;
       font-weight: 500;
       margin: 0;
