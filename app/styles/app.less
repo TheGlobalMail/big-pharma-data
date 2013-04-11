@@ -280,6 +280,9 @@
           .font-size(16);
           color: #777;
           padding: 0 8% 0;
+          em {
+            .font-size(16);
+          }
         }
         &.note {
           .font-size(12);
@@ -287,6 +290,7 @@
           color: @grayLight;
           padding: 0 8% 0;
           clear: both;
+
         }
       }
 
@@ -297,9 +301,9 @@
 
     &.total {
       text-align: center;
-      height: 322px - 90px;
+      height: 290px - 90px;
       .pill {
-        margin: 0 auto 10px;
+        margin: 0 auto;
         position: relative;
         background: @pink;
         width: 600px;
@@ -1593,7 +1597,7 @@ footer {
       &.total {
         .pill {
           background: url(../images/pill.png) center center no-repeat transparent;
-          height: 218px;
+          height: 200px;
           &:after, span {
             display: none;
           }

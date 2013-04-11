@@ -97,7 +97,7 @@
           </ul>
         </div>
         <section id="introduction" class="offset3">
-          <h3>Introduction</h3>
+          <!-- <h3>Introduction</h3> -->
           <p>Pharmaceutical companies are banned from advertising prescription drugs directly to Australian consumers. But they can promote their products to doctors and other health professionals, including through sponsored “education events”. </p>
           <p>The money pharmaceutical companies pay to doctors in the form of consultancies, speeches, travel, grants and gifts is mostly secret. Since 2007, however, many drug companies have been required to report some information about the medical education events they hold, including the cost for food, wine and hospitality.</p>
           <p><em>The Global Mail</em> has created a database of these reports.</p>
@@ -115,24 +115,24 @@
           <div class="subsection spending">
               <strong>Pharma has spent</strong>
               <h4 class="large" id="total-cost"></h4>
-              <em>on education events since July 2007 <strong>which equals <span id="per-year-estimate"></span> a year.</strong></em>
+              <em>on education events since July 2007. <br/>
+                <strong>That's an average <span id="per-year-estimate"></span> a year.</strong></em>
           </div>
 
           <div class="subsection total">
             <div class="pill">
-              <strong>How many events?</strong>
+              <strong>How many events is that?</strong>
               <h4 class="large" id="total-events"></h4>
 
               <span></span>
             </div>
-            <em>(That’s about 95% of the data)</em>
           </div>
 
           <div class="subsection total-attendees">
             <div class="nurse-only"></div>
             <div class="doctor-only"></div>
             <div class="text">
-              <strong>Total number of attendees:</strong>
+              <strong>Total number of Medical professionals who attended an event since 2007:</strong>
               <h4 class="large" id="total-attendees"></h4>
               <em>That’s about <span id="attendees-per-year"></span> every year</em>
             </div>
@@ -142,28 +142,29 @@
           <div class="subsection daily">
             <div class="calendar">
               <h4 class="xlarge" id="events-per-day"></h4>
-              <em>education events per day</em>
+              <em>education events happen per day</em>
               <p>Because of the lack of detail we don’t know exactly which days they were.</p>
             </div>
           </div>
 
           <div class="subsection australia">
             <strong>These events happen all over Australia</strong>
+            <p class="subhead"><em>Figures represent total events for each state since July 2007.</em></p>
             <div class="map">
               <ul id="states"></ul>
             </div>
           </div>
 
           <div id="world" class="subsection world datavis">
-            <strong>but if you’re lucky, they might just send you overseas</strong>
-            <p class="subhead">There were more than 40 overseas destinations listed. Here are three countries most visited <sup> *</sup>.</p>
+            <strong>And if you’re lucky, they might just send you overseas</strong>
+            <p class="subhead">There were more than 40 overseas destinations listed. Here are three countries most visited*. <em>Figures represent total events for each country since July 2007.</em></p>
             <ul id="countries"></ul>
             <p class="note">*Companies sponsored hospitality and/or travel.</p>
           </div>
 
           <div id="attendees" class="subsection attendees datavis">
             <strong>Who gets wined and dined (and who gets a cup of coffee)?</strong>
-            <p class="subhead">Breaking down the Big Pharma spend on education events</p>
+            <p class="subhead">Breaking down the Big Pharma spend on education events.</p>
             <div class="btn-group">
               <button data-metric="events" class="btn active"># Events</button>
               <button data-metric="cost" class="btn">Total Spend ($)</button>
@@ -176,7 +177,7 @@
           <div class="subsection disease">
               <div class="bar-chart">
                 <strong>Chronic education </strong>
-                <p class="subhead">Most of Big Pharma’s education events focus on chronic disease medicine. What are the top 5 diseases by spend?</p>
+                <p class="subhead">Most of Big Pharma’s education events focus on chronic illness medicine. What are the top 5 diseases by spend? <em>Figures represent total spend for each illness type since July 2007.</em></p>
                 <ul id="conditions">
                 </ul>
               </div>
@@ -185,12 +186,12 @@
           <div class="subsection cost">
 
             <div class="left">
-              <strong>The average spend per person (PP) is</strong>
+              <strong>The average spend per person (PP), at one of these events is</strong>
               <h4 class="large" id="perperson"></h4>
             </div>
 
             <div class="right">
-              <h5>events per price range</h5>
+              <h5>Total events per price range</h5>
               <ul>
               <li class="pp">
                 Under $10 pp
@@ -214,7 +215,7 @@
 
             <div id="perperson-chart" class="chart datavis">
               <strong>But for the majority of events, companies supply hospitality equivalent to a coffee and a muffin.</strong>
-              <p class="subhead">Hospitality shows the cost of food and beverages. Total cost includes sponsorships, transportation costs, speakers’ fees, venue hire, but isn’t always itemised in company reporting.</p>
+              <p class="subhead">Hospitality shows the cost of food and beverages. Total cost includes sponsorships, transportation costs, speakers’ fees, venue hire, but isn’t always itemised in company reporting. <em>Figures represent total spent since July 2007.</em></p>
               <div class="btn-group">
                 <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
                 <button data-metric="count" class="btn">Total Cost</button>
@@ -237,7 +238,7 @@
 
         <section id="status" class="offset3">
           <h3 class="line"><span>THE BIGGEST SPENDERS</span></h3>
-          <p>Pay close attention to how many spreadsheets are in the database, as this affects the rankings on the leaderboard. Fewer spreadsheets = less data. <a href="#about" data-toggle="modal" data-bypass="">Read here</a> to learn more about the data.</p>
+          <p>Please note: Not all companies have submitted the same number of reports. Fewer spreadsheets = less data. The 'Reports' column shows how many of these reports we have converted to date. <a href="#about" data-toggle="modal" data-bypass="">Read here to learn more about the data.</a> </p>
           <table id="top5" class="table status-table table-hover">
             <thead>
                 <tr>
@@ -245,7 +246,7 @@
                     <th class="dollars">Dollars spent</th>
                     <th class="attendees">Attendees</th>
                     <th class="events">Events</th>
-                    <th class="data">Data</th>
+                    <th class="data">Reports</th>
                 </tr>
             </thead>
             <tbody>
