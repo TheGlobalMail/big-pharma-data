@@ -105,11 +105,15 @@
       .classed("bar-info", true)
       .attr("transform", function(d) {
         // Position them next to the associated bar
-        var xPos = x(d.x) + x.rangeBand() + 4;
+        var xPos = x(d.x) - (x.rangeBand() / 2) - 7;
         var yPos = y(d.y);
         // If there is enough space, move the info box down
         if ((height - yPos) >= 40) {
           yPos += 40;
+        }
+        // If not enough space, move the info box up
+        if ((height - yPos) <= 40) {
+          yPos -= 40;
         }
         return "translate(" + xPos + "," + yPos + ")";
       });
@@ -151,7 +155,7 @@
         // Left margin
         "x": padding,
         // Spacing between the title and the text
-        "y": 3
+        "y": 2
       });
       background.attr({
         // Sum of the elements' height
@@ -159,7 +163,7 @@
         // Widest element + padding
         "width": title.width() + (padding * 2),
         // Top margin
-        "y": -title.height()
+        "y": -title.height() + (padding - 2)
       });
       barInfo.classed("post-render", true);
     })
