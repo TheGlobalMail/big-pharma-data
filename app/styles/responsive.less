@@ -166,9 +166,16 @@
             .font-size(60);
           }
         }
-        .doctor-nurse {
-          width: 290px;
-          height: 200px;
+        .doctor-only {
+          width: 180px;
+          height: 160px;
+          left: 10%;
+        }
+        .nurse-only {
+          width: 140px;
+          height: 140px;
+          right: 10%;
+          margin-left: 0;
         }
       }
       &.daily {
@@ -191,13 +198,16 @@
       height: auto;
       overflow: visible;
         ul#countries {
+          overflow: hidden;
           width:290px;
+          margin-top: 0;
           li {
             .font-size(14);
             line-height: 1.2;
             position: relative;
             float: none;
-            height: 94px;
+            margin: 10px 0 0 15px;
+            height: 100px;
             &:before {
               position: absolute;
               top:0;
@@ -212,8 +222,8 @@
             dl {
               float: none;
               clear: both;
-              padding-left: 160px;
-              padding-top: 10px;
+              padding-left: 155px;
+              padding-top: 20px;
               height: 90px;
               position: relative;
                 dt {
@@ -315,6 +325,9 @@
     #title {
       margin-bottom: 10px;
       padding-bottom: 20px;
+    }
+    #introduction {
+      padding-bottom: 30px;
     }
     #status {
       table tr {
@@ -421,6 +434,7 @@
             padding-top: 20px;
             .font-size(12);
             padding-right: 2px;
+            padding-bottom: 10px;
             min-width: 78px;
             strong {
               .font-size(18);
@@ -545,6 +559,9 @@
           }
         &.doctors {
           height: auto;
+          h3.line {
+            margin-bottom: 20px;
+          }
           .doctor {
             position: relative;
             right: initial;
