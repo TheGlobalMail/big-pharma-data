@@ -199,12 +199,7 @@
   };
 
   BarChart.prototype.renderYAxisLabel = function() {
-    var labelText;
-    if (this.options.yAxisLabels) {
-      labelText = this.options.yAxisLabels[0];
-    } else {
-      labelText = this.options.yAxisLabel;
-    }
+    var labelText = this.getYAxisText();
     if (labelText) {
       // Add the label
       var label = this.yAxisSvg.append("text")
@@ -212,17 +207,12 @@
         .attr("transform", "rotate(-90)")
         .style("text-anchor", "end")
         .text(labelText);
-      this._updateYAxisLabel(label);
+      this._positionTheYAxisLabel(label);
     }
   };
 
   BarChart.prototype.updateYAxisLabel = function(yAxisLabelIndex) {
-    var labelText;
-    if (this.options.yAxisLabels) {
-      labelText = this.options.yAxisLabels[yAxisLabelIndex];
-    } else {
-      labelText = this.options.yAxisLabel;
-    }
+    var labelText = this.getYAxisText(yAxisLabelIndex);
     if (labelText) {
       var self = this;
       // Hack: delaying to let d3 finish the rendering of the y-axis
@@ -230,12 +220,20 @@
       setTimeout(function() {
         var label = self.yAxisSvg.select(".y-axis-label")
           .text(labelText);
-        self._updateYAxisLabel(label);
+        self._positionTheYAxisLabel(label);
       }, 50)
     }
   };
 
-  BarChart.prototype._updateYAxisLabel = function(label) {
+  BarChart.prototype.getYAxisText = function(yAxisLabelIndex) {
+    if (this.options.yAxisLabels) {
+      return this.options.yAxisLabels[yAxisLabelIndex || 0];
+    } else {
+      return this.options.yAxisLabel;
+    }
+  };
+
+  BarChart.prototype._positionTheYAxisLabel = function(label) {
     var labelNode = label.node();
     var maxLeftOffset = _.max(
       _.map(
