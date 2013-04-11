@@ -84,27 +84,8 @@
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d.y); })
         .attr("height", function(d) { return height - y(d.y); })
-        .on("mouseover", function() {
-          d3.select(this)
-            // Denote the current bar as active
-            .classed("active", true)
-            // Bring the active bar group to the front
-            .each(function() {
-              var barGroup = this.parentNode;
-              barGroup.parentNode.appendChild(barGroup);
-            });
-          // Add `inactive` classes to the other bars
-          svg.selectAll(".bar")
-            .filter(":not(.active)")
-            .classed("inactive", true);
-        })
-        .on("mouseout", function() {
-          // Remove `inactive` classes from the other bars
-          d3.select(this).classed("active", false);
-          svg.selectAll(".bar")
-            .filter(":not(.active)")
-            .classed("inactive", false);
-        });
+        .on("mouseover", this.activateBar(this))
+        .on("mouseout", this.deactivateBar(this));
 
     // Bar info boxes
     this.barInfo = svg.selectAll(".bar-group")
@@ -158,7 +139,7 @@
         // Wrap the text at the title's width
         "width": title.width(),
         // The height of the foreignObject's body element
-        "height": text.children().height(),
+        "height": text.find('p').height(),
         // Left margin
         "x": padding,
         // Spacing between the title and the text
@@ -214,13 +195,13 @@
   BarChart.prototype.updateYAxisLabel = function(yAxisLabelIndex) {
     var labelText = this.getYAxisText(yAxisLabelIndex);
     if (labelText) {
-      var self = this;
+      var _this = this;
       // Hack: delaying to let d3 finish the rendering of the y-axis
       // tick text. TODO: have this fired by the y-axis generator
       setTimeout(function() {
-        var label = self.yAxisSvg.select(".y-axis-label")
+        var label = _this.yAxisSvg.select(".y-axis-label")
           .text(labelText);
-        self._positionTheYAxisLabel(label);
+        _this._positionTheYAxisLabel(label);
       }, 50)
     }
   };
@@ -253,4 +234,60 @@
       "y": yPos
     });
   };
+
+  BarChart.prototype.activateBar = function(_this) {
+    return function() {
+      d3.select(this)
+        // Denote the current bar as active
+        .classed("active", true)
+        // Bring the active bar group to the front
+        .each(function() {
+          var barGroup = this.parentNode;
+          barGroup.parentNode.appendChild(barGroup);
+        });
+      // Add `inactive` classes to the other bars
+      _this.chart.selectAll(".bar")
+        .filter(":not(.active)")
+        .classed("inactive", true);
+    }
+  };
+
+  BarChart.prototype.deactivateBar = function(_this){
+    return function() {
+      // Remove `inactive` classes from the other bars
+      d3.select(this).classed("active", false);
+      _this.chart.selectAll(".bar")
+        .filter(":not(.active)")
+        .classed("inactive", false);
+    }
+  };
+
+  BarChart.prototype.updateBarInfoText = function() {
+    var _this = this;
+    this.barInfo.selectAll('.text p')
+      .text(function(d) {
+        if (_this.options.barInfoText) {
+          var template = _this.options.barInfoText[0];
+          return _.template(template, {xAxis: d.x});
+        } else {
+          return d.x;
+        }
+      });
+    this.barInfo.each(function() {
+      var barInfo = d3.select(this)
+        .classed("post-render", false);
+      var background = barInfo.select('.background');
+      var text = barInfo.select('.text');
+      var foreignObject = $(text.node()).find('foreignObject');
+      var oldHeight = foreignObject.height();
+      var newHeight = foreignObject.find('p').height();
+      foreignObject.attr("height", newHeight);
+      // Scale the background for the new size
+      var backgroundHeight = parseInt(background.attr('height'));
+      background.attr("height", backgroundHeight + (newHeight - oldHeight));
+      // Remoce the barInfo
+      barInfo.classed("post-render", true);
+    })
+  }
+
 }($, window.d3));

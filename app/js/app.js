@@ -230,7 +230,7 @@
       metric: 'hospitalitycount',
       keepScale: !!'keepScale',
       yAxisLabel: 'Number of attendees',
-      barInfoText: ['Medical professionals attended events costing {{xAxis}} pp']
+      barInfoText: ['Medical professionals attended events costing <%= xAxis %> pp']
     });
     chart.render();
     bindButtons('#perperson-chart button', chart);
@@ -245,7 +245,7 @@
       metric: 'events',
       keepScale: !'keepScale',
       yAxisLabels: ['TBC', '$', '$'],
-      barInfoText: ['{{xAxis}}s attended education events']
+      barInfoText: ['<%= xAxis %>s attended education events']
     });
     chart.render();
     bindButtons('#attendees button', chart);
@@ -281,6 +281,7 @@
       var $button = $(this);
       chart.updateMetric($button.data('metric'));
       chart.updateYAxisLabel($button.index());
+      chart.updateBarInfoText();
       $buttons.removeClass('active');
       $button.addClass('active');
     });
