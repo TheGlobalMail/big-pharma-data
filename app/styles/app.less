@@ -974,8 +974,45 @@
         height: 170px;
         width: 600px;
         margin: 0 auto;
-        background: url(../images/bottle.svg) center center no-repeat;
+        background: url(../images/bottle-no-drip.svg) center center no-repeat;
         background-size: contain;
+        .dripAnimation (@name) {
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-name: @name;
+          -webkit-animation-timing-function: ease-in-out;
+          -moz-animation-iteration-count: infinite;
+          -moz-animation-duration: 2s;
+          -moz-animation-name: @name;
+          -moz-animation-timing-function: ease-in-out;
+          -o-animation-iteration-count: infinite;
+          -o-animation-duration: 2s;
+          -o-animation-name: @name;
+          -o-animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+          animation-name: @name;
+          animation-timing-function: ease-in-out;
+        }
+        .drip-container {
+          position: absolute;
+          width: 80px;
+          height: 60px;
+          right: 0;
+          bottom: 4px;
+          overflow: hidden;
+        }
+        .drip {
+          position: absolute;
+          width: 14px;
+          height: 25px;
+          background: url(../images/drip.svg) center top no-repeat;
+          background-size: contain;
+          right: 28px;
+          bottom: 31px;
+          .dripAnimation(drip);
+        }
+
         .text-container {
           position: relative;
           width: 100%;
@@ -996,6 +1033,33 @@
         }
       }
       // Animations
+      .keyframesDrip() {
+        from {
+          bottom: 31px;
+          width: 0;
+          right: 35px;
+        }
+
+        20% {
+          bottom: 32px;
+          width: 7px;
+          right: 32px;
+        }
+
+        90% {
+          bottom: 32px;
+        }
+
+        100% {
+          bottom: -10px;
+        }
+      }
+      @-webkit-keyframes drip { .keyframesDrip(); }
+      @-moz-keyframes drip { .keyframesDrip(); }
+      @-ms-keyframes drip { .keyframesDrip(); }
+      @-o-keyframes drip { .keyframesDrip(); }
+      @keyframes drip { .keyframesDrip(); }
+
       .csstransforms.no-touch & {
         &.is-visible {
           .bottle .text-container {
