@@ -17,6 +17,7 @@
 
 #main {
   @blueDark: #084975;
+  @easing: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 
   .container {
     max-width: 1100px;
@@ -236,6 +237,8 @@
     margin-bottom: 0;
     padding: 40px 0 50px;
     border-bottom: 1px solid @grayLighter;
+    position: relative;
+    overflow: hidden;
     strong, em {
       .font-size(20);
       line-height: 1.1;
@@ -293,12 +296,11 @@
 
     &.total {
       text-align: center;
-      min-height: 322px - 90px;
+      height: 322px - 90px;
       .pill {
         margin: 0 auto 10px;
         position: relative;
         background: @pink;
-        // #gradient.vertical-three-colors(@pink,@pink,50%,#87247c);
         width: 600px;
         height: 200px;
         .border-radius(106px);
@@ -330,7 +332,6 @@
           width: 50%;
           height: 200px;
           background: @blue;
-          // #gradient.vertical-three-colors(@blue,@blue,50%,#205273);
           z-index: -1;
           .border-right-radius(106px);
           behavior: url(../js/libs//PIE.htc);
@@ -361,6 +362,16 @@
           .border-radius(10px);
           .box-shadow(0 0 30px 20px white);
         }
+        .csstransforms & {
+          position: relative;
+          margin-top: -280px;
+          .transition(all .5s .2s @easing);
+        }
+      }
+      &.is-visible {
+        .pill {
+          margin-top: 0;
+        }
       }
       em {
         .font-size(16);
@@ -369,19 +380,35 @@
     }
 
     &.total-attendees {
-      background: url(../images/doctor+nurse.svg) left bottom no-repeat transparent;
-      background-size: contain;
-      min-height: 245px - 90px;
+      height: 245px - 90px;
       .text {
         margin-left: 300px;
         h4.large {
           .font-size(100);
         }
       }
+      .doctor-nurse {
+        position: absolute;
+        bottom: 0;
+        background: url(../images/doctor+nurse.svg) left bottom no-repeat transparent;
+        background-size: contain;
+        width: 380px;
+        height: 250px;
+        .csstransforms & {
+          bottom: -300px;
+          .transition(all .5s .2s @easing);
+        }
+      }
+
+      &.is-visible {
+        .doctor-nurse {
+          bottom: 0;
+        }
+      }
     }
 
     &.daily {
-      min-height: 410px - 90px;
+      height: 410px - 90px;
       position: relative;
       h4 {
         float: left;
@@ -409,15 +436,30 @@
         .box-shadow(0 10px 20px -10px rgba(0,0,0,.5));
         .rotate(-5deg);
         -ms-transform: rotate(0); //Cause IE sucks
+        .csstransforms & {
+          margin-top: -480px;
+          .rotate(-25deg);
+          .transition(all .6s .8s @easing);
+        }
+      }
+      &.is-visible {
+        .calendar {
+          margin-top:0;
+          .rotate(-5deg);
+        }
       }
     }
 
     &.australia {
       text-align: center;
-      min-height: 570px - 90px;
       strong {
         display: block;
         margin-bottom: 10px;
+      }
+      &.is-visible {
+        .map ul li {
+          .opacity(100);
+        }
       }
       .map {
         position: relative;
@@ -439,6 +481,7 @@
             color: white;
             position: absolute;
             text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+            .opacity(0);
             span {
               .font-size(40);
               font-weight: bold;
@@ -452,14 +495,23 @@
               left:44%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
+              .csstransforms & {
+                .transition(opacity .6s .02s @easing);
+              }
             }
             &#state-qld {
               margin-top: 123px;
               right:14%;
+              .csstransforms & {
+                .transition(opacity .6s .1s @easing);
+              }
             }
             &#state-nsw {
               margin-top: 234px;
               right: 8%;
+              .csstransforms & {
+                .transition(opacity .6s .2s @easing);
+              }
             }
             &#state-act {
               margin-top: 298px;
@@ -467,6 +519,9 @@
               color:@grayDark;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
               .font-size(12);
+              .csstransforms & {
+                .transition(opacity .6s .3s @easing);
+              }
               span {
                 .font-size(24);
               }
@@ -475,6 +530,9 @@
               margin-top: 315px;
               right: 17%;
               .font-size(12);
+              .csstransforms & {
+                .transition(opacity .6s .4s @easing);
+              }
               span {
                 .font-size(24);
               }
@@ -485,18 +543,27 @@
               right: 10%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
+              .csstransforms & {
+                .transition(opacity .6s .5s @easing);
+              }
             }
             &#state-sa {
               margin-top: 202px;
               right:36%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
+              .csstransforms & {
+                .transition(opacity .6s .6s @easing);
+              }
             }
             &#state-wa {
               margin-top: 157px;
               left:13%;
               color:@pink;
               text-shadow: 0 1px 0 rgba(255,255,255,.5);
+              .csstransforms & {
+                .transition(opacity .6s .7s @easing);
+              }
             }
           }
         }
@@ -504,38 +571,58 @@
     }
     &.world {
       text-align: center;
-      min-height: 440px - 90px;
+      height: 440px - 90px;
+
       ul#countries {
         width:605px;
         margin: 20px auto 0;
+        position: relative;
         li {
           list-style: none;
           text-align: left;
           .font-size(18);
           display: block;
           float: left;
-          margin: 0 9px;
+          margin: 140px 30px 0;
+
           &:before {
             content: '';
             display: block;
+            position: absolute;
+            top: 0;
+            margin-left: -10px;
             width: 198px;
             height: 118px;
-            margin: 0 0 18px -15px;
             background: url(../images/postcards.svg) center -176px no-repeat transparent;
             .box-shadow(0 4px 8px -4px black);
             // -webkit-backface-visibility: hidden; // Smooth edges in chrome
             .rotate(5deg);
             -ms-transform: rotate(0); //Cause IE sucks
+            .csstransforms & {
+              top: -400px;
+              .rotate(125deg);
+              .transition(all .6s .2s @easing);
+            }
           }
           &.new-zealand:before {
             background-position: left -1px;
             .rotate(-8deg);
             -ms-transform: rotate(0); //Cause IE sucks
+            .csstransforms & {
+              top: -400px;
+              .rotate(125deg);
+              .transition(all .7s .8s @easing);
+            }
           }
           &.germany:before {
             background-position: left -348px;
             .rotate(-2deg);
             -ms-transform: rotate(0); //Cause IE sucks
+            .csstransforms & {
+              top: -400px;
+              .rotate(125deg);
+              .transition(all .5s 1.2s @easing);
+            }
           }
           dl {
             float: left;
@@ -563,6 +650,22 @@
                 padding-bottom: 4px;
               }
             }
+          }
+        }
+      }
+      &.is-visible {
+        ul#countries li {
+          &:before {
+            top: 0;
+            .rotate(5deg);
+          }
+          &.new-zealand:before {
+            top: 0;
+            .rotate(-8deg);
+          }
+          &.germany:before {
+            top: 0;
+            .rotate(-2deg);
           }
         }
       }
@@ -633,7 +736,6 @@
     }
 
     &.cost {
-      min-height: 212px;
       .right {
         text-align: left;
         margin-bottom: 50px;
@@ -654,16 +756,23 @@
           padding: 13px 10px 0 50px;
           background: url(../images/events-icons.svg) left 12px no-repeat;
           min-width: 110px;
+          .csstransforms & {
+            .opacity(0);
+            .transition(opacity .6s 40ms @easing);
+          }
           &.twenty {
             background-position: left -65px;
             padding-right: 0;
+            .transition(opacity .6s 140ms @easing);
           }
           &.fifty {
             background-position: left -235px;
+            .transition(opacity .6s 240ms @easing);
           }
-          &.more {
+          &.over {
             background-position: left -155px;
             padding-right: 0;
+            .transition(opacity .6s 340ms @easing);
           }
           strong {
             display: block;
@@ -671,6 +780,11 @@
             font-weight: bold;
             font-weight: 800;
           }
+        }
+      }
+      &.is-visible {
+        .right li.pp {
+          .opacity(100);
         }
       }
       #perperson-chart {
@@ -689,7 +803,7 @@
       text-shadow: 0 -1px 0 rgba(0,0,0,.2);
       border-bottom: none;
       padding: 35px 0 60px;
-      min-height: 250px - 90px;
+      height: 250px - 90px;
 
       .bottle {
         position: relative;
@@ -702,6 +816,10 @@
           position: relative;
           width: 100%;
           margin-left: 35px;
+          .csstransforms & {
+            .opacity(0);
+            .transition(all .5s .20s @easing);
+          }
         }
         h4 {
           sup {
@@ -715,6 +833,11 @@
           left: 155px;
           margin-top: -65px;
           width: 160px;
+        }
+      }
+      &.is-visible {
+        .bottle .text-container {
+          .opacity(100);
         }
       }
     }
@@ -824,8 +947,10 @@
   }
 
   #dont-know {
+    overflow: hidden;
     .subsection {
       position: relative;
+      overflow:visible;
       .text {
         max-width: 60%;
         margin-left: 2%;
@@ -836,7 +961,7 @@
         }
       }
       &.doctors {
-        min-height: 310px - 90px;
+        height: 310px - 90px;
         h3.line {
           margin-bottom: 40px;
         }
@@ -854,10 +979,22 @@
           .box-shadow(0 1px 3px #e5e5e5);
           .rotate(5deg);
           -ms-transform: rotate(0); //Cause IE sucks
+          .csstransforms & {
+            right: -280px;
+            .translate3d(0,0,0);
+            .rotate(-25deg);
+            .transition(all .8s 200ms @easing);
+          }
+        }
+        &.is-visible {
+          .doctor {
+            right:2%;
+            .rotate(5deg);
+          }
         }
       }
       &.drugs {
-        min-height: 210px - 90px;
+        height: 210px - 90px;
         .text {
           float: none;
           margin-left: 300px;
@@ -870,12 +1007,22 @@
           background-size: contain;
           width:280px;
           height: 239px;
-
+          .csstransforms & {
+            left: -280px;
+            .rotate(-25deg);
+            .transition(all .9s 300ms @easing);
+          }
+        }
+        &.is-visible {
+          .drug {
+            left:2%;
+            .rotate(0deg);
+          }
         }
       }
       &.not-much {
         border-bottom: none;
-        min-height: 300px - 90px;
+        height: 300px - 90px;
         .thermometer {
           position: absolute;
           right:2%;
@@ -884,6 +1031,17 @@
           background-size: contain;
           width:300px;
           height: 292px;
+          .csstransforms & {
+            right: -280px;
+            .rotate(-25deg);
+            .transition(all 1s 400ms @easing);
+          }
+        }
+        &.is-visible {
+          .thermometer {
+            right:2%;
+            .rotate(0deg);
+          }
         }
       }
     }
@@ -1200,9 +1358,8 @@ footer {
   }
 }
 
+
 // IE8 hacks
-
-
 
 .lt-ie9 {
   .no-ie {

@@ -141,9 +141,10 @@
 
       }
       &.total {
-        min-height: 200px - 50px;
+        height: 200px - 50px;
       }
       &.cost {
+        height: auto;
         .right {
           width: 60%;
           height: 145px;
@@ -154,7 +155,7 @@
         }
       }
       &.total-attendees {
-        min-height: auto;
+        height: auto;
         background-size: auto 180px;
         background-position: center bottom;
         .text {
@@ -165,25 +166,30 @@
             .font-size(60);
           }
         }
+        .doctor-nurse {
+          width: 290px;
+          height: 200px;
+        }
       }
       &.daily {
-        min-height: 280px - 50px;
+        height: 280px - 50px;
         ul {
           margin: 0;
         }
       }
       &.australia {
-        min-height: 330px - 50px;
+        height: 330px - 50px;
       }
       &.alcohol {
-        min-height: 230px - 50px;
+        height: 230px - 50px;
         .bottle {
           width: auto;
         }
       }
       &.world {
       text-align: center;
-      min-height: auto;
+      height: auto;
+      overflow: visible;
         ul#countries {
           width:290px;
           li {
@@ -237,10 +243,10 @@
     #dont-know {
       .subsection {
         &.doctors {
-          min-height: 430px - 50px;
+          height: 430px - 50px;
         }
         &.drugs {
-          min-height: 370px - 50px;
+          height: 370px - 50px;
         }
         .text {
             text-align: left;
@@ -250,7 +256,7 @@
           }
         &.not-much {
           padding-right: 0;
-          min-height: 430px - 50px;
+          height: 430px - 50px;
         }
       }
     }
