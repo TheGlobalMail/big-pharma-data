@@ -40,6 +40,10 @@
     if (window.location.hash){
       loadCompany(window.location.hash.replace(/#*profile-/, ''));
     }
+
+    $(window).scroll(
+      onScrollCheckVisibilityFactory()
+    );
   }
 
   // Render the companies table. Order it by total $
@@ -267,6 +271,28 @@
       $buttons.removeClass('active');
       $button.addClass('active');
     });
+  }
+
+  function scrollY() {
+    // x-browser scrollY wrapper
+    return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  }
+
+  function onScrollCheckVisibilityFactory() {
+    // Add a `is-visible` class to each element once it has entered the viewport.
+
+    // Constructing the closure so we can hoist the elements
+    // to the handler and reduce the DOM load for each scroll event
+    var elements = $('.subsection');
+    return function() {
+      var windowScrollY = scrollY();
+      elements.each(function() {
+        var element = $(this);
+        if (element.offset().top < (windowScrollY + window.innerHeight)) {
+          element.addClass('is-visible');
+        }
+      })
+    }
   }
 
   $.fn.modal.defaults.modalOverflow = true;
