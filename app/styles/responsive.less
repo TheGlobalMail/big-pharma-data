@@ -128,6 +128,7 @@
       }
     }
     .subsection {
+      padding: 20px 0 30px;
       .left, .right {
         float:none;
         clear: both;
@@ -139,10 +140,8 @@
         padding-top: 20px;
 
       }
-      &.daily {
-        ul {
-          margin: 0;
-        }
+      &.total {
+        min-height: 200px - 50px;
       }
       &.cost {
         .right {
@@ -155,6 +154,7 @@
         }
       }
       &.total-attendees {
+        min-height: auto;
         background-size: auto 180px;
         background-position: center bottom;
         .text {
@@ -166,13 +166,24 @@
           }
         }
       }
+      &.daily {
+        min-height: 280px - 50px;
+        ul {
+          margin: 0;
+        }
+      }
+      &.australia {
+        min-height: 330px - 50px;
+      }
       &.alcohol {
+        min-height: 230px - 50px;
         .bottle {
           width: auto;
         }
       }
       &.world {
       text-align: center;
+      min-height: auto;
         ul#countries {
           width:290px;
           li {
@@ -225,6 +236,12 @@
 
     #dont-know {
       .subsection {
+        &.doctors {
+          min-height: 430px - 50px;
+        }
+        &.drugs {
+          min-height: 370px - 50px;
+        }
         .text {
             text-align: left;
             p,em, strong {
@@ -233,6 +250,7 @@
           }
         &.not-much {
           padding-right: 0;
+          min-height: 430px - 50px;
         }
       }
     }
@@ -256,7 +274,7 @@
       .font-size(14);
     }
     section {
-      margin-bottom: 0;
+      margin-bottom: 30px;
     }
     h3.line {
       margin-top: 0;
