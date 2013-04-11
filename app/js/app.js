@@ -41,9 +41,11 @@
       loadCompany(window.location.hash.replace(/#*profile-/, ''));
     }
 
-    $(window).scroll(
-      onScrollCheckVisibilityFactory()
-    );
+    // Check what sections are in the viewport, and set it to recheck
+    // after scroll events
+    var onScrollCheckVisibility = onScrollCheckVisibilityFactory();
+    onScrollCheckVisibility();
+    $(window).scroll(onScrollCheckVisibility);
   }
 
   // Render the companies table. Order it by total $
