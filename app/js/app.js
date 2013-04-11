@@ -288,8 +288,11 @@
       var windowScrollY = scrollY();
       elements.each(function() {
         var element = $(this);
-        if (element.offset().top < (windowScrollY + window.innerHeight)) {
+        if (element.offset().top < (windowScrollY + window.innerHeight - 200)) {
           element.addClass('is-visible');
+        }
+        if (element.offset().top > (windowScrollY + window.innerHeight)) {
+          element.removeClass('is-visible');
         }
       })
     }
