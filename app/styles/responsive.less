@@ -200,13 +200,14 @@
         ul#countries {
           overflow: hidden;
           width:290px;
+          margin-top: 0;
           li {
             .font-size(14);
             line-height: 1.2;
             position: relative;
             float: none;
-            margin-top: 30px;
-            height: 94px;
+            margin: 10px 0 0 15px;
+            height: 100px;
             &:before {
               position: absolute;
               top:0;
@@ -221,8 +222,8 @@
             dl {
               float: none;
               clear: both;
-              padding-left: 160px;
-              padding-top: 10px;
+              padding-left: 155px;
+              padding-top: 20px;
               height: 90px;
               position: relative;
                 dt {
@@ -325,7 +326,11 @@
       margin-bottom: 10px;
       padding-bottom: 20px;
     }
+    #introduction {
+      padding-bottom: 30px;
+    }
     #status {
+      padding-bottom: 30px;
       table tr {
         td,th {
           padding: 10px 2px;
@@ -555,6 +560,9 @@
           }
         &.doctors {
           height: auto;
+          h3.line {
+            margin-bottom: 20px;
+          }
           .doctor {
             position: relative;
             right: initial;
