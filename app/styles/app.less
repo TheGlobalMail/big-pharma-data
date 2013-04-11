@@ -247,7 +247,6 @@
       margin: 0 0 6px;
       &.large {
         .font-size(120);
-        margin-top: -10px;
       }
       &.xlarge {
         .font-size(160);
@@ -642,7 +641,7 @@
           text-transform: uppercase;
           font-style: italic;
           list-style: none;
-          padding: 15px 10px 10px 50px;
+          padding: 13px 10px 0 50px;
           background: url(../images/events-icons.svg) left 12px no-repeat;
           min-width: 110px;
           &.twenty {
@@ -711,17 +710,18 @@
   }
 
   #status {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 
     .btn {
       display: block;
       width: 272px;
-      margin: 10px auto 60px;
+      margin: 10px auto 40px;
       padding: 8px;
       border: none;
       background-color: @blue;
       .box-shadow(none);
       .font-size(16);
+      color: white;
       .border-radius(4px);
       behavior: url(../js/libs//PIE.htc);
       &:hover {
@@ -825,10 +825,13 @@
         }
       }
       &.doctors {
+        h3.line {
+          margin-bottom: 40px;
+        }
         .doctor {
           position: absolute;
           right:2%;
-          top: 5%;
+          top: 75px;
           background: url(../images/doctor.svg) center center no-repeat white;
           background-size: 96% auto;
           width:220px;
@@ -863,7 +866,7 @@
         .thermometer {
           position: absolute;
           right:2%;
-          top: -70px;
+          top: -50px;
           background: url(../images/thermometer.svg) center center no-repeat transparent;
           background-size: contain;
           width:300px;
@@ -1081,7 +1084,7 @@ footer {
     .font-size(40);
     margin-top: 0;
     position: absolute;
-    right: 5%;
+    right: 15px;
   }
   .pull-left, .pull-right {
     width: 50%;
