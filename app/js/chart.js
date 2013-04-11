@@ -161,7 +161,8 @@
         // Top margin
         "y": -title.height()
       });
-    });
+      barInfo.classed("post-render", true);
+    })
   };
 
   BarChart.prototype.convertData = function(){

@@ -999,7 +999,13 @@ footer {
 
   .bar-info {
     fill: white;
-    display: none;
+    // Visibility hack is so we can get the size of the
+    // text before hiding it
+    visibility: hidden;
+    &.post-render {
+      display: none;
+      visibility: visible;
+    }
     .title {
       .font-size(30);
       fill: #333;
