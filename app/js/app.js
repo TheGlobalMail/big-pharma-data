@@ -229,7 +229,8 @@
       label: 'binLabel',
       metric: 'hospitalitycount',
       keepScale: !!'keepScale',
-      yAxisLabel: 'Number of attendees'
+      yAxisLabel: 'Number of attendees',
+      barInfoText: ['Medical professionals attended events costing {{xAxis}} pp']
     });
     chart.render();
     bindButtons('#perperson-chart button', chart);
@@ -243,7 +244,8 @@
       label: 'profession',
       metric: 'events',
       keepScale: !'keepScale',
-      yAxisLabel: 'TBC'
+      yAxisLabel: 'TBC',
+      barInfoText: ['{{xAxis}}s attended education events']
     });
     chart.render();
     bindButtons('#attendees button', chart);
