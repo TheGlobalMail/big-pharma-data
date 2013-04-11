@@ -387,21 +387,34 @@
           .font-size(100);
         }
       }
-      .doctor-nurse {
+      .doctor-only {
         position: absolute;
         bottom: 0;
-        background: url(../images/doctor+nurse.svg) left bottom no-repeat transparent;
+        background: url(../images/doctor-only.svg) left bottom no-repeat transparent;
         background-size: contain;
-        width: 380px;
-        height: 250px;
+        width: 280px;
+        height: 230px;
         .csstransforms & {
           bottom: -300px;
-          .transition(all .5s .2s @easing);
+          .transition(all .5s 200ms ease-out);
+        }
+      }
+      .nurse-only {
+        position: absolute;
+        bottom: 0;
+        background: url(../images/nurse-only.svg) left bottom no-repeat transparent;
+        background-size: contain;
+        width: 280px;
+        height: 210px;
+        margin-left: 130px;
+        .csstransforms & {
+          bottom: -300px;
+          .transition(all .5s 600ms ease-out);
         }
       }
 
       &.is-visible {
-        .doctor-nurse {
+        .doctor-only, .nurse-only {
           bottom: 0;
         }
       }
@@ -446,6 +459,7 @@
         .calendar {
           margin-top:0;
           .rotate(-5deg);
+          -ms-transform: rotate(0); //Cause IE sucks
         }
       }
     }
@@ -595,13 +609,12 @@
             height: 118px;
             background: url(../images/postcards.svg) center -176px no-repeat transparent;
             .box-shadow(0 4px 8px -4px black);
-            // -webkit-backface-visibility: hidden; // Smooth edges in chrome
             .rotate(5deg);
             -ms-transform: rotate(0); //Cause IE sucks
             .csstransforms & {
               top: -400px;
               .rotate(125deg);
-              .transition(all .6s .2s @easing);
+              .transition(all .6s 0 @easing);
             }
           }
           &.new-zealand:before {
@@ -611,7 +624,7 @@
             .csstransforms & {
               top: -400px;
               .rotate(125deg);
-              .transition(all .7s .8s @easing);
+              .transition(all .7s 200ms @easing);
             }
           }
           &.germany:before {
@@ -621,7 +634,7 @@
             .csstransforms & {
               top: -400px;
               .rotate(125deg);
-              .transition(all .5s 1.2s @easing);
+              .transition(all .5s 800ms @easing);
             }
           }
           dl {
@@ -658,14 +671,17 @@
           &:before {
             top: 0;
             .rotate(5deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
           &.new-zealand:before {
             top: 0;
             .rotate(-8deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
           &.germany:before {
             top: 0;
             .rotate(-2deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
         }
       }
@@ -990,6 +1006,7 @@
           .doctor {
             right:2%;
             .rotate(5deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
         }
       }
@@ -1010,6 +1027,7 @@
           .csstransforms & {
             left: -280px;
             .rotate(-25deg);
+            -ms-transform: rotate(0); //Cause IE sucks
             .transition(all .9s 300ms @easing);
           }
         }
@@ -1017,6 +1035,7 @@
           .drug {
             left:2%;
             .rotate(0deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
         }
       }
@@ -1032,8 +1051,8 @@
           width:300px;
           height: 292px;
           .csstransforms & {
-            right: -280px;
-            .rotate(-25deg);
+            right: -380px;
+            .rotate(55deg);
             .transition(all 1s 400ms @easing);
           }
         }
@@ -1407,7 +1426,7 @@ footer {
         }
       }
       &.total-attendees {
-        background-image: url(../images/doctor+nurse.png);
+        background: url(../images/doctor+nurse.png) no-repeat bottom left transparent;
       }
       &.alcohol {
         .bottle {
@@ -1420,6 +1439,11 @@ footer {
         .map {
           font-family: 'Arial', sans-serif;
           background-image: url(../images/aus-map.png);
+          ul li {
+            &#state-nt, &#state-qld, &#state-nsw, &#state-act, &#state-vic, &#state-tas, &#state-sa, &#state-wa {
+              .opacity(100);
+            }
+          }
         }
       }
       &.world {

@@ -166,9 +166,16 @@
             .font-size(60);
           }
         }
-        .doctor-nurse {
-          width: 290px;
-          height: 200px;
+        .doctor-only {
+          width: 180px;
+          height: 160px;
+          left: 10%;
+        }
+        .nurse-only {
+          width: 140px;
+          height: 140px;
+          right: 10%;
+          margin-left: 0;
         }
       }
       &.daily {
@@ -191,12 +198,14 @@
       height: auto;
       overflow: visible;
         ul#countries {
+          overflow: hidden;
           width:290px;
           li {
             .font-size(14);
             line-height: 1.2;
             position: relative;
             float: none;
+            margin-top: 30px;
             height: 94px;
             &:before {
               position: absolute;
@@ -421,6 +430,7 @@
             padding-top: 20px;
             .font-size(12);
             padding-right: 2px;
+            padding-bottom: 10px;
             min-width: 78px;
             strong {
               .font-size(18);
