@@ -43,9 +43,9 @@
 
     // Check what sections are in the viewport, and set it to recheck
     // after scroll events
-    var onScrollCheckVisibility = onScrollCheckVisibilityFactory();
-    onScrollCheckVisibility();
-    $(window).scroll(onScrollCheckVisibility);
+    var checkVisibility = checkVisibilityFactory();
+    checkVisibility();
+    $(document).scroll(checkVisibility);
   }
 
   // Render the companies table. Order it by total $
@@ -243,7 +243,7 @@
       label: 'profession',
       metric: 'events',
       keepScale: !'keepScale',
-      yAxisLabel: 'TBC'
+      yAxisLabels: ['TBC', '$', '$']
     });
     chart.render();
     bindButtons('#attendees button', chart);
@@ -278,6 +278,7 @@
     $buttons.click(function(){
       var $button = $(this);
       chart.updateMetric($button.data('metric'));
+      chart.updateYAxisLabel($button.index());
       $buttons.removeClass('active');
       $button.addClass('active');
     });
@@ -288,7 +289,7 @@
     return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   }
 
-  function onScrollCheckVisibilityFactory() {
+  function checkVisibilityFactory() {
     // Add a `is-visible` class to each element once it has entered the viewport.
 
     // Constructing the closure so we can hoist the elements

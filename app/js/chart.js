@@ -199,32 +199,60 @@
   };
 
   BarChart.prototype.renderYAxisLabel = function() {
-    if (this.options.yAxisLabel) {
+    var labelText;
+    if (this.options.yAxisLabels) {
+      labelText = this.options.yAxisLabels[0];
+    } else {
+      labelText = this.options.yAxisLabel;
+    }
+    if (labelText) {
       // Add the label
-      var $yAxisSvg = $(this.yAxisSvg[0]);
       var label = this.yAxisSvg.append("text")
         .classed("y-axis-label", true)
         .attr("transform", "rotate(-90)")
         .style("text-anchor", "end")
-        .text(this.options.yAxisLabel);
-
-      // Position the label
-      var $label = $(label[0]);
-      var smallestLeftOffset = _.min(
-        _.map(
-          $(this.yAxisSvg.selectAll('.tick text')[0]),
-          function(el) {
-            return $(el).offset().left;
-          }
-        )
-      );
-      label.attr({
-        "x": -((this.height - $label.width()) / 2),
-        // Position the y axis label slightly offset from
-        // the left-most tick value
-        "y": -($label.offset().left - smallestLeftOffset) - $label.height() - 9 // magical constant
-      });
+        .text(labelText);
+      this._updateYAxisLabel(label);
     }
   };
 
+  BarChart.prototype.updateYAxisLabel = function(yAxisLabelIndex) {
+    var labelText;
+    if (this.options.yAxisLabels) {
+      labelText = this.options.yAxisLabels[yAxisLabelIndex];
+    } else {
+      labelText = this.options.yAxisLabel;
+    }
+    if (labelText) {
+      var self = this;
+      // Hack: delaying to let d3 finish the rendering of the y-axis
+      // tick text. TODO: have this fired by the y-axis generator
+      setTimeout(function() {
+        var label = self.yAxisSvg.select(".y-axis-label")
+          .text(labelText);
+        self._updateYAxisLabel(label);
+      }, 50)
+    }
+  };
+
+  BarChart.prototype._updateYAxisLabel = function(label) {
+    var labelNode = label.node();
+    var maxLeftOffset = _.max(
+      _.map(
+        $(this.yAxisSvg.selectAll('.tick text')[0]),
+        function(el) {
+          var bBox = el.getBBox();
+          return Math.abs(bBox.y) + bBox.width;
+        }
+      )
+    );
+    var xPos = -((this.height - labelNode.getBBox().width) / 2);
+    // Position the y axis label slightly offset from
+    // the left-most tick value
+    var yPos = -maxLeftOffset - labelNode.getBBox().height;
+    label.attr({
+      "x": xPos,
+      "y": yPos
+    });
+  };
 }($, window.d3));
