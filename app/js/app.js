@@ -238,10 +238,17 @@
 
   function populateProfessions(){
     var topProfessions = _.sortBy(stats.professions, 'events').reverse().slice(0, 8);
+    _.each(topProfessions, function(prof){
+      if (prof.profession === 'gp'){
+        prof.label = "G.P.'s";
+      }else{
+        prof.label = prof.profession + 's';
+      }
+    });
     var chart = new BarChart({
       id: '#professions',
       data: topProfessions,
-      label: 'profession',
+      label: 'label',
       metric: 'events',
       keepScale: !'keepScale',
       yAxisLabels: ['TBC', '$', '$'],
@@ -302,7 +309,7 @@
       var windowScrollY = scrollY();
       elements.each(function() {
         var element = $(this);
-        if (element.offset().top < (windowScrollY + window.innerHeight - 200)) {
+        if (element.offset().top < (windowScrollY + window.innerHeight - 300)) {
           element.addClass('is-visible');
         }
         if (element.offset().top > (windowScrollY + window.innerHeight)) {

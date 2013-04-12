@@ -884,6 +884,11 @@
     }
 
     &.cost {
+      .left {
+        h4.large {
+          margin-top: -16px;
+        }
+      }
       .right {
         text-align: left;
         margin-bottom: 50px;
@@ -974,8 +979,45 @@
         height: 170px;
         width: 600px;
         margin: 0 auto;
-        background: url(../images/bottle.svg) center center no-repeat;
+        background: url(../images/bottle-no-drip.svg) center center no-repeat;
         background-size: contain;
+        .dripAnimation (@name) {
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-duration: 2s;
+          -webkit-animation-name: @name;
+          -webkit-animation-timing-function: ease-in-out;
+          -moz-animation-iteration-count: infinite;
+          -moz-animation-duration: 2s;
+          -moz-animation-name: @name;
+          -moz-animation-timing-function: ease-in-out;
+          -o-animation-iteration-count: infinite;
+          -o-animation-duration: 2s;
+          -o-animation-name: @name;
+          -o-animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          animation-duration: 2s;
+          animation-name: @name;
+          animation-timing-function: ease-in-out;
+        }
+        .drip-container {
+          position: absolute;
+          width: 80px;
+          height: 60px;
+          right: 0;
+          bottom: 4px;
+          overflow: hidden;
+        }
+        .drip {
+          position: absolute;
+          width: 14px;
+          height: 25px;
+          background: url(../images/drip.svg) center top no-repeat;
+          background-size: contain;
+          right: 28px;
+          bottom: 31px;
+          .dripAnimation(drip);
+        }
+
         .text-container {
           position: relative;
           width: 100%;
@@ -990,12 +1032,39 @@
         em {
           position: absolute;
           font-weight: bold;
-          left: 155px;
+          left: 185px;
           margin-top: -65px;
           width: 160px;
         }
       }
       // Animations
+      .keyframesDrip() {
+        from {
+          bottom: 31px;
+          width: 0;
+          right: 35px;
+        }
+
+        20% {
+          bottom: 32px;
+          width: 7px;
+          right: 32px;
+        }
+
+        90% {
+          bottom: 32px;
+        }
+
+        100% {
+          bottom: -10px;
+        }
+      }
+      @-webkit-keyframes drip { .keyframesDrip(); }
+      @-moz-keyframes drip { .keyframesDrip(); }
+      @-ms-keyframes drip { .keyframesDrip(); }
+      @-o-keyframes drip { .keyframesDrip(); }
+      @keyframes drip { .keyframesDrip(); }
+
       .csstransforms.no-touch & {
         &.is-visible {
           .bottle .text-container {
@@ -1151,7 +1220,14 @@
           .box-shadow(0 1px 3px #e5e5e5);
           .rotate(5deg);
           -ms-transform: rotate(0); //Cause IE sucks
-
+          h4 {
+            margin-top: 22%;
+            margin-left: 42%;
+            color: @blue;
+            .font-size(80);
+            font-style: normal;
+            .opacity(20);
+          }
         }
       }
       &.drugs {
@@ -1191,6 +1267,9 @@
               right:2%;
               .rotate(5deg);
               -ms-transform: rotate(0); //Cause IE sucks
+              h4 {
+                .opacity(20);
+              }
             }
             &.drugs .drug {
               .opacity(100);
@@ -1211,6 +1290,10 @@
             .translate3d(0,0,0);
             .rotate(-25deg);
             .transition(all .8s 200ms @easing);
+            h4 {
+                .opacity(0);
+                .transition(opacity .8s 1s ease-out);
+              }
           }
           &.drugs .drug {
             .opacity(0);
@@ -1232,6 +1315,9 @@
             right:2%;
             .rotate(5deg);
             -ms-transform: rotate(0); //Cause IE sucks
+            h4 {
+              .opacity(20);
+            }
           }
           &.drugs .drug {
             .opacity(100);

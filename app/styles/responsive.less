@@ -189,9 +189,6 @@
       }
       &.alcohol {
         height: 230px - 50px;
-        .bottle {
-          width: auto;
-        }
       }
       &.world {
       text-align: center;
@@ -458,6 +455,54 @@
           height: 135px;
           padding-top: 30px;
           background-position: center bottom;
+          .drip-container {
+            position: absolute;
+            width: 40px;
+            height: 25px;
+            right: 0;
+            bottom: 4px;
+            overflow: hidden;
+          }
+          .drip {
+            position: absolute;
+            width: 7px;
+            height: 12px;
+            background: url(../images/drip.svg) center top no-repeat;
+            background-size: contain;
+            right: 15px;
+            top: 0;
+          }
+          // Animations
+          .keyframesDrip() {
+            from {
+              top: 0;
+              width: 0;
+              right: 15px;
+            }
+
+            20% {
+              top: 0;
+              width: 7px;
+              right: 14px;
+            }
+
+            90% {
+              top: 2px;
+              right: 14px;
+              width: 7px;
+            }
+
+            100% {
+              top: 20px;
+              right: 14px;
+              width: 7px;
+            }
+          }
+          @-webkit-keyframes drip { .keyframesDrip(); }
+          @-moz-keyframes drip { .keyframesDrip(); }
+          @-ms-keyframes drip { .keyframesDrip(); }
+          @-o-keyframes drip { .keyframesDrip(); }
+          @keyframes drip { .keyframesDrip(); }
           .text-container {
             margin: -48px 0 0 6%;
             text-shadow: none;
