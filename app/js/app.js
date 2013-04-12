@@ -50,7 +50,7 @@
 
   // Render the companies table. Order it by total $
   function populateCompanies(){
-    var companies = _.sortBy(stats.companies, 'events').reverse();
+    var companies = _.sortBy(stats.companies, 'cost').reverse();
     var companiesHtml = _.map(companies, function(company){
       // TODO: add incomplete and percentage classes
       var row = '<tr style="display:none">';
