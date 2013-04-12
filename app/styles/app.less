@@ -278,6 +278,113 @@
   }
 
 
+  #status {
+    padding-bottom: 60px;
+    p {
+        .font-size(14);
+      }
+    .btn {
+      display: block;
+      width: 272px;
+      margin: 10px auto 20px;
+      padding: 8px;
+      border: none;
+      background-color: @blue;
+      .box-shadow(none);
+      .font-size(16);
+      color: white;
+      .border-radius(4px);
+      behavior: url(../js/libs//PIE.htc);
+      &:hover {
+        background-color: @blueDark;
+      }
+
+    }
+
+    table {
+      tbody {
+        border-bottom: 1px solid @tableBorder;
+      }
+      &.table-hover tbody tr:hover td,
+      &.table-hover tbody tr:hover th {
+        background-color: #f9f9f9;
+        .box-shadow(inset 0 3px 4px -2px #e5e5e5);
+      }
+      tr {
+        display: inline-table; //Fix for background image repeats
+        width: 100%;
+        &:first-child {
+          background: url(../images/fade.png) no-repeat center top transparent;
+          background-size:100% 12px;
+        }
+        &.incomplete {
+          background: url(../images/table-bg.png) repeat-y top right transparent;
+          &.ninety {
+            background-size: 10% auto;
+          }
+          &.eighty {
+            background-size: 20% auto;
+          }
+        }
+        td, th {
+          .font-size(20);
+          font-weight: 700;
+          font-style: italic;
+          line-height: 1;
+          color: @grayLight;
+          padding: 20px 10px;
+          vertical-align: middle;
+          &.company {
+            color: @grayDark;
+            font-style: normal;
+            width: 35%;
+            .font-size(22);
+          }
+          &.dollars {
+            width: 18%;
+          }
+          &.attendees {
+            width: 13%;
+          }
+          &.events {
+            width: 10%;
+          }
+          &.data {
+            width: 10%;
+          }
+          &.site {
+            .font-size(11);
+            font-weight: normal;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: right;
+            width: 15%;
+          }
+        }
+        td.company {
+          text-transform: capitalize;
+        }
+      }
+      thead {
+        tr:last-child {
+          border: none;
+        }
+        tr:first-child {
+          background: none;
+        }
+        th, th.company, th.site {
+          vertical-align: bottom;
+          color: @grayLight;
+          .font-size(11);
+          font-weight: normal;
+          font-style: italic;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+
   .subsection {
     margin-bottom: 0;
     padding: 40px 0 50px;
@@ -301,6 +408,11 @@
       &.xlarge {
         .font-size(160);
         letter-spacing: -0.07em;
+      }
+      &.graph-title {
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: initial;
       }
     }
     h5 {
@@ -935,11 +1047,7 @@
     }
 
     &.cost {
-      .left {
-        h4.large {
-          margin-top: -16px;
-        }
-      }
+      border-bottom: none;
       .right {
         text-align: left;
         margin-bottom: 50px;
@@ -977,115 +1085,81 @@
             .font-size(28);
             font-weight: bold;
             font-weight: 800;
+            line-height: .9;
+          }
+          span {
+            .font-size(12);
           }
         }
       }
-      // Animations
-      .csstransforms.no-touch & {
-        &.is-visible {
-          .right li.pp {
-            .opacity(100);
-          }
-        }
-        .right li.pp {
-          .opacity(0);
-          .transition(opacity .6s 40ms @easing);
-          &.twenty {
-            .transition(opacity .6s 140ms @easing);
-          }
-          &.fifty {
-            .transition(opacity .6s 240ms @easing);
-          }
-          &.over {
-            .transition(opacity .6s 340ms @easing);
-          }
-        }
-      }
-
-      &.is-visible {
-        .right li.pp {
-          .opacity(100);
-        }
-      }
-      #perperson-chart {
+      .bottle-container {
+        border-top: 1px solid #e5e5e5;
+        margin: 20px 0 40px;
         clear: both;
         padding-top: 40px;
-        text-align: center;
-        background: url(../images/fade.png) no-repeat center top transparent;
-        background-size:100% 12px;
-        .btn-group {
-          margin-top: 20px;
-        }
-      }
-    }
-    &.alcohol {
-      color: white;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.2);
-      border-bottom: none;
-      padding: 35px 0 60px;
-      height: 250px - 90px;
-
-      .bottle {
-        position: relative;
-        height: 170px;
-        width: 600px;
-        margin: 0 auto;
-        background: url(../images/bottle-no-drip.svg) center center no-repeat;
-        background-size: contain;
-        .dripAnimation (@name) {
-          -webkit-animation-iteration-count: infinite;
-          -webkit-animation-duration: 2s;
-          -webkit-animation-name: @name;
-          -webkit-animation-timing-function: ease-in-out;
-          -moz-animation-iteration-count: infinite;
-          -moz-animation-duration: 2s;
-          -moz-animation-name: @name;
-          -moz-animation-timing-function: ease-in-out;
-          -o-animation-iteration-count: infinite;
-          -o-animation-duration: 2s;
-          -o-animation-name: @name;
-          -o-animation-timing-function: ease-in-out;
-          animation-iteration-count: infinite;
-          animation-duration: 2s;
-          animation-name: @name;
-          animation-timing-function: ease-in-out;
-        }
-        .drip-container {
-          position: absolute;
-          width: 80px;
-          height: 60px;
-          right: 0;
-          bottom: 4px;
-          overflow: hidden;
-        }
-        .drip {
-          position: absolute;
-          width: 14px;
-          height: 25px;
-          background: url(../images/drip.svg) center top no-repeat;
-          background-size: contain;
-          right: 28px;
-          bottom: 31px;
-          .dripAnimation(drip);
-        }
-
-        .text-container {
+        .bottle {
+          color: white;
+          margin: 0 auto;
           position: relative;
-          width: 100%;
-          margin-left: 35px;
-        }
-        h4 {
-          sup {
-            .font-size(90);
-            padding-left: 16px;
+          height: 170px;
+          width: 600px;
+          background: url(../images/bottle-no-drip.svg) center center no-repeat;
+          background-size: contain;
+          .dripAnimation (@name) {
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-name: @name;
+            -webkit-animation-timing-function: ease-in-out;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-duration: 2s;
+            -moz-animation-name: @name;
+            -moz-animation-timing-function: ease-in-out;
+            -o-animation-iteration-count: infinite;
+            -o-animation-duration: 2s;
+            -o-animation-name: @name;
+            -o-animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-name: @name;
+            animation-timing-function: ease-in-out;
           }
-        }
-        em {
-          position: absolute;
-          font-weight: bold;
-          left: 185px;
-          margin-top: -65px;
-          width: 160px;
+          .drip-container {
+            position: absolute;
+            width: 80px;
+            height: 60px;
+            right: 0;
+            bottom: 4px;
+            overflow: hidden;
+          }
+          .drip {
+            position: absolute;
+            width: 14px;
+            height: 25px;
+            background: url(../images/drip.svg) center top no-repeat;
+            background-size: contain;
+            right: 28px;
+            bottom: 31px;
+            .dripAnimation(drip);
+          }
+
+          .text-container {
+            position: relative;
+            width: 100%;
+            margin-left: 22px;
+          }
+          h4 {
+            sup {
+              .font-size(90);
+              padding-left: 16px;
+            }
+          }
+          em {
+            position: absolute;
+            font-weight: bold;
+            left: 185px;
+            margin-top: -65px;
+            width: 160px;
+          }
         }
       }
       // Animations
@@ -1132,111 +1206,47 @@
           .opacity(100);
         }
       }
-    }
-  }
+      // Animations
+      .csstransforms.no-touch & {
+        &.is-visible {
+          .right li.pp {
+            .opacity(100);
+          }
+        }
+        .right li.pp {
+          .opacity(0);
+          .transition(opacity .6s 40ms @easing);
+          &.twenty {
+            .transition(opacity .6s 140ms @easing);
+          }
+          &.fifty {
+            .transition(opacity .6s 240ms @easing);
+          }
+          &.over {
+            .transition(opacity .6s 340ms @easing);
+          }
+        }
+      }
 
-  #status {
-    padding-bottom: 30px;
-
-    .btn {
-      display: block;
-      width: 272px;
-      margin: 10px auto 40px;
-      padding: 8px;
-      border: none;
-      background-color: @blue;
-      .box-shadow(none);
-      .font-size(16);
-      color: white;
-      .border-radius(4px);
-      behavior: url(../js/libs//PIE.htc);
-      &:hover {
-        background-color: @blueDark;
-      }
-    }
-
-    table {
-      tbody {
-        border-bottom: 1px solid @tableBorder;
-      }
-      &.table-hover tbody tr:hover td,
-      &.table-hover tbody tr:hover th {
-        background-color: #f9f9f9;
-        .box-shadow(inset 0 3px 4px -2px #e5e5e5);
-      }
-      tr {
-        display: inline-table; //Fix for background image repeats
-        width: 100%;
-        &:first-child {
-          background: url(../images/fade.png) no-repeat center top transparent;
-          background-size:100% 12px;
-        }
-        &.incomplete {
-          background: url(../images/table-bg.png) repeat-y top right transparent;
-          &.ninety {
-            background-size: 10% auto;
-          }
-          &.eighty {
-            background-size: 20% auto;
-          }
-        }
-        td, th {
-          .font-size(20);
-          font-weight: 700;
-          font-style: italic;
-          line-height: 1;
-          color: @grayLight;
-          padding: 20px 10px;
-          vertical-align: middle;
-          &.company {
-            color: @grayDark;
-            font-style: normal;
-            width: 35%;
-            .font-size(22);
-          }
-          &.dollars {
-            width: 18%;
-          }
-          &.attendees {
-            width: 13%;
-          }
-          &.events {
-            width: 10%;
-          }
-          &.data {
-            width: 10%;
-          }
-          &.site {
-            .font-size(11);
-            font-weight: normal;
-            font-style: normal;
-            text-transform: uppercase;
-            text-align: right;
-            width: 15%;
-          }
-        }
-        td.company {
-          text-transform: capitalize;
+      &.is-visible {
+        .right li.pp {
+          .opacity(100);
         }
       }
-      thead {
-        tr:last-child {
-          border: none;
-        }
-        tr:first-child {
-          background: none;
-        }
-        th, th.company, th.site {
-          vertical-align: bottom;
-          color: @grayLight;
-          .font-size(11);
-          font-weight: normal;
-          font-style: italic;
-          line-height: 1;
+      #perperson-chart {
+        clear: both;
+        padding-top: 40px;
+        text-align: center;
+        background: url(../images/fade.png) no-repeat center top transparent;
+        background-size:100% 12px;
+        .btn-group {
+          margin-top: 20px;
         }
       }
     }
   }
+
+
 
   #dont-know {
     overflow: hidden;
@@ -1388,7 +1398,6 @@
   #data {
     background: none;
     margin-top: 0;
-    margin-bottom: 100px;
     .data {
       margin-top: 0;
       padding-top:0;
@@ -1410,14 +1419,16 @@
             list-style: none;
             display: inline-block;
             text-align: left;
+            margin: 0 10px;
             a {
               display: inline-block;
               color: white;
               .border-radius(6px);
               behavior: url(../js/libs//PIE.htc);
               .box-shadow(inset 0 1px 3px rgba(0,0,0,0.4));
-              margin: 0 10px 10px;
-              width: 60%;
+              margin: 0 0 10px;
+              width: auto;
+              min-width: 120px;
               padding: 12px 14px 12px 60px;
               background: @blue url(../images/doc-icons.svg) 6px 9px no-repeat;
               &:hover {
@@ -1429,7 +1440,7 @@
               background-position: 6px -60px;
             }
             span {
-              .font-size(12);
+              .font-size(11);
               font-weight: normal;
               display: block;
               text-transform: none;
@@ -1462,10 +1473,28 @@ footer {
   background-color: #333334;
   #gradient.vertical-three-colors(#222,#333,3%,#343539);
   padding: 20px 0 80px;
+  margin-top: 40px;
   text-shadow: 0 -1px 0 black;
+  position: relative;
   h4 {
     color: white;
     text-transform: uppercase;
+  }
+  .top a {
+    .font-size(12);
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    right: 10%;
+    top: -34px;
+    background-color: #222;
+    padding: 10px 14px 6px;
+    .border-top-radius(6px);
+    &:hover {
+      text-decoration: none;
+      color: @grayLighter;
+    }
   }
   ul {
     margin-left: 0;
@@ -1752,6 +1781,11 @@ footer {
         .right li.pp {
           font-family: 'Arial', sans-serif;
           background-image: url(../images/events-icons.png);
+        }
+        .bottle {
+          width: 650px;
+          height: 185px;
+          background-image: url(../images/bottle.png);
         }
       }
       &.daily {

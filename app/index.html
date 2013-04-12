@@ -71,9 +71,10 @@
         <div id="nav-mob">
           <ul class="nav" role="menu" data-spy="affix" data-offset-top="125">
             <li data-link="introduction"><a href="#introduction"><span class="lge">Introduction</span><span class="sml">Intro</span></a></li>
-            <li data-link="stats"><a href="#stats"><span class="lge">The Tab so far</span><span class="sml">Stats</span></a></li>
             <li data-link="status"><a href="#status"><span class="lge">Biggest spenders</span><span class="sml">Companies</span></a></li>
-            <li data-link="dont-know"><a href="#dont-know"><span class="lge">What we don't know</span><span class="sml">Unknowns</span></a></li>
+            <li data-link="stats"><a href="#stats"><span class="lge">The Big Picture</span><span class="sml">Stats</span></a></li>
+
+            <li data-link="dont-know"><a href="#dont-know"><span class="lge">What's unknown</span><span class="sml">Unknowns</span></a></li>
             <li data-link="data"><a href="#data"><span class="lge">The data</span><span class="sml">Data</span></a></li>
           </ul>
         </div>
@@ -87,9 +88,10 @@
           <div class="nav" role="menu" data-spy="affix" data-offset-top="250">
             <ul class="nav-desktop">
               <li data-link="introduction"><a href="#introduction">Introduction</a></li>
-              <li data-link="stats"><a href="#stats">The tab so far</a></li>
               <li data-link="status"><a href="#status">Biggest spenders</a></li>
-              <li data-link="dont-know"><a href="#dont-know">What we don't know</a></li>
+              <li data-link="stats"><a href="#stats">The Big Picture</a></li>
+
+              <li data-link="dont-know"><a href="#dont-know">What's unknown</a></li>
               <li data-link="data"><a href="#data">The data</a></li>
             </ul>
             <ul id="related">
@@ -119,14 +121,32 @@
           <!-- <h3>Introduction</h3> -->
           <p>Pharmaceutical companies are banned from advertising prescription drugs directly to Australian consumers. But they can promote their products to doctors and other health professionals, including through sponsored “education events”. </p>
           <p>The money pharmaceutical companies pay to doctors in the form of consultancies, speeches, travel, grants and gifts is mostly secret. Since 2007, however, many drug companies have been required to report some information about the medical education events they hold, including the cost for food, wine and hospitality.</p>
-          <p><em>The Global Mail</em> has created a database of these reports. What follows are some key facts and figures we have found in this data.</p>
+          <p><em>The Global Mail</em> has created a database of these reports. Here are some key facts and figures we have found in this data.</p>
         </section>
 
+        <section id="status" class="offset3">
+          <h3 class="line"><span>BIGGEST SPENDERS</span></h3>
 
+          <table id="top5" class="table status-table table-hover">
+            <thead>
+                <tr>
+                    <th class="company">Company</th>
+                    <th class="dollars">Dollars spent</th>
+                    <th class="attendees">Attendees</th>
+                    <th class="events">Events</th>
+                    <th class="data">Reports</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <a data-full-list="false" id="full-list" data-alt-text="Collapse the list" href="#full-list" class="btn">View the full list</a>
+          <p>Click on each company to find out more, including details of its most expensive event during the reporting period July 2007 to Sept. 2012. To understand why not all companies show the same number of reports, <a href="#about" data-toggle="modal" data-bypass="">click here.</a> </p>
+        </section>
 
         <section id="stats" class="offset3">
           <h3 class="line">
-            <span>THE DOCTORS’ TAB SO FAR</span>
+            <span>The Big Picture</span>
           </h3>
 
           <div class="subsection spending flipInX animated">
@@ -214,21 +234,38 @@
               <li class="pp">
                 Under $10 pp
                 <strong id="under-10-person"></strong>
+                <span>Events</span>
               </li>
               <li class="pp twenty">
                 $10-$20 PP
                 <strong id="under-20-person"></strong>
+                 <span>Events</span>
               </li>
               <li class="pp fifty">
                 $20-$50 PP
                 <strong id="under-50-person"></strong>
+                 <span>Events</span>
               </li>
               <li class="pp over">
                 Over $50 pp
                 <strong id="over-50-person"></strong>
+                 <span>Events</span>
               </li>
               </ul>
 
+            </div>
+            <div class="bottle-container">
+              <div class="bottle">
+                <div class="text-container">
+                  <h4 class="xlarge">
+                    <span id="total-alcohol-percentage"></span><sup>%</sup>
+                  </h4>
+                  <em>of events served alcohol</em>
+                </div>
+                <div class="drip-container">
+                  <div class="drip"></div>
+                </div>
+              </div>
             </div>
 
             <div id="perperson-chart" class="chart datavis">
@@ -238,43 +275,10 @@
                 <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
                 <button data-metric="count" class="btn">Total Cost</button>
               </div>
+              <h4 class="graph-title">Total number of attendees per price range</h4>
             </div>
             <p class="note">Figures represent total spend July 2007 - Sept 2012.</p>
           </div>
-
-          <div class="subsection alcohol">
-            <div class="bottle">
-              <div class="text-container">
-                <h4 class="xlarge">
-                  <span id="total-alcohol-percentage"></span><sup>%</sup>
-                </h4>
-                <em>of events served alcohol</em>
-              </div>
-              <div class="drip-container">
-                <div class="drip"></div>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        <section id="status" class="offset3">
-          <h3 class="line"><span>THE BIGGEST SPENDERS</span></h3>
-          <p>Please note: Not all companies have submitted the same number of reports during the July 2007 to Sept 2012 period for various reasons. Fewer spreadsheets = less data. The 'Reports' column shows how many of these reports we have converted to date. <a href="#about" data-toggle="modal" data-bypass="">Read here to learn more about the data.</a> </p>
-          <table id="top5" class="table status-table table-hover">
-            <thead>
-                <tr>
-                    <th class="company">Company</th>
-                    <th class="dollars">Dollars spent</th>
-                    <th class="attendees">Attendees</th>
-                    <th class="events">Events</th>
-                    <th class="data">Reports</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-          <a data-full-list="false" id="full-list" data-alt-text="Collapse the list" href="#full-list" class="btn">View the full list</a>
 
         </section>
 
@@ -282,7 +286,7 @@
 
           <div class="subsection doctors">
             <h3 class="line">
-              <span>What we don't know</span>
+              <span>What's unknown</span>
             </h3>
             <div class="text">
               <p>Pharma companies <strong>don’t have to name the medical professionals who attend</strong>, <em>sponsored events, so there’s no public record of your own doctor’s participation.</em></p>
@@ -316,9 +320,9 @@
             <p>If you have any feedback on how we can improve this resource, if you find any errors in the data, or have suggestions for our further investigations, <br/>please email clare.blumer AT theglobalmail.org</p>
             <div class="data-container">
               <ul>
-                <li class="csv"><a href="/downloads/complete_data_all.zip">All the data <span>Single CSV - 13MB</span></a></li>
-                <li class="csv"><a href="/downloads/complete_data_by_year.zip">By year <span>Multiple CSVs - 9MB</span></a></li>
-                <li class="pdf"><a href="/downloads/Original-PDF.zip">Original PDFs<span>Multiple PDFs - 149MB</span></a></li>
+                <li class="csv"><a href="/downloads/complete_data_all.zip">All the data <span>CSV (13MB Zip)</span></a></li>
+                <li class="csv"><a href="/downloads/complete_data_by_year.zip">By year <span>CSVs (9MB Zip)</span></a></li>
+                <li class="pdf"><a href="/downloads/Original-PDF.zip">Original PDFs <span>PDFs (149MB Zip)</span></a></li>
               </ul>
             </div>
           </div>
