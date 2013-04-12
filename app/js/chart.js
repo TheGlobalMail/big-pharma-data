@@ -14,9 +14,11 @@
     var defaultOptions = {
       yAxisLabel: null,
       yAxisLabels: null,
-      // Contract label flag. If true, will cause y axis
-      // scales to be contracted, eg: 1000 becomes 1k
-      contractYAxisScales: true
+      // Cause y axis scales to be contracted, eg: 1000 becomes 1k
+      contractYAxisScales: true,
+      barInfoBoxPadding: 10,
+      boxInnerWidth: 93,
+      prependToYAxisScales: null
     };
 
     this.options = _.extend(defaultOptions, options);
@@ -25,10 +27,10 @@
   };
 
   BarChart.prototype.render = function(){
-    var convertedData = this.convertData();
-    var $professions = $(this.id);
+    var convertedData = this.convertedData = this.convertData();
+    var $container = $(this.id);
     var margin = {top: 10, right: 20, bottom: 80, left: 65},
-        width = $professions.width() - margin.left - margin.right;
+        width = $container.width() - margin.left - margin.right;
     var height = this.height = 260 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
       .rangeRoundBands([0, width], 0.4);
@@ -144,7 +146,7 @@
       var background = $(barInfo.select('.background')[0]);
       var title = $(barInfo.select('.title')[0]);
       var text = $(barInfo.select('.text')[0]).children('foreignObject');
-      var padding = 10;
+      var padding = _this.options.barInfoBoxPadding;
       title.attr("x", padding);
       text.attr({
         // Wrap the text at the title's width
@@ -165,7 +167,11 @@
         "y": -title.height() + (padding - 2)
       });
       barInfo.classed("post-render", true);
-    })
+    });
+
+    // TODO: super hacky, the update/render cycles should be rolled into
+    // one, rather than faking an update to get around legacy specifications
+    this.updateBarInfoText()
   };
 
   BarChart.prototype.convertData = function(){
@@ -178,7 +184,7 @@
     this.metric = metric;
     var height = this.height;
     var yScale = this.yScale;
-    var convertedData = this.convertData();
+    var convertedData = this.convertedData = this.convertData();
     if (!this.keepScale){
       yScale.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
       this.yAxis.scale(yScale);
@@ -189,14 +195,20 @@
       .transition().duration(500).delay(50)
       .attr("y", function(d) { return yScale(d.y); })
       .attr("height", function(d) { return height - yScale(d.y); });
+    this.updateBarInfoText();
   };
 
   BarChart.prototype.contractYAxisScales = function() {
     if (_this.options.contractYAxisScales) {
       _this.yAxisSvg.selectAll('.tick')
-        .each(function(d) {
+        .each(function(d, i) {
           d3.select(this).select('text').text(function() {
-            return _this.contractScale(d);
+            var value = _this.contractScale(d);
+            if (_this.options.prependToYAxisScales) {
+              value += ''; // coerce to string
+              value = _this.options.prependToYAxisScales + value;
+            }
+            return value;
           });
         });
     }
@@ -245,7 +257,7 @@
     if (labelText) {
       var _this = this;
       // Hack: delaying to let d3 finish the rendering of the y-axis
-      // tick text. TODO: have this fired by the y-axis generator
+      // scale text. TODO: have this fired by the y-axis generator
       setTimeout(function() {
         var label = _this.yAxisSvg.select(".y-axis-label")
           .text(labelText);
@@ -339,7 +351,16 @@
   }
 
   BarChart.prototype.updateBarInfoText = function() {
-    var _this = this;
+    // Update each title
+    this.barInfo
+      .each(function(d, i) {
+        var value = Math.floor(_this.convertedData[i].y);
+        var formattedValue = d3.format("0,000")(value);
+        var $title = $(d3.select(this).select('.title').node());
+        $title.text(formattedValue);
+      });
+
+    // Update each text
     this.barInfo.selectAll('.text p')
       .text(function(d) {
         if (_this.options.barInfoText) {
@@ -349,21 +370,29 @@
           return d.x;
         }
       });
+
+    // Resize and position each ba
     this.barInfo.each(function() {
       // Reset the visibility state
       var barInfo = d3.select(this)
         .classed("post-render", false);
 
       var background = barInfo.select('.background');
+      var title = barInfo.select('.title');
+      var boxInnerWidth = _.max([title.node().getBBox().width, _this.options.boxInnerWidth]);
       var text = barInfo.select('.text');
       var foreignObject = $(text.node()).find('foreignObject');
       var oldHeight = foreignObject.height();
+      foreignObject.attr("width", boxInnerWidth);
       var newHeight = foreignObject.find('p').height();
       foreignObject.attr("height", newHeight);
 
       // Scale the background for the new size
       var backgroundHeight = parseInt(background.attr('height'));
-      background.attr("height", backgroundHeight + (newHeight - oldHeight));
+      background.attr({
+        "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
+        "height": backgroundHeight + (newHeight - oldHeight)
+      });
 
       // Hide the barInfo
       barInfo.classed("post-render", true);

@@ -123,9 +123,9 @@
       var text;
       if (metric.match(/cost|spend/)){
         text = toDollars(value);
-      }else if (metric.match(/attendees/)){
+      } else if (metric.match(/attendees/)) {
         text = niceNumber(value);
-      }else{
+      } else {
         text = value && value.replace(/;/gm, ',');
       }
       $('#company-expensive-event-' + metric).text(text);
@@ -247,17 +247,19 @@
         prof.label = prof.profession + 's';
       }
     });
+    var prependToYAxisScales = ['$', '', '$'];
     var chart = new BarChart({
       id: '#professions',
       data: topProfessions,
       label: 'label',
       metric: 'perperson',
       keepScale: !'keepScale',
-      yAxisLabels: ['$', 'Number of events', '$'],
-      barInfoText: ['<%= xAxis %>s attended education events']
+      yAxisLabels: [' ', 'Number of events', ' '],
+      barInfoText: ['<%= xAxis %>s attended education events'],
+      prependToYAxisScales: prependToYAxisScales[0]
     });
     chart.render();
-    bindButtons('#attendees button', chart);
+    bindButtons('#attendees button', chart, prependToYAxisScales);
   }
 
   function populateWorld(){
@@ -284,13 +286,15 @@
     $('.datavis').addClass('no-ie');
   }
 
-  function bindButtons(buttons, chart){
+  function bindButtons(buttons, chart, prependToYAxisScales){
     var $buttons = $(buttons);
     $buttons.click(function(){
       var $button = $(this);
+      if (prependToYAxisScales) {
+        chart.options.prependToYAxisScales = prependToYAxisScales[$button.index()];
+      }
       chart.updateMetric($button.data('metric'));
       chart.updateYAxisLabel($button.index());
-      chart.updateBarInfoText();
       $buttons.removeClass('active');
       $button.addClass('active');
     });
