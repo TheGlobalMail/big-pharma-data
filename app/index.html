@@ -88,13 +88,36 @@
     <div class="container" id="section-container">
       <div class="row-fluid">
         <div class="span3 nav-col">
-          <ul class="nav" role="menu" data-spy="affix" data-offset-top="250">
-            <li data-link="introduction"><a href="#introduction">Introduction</a></li>
-            <li data-link="stats"><a href="#stats">The tab so far</a></li>
-            <li data-link="status"><a href="#status">Biggest spenders</a></li>
-            <li data-link="dont-know"><a href="#dont-know">What we don't know</a></li>
-            <li data-link="data"><a href="#data">Use the data</a></li>
-          </ul>
+          <div class="nav" role="menu" data-spy="affix" data-offset-top="250">
+            <ul class="nav-desktop">
+              <li data-link="introduction"><a href="#introduction">Introduction</a></li>
+              <li data-link="stats"><a href="#stats">The tab so far</a></li>
+              <li data-link="status"><a href="#status">Biggest spenders</a></li>
+              <li data-link="dont-know"><a href="#dont-know">What we don't know</a></li>
+              <li data-link="data"><a href="#data">Use the data</a></li>
+            </ul>
+            <ul id="related">
+              <li><h3>Related stories</h3></li>
+              <li>
+                <a href="#">
+                  <img class="sidebar-stories-image" src="http://cdn.theglobalmail.org/cache/25/69/25697198cd3b9fbf70d3591fe64a9c98.jpg" width="60" height="37">
+                  <h5>In Between Persecution And Asylum</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="sidebar-stories-image" src="http://cdn.theglobalmail.org/cache/25/69/25697198cd3b9fbf70d3591fe64a9c98.jpg" width="60" height="37">
+                  <h5>In Between Persecution And Asylum</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="sidebar-stories-image" src="http://cdn.theglobalmail.org/cache/25/69/25697198cd3b9fbf70d3591fe64a9c98.jpg" width="60" height="37">
+                  <h5>In Between Persecution And Asylum</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <section id="introduction" class="offset3">
           <!-- <h3>Introduction</h3> -->
@@ -357,20 +380,34 @@
       <h3><span id="company-name"></span></h3>
     </div>
     <div class="modal-body">
-      <p id="company-summary"></p>
-      <h5>Number of drugs on Australian market</h5>
-      <h4 id="company-products"></h4>
-      <h5>Significant company events</h5>
-      <p id="company-blurb"></p>
-      <h5>Taxpayer money paid via PBS</h5>
-      <h4 id="company-pbs2012"></h4>
-      <div class="pull-left">
-        <h5>Total spent on Education Events (since 2007)</h5>
-        <h4 id="company-total-cost"></h4>
+      <p id="company-summary"></p><p id="company-blurb"></p>
+      <div class="row-fluid">
+        <div class="pull-left quarter">
+          <h5>Revenue - Global</h5>
+          <h4 class="sml" id="company-revenueGlobal"></h4>
+        </div>
+        <div class="pull-left quarter">
+          <h5>Revenue - Aus.</h5>
+          <h4 class="sml" id="company-revenueAu"></h4>
+        </div>
+        <div class="pull-left quarter">
+          <h5>Products on Aus. market</h5>
+          <h4 class="sml" id="company-products"></h4>
+        </div>
+        <div class="pull-left quarter">
+          <h5>Taxpayer money paid via PBS</h5>
+          <h4 class="sml" id="company-pbs2012"></h4>
+        </div>
       </div>
-      <div class="pull-right">
-        <h5>Total number of events reported</h5>
-        <h4 id="company-total-events"></h4>
+      <div class="row-fluid">
+        <div class="pull-left">
+          <h5>Total spent on Education Events (since 2007)</h5>
+          <h4 id="company-total-cost"></h4>
+        </div>
+        <div class="pull-right">
+          <h5>Total number of events reported</h5>
+          <h4 id="company-total-events"></h4>
+        </div>
       </div>
       <h5>Events per price range</h5>
       <ul id="company-perperson">
@@ -391,8 +428,50 @@
         <strong data-perperson="over-50-person"></strong>
       </li>
       </ul>
+      <div class="row-fluid">
+        <div class="pull-left">
+          <h5>Top three attendee types</h5>
+          <ul id="company-top-professions">
+          </ul>
+        </div>
+        <div class="pull-right">
+        <h5>Top three diseases</h5>
+          <ul id="company-top-conditions">
+          </ul>
+        </div>
+      </div>
+
       <h5>Most expensive event reported</h5>
-      <ul id="company-top-event">
+      <table id="company-top-event">
+        <tr>
+          <td colspan="2"><span id="company-expensive-event-description"></span></td>
+        </tr>
+        <tr>
+          <td>Venue </td>
+          <td><span id="company-expensive-event-venue"></span></td>
+        </tr>
+        <tr>
+          <td>Type of Hospitality </td>
+          <td><span id="company-expensive-event-hospitality"></span></td>
+        </tr>
+        <tr>
+          <td>Cost of Hospitality </td>
+          <td><span id="company-expensive-event-hospitalitycost"></span></td>
+        </tr>
+        <tr>
+          <td>Total cost </td>
+          <td><span id="company-expensive-event-cost"></span></td>
+        </tr>
+        <tr>
+          <td>Number of Attendees </td>
+          <td><span id="company-expensive-event-attendees"></span></td>
+        </tr>
+        <tr>
+          <td>Cost of Hospitality Per Person  </td>
+          <td><span id="company-expensive-event-hospitality_spendratio"></span></span></td>
+        </tr>
+      </table>
+      <!-- <ul id="company-top-event">
         <li><span id="company-expensive-event-description"></span></li>
         <li>Venue <span id="company-expensive-event-venue"></span></li>
         <li>Type of Hospitality <span id="company-expensive-event-hospitality"></span></li>
@@ -400,25 +479,7 @@
         <li>Total cost <span id="company-expensive-event-cost"></span></li>
         <li>Number of Attendees <span id="company-expensive-event-attendees"></span></li>
         <li>Cost of Hospitality Per Person <span id="company-expensive-event-hospitality_spendratio"></span></li>
-      </ul>
-      <div class="pull-left">
-        <h5>Top three attendee types</h5>
-        <ul id="company-top-professions">
-        </ul>
-      </div>
-      <div class="pull-right">
-      <h5>Top three diseases</h5>
-        <ul id="company-top-conditions">
-        </ul>
-      </div>
-      <div class="pull-left">
-        <h5>Revenue - Global</h5>
-        <h4 id="company-revenueGlobal"></h4>
-      </div>
-      <div class="pull-right">
-        <h5>Revenue - Australia</h5>
-        <h4 id="company-revenueAu"></h4>
-      </div>
+      </ul> -->
     </div>
   </div>
 
