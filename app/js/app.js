@@ -46,6 +46,8 @@
     var checkVisibility = checkVisibilityFactory();
     checkVisibility();
     $(document).scroll(checkVisibility);
+
+    bindBackToTop();
   }
 
   // Render the companies table. Order it by total $
@@ -317,6 +319,13 @@
         }
       })
     }
+  }
+
+  function bindBackToTop() {
+    $('.top a').click(function(event) {
+      event.preventDefault();
+      $.scrollTo($('#main'), 500);
+    });
   }
 
   $.fn.modal.defaults.modalOverflow = true;
