@@ -118,63 +118,105 @@
   // NAVIGATION
 
   .nav-col .nav {
-    margin: 20px 0 0;
-    font-size: 14px;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    list-style: none;
-    border: 1px solid #e5e5e5;
-    .border-radius(8px);
-    behavior: url(../js/libs//PIE.htc);
-    overflow: hidden;
-    width: 220px;
-
     &.affix {
       position: fixed;
       width: 220px;
       top: 10px;
     }
+      ul.nav-desktop {
+        margin: 20px 0 0;
+        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        list-style: none;
+        border: 1px solid #e5e5e5;
+        .border-radius(8px);
+        behavior: url(../js/libs//PIE.htc);
+        overflow: hidden;
+        width: 220px;
 
-    li {
-      border-bottom: 1px solid #e5e5e5;
-      position: relative;
-      background-color: white;
-      &:first-child {
-        .border-top-radius(6px);
-        behavior: url(../js/libs//PIE.htc);
-      }
-      &:last-child{
-        border-bottom: none;
-        .border-bottom-radius(6px);
-        behavior: url(../js/libs//PIE.htc);
-      }
-      a {
-        display: block;
-        padding: 10px 14px;
+      li {
+        border-bottom: 1px solid #e5e5e5;
+        position: relative;
         background-color: white;
-        &:hover, &.active {
-          text-decoration:none;
-          background-color: #f5f5f5;
-        }
         &:first-child {
           .border-top-radius(6px);
           behavior: url(../js/libs//PIE.htc);
         }
         &:last-child{
+          border-bottom: none;
           .border-bottom-radius(6px);
           behavior: url(../js/libs//PIE.htc);
-          overflow: hidden;
+        }
+        a {
+          display: block;
+          padding: 10px 14px;
+          background-color: white;
+          &:hover, &.active {
+            text-decoration:none;
+            background-color: #f5f5f5;
+          }
+          &:first-child {
+            .border-top-radius(6px);
+            behavior: url(../js/libs//PIE.htc);
+          }
+          &:last-child{
+            .border-bottom-radius(6px);
+            behavior: url(../js/libs//PIE.htc);
+            overflow: hidden;
+          }
+        }
+        &.active a {
+          color: #222;
+          background: url(../images/nav-arrow.png) no-repeat 95% center transparent;
+          &:hover, &.active {
+            cursor: default;
+          }
         }
       }
-      &.active a {
-        color: #222;
-        background: url(../images/nav-arrow.png) no-repeat 95% center transparent;
-        &:hover, &.active {
-          cursor: default;
-        }
-      }
+    }
+    ul#related {
+      margin: 20px 0 0;
+      width: 220px;
+      li {
+        list-style: none;
+        padding: 8px 4px 8px 10px;
+        border-bottom: 1px solid #e5e5e5;
 
+        &:hover, &:active {
+          text-decoration:none;
+          background-color: #f5f5f5;
+        }
+
+        a {
+          color:@grayDarker;
+        }
+
+
+        h3 {
+          text-align: left;
+          .font-size(14);
+          font-family: @sansFontFamily;
+          margin-bottom: 0;
+        }
+        h5 {
+          font-weight: normal;
+          .font-size(12);
+        }
+        img {
+          float: left;
+          margin-right: 10px;
+        }
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 220px;
+        height: 10px;
+        background: url(../images/fade.png) no-repeat center top transparent;
+        background-size:100% 12px;
+      }
     }
 
   }
@@ -183,7 +225,8 @@
 
   #nav-mob {
     text-align: center;
-    display: none;
+    .opacity(0);
+    height: 0;
       .nav {
         display: block;
         height: 33px;
@@ -1547,23 +1590,30 @@ footer {
   }
   .pull-left, .pull-right {
     width: 50%;
-    min-height: 98px;
+    &.quarter {
+      width: 25%;
+    }
   }
   h5 {
     .font-size(12);
     text-transform: uppercase;
     font-weight: normal;
-    margin: 20px 0 0;
-    padding-top: 20px;
+    margin: 15px 0 0;
+    padding-top: 15px;
     border-top: 1px solid #e5e5e5;
     color: @grayLight;
     clear: both;
   }
   h4 {
-    .font-size(36);
+    .font-size(34);
     font-weight: 800;
     font-style: italic;
-    margin: 0 0 6px 0;
+    margin: 0;
+    &.sml {
+      .font-size(18);
+      font-weight: 600;
+      margin-bottom: 0;
+    }
   }
   h3 {
     .font-size(30);
@@ -1572,6 +1622,10 @@ footer {
     .font-size(14);
     line-height: 1.5;
     padding-right: 5%;
+    margin-bottom: 0;
+    &#company-blurb {
+      font-style: italic;
+    }
   }
   ul {
     margin-left: 0;
@@ -1590,31 +1644,35 @@ footer {
       }
     }
   }
-  ul#company-top-event {
-    li {
+  #company-top-event {
+    margin-top: 10px;
+    td {
+      border: 1px solid #e5e5e5;
+      border-top: none;
       .font-size(11);
       text-transform: uppercase;
       line-height: 1.4;
       max-width: none;
+      padding: 10px;
+      margin: 0;
+      font-weight: bold;
+      vertical-align: top;
+      &:first-of-type {
+        border-top: 1px solid #e5e5e5;
+      }
       span {
         display: block;
         .font-size(14);
+        font-weight: normal;
         text-transform: none;
         font-style: normal;
         color: @grayDark;
         float: none;
       }
-      span#company-expensive-event-description {
-        font-weight: bold;
-        .font-size(16);
-        color: @grayDark;
-        font-style: normal;
-        line-height: 1.2;
-      }
     }
   }
   ul#company-perperson {
-    min-height: 70px;
+    min-height: 50px;
     li.pp {
       float: left;
       .font-size(12);

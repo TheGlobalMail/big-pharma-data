@@ -50,7 +50,7 @@
 
   // Render the companies table. Order it by total $
   function populateCompanies(){
-    var companies = _.sortBy(stats.companies, 'events').reverse();
+    var companies = _.sortBy(stats.companies, 'cost').reverse();
     var companiesHtml = _.map(companies, function(company){
       // TODO: add incomplete and percentage classes
       var row = '<tr style="display:none">';
@@ -240,7 +240,7 @@
     var topProfessions = _.sortBy(stats.professions, 'events').reverse().slice(0, 8);
     _.each(topProfessions, function(prof){
       if (prof.profession === 'gp'){
-        prof.label = "G.P.'s";
+        prof.label = "GPs";
       }else{
         prof.label = prof.profession + 's';
       }
@@ -249,9 +249,9 @@
       id: '#professions',
       data: topProfessions,
       label: 'label',
-      metric: 'events',
+      metric: 'perperson',
       keepScale: !'keepScale',
-      yAxisLabels: ['TBC', '$', '$'],
+      yAxisLabels: ['$', 'Number of events', '$'],
       barInfoText: ['<%= xAxis %>s attended education events']
     });
     chart.render();
