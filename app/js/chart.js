@@ -1,6 +1,8 @@
 (function($, d3) {
   'use strict';
 
+  var _this;
+
   var BarChart = window.BarChart = function(options){
 
     this.data = options.data;
@@ -14,6 +16,8 @@
     };
 
     this.options = _.extend(defaultOptions, options);
+
+    _this = this;
   };
 
   BarChart.prototype.render = function(){
@@ -84,13 +88,14 @@
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d.y); })
         .attr("height", function(d) { return height - y(d.y); })
-        .on("mouseover", this.activateBar(this))
-        .on("mouseout", this.deactivateBar(this));
+        .on("mouseover", this.activateBar)
+        .on("mouseout", this.deactivateBar);
 
     // Bar info boxes
     this.barInfo = svg.selectAll(".bar-group")
       .append("g")
       .classed("bar-info", true)
+      .on("mouseout", this.barInfoOnMouseOut)
       .attr("transform", function(d) {
         // Position them next to the associated bar
         var xPos = x(d.x) - (x.rangeBand() / 2) - 7;
@@ -235,32 +240,60 @@
     });
   };
 
-  BarChart.prototype.activateBar = function(_this) {
-    return function() {
-      d3.select(this)
-        // Denote the current bar as active
-        .classed("active", true)
-        // Bring the active bar group to the front
-        .each(function() {
-          var barGroup = this.parentNode;
-          barGroup.parentNode.appendChild(barGroup);
-        });
-      // Add `inactive` classes to the other bars
-      _this.chart.selectAll(".bar")
-        .filter(":not(.active)")
-        .classed("inactive", true);
+  BarChart.prototype.activateBar = function() {
+    d3.select(this)
+      // Denote the current bar as active
+      .classed("active", true)
+      // Bring the active bar group to the front
+      .each(function() {
+        var barGroup = this.parentNode;
+        barGroup.parentNode.appendChild(barGroup);
+      });
+    // Add `inactive` classes to the other bars
+    _this.chart.selectAll(".bar")
+      .filter(":not(.active)")
+      .classed("inactive", true);
+  };
+
+  BarChart.prototype.deactivateBar = function(){
+    // Deactivate the bar if the new target is not a
+    // sibling or sibling's child.
+    if (!$(this.parentNode).has(d3.event.toElement).length) {
+      _this._deactivateBar(this);
     }
   };
 
-  BarChart.prototype.deactivateBar = function(_this){
-    return function() {
-      // Remove `inactive` classes from the other bars
-      d3.select(this).classed("active", false);
-      _this.chart.selectAll(".bar")
-        .filter(":not(.active)")
-        .classed("inactive", false);
+  BarChart.prototype._deactivateBar = function(barElement){
+    // Deactivate the bar
+    d3.select(barElement).classed("active", false);
+    // Remove `inactive` classes from the other bars
+    _this.chart.selectAll(".bar")
+      .filter(":not(.active)")
+      .classed("inactive", false);
+  };
+
+  BarChart.prototype.barInfoOnMouseOut = function() {
+    var clientX = d3.event.clientX;
+    var clientY = d3.event.clientY;
+    var offset = $(this).offset();
+    var bBox = this.getBBox();
+    var top = offset.top - scrollY();
+    var bottom = top + bBox.height;
+    var left = offset.left;
+    var right = left + bBox.width;
+    if (
+      (clientX < left || clientX > right) ||
+      (clientY < top || clientY > bottom)
+    ) {
+      var bar = d3.select(this.parentNode).select('.bar').node();
+      _this._deactivateBar(bar);
     }
   };
+
+  function scrollY() {
+    // x-browser scrollY wrapper
+    return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  }
 
   BarChart.prototype.updateBarInfoText = function() {
     var _this = this;
