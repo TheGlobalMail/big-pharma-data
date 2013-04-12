@@ -302,7 +302,7 @@
       var windowScrollY = scrollY();
       elements.each(function() {
         var element = $(this);
-        if (element.offset().top < (windowScrollY + window.innerHeight - 200)) {
+        if (element.offset().top < (windowScrollY + window.innerHeight - 300)) {
           element.addClass('is-visible');
         }
         if (element.offset().top > (windowScrollY + window.innerHeight)) {
