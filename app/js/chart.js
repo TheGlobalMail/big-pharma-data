@@ -12,7 +12,11 @@
     this.keepScale = options.keepScale;
 
     var defaultOptions = {
-      yAxisLabel: null
+      yAxisLabel: null,
+      yAxisLabels: null,
+      // Contract label flag. If true, will cause y axis
+      // scales to be contracted, eg: 1000 becomes 1k
+      contractYAxisScales: true
     };
 
     this.options = _.extend(defaultOptions, options);
@@ -52,17 +56,19 @@
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
       .selectAll("text")
-            .style("text-anchor", "end")
-            .attr("dx", "-5px")
-            .attr("dy", "15px")
-            .attr("transform", function(d) {
-                return "rotate(-45)"
-                });
+        .style("text-anchor", "end")
+        .attr("dx", "-5px")
+        .attr("dy", "15px")
+        .attr("transform", function(d) {
+          return "rotate(-45)"
+        });
 
     // Insert the Y axis
     this.yAxisSvg = svg.append("g")
       .attr("class", "y axis")
       .call(yAxis);
+
+    this.contractYAxisScales();
 
     this.renderYAxisLabel();
 
@@ -177,11 +183,48 @@
       yScale.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
       this.yAxis.scale(yScale);
       this.chart.select(".y").transition().duration(10).call(this.yAxis);
+      this.contractYAxisScales();
     }
     this.barData.data(convertedData)
       .transition().duration(500).delay(50)
       .attr("y", function(d) { return yScale(d.y); })
       .attr("height", function(d) { return height - yScale(d.y); });
+  };
+
+  BarChart.prototype.contractYAxisScales = function() {
+    if (_this.options.contractYAxisScales) {
+      _this.yAxisSvg.selectAll('.tick')
+        .each(function(d) {
+          d3.select(this).select('text').text(function() {
+            return _this.contractScale(d);
+          });
+        });
+    }
+  };
+
+  BarChart.prototype.contractScale = function(scale) {
+    var scaleTransforms = [
+      {
+        divisibleBy: 1000,
+        append: "k"
+      },
+      {
+        divisibleBy: 1000000,
+        append: "m"
+      },
+      {
+        divisibleBy: 1000000000,
+        append: "b"
+      }
+    ];
+    var transformedScale = null;
+    _.each(scaleTransforms, function(obj) {
+      var scaled = scale / obj.divisibleBy;
+      if (Math.abs(scaled) > 1) {
+        transformedScale = scaled + obj.append;
+      }
+    });
+    return transformedScale || scale
   };
 
   BarChart.prototype.renderYAxisLabel = function() {
@@ -282,8 +325,8 @@
     var left = offset.left;
     var right = left + bBox.width;
     if (
-      (clientX < left || clientX > right) ||
-      (clientY < top || clientY > bottom)
+      clientX < left || clientX > right ||
+      clientY < top || clientY > bottom
     ) {
       var bar = d3.select(this.parentNode).select('.bar').node();
       _this._deactivateBar(bar);
@@ -307,18 +350,22 @@
         }
       });
     this.barInfo.each(function() {
+      // Reset the visibility state
       var barInfo = d3.select(this)
         .classed("post-render", false);
+
       var background = barInfo.select('.background');
       var text = barInfo.select('.text');
       var foreignObject = $(text.node()).find('foreignObject');
       var oldHeight = foreignObject.height();
       var newHeight = foreignObject.find('p').height();
       foreignObject.attr("height", newHeight);
+
       // Scale the background for the new size
       var backgroundHeight = parseInt(background.attr('height'));
       background.attr("height", backgroundHeight + (newHeight - oldHeight));
-      // Remoce the barInfo
+
+      // Hide the barInfo
       barInfo.classed("post-render", true);
     })
   }
