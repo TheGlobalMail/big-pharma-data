@@ -1,7 +1,7 @@
 (function($) {
   'use strict';
 
-  var scrollOffset = 60;
+  var scrollOffset = 70;
 
   $(setupWaypoints);
 
