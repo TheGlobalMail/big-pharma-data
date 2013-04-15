@@ -17,7 +17,7 @@
       // Cause y axis scales to be contracted, eg: 1000 becomes 1k
       contractYAxisScales: true,
       barInfoBoxPadding: 10,
-      boxInnerWidth: 110,
+      boxInnerWidth: 104,
       prependToYAxisScales: null
     };
 
@@ -374,7 +374,7 @@
         }
       });
 
-    // Resize and position each ba
+    // Resize and position each
     this.barInfo.each(function() {
       // Reset the visibility state
       var barInfo = d3.select(this)
