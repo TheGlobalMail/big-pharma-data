@@ -1,5 +1,9 @@
+tgm = window.tgm || {};
 (function($, loadingOverlay, stats, toDollars, niceNumber, d3, BarChart) {
   'use strict';
+
+  var ANIMATE = $('html').hasClass('no-touch');
+  var perWeekEstimate = stats.summary.cost / (stats.summary.days / 365) / 52;
 
   // Load the stats when the page is ready
   $(populateStats);
@@ -8,7 +12,7 @@
   function populateStats(){
     $('#total-cost').text(toDollars(stats.summary.cost));
     $('#per-year-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365)));
-    $('#per-week-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365) / 52));
+    $('#per-week-estimate').text(toDollars(perWeekEstimate));
     $('#attendees-per-year').text(niceNumber(stats.summary.attendees / (stats.summary.days / 365)));
     $('#total-events').text(niceNumber(stats.summary.events));
     $('#total-attendees').text(niceNumber(stats.summary.attendees));
@@ -287,7 +291,7 @@
     $('.datavis').addClass('no-ie');
   }
 
-  function bindButtons(buttons, chart, prependToYAxisScales){
+  function bindButtons(buttons, chart, prependToYAxisScales) {
     var $buttons = $(buttons);
     $buttons.click(function(){
       var $button = $(this);
@@ -306,21 +310,95 @@
     return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   }
 
-  function checkVisibilityFactory() {
-    // Add a `is-visible` class to each element once it has entered the viewport.
+  var onVisibilityBindings = {
+    'spending': function() {
+      if (ANIMATE) {
 
-    // Constructing the closure so we can hoist the elements
-    // to the handler and reduce the DOM load for each scroll event
-    var elements = $('.subsection');
+        var element = $(this).find('#per-week-estimate');
+        var initalStringValue = "$0,000,000";
+        element.text(initalStringValue);
+
+        var finalIntValue = Math.floor(perWeekEstimate);
+
+        var fragments = _.map(
+          _.collect(finalIntValue.toString()),
+          // Wrapper around parseInt to prevent base/radix arg interference
+          function(value) { return parseInt(value); }
+        );
+
+        var animationFunction = function() {
+          var c = tgm.counter;
+          if (!isNaN(c.current) && c.current <= 8 && c.current !== c.fragments[c.fragmentIndex]) {
+            c.current++;
+            // Replace the char in the string
+            c.stringValue = c.stringValue.slice(0, c.stringIndex) + c.current + c.stringValue.slice(c.stringIndex + 1);
+            c.element.text(c.stringValue);
+          } else if (c.stringIndex == 0) {
+            return;
+          } else {
+            if (c.current === c.fragments[c.fragmentIndex]) {
+              c.fragmentIndex--;
+            }
+            c.stringIndex--;
+            c.current = c.stringValue[c.stringIndex];
+          }
+          setTimeout(c.animationFunction, 40);
+        };
+
+        tgm.counter = {
+          element: element,
+          value: 0,
+          finalValue: finalIntValue,
+          fragments: fragments,
+          fragmentIndex: fragments.length - 1,
+          stringValue: initalStringValue,
+          stringIndex: initalStringValue.length - 1,
+          current: 0,
+          animationFunction: animationFunction
+        };
+
+        tgm.counter.animationFunction();
+      }
+    }
+  };
+
+  var offVisibilityBindings = {
+    'spending': function() {
+      // Reset the element's text value
+      var element = $(this).find('#per-week-estimate');
+      var initalStringValue = "$0,000,000";
+      element.text(initalStringValue);
+    }
+  };
+
+  function checkVisibilityFactory() {
+    // Add a `is-visible` class to each element once it has entered the viewport,
+    // also triggers any JS animations.
+
+    var elements = $('.subsection'); // hoist `elements` up to the closure
     return function() {
       var windowScrollY = scrollY();
       elements.each(function() {
         var element = $(this);
-        if (element.offset().top < (windowScrollY + window.innerHeight - 250)) {
+        // If the element has entered the viewport and needs to have it's animations trigger
+        if (!element.hasClass('is-visible') && element.offset().top < (windowScrollY + window.innerHeight - 250)) {
           element.addClass('is-visible');
+          // Execute JS animations
+          _.each(onVisibilityBindings, function(callback, className) {
+            if (element.hasClass(className)) {
+              callback.apply(element);
+            }
+          });
         }
-        if (element.offset().top > (windowScrollY + window.innerHeight)) {
+        // If the element is below the viewport and needs to be reset
+        if (element.hasClass('is-visible') && element.offset().top > (windowScrollY + window.innerHeight)) {
           element.removeClass('is-visible');
+          // Reset any JS animations
+          _.each(offVisibilityBindings, function(callback, className) {
+            if (element.hasClass(className)) {
+              callback.apply(element);
+            }
+          });
         }
       })
     }
