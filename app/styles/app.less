@@ -1563,9 +1563,13 @@ footer {
     background-color: #222;
     padding: 10px 14px 6px;
     .border-top-radius(6px);
+    .transition(all 150ms ease-out);
     &:hover {
       text-decoration: none;
       color: @grayLighter;
+      top: -40px;
+      padding-bottom: 10px;
+      .transition(all 150ms ease-out);
     }
   }
   ul {
