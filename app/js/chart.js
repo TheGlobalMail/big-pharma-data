@@ -95,9 +95,19 @@
         .attr("x", function(d) { return x(d.x); })
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d.y); })
-        .attr("height", function(d) { return height - y(d.y); })
-        .on("mouseover", this.activateBar)
-        .on("mouseout", this.deactivateBar);
+        .attr("height", function(d) { return height - y(d.y); });
+
+    // Bar hit areas
+    this.barHitArea = svg.selectAll(".bar-group")
+      .append("rect")
+      .data(convertedData)
+      .classed("bar-hit-area", true)
+      .attr("x", function(d) { return x(d.x); })
+      .attr("width", x.rangeBand())
+      .attr("y", 0)
+      .attr("height", function(d) { return height; })
+      .on("mouseover", this.activateBar)
+      .on("mouseout", this.deactivateBar);
 
     // Bar info boxes
     this.barInfo = svg.selectAll(".bar-group")
@@ -287,18 +297,20 @@
   };
 
   BarChart.prototype.activateBar = function() {
-    d3.select(this)
-      // Denote the current bar as active
+    // Denote the other bars as inactive
+    _this.chart.selectAll(".bar-group")
+      .filter(":not(.active)")
+      .classed("active", false)
+      .classed("inactive", true);
+    // Denote the current bar as active
+    d3.select(this.parentNode)
       .classed("active", true)
+      .classed("inactive", false)
       // Bring the active bar group to the front
       .each(function() {
         var barGroup = this.parentNode;
         barGroup.parentNode.appendChild(barGroup);
       });
-    // Add `inactive` classes to the other bars
-    _this.chart.selectAll(".bar")
-      .filter(":not(.active)")
-      .classed("inactive", true);
   };
 
   BarChart.prototype.deactivateBar = function(){
@@ -311,9 +323,9 @@
 
   BarChart.prototype._deactivateBar = function(barElement){
     // Deactivate the bar
-    d3.select(barElement).classed("active", false);
+    d3.select(barElement.parentElement).classed("active", false);
     // Remove `inactive` classes from the other bars
-    _this.chart.selectAll(".bar")
+    _this.chart.selectAll(".bar-group")
       .filter(":not(.active)")
       .classed("inactive", false);
   };
