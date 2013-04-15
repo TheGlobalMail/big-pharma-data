@@ -266,7 +266,18 @@ window.stats = {
         "hospitalitycost": 137703.64,
         "hospitality_spendratio": 1020.03
       },
-      "incomplete": 1
+      "incomplete": 1,
+      "code": "abbott",
+      "name": "Abbott Australasia Pty Ltd",
+      "summary": "500 Employees in Australia and New Zealand",
+      "blurb": "Pharmaceutical company started in Chicago, (in Australia for over 70 years) ",
+      "pbs2012": "$297,987,919.82",
+      "revenueAu": "A$221.9m",
+      "revenueGlobal": "US$23b (2011)",
+      "products": "296",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Abbott%20Australasia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=12&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "actelion",
@@ -533,7 +544,18 @@ window.stats = {
         "attendees": 120,
         "hospitalitycost": 301,
         "hospitality_spendratio": 2.51
-      }
+      },
+      "code": "actelion",
+      "name": "Actelion Pharmaceuticals Australia Pty Limited",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": "N/A",
+      "revenueAu": null,
+      "revenueGlobal": "CHF1722.1m (2012)",
+      "products": "3",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Actelion&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "alcon",
@@ -807,7 +829,7 @@ window.stats = {
       "blurb": "In 2011 Alcon was merged into Novartis",
       "pbs2012": "N/A",
       "revenueAu": null,
-      "revenueGlobal": "US$10.2 billion in 2012",
+      "revenueGlobal": "US$10.2b (2012)",
       "products": "218",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=alcon&sortPref=ascending&sortField=0&Page=1&PageMax=9&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -1085,7 +1107,7 @@ window.stats = {
       "blurb": null,
       "pbs2012": "$31,801,723.00",
       "revenueAu": null,
-      "revenueGlobal": "US$5.8 billion",
+      "revenueGlobal": "US$5.8b",
       "products": "105",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Allergan&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -1629,8 +1651,8 @@ window.stats = {
       "summary": "Established in Australia in 1991, with 150 staff in 2013",
       "blurb": null,
       "pbs2012": "N/A",
-      "revenueAu": "A$228.5 million",
-      "revenueGlobal": "US$17.3 billion",
+      "revenueAu": "A$228.5m",
+      "revenueGlobal": "US$17.3b",
       "products": "65",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=amgen&sortPref=ascending&sortField=0&Page=1&PageMax=3&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -2174,8 +2196,8 @@ window.stats = {
       "summary": "Operating in Australia since XXXX, now with 900 employees",
       "blurb": null,
       "pbs2012": "$923,251,160.00",
-      "revenueAu": "US$1.09 billion (**NB figure for Aus and NZ)",
-      "revenueGlobal": "US$28 billion in 2012",
+      "revenueAu": "US$1.09b (Aus and NZ)",
+      "revenueGlobal": "US$28b (2012)",
       "products": "272",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=astrazeneca%20pty%20ltd&sortPref=ascending&sortField=0&Page=1&PageMax=11&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -2447,7 +2469,18 @@ window.stats = {
         "hospitalitycost": 0,
         "hospitality_spendratio": 0
       },
-      "incomplete": 1
+      "incomplete": 1,
+      "code": "baxter",
+      "name": "Baxter Healthcare Pty Ltd",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": "434",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Baxter%20Healthcare%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=18&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "bayer",
@@ -2981,7 +3014,18 @@ window.stats = {
         "attendees": 66,
         "hospitalitycost": 126118.11,
         "hospitality_spendratio": 1910.88
-      }
+      },
+      "code": "biogen",
+      "name": "Biogen Idec Australia Pty Ltd",
+      "summary": "Established in Australia in 2001",
+      "blurb": "In 2003, Biogen Inc. merged with Idec, to form Biogen Idec; the Australian division became Biogen Idec Australia",
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": "US$5049 (2011)",
+      "products": "12",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Biogen%20Idec%20Australia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "bms",
@@ -3249,7 +3293,18 @@ window.stats = {
         "hospitalitycost": 28736.2,
         "hospitality_spendratio": 435.4
       },
-      "incomplete": 1
+      "incomplete": 1,
+      "code": "bms",
+      "name": "Bristol-Myers Squibb Australia Pty Ltd",
+      "summary": "Global BioPharma with a presence in Australia for more than 80 years",
+      "blurb": null,
+      "pbs2012": "$129,254,618.52",
+      "revenueAu": "A$211m (2011)",
+      "revenueGlobal": "US$17.6b (2012)",
+      "products": "97",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=%20Bristol-Myers%20Squibb&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "boehringer",
@@ -4050,7 +4105,18 @@ window.stats = {
         "attendees": 22,
         "hospitalitycost": 34822,
         "hospitality_spendratio": 1582.82
-      }
+      },
+      "code": "csl",
+      "name": "CSL Limited",
+      "summary": "CSL Biotherapies has its worldwide headquarters in Australia",
+      "blurb": "CSL Group includes: bioCSL (incorporating Immunohaematology) and CSL Behring (incorporating CSL Plasma) http://www.csl.com.au/businesses",
+      "pbs2012": "N/A",
+      "revenueAu": null,
+      "revenueGlobal": "US$4813 m (2012)",
+      "products": "294",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=CSL%20Limited&sortPref=ascending&sortField=0&Page=1&PageMax=12&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "eli",
@@ -4324,8 +4390,8 @@ window.stats = {
       "summary": "Operating in Australia since 1960, with 350 employees here in 2013",
       "blurb": null,
       "pbs2012": "$278,703,592.00",
-      "revenueAu": "319.4 million",
-      "revenueGlobal": "US$22.6 billion in 2012",
+      "revenueAu": "319.4m",
+      "revenueGlobal": "US$22.6b (2012)",
       "products": "103",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=eli%20lilly&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -5138,7 +5204,7 @@ window.stats = {
       "blurb": "Acquired by Sanofi in 2011",
       "pbs2012": null,
       "revenueAu": null,
-      "revenueGlobal": "€1.79 billion",
+      "revenueGlobal": "€1.79b",
       "products": "19",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Genzyme%20Australasia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -5409,7 +5475,18 @@ window.stats = {
         "attendees": 96,
         "hospitalitycost": 95638.5,
         "hospitality_spendratio": 996.23
-      }
+      },
+      "code": "gilead",
+      "name": "Gilead Sciences Pty Ltd",
+      "summary": null,
+      "blurb": "Biopharmaceutical company with primary areas of focus that include HIV/AIDS, liver disease and serious cardiovascular and respiratory conditions.",
+      "pbs2012": "N/A",
+      "revenueAu": null,
+      "revenueGlobal": "US$9.7b (2012)",
+      "products": "15",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Gilead&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "gsk",
@@ -6755,7 +6832,18 @@ window.stats = {
         "attendees": 250,
         "hospitalitycost": 0,
         "hospitality_spendratio": 0
-      }
+      },
+      "code": "ipsen",
+      "name": "Ipsen Pty Ltd",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": "N/A",
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": "13",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Ipsen&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "janssen",
@@ -7567,7 +7655,18 @@ window.stats = {
         "attendees": 128,
         "hospitalitycost": 115220.17,
         "hospitality_spendratio": 900.16
-      }
+      },
+      "code": "lundbeck",
+      "name": "Lundbeck Australia Pty Ltd",
+      "summary": "Entered Australasia market in 1997",
+      "blurb": null,
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": "DKK14802m (2011)",
+      "products": "24",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Lundbeck&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "merck",
@@ -8368,7 +8467,18 @@ window.stats = {
         "attendees": 156,
         "hospitalitycost": 136968.7,
         "hospitality_spendratio": 878
-      }
+      },
+      "code": "mundipharma",
+      "name": "Mundipharma Pty Ltd",
+      "summary": "Established in Australia in 1998",
+      "blurb": "Mundipharma International is part of a worldwide group of privately held independent associated companies including Purdue Pharma & Napp Pharmaceuticals.",
+      "pbs2012": "$141,384,984.97",
+      "revenueAu": "A$4.12b (2010)",
+      "revenueGlobal": null,
+      "products": "82",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Mundipharma&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "norgine",
@@ -8905,7 +9015,7 @@ window.stats = {
       },
       "code": "novartis",
       "name": "Novartis Pharmaceuticals Australia Pty Ltd",
-      "summary": null,
+      "summary": "The Novartis group employs over 700 people in Australia.",
       "blurb": null,
       "pbs2012": "$599,991,326.00",
       "revenueAu": null,
@@ -9180,7 +9290,18 @@ window.stats = {
         "attendees": 90,
         "hospitalitycost": 93996.06,
         "hospitality_spendratio": 1044.4
-      }
+      },
+      "code": "novo",
+      "name": "Novo Nordisk Pharmaceuticals Pty Ltd",
+      "summary": "113 employees in Australia, 5 branches",
+      "blurb": "2000: Novo Nordisk is split into three separate companies operating under the umbrella of the Novo Group: Novo Nordisk A/S, Novozymes A/S and Novo A/S. ",
+      "pbs2012": "$132,039,732.29",
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": "79",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Novo&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "nycomed",
@@ -9448,7 +9569,18 @@ window.stats = {
         "hospitalitycost": 64130,
         "hospitality_spendratio": 534.42
       },
-      "incomplete": 2
+      "incomplete": 2,
+      "code": "nycomed",
+      "name": "Takeda Pharmaceuticals Australia Pty Ltd.",
+      "summary": "Nycomed Pharmaceuticals started in Australia in 2001",
+      "blurb": "Bought by Takeda Pharmaceuticals(Japanese pharmaceutical company) in October 2011, undergoing a company transformation",
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": null,
+      "tgaLink": null,
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "organon",
@@ -9986,10 +10118,10 @@ window.stats = {
       "code": "pfizer",
       "name": "Pfizer Australia Pty Ltd",
       "summary": "Operating in Australia since 1956 with 1600 employees here in 2013. ",
-      "blurb": "Pzizer acquired Wyeth in 2009",
+      "blurb": "Pfizer acquired Wyeth in 2009",
       "pbs2012": "$1,210,974,643.00",
-      "revenueAu": "1.13 billion",
-      "revenueGlobal": "US$55 billion 2012",
+      "revenueAu": "1.13b",
+      "revenueGlobal": "US$55b (2012)",
       "products": "935",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=pfizer%20australia&sortPref=ascending&sortField=0&Page=1&PageMax=37&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "not inclusing 28 results for \"Pfizer (Perth) Pty Ltd\"",
@@ -10542,11 +10674,11 @@ window.stats = {
     },
     {
       "company": "sanofi",
-      "cost": 12871324.8,
-      "attendees": 223573,
-      "events": 8287,
-      "alcohol": 47,
-      "completed": 10,
+      "cost": 12518498.8,
+      "attendees": 208680,
+      "events": 8178,
+      "alcohol": 14,
+      "completed": 9,
       "professions": [
         {
           "profession": "pharmacist",
@@ -10557,12 +10689,28 @@ window.stats = {
           "perperson": 56.36
         },
         {
-          "profession": "physician",
-          "cost": 1678352.84,
-          "attendees": 28981,
-          "events": 1093,
-          "alcohol": 3,
-          "perperson": 57.91
+          "profession": "gp",
+          "cost": 5618383.1,
+          "attendees": 42234,
+          "events": 1263,
+          "alcohol": 5,
+          "perperson": 133.03
+        },
+        {
+          "profession": "specialist",
+          "cost": 545089.64,
+          "attendees": 7532,
+          "events": 263,
+          "alcohol": 0,
+          "perperson": 72.37
+        },
+        {
+          "profession": "nurse",
+          "cost": 1869684.11,
+          "attendees": 57162,
+          "events": 1975,
+          "alcohol": 2,
+          "perperson": 32.71
         },
         {
           "profession": "anaesthetist",
@@ -10571,6 +10719,14 @@ window.stats = {
           "events": 47,
           "alcohol": 0,
           "perperson": 48.42
+        },
+        {
+          "profession": "physician",
+          "cost": 1674352.84,
+          "attendees": 28710,
+          "events": 1092,
+          "alcohol": 2,
+          "perperson": 58.32
         },
         {
           "profession": "oncologist",
@@ -10595,30 +10751,6 @@ window.stats = {
           "events": 728,
           "alcohol": 1,
           "perperson": 77.57
-        },
-        {
-          "profession": "gp",
-          "cost": 5932909.1,
-          "attendees": 54790,
-          "events": 1344,
-          "alcohol": 32,
-          "perperson": 108.28
-        },
-        {
-          "profession": "specialist",
-          "cost": 631458.64,
-          "attendees": 9129,
-          "events": 267,
-          "alcohol": 1,
-          "perperson": 69.17
-        },
-        {
-          "profession": "nurse",
-          "cost": 2035328.11,
-          "attendees": 65230,
-          "events": 2050,
-          "alcohol": 27,
-          "perperson": 31.2
         },
         {
           "profession": "urologist",
@@ -10696,11 +10828,19 @@ window.stats = {
         },
         {
           "condition": "paedology",
-          "cost": 420874.62,
-          "attendees": 10549,
-          "events": 318,
-          "alcohol": 4,
-          "perperson": 27.6
+          "cost": 418383.62,
+          "attendees": 10461,
+          "events": 315,
+          "alcohol": 2,
+          "perperson": 27.54
+        },
+        {
+          "condition": "sexual",
+          "cost": 184487.1,
+          "attendees": 2349,
+          "events": 99,
+          "alcohol": 1,
+          "perperson": 85.82
         },
         {
           "condition": "dementia",
@@ -10743,46 +10883,38 @@ window.stats = {
           "perperson": 55.68
         },
         {
+          "condition": "ageing",
+          "cost": 549278.23,
+          "attendees": 2892,
+          "events": 115,
+          "alcohol": 2,
+          "perperson": 81.69
+        },
+        {
           "condition": "diabetes",
           "cost": 2040471.38,
           "attendees": 22500,
           "events": 942,
           "alcohol": 1,
           "perperson": 69.4
-        },
-        {
-          "condition": "ageing",
-          "cost": 550778.23,
-          "attendees": 2914,
-          "events": 116,
-          "alcohol": 2,
-          "perperson": 81.57
-        },
-        {
-          "condition": "sexual",
-          "cost": 186987.1,
-          "attendees": 2419,
-          "events": 100,
-          "alcohol": 1,
-          "perperson": 85.32
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 4499
+          "hospitalitycount": 4448
         },
         {
           "bin": 20,
-          "hospitalitycount": 2323
+          "hospitalitycount": 2309
         },
         {
           "bin": 50,
-          "hospitalitycount": 484
+          "hospitalitycount": 460
         },
         {
           "bin": 200,
-          "hospitalitycount": 821
+          "hospitalitycount": 801
         },
         {
           "bin": 1000,
@@ -10806,14 +10938,13 @@ window.stats = {
         "hospitalitycost": 33842.06,
         "hospitality_spendratio": 470.03
       },
-      "incomplete": 2,
       "code": "sanofi",
       "name": "Sanofi-Aventis Australia Pty Ltd",
       "summary": "Pharmaceuticals division of the Sanofi group",
       "blurb": null,
       "pbs2012": "$525,934,355.00",
       "revenueAu": null,
-      "revenueGlobal": "€28.9 billion in 2012 (global pharmaceuticals division only – not whole Sanofi group)",
+      "revenueGlobal": "€28.9b (2012 - global pharmaceuticals division only – not whole Sanofi group)",
       "products": "514",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=sanofi-aventis%20australia&sortPref=ascending&sortField=0&Page=1&PageMax=21&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "2012 report here: http://en.sanofi.com/Images/31972_20-F_2012.pdf",
@@ -10821,20 +10952,12 @@ window.stats = {
     },
     {
       "company": "sanofipasteur",
-      "cost": 133639,
-      "attendees": 4050,
-      "events": 41,
-      "alcohol": 25,
-      "completed": 1,
+      "cost": 486465,
+      "attendees": 18943,
+      "events": 150,
+      "alcohol": 58,
+      "completed": 4,
       "professions": [
-        {
-          "profession": "nurse",
-          "cost": 106101,
-          "attendees": 2755,
-          "events": 28,
-          "alcohol": 19,
-          "perperson": 38.51
-        },
         {
           "profession": "anaesthetist",
           "cost": null,
@@ -10842,22 +10965,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "specialist",
-          "cost": 11150,
-          "attendees": 930,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 11.99
-        },
-        {
-          "profession": "gp",
-          "cost": 120493,
-          "attendees": 3061,
-          "events": 36,
-          "alcohol": 23,
-          "perperson": 39.36
         },
         {
           "profession": "neurologist",
@@ -10868,12 +10975,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "physician",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "profession": "specialist",
+          "cost": 97519,
+          "attendees": 2527,
+          "events": 6,
+          "alcohol": 1,
+          "perperson": 38.59
+        },
+        {
+          "profession": "gp",
+          "cost": 435019,
+          "attendees": 15617,
+          "events": 117,
+          "alcohol": 50,
+          "perperson": 27.86
         },
         {
           "profession": "registrar",
@@ -10932,6 +11047,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "nurse",
+          "cost": 271745,
+          "attendees": 10823,
+          "events": 103,
+          "alcohol": 44,
+          "perperson": 25.11
+        },
+        {
+          "profession": "physician",
+          "cost": 4000,
+          "attendees": 271,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 14.76
+        },
+        {
           "profession": "endocrinologist",
           "cost": null,
           "attendees": null,
@@ -10958,6 +11089,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "ageing",
+          "cost": 1500,
+          "attendees": 22,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 68.18
+        },
+        {
           "condition": "mental_illness",
           "cost": null,
           "attendees": null,
@@ -10972,14 +11111,6 @@ window.stats = {
           "events": 1,
           "alcohol": 1,
           "perperson": 79.08
-        },
-        {
-          "condition": "sexual",
-          "cost": 2000,
-          "attendees": 40,
-          "events": 1,
-          "alcohol": 1,
-          "perperson": 50
         },
         {
           "condition": "diabetes",
@@ -11006,6 +11137,14 @@ window.stats = {
           "perperson": 8.31
         },
         {
+          "condition": "paedology",
+          "cost": 5791,
+          "attendees": 488,
+          "events": 4,
+          "alcohol": 2,
+          "perperson": 27.13
+        },
+        {
           "condition": "cancer",
           "cost": null,
           "attendees": null,
@@ -11014,12 +11153,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 3300,
-          "attendees": 400,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 8.25
+          "condition": "sexual",
+          "cost": 4500,
+          "attendees": 110,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 42.86
         },
         {
           "condition": "dementia",
@@ -11036,32 +11175,24 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "ageing",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 13
+          "hospitalitycount": 64
         },
         {
           "bin": 20,
-          "hospitalitycount": 4
+          "hospitalitycount": 18
         },
         {
           "bin": 50,
-          "hospitalitycount": 12
+          "hospitalitycount": 36
         },
         {
           "bin": 200,
-          "hospitalitycount": 12
+          "hospitalitycount": 32
         },
         {
           "bin": 1000,
@@ -11077,14 +11208,26 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Healthy Tropical Travel - an overview of the recent advances in Travel Medicine (International Speaker) 2hr educational content",
-        "venue": "Sofitel Hotel; Melbourne",
-        "cost": 18994,
-        "hospitality": "Buffet & basic beverages (softdrinks/beer/wine) + flights; accommodation & ground transfers for 6 interstate delegates.",
-        "attendees": 96,
-        "hospitalitycost": 15138,
-        "hospitality_spendratio": 157.69
-      }
+        "description": "11th National Immunisation Conference. Sanofi Pasteur part sponsored this event which was organised by the Public Health Association of Australia; and was not responsible for inviting the attendees; organising the venue; hospitality or educational content. Gold Sponsor. 18 hours educational content.",
+        "venue": "Surfers Paradise Marriot Hotel",
+        "cost": 32500,
+        "hospitality": "Smoothies; internet access",
+        "attendees": 500,
+        "hospitalitycost": 0,
+        "hospitality_spendratio": 0
+      },
+      "incomplete": 2,
+      "code": "sanofipasteur",
+      "name": "Sanofi Pasteur Pty Ltd",
+      "summary": "Vaccines division of Sanofi",
+      "blurb": null,
+      "pbs2012": "N/A",
+      "revenueAu": null,
+      "revenueGlobal": "€3.9b (2012 - global vaccines division only)",
+      "products": "2",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=sanofi%20pasteur&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "schering",
@@ -11618,7 +11761,18 @@ window.stats = {
         "attendees": 228,
         "hospitalitycost": 250108,
         "hospitality_spendratio": 1096.96
-      }
+      },
+      "code": "servier",
+      "name": "Servier Laboratories (Australia) Pty Ltd",
+      "summary": "Employs over 200 people in Australia",
+      "blurb": "French research-based pharmaceutical entity.",
+      "pbs2012": "$93,462,140.54",
+      "revenueAu": "A$107m (2009)",
+      "revenueGlobal": "€3.9b 2012",
+      "products": "66",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Servier&sortPref=ascending&sortField=0&Page=1&PageMax=3&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "shire",
@@ -11885,7 +12039,18 @@ window.stats = {
         "attendees": 56,
         "hospitalitycost": 7036,
         "hospitality_spendratio": 125.64
-      }
+      },
+      "code": "shire",
+      "name": "Shire Australia Pty Ltd",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": "11",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Shire&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "smith",
@@ -12152,7 +12317,18 @@ window.stats = {
         "attendees": 117,
         "hospitalitycost": 0,
         "hospitality_spendratio": 0
-      }
+      },
+      "code": "smith",
+      "name": "Smith & Nephew Pty Ltd",
+      "summary": "Smith & Nephew Pty Ltd is the healthcare division of Smith & Nephew in Australia. Smith & Nephew Surgical Pty Ltd is the group's surgical products arm.",
+      "blurb": null,
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": "78",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=smith%20&%20nephew%20pty%20ltd&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "solvay",
@@ -12419,7 +12595,18 @@ window.stats = {
         "attendees": 138,
         "hospitalitycost": 95175.75,
         "hospitality_spendratio": 689.68
-      }
+      },
+      "code": "solvay",
+      "name": "\nSolvay Pharmaceuticals Pty Ltd",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": null,
+      "tgaLink": null,
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "stiefel",
@@ -12954,7 +13141,18 @@ window.stats = {
         "hospitalitycost": 6477.59,
         "hospitality_spendratio": 18.2
       },
-      "incomplete": 1
+      "incomplete": 1,
+      "code": "ucb",
+      "name": "UCB Australia Pty Ltd T/A UCB Pharma Division of UCB Australia",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": null,
+      "revenueAu": null,
+      "revenueGlobal": null,
+      "products": "40",
+      "tgaLink": "UCB Australia Pty Ltd T/A UCB Pharma Division of UCB Australia",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "vifor",
@@ -13509,7 +13707,7 @@ window.stats = {
     "alcohol": 25622,
     "perperson": 62.47,
     "max_perperson": 45574.5,
-    "completed": 401,
+    "completed": 403,
     "days": 1888,
     "eventsPerDay": 83,
     "attendeesPerDay": 2321
