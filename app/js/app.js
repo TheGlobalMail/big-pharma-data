@@ -8,6 +8,7 @@
   function populateStats(){
     $('#total-cost').text(toDollars(stats.summary.cost));
     $('#per-year-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365)));
+    $('#per-week-estimate').text(toDollars(stats.summary.cost / (stats.summary.days / 365) / 52));
     $('#attendees-per-year').text(niceNumber(stats.summary.attendees / (stats.summary.days / 365)));
     $('#total-events').text(niceNumber(stats.summary.events));
     $('#total-attendees').text(niceNumber(stats.summary.attendees));
@@ -315,7 +316,7 @@
       var windowScrollY = scrollY();
       elements.each(function() {
         var element = $(this);
-        if (element.offset().top < (windowScrollY + window.innerHeight - 150)) {
+        if (element.offset().top < (windowScrollY + window.innerHeight - 250)) {
           element.addClass('is-visible');
         }
         if (element.offset().top > (windowScrollY + window.innerHeight)) {

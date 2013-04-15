@@ -676,7 +676,7 @@
           }
         }
         .calendar {
-          margin-top: -480px;
+          margin-top: -300px;
           .opacity(0);
           .rotate(-25deg);
           .transition(all .6s .8s @easing);
@@ -1681,13 +1681,14 @@ footer {
     }
   }
   .modal-body {
-    padding: 30px 30px 40px;
+    padding: 0 30px 40px;
   }
   .close {
     .font-size(40);
     margin-top: 0;
     position: absolute;
-    right: 15px;
+    right: 20px;
+    top: 20px;
   }
   .pull-left, .pull-right {
     width: 50%;
@@ -1742,6 +1743,15 @@ footer {
         color:@gray;
         float: right;
       }
+    }
+  }
+  .revenue {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    h5 {
+      border:none;
+      margin-top: 0;
     }
   }
   #company-top-event {
