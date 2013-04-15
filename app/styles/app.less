@@ -1,3 +1,4 @@
+// Preloader styles
 .loading-overlay {
   position: fixed;
   top: 0;
@@ -9,6 +10,7 @@
   z-index: 9999;
 }
 
+// Overwrite TGM Bootstrap nav styles
 .navbar {
   margin-bottom: 0;
   .box-shadow(0 1px 0 rgba(255,255,255,0.08));
@@ -18,16 +20,19 @@
   }
 }
 
-
+// Page starts
 #main {
+  // Global LESS variables
   @blueDark: #084975;
   @easing: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 
+  // Set default page width
   .container {
     max-width: 1100px;
     width: 95%;
     .transition(all 200ms linear);
   }
+
   section {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -35,6 +40,7 @@
     background-size:100% 12px;
     .transition(all 200ms linear);
   }
+
   h1,h2,h3,h4,h5,p,strong,em {
     .transition(all 200ms linear);
   }
@@ -131,7 +137,6 @@
 
 
   // NAVIGATION
-
   .nav-col .nav {
     &.affix {
       position: fixed;
@@ -243,7 +248,6 @@
   }
 
   // MOBILE NAVIGATION
-
   #nav-mob {
     text-align: center;
     .opacity(0);
@@ -305,7 +309,6 @@
       padding: 0 5% 10px;
     }
   }
-
 
   #status {
     padding-bottom: 60px;
@@ -413,7 +416,7 @@
     }
   }
 
-
+  // SUBSECTIONS
   .subsection {
     margin-bottom: 0;
     padding: 40px 0 50px;
@@ -562,49 +565,47 @@
         .font-size(16);
         font-style: normal;
       }
-      // Animations
-      .csstransforms.no-touch & {
-        &.is-visible {
-          .pill {
+    // Animations
+    .csstransforms.no-touch & {
+      &.is-visible {
+        .pill {
+          .opacity(100);
+          margin-top: 0;
+          strong, h4 {
             .opacity(100);
-            margin-top: 0;
-            strong, h4 {
-              .opacity(100);
-            }
-          }
-          em {
-              .opacity(100);
-            }
-          }
-          .pill {
-            position: relative;
-            margin-top: -280px;
-            .opacity(0);
-            .transition(all .5s .2s @easing);
-
-            strong, h4 {
-              .opacity(0);
-              .transition(opacity .5s .6s @easing);
-            }
-          }
-          em {
-            .opacity(0);
-            .transition(opacity .5s 1s @easing);
           }
         }
-        &.is-visible {
-          .pill {
+        em {
             .opacity(100);
-            margin-top: 0;
-            strong, h4 {
-              .opacity(100);
-            }
           }
-          em {
-              .opacity(100);
-            }
         }
-
+      .pill {
+        position: relative;
+        margin-top: -280px;
+        .opacity(0);
+        .transition(all .5s .2s @easing);
+        strong, h4 {
+          .opacity(0);
+          .transition(opacity .5s .6s @easing);
+        }
+      }
+      em {
+        .opacity(0);
+        .transition(opacity .5s 1s @easing);
+      }
+    }
+    &.is-visible {
+      .pill {
+        .opacity(100);
+        margin-top: 0;
+        strong, h4 {
+          .opacity(100);
+        }
+      }
+      em {
+          .opacity(100);
+        }
+      }
     }
 
     &.total-attendees {
@@ -636,30 +637,30 @@
         margin-left: 130px;
         }
       }
-      // Animations
-      .csstransforms.no-touch & {
-        &.is-visible {
-          .doctor-only, .nurse-only {
-            .opacity(100);
-            bottom: 0;
-          }
+    // Animations
+    .csstransforms.no-touch & {
+      &.is-visible {
+        .doctor-only, .nurse-only {
+          .opacity(100);
+          bottom: 0;
         }
-        .doctor-only {
-          bottom: -300px;
-          .opacity(0);
-          .transition(all .5s 200ms ease-out);
+      }
+      .doctor-only {
+        bottom: -300px;
+        .opacity(0);
+        .transition(all .5s 200ms ease-out);
+      }
+      .nurse-only {
+        bottom: -300px;
+        .opacity(0);
+        .transition(all .5s 600ms ease-out);
+      }
+      &.is-visible {
+        .doctor-only, .nurse-only {
+          bottom: 0;
+          .opacity(100);
         }
-        .nurse-only {
-          bottom: -300px;
-          .opacity(0);
-          .transition(all .5s 600ms ease-out);
-        }
-        &.is-visible {
-          .doctor-only, .nurse-only {
-            bottom: 0;
-            .opacity(100);
-          }
-        }
+      }
     }
 
     &.daily {
@@ -877,8 +878,6 @@
     }
     &.world {
       text-align: center;
-      height: 440px - 90px;
-
       ul#countries {
         width:605px;
         margin: 20px auto 0;
@@ -890,7 +889,6 @@
           display: block;
           float: left;
           margin: 140px 30px 10px;
-
           &:before {
             content: '';
             display: block;
@@ -917,7 +915,6 @@
           dl {
             float: left;
             margin: 0;
-
             dt {
               font-style: normal;
               font-weight: normal;
@@ -1354,58 +1351,10 @@
           height: 292px;
         }
       }
-      // Animations
-        .csstransforms.no-touch & {
-          &.is-visible {
-            &.doctors .doctor {
-              .opacity(100);
-              right:2%;
-              .rotate(5deg);
-              -ms-transform: rotate(0); //Cause IE sucks
-              h4 {
-                .opacity(20);
-              }
-            }
-            &.drugs .drug {
-              .opacity(100);
-              left:2%;
-              .rotate(0deg);
-              -ms-transform: rotate(0); //Cause IE sucks
-            }
-            &.not-much .thermometer {
-              .opacity(100);
-              right:0;
-              .rotate(0deg);
-              -ms-transform: rotate(0); //Cause IE sucks
-            }
-          }
-          &.doctors .doctor {
-            .opacity(0);
-            right: -280px;
-            .translate3d(0,0,0);
-            .rotate(-25deg);
-            .transition(all .8s 200ms @easing);
-            h4 {
-                .opacity(0);
-                .transition(opacity .8s 1s ease-out);
-              }
-          }
-          &.drugs .drug {
-            .opacity(0);
-            left: -280px;
-            .rotate(-25deg);
-            -ms-transform: rotate(0); //Cause IE sucks
-            .transition(all .9s 300ms @easing);
-          }
-          &.not-much .thermometer {
-            .opacity(0);
-            right: -380px;
-            .rotate(55deg);
-            .transition(all 1s 400ms @easing);
-          }
-        }
+    // Animations
+      .csstransforms.no-touch & {
         &.is-visible {
-          .doctor {
+          &.doctors .doctor {
             .opacity(100);
             right:2%;
             .rotate(5deg);
@@ -1424,8 +1373,56 @@
             .opacity(100);
             right:0;
             .rotate(0deg);
+            -ms-transform: rotate(0); //Cause IE sucks
           }
         }
+        &.doctors .doctor {
+          .opacity(0);
+          right: -280px;
+          .translate3d(0,0,0);
+          .rotate(-25deg);
+          .transition(all .8s 200ms @easing);
+          h4 {
+              .opacity(0);
+              .transition(opacity .8s 1s ease-out);
+            }
+        }
+        &.drugs .drug {
+          .opacity(0);
+          left: -280px;
+          .rotate(-25deg);
+          -ms-transform: rotate(0); //Cause IE sucks
+          .transition(all .9s 300ms @easing);
+        }
+        &.not-much .thermometer {
+          .opacity(0);
+          right: -380px;
+          .rotate(55deg);
+          .transition(all 1s 400ms @easing);
+        }
+      }
+      &.is-visible {
+        .doctor {
+          .opacity(100);
+          right:2%;
+          .rotate(5deg);
+          -ms-transform: rotate(0); //Cause IE sucks
+          h4 {
+            .opacity(20);
+          }
+        }
+        &.drugs .drug {
+          .opacity(100);
+          left:2%;
+          .rotate(0deg);
+          -ms-transform: rotate(0); //Cause IE sucks
+        }
+        &.not-much .thermometer {
+          .opacity(100);
+          right:0;
+          .rotate(0deg);
+        }
+      }
     }
   }
 
@@ -1445,31 +1442,30 @@
           &:hover {
             background-color: #f5f5f5;
           }
-          a {
-            &:hover {
-              text-decoration: none;
-            }
-            h5 {
-              .font-size(20);
-              font-family: @serifFontFamily;
-              color: @grayDark;
-              margin-bottom: 0;
-            }
-            p {
-              .font-size(15);
-              text-align: left;
-              color: @gray;
-              &.by-line {
-                .font-size(13);
-                font-style: italic;
-                font-weight: normal;
-                margin: 5px 0 0;
-              }
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+          h5 {
+            .font-size(20);
+            font-family: @serifFontFamily;
+            color: @grayDark;
+            margin-bottom: 0;
+          }
+          p {
+            .font-size(15);
+            text-align: left;
+            color: @gray;
+            &.by-line {
+              .font-size(13);
+              font-style: italic;
+              font-weight: normal;
+              margin: 5px 0 0;
             }
           }
-
         }
       }
+    }
   }
 
   #data {
@@ -1701,6 +1697,7 @@ footer {
   }
 }
 
+// MODAL STYLES
 .modal-scrollable {
   margin-top: 10%;
 }
@@ -1973,6 +1970,7 @@ footer {
   }
 }
 
+// Fade animation for title
 .animated {
   -webkit-animation-fill-mode:both;
   -moz-animation-fill-mode:both;
