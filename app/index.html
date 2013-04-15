@@ -64,20 +64,10 @@
 
   <div id="main" role="main">
 
-    <section id="title" class="container">
+    <section id="title">
       <div class="row-fluid">
         <h1>The Great Pill Pu$h</h1>
         <h2>Tracking the marketing of drugs to doctors</h2>
-        <div id="nav-mob">
-          <ul class="nav" role="menu" data-spy="affix" data-offset-top="125">
-            <li data-link="introduction"><a href="#introduction"><span class="lge">Intro</span><span class="sml">Top</span></a></li>
-            <li data-link="status"><a href="#status"><span class="lge">Big spenders</span><span class="sml">Companies</span></a></li>
-            <li data-link="stats"><a href="#stats"><span class="lge">The Big Picture</span><span class="sml">Stats</span></a></li>
-            <li data-link="dont-know"><a href="#dont-know"><span class="lge">Unknowns</span><span class="sml">Unknowns</span></a></li>
-            <li data-link="stories"><a href="#stories"><span class="lge">Related stories</span><span class="sml">Stories</span></a></li>
-            <li data-link="data"><a href="#data"><span class="lge">data</span><span class="sml">Data</span></a></li>
-          </ul>
-        </div>
       </div>
 
     </section>
@@ -85,9 +75,9 @@
     <div class="container" id="section-container">
       <div class="row-fluid">
         <div class="span3 nav-col">
-          <div class="nav" role="menu" data-spy="affix" data-offset-top="250">
+          <div class="nav" role="menu" data-spy="affix" data-offset-top="600">
             <ul class="nav-desktop">
-              <li data-link="introduction"><a href="#introduction">Introduction</a></li>
+              <li data-link="introduction"><a href="#main">Introduction</a></li>
               <li data-link="status"><a href="#status">Biggest spenders</a></li>
               <li data-link="stats"><a href="#stats">The Big Picture</a></li>
               <li data-link="dont-know"><a href="#dont-know">What's unknown</a></li>
@@ -124,6 +114,16 @@
           </div>
         </div>
         <section id="introduction" class="offset3">
+          <div id="nav-mob">
+            <ul class="nav" role="menu" data-spy="affix" data-offset-top="390">
+              <li data-link="introduction"><a href="#main"><span class="lge">Intro</span><span class="sml">Top</span></a></li>
+              <li data-link="status"><a href="#status"><span class="lge">Big spenders</span><span class="sml">Companies</span></a></li>
+              <li data-link="stats"><a href="#stats"><span class="lge">The Big Picture</span><span class="sml">Stats</span></a></li>
+              <li data-link="dont-know"><a href="#dont-know"><span class="lge">Unknowns</span><span class="sml">Unknowns</span></a></li>
+              <li data-link="stories"><a href="#stories"><span class="lge">Related stories</span><span class="sml">Stories</span></a></li>
+              <li data-link="data"><a href="#data"><span class="lge">data</span><span class="sml">Data</span></a></li>
+            </ul>
+          </div>
           <!-- <h3>Introduction</h3> -->
           <p><strong>Pharmaceutical companies are banned from advertising prescription drugs directly to Australian consumers. But they can promote their products to doctors and other health professionals, including through sponsored <em>“education events”</em>.</strong> </p>
           <p>The money pharmaceutical companies pay to doctors in the form of consultancies, speeches, travel, grants and gifts is mostly secret. Since 2007, however, many drug companies &mdash; the members of self-regulatory body <em>Medicines Australia</em> &mdash; have been required provide at least some information about the medical education events they hold, including the cost of food, wine and hospitality.</p>
@@ -147,7 +147,7 @@
             </tbody>
           </table>
           <a data-full-list="false" id="full-list" data-alt-text="Collapse the list" href="#full-list" class="btn">View all companies</a>
-          <p>Click on each company to find out more, including details of its most expensive event during the reporting period July 2007 to Sept. 2012. To understand why not all companies show the same number of reports, <a href="#about" data-toggle="modal" data-bypass="">click here.</a> </p>
+          <p>Click on each <em>Medicines Australia</em> member company to find out more, including details of its most expensive event during the reporting period July 2007 to September 2012. To understand why not all companies show the same number of reports, <a href="#about" data-toggle="modal" data-bypass="">click here.</a> </p>
         </section>
 
         <section id="stats" class="offset3">
@@ -155,17 +155,17 @@
             <span>The Big Picture</span>
           </h3>
 
-          <div class="subsection spending flipInX animated">
-              <strong>Every week Pharma spends
+          <div class="subsection spending">
+              <strong>Pharmaceutical companies spent an average of
               <h4 class="xlarge" id="per-week-estimate"></h4>
-              <em>on education events.</strong> <br/>
+              <em>on education events per week in Australia.</strong> <br/>
                 Between July 2007 and Sept 2012 they spent <span id="total-cost"></span>.
                 <br/>That's <span id="per-year-estimate"></span> a year.</em>
           </div>
 
           <div class="subsection total">
             <div class="pill">
-              <strong>How many events is that?</strong>
+              <strong>How many events is that in total?</strong>
               <h4 class="large" id="total-events"></h4>
 
               <span></span>
@@ -183,9 +183,10 @@
             <div class="nurse-only"></div>
             <div class="doctor-only"></div>
             <div class="text">
-              <strong>Total number of medical professionals who attended an event between July 2007 and Sept 2012:</strong>
+
               <h4 class="large" id="total-attendees"></h4>
-              <em>That’s about <span id="attendees-per-year"></span>attendances every year</em>
+              <strong>Medical professionals attended an event between July 2007 and Sept 2012.</strong>
+              <em>That’s <span id="attendees-per-year"></span> attendances every year</em>
             </div>
 
           </div>
@@ -276,14 +277,9 @@
 
             <div id="perperson-chart" class="chart datavis">
               <strong>But for the majority of events, companies supplied hospitality equivalent to a coffee and a muffin.</strong>
-              <p class="subhead">Hospitality shows the cost of food and beverages.</p>
-              <!-- <div class="btn-group">
-                <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
-                <button data-metric="count" class="btn">Total Cost</button>
-              </div> -->
-              <h4 class="graph-title">Total number of attendees per price range</h4>
+              <h4 class="graph-title">Total number of attendees per price range:</h4>
             </div>
-            <p class="note">Figures represent total spend July 2007 - Sept 2012.</p>
+            <p class="note">Figures represent total spend on hospitality July 2007 - Sept 2012.</p>
           </div>
 
         </section>
@@ -344,7 +340,6 @@
                 </a>
               </li>
             </ul>
-
         </section>
 
 
@@ -353,8 +348,8 @@
             <h3 class="line">
               <span>Use the data</span>
             </h3>
-            <p>Please download our data below and conduct your own investigation into drugs you and your loved ones are prescribed.
-            <p>If you have any feedback on how we can improve this resource, if you find any errors in the data, or have suggestions for our further investigations, <br/>please email clare.blumer AT theglobalmail.org</p>
+            <p>If you are interested in analysing the data yourself download the spreadsheets below. Please note that the overall spreadsheet contains over 150,000 events.</p>
+            <p>To provide feedback on how we can improve this resource, or have suggestions for further investigations, please email clare.blumer AT theglobalmail.org</p>
             <div class="data-container">
               <ul>
                 <li class="csv"><a href="/downloads/complete_data_all.zip">All the data <span>CSV (13MB Zip)</span></a></li>
@@ -461,18 +456,22 @@
       <li class="pp">
         Under $10 pp
         <strong data-perperson="under-10-person"></strong>
+        <span>Events</span>
       </li>
       <li class="pp twenty">
         Under $20 pp
         <strong data-perperson="under-20-person"></strong>
+        <span>Events</span>
       </li>
       <li class="pp fifty">
         Under $50 pp
         <strong data-perperson="under-50-person"></strong>
+        <span>Events</span>
       </li>
       <li class="pp more">
         Over $50 pp
         <strong data-perperson="over-50-person"></strong>
+        <span>Events</span>
       </li>
       </ul>
       <div class="row-fluid">
