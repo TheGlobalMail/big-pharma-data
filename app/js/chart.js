@@ -12,13 +12,13 @@
     this.keepScale = options.keepScale;
 
     var defaultOptions = {
-      yAxisLabel: null,
-      yAxisLabels: null,
+      "yAxisLabel": null,
+      "yAxisLabels": null,
       // Cause y axis scales to be contracted, eg: 1000 becomes 1k
-      contractYAxisScales: true,
-      barInfoBoxPadding: 10,
-      boxInnerWidth: 104,
-      prependToYAxisScales: null
+      "contractYAxisScales": true,
+      "barInfoBoxPadding": 10,
+      "boxInnerWidth": 104,
+      "prependToYAxisScales": null
     };
 
     this.options = _.extend(defaultOptions, options);
