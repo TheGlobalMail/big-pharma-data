@@ -333,6 +333,13 @@
     });
   }
 
+  function bindBackToTop() {
+    $('#title a').click(function(event) {
+      event.preventDefault();
+      $.scrollTo($('#section-container'), 500);
+    });
+  }
+
   $.fn.modal.defaults.modalOverflow = true;
 
 }($, window.loadingOverlay, window.stats, window.toDollars, window.niceNumber, window.d3, window.BarChart));
