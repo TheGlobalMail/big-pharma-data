@@ -299,7 +299,6 @@
   BarChart.prototype.activateBar = function() {
     // Denote the other bars as inactive
     _this.chart.selectAll(".bar-group")
-      .filter(":not(.active)")
       .classed("active", false)
       .classed("inactive", true);
     // Denote the current bar as active
@@ -398,7 +397,10 @@
       var background = barInfo.select('.background');
       var title = barInfo.select('.title');
       // Left offset difference between the first two rows
-      var boxInnerWidth = $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9;
+      var boxInnerWidth = _.max([
+        title.node().getBBox().width,
+        $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9
+      ]);
       var text = barInfo.select('.text');
       var foreignObject = $(text.node()).find('foreignObject');
       var oldHeight = foreignObject.height();
