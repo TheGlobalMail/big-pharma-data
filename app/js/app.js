@@ -233,7 +233,7 @@
       metric: 'hospitalitycount',
       keepScale: !!'keepScale',
       yAxisLabel: 'Number of attendees',
-      barInfoText: ['Medical professionals attended events costing <%= xAxis %> pp']
+      barInfoText: ['attendees received hospitality costing <%= xAxis %> pp']
     });
     chart.render();
     bindButtons('#perperson-chart button', chart);
@@ -255,8 +255,8 @@
       label: 'label',
       metric: 'perperson',
       keepScale: !'keepScale',
-      yAxisLabels: [' ', 'Number of events', ' '],
-      barInfoText: ['<%= xAxis %>s attended education events'],
+      yAxisLabels: ['Avg. spend per person', 'Number of events', 'Total spent'],
+      barInfoText: ['<%= xAxis %> attended education events'],
       prependToYAxisScales: prependToYAxisScales[0]
     });
     chart.render();

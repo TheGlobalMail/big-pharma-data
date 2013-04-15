@@ -17,7 +17,7 @@
       // Cause y axis scales to be contracted, eg: 1000 becomes 1k
       contractYAxisScales: true,
       barInfoBoxPadding: 10,
-      boxInnerWidth: 93,
+      boxInnerWidth: 110,
       prependToYAxisScales: null
     };
 
@@ -31,7 +31,7 @@
     var $container = $(this.id);
     var margin = {top: 10, right: 20, bottom: 80, left: 65},
         width = $container.width() - margin.left - margin.right;
-    var height = this.height = 260 - margin.top - margin.bottom;
+    var height = this.height = 390 - margin.top - margin.bottom;
     var x = d3.scale.ordinal()
       .rangeRoundBands([0, width], 0.4);
     var y = this.yScale = d3.scale.linear()
