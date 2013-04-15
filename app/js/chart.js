@@ -105,17 +105,9 @@
       .classed("bar-info", true)
       .on("mouseout", this.barInfoOnMouseOut)
       .attr("transform", function(d) {
-        // Position them next to the associated bar
+        // Position them with the related bar
         var xPos = x(d.x) - (x.rangeBand() / 2) - 7;
-        var yPos = y(d.y);
-        // If there is enough space, move the info box down
-        if ((height - yPos) >= 40) {
-          yPos += 40;
-        }
-        // If not enough space, move the info box up
-        if ((height - yPos) <= 40) {
-          yPos -= 40;
-        }
+        var yPos = (height / 2) - 25;
         return "translate(" + xPos + "," + yPos + ")";
       });
     // Background
@@ -166,12 +158,11 @@
         // Top margin
         "y": -title.height() + (padding - 2)
       });
-      barInfo.classed("post-render", true);
     });
 
     // TODO: super hacky, the update/render cycles should be rolled into
     // one, rather than faking an update to get around legacy specifications
-    this.updateBarInfoText()
+    this.updateBarInfoText();
   };
 
   BarChart.prototype.convertData = function(){
