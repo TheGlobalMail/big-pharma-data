@@ -53,6 +53,8 @@ tgm = window.tgm || {};
     $(document).scroll(checkVisibility);
 
     bindBackToTop();
+
+    bindScrollToIntro();
   }
 
   // Render the companies table. Order it by total $
@@ -411,7 +413,7 @@ tgm = window.tgm || {};
     });
   }
 
-  function bindBackToTop() {
+  function bindScrollToIntro() {
     $('#title a').click(function(event) {
       event.preventDefault();
       $.scrollTo($('#section-container'), 500);
