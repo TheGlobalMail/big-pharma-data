@@ -249,43 +249,52 @@
     .opacity(0);
     height: 0;
     text-shadow:none;
-      .nav {
-        display: block;
-        height: 33px;
-        width: 100%;
-        background-color: white;
-        margin: 0 auto;
-        text-align: center;
-        z-index: 999;
-        margin-top: 10px;
-        padding-top: 15px;
-        li {
-          margin: 0;
-          list-style: none;
-          display: inline-block;
-          .font-size(12);
-          font-weight: bold;
-          text-transform: uppercase;
-          padding: 0px 6px 0 5px;
-          border-right: 1px solid #e5e5e5;
-          .sml {
-            display: none;
-          }
-          a:hover {
-            background-color: transparent;
-          }
-          &:last-child {
-            border: none;
-          }
-          &.active a {
-            color: #222;
-            &:hover, &.active {
-              cursor: default;
-              background-color: none;
-            }
+    margin-bottom: 20px;
+    .nav {
+      display: block;
+      height: 33px;
+      width: 100%;
+      background-color: white;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 999;
+      margin-top: 10px;
+      padding-top: 15px;
+      li {
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+        .font-size(12);
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0px 6px 0 5px;
+        border-right: 1px solid #e5e5e5;
+        .sml {
+          display: none;
+        }
+        a:hover {
+          background-color: transparent;
+        }
+        &:last-child {
+          border: none;
+        }
+        &.active a {
+          color: #222;
+          &:hover, &.active {
+            cursor: default;
+            background-color: none;
           }
         }
       }
+    }
+    &:after {
+      content:'';
+      display: block;
+      width: 100%;
+      height: 12px;
+      background: url(../images/fade.png) no-repeat center top transparent;
+      background-size:100% 12px;
+    }
   }
 
   // SECTIONS
@@ -1970,16 +1979,21 @@ footer {
   -ms-animation-fill-mode:both;
   -o-animation-fill-mode:both;
   animation-fill-mode:both;
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  -ms-animation-duration:1s;
-  -o-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  -ms-animation-duration:1.5s;
+  -o-animation-duration:1.5s;
+  animation-duration:1.5s;
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -ms-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
 }
 .animated.hinge{
   -webkit-animation-duration:2s;
@@ -1989,8 +2003,12 @@ footer {
   animation-duration:2s;
 }
 @-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
