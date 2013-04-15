@@ -1586,15 +1586,21 @@ footer {
   .bar {
     .transition(fill 0.75s);
     fill: @blue;
-    &.inactive {
-      fill: fadeout(@blue, 80%);
+  }
+
+  .active .bar-info.post-render {
+    display: block;
+    .background {
+      .opacity(70);
     }
-    &.active + .bar-info {
-      display: block;
-      .background {
-        .opacity(70);
-      }
-    }
+  }
+
+  .inactive .bar {
+    fill: fadeout(@blue, 80%);
+  }
+
+  .bar-hit-area {
+    fill: transparent;
   }
 
   .bar-info {
