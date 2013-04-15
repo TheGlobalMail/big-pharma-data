@@ -11,7 +11,7 @@
 
 .navbar {
   margin-bottom: 0;
-  .box-shadow(0 1px 0 rgba(255,255,255,0.15));
+  .box-shadow(0 1px 0 rgba(255,255,255,0.08));
   &.special-feature .brand {
     background-size: auto;
     .transition(all 200ms linear);
@@ -110,13 +110,15 @@
     margin: 0 0 20px;
     padding-bottom: 60px;
     color:white;
-    .box-shadow(inset 0 0 100px black);
-    text-shadow: 0 0px 30px black;
+    .box-shadow(inset 0 -10px 45px -10px rgba(0,0,0,.8));
+    text-shadow: 0 -2px 0 rgba(0,0,0,.2);
     h1 {
-      .font-size(100);
+      .font-size(120);
+      font-family: @sansFontFamily;
+      font-weight: 800;
       letter-spacing: -0.03em;
-      margin-top: 220px;
-      margin-bottom: -8px;
+      margin-top: 200px;
+      margin-bottom: 0;
       font-style: initial;
     }
     h2 {
@@ -1959,4 +1961,55 @@ footer {
         }
       }
   }
+}
+
+.animated {
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -ms-animation-duration:1s;
+  -o-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.animated.hinge{
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  -ms-animation-duration:2s;
+  -o-animation-duration:2s;
+  animation-duration:2s;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
