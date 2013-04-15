@@ -270,8 +270,16 @@
       }
     }
   }
-  footer ul li {
-    float: none;
+  footer {
+    .top a {
+      text-align: center;
+      width: 102px;
+      right: 50%;
+      margin-right: -65px;
+    }
+    ul li {
+      float: none;
+    }
   }
 }
 @media only screen and (max-width: 680px) {
@@ -327,6 +335,10 @@
     }
     #introduction {
       padding-bottom: 30px;
+      p {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+      }
     }
     #status {
       table tr {
