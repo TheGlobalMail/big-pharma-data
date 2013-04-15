@@ -205,7 +205,7 @@
   }
 
   function extractBins(bins){
-    var rest = _.inject(stats.perheadBins.slice(3), function(sum, datum){
+    var rest = _.inject(bins.slice(3), function(sum, datum){
       return sum + datum.hospitalitycount;
     }, 0);
     return [
