@@ -116,7 +116,7 @@
       .on("mouseout", this.barInfoOnMouseOut)
       .attr("transform", function(d) {
         // Position them with the related bar
-        var xPos = x(d.x) - (x.rangeBand() / 2) - 7;
+        var xPos = x(d.x) - (x.rangeBand() / 2) - 6;
         var yPos = (height / 2) - 25;
         return "translate(" + xPos + "," + yPos + ")";
       });
@@ -353,6 +353,21 @@
     return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   }
 
+  BarChart.prototype.findParentWithClass = function(element, className, maxDepth) {
+    // Walk up the document looking for an element with the class matching `classname`.
+    // `maxDepth` denotes the point at which the traversal will cut short, defaults to 150.
+    var depthRemaining = maxDepth || 150;
+    var elementName = element.nodeName.toLowerCase();
+    while (elementName && elementName != 'html' && depthRemaining > 0) {
+      if (element.classList.contains(className)) {
+        return element;
+      }
+      element = element.parentElement;
+      elementName = element.nodeName.toLowerCase();
+      depthRemaining--;
+    }
+  };
+
   BarChart.prototype.updateBarInfoText = function() {
     // Update each title
     this.barInfo
@@ -382,7 +397,8 @@
 
       var background = barInfo.select('.background');
       var title = barInfo.select('.title');
-      var boxInnerWidth = _.max([title.node().getBBox().width, _this.options.boxInnerWidth]);
+      // Left offset difference between the first two rows
+      var boxInnerWidth = $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9;
       var text = barInfo.select('.text');
       var foreignObject = $(text.node()).find('foreignObject');
       var oldHeight = foreignObject.height();
