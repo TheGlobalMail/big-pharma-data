@@ -83,7 +83,7 @@
       .attr("x2", width)
       .attr("y1", y)
       .attr("y2", y)
-      .style("stroke", "#f5f5f5");
+      .style("stroke", "none");
 
     // Bars
     this.barData = svg.selectAll(".bar")
