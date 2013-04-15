@@ -70,12 +70,12 @@
         <h2>Tracking the marketing of drugs to doctors</h2>
         <div id="nav-mob">
           <ul class="nav" role="menu" data-spy="affix" data-offset-top="125">
-            <li data-link="introduction"><a href="#introduction"><span class="lge">Introduction</span><span class="sml">Intro</span></a></li>
-            <li data-link="status"><a href="#status"><span class="lge">Biggest spenders</span><span class="sml">Companies</span></a></li>
+            <li data-link="introduction"><a href="#introduction"><span class="lge">Intro</span><span class="sml">Top</span></a></li>
+            <li data-link="status"><a href="#status"><span class="lge">Big spenders</span><span class="sml">Companies</span></a></li>
             <li data-link="stats"><a href="#stats"><span class="lge">The Big Picture</span><span class="sml">Stats</span></a></li>
-
-            <li data-link="dont-know"><a href="#dont-know"><span class="lge">What's unknown</span><span class="sml">Unknowns</span></a></li>
-            <li data-link="data"><a href="#data"><span class="lge">The data</span><span class="sml">Data</span></a></li>
+            <li data-link="dont-know"><a href="#dont-know"><span class="lge">Unknowns</span><span class="sml">Unknowns</span></a></li>
+            <li data-link="stories"><a href="#stories"><span class="lge">Related stories</span><span class="sml">Stories</span></a></li>
+            <li data-link="data"><a href="#data"><span class="lge">data</span><span class="sml">Data</span></a></li>
           </ul>
         </div>
       </div>
@@ -90,8 +90,8 @@
               <li data-link="introduction"><a href="#introduction">Introduction</a></li>
               <li data-link="status"><a href="#status">Biggest spenders</a></li>
               <li data-link="stats"><a href="#stats">The Big Picture</a></li>
-
               <li data-link="dont-know"><a href="#dont-know">What's unknown</a></li>
+              <li data-link="stories"><a href="#stories">Related stories</a></li>
               <li data-link="data"><a href="#data">The data</a></li>
             </ul>
             <ul id="related">
@@ -125,9 +125,9 @@
         </div>
         <section id="introduction" class="offset3">
           <!-- <h3>Introduction</h3> -->
-          <p>Pharmaceutical companies are banned from advertising prescription drugs directly to Australian consumers. But they can promote their products to doctors and other health professionals, including through sponsored “education events”. </p>
-          <p>The money pharmaceutical companies pay to doctors in the form of consultancies, speeches, travel, grants and gifts is mostly secret. Since 2007, however, many drug companies have been required to report some information about the medical education events they hold, including the cost for food, wine and hospitality.</p>
-          <p><em>The Global Mail</em> has created a database of these reports. Here are some key facts and figures we have found in this data.</p>
+          <p><strong>Pharmaceutical companies are banned from advertising prescription drugs directly to Australian consumers. But they can promote their products to doctors and other health professionals, including through sponsored <em>“education events”</em>.</strong> </p>
+          <p>The money pharmaceutical companies pay to doctors in the form of consultancies, speeches, travel, grants and gifts is mostly secret. Since 2007, however, many drug companies &mdash; the members of self-regulatory body <em>Medicines Australia</em> &mdash; have been required provide at least some information about the medical education events they hold, including the cost of food, wine and hospitality.</p>
+          <p><em>The Global Mail</em> has created a database of these reports. Here are some key facts and figures we have been able to extract from the data.</p>
         </section>
 
         <section id="status" class="offset3">
@@ -146,7 +146,7 @@
             <tbody>
             </tbody>
           </table>
-          <a data-full-list="false" id="full-list" data-alt-text="Collapse the list" href="#full-list" class="btn">View the full list</a>
+          <a data-full-list="false" id="full-list" data-alt-text="Collapse the list" href="#full-list" class="btn">View all companies</a>
           <p>Click on each company to find out more, including details of its most expensive event during the reporting period July 2007 to Sept. 2012. To understand why not all companies show the same number of reports, <a href="#about" data-toggle="modal" data-bypass="">click here.</a> </p>
         </section>
 
@@ -156,10 +156,11 @@
           </h3>
 
           <div class="subsection spending flipInX animated">
-              <strong>Pharma has spent</strong>
-              <h4 class="large" id="total-cost"></h4>
-              <em>on education events between July 2007 and Sept 2012. <br/>
-                <strong>That's an average <span id="per-year-estimate"></span> a year.</strong></em>
+              <strong>Every week Pharma spends
+              <h4 class="xlarge" id="per-week-estimate"></h4>
+              <em>on education events.</strong> <br/>
+                Between July 2007 and Sept 2012 they spent <span id="total-cost"></span>.
+                <br/>That's <span id="per-year-estimate"></span> a year.</em>
           </div>
 
           <div class="subsection total">
@@ -171,23 +172,22 @@
             </div>
           </div>
 
-          <div class="subsection total-attendees">
-            <div class="nurse-only"></div>
-            <div class="doctor-only"></div>
-            <div class="text">
-              <strong>Total number of Medical professionals who attended an event between July 2007 and Sept 2012:</strong>
-              <h4 class="large" id="total-attendees"></h4>
-              <em>That’s about <span id="attendees-per-year"></span> every year</em>
-            </div>
-
-          </div>
-
           <div class="subsection daily">
             <div class="calendar">
               <h4 class="xlarge" id="events-per-day"></h4>
               <em>education events happen per day</em>
-              <p>Because of the lack of detail we don’t know exactly which days they were.</p>
             </div>
+          </div>
+
+          <div class="subsection total-attendees">
+            <div class="nurse-only"></div>
+            <div class="doctor-only"></div>
+            <div class="text">
+              <strong>Total number of medical professionals who attended an event between July 2007 and Sept 2012:</strong>
+              <h4 class="large" id="total-attendees"></h4>
+              <em>That’s about <span id="attendees-per-year"></span>attendances every year</em>
+            </div>
+
           </div>
 
           <div class="subsection australia">
@@ -199,8 +199,8 @@
           </div>
 
           <div id="world" class="subsection world datavis">
-            <strong>And if you’re lucky, they might just send you overseas</strong>
-            <p class="subhead">There were more than 40 overseas destinations listed. Here are three countries most visited*.</p>
+            <strong>And the really lucky doctors are given trips overseas</strong>
+            <p class="subhead">There were more than 40 overseas destinations listed. Here are the three most visited countries*.</p>
             <ul id="countries"></ul>
             <p class="note">*Companies sponsored hospitality and/or travel. Figures represent total events for each country July 2007 - Sept 2012.</p>
           </div>
@@ -220,7 +220,7 @@
           <div class="subsection disease">
               <div class="bar-chart">
                 <strong>Chronic education </strong>
-                <p class="subhead">Most of Big Pharma’s education events focus on chronic illness medicine. What are the top 5 illnesses types by spend?</p>
+                <p class="subhead">Most of Big Pharma's education events focus on medicines for chronic illnesses. What are the top 5 illness types by spend?</p>
                 <ul id="conditions">
                 </ul>
                 <p class="note">Figures represent total spend for each illness type July 2007 - Sept 2012.</p>
@@ -275,8 +275,8 @@
             </div>
 
             <div id="perperson-chart" class="chart datavis">
-              <strong>But for the majority of events, companies supply hospitality equivalent to a coffee and a muffin.</strong>
-              <p class="subhead">Hospitality shows the cost of food and beverages. Total cost includes sponsorships, transportation costs, speakers’ fees, venue hire, but isn’t always itemised in company reporting. </p>
+              <strong>But for the majority of events, companies supplied hospitality equivalent to a coffee and a muffin.</strong>
+              <p class="subhead">Hospitality shows the cost of food and beverages.</p>
               <!-- <div class="btn-group">
                 <button data-metric="hospitalitycount" class="btn active">Hospitality only</button>
                 <button data-metric="count" class="btn">Total Cost</button>
@@ -295,7 +295,7 @@
               <span>What's unknown</span>
             </h3>
             <div class="text">
-              <p>Pharma companies <strong>don’t have to name the medical professionals who attend</strong>, <em>sponsored events, so there’s no public record of your own doctor’s participation.</em></p>
+              <p>Pharma companies <strong>don’t have to name the medical professionals who attend</strong> <em>sponsored events, so there’s no public record of your own doctor’s participation.</em></p>
             </div>
             <div class="doctor">
               <h4>?</h4>
@@ -310,7 +310,7 @@
           </div>
 
           <div class="subsection not-much">
-            <div class="text"><p>This data represents only a small portion of their marketing budgets and <strong>doesn’t include all the money they pay for health professionals</strong> to speak at conferences, sit on advisory panels or write academic papers.</p>
+            <div class="text"><p>This data represents only a small portion of the companies' marketing budgets and <strong>doesn’t include all the money they pay for health professionals</strong> to speak at conferences, sit on advisory panels or write academic papers.</p>
             </div>
             <div class="thermometer"></div>
           </div>
@@ -369,7 +369,7 @@
 
             <p>The group represents most of “Big Pharma”: MA says its member companies supply 86 per cent of the medicines available through the government-subsidised Pharmaceutical Benefits Scheme. But not all drug-makers are members of MA and required to report on education events. Our database does not include companies that only make generic pharmaceuticals; they are covered by another self-regulatory body, GMIA [http://www.gmia.com.au/]. </p>
 
-            <p>Some large companies do not belong to either MA or the GMIA. For example, the generic medicine company Sandoz has 680 medical products approved through Australia’s Therapeutic Goods Administration. Those products cost the PBS more than $140 million a year, but Sandoz does not have to report its marketing and education events.
+            <p>Some large companies do not belong to either MA or GMIA. For example, the generic medicine company Sandoz has 680 medical products approved through Australia’s Therapeutic Goods Administration. Those products cost the PBS more than $140 million a year, but Sandoz does not have to report its marketing and education events.
             </p>
           </div>
         </section>
@@ -427,8 +427,7 @@
       <h3><span id="company-name"></span></h3>
     </div>
     <div class="modal-body">
-      <p id="company-summary"></p><p id="company-blurb"></p>
-      <div class="row-fluid">
+      <div class="row-fluid revenue">
         <div class="pull-left quarter">
           <h5>Revenue - Global</h5>
           <h4 class="sml" id="company-revenueGlobal"></h4>
@@ -446,6 +445,7 @@
           <h4 class="sml" id="company-pbs2012"></h4>
         </div>
       </div>
+      <p id="company-summary"></p><p id="company-blurb"></p>
       <div class="row-fluid">
         <div class="pull-left">
           <h5>Total spent on Education Events <br />(Jul 07 - Sep 12)</h5>
@@ -494,20 +494,12 @@
           <td colspan="2"><span id="company-expensive-event-description"></span></td>
         </tr>
         <tr>
-          <td>Venue </td>
-          <td><span id="company-expensive-event-venue"></span></td>
-        </tr>
-        <tr>
-          <td>Type of Hospitality </td>
-          <td><span id="company-expensive-event-hospitality"></span></td>
+          <td>Total cost </td>
+          <td><span id="company-expensive-event-cost"></span></td>
         </tr>
         <tr>
           <td>Cost of Hospitality </td>
           <td><span id="company-expensive-event-hospitalitycost"></span></td>
-        </tr>
-        <tr>
-          <td>Total cost </td>
-          <td><span id="company-expensive-event-cost"></span></td>
         </tr>
         <tr>
           <td>Number of Attendees </td>
@@ -517,6 +509,15 @@
           <td>Cost of Hospitality Per Person  </td>
           <td><span id="company-expensive-event-hospitality_spendratio"></span></span></td>
         </tr>
+        <tr>
+          <td>Venue </td>
+          <td><span id="company-expensive-event-venue"></span></td>
+        </tr>
+        <tr>
+          <td>Type of Hospitality </td>
+          <td><span id="company-expensive-event-hospitality"></span></td>
+        </tr>
+
       </table>
       <!-- <ul id="company-top-event">
         <li><span id="company-expensive-event-description"></span></li>

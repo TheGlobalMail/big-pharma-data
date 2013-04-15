@@ -452,15 +452,15 @@
           color: @grayLight;
           padding: 0 8% 0;
           clear: both;
-
         }
       }
-
-
 
     &.spending {
       overflow: hidden;
       text-align: center;
+      h4.xlarge {
+        .font-size(146);
+      }
     }
 
     &.total {
@@ -637,12 +637,12 @@
       position: relative;
       h4 {
         float: left;
-        margin: 24% 14px -4px 12%;
+        margin: 28% 14px -4px 12%;
       }
       em {
         float: left;
         width: 35%;
-        margin-top: 32%;
+        margin-top: 38%;
         font-weight: bold;
       }
       p {
@@ -676,7 +676,7 @@
           }
         }
         .calendar {
-          margin-top: -480px;
+          margin-top: -300px;
           .opacity(0);
           .rotate(-25deg);
           .transition(all .6s .8s @easing);
@@ -1649,6 +1649,7 @@ footer {
   }
 }
 
+
 // Embedded XHTML docs in the SVG
 #main .svg-foreign-object {
   background: transparent;
@@ -1656,9 +1657,10 @@ footer {
     // Info box text
     p {
       .font-size(11);
-      text-transform: uppercase;
+      line-height:1.1;
       font-weight: 500;
       margin: 0;
+      padding-top: 5px;
       text-align: left;
     }
   }
@@ -1687,13 +1689,14 @@ footer {
     }
   }
   .modal-body {
-    padding: 30px 30px 40px;
+    padding: 0 30px 40px;
   }
   .close {
     .font-size(40);
     margin-top: 0;
     position: absolute;
-    right: 15px;
+    right: 20px;
+    top: 20px;
   }
   .pull-left, .pull-right {
     width: 50%;
@@ -1748,6 +1751,15 @@ footer {
         color:@gray;
         float: right;
       }
+    }
+  }
+  .revenue {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    h5 {
+      border:none;
+      margin-top: 0;
     }
   }
   #company-top-event {
