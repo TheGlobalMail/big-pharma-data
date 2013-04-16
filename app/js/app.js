@@ -413,6 +413,10 @@ tgm = window.tgm || {};
       };
 
       setTimeout(tgm.counter.animationFunction, 750);
+    },
+    // Hide the related stories panel
+    'not-much': function() {
+      $('#related').fadeOut();
     }
   };
 
@@ -437,6 +441,10 @@ tgm = window.tgm || {};
         return '<i class="inactive">' + value + '</i>'
       }).join('');
       element.html(initialHTML);
+    },
+    // Show the related stories panel
+    'not-much': function() {
+      $('#related').fadeIn();
     }
   };
 
