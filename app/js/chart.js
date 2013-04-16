@@ -218,8 +218,7 @@
           d3.select(this).select('text').text(function() {
             var value = _this.contractScale(d);
             if (_this.options.prependToYAxisScales) {
-              value += ''; // coerce to string
-              value = _this.options.prependToYAxisScales + value;
+              value = '' + _this.options.prependToYAxisScales + value;
             }
             return value;
           });
@@ -309,19 +308,17 @@
   };
 
   BarChart.prototype.activateBar = function() {
+    var barGroup = this.parentNode;
     // Denote the other bars as inactive
     _this.chart.selectAll(".bar-group")
       .classed("active", false)
       .classed("inactive", true);
     // Denote the current bar as active
-    d3.select(this.parentNode)
+    d3.select(barGroup)
       .classed("active", true)
-      .classed("inactive", false)
-      // Bring the active bar group to the front
-      .each(function() {
-        var barGroup = this.parentNode;
-        barGroup.parentNode.appendChild(barGroup);
-      });
+      .classed("inactive", false);
+    // Bring the active bar group to the front
+    barGroup.parentElement.appendChild(barGroup);
   };
 
   BarChart.prototype.deactivateBar = function(){
@@ -386,6 +383,9 @@
         var value = Math.floor(_this.convertedData[i].y);
         var formattedValue = d3.format("0,000")(value);
         var $title = $(d3.select(this).select('.title').node());
+        if (_this.options.prependToYAxisScales) {
+          formattedValue = '' + _this.options.prependToYAxisScales + value;
+        }
         $title.text(formattedValue);
       });
 
@@ -394,7 +394,24 @@
       .text(function(d) {
         if (_this.options.barInfoText) {
           var template = _this.options.barInfoText[0];
-          return _.template(template, {xAxis: d.x});
+          var xAxis, yAxis;
+          if (isNaN(d.x)) {
+            xAxis = d.x;
+            if (xAxis[xAxis.length-1] == 's') {
+              xAxis = xAxis.slice(0, xAxis.length-1);
+            }
+          } else {
+            xAxis = Math.floor(d.x);
+          }
+          if (isNaN(d.y)) {
+            yAxis = d.y;
+            if (yAxis[yAxis.length-1] == 's') {
+              yAxis = yAxis.slice(0, yAxis.length-1);
+            }
+          } else {
+            yAxis = Math.floor(d.y);
+          }
+          return _.template(template, {xAxis: xAxis, yAxis: yAxis});
         } else {
           return d.x;
         }
@@ -435,7 +452,7 @@
 
         // Hide the barInfo
         barInfo.classed("post-render", true);
-      }, 0)
+      }, 200)
     })
   };
 

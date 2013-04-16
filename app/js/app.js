@@ -34,17 +34,17 @@ tgm = window.tgm || {};
 
     populateQuickPerPerson();
 
-    if (d3){
+    if (d3) {
       populatePerPerson();
       populateProfessions();
       populateWorld();
-    }else{
+    } else {
       disableD3Elements();
     }
 
     loadingOverlay.dismiss();
 
-    if (window.location.hash){
+    if (window.location.hash) {
       loadCompany(window.location.hash.replace(/#*profile-/, ''));
     }
 
@@ -92,11 +92,11 @@ tgm = window.tgm || {};
     $('#full-list').click(function(e){
       var altText = $(this).data('alt-text');
       e.preventDefault();
-      if ($(this).data('full-list') === 'true'){
+      if ($(this).data('full-list') === 'true') {
         $('#top5').find('tr:gt(5)').fadeOut();
         $(this).data('full-list', 'false');
         $.scrollTo('#status');
-      }else{
+      } else {
         $('#top5').find('tr:gt(5)').fadeIn();
         $(this).data('full-list', 'true');
       }
@@ -285,7 +285,11 @@ tgm = window.tgm || {};
       metric: 'perperson',
       keepScale: !'keepScale',
       yAxisLabels: ['Avg. spend per person', 'Number of events', 'Total spent'],
-      barInfoText: ['<%= xAxis %> attended education events'],
+      barInfoText: [
+        'An average of $<%= yAxis %> was spent per <%= xAxis %>',
+        '<%= xAxis %>s attended <%= yAxis %> education events',
+        'In total $<%= yAxis %> was spent on for <%= xAxis %>'
+      ],
       prependToYAxisScales: prependToYAxisScales[0]
     });
     chart.render();
