@@ -5,7 +5,7 @@ tgm = window.tgm || {};
   var ANIMATE = $('html').hasClass('no-touch');
   var perWeekEstimate = stats.summary.cost / (stats.summary.days / 365) / 52;
 
-  tgm.charts = tgm.charts || [];
+  tgm.charts = tgm.charts || {};
 
   // Load the stats when the page is ready
   $(populateStats);
@@ -256,10 +256,13 @@ tgm = window.tgm || {};
     });
 
     chart.render();
+    if (ANIMATE) {
+      chart.setYAxisToZero();
+    }
 
     bindButtons('#perperson-chart button', chart);
 
-    tgm.charts.push(chart);
+    tgm.charts['cost'] = chart;
   }
 
   function populateProfessions(){
@@ -286,10 +289,13 @@ tgm = window.tgm || {};
       prependToYAxisScales: prependToYAxisScales[0]
     });
     chart.render();
+    if (ANIMATE) {
+      chart.setYAxisToZero();
+    }
 
     bindButtons('#attendees button', chart, prependToYAxisScales);
 
-    tgm.charts.push(chart);
+    tgm.charts['attendees'] = chart;
   }
 
   function populateWorld(){
@@ -337,9 +343,14 @@ tgm = window.tgm || {};
 
   // functions to be called when a subsection with a matching class is visible
   var onVisibilityBindings = {
+    'cost': function() {
+      tgm.charts.cost.resetYAxisFromZero();
+    },
+    'attendees': function() {
+      tgm.charts.attendees.resetYAxisFromZero();
+    },
     'disease': populateConditions,
     'spending': function() {
-
       var parentElement = $(this).find('#per-week-estimate');
       var initialString = "$0,000,000";
       var initialHTML = _.map(initialString, function(value, i) {
@@ -407,6 +418,17 @@ tgm = window.tgm || {};
 
   // functions to be called when a subsection with a matching class is no longer visible
   var offVisibilityBindings = {
+    'cost': function() {
+      tgm.charts.cost.setYAxisToZero();
+    },
+    'attendees': function() {
+      tgm.charts.attendees.setYAxisToZero();
+    },
+    'disease': function() {
+      $('.subsection.disease')
+        .find('li')
+        .css('background-position-x', 'inherit');
+    },
     'spending': function() {
       // Reset the element's text value
       var element = $(this).find('#per-week-estimate');
@@ -415,11 +437,6 @@ tgm = window.tgm || {};
         return '<i class="inactive">' + value + '</i>'
       }).join('');
       element.html(initialHTML);
-    },
-    'disease': function() {
-      $('.subsection.disease')
-        .find('li')
-        .css('background-position-x', 'inherit');
     }
   };
 
