@@ -341,9 +341,9 @@ tgm = window.tgm || {};
     return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   }
 
-  // functions to be called when a subsection with a matching class is visible
+  // functions to be called when a subsection with a matching class or id is visible
   var onVisibilityBindings = {
-    'cost': function() {
+    'perperson-chart': function() {
       tgm.charts.cost.resetYAxisFromZero();
     },
     'attendees': function() {
@@ -416,9 +416,9 @@ tgm = window.tgm || {};
     }
   };
 
-  // functions to be called when a subsection with a matching class is no longer visible
+  // functions to be called when a subsection with a matching class or id is no longer visible
   var offVisibilityBindings = {
-    'cost': function() {
+    'perperson-chart': function() {
       tgm.charts.cost.setYAxisToZero();
     },
     'attendees': function() {
@@ -444,7 +444,11 @@ tgm = window.tgm || {};
     // Add a `is-visible` class to each element once it has entered the viewport,
     // also triggers any JS animations.
 
-    var elements = $('.subsection'); // hoist `elements` up to the closure
+    var elements = $(
+      '.subsection, ' +
+      '#perperson-chart'
+    );
+
     return function() {
       if (ANIMATE) {
         var windowScrollY = scrollY();
@@ -454,8 +458,8 @@ tgm = window.tgm || {};
           if (!element.hasClass('is-visible') && element.offset().top < (windowScrollY + window.innerHeight - 250)) {
             element.addClass('is-visible');
             // Execute JS animations
-            _.each(onVisibilityBindings, function(callback, className) {
-              if (element.hasClass(className)) {
+            _.each(onVisibilityBindings, function(callback, identifier) {
+              if (element.hasClass(identifier) || element.attr('id') == identifier) {
                 callback.apply(element);
               }
             });
@@ -464,8 +468,8 @@ tgm = window.tgm || {};
           if (element.hasClass('is-visible') && element.offset().top > (windowScrollY + window.innerHeight)) {
             element.removeClass('is-visible');
             // Reset any JS animations
-            _.each(offVisibilityBindings, function(callback, className) {
-              if (element.hasClass(className)) {
+            _.each(offVisibilityBindings, function(callback, identifier) {
+              if (element.hasClass(identifier) || element.attr('id') == identifier) {
                 callback.apply(element);
               }
             });

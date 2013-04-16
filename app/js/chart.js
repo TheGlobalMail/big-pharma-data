@@ -401,35 +401,42 @@
       });
 
     // Resize and position each
-    this.barInfo.each(function() {
-      // Reset the visibility state
-      var barInfo = d3.select(this)
-        .classed("post-render", false);
+    this.barInfo.each(function(){
+      var barInfoNode = this;
+      // Delaying to ensure the bars have been positioned
+      setTimeout(function() {
+        // Reset the visibility state
+        var barInfo = d3.select(barInfoNode)
+          .classed("post-render", false);
 
-      var background = barInfo.select('.background');
-      var title = barInfo.select('.title');
-      // Left offset difference between the first two rows
-      var boxInnerWidth = _.max([
-        title.node().getBBox().width,
-        $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9
-      ]);
-      var text = barInfo.select('.text');
-      var foreignObject = $(text.node()).find('foreignObject');
-      var oldHeight = foreignObject.height();
-      foreignObject.attr("width", boxInnerWidth);
-      var newHeight = foreignObject.find('p').height();
-      foreignObject.attr("height", newHeight);
+        var background = barInfo.select('.background');
+        var title = barInfo.select('.title');
+        // Left offset difference between the first two bars
+        var boxInnerWidth = _.max([
+          title.node().getBBox().width,
+          $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9
+        ]);
+        var text = barInfo.select('.text');
+        var $foreignObject = $(text.node()).find('foreignObject');
+        var foreignObject = $foreignObject[0];
+        var oldHeight = foreignObject.getBBox().height;
+        $foreignObject.attr("width", boxInnerWidth);
+        var $foreignObjectPara = $foreignObject.find('p');
+        // Sum of the paragraph's height & padding-top
+        var newHeight = $foreignObjectPara.height() + parseInt($foreignObjectPara.css('padding-top'));
+        $foreignObject.attr("height", newHeight);
 
-      // Scale the background for the new size
-      var backgroundHeight = parseInt(background.attr('height'));
-      background.attr({
-        "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
-        "height": backgroundHeight + (newHeight - oldHeight)
-      });
+        // Scale the background for the new size
+        var backgroundHeight = parseInt(background.attr('height'));
+        background.attr({
+          "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
+          "height": backgroundHeight + (newHeight - oldHeight)
+        });
 
-      // Hide the barInfo
-      barInfo.classed("post-render", true);
+        // Hide the barInfo
+        barInfo.classed("post-render", true);
+      }, 0)
     })
-  }
+  };
 
 }($, window.d3));
