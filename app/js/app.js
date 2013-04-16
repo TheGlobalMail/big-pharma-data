@@ -5,6 +5,8 @@ tgm = window.tgm || {};
   var ANIMATE = $('html').hasClass('no-touch');
   var perWeekEstimate = stats.summary.cost / (stats.summary.days / 365) / 52;
 
+  tgm.charts = tgm.charts || [];
+
   // Load the stats when the page is ready
   $(populateStats);
 
@@ -164,17 +166,20 @@ tgm = window.tgm || {};
     // Add the html
     $conditions.html(html);
 
-    // Calculate the offsets of the background that work like bar graphs
-    var width = $conditions.find('li:first').width();
-
-    // Apply the offsets
-    _.each(conditions.slice(0), function(condition, i){
-      var element = $conditions.find('#condition-' + condition.condition);
-      var adjustRatio = (maxCost - condition.cost) / maxCost;
-      var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
-      console.log(i, adjust)
-      element.animate({'background-position-x': adjust + "px"}, 2000);
-    });
+    if (
+      (ANIMATE && $('.subsection.disease').hasClass('is-visible')) ||
+      !ANIMATE
+    ) {
+      // Calculate the offsets of the background that work like bar graphs
+      var width = $conditions.find('li:first').width();
+      // Apply the offsets
+      _.each(conditions.slice(0), function(condition, i){
+        var element = $conditions.find('#condition-' + condition.condition);
+        var adjustRatio = (maxCost - condition.cost) / maxCost;
+        var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
+        element.animate({'background-position-x': adjust + "px"}, 2000);
+      });
+    }
   }
 
   // Work out how many of those little pills need to be displayed
@@ -228,14 +233,18 @@ tgm = window.tgm || {};
 
   function populatePerPerson(){
     var data = stats.perheadBins;
+
     _.each(data, function(datum){
       datum.bin = toDollars(datum.bin, "remove-cents");
     });
+
     _.each(data.slice(0, data.length - 1), function(datum, index){
       var previousBin = data[index - 1] ? data[index - 1].bin : 0;
       datum.binLabel = previousBin + '-' + datum.bin;
     });
+
     _.last(data).binLabel = 'Over ' + _.last(data).bin;
+
     var chart = new BarChart({
       id: "#perperson-chart",
       data: stats.perheadBins,
@@ -245,20 +254,27 @@ tgm = window.tgm || {};
       yAxisLabel: 'Number of attendees',
       barInfoText: ['attendees received hospitality costing <%= xAxis %> pp']
     });
+
     chart.render();
+
     bindButtons('#perperson-chart button', chart);
+
+    tgm.charts.push(chart);
   }
 
   function populateProfessions(){
     var topProfessions = _.sortBy(stats.professions, 'events').reverse().slice(0, 8);
+
     _.each(topProfessions, function(prof){
-      if (prof.profession === 'gp'){
+      if (prof.profession === 'gp') {
         prof.label = "GPs";
-      }else{
+      } else {
         prof.label = prof.profession + 's';
       }
     });
+
     var prependToYAxisScales = ['$', '', '$'];
+
     var chart = new BarChart({
       id: '#professions',
       data: topProfessions,
@@ -270,7 +286,10 @@ tgm = window.tgm || {};
       prependToYAxisScales: prependToYAxisScales[0]
     });
     chart.render();
+
     bindButtons('#attendees button', chart, prependToYAxisScales);
+
+    tgm.charts.push(chart);
   }
 
   function populateWorld(){
@@ -316,77 +335,77 @@ tgm = window.tgm || {};
     return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   }
 
+  // functions to be called when a subsection with a matching class is visible
   var onVisibilityBindings = {
     'disease': populateConditions,
     'spending': function() {
-      if (ANIMATE) {
 
-        var parentElement = $(this).find('#per-week-estimate');
-        var initialString = "$0,000,000";
-        var initialHTML = _.map(initialString, function(value, i) {
-          return '<i class="inactive">' + value + '</i>'
-        }).join('');
-        parentElement.html(initialHTML);
-        var childElements = parentElement.children();
-        var childElementIndex = childElements.length - 1;
-        var currentElement = $(childElements.get(childElementIndex));
+      var parentElement = $(this).find('#per-week-estimate');
+      var initialString = "$0,000,000";
+      var initialHTML = _.map(initialString, function(value, i) {
+        return '<i class="inactive">' + value + '</i>'
+      }).join('');
+      parentElement.html(initialHTML);
+      var childElements = parentElement.children();
+      var childElementIndex = childElements.length - 1;
+      var currentElement = $(childElements.get(childElementIndex));
 
-        var finalIntValue = Math.floor(perWeekEstimate);
+      var finalIntValue = Math.floor(perWeekEstimate);
 
-        var fragments = _.map(
-          _.collect(finalIntValue.toString()),
-          // Wrapper around parseInt to prevent base/radix arg interference
-          function(value) { return parseInt(value); }
-        );
+      var fragments = _.map(
+        _.collect(finalIntValue.toString()),
+        // Wrapper around parseInt to prevent base/radix arg interference
+        function(value) { return parseInt(value); }
+      );
 
-        var animationFunction = function() {
-          var c = tgm.counter;
-          if (!isNaN(c.current) && c.current <= 8 && c.current !== c.fragments[c.fragmentIndex]) {
-            // Increment the char and update the DOM
-            c.current++;
-            // Replace the char in the string
-            c.stringValue = c.stringValue.slice(0, c.stringIndex) + c.current + c.stringValue.slice(c.stringIndex + 1);
-            if (c.currentElement.hasClass('inactive')) {
-              c.currentElement.removeClass('inactive');
-            }
-            c.currentElement.text(c.current);
-          } else if (c.stringIndex == 0) {
-            // Animation finished
-            return;
-          } else {
-            // Move to the next char
-            if (c.current === c.fragments[c.fragmentIndex]) {
-              c.fragmentIndex--;
-            }
-            c.stringIndex--;
-            c.childElementIndex--;
-            c.currentElement = $(c.childElements.get(c.childElementIndex));
+      var animationFunction = function() {
+        var c = tgm.counter;
+        if (!isNaN(c.current) && c.current <= 8 && c.current !== c.fragments[c.fragmentIndex]) {
+          // Increment the char and update the DOM
+          c.current++;
+          // Replace the char in the string
+          c.stringValue = c.stringValue.slice(0, c.stringIndex) + c.current + c.stringValue.slice(c.stringIndex + 1);
+          if (c.currentElement.hasClass('inactive')) {
             c.currentElement.removeClass('inactive');
-            c.current = c.stringValue[c.stringIndex];
           }
-          setTimeout(c.animationFunction, 40);
-        };
+          c.currentElement.text(c.current);
+        } else if (c.stringIndex == 0) {
+          // Animation finished
+          return;
+        } else {
+          // Move to the next char
+          if (c.current === c.fragments[c.fragmentIndex]) {
+            c.fragmentIndex--;
+          }
+          c.stringIndex--;
+          c.childElementIndex--;
+          c.currentElement = $(c.childElements.get(c.childElementIndex));
+          c.currentElement.removeClass('inactive');
+          c.current = c.stringValue[c.stringIndex];
+        }
+        setTimeout(c.animationFunction, 40);
+      };
 
-        tgm.counter = {
-          parentElement: parentElement,
-          childElements: childElements,
-          childElementIndex: childElementIndex,
-          currentElement: currentElement,
-          value: 0,
-          finalValue: finalIntValue,
-          fragments: fragments,
-          fragmentIndex: fragments.length - 1,
-          stringValue: initialString,
-          stringIndex: initialString.length - 1,
-          current: 0,
-          animationFunction: animationFunction
-        };
+      tgm.counter = {
+        parentElement: parentElement,
+        childElements: childElements,
+        childElementIndex: childElementIndex,
+        currentElement: currentElement,
+        value: 0,
+        finalValue: finalIntValue,
+        fragments: fragments,
+        fragmentIndex: fragments.length - 1,
+        stringValue: initialString,
+        stringIndex: initialString.length - 1,
+        current: 0,
+        animationFunction: animationFunction
+      };
 
-        setTimeout(tgm.counter.animationFunction, 500);
-      }
+      setTimeout(tgm.counter.animationFunction, 500);
     }
   };
 
+  // functions to be called when a subsection with a matching class is no longer visible
   var offVisibilityBindings = {
     'spending': function() {
       // Reset the element's text value
@@ -396,6 +415,11 @@ tgm = window.tgm || {};
         return '<i class="inactive">' + value + '</i>'
       }).join('');
       element.html(initialHTML);
+    },
+    'disease': function() {
+      $('.subsection.disease')
+        .find('li')
+        .css('background-position-x', 'inherit');
     }
   };
 
@@ -405,30 +429,32 @@ tgm = window.tgm || {};
 
     var elements = $('.subsection'); // hoist `elements` up to the closure
     return function() {
-      var windowScrollY = scrollY();
-      elements.each(function() {
-        var element = $(this);
-        // If the element has entered the viewport and needs to have it's animations trigger
-        if (!element.hasClass('is-visible') && element.offset().top < (windowScrollY + window.innerHeight - 250)) {
-          element.addClass('is-visible');
-          // Execute JS animations
-          _.each(onVisibilityBindings, function(callback, className) {
-            if (element.hasClass(className)) {
-              callback.apply(element);
-            }
-          });
-        }
-        // If the element is below the viewport and needs to be reset
-        if (element.hasClass('is-visible') && element.offset().top > (windowScrollY + window.innerHeight)) {
-          element.removeClass('is-visible');
-          // Reset any JS animations
-          _.each(offVisibilityBindings, function(callback, className) {
-            if (element.hasClass(className)) {
-              callback.apply(element);
-            }
-          });
-        }
-      })
+      if (ANIMATE) {
+        var windowScrollY = scrollY();
+        elements.each(function() {
+          var element = $(this);
+          // If the element has entered the viewport and needs to have it's animations trigger
+          if (!element.hasClass('is-visible') && element.offset().top < (windowScrollY + window.innerHeight - 250)) {
+            element.addClass('is-visible');
+            // Execute JS animations
+            _.each(onVisibilityBindings, function(callback, className) {
+              if (element.hasClass(className)) {
+                callback.apply(element);
+              }
+            });
+          }
+          // If the element is below the viewport and needs to be reset
+          if (element.hasClass('is-visible') && element.offset().top > (windowScrollY + window.innerHeight)) {
+            element.removeClass('is-visible');
+            // Reset any JS animations
+            _.each(offVisibilityBindings, function(callback, className) {
+              if (element.hasClass(className)) {
+                callback.apply(element);
+              }
+            });
+          }
+        })
+      }
     }
   }
 

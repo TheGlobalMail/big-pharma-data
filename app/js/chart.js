@@ -199,6 +199,18 @@
     this.updateBarInfoText();
   };
 
+  BarChart.prototype.resetYAxisFromZero = function() {
+    this.updateMetric(this.metric);
+  };
+
+  BarChart.prototype.setYAxisToZero = function() {
+    var yScale = this.yScale;
+    this.barData
+      .transition().duration(500).delay(50)
+      .attr("y", function(d) { return yScale(0); })
+      .attr("height", function(d) { return 0; });
+  };
+
   BarChart.prototype.contractYAxisScales = function() {
     if (_this.options.contractYAxisScales) {
       _this.yAxisSvg.selectAll('.tick')
