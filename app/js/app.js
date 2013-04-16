@@ -67,7 +67,7 @@ tgm = window.tgm || {};
       var row = '<tr style="display:none">';
       row += '<td class="company">' + '<a data-company="' + company.company;
       row += '" href="/profiles/' + company.company + '">';
-      row += (company.name || company.company).replace(/ pty ltd/i, '')  + '</a>' + '</td>';
+      row += (company.name || '!!MISSING!! ' + company.company).replace(/ pty ltd/i, '')  + '</a>' + '</td>';
       row += '  <td class="dollars">' + toDollars(company.cost) + '</td>';
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
       row += '  <td class="events">' + niceNumber(company.events) + '</td>';
@@ -114,11 +114,11 @@ tgm = window.tgm || {};
     $('#company-name').text(company.name || company.company);
     $('#company-products').text(niceNumber(company.products));
     $('#company-total-cost').text(toDollars(company.cost));
-    $('#company-summary').text(_.escape(company.summary));
-    $('#company-blurb').text(_.escape(company.blurb));
-    $('#company-pbs2012').text(_.escape(company.pbs2012));
-    $('#company-revenueAu').text(_.escape(company.revenueAu));
-    $('#company-revenueGlobal').text(_.escape(company.revenueGlobal));
+    $('#company-summary').text(company.summary);
+    $('#company-blurb').text(company.blurb);
+    $('#company-pbs2012').text(company.pbs2012);
+    $('#company-revenueAu').text(company.revenueAu);
+    $('#company-revenueGlobal').text(company.revenueGlobal);
     $('#company-total-events').text(niceNumber(company.events));
     companyList('#company-top-professions', company.professions, 'profession');
     companyList('#company-top-conditions', company.conditions, 'condition');
@@ -419,7 +419,7 @@ tgm = window.tgm || {};
       setTimeout(tgm.counter.animationFunction, 750);
     },
     // Hide the related stories panel
-    'not-much': function() {
+    'data': function() {
       $('#related').fadeOut();
     }
   };
@@ -447,7 +447,7 @@ tgm = window.tgm || {};
       element.html(initialHTML);
     },
     // Show the related stories panel
-    'not-much': function() {
+    'data': function() {
       $('#related').fadeIn();
     }
   };
