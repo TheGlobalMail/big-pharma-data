@@ -166,10 +166,14 @@ tgm = window.tgm || {};
 
     // Calculate the offsets of the background that work like bar graphs
     var width = $conditions.find('li:first').width();
-    _.each(conditions.slice(1), function(condition){
+
+    // Apply the offsets
+    _.each(conditions.slice(0), function(condition, i){
+      var element = $conditions.find('#condition-' + condition.condition);
       var adjustRatio = (maxCost - condition.cost) / maxCost;
       var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
-      $conditions.find('#condition-' + condition.condition).css('background-position', adjust + "px 0");
+      console.log(i, adjust)
+      element.animate({'background-position-x': adjust + "px"}, 2000);
     });
   }
 
@@ -313,6 +317,7 @@ tgm = window.tgm || {};
   }
 
   var onVisibilityBindings = {
+    'disease': populateConditions,
     'spending': function() {
       if (ANIMATE) {
 
