@@ -316,9 +316,16 @@ tgm = window.tgm || {};
     'spending': function() {
       if (ANIMATE) {
 
-        var element = $(this).find('#per-week-estimate');
-        var initalStringValue = "$0,000,000";
-        element.text(initalStringValue);
+        var parentElement = $(this).find('#per-week-estimate');
+        var initialString = "$0,000,000";
+        var initialHTML = _.map(initialString, function(value, i) {
+          return '<i class="inactive">' + value + '</i>'
+        }).join('');
+        parentElement.html(initialHTML);
+        var childElements = parentElement.children();
+        var childElementIndex = childElements.length - 1;
+        var currentElement = $(childElements.get(childElementIndex));
+        currentElement.removeClass('inactive');
 
         var finalIntValue = Math.floor(perWeekEstimate);
 
@@ -331,35 +338,44 @@ tgm = window.tgm || {};
         var animationFunction = function() {
           var c = tgm.counter;
           if (!isNaN(c.current) && c.current <= 8 && c.current !== c.fragments[c.fragmentIndex]) {
+            // Increment the char and update the DOM
             c.current++;
             // Replace the char in the string
             c.stringValue = c.stringValue.slice(0, c.stringIndex) + c.current + c.stringValue.slice(c.stringIndex + 1);
-            c.element.text(c.stringValue);
+            c.currentElement.text(c.current);
           } else if (c.stringIndex == 0) {
+            // Animation finished
             return;
           } else {
+            // Move to the next char
             if (c.current === c.fragments[c.fragmentIndex]) {
               c.fragmentIndex--;
             }
             c.stringIndex--;
+            c.childElementIndex--;
+            c.currentElement = $(c.childElements.get(c.childElementIndex));
+            c.currentElement.removeClass('inactive');
             c.current = c.stringValue[c.stringIndex];
           }
           setTimeout(c.animationFunction, 40);
         };
 
         tgm.counter = {
-          element: element,
+          parentElement: parentElement,
+          childElements: childElements,
+          childElementIndex: childElementIndex,
+          currentElement: currentElement,
           value: 0,
           finalValue: finalIntValue,
           fragments: fragments,
           fragmentIndex: fragments.length - 1,
-          stringValue: initalStringValue,
-          stringIndex: initalStringValue.length - 1,
+          stringValue: initialString,
+          stringIndex: initialString.length - 1,
           current: 0,
           animationFunction: animationFunction
         };
 
-        tgm.counter.animationFunction();
+        setTimeout(tgm.counter.animationFunction, 500);
       }
     }
   };
