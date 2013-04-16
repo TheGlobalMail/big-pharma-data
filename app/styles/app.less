@@ -126,8 +126,9 @@
     padding-bottom: 60px;
     color:transparent;
     .box-shadow(inset 0 -10px 45px -10px rgba(0,0,0,.8));
+    border-bottom: 1px solid rgba(0,0,0,0.5);
     text-shadow: 0 -2px 0 rgba(0,0,0,.2);
-    z-index: 9999;
+    z-index: 999;
     a {
       color:white;
       &:hover {
@@ -235,6 +236,7 @@
       width: 220px;
       background-color: white;
       .border-radius(6px);
+      behavior: url(../js/libs//PIE.htc);
       li {
         list-style: none;
         padding: 8px 4px 8px 10px;
@@ -1579,6 +1581,7 @@
     .errata {
       border: 1px solid #e5e5e5;
       .border-radius(6px);
+      behavior: url(../js/libs//PIE.htc);
       text-align: center;
       padding: 30px;
       background-color: #f5f5f5;
@@ -1618,7 +1621,7 @@ footer {
     top: -34px;
     background-color: #222;
     padding: 10px 14px 6px;
-    .border-top-radius(6px);
+    .border-radius(6px);
     .transition(all 150ms ease-out);
     &:hover {
       text-decoration: none;
@@ -1767,7 +1770,7 @@ footer {
   .box-shadow(0 0 0 4px rgba(0,0,0,0.1));
   .border-radius(4px);
   behavior: url(../js/libs//PIE.htc);
-  margin-top: 4px !important;
+  margin-top: 6px !important;
   .modal-header {
     border-bottom: 1px solid #e5e5e5;
     .box-shadow(0 4px 10px -6px rgba(0,0,0,0.4));
@@ -1844,6 +1847,9 @@ footer {
       }
     }
   }
+  .list {
+    clear:left;
+  }
   .revenue {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 15px;
@@ -1855,7 +1861,7 @@ footer {
   }
   #company-top-event {
     width: 100%;
-    margin-top: 10px;
+    margin: 10px;
     td {
       border: 1px solid #e5e5e5;
       border-top: none;
@@ -1886,6 +1892,7 @@ footer {
     li.pp {
       float: left;
       .font-size(12);
+      width: 14%;
       line-height: 1;
       text-transform: uppercase;
       font-style: italic;
@@ -1938,6 +1945,9 @@ footer {
         .bar-chart ul li {
           margin-left: 0;
         }
+        #per-week-estimate {
+          color: @grayDarker;
+        }
       }
       &.cost {
         min-height: 170px;
@@ -1953,16 +1963,20 @@ footer {
       }
       &.daily {
         .calendar {
+          width: 385px;
+          height: 334px;
           background-image: url(../images/calendar.png);
         }
       }
       &.disease .bar-chart ul li {
         font-family: 'Arial', sans-serif;
+        border-top: 1px solid #e5e5e5;
+        margin-bottom: 0;
       }
       &.total {
         .pill {
           background: url(../images/pill.png) center center no-repeat transparent;
-          height: 200px;
+          height: 220px;
           &:after, span {
             display: none;
           }
@@ -2000,33 +2014,39 @@ footer {
       }
     }
     #dont-know {
-        .subsection{
-          &.doctors {
-            .doctor {
-              background-image: url(../images/doctor.png);
-            }
-          }
-          &.drugs {
-            .drug {
-              background-image: url(../images/drugs-in-question.png);
-            }
-          }
-          &.not-much {
-            .thermometer {
-              background-image: url(../images/thermometer.png);
+      .subsection{
+        &.doctors {
+          .doctor {
+            background-image: url(../images/doctor.png);
+            h4 {
+              display: none;
             }
           }
         }
-      }
-      #data {
-        .data {
-          .data-container {
-            ul li a {
-              background-image: url(../images/doc-icons.png);
-            }
+        &.drugs {
+          .drug {
+            background-image: url(../images/drugs-in-question.png);
+          }
+        }
+        &.not-much {
+          .thermometer {
+            background-image: url(../images/thermometer.png);
           }
         }
       }
+    }
+    #data {
+      .data {
+        .data-container {
+          ul li a {
+            background-image: url(../images/doc-icons.png);
+          }
+        }
+      }
+    }
+  }
+  .modal ul#company-perperson li.pp {
+    background-image: url(../images/events-icons.png);
   }
 }
 
