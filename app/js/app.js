@@ -325,7 +325,6 @@ tgm = window.tgm || {};
         var childElements = parentElement.children();
         var childElementIndex = childElements.length - 1;
         var currentElement = $(childElements.get(childElementIndex));
-        currentElement.removeClass('inactive');
 
         var finalIntValue = Math.floor(perWeekEstimate);
 
@@ -342,6 +341,9 @@ tgm = window.tgm || {};
             c.current++;
             // Replace the char in the string
             c.stringValue = c.stringValue.slice(0, c.stringIndex) + c.current + c.stringValue.slice(c.stringIndex + 1);
+            if (c.currentElement.hasClass('inactive')) {
+              c.currentElement.removeClass('inactive');
+            }
             c.currentElement.text(c.current);
           } else if (c.stringIndex == 0) {
             // Animation finished
@@ -384,8 +386,11 @@ tgm = window.tgm || {};
     'spending': function() {
       // Reset the element's text value
       var element = $(this).find('#per-week-estimate');
-      var initalStringValue = "$0,000,000";
-      element.text(initalStringValue);
+      var initalString = "$0,000,000";
+      var initialHTML = _.map(initalString, function(value, i) {
+        return '<i class="inactive">' + value + '</i>'
+      }).join('');
+      element.html(initialHTML);
     }
   };
 
