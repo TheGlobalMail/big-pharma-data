@@ -177,7 +177,7 @@ tgm = window.tgm || {};
         var element = $conditions.find('#condition-' + condition.condition);
         var adjustRatio = (maxCost - condition.cost) / maxCost;
         var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
-        element.animate({'background-position-x': adjust + "px"}, 2000);
+        element.animate({'background-position-x': adjust + "px"}, 1000);
       });
     }
   }
@@ -383,7 +383,7 @@ tgm = window.tgm || {};
           c.currentElement.removeClass('inactive');
           c.current = c.stringValue[c.stringIndex];
         }
-        setTimeout(c.animationFunction, 40);
+        setTimeout(c.animationFunction, 50);
       };
 
       tgm.counter = {
@@ -401,7 +401,7 @@ tgm = window.tgm || {};
         animationFunction: animationFunction
       };
 
-      setTimeout(tgm.counter.animationFunction, 500);
+      setTimeout(tgm.counter.animationFunction, 750);
     }
   };
 
