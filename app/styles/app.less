@@ -1085,10 +1085,8 @@
             list-style: none;
             padding: 6px 6px 6px 12px;
             font-style: italic;
-            background: url(../images/spending-bg.png) top left no-repeat;
             margin-bottom: 14px;
             margin-left: 10%;
-            background-position: -1200px 0;
             &:before {
               content: '';
               position: absolute;
@@ -1119,14 +1117,25 @@
                 background-position: left -214px;
               }
             }
+            .background {
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              background: #fff6fd;
+              z-index: 1;
+            }
             strong {
               .font-size(24);
               text-transform: Capitalize;
+              position: relative;
+              z-index: 2;
             }
             span {
               position: absolute;
               color: rgba(0,0,0,0.4);
               right: 6px;
+              z-index: 2;
             }
           }
         }

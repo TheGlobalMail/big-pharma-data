@@ -159,6 +159,7 @@ tgm = window.tgm || {};
       var id = condition.condition;
       var name = id.replace(/_/, ' ');
       var li = '<li id="condition-' + id + '"><strong>' + name + '</strong>';
+      li += '<i class="background"></i>';
       li += '<span>' + toDollars(condition.cost) + '</span></li>';
       return li;
     }).join("\n");
@@ -171,13 +172,14 @@ tgm = window.tgm || {};
       !ANIMATE
     ) {
       // Calculate the offsets of the background that work like bar graphs
-      var width = $conditions.find('li:first').width();
+      var width = $conditions.find('li:first').outerWidth();
       // Apply the offsets
       _.each(conditions.slice(0), function(condition, i){
-        var element = $conditions.find('#condition-' + condition.condition);
-        var adjustRatio = (maxCost - condition.cost) / maxCost;
-        var adjust = width * adjustRatio * -1 - (1200 - width); // 600 is the width of the background image
-        element.animate({'background-position-x': adjust + "px"}, 1000);
+        var element = $conditions.find(
+          '#condition-' + condition.condition + ' .background'
+        );
+        var widthToSet = (condition.cost / maxCost) * width;
+        element.animate({"width": widthToSet + "px"}, 1000);
       });
     }
   }
