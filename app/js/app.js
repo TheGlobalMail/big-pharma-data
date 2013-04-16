@@ -418,7 +418,7 @@ tgm = window.tgm || {};
         animationFunction: animationFunction
       };
 
-      setTimeout(tgm.counter.animationFunction, 750);
+      setTimeout(tgm.counter.animationFunction, 450);
     },
     // Hide the related stories panel
     'data': function() {
