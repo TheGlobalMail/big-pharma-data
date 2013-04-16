@@ -440,7 +440,7 @@
         $foreignObject.attr("width", boxInnerWidth);
         var $foreignObjectPara = $foreignObject.find('p');
         // Sum of the paragraph's height & padding-top
-        var newHeight = $foreignObjectPara.height() + parseInt($foreignObjectPara.css('padding-top'));
+        var newHeight = $foreignObjectPara.height() + parseInt($foreignObjectPara.css('padding-top')) + 3;
         $foreignObject.attr("height", newHeight);
 
         // Scale the background for the new size
