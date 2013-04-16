@@ -357,7 +357,7 @@ tgm = window.tgm || {};
             c.currentElement.removeClass('inactive');
             c.current = c.stringValue[c.stringIndex];
           }
-          setTimeout(c.animationFunction, 40);
+          setTimeout(c.animationFunction, 50);
         };
 
         tgm.counter = {
@@ -375,7 +375,7 @@ tgm = window.tgm || {};
           animationFunction: animationFunction
         };
 
-        setTimeout(tgm.counter.animationFunction, 500);
+        setTimeout(tgm.counter.animationFunction, 750);
       }
     }
   };
