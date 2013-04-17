@@ -1719,6 +1719,9 @@ footer {
     fill: white;
     position: relative;
     visibility: hidden;
+    .is-ie & { // Hide the bar info's for IE
+      display: none;
+    }
     p { // foreignObject p
       display: none;
     }
