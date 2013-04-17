@@ -10,6 +10,7 @@
     this.label = options.label;
     this.metric = options.metric;
     this.keepScale = options.keepScale;
+    this.buttonIndex = 0;
 
     var defaultOptions = {
       "yAxisLabel": null,
@@ -187,7 +188,10 @@
     }, this);
   };
 
-  BarChart.prototype.updateMetric = function(metric){
+  BarChart.prototype.updateMetric = function(metric, index){
+    if (index) {
+      this.buttonIndex = index;
+    }
     this.metric = metric;
     var height = this.height;
     var yScale = this.yScale;
@@ -363,26 +367,25 @@
 
   BarChart.prototype.updateBarInfoText = function() {
     // Update each title
-    this.barInfo
-      .each(function(d, i) {
-        var value = Math.floor(_this.convertedData[i].y);
-        var formattedValue = d3.format("0,000")(value);
-        var $title = $(d3.select(this).select('.title').node());
-        if (_this.options.prependToYAxisScales) {
-          formattedValue = '' + _this.options.prependToYAxisScales + value;
-        }
-        $title.text(formattedValue);
-      });
+    this.barInfo.each(function(d, i) {
+      var value = Math.floor(_this.convertedData[i].y);
+      var formattedValue = d3.format("0,000")(value);
+      var $title = $(d3.select(this).select('.title').node());
+      if (_this.options.prependToYAxisScales) {
+        formattedValue = '' + _this.options.prependToYAxisScales + value;
+      }
+      $title.text(formattedValue);
+    });
 
     // Update each text
     this.barInfo.selectAll('.text p')
       .text(function(d) {
         if (_this.options.barInfoText) {
-          var template = _this.options.barInfoText[0];
+          var template = _this.options.barInfoText[_this.buttonIndex];
           var xAxis, yAxis;
           if (isNaN(d.x)) {
             xAxis = d.x;
-            if (xAxis[xAxis.length-1] == 's') {
+            if (_.last(xAxis) === 's') {
               xAxis = xAxis.slice(0, xAxis.length-1);
             }
           } else {
@@ -390,7 +393,7 @@
           }
           if (isNaN(d.y)) {
             yAxis = d.y;
-            if (yAxis[yAxis.length-1] == 's') {
+            if (yAxis[yAxis.length-1] === 's') {
               yAxis = yAxis.slice(0, yAxis.length-1);
             }
           } else {
@@ -419,7 +422,7 @@
         ]);
         var text = barInfo.select('.text');
         var $foreignObject = $(text.node()).find('foreignObject');
-        var foreignObject = $foreignObject[0];
+        var foreignObject = $foreignObject.get(0);
         var oldHeight = foreignObject.getBBox().height;
         $foreignObject.attr("width", boxInnerWidth);
         var $foreignObjectPara = $foreignObject.find('p');

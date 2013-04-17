@@ -343,11 +343,12 @@ tgm = window.tgm || {};
     var $buttons = $(buttons);
     $buttons.click(function(){
       var $button = $(this);
+      var index = $button.index();
       if (prependToYAxisScales) {
         chart.options.prependToYAxisScales = prependToYAxisScales[$button.index()];
       }
-      chart.updateMetric($button.data('metric'));
-      chart.updateYAxisLabel($button.index());
+      chart.updateMetric($button.data('metric'), index);
+      chart.updateYAxisLabel(index);
       $buttons.removeClass('active');
       $button.addClass('active');
     });
