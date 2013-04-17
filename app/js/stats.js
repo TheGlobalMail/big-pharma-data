@@ -8332,7 +8332,18 @@ window.stats = {
         "attendees": 188,
         "hospitalitycost": 82149.56,
         "hospitality_spendratio": 436.97
-      }
+      },
+      "code": "merckserono",
+      "name": "Merck Serono Australia Pty Ltd",
+      "summary": "74 Employees in Australia, global headquarters are in Geneva, Switzerland. Merck Serono is the division for innovative prescription pharmaceuticals of Merck KGaA, a global pharmaceutical and chemical group. ",
+      "blurb": null,
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "€11172.90m (2012)",
+      "products": "39",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Merck%20Serono&sortPref=ascending&sortField=0&Page=1&PageMax=2&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": "(known as EMD in US)",
+      "moreNotes": null
     },
     {
       "company": "mundipharma",
