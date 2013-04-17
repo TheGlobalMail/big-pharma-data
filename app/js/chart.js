@@ -1,6 +1,7 @@
 (function($, d3) {
   'use strict';
 
+  // TODO: there's a bug where the last BarChart instantiated takes over the variable `_this`
   var _this;
 
   var BarChart = window.BarChart = function(options){
@@ -336,7 +337,9 @@
   };
 
   BarChart.prototype.resetBarStates = function(){
-    _this.chart.selectAll(".bar-group")
+    // TODO: this is a hack that walks up the tree, instead of relying on the _this var
+    var chartElement = _this.findParentWithClass(this, 'chart');
+    d3.select(chartElement).selectAll(".bar-group")
       .classed("active", false)
       .classed("inactive", false);
   };
