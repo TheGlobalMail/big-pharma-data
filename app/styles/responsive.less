@@ -186,6 +186,9 @@
           h4.large {
             .font-size(60);
           }
+          p.subhead {
+            text-align: center;
+          }
         }
         .doctor-only {
           width: 180px;
@@ -353,8 +356,9 @@
       margin-top: 0;
       padding-bottom: 30px;
       p {
-        padding-bottom: 0;
+        padding: 0;
         margin-bottom: 10px;
+
       }
     }
     #status {
@@ -622,6 +626,9 @@
             }
             &#state-tas {
               margin-top: 205px;
+              span {
+                  .font-size(16);
+                }
             }
             &#state-sa {
               margin-top: 109px;
@@ -725,6 +732,9 @@
       }
     }
   }
+  footer {
+    padding: 20px 0 30px;
+  }
 
   // Overwrite bootstrap modal
   .modal-scrollable {
@@ -737,9 +747,9 @@
     .box-shadow(none);
     .modal-header {
       position: fixed;
-      width: 90%;
+      width: 94%;
       background-color: white;
-      padding: 20px 5%;
+      padding: 15px 3%;
       h3 {
         .font-size(20);
         line-height: 1.1;
@@ -758,7 +768,7 @@
       }
     }
     .modal-body {
-      padding: 100px 15px 20px;
+      padding: 90px 15px 20px;
     }
     .pull-left, .pull-right, .pull-left.quarter {
       float: none;
