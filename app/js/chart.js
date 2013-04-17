@@ -19,7 +19,8 @@
       "contractYAxisScales": true,
       "barInfoBoxPadding": 10,
       "boxInnerWidth": 104,
-      "prependToYAxisScales": null
+      "prependToYAxisScales": null,
+      "hideTitle": false
     };
 
     this.options = _.extend(defaultOptions, options);
@@ -124,16 +125,19 @@
         return "translate(" + xPos + "," + yPos + ")";
       });
     // Background
-    this.barInfo.append("rect")
+    this.barInfoBackground = this.barInfo.append("rect")
       .attr("x", 0)
       .attr("y", 0)
       .classed("background", true);
     // Title
-    this.barInfo.append("text")
+    this.barInfoTitle = this.barInfo.append("text")
       .classed("title", true)
       .text(function(d) { return d3.format("0,000")(d.y); });
+    if (this.options.hideTitle) {
+      this.barInfo.classed("hide-title", true);
+    }
     // Textual content
-    this.barInfo.append("g")
+    this.barInfoText = this.barInfo.append("g")
       .classed("text", true)
       .append("foreignObject")
         .attr("x", 0)

@@ -303,7 +303,8 @@ tgm = window.tgm || {};
         '<%= xAxis %>s attended <%= yAxis %> education events',
         'In total $<%= yAxis %> was spent on for <%= xAxis %>'
       ],
-      prependToYAxisScales: prependToYAxisScales[0]
+      prependToYAxisScales: prependToYAxisScales[0],
+      hideTitle: true
     });
     chart.render();
     if (ANIMATE) {
