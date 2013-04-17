@@ -299,9 +299,9 @@ tgm = window.tgm || {};
       keepScale: !'keepScale',
       yAxisLabels: ['Avg. spend per person', 'Number of events', 'Total spent'],
       barInfoText: [
-        'An average of $<%= yAxis %> was spent per <%= xAxis %>',
-        '<%= xAxis %>s attended <%= yAxis %> education events',
-        'In total $<%= yAxis %> was spent on for <%= xAxis %>'
+        'An average of <strong>$<%= yAxis %></strong> was spent per <%= xAxis %>',
+        '<%= xAxis %>s attended <strong><%= yAxis %></strong> education events',
+        'In total <strong>$<%= yAxis %></strong> was spent on for <%= xAxis %>'
       ],
       prependToYAxisScales: prependToYAxisScales[0],
       hideTitle: true
