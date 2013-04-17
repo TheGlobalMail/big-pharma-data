@@ -519,6 +519,12 @@
       h4.xlarge {
         .font-size(146);
       }
+      strong > em {
+        padding-bottom: 10px;
+      }
+      em {
+        display:block;
+      }
       #per-week-estimate {
         color: white;
         i.inactive {
@@ -1776,7 +1782,11 @@ footer {
 }
 .modal, .modal.container, .modal.modal-overflow {
     width: 650px !important;
+
+    overflow: auto !important;
+
 }
+
 .modal {
   position: relative; // This appears necessary to get the modal scrolling
   .box-shadow(0 0 0 4px rgba(0,0,0,0.1));
@@ -1795,6 +1805,9 @@ footer {
   }
   .modal-body {
     padding: 10px 30px 40px;
+    position: static;
+    overflow: auto !important;
+    height: 400px !important;
   }
   .close {
     .font-size(40);
