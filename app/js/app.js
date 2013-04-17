@@ -66,6 +66,7 @@ tgm = window.tgm || {};
   function hashSeekCompaniesSection() {
     if (window.location.hash === '#companies') {
       $('#full-list').click();
+      $.scrollTo($('#status'));
     }
   }
 
