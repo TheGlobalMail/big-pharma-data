@@ -1725,7 +1725,13 @@ footer {
     p { // foreignObject p
       display: none;
     }
-    .title {
+    &.hide-title {
+      .title {
+        display: none;
+      }
+    }
+    .title,
+    p strong {
       .font-size(30);
       fill: #333;
       font-style: italic;

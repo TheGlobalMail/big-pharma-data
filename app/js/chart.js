@@ -366,7 +366,7 @@
           bgHeight += $foreignObject.offset().top - $title.offset().top;
           bgY = -title.getBBox().height + bgY;
         } else {
-          bgY -= 0;
+          bgY /= 2;
         }
 
         $background.attr({
