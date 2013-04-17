@@ -269,7 +269,7 @@ window.stats = {
       "incomplete": 1,
       "code": "abbott",
       "name": "Abbott Australasia Pty Ltd*",
-      "summary": "Pharmaceutical company started in Chicago, (in Australia for over 70 years). 500 Employees in Australia and New Zealand.",
+      "summary": "Abbott was founded in Chicago and has been in Australia for over 70 years. It has 500 employees in Australia and New Zealand.",
       "blurb": null,
       "pbs2012": "297,987,920",
       "revenueAu": "A$221.9m",
@@ -546,12 +546,12 @@ window.stats = {
         "hospitality_spendratio": 2.51
       },
       "code": "actelion",
-      "name": "Actelion Pharmaceuticals Australia Pty Limited",
+      "name": "Actelion Pharmaceuticals Australia Pty Ltd",
       "summary": null,
       "blurb": null,
       "pbs2012": "-",
       "revenueAu": null,
-      "revenueGlobal": "CHF1722.1m (2012)",
+      "revenueGlobal": "CHF17.22b (2012)",
       "products": "3",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Actelion&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -1381,8 +1381,8 @@ window.stats = {
       },
       "code": "alphapharm",
       "name": "Alphapharm Pty Ltd",
-      "summary": "In Australia since 1982, now with 700 employees. Part of Mylan Inc.",
-      "blurb": null,
+      "summary": "In Australia since 1982, now with 700 employees. ",
+      "blurb": "Part of Mylan Inc.",
       "pbs2012": "368,044,979",
       "revenueAu": "-",
       "revenueGlobal": "-",
@@ -1934,7 +1934,18 @@ window.stats = {
         "attendees": 51,
         "hospitalitycost": 2690.27,
         "hospitality_spendratio": 52.75
-      }
+      },
+      "code": "astellas",
+      "name": "Astellas Pharma Australia Pty Ltd",
+      "summary": "Astellas is a Japanese company that has been operating since 1926.",
+      "blurb": null,
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "¥953.9b (2011)",
+      "products": "2",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=astellas&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "astrazeneca",
@@ -2758,7 +2769,18 @@ window.stats = {
         "attendees": 163,
         "hospitalitycost": 40374.92,
         "hospitality_spendratio": 247.7
-      }
+      },
+      "code": "bayer",
+      "name": "Bayer Australia Ltd",
+      "summary": null,
+      "blurb": null,
+      "pbs2012": "97,689,036",
+      "revenueAu": "A$891m (2012)",
+      "revenueGlobal": "-",
+      "products": "274",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Bayer%20Australia%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=11&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "biogen",
@@ -3032,7 +3054,7 @@ window.stats = {
       "blurb": "In 2003, Biogen Inc. merged with Idec, to form Biogen Idec; the Australian division became Biogen Idec Australia.",
       "pbs2012": "-",
       "revenueAu": "-",
-      "revenueGlobal": "US$5049 (2011)",
+      "revenueGlobal": "US$5.05b (2011)",
       "products": "12",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Biogen%20Idec%20Australia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -3849,7 +3871,18 @@ window.stats = {
         "attendees": 96,
         "hospitalitycost": 79479.22,
         "hospitality_spendratio": 827.91
-      }
+      },
+      "code": "celgene",
+      "name": "Celgene Australia Pty Ltd",
+      "summary": "Established in Australia in 2006, and has 4,500 employees worldwide.",
+      "blurb": null,
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "US$5.5b (2012)",
+      "products": "11",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Celgene&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "csl",
@@ -4951,7 +4984,18 @@ window.stats = {
         "attendees": 55,
         "hospitalitycost": 1740,
         "hospitality_spendratio": 31.64
-      }
+      },
+      "code": "freseniuskabi",
+      "name": "Fresenius Kabi Australia Pty Limited",
+      "summary": "Fresenius Kabi was founded in Germany in 1999. Its Australian arm employees 290 people in Australia and New Zealand",
+      "blurb": null,
+      "pbs2012": "-",
+      "revenueAu": "€863m (all Asia-Pacific 2012)",
+      "revenueGlobal": "€4.54b (2012)",
+      "products": "213",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=fresenius%20kabi&sortPref=ascending&sortField=0&Page=1&PageMax=9&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "genzyme",
@@ -6057,7 +6101,7 @@ window.stats = {
       "code": "innovex",
       "name": "Innovex",
       "summary": null,
-      "blurb": null,
+      "blurb": "Innovex is owned by Quintiles",
       "pbs2012": "-",
       "revenueAu": "-",
       "revenueGlobal": "-",
@@ -6598,7 +6642,18 @@ window.stats = {
         "attendees": 35,
         "hospitalitycost": 3033.86,
         "hospitality_spendratio": 86.68
-      }
+      },
+      "code": "invida",
+      "name": "A Menarini Australia Pty Ltd",
+      "summary": null,
+      "blurb": "Invida was acquired by the Menarini group in 2011, and in 2012 changed its name to Menarini Asia-Pacific",
+      "pbs2012": null,
+      "revenueAu": "-",
+      "revenueGlobal": "Invida: US$220m (2011); Menarini Group: US$4.13b (2011)",
+      "products": "24",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=menarini&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "ipsen",
@@ -7421,7 +7476,18 @@ window.stats = {
         "attendees": 19,
         "hospitalitycost": 2768.76,
         "hospitality_spendratio": 145.72
-      }
+      },
+      "code": "leopharma",
+      "name": "LEO Pharma Pty Ltd",
+      "summary": "LEO Pharma is a Danish company founded in 1908, now with multiple global subsidiaries and 2500 employees in 2013. LEO began operating in Australia in 2011.",
+      "blurb": null,
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "DKK8.2b (2012)",
+      "products": "8",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=leo%20pharma&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "lundbeck",
@@ -7695,7 +7761,7 @@ window.stats = {
       "blurb": null,
       "pbs2012": "-",
       "revenueAu": "-",
-      "revenueGlobal": "DKK14802m (2011)",
+      "revenueGlobal": "DKK14.8b (2011)",
       "products": "24",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Lundbeck&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -10999,7 +11065,7 @@ window.stats = {
       "blurb": null,
       "pbs2012": "525,934,355",
       "revenueAu": "-",
-      "revenueGlobal": "€28.9b (2012 - global pharmaceuticals division only)",
+      "revenueGlobal": "€28.9b (2012 – global pharmaceuticals division only)",
       "products": "514",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=sanofi-aventis%20australia&sortPref=ascending&sortField=0&Page=1&PageMax=21&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "2012 report here: http://en.sanofi.com/Images/31972_20-F_2012.pdf",
@@ -11278,7 +11344,7 @@ window.stats = {
       "blurb": null,
       "pbs2012": "-",
       "revenueAu": "-",
-      "revenueGlobal": "€3.9b (2012 - global vaccines division only)",
+      "revenueGlobal": "€3.9b (2012 – global vaccines division only)",
       "products": "2",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=sanofi%20pasteur&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": null,
@@ -11549,7 +11615,18 @@ window.stats = {
         "attendees": 200,
         "hospitalitycost": 125682.48,
         "hospitality_spendratio": 628.41
-      }
+      },
+      "code": "schering",
+      "name": "Schering-Plough Pty Limited",
+      "summary": "Schering was founded in the US in 1851, and merged with Plough to create Schering-Plough in 1971.",
+      "blurb": "In 2009, Schering-Plough merged with Merck & Co., Inc to create a new company, known as MSD in Australia, and Merck in the USA.",
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "-",
+      "products": "1",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=schering-plough%20pty&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "servier",
@@ -12654,12 +12731,12 @@ window.stats = {
       "code": "solvay",
       "name": "\nSolvay Pharmaceuticals Pty Ltd",
       "summary": null,
-      "blurb": null,
+      "blurb": "Abbott bought the pharmaceutical division of the Belgian chemical company Solvay in 2009",
       "pbs2012": "-",
       "revenueAu": "-",
-      "revenueGlobal": "-",
+      "revenueGlobal": "Solvay Group: €9.49b (2008); Abbott: US$23b (2011)",
       "products": "0",
-      "tgaLink": null,
+      "tgaLink": "-",
       "notes": null,
       "moreNotes": null
     },
@@ -12928,7 +13005,18 @@ window.stats = {
         "attendees": 73,
         "hospitalitycost": 0,
         "hospitality_spendratio": 0
-      }
+      },
+      "code": "stiefel",
+      "name": null,
+      "summary": null,
+      "blurb": "Stiefel was acquired by GlaxoSmithKline in 2009",
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "-",
+      "products": "0",
+      "tgaLink": "-",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "ucb",
@@ -13474,7 +13562,18 @@ window.stats = {
         "attendees": 66,
         "hospitalitycost": 24960,
         "hospitality_spendratio": 378.18
-      }
+      },
+      "code": "vifor",
+      "name": "Vifor Pharma Pty Ltd",
+      "summary": "Vifor began operating an Australian office in 2010",
+      "blurb": "Vifor is part of the global Galencia Group.",
+      "pbs2012": "-",
+      "revenueAu": "-",
+      "revenueGlobal": "CHF3.3b",
+      "products": "15",
+      "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Vifor&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
+      "notes": null,
+      "moreNotes": null
     },
     {
       "company": "wyeth",
