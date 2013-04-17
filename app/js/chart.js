@@ -177,6 +177,8 @@
     this.updateBarInfoText();
 
     this.bindResetBarStates();
+
+    this.postRenderCleanup();
   };
 
   BarChart.prototype.convertData = function(){
@@ -431,8 +433,22 @@
           "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
           "height": backgroundHeight + (newHeight - oldHeight)
         });
-      }, 200)
+      }, 200);
     })
   };
+
+  BarChart.prototype.postRenderCleanup = function() {
+    // X-browser fixes and whatnot
+    this.barInfo.each(function() {
+      // Fixing a FF bug where the background appears below the title.
+      var barInfo = d3.select(this);
+      var titleBBox = barInfo.select('.title').node().getBBox();
+      var background = barInfo.select('.background');
+      var backgroundBBox = background.node().getBBox();
+      if (titleBBox.y < backgroundBBox.y) {
+        background.attr("y", -titleBBox.height);
+      }
+    });
+  }
 
 }($, window.d3));
