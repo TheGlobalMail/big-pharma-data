@@ -150,41 +150,10 @@
             .append("p")
               .text(function(d) { return d.x; });
 
-    // Position and size the bar info box's elements
-    this.barInfo.each(function() {
-      var barInfo = d3.select(this);
-      var background = $(barInfo.select('.background')[0]);
-      var title = $(barInfo.select('.title')[0]);
-      var text = $(barInfo.select('.text')[0]).children('foreignObject');
-      var padding = _this.options.barInfoBoxPadding;
-      title.attr("x", padding);
-      text.attr({
-        // Wrap the text at the title's width
-        "width": title.width(),
-        // The height of the foreignObject's body element
-        "height": text.find('p').height(),
-        // Left margin
-        "x": padding,
-        // Spacing between the title and the text
-        "y": 2
-      });
-      background.attr({
-        // Sum of the elements' height
-        "height": text.offset().top - title.offset().top + text.height() + padding,
-        // Widest element + padding
-        "width": title.width() + (padding * 2),
-        // Top margin
-        "y": -title.height() + (padding - 2)
-      });
-    });
-
-    // TODO: super hacky, the update/render cycles should be rolled into
-    // one, rather than faking an update to get around legacy specifications
-    this.updateBarInfoText();
+    // TODO: kinda hacky, the update/render cycles should be rolled into one
+    this.updateBarInfoBox();
 
     this.bindResetBarStates();
-
-    this.postRenderCleanup();
   };
 
   BarChart.prototype.convertData = function(){
@@ -211,7 +180,7 @@
       .transition().duration(500).delay(50)
       .attr("y", function(d) { return yScale(d.y); })
       .attr("height", function(d) { return height - yScale(d.y); });
-    this.updateBarInfoText();
+    this.updateBarInfoBox();
   };
 
   BarChart.prototype.resetYAxisFromZero = function() {
@@ -324,10 +293,12 @@
 
   BarChart.prototype.activateBar = function() {
     var barGroup = this;
+    // TODO: this is a hack that walks up the tree, instead of relying on the _this var
+    var chartElement = _this.findParentWithClass(barGroup, 'chart');
     // Denote the other bars as inactive
-    _this.chart.selectAll(".bar-group")
-      .classed("active", false)
-      .classed("inactive", true);
+    d3.select(chartElement).selectAll(".bar-group")
+        .classed("active", false)
+        .classed("inactive", true);
     // Denote the current bar as active
     d3.select(barGroup)
       .classed("active", true)
@@ -372,7 +343,40 @@
     }
   };
 
-  BarChart.prototype.updateBarInfoText = function() {
+  BarChart.prototype.updateBarInfoBox = function() {
+    // Position and size the bar info box's elements
+    this.barInfo.each(function() {
+      var barInfo = d3.select(this);
+      var background = barInfo.select('.background').node();
+      var $background = $(background);
+      var title = barInfo.select('.title').node();
+      var $title = $(title);
+      var text = barInfo.select('.text').node();
+      var $text = $(text);
+      var $foreignObject = $text.children('foreignObject');
+      var padding = _this.options.barInfoBoxPadding;
+      var foreignObjectHeight = $foreignObject.find('p').height();
+      $title.attr("x", padding);
+      $foreignObject.attr({
+        // Wrap the text at the title's width
+        "width": title.getBBox().width,
+        // The height of the foreignObject's body element
+        "height": foreignObjectHeight,
+        // Left margin
+        "x": padding,
+        // Spacing between the title and the text
+        "y": 2
+      });
+      $background.attr({
+        // Sum of the elements' height
+        "height": $foreignObject.offset().top - $title.offset().top + foreignObjectHeight + padding,
+        // Widest element + padding
+        "width": title.getBBox().width + (padding * 2),
+        // Top margin
+        "y": -title.getBBox().height + (padding - 2)
+      });
+    });
+
     // Update each title
     this.barInfo.each(function(d, i) {
       var value = Math.floor(_this.convertedData[i].y);
@@ -446,19 +450,5 @@
       }, 200);
     })
   };
-
-  BarChart.prototype.postRenderCleanup = function() {
-    // X-browser fixes and whatnot
-    this.barInfo.each(function() {
-      // Fixing a FF bug where the background appears below the title.
-      var barInfo = d3.select(this);
-      var titleBBox = barInfo.select('.title').node().getBBox();
-      var background = barInfo.select('.background');
-      var backgroundBBox = background.node().getBBox();
-      if (titleBBox.y < backgroundBBox.y) {
-        background.attr("y", -titleBBox.height);
-      }
-    });
-  }
 
 }($, window.d3));
