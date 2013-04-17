@@ -50,11 +50,13 @@ tgm = window.tgm || {};
       loadCompany(window.location.hash.replace(/#*profile-/, ''));
     }
 
-    // Check what sections are in the viewport, and set it to recheck
-    // after scroll events
-    var checkVisibility = checkVisibilityFactory();
-    checkVisibility();
-    $(document).scroll(checkVisibility);
+    if (ANIMATE) {
+      // Check what sections are in the viewport, and set it to recheck
+      // after scroll events
+      var checkVisibility = checkVisibilityFactory();
+      checkVisibility();
+      $(document).scroll(checkVisibility);
+    }
 
     bindBackToTop();
 
@@ -473,32 +475,30 @@ tgm = window.tgm || {};
     );
 
     return function() {
-      if (ANIMATE) {
-        var windowScrollY = scrollY();
-        elements.each(function() {
-          var element = $(this);
-          // If the element has entered the viewport and needs to have it's animations trigger
-          if (!element.hasClass('is-visible') && element.offset().top < (windowScrollY + window.innerHeight - 250)) {
-            element.addClass('is-visible');
-            // Execute JS animations
-            _.each(onVisibilityBindings, function(callback, identifier) {
-              if (element.hasClass(identifier) || element.attr('id') == identifier) {
-                callback.apply(element);
-              }
-            });
-          }
-          // If the element is below the viewport and needs to be reset
-          if (element.hasClass('is-visible') && element.offset().top > (windowScrollY + window.innerHeight)) {
-            element.removeClass('is-visible');
-            // Reset any JS animations
-            _.each(offVisibilityBindings, function(callback, identifier) {
-              if (element.hasClass(identifier) || element.attr('id') == identifier) {
-                callback.apply(element);
-              }
-            });
-          }
-        })
-      }
+      var windowScrollY = scrollY();
+      elements.each(function() {
+        var element = $(this);
+        // If the element has entered the viewport and needs to have it's animations trigger
+        if (!element.hasClass('is-visible') && element.offset().top < (windowScrollY + window.innerHeight - 250)) {
+          element.addClass('is-visible');
+          // Execute JS animations
+          _.each(onVisibilityBindings, function(callback, identifier) {
+            if (element.hasClass(identifier) || element.attr('id') == identifier) {
+              callback.apply(element);
+            }
+          });
+        }
+        // If the element is below the viewport and needs to be reset
+        if (element.hasClass('is-visible') && element.offset().top > (windowScrollY + window.innerHeight)) {
+          element.removeClass('is-visible');
+          // Reset any JS animations
+          _.each(offVisibilityBindings, function(callback, identifier) {
+            if (element.hasClass(identifier) || element.attr('id') == identifier) {
+              callback.apply(element);
+            }
+          });
+        }
+      })
     }
   }
 

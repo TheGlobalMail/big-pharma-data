@@ -1697,8 +1697,11 @@ footer {
     fill: @blue;
   }
 
-  .active .bar-info.post-render {
-    display: block;
+  .active .bar-info {
+    visibility: visible;
+    p { // foreignObject p
+      display: block;
+    }
     .background {
       .opacity(70);
     }
@@ -1714,13 +1717,10 @@ footer {
 
   .bar-info {
     fill: white;
-    // Visibility hack is so we can get the size of the
-    // text before hiding it
-    visibility: hidden;
     position: relative;
-    &.post-render {
+    visibility: hidden;
+    p { // foreignObject p
       display: none;
-      visibility: visible;
     }
     .title {
       .font-size(30);

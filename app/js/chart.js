@@ -28,7 +28,7 @@
 
   BarChart.prototype.render = function(){
     var convertedData = this.convertedData = this.convertData();
-    var $container = $(this.id);
+    var $container = this.$container = $(this.id);
     var margin = {top: 10, right: 20, bottom: 80, left: 65},
         width = $container.width() - margin.left - margin.right;
     var height = this.height = 390 - margin.top - margin.bottom;
@@ -53,7 +53,7 @@
     y.domain([0, d3.max(convertedData, function(d) { return d.y; })]);
 
     // Insert the X axis
-    svg.append("g")
+    this.xAxisSvg = svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
@@ -86,19 +86,24 @@
       .style("stroke", "none");
 
     // Bars
-    this.barData = svg.selectAll(".bar")
+    this.barContainer = svg.append("g")
+      .classed("bar-container", true);
+
+    this.barGroup = this.barContainer.selectAll(".bar")
       .data(convertedData)
       .enter().append("g")
       .classed("bar-group", true)
-        .append("rect")
-        .classed("bar", true)
-        .attr("x", function(d) { return x(d.x); })
-        .attr("width", x.rangeBand())
-        .attr("y", function(d) { return y(d.y); })
-        .attr("height", function(d) { return height - y(d.y); });
+      .on("mouseenter", this.activateBar);
+
+    this.barData = this.barGroup.append("rect")
+      .classed("bar", true)
+      .attr("x", function(d) { return x(d.x); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.y); })
+      .attr("height", function(d) { return height - y(d.y); });
 
     // Bar hit areas
-    this.barHitArea = svg.selectAll(".bar-group")
+    this.barHitArea = this.barGroup
       .append("rect")
       .data(convertedData)
       .classed("bar-hit-area", true)
@@ -106,14 +111,11 @@
       .attr("width", x.rangeBand())
       .attr("y", 0)
       .attr("height", function(d) { return height; })
-      .on("mouseover", this.activateBar)
-      .on("mouseout", this.deactivateBar);
 
     // Bar info boxes
-    this.barInfo = svg.selectAll(".bar-group")
+    this.barInfo = this.barGroup
       .append("g")
       .classed("bar-info", true)
-      .on("mouseout", this.barInfoOnMouseOut)
       .attr("transform", function(d) {
         // Position them with the related bar
         var xPos = x(d.x) - (x.rangeBand() / 2) - 6;
@@ -173,6 +175,8 @@
     // TODO: super hacky, the update/render cycles should be rolled into
     // one, rather than faking an update to get around legacy specifications
     this.updateBarInfoText();
+
+    this.bindResetBarStates();
   };
 
   BarChart.prototype.convertData = function(){
@@ -308,7 +312,7 @@
   };
 
   BarChart.prototype.activateBar = function() {
-    var barGroup = this.parentNode;
+    var barGroup = this;
     // Denote the other bars as inactive
     _this.chart.selectAll(".bar-group")
       .classed("active", false)
@@ -321,39 +325,18 @@
     barGroup.parentElement.appendChild(barGroup);
   };
 
-  BarChart.prototype.deactivateBar = function(){
-    // Deactivate the bar if the new target is not a
-    // sibling or sibling's child.
-    if (!$(this.parentNode).has(d3.event.toElement).length) {
-      _this._deactivateBar(this);
-    }
-  };
-
-  BarChart.prototype._deactivateBar = function(barElement){
-    // Deactivate the bar
-    d3.select(barElement.parentElement).classed("active", false);
-    // Remove `inactive` classes from the other bars
+  BarChart.prototype.resetBarStates = function(){
     _this.chart.selectAll(".bar-group")
-      .filter(":not(.active)")
+      .classed("active", false)
       .classed("inactive", false);
   };
 
-  BarChart.prototype.barInfoOnMouseOut = function() {
-    var clientX = d3.event.clientX;
-    var clientY = d3.event.clientY;
-    var offset = $(this).offset();
-    var bBox = this.getBBox();
-    var top = offset.top - scrollY();
-    var bottom = top + bBox.height;
-    var left = offset.left;
-    var right = left + bBox.width;
-    if (
-      clientX < left || clientX > right ||
-      clientY < top || clientY > bottom
-    ) {
-      var bar = d3.select(this.parentNode).select('.bar').node();
-      _this._deactivateBar(bar);
-    }
+  BarChart.prototype.bindResetBarStates = function() {
+    this.barContainer.on("mouseleave", this.resetBarStates);
+    // FF hacks
+    this.$container.on("mouseleave", this.resetBarStates);
+    this.xAxisSvg.on("mouseenter", this.resetBarStates);
+    this.yAxisSvg.on("mouseenter", this.resetBarStates);
   };
 
   function scrollY() {
@@ -423,8 +406,7 @@
       // Delaying to ensure the bars have been positioned
       setTimeout(function() {
         // Reset the visibility state
-        var barInfo = d3.select(barInfoNode)
-          .classed("post-render", false);
+        var barInfo = d3.select(barInfoNode);
 
         var background = barInfo.select('.background');
         var title = barInfo.select('.title');
@@ -449,9 +431,6 @@
           "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
           "height": backgroundHeight + (newHeight - oldHeight)
         });
-
-        // Hide the barInfo
-        barInfo.classed("post-render", true);
       }, 200)
     })
   };
