@@ -20,6 +20,8 @@ tgm = window.tgm || {};
     $('#total-attendees').text(niceNumber(stats.summary.attendees));
 
     populateCompanies();
+    hashSeekCompaniesSection();
+    $(window).on('hashchange', hashSeekCompaniesSection);
 
     populateConditions();
 
@@ -57,6 +59,12 @@ tgm = window.tgm || {};
     bindBackToTop();
 
     bindScrollToIntro();
+  }
+
+  function hashSeekCompaniesSection() {
+    if (window.location.hash === '#companies') {
+      $('#full-list').click();
+    }
   }
 
   // Render the companies table. Order it by total $
@@ -356,6 +364,7 @@ tgm = window.tgm || {};
       tgm.charts.attendees.resetYAxisFromZero();
     },
     'disease': populateConditions,
+    // Counter animation
     'spending': function() {
       var parentElement = $(this).find('#per-week-estimate');
       var initialString = "$0,000,000";
