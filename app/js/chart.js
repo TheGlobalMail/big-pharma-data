@@ -92,8 +92,7 @@
       this.barGroup = this.barContainer.selectAll(".bar")
         .data(convertedData)
         .enter().append("g")
-        .classed("bar-group", true)
-        .on("mouseenter", this.activateBar);
+        .classed("bar-group", true);
 
       this.barData = this.barGroup.append("rect")
         .classed("bar", true)
@@ -136,21 +135,30 @@
       }
       // Textual content
       this.barInfoText = this.barInfo.append("g")
-        .classed("text", true)
-        .append("foreignObject")
+        .classed("text", true);
+      this.foreignObjects = this.barInfoText.append("foreignObject")
         .attr("x", 0)
         .attr("y", 0)
         .attr("width", 100)
         .attr("height", 100)
-        .append("xhtml:body")
-        .classed("svg-foreign-object bar-chart", true)
-        .append("p")
-        .text(function(d) { return d.x; });
+          .append("xhtml:body")
+          .classed("svg-foreign-object bar-chart", true)
+            .append("p")
+            .text(function(d) { return d.x; });
 
-      // Apply the finer positioning and sizing details to the bar info boxes
-      this.updateBarInfoBox();
+      this.bindOnResize();
 
-      this.bindResetBarStates();
+      if (this.foreignObjects.node().getBBox !== undefined) { // IE and friends (incomplete SVG spec implementations)
+        // Suppress the bar info boxes
+        $(this.barInfo[0]).hide();
+      } else { // Normal browsers
+        // Apply the finer positioning and sizing details to the bar info boxes
+        this.updateBarInfoBox();
+        // Activate bars on hover
+        this.barGroup.on("mouseenter", this.activateBar)
+        // Deactivate bars
+        this.bindResetBarStates();
+      }
     };
 
     this.convertData = function(){
@@ -178,6 +186,27 @@
         .attr("y", function(d) { return yScale(d.y); })
         .attr("height", function(d) { return height - yScale(d.y); });
       this.updateBarInfoBox();
+    };
+
+    this.bindOnResize = function() {
+      // This is a hacky way of having the charts scale to window resizes.
+      // We can re-render the chart, but this can sporadically cause race conditions
+      // which will flood the console with plenty of DOM level errors (due to the deletion
+      // of nodes while JS is still trying to operate on them). Despite the errors, the
+      // resize functionality seems functional.
+      var debouncer = _.debounce(function() {
+        _this.render();
+        var siblingBtnGroup = _this.$container.siblings('.btn-group');
+        if (siblingBtnGroup.length) {
+          if (siblingBtnGroup.find('.btn.active').index()) {
+            siblingBtnGroup.find('.btn.active').click();
+          }
+        }
+        // If multiple renders are run asynchronously, the container may be polluted
+        // with extra svg elements. This removes all but the active one.
+        _this.$container.find('svg:not(:last-child)').remove();
+      }, 500);
+      $(window).on('resize', debouncer);
     };
 
     this.resetYAxisFromZero = function() {
@@ -299,7 +328,7 @@
         .classed("active", true)
         .classed("inactive", false);
       // Bring the active bar group to the front
-      barGroup.parentElement.appendChild(barGroup);
+      barGroup.parentNode.appendChild(barGroup);
     };
 
     this.resetBarStates = function(){
@@ -418,6 +447,9 @@
           $(this).html(html);
         });
 
+      var chartNode = _this.chart.node();
+      var chartRightOffset = $(chartNode).offset().left + chartNode.getBBox().width;
+
       // After the text has been updated, tweak the widths and heights
       this.barInfo.each(function(){
         var barInfoNode = this;
@@ -425,6 +457,12 @@
         setTimeout(function() {
           // Reset the visibility state
           var barInfo = d3.select(barInfoNode);
+          var $barInfo = $(barInfoNode);
+
+          // If the info box was previously moved around, reset it's position
+          if ($barInfo.attr('data-transform')) {
+            $barInfo.attr('transform', $barInfo.attr('data-transform'));
+          }
 
           var background = barInfo.select('.background');
           var title = barInfo.select('.title');
@@ -457,6 +495,15 @@
             "width": foreignObject.getBBox().width + (_this.options.barInfoBoxPadding * 2),
             "height": backgroundHeight + (newHeight - oldHeight)
           });
+          // Shift the box to the left, if it is clipped by the right side of the chart
+          var barInfoRightOffset = $barInfo.offset().left + barInfoNode.getBBox().width;
+          if (barInfoRightOffset > chartRightOffset) {
+            var difference = barInfoRightOffset - chartRightOffset;
+            var transform = d3.transform($barInfo.attr('transform'));
+            $barInfo.attr('data-transform', transform.toString());
+            transform.translate[0] -= difference;
+            $barInfo.attr('transform', transform.toString());
+          }
         }, 200);
       })
     };
