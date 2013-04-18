@@ -160,7 +160,7 @@
     };
 
     this.updateMetric = function(metric, index){
-      if (index) {
+      if (index !== undefined) {
         this.buttonIndex = index;
       }
       this.metric = metric;
