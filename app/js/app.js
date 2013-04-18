@@ -441,7 +441,7 @@ tgm = window.tgm || {};
       setTimeout(tgm.counter.animationFunction, 450);
     },
     // Hide the related stories panel
-    'data': function() {
+    'fade': function() {
       $('#related').fadeOut();
     }
   };
@@ -469,7 +469,7 @@ tgm = window.tgm || {};
       element.html(initialHTML);
     },
     // Show the related stories panel
-    'data': function() {
+    'fade': function() {
       $('#related').fadeIn();
     }
   };
