@@ -125,11 +125,17 @@ tgm = window.tgm || {};
     $('#company-name').text(company.name || company.company);
     $('#company-products').text(niceNumber(company.products));
     $('#company-total-cost').text(toDollars(company.cost));
-    $('#company-summary').text(company.summary);
-    $('#company-blurb').text(company.blurb);
-    $('#company-pbs2012').text(company.pbs2012);
-    $('#company-revenueAu').text(company.revenueAu);
-    $('#company-revenueGlobal').text(company.revenueGlobal);
+    _.each(['summary', 'blurb'], function(detail){
+      var $detail = $('#company-' + detail);
+      if (company[detail]){
+        $detail.text(company[detail]).show();
+      }else{
+        $detail.text('').hide();
+      }
+    });
+    $('#company-revenueAu').text(company.revenueAu || '');
+    $('#company-revenueGlobal').text(company.revenueGlobal || '');
+
     $('#company-total-events').text(niceNumber(company.events));
     companyList('#company-top-professions', company.professions, 'profession');
     companyList('#company-top-conditions', company.conditions, 'condition');
