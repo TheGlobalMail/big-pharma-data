@@ -146,6 +146,8 @@
             .append("p")
             .text(function(d) { return d.x; });
 
+      this.bindOnResize();
+
       if (this.foreignObjects.node().getBBox !== undefined) { // IE and friends (incomplete SVG spec implementations)
         // Suppress the bar info boxes
         $(this.barInfo[0]).hide();
@@ -184,6 +186,27 @@
         .attr("y", function(d) { return yScale(d.y); })
         .attr("height", function(d) { return height - yScale(d.y); });
       this.updateBarInfoBox();
+    };
+
+    this.bindOnResize = function() {
+      // This is a hacky way of having the charts scale to window resizes.
+      // We can re-render the chart, but this can sporadically cause race conditions
+      // which will flood the console with plenty of DOM level errors (due to the deletion
+      // of nodes while JS is still trying to operate on them). Despite the errors, the
+      // resize functionality seems functional.
+      var debouncer = _.debounce(function() {
+        _this.render();
+        var siblingBtnGroup = _this.$container.siblings('.btn-group');
+        if (siblingBtnGroup.length) {
+          if (siblingBtnGroup.find('.btn.active').index()) {
+            siblingBtnGroup.find('.btn.active').click();
+          }
+        }
+        // If multiple renders are run asynchronously, the container may be polluted
+        // with extra svg elements. This removes all but the active one.
+        _this.$container.find('svg:not(:last-child)').remove();
+      }, 500);
+      $(window).on('resize', debouncer);
     };
 
     this.resetYAxisFromZero = function() {
