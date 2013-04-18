@@ -418,6 +418,9 @@
           $(this).html(html);
         });
 
+      var chartNode = _this.chart.node();
+      var chartRightOffset = $(chartNode).offset().left + chartNode.getBBox().width;
+
       // After the text has been updated, tweak the widths and heights
       this.barInfo.each(function(){
         var barInfoNode = this;
@@ -425,6 +428,12 @@
         setTimeout(function() {
           // Reset the visibility state
           var barInfo = d3.select(barInfoNode);
+          var $barInfo = $(barInfoNode);
+
+          // If the info box was previously moved around, reset it's position
+          if ($barInfo.attr('data-transform')) {
+            $barInfo.attr('transform', $barInfo.attr('data-transform'));
+          }
 
           var background = barInfo.select('.background');
           var title = barInfo.select('.title');
@@ -457,6 +466,15 @@
             "width": foreignObject.getBBox().width + (_this.options.barInfoBoxPadding * 2),
             "height": backgroundHeight + (newHeight - oldHeight)
           });
+          // Shift the box to the left, if it is clipped by the right side of the chart
+          var barInfoRightOffset = $barInfo.offset().left + barInfoNode.getBBox().width;
+          if (barInfoRightOffset > chartRightOffset) {
+            var difference = barInfoRightOffset - chartRightOffset;
+            var transform = d3.transform($barInfo.attr('transform'));
+            $barInfo.attr('data-transform', transform.toString());
+            transform.translate[0] -= difference;
+            $barInfo.attr('transform', transform.toString());
+          }
         }, 200);
       })
     };
