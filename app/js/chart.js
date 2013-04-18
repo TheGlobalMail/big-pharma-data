@@ -28,9 +28,10 @@
     this.render = function(){
       var convertedData = this.convertedData = this.convertData();
       var $container = this.$container = $(this.id);
+      var heightSetting = parseInt($container.css('min-height')) || 390;
       var margin = {top: 10, right: 20, bottom: 80, left: 65},
         width = $container.width() - margin.left - margin.right;
-      var height = this.height = 390 - margin.top - margin.bottom;
+      var height = this.height = heightSetting - margin.top - margin.bottom;
       var x = d3.scale.ordinal()
         .rangeRoundBands([0, width], 0.4);
       var y = this.yScale = d3.scale.linear()
@@ -146,7 +147,7 @@
         .append("p")
         .text(function(d) { return d.x; });
 
-      // TODO: kinda hacky, the update/render cycles should be rolled into one
+      // Apply the finer positioning and sizing details to the bar info boxes
       this.updateBarInfoBox();
 
       this.bindResetBarStates();
@@ -335,6 +336,11 @@
       }
     };
 
+    this._numberFormatter = d3.format("0,000");
+    this.formatNumber = function(number) {
+      return this._numberFormatter(number);
+    };
+
     this.updateBarInfoBox = function() {
       // Updates the sizes, positions and text of each bar info box
 
@@ -366,7 +372,7 @@
           bgHeight += $foreignObject.offset().top - $title.offset().top;
           bgY = -title.getBBox().height + bgY;
         } else {
-          bgY /= 2;
+          bgY /= 20;
         }
 
         $background.attr({
@@ -382,7 +388,7 @@
       // Update each title
       this.barInfo.each(function(d, i) {
         var value = Math.floor(_this.convertedData[i].y);
-        var formattedValue = d3.format("0,000")(value);
+        var formattedValue = _this.formatNumber(value);
         var $title = $(d3.select(this).select('.title').node());
         if (_this.options.prependToYAxisScales) {
           formattedValue = '' + _this.options.prependToYAxisScales + value;
