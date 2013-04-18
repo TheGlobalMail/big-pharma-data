@@ -307,7 +307,7 @@ tgm = window.tgm || {};
       barInfoText: [
         'An average of <br><strong>$<%= yAxis %></strong><br> was spent per <%= xAxis %>',
         '<%= xAxis %>s attended an average of <br><strong><%= yAxis %></strong><br> education events',
-        'In total <br><strong>$<%= yAxis %>m</strong><br>was spent on <%= xAxis %>s'
+        'In total <br><strong>$<%= yAxis %></strong><br>was spent on <%= xAxis %>s'
       ],
       prependToYAxisScales: prependToYAxisScales[0],
       hideTitle: true
