@@ -344,7 +344,7 @@
     this.updateBarInfoBox = function() {
       // Updates the sizes, positions and text of each bar info box
 
-      // Position and size the bar info box's elements
+      // Initially position and size the bar info box's elements
       this.barInfo.each(function() {
         var barInfo = d3.select(this);
         var background = barInfo.select('.background').node();
@@ -367,9 +367,11 @@
         });
 
         var bgHeight = foreignObjectHeight + padding;
+        var bgWidth = padding * 2;
         var bgY = padding - 2;
-        if (title.getBBox().height) {
+        if ($title.css('display') !== 'none' && title.getBBox().height) {
           bgHeight += $foreignObject.offset().top - $title.offset().top;
+          bgWidth += title.getBBox().width;
           bgY = -title.getBBox().height + bgY;
         } else {
           bgY /= 20;
@@ -379,7 +381,7 @@
           // Sum of the elements' height
           "height": bgHeight,
           // Widest element + padding
-          "width": title.getBBox().width + (padding * 2),
+          "width": bgWidth,
           // Top margin
           "y": bgY
         });
@@ -398,27 +400,17 @@
 
       // Update each text
       this.barInfo.selectAll('.text p')
-        .each(function(d) {
+        .data(this.convertedData)
+        .each(function(d, di, i) {
+          d = _this.convertedData[i];
           var html = '';
           if (_this.options.barInfoText) {
             var template = _this.options.barInfoText[_this.buttonIndex];
-            var xAxis, yAxis;
-            if (isNaN(d.x)) {
-              xAxis = d.x;
-              if (_.last(xAxis) === 's') {
-                xAxis = xAxis.slice(0, xAxis.length-1);
-              }
-            } else {
-              xAxis = Math.floor(d.x);
+            var xAxis = d.x;
+            if (_.last(xAxis) === 's') {
+              xAxis = xAxis.slice(0, xAxis.length-1);
             }
-            if (isNaN(d.y)) {
-              yAxis = d.y;
-              if (yAxis[yAxis.length-1] === 's') {
-                yAxis = yAxis.slice(0, yAxis.length-1);
-              }
-            } else {
-              yAxis = Math.floor(d.y);
-            }
+            var yAxis = _this.formatNumber(Math.floor(d.y));
             html = _.template(template, {xAxis: xAxis, yAxis: yAxis});
           } else {
             html = d.x;
@@ -426,7 +418,7 @@
           $(this).html(html);
         });
 
-      // Resize and position each
+      // After the text has been updated, tweak the widths and heights
       this.barInfo.each(function(){
         var barInfoNode = this;
         // Delaying to ensure the bars have been positioned
@@ -437,24 +429,32 @@
           var background = barInfo.select('.background');
           var title = barInfo.select('.title');
           // Left offset difference between the first two bars
-          var boxInnerWidth = _.max([
-            title.node().getBBox().width,
-            $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9
-          ]);
+          var boxInnerWidth = $(_this.barData[0][1]).offset().left - $(_this.barData[0][0]).offset().left + 9;
+          if ($(title.node()).css('display') !== 'none') {
+             boxInnerWidth = _.max([boxInnerWidth, title.node().getBBox().width]);
+          }
           var text = barInfo.select('.text');
           var $foreignObject = $(text.node()).find('foreignObject');
           var foreignObject = $foreignObject.get(0);
           var oldHeight = foreignObject.getBBox().height;
           $foreignObject.attr("width", boxInnerWidth);
           var $foreignObjectPara = $foreignObject.find('p');
-          // Sum of the paragraph's height & padding-top
           var newHeight = $foreignObjectPara.height() + parseInt($foreignObjectPara.css('padding-top')) + 3;
           $foreignObject.attr("height", newHeight);
-
-          // Scale the background for the new size
           var backgroundHeight = parseInt(background.attr('height'));
+          var $foreignObjectParaWidth = $foreignObjectPara.width();
+          if ($foreignObject.width() < $foreignObjectParaWidth) {
+            $foreignObject.attr("width", $foreignObjectParaWidth);
+          }
+          // Hack for FF, some of the bar info boxes end up with cut-off text and
+          // small backgrounds
+          if (foreignObject.getBBox().height < $foreignObjectPara.height()) {
+            $foreignObject.attr("height", $foreignObjectPara.height() + 30);
+            newHeight += _this.options.barInfoBoxPadding;
+          }
+          // Resize the BG to accommodate the new text
           background.attr({
-            "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
+            "width": foreignObject.getBBox().width + (_this.options.barInfoBoxPadding * 2),
             "height": backgroundHeight + (newHeight - oldHeight)
           });
         }, 200);
