@@ -92,8 +92,7 @@
       this.barGroup = this.barContainer.selectAll(".bar")
         .data(convertedData)
         .enter().append("g")
-        .classed("bar-group", true)
-        .on("mouseenter", this.activateBar);
+        .classed("bar-group", true);
 
       this.barData = this.barGroup.append("rect")
         .classed("bar", true)
@@ -136,21 +135,28 @@
       }
       // Textual content
       this.barInfoText = this.barInfo.append("g")
-        .classed("text", true)
-        .append("foreignObject")
+        .classed("text", true);
+      this.foreignObjects = this.barInfoText.append("foreignObject")
         .attr("x", 0)
         .attr("y", 0)
         .attr("width", 100)
         .attr("height", 100)
-        .append("xhtml:body")
-        .classed("svg-foreign-object bar-chart", true)
-        .append("p")
-        .text(function(d) { return d.x; });
+          .append("xhtml:body")
+          .classed("svg-foreign-object bar-chart", true)
+            .append("p")
+            .text(function(d) { return d.x; });
 
-      // Apply the finer positioning and sizing details to the bar info boxes
-      this.updateBarInfoBox();
-
-      this.bindResetBarStates();
+      if (this.foreignObjects.node().getBBox !== undefined) { // IE and friends (incomplete SVG spec implementations)
+        // Suppress the bar info boxes
+        $(this.barInfo[0]).hide();
+      } else { // Normal browsers
+        // Apply the finer positioning and sizing details to the bar info boxes
+        this.updateBarInfoBox();
+        // Activate bars on hover
+        this.barGroup.on("mouseenter", this.activateBar)
+        // Deactivate bars
+        this.bindResetBarStates();
+      }
     };
 
     this.convertData = function(){
@@ -299,7 +305,7 @@
         .classed("active", true)
         .classed("inactive", false);
       // Bring the active bar group to the front
-      barGroup.parentElement.appendChild(barGroup);
+      barGroup.parentNode.appendChild(barGroup);
     };
 
     this.resetBarStates = function(){
