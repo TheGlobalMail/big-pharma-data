@@ -454,7 +454,7 @@
           // Scale the background for the new size
           var backgroundHeight = parseInt(background.attr('height'));
           background.attr({
-            "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 2),
+            "width": boxInnerWidth + (_this.options.barInfoBoxPadding * 3),
             "height": backgroundHeight + (newHeight - oldHeight)
           });
         }, 200);
