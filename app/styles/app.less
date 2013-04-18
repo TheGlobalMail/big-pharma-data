@@ -283,12 +283,36 @@
 
   }
 
+  .sticky-nav {
+    position: relative;
+    top: -20px;
+    padding-top: 20px;
+    &.sticky {
+      position: fixed;
+      top: 20px;
+      padding-top: 0;
+    }
+  }
   // MOBILE NAVIGATION
+  .nav-mob-container {
+    // Placeholder for the sticky menu so we can
+    // keep the other elements in place
+    height: 33px;
+  }
   #nav-mob {
     display:none;
     text-align: center;
     text-shadow:none;
     margin-bottom: 20px;
+    .transition(all 0) !important;
+    &.sticky {
+      position: fixed;
+      top: 0;
+      // TODO: work out why 1px is needed and le fix dat
+      left: 0px;
+      width: 100%;
+      .transition(all 0);
+    }
     .nav {
       display: block;
       height: 33px;

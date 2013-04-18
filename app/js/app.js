@@ -61,6 +61,8 @@ tgm = window.tgm || {};
     bindBackToTop();
 
     bindScrollToIntro();
+
+    bindStickyNavs();
   }
 
   function hashSeekCompaniesSection() {
@@ -523,6 +525,46 @@ tgm = window.tgm || {};
       event.preventDefault();
       $.scrollTo($('#section-container'), 500);
     });
+  }
+
+  function bindStickyNavs() {
+    var nav = $('.sticky-nav, #nav-mob');
+
+    var bindStickyPosition = function(element) {
+      // Bind the element's natural offset from the top in it's data
+      var $element = $(element);
+      var hasClass = $element.hasClass('sticky');
+      if (hasClass) {
+        $element.toggleClass('sticky');
+      }
+      $element.data({'stickyPosition': $element.offset().top});
+      if (hasClass) {
+        $element.toggleClass('sticky');
+      }
+    };
+
+    var checkPositions = function() {
+      _.each(nav, function(element) {
+        var $element = $(element);
+        if (scrollY() >= $element.data().stickyPosition) {
+          $element.addClass('sticky');
+        } else {
+          $element.removeClass('sticky');
+        }
+      })
+    };
+
+    // Store the position
+    _.each(nav, bindStickyPosition);
+
+    // Restore the position on window.onresize
+    $(window).on('resize', function() {
+      _.each(nav, bindStickyPosition)
+    });
+
+    // Check if the element is either below or inline with it's `stickyPosition`
+    $(window).on('resize', checkPositions);
+    $(window).on('scroll', checkPositions);
   }
 
   $.fn.modal.defaults.modalOverflow = true;
