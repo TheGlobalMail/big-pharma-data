@@ -80,7 +80,7 @@ tgm = window.tgm || {};
       var row = '<tr style="display:none">';
       row += '<td class="company">' + '<a data-company="' + company.company;
       row += '" href="/profiles/' + company.company + '">';
-      row += (company.name || '!!MISSING!! ' + company.company).replace(/ pty ltd/i, '')  + '</a>' + '</td>';
+      row += (company.name || '!!MISSING!! ' + company.company).replace(/ (pty )*(ltd|limited)/i, '')  + '</a>' + '</td>';
       row += '  <td class="dollars">' + toDollars(company.cost) + '</td>';
       row += '  <td class="attendees">' + niceNumber(company.attendees) + '</td>';
       row += '  <td class="events">' + niceNumber(company.events) + '</td>';
