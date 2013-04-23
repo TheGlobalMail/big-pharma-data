@@ -132,35 +132,51 @@ window.stats = {
       "conditions": [
         {
           "condition": "heart_disease",
-          "cost": 1018837.47,
-          "attendees": 8326,
-          "events": 296,
+          "cost": 1025186.45,
+          "attendees": 8537,
+          "events": 307,
           "alcohol": 12,
-          "perperson": 82.75
+          "perperson": 80.93
         },
         {
-          "condition": "ageing",
-          "cost": 244231.96,
-          "attendees": 1688,
-          "events": 57,
-          "alcohol": 7,
-          "perperson": 135.25
-        },
-        {
-          "condition": "hiv",
-          "cost": 147749.79,
-          "attendees": 15955,
-          "events": 144,
-          "alcohol": 32,
-          "perperson": 51.4
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "cancer",
-          "cost": 151451.72,
-          "attendees": 13307,
-          "events": 305,
+          "cost": 154954.31,
+          "attendees": 13380,
+          "events": 307,
           "alcohol": 29,
-          "perperson": 28.1
+          "perperson": 28.18
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 23594.64,
+          "attendees": 481,
+          "events": 21,
+          "alcohol": 2,
+          "perperson": 40.3
+        },
+        {
+          "condition": "virus",
+          "cost": 15615.81,
+          "attendees": 2172,
+          "events": 66,
+          "alcohol": 0,
+          "perperson": 13.79
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "fertility",
@@ -171,12 +187,12 @@ window.stats = {
           "perperson": 41.64
         },
         {
-          "condition": "sexual",
-          "cost": 329867.89,
-          "attendees": 2780,
-          "events": 127,
-          "alcohol": 17,
-          "perperson": 88.47
+          "condition": "addiction",
+          "cost": 113.8,
+          "attendees": 9,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 12.64
         },
         {
           "condition": "mental_illness",
@@ -187,20 +203,20 @@ window.stats = {
           "perperson": 51.79
         },
         {
+          "condition": "oral_health",
+          "cost": 2224.27,
+          "attendees": 29,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 71
+        },
+        {
           "condition": "diabetes",
           "cost": 595638.04,
           "attendees": 4487,
           "events": 163,
           "alcohol": 6,
           "perperson": 104.25
-        },
-        {
-          "condition": "hypertension",
-          "cost": 355896.33,
-          "attendees": 6071,
-          "events": 148,
-          "alcohol": 20,
-          "perperson": 90.84
         },
         {
           "condition": "dementia",
@@ -211,20 +227,100 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 56820.95,
-          "attendees": 1918,
-          "events": 44,
-          "alcohol": 13,
-          "perperson": 66.33
-        },
-        {
-          "condition": "osteoporosis",
+          "condition": "allergies",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 67552.09,
+          "attendees": 1444,
+          "events": 42,
+          "alcohol": 20,
+          "perperson": 50.82
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 251827.48,
+          "attendees": 1800,
+          "events": 61,
+          "alcohol": 7,
+          "perperson": 130.86
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 50623.12,
+          "attendees": 606,
+          "events": 25,
+          "alcohol": 11,
+          "perperson": 103.5
+        },
+        {
+          "condition": "respiratory",
+          "cost": 336411.94,
+          "attendees": 6015,
+          "events": 143,
+          "alcohol": 20,
+          "perperson": 86.45
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": 1594,
+          "attendees": 68,
+          "events": 5,
+          "alcohol": 1,
+          "perperson": 26.53
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": 355896.33,
+          "attendees": 6071,
+          "events": 148,
+          "alcohol": 20,
+          "perperson": 90.84
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 158330.84,
+          "attendees": 16617,
+          "events": 181,
+          "alcohol": 34,
+          "perperson": 44.58
+        },
+        {
+          "condition": "hiv",
+          "cost": 149467.79,
+          "attendees": 16154,
+          "events": 147,
+          "alcohol": 32,
+          "perperson": 50.58
         }
       ],
       "perheadBins": [
@@ -410,6 +506,14 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "heart_disease",
           "cost": 1075933.18,
           "attendees": 19460,
@@ -418,47 +522,23 @@ window.stats = {
           "perperson": 56.16
         },
         {
-          "condition": "hiv",
-          "cost": 110,
-          "attendees": 3,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 400,
+          "attendees": 11,
           "events": 1,
           "alcohol": 0,
-          "perperson": 36.67
+          "perperson": 36.36
         },
         {
-          "condition": "mental_illness",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "paedology",
-          "cost": 61796.25,
-          "attendees": 2060,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 30.99
-        },
-        {
-          "condition": "sexual",
-          "cost": 24618.2,
-          "attendees": 494,
-          "events": 18,
-          "alcohol": 0,
-          "perperson": 56.82
-        },
-        {
-          "condition": "diabetes",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "fertility",
+          "condition": "obesity",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -490,7 +570,119 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "respiratory",
+          "cost": 787842.23,
+          "attendees": 3575,
+          "events": 168,
+          "alcohol": 2,
+          "perperson": 100.04
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 342578.8,
+          "attendees": 1466,
+          "events": 71,
+          "alcohol": 2,
+          "perperson": 105.09
+        },
+        {
+          "condition": "virus",
+          "cost": 2799.75,
+          "attendees": 207,
+          "events": 10,
+          "alcohol": 0,
+          "perperson": 13.98
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": 110,
+          "attendees": 3,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 36.67
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 23211.7,
+          "attendees": 487,
+          "events": 18,
+          "alcohol": 0,
+          "perperson": 50.43
+        },
+        {
+          "condition": "mental_illness",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 800,
+          "attendees": 78,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 10.26
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -688,23 +880,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "mental_illness",
-          "cost": 4545.45,
-          "attendees": 55,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 82.64
-        },
-        {
-          "condition": "sexual",
-          "cost": 16418.3,
-          "attendees": 1188,
-          "events": 5,
-          "alcohol": 0,
-          "perperson": 70.32
-        },
-        {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -712,7 +888,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -728,6 +912,86 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 4545.45,
+          "attendees": 55,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 82.64
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 4545.45,
+          "attendees": 55,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 82.64
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 23588.59,
+          "attendees": 41,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 392.61
+        },
+        {
+          "condition": "heart_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 4930.83,
+          "attendees": 67,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 85.22
+        },
+        {
           "condition": "fertility",
           "cost": null,
           "attendees": null,
@@ -736,7 +1000,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -744,15 +1008,47 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 13139.84,
-          "attendees": 158,
-          "events": 7,
-          "alcohol": 1,
-          "perperson": 87.98
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "cancer",
+          "cost": 2646.36,
+          "attendees": 46,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 57.53
+        },
+        {
+          "condition": "allergies",
+          "cost": 68934.22,
+          "attendees": 586,
+          "events": 8,
+          "alcohol": 5,
+          "perperson": 104.68
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -766,14 +1062,6 @@ window.stats = {
           "events": 4,
           "alcohol": 0,
           "perperson": 55.97
-        },
-        {
-          "condition": "osteoporosis",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
         },
         {
           "condition": "ageing",
@@ -966,7 +1254,15 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "hypertension",
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -982,12 +1278,12 @@ window.stats = {
           "perperson": 13.67
         },
         {
-          "condition": "sexual",
-          "cost": 99254.47,
-          "attendees": 486,
-          "events": 11,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 151.3
+          "perperson": null
         },
         {
           "condition": "hiv",
@@ -998,36 +1294,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "diabetes",
-          "cost": 0,
-          "attendees": 40,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 0
-        },
-        {
-          "condition": "paedology",
-          "cost": 108115.38,
-          "attendees": 5799,
-          "events": 36,
-          "alcohol": 0,
-          "perperson": 33.94
-        },
-        {
-          "condition": "fertility",
+          "condition": "obesity",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "ageing",
-          "cost": 115973.9,
-          "attendees": 1288,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 122.84
         },
         {
           "condition": "cancer",
@@ -1036,6 +1308,22 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 17518.68,
+          "attendees": 1334,
+          "events": 21,
+          "alcohol": 0,
+          "perperson": 19.43
+        },
+        {
+          "condition": "allergies",
+          "cost": 4402399.14,
+          "attendees": 91216,
+          "events": 1591,
+          "alcohol": 0,
+          "perperson": 222.35
         },
         {
           "condition": "mental_illness",
@@ -1054,12 +1342,108 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 160,
+          "attendees": 110,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 1.6
+        },
+        {
+          "condition": "diabetes",
+          "cost": 0,
+          "attendees": 40,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 0
+        },
+        {
+          "condition": "ageing",
+          "cost": 126669.09,
+          "attendees": 3125,
+          "events": 15,
+          "alcohol": 0,
+          "perperson": 57.62
+        },
+        {
+          "condition": "fertility",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 0,
+          "attendees": 13,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 0
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": 5226,
+          "attendees": 100,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 52.26
         }
       ],
       "perheadBins": [
@@ -1244,15 +1628,31 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "dementia",
-          "cost": 220,
-          "attendees": 25,
-          "events": 1,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 8.8
+          "perperson": null
         },
         {
-          "condition": "hypertension",
+          "condition": "obesity",
+          "cost": 56,
+          "attendees": 8,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 7
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -1268,28 +1668,12 @@ window.stats = {
           "perperson": 16.61
         },
         {
-          "condition": "ageing",
-          "cost": 10583,
-          "attendees": 263,
-          "events": 11,
-          "alcohol": 3,
-          "perperson": 40.98
-        },
-        {
           "condition": "hiv",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "fertility",
-          "cost": 398,
-          "attendees": 32,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 13.3
         },
         {
           "condition": "heart_disease",
@@ -1308,6 +1692,94 @@ window.stats = {
           "perperson": 7.75
         },
         {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": 220,
+          "attendees": 25,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 8.8
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 398,
+          "attendees": 32,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 13.3
+        },
+        {
+          "condition": "respiratory",
+          "cost": 3982,
+          "attendees": 545,
+          "events": 13,
+          "alcohol": 0,
+          "perperson": 7.5
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "mental_illness",
           "cost": 987,
           "attendees": 79,
@@ -1316,28 +1788,36 @@ window.stats = {
           "perperson": 17.56
         },
         {
-          "condition": "sexual",
-          "cost": 3851,
-          "attendees": 48,
-          "events": 1,
-          "alcohol": 1,
-          "perperson": 80.23
-        },
-        {
-          "condition": "paedology",
-          "cost": 864,
-          "attendees": 100,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 8.64
-        },
-        {
-          "condition": "osteoporosis",
+          "condition": "paediatrics",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 18286,
+          "attendees": 1060,
+          "events": 35,
+          "alcohol": 4,
+          "perperson": 20.11
         }
       ],
       "perheadBins": [
@@ -1522,12 +2002,36 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
-          "cost": 155146.18,
-          "attendees": 7625,
-          "events": 347,
-          "alcohol": 6,
-          "perperson": 41.04
+          "condition": "musculoskeletal",
+          "cost": 989438.38,
+          "attendees": 2291,
+          "events": 74,
+          "alcohol": 0,
+          "perperson": 218.5
+        },
+        {
+          "condition": "virus",
+          "cost": 346785.71,
+          "attendees": 1736,
+          "events": 80,
+          "alcohol": 1,
+          "perperson": 161.27
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 64568.53,
+          "attendees": 5590,
+          "events": 278,
+          "alcohol": 4,
+          "perperson": 10.04
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "diabetes",
@@ -1538,28 +2042,12 @@ window.stats = {
           "perperson": 238.19
         },
         {
-          "condition": "mental_illness",
-          "cost": 618903.26,
-          "attendees": 2145,
-          "events": 40,
-          "alcohol": 0,
-          "perperson": 249.43
-        },
-        {
-          "condition": "ageing",
-          "cost": 969587.25,
-          "attendees": 4208,
-          "events": 131,
-          "alcohol": 0,
-          "perperson": 99.77
-        },
-        {
-          "condition": "hiv",
-          "cost": 1330.52,
-          "attendees": 127,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 12.96
+          "condition": "cancer",
+          "cost": 3508677.29,
+          "attendees": 47729,
+          "events": 2152,
+          "alcohol": 72,
+          "perperson": 52.98
         },
         {
           "condition": "dementia",
@@ -1570,36 +2058,124 @@ window.stats = {
           "perperson": 15.52
         },
         {
-          "condition": "heart_disease",
-          "cost": 666877.44,
-          "attendees": 1235,
+          "condition": "hiv",
+          "cost": 18624.88,
+          "attendees": 265,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 165.94
+        },
+        {
+          "condition": "auto_immune",
+          "cost": 240038.49,
+          "attendees": 261,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 282.82
+        },
+        {
+          "condition": "respiratory",
+          "cost": 538894.28,
+          "attendees": 682,
+          "events": 21,
+          "alcohol": 0,
+          "perperson": 208.77
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 220816.36,
+          "attendees": 961,
+          "events": 25,
+          "alcohol": 1,
+          "perperson": 103.55
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 249914.38,
+          "attendees": 84,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 2940.74
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 268958.72,
+          "attendees": 288,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 243.07
+        },
+        {
+          "condition": "ageing",
+          "cost": 1493276.03,
+          "attendees": 5891,
+          "events": 195,
+          "alcohol": 0,
+          "perperson": 104.49
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 618903.26,
+          "attendees": 2145,
           "events": 40,
           "alcohol": 0,
-          "perperson": 211.42
+          "perperson": 249.43
         },
         {
-          "condition": "cancer",
-          "cost": 3130238.14,
-          "attendees": 46479,
-          "events": 2102,
-          "alcohol": 70,
-          "perperson": 52.23
+          "condition": "gastro",
+          "cost": 41219.73,
+          "attendees": 200,
+          "events": 10,
+          "alcohol": 1,
+          "perperson": 44.29
         },
         {
-          "condition": "osteoporosis",
-          "cost": 984812.88,
-          "attendees": 2134,
-          "events": 68,
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 235.85
+          "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 1342264.3,
-          "attendees": 9995,
-          "events": 365,
-          "alcohol": 7,
-          "perperson": 110.3
+          "condition": "heart_disease",
+          "cost": 667259.9,
+          "attendees": 1270,
+          "events": 41,
+          "alcohol": 0,
+          "perperson": 206.53
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hypertension",
@@ -1610,12 +2186,12 @@ window.stats = {
           "perperson": 199.53
         },
         {
-          "condition": "fertility",
-          "cost": 220816.36,
-          "attendees": 961,
-          "events": 25,
+          "condition": "sexual_health",
+          "cost": 91309.19,
+          "attendees": 634,
+          "events": 17,
           "alcohol": 1,
-          "perperson": 103.55
+          "perperson": 170.42
         }
       ],
       "perheadBins": [
@@ -1800,7 +2376,79 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 109.38,
+          "attendees": 14,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 7.81
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -1816,20 +2464,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "cancer",
-          "cost": 109.38,
-          "attendees": 14,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 7.81
         },
         {
           "condition": "heart_disease",
@@ -1848,7 +2488,7 @@ window.stats = {
           "perperson": 56.12
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -1856,7 +2496,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -1872,7 +2512,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -1880,7 +2520,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -1889,6 +2529,38 @@ window.stats = {
         },
         {
           "condition": "ageing",
+          "cost": 532.71,
+          "attendees": 32,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 16.65
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2078,20 +2750,12 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "fertility",
-          "cost": 630222.95,
-          "attendees": 3410,
-          "events": 89,
-          "alcohol": 42,
-          "perperson": 160.44
-        },
-        {
-          "condition": "hiv",
-          "cost": 15602.27,
-          "attendees": 379,
-          "events": 11,
-          "alcohol": 6,
-          "perperson": 54.99
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hypertension",
@@ -2110,52 +2774,44 @@ window.stats = {
           "perperson": 74.55
         },
         {
-          "condition": "paedology",
-          "cost": 1802386.48,
-          "attendees": 17825,
-          "events": 632,
-          "alcohol": 320,
-          "perperson": 87.62
+          "condition": "gastro",
+          "cost": 801286.47,
+          "attendees": 2655,
+          "events": 65,
+          "alcohol": 46,
+          "perperson": 121.1
         },
         {
-          "condition": "sexual",
-          "cost": 5162358.07,
-          "attendees": 47926,
-          "events": 1702,
-          "alcohol": 1504,
-          "perperson": 108.91
+          "condition": "paediatrics",
+          "cost": 844111.72,
+          "attendees": 8995,
+          "events": 334,
+          "alcohol": 155,
+          "perperson": 79.69
         },
         {
-          "condition": "mental_illness",
-          "cost": 8687345.64,
-          "attendees": 76494,
-          "events": 2775,
-          "alcohol": 950,
-          "perperson": 80.86
+          "condition": "allergies",
+          "cost": 627708.08,
+          "attendees": 5088,
+          "events": 187,
+          "alcohol": 114,
+          "perperson": 100.52
         },
         {
-          "condition": "cancer",
-          "cost": 5051372.79,
-          "attendees": 75454,
-          "events": 2764,
-          "alcohol": 500,
-          "perperson": 39.44
+          "condition": "auto_immune",
+          "cost": 568.18,
+          "attendees": 25,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 22.73
         },
         {
-          "condition": "heart_disease",
-          "cost": 12519960.13,
-          "attendees": 92208,
-          "events": 2936,
-          "alcohol": 1378,
-          "perperson": 94.81
-        },
-        {
-          "condition": "ageing",
-          "cost": 6066309.08,
-          "attendees": 22018,
-          "events": 694,
-          "alcohol": 443,
-          "perperson": 157.25
+          "condition": "addiction",
+          "cost": 47843.92,
+          "attendees": 720,
+          "events": 13,
+          "alcohol": 7,
+          "perperson": 81.18
         },
         {
           "condition": "diabetes",
@@ -2166,12 +2822,124 @@ window.stats = {
           "perperson": 135.05
         },
         {
-          "condition": "osteoporosis",
-          "cost": 10554.55,
-          "attendees": 167,
-          "events": 8,
-          "alcohol": 5,
-          "perperson": 81.66
+          "condition": "cancer",
+          "cost": 5063728.41,
+          "attendees": 75687,
+          "events": 2773,
+          "alcohol": 503,
+          "perperson": 39.47
+        },
+        {
+          "condition": "stroke",
+          "cost": 981427.83,
+          "attendees": 3336,
+          "events": 75,
+          "alcohol": 30,
+          "perperson": 247.84
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": 646239.66,
+          "attendees": 1332,
+          "events": 32,
+          "alcohol": 21,
+          "perperson": 195
+        },
+        {
+          "condition": "obesity",
+          "cost": 453156.76,
+          "attendees": 4194,
+          "events": 238,
+          "alcohol": 223,
+          "perperson": 110.48
+        },
+        {
+          "condition": "fertility",
+          "cost": 630222.95,
+          "attendees": 3410,
+          "events": 89,
+          "alcohol": 42,
+          "perperson": 160.44
+        },
+        {
+          "condition": "virus",
+          "cost": 1729068.95,
+          "attendees": 12026,
+          "events": 363,
+          "alcohol": 117,
+          "perperson": 79.61
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 997865.51,
+          "attendees": 6628,
+          "events": 133,
+          "alcohol": 87,
+          "perperson": 119.29
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 8687345.64,
+          "attendees": 76494,
+          "events": 2775,
+          "alcohol": 950,
+          "perperson": 80.86
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 18181.82,
+          "attendees": 100,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 181.82
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 12551056.54,
+          "attendees": 93298,
+          "events": 2948,
+          "alcohol": 1384,
+          "perperson": 94.66
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 31213.36,
+          "attendees": 412,
+          "events": 18,
+          "alcohol": 9,
+          "perperson": 88.3
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 6586190.68,
+          "attendees": 27752,
+          "events": 874,
+          "alcohol": 516,
+          "perperson": 138.94
+        },
+        {
+          "condition": "respiratory",
+          "cost": 8195394.13,
+          "attendees": 44376,
+          "events": 1700,
+          "alcohol": 1218,
+          "perperson": 117.95
         }
       ],
       "perheadBins": [
@@ -2364,6 +3132,86 @@ window.stats = {
           "perperson": 9.04
         },
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 113440.65,
+          "attendees": 2900,
+          "events": 174,
+          "alcohol": 0,
+          "perperson": 19.14
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 2802.08,
+          "attendees": 192,
+          "events": 13,
+          "alcohol": 0,
+          "perperson": 13.38
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 2889.75,
+          "attendees": 104,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 34.78
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "hypertension",
           "cost": null,
           "attendees": null,
@@ -2372,7 +3220,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2388,7 +3236,7 @@ window.stats = {
           "perperson": 122.86
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2396,7 +3244,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2420,15 +3268,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 3642.08,
-          "attendees": 242,
-          "events": 14,
-          "alcohol": 0,
-          "perperson": 13.62
-        },
-        {
-          "condition": "dementia",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2436,7 +3276,31 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2635,14 +3499,6 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual",
-          "cost": 428611,
-          "attendees": 5234,
-          "events": 109,
-          "alcohol": 0,
-          "perperson": 93.63
-        },
-        {
           "condition": "fertility",
           "cost": 16179.8,
           "attendees": 331,
@@ -2659,28 +3515,36 @@ window.stats = {
           "perperson": 11.45
         },
         {
-          "condition": "paedology",
-          "cost": 180213.57,
-          "attendees": 4885,
-          "events": 170,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 26.31
+          "perperson": null
         },
         {
-          "condition": "mental_illness",
-          "cost": 164030.6,
-          "attendees": 1153,
-          "events": 25,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 127.99
+          "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 26024,
-          "attendees": 2037,
-          "events": 105,
+          "condition": "stroke",
+          "cost": 68969,
+          "attendees": 427,
+          "events": 22,
           "alcohol": 0,
-          "perperson": 13.99
+          "perperson": 112.71
+        },
+        {
+          "condition": "respiratory",
+          "cost": 71047.3,
+          "attendees": 793,
+          "events": 32,
+          "alcohol": 0,
+          "perperson": 75.21
         },
         {
           "condition": "hypertension",
@@ -2691,6 +3555,14 @@ window.stats = {
           "perperson": 135.43
         },
         {
+          "condition": "virus",
+          "cost": 5672.65,
+          "attendees": 518,
+          "events": 32,
+          "alcohol": 2,
+          "perperson": 13.03
+        },
+        {
           "condition": "dementia",
           "cost": 551.27,
           "attendees": 65,
@@ -2699,12 +3571,28 @@ window.stats = {
           "perperson": 8.97
         },
         {
-          "condition": "cancer",
-          "cost": 349924.95,
-          "attendees": 13762,
-          "events": 656,
+          "condition": "ageing",
+          "cost": 123938.93,
+          "attendees": 3198,
+          "events": 145,
           "alcohol": 0,
-          "perperson": 19.16
+          "perperson": 25.83
+        },
+        {
+          "condition": "cancer",
+          "cost": 350353.11,
+          "attendees": 13798,
+          "events": 658,
+          "alcohol": 0,
+          "perperson": 19.14
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 1046.89,
+          "attendees": 57,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 19.24
         },
         {
           "condition": "diabetes",
@@ -2715,15 +3603,87 @@ window.stats = {
           "perperson": 51.29
         },
         {
-          "condition": "heart_disease",
-          "cost": 251475.95,
-          "attendees": 3789,
-          "events": 131,
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 62.37
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 164030.6,
+          "attendees": 1153,
+          "events": 25,
+          "alcohol": 0,
+          "perperson": 127.99
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 251983.95,
+          "attendees": 3832,
+          "events": 133,
+          "alcohol": 0,
+          "perperson": 61.61
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 438469.5,
+          "attendees": 5886,
+          "events": 109,
+          "alcohol": 0,
+          "perperson": 92.92
+        },
+        {
+          "condition": "obesity",
+          "cost": 19715.67,
+          "attendees": 266,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 62.3
+        },
+        {
+          "condition": "gastro",
+          "cost": 415.2,
+          "attendees": 38,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 12.73
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 28552.51,
+          "attendees": 858,
+          "events": 19,
+          "alcohol": 0,
+          "perperson": 42.8
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -2913,6 +3873,78 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "sexual_health",
+          "cost": 18.7,
+          "attendees": 6,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 3.12
+        },
+        {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 481805.53,
+          "attendees": 378,
+          "events": 14,
+          "alcohol": 0,
+          "perperson": 905.16
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": 18.7,
+          "attendees": 6,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 3.12
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "mental_illness",
           "cost": 26684.24,
           "attendees": 347,
@@ -2929,20 +3961,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 29728.67,
-          "attendees": 97,
-          "events": 7,
-          "alcohol": 1,
-          "perperson": 247.25
-        },
-        {
-          "condition": "hiv",
-          "cost": 18.7,
-          "attendees": 6,
+          "condition": "gastro",
+          "cost": 1382.65,
+          "attendees": 16,
           "events": 1,
           "alcohol": 0,
-          "perperson": 3.12
+          "perperson": 86.42
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "heart_disease",
@@ -2977,23 +4017,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 224221.37,
-          "attendees": 66,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 3397.29
-        },
-        {
-          "condition": "ageing",
-          "cost": 475506.94,
-          "attendees": 355,
-          "events": 13,
-          "alcohol": 0,
-          "perperson": 953.72
-        },
-        {
-          "condition": "dementia",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -3001,12 +4025,44 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 879.94,
+          "attendees": 102,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 9.27
         }
       ],
       "perheadBins": [
@@ -3191,60 +4247,60 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual",
-          "cost": 576314.15,
-          "attendees": 5083,
-          "events": 134,
-          "alcohol": 2,
-          "perperson": 93.61
-        },
-        {
-          "condition": "paedology",
-          "cost": 44362.67,
-          "attendees": 794,
-          "events": 5,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 80.53
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
-          "cost": 1077.27,
-          "attendees": 156,
-          "events": 2,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 61.77
+          "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 255758.74,
-          "attendees": 1362,
-          "events": 53,
-          "alcohol": 3,
-          "perperson": 149.02
+          "condition": "obesity",
+          "cost": 2500,
+          "attendees": 35,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 71.43
         },
         {
-          "condition": "hiv",
-          "cost": 1010612.9,
-          "attendees": 6741,
-          "events": 151,
+          "condition": "paediatrics",
+          "cost": 1500,
+          "attendees": 70,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 21.43
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 422191.7,
+          "attendees": 1472,
+          "events": 41,
+          "alcohol": 14,
+          "perperson": 419.69
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 1027512.02,
+          "attendees": 7607,
+          "events": 219,
           "alcohol": 9,
-          "perperson": 137.42
+          "perperson": 101.98
         },
         {
-          "condition": "cancer",
-          "cost": 525181.2,
-          "attendees": 3764,
-          "events": 90,
-          "alcohol": 0,
-          "perperson": 90.25
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 744826.44,
-          "attendees": 7491,
-          "events": 304,
-          "alcohol": 29,
-          "perperson": 61.37
+          "condition": "respiratory",
+          "cost": 218700.96,
+          "attendees": 651,
+          "events": 29,
+          "alcohol": 9,
+          "perperson": 297.16
         },
         {
           "condition": "diabetes",
@@ -3255,23 +4311,23 @@ window.stats = {
           "perperson": 209.85
         },
         {
-          "condition": "fertility",
-          "cost": 5245.69,
-          "attendees": 82,
-          "events": 4,
-          "alcohol": 1,
-          "perperson": 75.6
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 454440.39,
-          "attendees": 4077,
-          "events": 168,
-          "alcohol": 8,
-          "perperson": 76.8
+          "condition": "hiv",
+          "cost": 1013990.05,
+          "attendees": 6818,
+          "events": 158,
+          "alcohol": 9,
+          "perperson": 132.84
         },
         {
           "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -3285,6 +4341,102 @@ window.stats = {
           "events": 29,
           "alcohol": 9,
           "perperson": 297.16
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 491137.35,
+          "attendees": 4471,
+          "events": 192,
+          "alcohol": 9,
+          "perperson": 78.96
+        },
+        {
+          "condition": "ageing",
+          "cost": 255758.74,
+          "attendees": 1362,
+          "events": 53,
+          "alcohol": 3,
+          "perperson": 149.02
+        },
+        {
+          "condition": "virus",
+          "cost": 851038.14,
+          "attendees": 6145,
+          "events": 534,
+          "alcohol": 18,
+          "perperson": 52.95
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 744826.44,
+          "attendees": 7491,
+          "events": 304,
+          "alcohol": 29,
+          "perperson": 61.37
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 525931.2,
+          "attendees": 3787,
+          "events": 91,
+          "alcohol": 0,
+          "perperson": 89.62
+        },
+        {
+          "condition": "fertility",
+          "cost": 5245.69,
+          "attendees": 82,
+          "events": 4,
+          "alcohol": 1,
+          "perperson": 75.6
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 962.5,
+          "attendees": 9,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 106.94
         }
       ],
       "perheadBins": [
@@ -3478,28 +4630,20 @@ window.stats = {
           "perperson": 131.86
         },
         {
-          "condition": "paedology",
-          "cost": 44343.18,
-          "attendees": 540,
-          "events": 20,
-          "alcohol": 20,
-          "perperson": 91.24
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": 40063.31,
-          "attendees": 534,
-          "events": 28,
-          "alcohol": 24,
-          "perperson": 76.32
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 955846.96,
-          "attendees": 7990,
-          "events": 358,
-          "alcohol": 337,
-          "perperson": 112.59
+          "condition": "sexual_health",
+          "cost": 66314.09,
+          "attendees": 834,
+          "events": 41,
+          "alcohol": 37,
+          "perperson": 79.58
         },
         {
           "condition": "cancer",
@@ -3510,6 +4654,22 @@ window.stats = {
           "perperson": 440.19
         },
         {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 2168.65,
+          "attendees": 36,
+          "events": 2,
+          "alcohol": 2,
+          "perperson": 60.26
+        },
+        {
           "condition": "hypertension",
           "cost": 491219.92,
           "attendees": 4417,
@@ -3518,15 +4678,15 @@ window.stats = {
           "perperson": 110.93
         },
         {
-          "condition": "ageing",
-          "cost": 549717.45,
-          "attendees": 5333,
-          "events": 287,
-          "alcohol": 282,
-          "perperson": 106.42
+          "condition": "gastro",
+          "cost": 3170.92,
+          "attendees": 31,
+          "events": 3,
+          "alcohol": 3,
+          "perperson": 100.67
         },
         {
-          "condition": "fertility",
+          "condition": "dementia",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -3534,15 +4694,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 1245157.85,
-          "attendees": 11791,
-          "events": 492,
-          "alcohol": 489,
-          "perperson": 101.93
-        },
-        {
-          "condition": "dementia",
+          "condition": "allergies",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -3558,12 +4710,108 @@ window.stats = {
           "perperson": 117.9
         },
         {
-          "condition": "osteoporosis",
+          "condition": "virus",
+          "cost": 21234.5,
+          "attendees": 271,
+          "events": 12,
+          "alcohol": 10,
+          "perperson": 162.3
+        },
+        {
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 172293.55,
+          "attendees": 1660,
+          "events": 96,
+          "alcohol": 94,
+          "perperson": 104.88
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 955846.96,
+          "attendees": 7990,
+          "events": 358,
+          "alcohol": 337,
+          "perperson": 112.59
+        },
+        {
+          "condition": "hiv",
+          "cost": 55251.85,
+          "attendees": 709,
+          "events": 34,
+          "alcohol": 30,
+          "perperson": 77.85
+        },
+        {
+          "condition": "fertility",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 775324.17,
+          "attendees": 8540,
+          "events": 276,
+          "alcohol": 266,
+          "perperson": 96.89
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 1168296.6,
+          "attendees": 9231,
+          "events": 369,
+          "alcohol": 343,
+          "perperson": 125.56
+        },
+        {
+          "condition": "ageing",
+          "cost": 1230042.23,
+          "attendees": 7665,
+          "events": 360,
+          "alcohol": 344,
+          "perperson": 116.58
         }
       ],
       "perheadBins": [
@@ -3748,7 +4996,103 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 0,
+          "attendees": 20,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 0
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 748.6,
+          "attendees": 55,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 14.54
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 1946.7,
+          "attendees": 60,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 32.45
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -3772,6 +5116,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "mental_illness",
           "cost": null,
           "attendees": null,
@@ -3780,12 +5132,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "virus",
+          "cost": 180,
+          "attendees": 15,
+          "events": 1,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 12
         },
         {
           "condition": "diabetes",
@@ -3796,31 +5148,31 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 0,
-          "attendees": 20,
-          "events": 1,
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 0
+          "perperson": null
         },
         {
-          "condition": "fertility",
-          "cost": 1946.7,
-          "attendees": 60,
-          "events": 1,
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 32.45
+          "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 3474,
-          "attendees": 35,
-          "events": 2,
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 101.77
+          "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -3834,14 +5186,6 @@ window.stats = {
           "events": 99,
           "alcohol": 0,
           "perperson": 27.48
-        },
-        {
-          "condition": "osteoporosis",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
         }
       ],
       "perheadBins": [
@@ -4026,28 +5370,20 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "dementia",
-          "cost": 2548,
-          "attendees": 43,
-          "events": 2,
+          "condition": "hiv",
+          "cost": 19440,
+          "attendees": 274,
+          "events": 5,
           "alcohol": 0,
-          "perperson": 44.26
+          "perperson": 39.85
         },
         {
-          "condition": "cancer",
-          "cost": 203904,
-          "attendees": 5651,
-          "events": 96,
-          "alcohol": 27,
-          "perperson": 48.92
-        },
-        {
-          "condition": "ageing",
-          "cost": 15237,
-          "attendees": 426,
-          "events": 22,
-          "alcohol": 7,
-          "perperson": 39.28
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "fertility",
@@ -4058,20 +5394,20 @@ window.stats = {
           "perperson": 40
         },
         {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "diabetes",
           "cost": 1242,
           "attendees": 139,
           "events": 6,
           "alcohol": 0,
           "perperson": 10.74
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 778898,
-          "attendees": 8304,
-          "events": 301,
-          "alcohol": 98,
-          "perperson": 75.18
         },
         {
           "condition": "mental_illness",
@@ -4082,12 +5418,124 @@ window.stats = {
           "perperson": 173.23
         },
         {
-          "condition": "paedology",
-          "cost": 121184,
-          "attendees": 2080,
-          "events": 56,
-          "alcohol": 17,
-          "perperson": 36.78
+          "condition": "paediatrics",
+          "cost": 13954,
+          "attendees": 824,
+          "events": 32,
+          "alcohol": 5,
+          "perperson": 14.92
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 47917,
+          "attendees": 1360,
+          "events": 27,
+          "alcohol": 2,
+          "perperson": 29.8
+        },
+        {
+          "condition": "allergies",
+          "cost": 364100,
+          "attendees": 2688,
+          "events": 27,
+          "alcohol": 11,
+          "perperson": 355.32
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 122353,
+          "attendees": 2104,
+          "events": 59,
+          "alcohol": 13,
+          "perperson": 58.85
+        },
+        {
+          "condition": "virus",
+          "cost": 65928,
+          "attendees": 2683,
+          "events": 94,
+          "alcohol": 15,
+          "perperson": 17.9
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 781399,
+          "attendees": 8410,
+          "events": 306,
+          "alcohol": 99,
+          "perperson": 74.34
+        },
+        {
+          "condition": "cancer",
+          "cost": 205048,
+          "attendees": 5698,
+          "events": 98,
+          "alcohol": 27,
+          "perperson": 48.38
+        },
+        {
+          "condition": "dementia",
+          "cost": 2548,
+          "attendees": 43,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 44.26
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 17193,
+          "attendees": 524,
+          "events": 26,
+          "alcohol": 7,
+          "perperson": 36.02
+        },
+        {
+          "condition": "gastro",
+          "cost": 5512,
+          "attendees": 206,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 28.67
+        },
+        {
+          "condition": "stroke",
+          "cost": 31761,
+          "attendees": 496,
+          "events": 20,
+          "alcohol": 9,
+          "perperson": 64.02
+        },
+        {
+          "condition": "obesity",
+          "cost": 1371,
+          "attendees": 112,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 12.19
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hypertension",
@@ -4098,28 +5546,20 @@ window.stats = {
           "perperson": 82.28
         },
         {
-          "condition": "hiv",
-          "cost": 16713,
-          "attendees": 194,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 41.29
+          "condition": "respiratory",
+          "cost": 43300,
+          "attendees": 921,
+          "events": 24,
+          "alcohol": 9,
+          "perperson": 56.83
         },
         {
-          "condition": "sexual",
-          "cost": 207248,
-          "attendees": 3137,
-          "events": 86,
-          "alcohol": 24,
-          "perperson": 65.75
-        },
-        {
-          "condition": "osteoporosis",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "musculoskeletal",
+          "cost": 1817,
+          "attendees": 30,
+          "events": 1,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 60.57
         }
       ],
       "perheadBins": [
@@ -4304,12 +5744,12 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual",
-          "cost": 859444.2,
-          "attendees": 1509,
-          "events": 71,
-          "alcohol": 53,
-          "perperson": 871.47
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "dementia",
@@ -4320,14 +5760,6 @@ window.stats = {
           "perperson": 36.86
         },
         {
-          "condition": "hypertension",
-          "cost": 22,
-          "attendees": 2,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 11
-        },
-        {
           "condition": "fertility",
           "cost": 90722.12,
           "attendees": 199,
@@ -4336,12 +5768,44 @@ window.stats = {
           "perperson": 281.97
         },
         {
-          "condition": "ageing",
-          "cost": 446182.72,
-          "attendees": 2802,
-          "events": 118,
-          "alcohol": 54,
-          "perperson": 89.38
+          "condition": "heart_disease",
+          "cost": 916018.31,
+          "attendees": 9940,
+          "events": 380,
+          "alcohol": 19,
+          "perperson": 292.64
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 69100.5,
+          "attendees": 490,
+          "events": 26,
+          "alcohol": 14,
+          "perperson": 455.77
+        },
+        {
+          "condition": "gastro",
+          "cost": 7077,
+          "attendees": 130,
+          "events": 5,
+          "alcohol": 4,
+          "perperson": 57.37
+        },
+        {
+          "condition": "virus",
+          "cost": 4880,
+          "attendees": 55,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 95.44
         },
         {
           "condition": "hiv",
@@ -4360,12 +5824,12 @@ window.stats = {
           "perperson": 56.87
         },
         {
-          "condition": "heart_disease",
-          "cost": 909060.64,
-          "attendees": 9763,
-          "events": 365,
-          "alcohol": 16,
-          "perperson": 303.82
+          "condition": "musculoskeletal",
+          "cost": 166027.58,
+          "attendees": 1629,
+          "events": 71,
+          "alcohol": 48,
+          "perperson": 99.48
         },
         {
           "condition": "diabetes",
@@ -4376,12 +5840,92 @@ window.stats = {
           "perperson": 107.75
         },
         {
-          "condition": "osteoporosis",
-          "cost": 166027.58,
-          "attendees": 1629,
-          "events": 71,
-          "alcohol": 48,
-          "perperson": 99.48
+          "condition": "respiratory",
+          "cost": 2650,
+          "attendees": 31,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 37.54
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": 22,
+          "attendees": 2,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 11
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 205736.97,
+          "attendees": 3398,
+          "events": 157,
+          "alcohol": 23,
+          "perperson": 91.96
+        },
+        {
+          "condition": "ageing",
+          "cost": 454678,
+          "attendees": 3103,
+          "events": 133,
+          "alcohol": 59,
+          "perperson": 83.26
+        },
+        {
+          "condition": "obesity",
+          "cost": 90594,
+          "attendees": 619,
+          "events": 7,
+          "alcohol": 6,
+          "perperson": 150.63
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 22,
+          "attendees": 2,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 11
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "mental_illness",
@@ -4390,14 +5934,6 @@ window.stats = {
           "events": 3927,
           "alcohol": 1011,
           "perperson": 54.48
-        },
-        {
-          "condition": "paedology",
-          "cost": 847232.22,
-          "attendees": 7720,
-          "events": 417,
-          "alcohol": 114,
-          "perperson": 91.64
         }
       ],
       "perheadBins": [
@@ -4583,15 +6119,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
-          "cost": 12728,
-          "attendees": 540,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 23.58
-        },
-        {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4599,7 +6127,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4616,6 +6152,86 @@ window.stats = {
         },
         {
           "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 0,
+          "attendees": 44,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 0
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 12728,
+          "attendees": 540,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 23.58
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 71600,
+          "attendees": 16300,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 29.72
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4647,6 +6263,30 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 30000,
+          "attendees": 300,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 100
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "ageing",
           "cost": 6818.18,
           "attendees": 370,
@@ -4655,15 +6295,7 @@ window.stats = {
           "perperson": 18.43
         },
         {
-          "condition": "mental_illness",
-          "cost": 71600,
-          "attendees": 16300,
-          "events": 5,
-          "alcohol": 0,
-          "perperson": 29.72
-        },
-        {
-          "condition": "dementia",
+          "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4671,7 +6303,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4861,7 +6493,95 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": 288.64,
+          "attendees": 23,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 12.55
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 1253.2,
+          "attendees": 107,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 10.63
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4885,15 +6605,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 1253.2,
-          "attendees": 107,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 10.63
-        },
-        {
-          "condition": "hiv",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -4917,6 +6629,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "ageing",
           "cost": 630,
           "attendees": 50,
@@ -4925,12 +6653,12 @@ window.stats = {
           "perperson": 12.6
         },
         {
-          "condition": "sexual",
-          "cost": 913.41,
-          "attendees": 33,
-          "events": 2,
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 22.91
+          "perperson": null
         },
         {
           "condition": "cancer",
@@ -4941,15 +6669,15 @@ window.stats = {
           "perperson": 116.98
         },
         {
-          "condition": "dementia",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "virus",
+          "cost": 5839.51,
+          "attendees": 213,
+          "events": 7,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 25.09
         },
         {
-          "condition": "osteoporosis",
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5139,20 +6867,84 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 12697.47,
+          "attendees": 1111,
+          "events": 53,
+          "alcohol": 0,
+          "perperson": 12.58
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "diabetes",
           "cost": 928.01,
           "attendees": 65,
           "events": 2,
           "alcohol": 0,
           "perperson": 14.91
-        },
-        {
-          "condition": "paedology",
-          "cost": 23686.47,
-          "attendees": 1843,
-          "events": 93,
-          "alcohol": 0,
-          "perperson": 14.5
         },
         {
           "condition": "heart_disease",
@@ -5171,14 +6963,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 19056.66,
-          "attendees": 199,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 84.33
-        },
-        {
           "condition": "cancer",
           "cost": 27421.59,
           "attendees": 930,
@@ -5187,7 +6971,7 @@ window.stats = {
           "perperson": 17.31
         },
         {
-          "condition": "mental_illness",
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5195,7 +6979,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5219,7 +7011,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "virus",
+          "cost": 237.24,
+          "attendees": 46,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 10.9
+        },
+        {
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5227,7 +7027,31 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5426,7 +7250,7 @@ window.stats = {
           "perperson": 184.91
         },
         {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5434,28 +7258,44 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 48430.18,
-          "attendees": 3517,
-          "events": 223,
-          "alcohol": 1,
-          "perperson": 13.85
+          "condition": "sexual_health",
+          "cost": 2150400.39,
+          "attendees": 12909,
+          "events": 669,
+          "alcohol": 0,
+          "perperson": 59.18
+        },
+        {
+          "condition": "addiction",
+          "cost": 983,
+          "attendees": 85,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 11.57
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 42246.43,
+          "attendees": 3385,
+          "events": 218,
+          "alcohol": 0,
+          "perperson": 13.12
         },
         {
           "condition": "cancer",
-          "cost": 80163.29,
-          "attendees": 4453,
-          "events": 263,
+          "cost": 82485.62,
+          "attendees": 4664,
+          "events": 278,
           "alcohol": 1,
-          "perperson": 17.24
-        },
-        {
-          "condition": "diabetes",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "perperson": 16.97
         },
         {
           "condition": "fertility",
@@ -5466,14 +7306,6 @@ window.stats = {
           "perperson": 4.5
         },
         {
-          "condition": "sexual",
-          "cost": 365529.07,
-          "attendees": 5551,
-          "events": 305,
-          "alcohol": 0,
-          "perperson": 43.1
-        },
-        {
           "condition": "mental_illness",
           "cost": 5541.41,
           "attendees": 412,
@@ -5482,12 +7314,28 @@ window.stats = {
           "perperson": 15.72
         },
         {
-          "condition": "hiv",
-          "cost": 2092761.64,
-          "attendees": 10666,
-          "events": 520,
+          "condition": "respiratory",
+          "cost": 240,
+          "attendees": 13,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 69.91
+          "perperson": 18.57
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 1156892.97,
+          "attendees": 4228,
+          "events": 179,
+          "alcohol": 0,
+          "perperson": 84.58
         },
         {
           "condition": "dementia",
@@ -5506,7 +7354,79 @@ window.stats = {
           "perperson": 593.98
         },
         {
-          "condition": "osteoporosis",
+          "condition": "hiv",
+          "cost": 2106661.34,
+          "attendees": 10937,
+          "events": 536,
+          "alcohol": 0,
+          "perperson": 68.83
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": 660,
+          "attendees": 37,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 18.17
+        },
+        {
+          "condition": "diabetes",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5696,6 +7616,14 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "diabetes",
           "cost": 1467087.6,
           "attendees": 14488,
@@ -5712,15 +7640,7 @@ window.stats = {
           "perperson": 92.56
         },
         {
-          "condition": "dementia",
-          "cost": 4096,
-          "attendees": 72,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 66.23
-        },
-        {
-          "condition": "osteoporosis",
+          "condition": "musculoskeletal",
           "cost": 524560.79,
           "attendees": 3109,
           "events": 130,
@@ -5728,20 +7648,44 @@ window.stats = {
           "perperson": 158.93
         },
         {
-          "condition": "fertility",
-          "cost": 87056,
-          "attendees": 3504,
-          "events": 16,
-          "alcohol": 4,
-          "perperson": 26.54
+          "condition": "sexual_health",
+          "cost": 662900.9,
+          "attendees": 11827,
+          "events": 408,
+          "alcohol": 84,
+          "perperson": 50.05
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 9612,
+          "attendees": 177,
+          "events": 7,
+          "alcohol": 2,
+          "perperson": 52.42
         },
         {
           "condition": "cancer",
-          "cost": 1781667.17,
-          "attendees": 40428,
-          "events": 1397,
+          "cost": 1783839.17,
+          "attendees": 40505,
+          "events": 1399,
           "alcohol": 114,
           "perperson": 30.57
+        },
+        {
+          "condition": "gastro",
+          "cost": 400,
+          "attendees": 7,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 57.14
         },
         {
           "condition": "mental_illness",
@@ -5752,44 +7696,116 @@ window.stats = {
           "perperson": 24.45
         },
         {
+          "condition": "addiction",
+          "cost": 83,
+          "attendees": 7,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 11.86
+        },
+        {
+          "condition": "stroke",
+          "cost": 168761.63,
+          "attendees": 378,
+          "events": 27,
+          "alcohol": 5,
+          "perperson": 141.18
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": 4096,
+          "attendees": 72,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 66.23
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 328766,
+          "attendees": 9649,
+          "events": 138,
+          "alcohol": 3,
+          "perperson": 29.5
+        },
+        {
+          "condition": "respiratory",
+          "cost": 1303346.48,
+          "attendees": 15909,
+          "events": 670,
+          "alcohol": 220,
+          "perperson": 71.34
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 10964.13,
+          "attendees": 315,
+          "events": 6,
+          "alcohol": 3,
+          "perperson": 44.59
+        },
+        {
+          "condition": "fertility",
+          "cost": 87056,
+          "attendees": 3504,
+          "events": 16,
+          "alcohol": 4,
+          "perperson": 26.54
+        },
+        {
           "condition": "heart_disease",
-          "cost": 262948.55,
-          "attendees": 3525,
-          "events": 59,
+          "cost": 263948.55,
+          "attendees": 3585,
+          "events": 60,
           "alcohol": 18,
-          "perperson": 97.1
+          "perperson": 95.76
         },
         {
           "condition": "hiv",
-          "cost": 339834,
-          "attendees": 7603,
-          "events": 238,
-          "alcohol": 35,
-          "perperson": 39.15
+          "cost": 340364,
+          "attendees": 7629,
+          "events": 239,
+          "alcohol": 36,
+          "perperson": 39.08
         },
         {
-          "condition": "paedology",
-          "cost": 475764.5,
-          "attendees": 12422,
-          "events": 236,
-          "alcohol": 19,
-          "perperson": 39.43
+          "condition": "allergies",
+          "cost": 501781,
+          "attendees": 7168,
+          "events": 258,
+          "alcohol": 98,
+          "perperson": 64.89
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 222192.58,
+          "attendees": 5894,
+          "events": 130,
+          "alcohol": 36,
+          "perperson": 45.81
         },
         {
           "condition": "ageing",
-          "cost": 66598.6,
-          "attendees": 1178,
-          "events": 69,
-          "alcohol": 20,
-          "perperson": 48.05
-        },
-        {
-          "condition": "sexual",
-          "cost": 769841.04,
-          "attendees": 10866,
-          "events": 340,
-          "alcohol": 79,
-          "perperson": 57.97
+          "cost": 102791.36,
+          "attendees": 2462,
+          "events": 128,
+          "alcohol": 21,
+          "perperson": 36.3
         }
       ],
       "perheadBins": [
@@ -5974,6 +7990,110 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 125272.25,
+          "attendees": 147,
+          "events": 2,
+          "alcohol": 2,
+          "perperson": 836.72
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 6725.84,
+          "attendees": 170,
+          "events": 8,
+          "alcohol": 6,
+          "perperson": 41.94
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": 98170.58,
+          "attendees": 76,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 1291.72
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": 1000,
+          "attendees": 32,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 31.25
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "heart_disease",
           "cost": 126439.52,
           "attendees": 161,
@@ -5990,12 +8110,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 2129.02,
-          "attendees": 23,
-          "events": 2,
-          "alcohol": 2,
-          "perperson": 95.12
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "mental_illness",
@@ -6006,28 +8134,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "osteoporosis",
+          "condition": "musculoskeletal",
           "cost": 118887.31,
           "attendees": 1904,
           "events": 108,
           "alcohol": 90,
           "perperson": 66.29
-        },
-        {
-          "condition": "diabetes",
-          "cost": 98170.58,
-          "attendees": 76,
-          "events": 1,
-          "alcohol": 1,
-          "perperson": 1291.72
         },
         {
           "condition": "fertility",
@@ -6038,7 +8150,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6046,28 +8158,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 300,
-          "attendees": 11,
-          "events": 1,
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 27.27
+          "perperson": null
         },
         {
-          "condition": "dementia",
-          "cost": 1000,
-          "attendees": 32,
-          "events": 1,
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 31.25
+          "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 6725.84,
-          "attendees": 150,
-          "events": 7,
-          "alcohol": 5,
-          "perperson": 47.93
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         }
       ],
       "perheadBins": [
@@ -6252,7 +8364,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6260,68 +8372,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 50950.46,
-          "attendees": 696,
-          "events": 27,
-          "alcohol": 2,
-          "perperson": 96.54
-        },
-        {
-          "condition": "ageing",
-          "cost": 6004.88,
-          "attendees": 205,
-          "events": 5,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 55.4
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 28602.1,
-          "attendees": 231,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 126.5
-        },
-        {
-          "condition": "diabetes",
-          "cost": 2066.48,
-          "attendees": 62,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 37.65
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 1700,
-          "attendees": 33,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 62.8
-        },
-        {
-          "condition": "paedology",
-          "cost": 6208.58,
-          "attendees": 42,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 142
-        },
-        {
-          "condition": "sexual",
-          "cost": 18225.61,
-          "attendees": 603,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 98.71
-        },
-        {
-          "condition": "fertility",
-          "cost": 2479.58,
-          "attendees": 33,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 68.07
+          "perperson": null
         },
         {
           "condition": "hiv",
@@ -6340,7 +8396,159 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "respiratory",
+          "cost": 202.5,
+          "attendees": 20,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 10.13
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": 6198.25,
+          "attendees": 158,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 123.77
+        },
+        {
+          "condition": "obesity",
+          "cost": 226530.96,
+          "attendees": 1639,
+          "events": 73,
+          "alcohol": 2,
+          "perperson": 157.37
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 6004.88,
+          "attendees": 205,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 55.4
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 28602.1,
+          "attendees": 231,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 126.5
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 18225.61,
+          "attendees": 603,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 98.71
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 5862.61,
+          "attendees": 79,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 116.47
+        },
+        {
+          "condition": "diabetes",
+          "cost": 2066.48,
+          "attendees": 62,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 37.65
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 1700,
+          "attendees": 33,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 62.8
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 5558.64,
+          "attendees": 59,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 95.08
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 51000.46,
+          "attendees": 704,
+          "events": 28,
+          "alcohol": 2,
+          "perperson": 93.32
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 2479.58,
+          "attendees": 33,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 68.07
+        },
+        {
+          "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6530,7 +8738,79 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6546,7 +8826,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6562,7 +8842,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6570,7 +8850,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6594,7 +8874,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
+          "condition": "stroke",
+          "cost": 9486.73,
+          "attendees": 95,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 104.49
+        },
+        {
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6602,7 +8890,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6610,7 +8898,23 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6808,15 +9112,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "cancer",
-          "cost": 525803.8,
-          "attendees": 16911,
-          "events": 539,
-          "alcohol": 0,
-          "perperson": 27.42
-        },
-        {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -6824,20 +9120,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 37479.03,
-          "attendees": 832,
-          "events": 13,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 87.09
-        },
-        {
-          "condition": "diabetes",
-          "cost": 27803.1,
-          "attendees": 2601,
-          "events": 74,
-          "alcohol": 0,
-          "perperson": 13.21
+          "perperson": null
         },
         {
           "condition": "hiv",
@@ -6848,12 +9136,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "fertility",
-          "cost": 48189.4,
-          "attendees": 2148,
-          "events": 4,
+          "condition": "gastro",
+          "cost": 2500,
+          "attendees": 150,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 23
+          "perperson": 16.67
         },
         {
           "condition": "mental_illness",
@@ -6872,22 +9160,6 @@ window.stats = {
           "perperson": 58.01
         },
         {
-          "condition": "paedology",
-          "cost": 125775.95,
-          "attendees": 5120,
-          "events": 131,
-          "alcohol": 0,
-          "perperson": 31.26
-        },
-        {
-          "condition": "sexual",
-          "cost": 26045.63,
-          "attendees": 193,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 70
-        },
-        {
           "condition": "dementia",
           "cost": null,
           "attendees": null,
@@ -6896,7 +9168,135 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "ageing",
+          "cost": 133603.45,
+          "attendees": 2024,
+          "events": 54,
+          "alcohol": 1,
+          "perperson": 135.2
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 32943.78,
+          "attendees": 1990,
+          "events": 74,
+          "alcohol": 0,
+          "perperson": 37.07
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 528028.59,
+          "attendees": 17107,
+          "events": 555,
+          "alcohol": 0,
+          "perperson": 26.95
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": 27803.1,
+          "attendees": 2601,
+          "events": 74,
+          "alcohol": 0,
+          "perperson": 13.21
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 25088.76,
+          "attendees": 154,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 102.27
+        },
+        {
+          "condition": "virus",
+          "cost": 1898.75,
+          "attendees": 163,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 12.67
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 48189.4,
+          "attendees": 2148,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 23
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 426.8,
+          "attendees": 40,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 10.67
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7086,12 +9486,108 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual",
-          "cost": 847074,
-          "attendees": 5981,
-          "events": 119,
-          "alcohol": 59,
-          "perperson": 128.4
+          "condition": "cold_and_flu",
+          "cost": 1886,
+          "attendees": 37,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 40.08
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "auto_immune",
+          "cost": 1835,
+          "attendees": 63,
+          "events": 3,
+          "alcohol": 3,
+          "perperson": 30.9
+        },
+        {
+          "condition": "diabetes",
+          "cost": 11428,
+          "attendees": 593,
+          "events": 20,
+          "alcohol": 12,
+          "perperson": 24.15
+        },
+        {
+          "condition": "virus",
+          "cost": 350393,
+          "attendees": 3814,
+          "events": 167,
+          "alcohol": 106,
+          "perperson": 63.17
+        },
+        {
+          "condition": "gastro",
+          "cost": 19676,
+          "attendees": 594,
+          "events": 29,
+          "alcohol": 14,
+          "perperson": 29.4
+        },
+        {
+          "condition": "ageing",
+          "cost": 4457796,
+          "attendees": 24626,
+          "events": 1000,
+          "alcohol": 544,
+          "perperson": 149.1
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 1047555,
+          "attendees": 8995,
+          "events": 176,
+          "alcohol": 91,
+          "perperson": 103.19
+        },
+        {
+          "condition": "cancer",
+          "cost": 2081747,
+          "attendees": 25262,
+          "events": 933,
+          "alcohol": 450,
+          "perperson": 54.08
+        },
+        {
+          "condition": "obesity",
+          "cost": 4880,
+          "attendees": 236,
+          "events": 9,
+          "alcohol": 3,
+          "perperson": 18.86
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 680132,
+          "attendees": 7143,
+          "events": 270,
+          "alcohol": 171,
+          "perperson": 76.5
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 14480,
+          "attendees": 588,
+          "events": 24,
+          "alcohol": 11,
+          "perperson": 16.89
         },
         {
           "condition": "mental_illness",
@@ -7102,28 +9598,28 @@ window.stats = {
           "perperson": 65.33
         },
         {
-          "condition": "cancer",
-          "cost": 2078606,
-          "attendees": 25050,
-          "events": 923,
-          "alcohol": 443,
-          "perperson": 54.47
+          "condition": "respiratory",
+          "cost": 9231,
+          "attendees": 378,
+          "events": 25,
+          "alcohol": 16,
+          "perperson": 31.41
         },
         {
-          "condition": "osteoporosis",
-          "cost": 921,
-          "attendees": 75,
-          "events": 6,
-          "alcohol": 2,
-          "perperson": 11.4
+          "condition": "heart_disease",
+          "cost": 124901,
+          "attendees": 4180,
+          "events": 128,
+          "alcohol": 58,
+          "perperson": 24.76
         },
         {
-          "condition": "diabetes",
-          "cost": 11428,
-          "attendees": 593,
-          "events": 20,
-          "alcohol": 12,
-          "perperson": 24.15
+          "condition": "stroke",
+          "cost": 1383,
+          "attendees": 86,
+          "events": 5,
+          "alcohol": 3,
+          "perperson": 14.09
         },
         {
           "condition": "fertility",
@@ -7142,36 +9638,28 @@ window.stats = {
           "perperson": 42.96
         },
         {
-          "condition": "heart_disease",
-          "cost": 124641,
-          "attendees": 4156,
-          "events": 127,
-          "alcohol": 58,
-          "perperson": 24.86
+          "condition": "allergies",
+          "cost": 98512,
+          "attendees": 1521,
+          "events": 57,
+          "alcohol": 30,
+          "perperson": 40.01
         },
         {
-          "condition": "ageing",
-          "cost": 4191103,
-          "attendees": 13388,
-          "events": 589,
-          "alcohol": 366,
-          "perperson": 235.88
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": 858219,
-          "attendees": 6787,
-          "events": 110,
-          "alcohol": 60,
-          "perperson": 121.31
-        },
-        {
-          "condition": "paedology",
-          "cost": 1609393,
-          "attendees": 13846,
-          "events": 476,
-          "alcohol": 287,
-          "perperson": 105.23
+          "condition": "addiction",
+          "cost": 363333,
+          "attendees": 662,
+          "events": 14,
+          "alcohol": 4,
+          "perperson": 247.76
         },
         {
           "condition": "hypertension",
@@ -7180,6 +9668,14 @@ window.stats = {
           "events": 4,
           "alcohol": 2,
           "perperson": 25.66
+        },
+        {
+          "condition": "hiv",
+          "cost": 862261,
+          "attendees": 6970,
+          "events": 118,
+          "alcohol": 64,
+          "perperson": 115.89
         }
       ],
       "perheadBins": [
@@ -7364,15 +9860,87 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual",
-          "cost": 21450.62,
-          "attendees": 247,
-          "events": 15,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 85.27
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 2040.28,
+          "attendees": 43,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 50.4
         },
         {
           "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7388,7 +9956,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7396,7 +9964,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7420,6 +9988,30 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "allergies",
+          "cost": 1251,
+          "attendees": 19,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 65.84
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "cancer",
           "cost": 16394.41,
           "attendees": 352,
@@ -7428,12 +10020,12 @@ window.stats = {
           "perperson": 55.94
         },
         {
-          "condition": "paedology",
-          "cost": 2040.28,
-          "attendees": 43,
-          "events": 2,
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 50.4
+          "perperson": null
         },
         {
           "condition": "ageing",
@@ -7444,7 +10036,7 @@ window.stats = {
           "perperson": 186.96
         },
         {
-          "condition": "dementia",
+          "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7452,7 +10044,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7650,12 +10242,76 @@ window.stats = {
           "perperson": 70.06
         },
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "heart_disease",
           "cost": 2750,
           "attendees": 70,
           "events": 1,
           "alcohol": 0,
           "perperson": 39.29
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 4063.57,
+          "attendees": 58,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 70.06
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hypertension",
@@ -7674,6 +10330,30 @@ window.stats = {
           "perperson": 273.37
         },
         {
+          "condition": "ageing",
+          "cost": 357900.62,
+          "attendees": 4250,
+          "events": 187,
+          "alcohol": 42,
+          "perperson": 99.39
+        },
+        {
+          "condition": "addiction",
+          "cost": 390.37,
+          "attendees": 67,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 5.71
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "mental_illness",
           "cost": 3268320.75,
           "attendees": 31271,
@@ -7690,6 +10370,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "paediatrics",
+          "cost": 2424.19,
+          "attendees": 118,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 32.85
+        },
+        {
           "condition": "fertility",
           "cost": null,
           "attendees": null,
@@ -7698,7 +10386,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7706,31 +10394,31 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 2957.25,
-          "attendees": 128,
-          "events": 4,
-          "alcohol": 1,
-          "perperson": 37.96
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 1265.32,
-          "attendees": 49,
-          "events": 6,
-          "alcohol": 2,
-          "perperson": 27.09
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 28162.58,
-          "attendees": 1587,
-          "events": 70,
-          "alcohol": 6,
-          "perperson": 16.8
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -7928,12 +10616,92 @@ window.stats = {
           "perperson": 130.14
         },
         {
-          "condition": "sexual",
-          "cost": 390896.41,
-          "attendees": 4091,
-          "events": 214,
-          "alcohol": 8,
-          "perperson": 78.98
+          "condition": "virus",
+          "cost": 489238.09,
+          "attendees": 2588,
+          "events": 125,
+          "alcohol": 7,
+          "perperson": 129.56
+        },
+        {
+          "condition": "cancer",
+          "cost": 899313.09,
+          "attendees": 29645,
+          "events": 1251,
+          "alcohol": 18,
+          "perperson": 37.36
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": 762769.09,
+          "attendees": 1772,
+          "events": 47,
+          "alcohol": 2,
+          "perperson": 332.97
+        },
+        {
+          "condition": "respiratory",
+          "cost": 931795.18,
+          "attendees": 4856,
+          "events": 284,
+          "alcohol": 10,
+          "perperson": 97.15
+        },
+        {
+          "condition": "addiction",
+          "cost": 171,
+          "attendees": 34,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 5.07
+        },
+        {
+          "condition": "allergies",
+          "cost": 321987.49,
+          "attendees": 2000,
+          "events": 67,
+          "alcohol": 4,
+          "perperson": 99.62
+        },
+        {
+          "condition": "ageing",
+          "cost": 1536587.59,
+          "attendees": 10301,
+          "events": 350,
+          "alcohol": 11,
+          "perperson": 106.21
+        },
+        {
+          "condition": "gastro",
+          "cost": 13141,
+          "attendees": 223,
+          "events": 24,
+          "alcohol": 1,
+          "perperson": 68.97
+        },
+        {
+          "condition": "auto_immune",
+          "cost": 15093,
+          "attendees": 69,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 182.22
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "fertility",
@@ -7942,14 +10710,6 @@ window.stats = {
           "events": 675,
           "alcohol": 18,
           "perperson": 117.19
-        },
-        {
-          "condition": "hiv",
-          "cost": 503844.55,
-          "attendees": 2957,
-          "events": 122,
-          "alcohol": 14,
-          "perperson": 120.26
         },
         {
           "condition": "dementia",
@@ -7961,43 +10721,51 @@ window.stats = {
         },
         {
           "condition": "heart_disease",
-          "cost": 2964899.56,
-          "attendees": 29917,
-          "events": 1253,
-          "alcohol": 47,
-          "perperson": 55.9
+          "cost": 2983568.27,
+          "attendees": 30072,
+          "events": 1261,
+          "alcohol": 51,
+          "perperson": 56.26
         },
         {
-          "condition": "hypertension",
-          "cost": 762769.09,
-          "attendees": 1772,
-          "events": 47,
-          "alcohol": 2,
-          "perperson": 332.97
-        },
-        {
-          "condition": "osteoporosis",
-          "cost": 731298.05,
-          "attendees": 4887,
-          "events": 148,
+          "condition": "musculoskeletal",
+          "cost": 751032.05,
+          "attendees": 5186,
+          "events": 153,
           "alcohol": 48,
-          "perperson": 137.68
+          "perperson": 136.42
         },
         {
-          "condition": "ageing",
-          "cost": 788458.55,
-          "attendees": 6290,
-          "events": 232,
-          "alcohol": 8,
-          "perperson": 110.1
+          "condition": "sexual_health",
+          "cost": 570113.25,
+          "attendees": 5219,
+          "events": 261,
+          "alcohol": 15,
+          "perperson": 84.52
         },
         {
-          "condition": "cancer",
-          "cost": 899147.09,
-          "attendees": 29643,
-          "events": 1250,
-          "alcohol": 18,
-          "perperson": 37.32
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 196,
+          "attendees": 10,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 19.6
+        },
+        {
+          "condition": "obesity",
+          "cost": 44624.45,
+          "attendees": 216,
+          "events": 8,
+          "alcohol": 4,
+          "perperson": 205.58
         },
         {
           "condition": "mental_illness",
@@ -8008,12 +10776,28 @@ window.stats = {
           "perperson": 163.19
         },
         {
-          "condition": "paedology",
-          "cost": 235091.64,
-          "attendees": 4265,
-          "events": 196,
-          "alcohol": 20,
-          "perperson": 58.38
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 111785.97,
+          "attendees": 2457,
+          "events": 120,
+          "alcohol": 15,
+          "perperson": 66.66
+        },
+        {
+          "condition": "hiv",
+          "cost": 509153.08,
+          "attendees": 3056,
+          "events": 125,
+          "alcohol": 14,
+          "perperson": 119.5
         }
       ],
       "perheadBins": [
@@ -8198,7 +10982,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -8206,7 +10990,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
+          "condition": "kidney_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -8228,14 +11012,6 @@ window.stats = {
           "events": 490,
           "alcohol": 2,
           "perperson": 31.56
-        },
-        {
-          "condition": "paedology",
-          "cost": 43739.11,
-          "attendees": 2978,
-          "events": 164,
-          "alcohol": 3,
-          "perperson": 25.31
         },
         {
           "condition": "hiv",
@@ -8262,6 +11038,30 @@ window.stats = {
           "perperson": 73.06
         },
         {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 489.45,
+          "attendees": 9,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 54.38
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "dementia",
           "cost": null,
           "attendees": null,
@@ -8270,20 +11070,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "allergies",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "sexual",
-          "cost": 6255.29,
-          "attendees": 130,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 44.24
         },
         {
           "condition": "ageing",
@@ -8292,6 +11084,94 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 51.08
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 21270.73,
+          "attendees": 1742,
+          "events": 81,
+          "alcohol": 0,
+          "perperson": 28.25
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         }
       ],
       "perheadBins": [
@@ -8476,44 +11356,44 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "heart_disease",
-          "cost": 10414.32,
-          "attendees": 690,
-          "events": 36,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 13.13
-        },
-        {
-          "condition": "ageing",
-          "cost": 273072.52,
-          "attendees": 4547,
-          "events": 144,
-          "alcohol": 39,
-          "perperson": 47.48
+          "perperson": null
         },
         {
           "condition": "cancer",
-          "cost": 708329.23,
-          "attendees": 18375,
-          "events": 685,
+          "cost": 708643.83,
+          "attendees": 18390,
+          "events": 686,
           "alcohol": 169,
-          "perperson": 38.83
+          "perperson": 38.81
         },
         {
-          "condition": "sexual",
-          "cost": 81731.2,
-          "attendees": 1146,
-          "events": 36,
-          "alcohol": 23,
-          "perperson": 79.83
+          "condition": "virus",
+          "cost": 3738.74,
+          "attendees": 61,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 61.06
         },
         {
-          "condition": "mental_illness",
-          "cost": 318485.68,
-          "attendees": 5340,
-          "events": 68,
-          "alcohol": 17,
-          "perperson": 72.71
+          "condition": "addiction",
+          "cost": 39316.55,
+          "attendees": 519,
+          "events": 13,
+          "alcohol": 7,
+          "perperson": 74.96
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hiv",
@@ -8532,20 +11412,20 @@ window.stats = {
           "perperson": 5.93
         },
         {
-          "condition": "paedology",
-          "cost": 14558.5,
-          "attendees": 490,
-          "events": 16,
-          "alcohol": 2,
-          "perperson": 38.46
+          "condition": "ageing",
+          "cost": 953018.87,
+          "attendees": 16158,
+          "events": 442,
+          "alcohol": 77,
+          "perperson": 41.72
         },
         {
-          "condition": "dementia",
-          "cost": 80971.13,
-          "attendees": 1907,
-          "events": 29,
-          "alcohol": 10,
-          "perperson": 47.27
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "diabetes",
@@ -8556,12 +11436,20 @@ window.stats = {
           "perperson": 85.61
         },
         {
-          "condition": "osteoporosis",
-          "cost": 1920,
-          "attendees": 23,
-          "events": 1,
+          "condition": "respiratory",
+          "cost": 1558.43,
+          "attendees": 28,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 57.61
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 83.48
+          "perperson": null
         },
         {
           "condition": "hypertension",
@@ -8570,6 +11458,94 @@ window.stats = {
           "events": 1,
           "alcohol": 1,
           "perperson": 84.91
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 10414.32,
+          "attendees": 690,
+          "events": 36,
+          "alcohol": 0,
+          "perperson": 13.13
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 318485.68,
+          "attendees": 5340,
+          "events": 68,
+          "alcohol": 17,
+          "perperson": 72.71
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 281723.67,
+          "attendees": 2635,
+          "events": 97,
+          "alcohol": 84,
+          "perperson": 118.37
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 162.69,
+          "attendees": 17,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 9.57
+        },
+        {
+          "condition": "dementia",
+          "cost": 80971.13,
+          "attendees": 1907,
+          "events": 29,
+          "alcohol": 10,
+          "perperson": 47.27
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         }
       ],
       "perheadBins": [
@@ -8754,23 +11730,15 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "mental_illness",
-          "cost": 9676.41,
-          "attendees": 1011,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 10.26
+          "condition": "ageing",
+          "cost": 121813.16,
+          "attendees": 3722,
+          "events": 41,
+          "alcohol": 12,
+          "perperson": 45.62
         },
         {
-          "condition": "paedology",
-          "cost": 6481.09,
-          "attendees": 636,
-          "events": 15,
-          "alcohol": 6,
-          "perperson": 14.63
-        },
-        {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -8778,12 +11746,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 6920.5,
-          "attendees": 643,
-          "events": 3,
-          "alcohol": 1,
-          "perperson": 21.93
+          "condition": "hiv",
+          "cost": 1748,
+          "attendees": 23,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 76
+        },
+        {
+          "condition": "allergies",
+          "cost": 1074,
+          "attendees": 31,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 34.65
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "heart_disease",
@@ -8794,6 +11778,14 @@ window.stats = {
           "perperson": 184.9
         },
         {
+          "condition": "sexual_health",
+          "cost": 1748,
+          "attendees": 23,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 76
+        },
+        {
           "condition": "dementia",
           "cost": 5655,
           "attendees": 600,
@@ -8802,7 +11794,7 @@ window.stats = {
           "perperson": 9.43
         },
         {
-          "condition": "hiv",
+          "condition": "obesity",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -8810,12 +11802,68 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 60995.35,
-          "attendees": 2379,
-          "events": 33,
-          "alcohol": 9,
-          "perperson": 49.11
+          "condition": "virus",
+          "cost": 3706,
+          "attendees": 306,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 16.4
+        },
+        {
+          "condition": "gastro",
+          "cost": 18568,
+          "attendees": 361,
+          "events": 15,
+          "alcohol": 4,
+          "perperson": 74.33
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 9676.41,
+          "attendees": 1011,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 10.26
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 455,
+          "attendees": 221,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 2.06
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 456,
+          "attendees": 11,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 41.45
         },
         {
           "condition": "diabetes",
@@ -8834,20 +11882,44 @@ window.stats = {
           "perperson": 57.23
         },
         {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 1700,
+          "attendees": 295,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 7.96
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 4814.09,
+          "attendees": 447,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 17.54
+        },
+        {
           "condition": "fertility",
           "cost": 455,
           "attendees": 221,
           "events": 1,
           "alcohol": 0,
           "perperson": 2.06
-        },
-        {
-          "condition": "osteoporosis",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
         }
       ],
       "perheadBins": [
@@ -9032,36 +12104,20 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "mental_illness",
-          "cost": 472599,
-          "attendees": 6635,
-          "events": 279,
-          "alcohol": 85,
-          "perperson": 39.84
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "paedology",
-          "cost": 114220,
-          "attendees": 3741,
-          "events": 163,
-          "alcohol": 44,
-          "perperson": 28.93
-        },
-        {
-          "condition": "sexual",
-          "cost": 816100,
-          "attendees": 9999,
-          "events": 536,
-          "alcohol": 175,
-          "perperson": 67.48
-        },
-        {
-          "condition": "ageing",
-          "cost": 534207,
-          "attendees": 9144,
-          "events": 338,
-          "alcohol": 191,
-          "perperson": 51.39
+          "condition": "gastro",
+          "cost": 43997,
+          "attendees": 622,
+          "events": 13,
+          "alcohol": 9,
+          "perperson": 53.57
         },
         {
           "condition": "diabetes",
@@ -9072,28 +12128,20 @@ window.stats = {
           "perperson": 98.19
         },
         {
-          "condition": "cancer",
-          "cost": 3112942,
-          "attendees": 70547,
-          "events": 3672,
-          "alcohol": 561,
-          "perperson": 64.47
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "hypertension",
-          "cost": 3221405,
-          "attendees": 27852,
-          "events": 1363,
-          "alcohol": 574,
-          "perperson": 72.46
-        },
-        {
-          "condition": "dementia",
-          "cost": 989570,
-          "attendees": 9638,
-          "events": 435,
-          "alcohol": 137,
-          "perperson": 41.15
+          "condition": "stroke",
+          "cost": 717,
+          "attendees": 48,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 29.58
         },
         {
           "condition": "fertility",
@@ -9104,6 +12152,118 @@ window.stats = {
           "perperson": 38.6
         },
         {
+          "condition": "sexual_health",
+          "cost": 793594,
+          "attendees": 10116,
+          "events": 557,
+          "alcohol": 182,
+          "perperson": 55.15
+        },
+        {
+          "condition": "cancer",
+          "cost": 3475882,
+          "attendees": 72962,
+          "events": 3795,
+          "alcohol": 584,
+          "perperson": 64.14
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 472599,
+          "attendees": 6635,
+          "events": 279,
+          "alcohol": 85,
+          "perperson": 39.84
+        },
+        {
+          "condition": "addiction",
+          "cost": 1042,
+          "attendees": 103,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 10.41
+        },
+        {
+          "condition": "allergies",
+          "cost": 83432,
+          "attendees": 3465,
+          "events": 163,
+          "alcohol": 22,
+          "perperson": 22.73
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 21048,
+          "attendees": 1040,
+          "events": 44,
+          "alcohol": 6,
+          "perperson": 11.79
+        },
+        {
+          "condition": "virus",
+          "cost": 293338,
+          "attendees": 5610,
+          "events": 347,
+          "alcohol": 98,
+          "perperson": 33.68
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 2346619,
+          "attendees": 22813,
+          "events": 1194,
+          "alcohol": 459,
+          "perperson": 72.82
+        },
+        {
+          "condition": "hypertension",
+          "cost": 3221405,
+          "attendees": 27852,
+          "events": 1363,
+          "alcohol": 574,
+          "perperson": 72.46
+        },
+        {
+          "condition": "hiv",
+          "cost": 2863,
+          "attendees": 160,
+          "events": 5,
+          "alcohol": 1,
+          "perperson": 18.35
+        },
+        {
+          "condition": "dementia",
+          "cost": 989570,
+          "attendees": 9638,
+          "events": 435,
+          "alcohol": 137,
+          "perperson": 41.15
+        },
+        {
+          "condition": "respiratory",
+          "cost": 3929050,
+          "attendees": 38571,
+          "events": 1907,
+          "alcohol": 787,
+          "perperson": 73.53
+        },
+        {
+          "condition": "obesity",
+          "cost": 550,
+          "attendees": 40,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 13.75
+        },
+        {
           "condition": "heart_disease",
           "cost": 1493695,
           "attendees": 21328,
@@ -9112,20 +12272,28 @@ window.stats = {
           "perperson": 48.66
         },
         {
-          "condition": "osteoporosis",
-          "cost": 2345075,
-          "attendees": 22760,
-          "events": 1192,
-          "alcohol": 458,
-          "perperson": 72.9
+          "condition": "ageing",
+          "cost": 1880690,
+          "attendees": 22239,
+          "events": 880,
+          "alcohol": 326,
+          "perperson": 49.6
         },
         {
-          "condition": "hiv",
-          "cost": 2516,
-          "attendees": 120,
-          "events": 4,
-          "alcohol": 1,
-          "perperson": 20.77
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         }
       ],
       "perheadBins": [
@@ -9310,20 +12478,20 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "diabetes",
-          "cost": 4716250.71,
-          "attendees": 49491,
-          "events": 1525,
-          "alcohol": 498,
-          "perperson": 112.24
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 140164.8,
-          "attendees": 1043,
-          "events": 36,
-          "alcohol": 4,
-          "perperson": 65.95
+          "condition": "gastro",
+          "cost": 3852.84,
+          "attendees": 53,
+          "events": 3,
+          "alcohol": 3,
+          "perperson": 74.42
         },
         {
           "condition": "mental_illness",
@@ -9342,6 +12510,22 @@ window.stats = {
           "perperson": 165.62
         },
         {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 254711.53,
+          "attendees": 9342,
+          "events": 253,
+          "alcohol": 18,
+          "perperson": 25.44
+        },
+        {
           "condition": "hypertension",
           "cost": 47194.22,
           "attendees": 276,
@@ -9350,28 +12534,28 @@ window.stats = {
           "perperson": 114.67
         },
         {
-          "condition": "ageing",
-          "cost": 675214.18,
-          "attendees": 3700,
-          "events": 163,
-          "alcohol": 96,
-          "perperson": 180.46
+          "condition": "sexual_health",
+          "cost": 58258.49,
+          "attendees": 437,
+          "events": 16,
+          "alcohol": 6,
+          "perperson": 159.88
         },
         {
-          "condition": "osteoporosis",
-          "cost": 243430.31,
-          "attendees": 419,
-          "events": 14,
-          "alcohol": 7,
-          "perperson": 316.77
+          "condition": "musculoskeletal",
+          "cost": 273209.78,
+          "attendees": 438,
+          "events": 15,
+          "alcohol": 8,
+          "perperson": 400.14
         },
         {
-          "condition": "sexual",
-          "cost": 152253.89,
-          "attendees": 1350,
-          "events": 38,
-          "alcohol": 16,
-          "perperson": 105.74
+          "condition": "virus",
+          "cost": 31476.55,
+          "attendees": 163,
+          "events": 9,
+          "alcohol": 5,
+          "perperson": 101.98
         },
         {
           "condition": "dementia",
@@ -9382,28 +12566,108 @@ window.stats = {
           "perperson": 9.43
         },
         {
+          "condition": "obesity",
+          "cost": 304072.28,
+          "attendees": 739,
+          "events": 15,
+          "alcohol": 8,
+          "perperson": 284.66
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": 4716250.71,
+          "attendees": 49491,
+          "events": 1525,
+          "alcohol": 498,
+          "perperson": 112.24
+        },
+        {
           "condition": "heart_disease",
-          "cost": 454313.53,
-          "attendees": 1707,
-          "events": 56,
+          "cost": 454849.89,
+          "attendees": 1767,
+          "events": 57,
           "alcohol": 12,
-          "perperson": 157.11
+          "perperson": 154.51
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 307016.86,
+          "attendees": 1351,
+          "events": 43,
+          "alcohol": 7,
+          "perperson": 115.26
+        },
+        {
+          "condition": "respiratory",
+          "cost": 47295.59,
+          "attendees": 286,
+          "events": 10,
+          "alcohol": 1,
+          "perperson": 104.21
+        },
+        {
+          "condition": "stroke",
+          "cost": 3968.51,
+          "attendees": 34,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 116.72
+        },
+        {
+          "condition": "ageing",
+          "cost": 676474.89,
+          "attendees": 3816,
+          "events": 168,
+          "alcohol": 96,
+          "perperson": 175.4
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": 112.5,
+          "attendees": 42,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 2.68
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hiv",
-          "cost": 5016.99,
-          "attendees": 139,
-          "events": 3,
+          "cost": 5405.7,
+          "attendees": 164,
+          "events": 4,
           "alcohol": 1,
-          "perperson": 37.16
-        },
-        {
-          "condition": "paedology",
-          "cost": 1220507.03,
-          "attendees": 16427,
-          "events": 477,
-          "alcohol": 77,
-          "perperson": 58.62
+          "perperson": 31.76
         }
       ],
       "perheadBins": [
@@ -9588,44 +12852,44 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "mental_illness",
-          "cost": 943.73,
-          "attendees": 101,
-          "events": 4,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 9.56
+          "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 121366.77,
-          "attendees": 1065,
-          "events": 36,
+          "condition": "allergies",
+          "cost": 4460.73,
+          "attendees": 182,
+          "events": 8,
           "alcohol": 0,
-          "perperson": 58.26
+          "perperson": 20.01
         },
         {
-          "condition": "sexual",
-          "cost": 4970.71,
-          "attendees": 77,
-          "events": 3,
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 75.79
+          "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 8456.89,
-          "attendees": 119,
-          "events": 5,
-          "alcohol": 0,
-          "perperson": 69.41
-        },
-        {
-          "condition": "fertility",
-          "cost": 2187.31,
-          "attendees": 23,
+          "condition": "stroke",
+          "cost": 2518.18,
+          "attendees": 31,
           "events": 1,
           "alcohol": 0,
-          "perperson": 95.1
+          "perperson": 81.23
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hiv",
@@ -9636,6 +12900,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "cancer",
+          "cost": 123569.52,
+          "attendees": 1095,
+          "events": 37,
+          "alcohol": 0,
+          "perperson": 58.67
+        },
+        {
           "condition": "diabetes",
           "cost": 2000,
           "attendees": 21,
@@ -9644,12 +12916,20 @@ window.stats = {
           "perperson": 95.24
         },
         {
-          "condition": "paedology",
-          "cost": 23614.99,
-          "attendees": 1148,
-          "events": 30,
+          "condition": "paediatrics",
+          "cost": 8722.94,
+          "attendees": 672,
+          "events": 18,
           "alcohol": 0,
-          "perperson": 26.71
+          "perperson": 16.75
+        },
+        {
+          "condition": "ageing",
+          "cost": 9132.59,
+          "attendees": 185,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 52.54
         },
         {
           "condition": "hypertension",
@@ -9660,14 +12940,6 @@ window.stats = {
           "perperson": 86.17
         },
         {
-          "condition": "heart_disease",
-          "cost": 11216.15,
-          "attendees": 620,
-          "events": 30,
-          "alcohol": 0,
-          "perperson": 29.59
-        },
-        {
           "condition": "dementia",
           "cost": null,
           "attendees": null,
@@ -9676,7 +12948,95 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "virus",
+          "cost": 56690.16,
+          "attendees": 688,
+          "events": 31,
+          "alcohol": 1,
+          "perperson": 82.06
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 943.73,
+          "attendees": 101,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 9.56
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 2187.31,
+          "attendees": 23,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 95.1
+        },
+        {
+          "condition": "respiratory",
+          "cost": 49569.14,
+          "attendees": 1343,
+          "events": 53,
+          "alcohol": 2,
+          "perperson": 44.83
+        },
+        {
+          "condition": "obesity",
+          "cost": 67024,
+          "attendees": 107,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 422.61
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 11216.15,
+          "attendees": 620,
+          "events": 30,
+          "alcohol": 0,
+          "perperson": 29.59
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -9867,28 +13227,12 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "hiv",
-          "cost": 15905,
-          "attendees": 335,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 47.17
-        },
-        {
-          "condition": "hypertension",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "sexual",
-          "cost": 37693,
-          "attendees": 358,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 91.82
         },
         {
           "condition": "ageing",
@@ -9907,15 +13251,7 @@ window.stats = {
           "perperson": 70.03
         },
         {
-          "condition": "paedology",
-          "cost": 5805,
-          "attendees": 212,
-          "events": 12,
-          "alcohol": 0,
-          "perperson": 22.36
-        },
-        {
-          "condition": "diabetes",
+          "condition": "kidney_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -9931,7 +13267,111 @@ window.stats = {
           "perperson": 49.93
         },
         {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "cancer",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 1385,
+          "attendees": 165,
+          "events": 10,
+          "alcohol": 0,
+          "perperson": 8.39
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": 15905,
+          "attendees": 335,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 47.17
+        },
+        {
+          "condition": "allergies",
+          "cost": 778,
+          "attendees": 84,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 10.42
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -9947,7 +13387,7 @@ window.stats = {
           "perperson": 232
         },
         {
-          "condition": "dementia",
+          "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -9955,7 +13395,23 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "sexual_health",
+          "cost": 53598,
+          "attendees": 693,
+          "events": 18,
+          "alcohol": 0,
+          "perperson": 69.5
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10145,6 +13601,14 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "cancer",
+          "cost": 2660523.87,
+          "attendees": 46199,
+          "events": 1743,
+          "alcohol": 1,
+          "perperson": 29.8
+        },
+        {
           "condition": "dementia",
           "cost": 2304792.51,
           "attendees": 19269,
@@ -10153,76 +13617,92 @@ window.stats = {
           "perperson": 57.34
         },
         {
-          "condition": "hiv",
-          "cost": 24502.27,
-          "attendees": 131,
-          "events": 3,
+          "condition": "gastro",
+          "cost": 25207.62,
+          "attendees": 301,
+          "events": 14,
           "alcohol": 0,
-          "perperson": 151.61
-        },
-        {
-          "condition": "cancer",
-          "cost": 2592971.71,
-          "attendees": 45746,
-          "events": 1729,
-          "alcohol": 1,
-          "perperson": 29.31
+          "perperson": 81.87
         },
         {
           "condition": "ageing",
-          "cost": 1114766.97,
-          "attendees": 8322,
-          "events": 209,
-          "alcohol": 2,
-          "perperson": 116.81
+          "cost": 1707153.23,
+          "attendees": 17571,
+          "events": 541,
+          "alcohol": 4,
+          "perperson": 62.69
         },
         {
-          "condition": "fertility",
-          "cost": 31236.66,
-          "attendees": 730,
-          "events": 26,
+          "condition": "cold_and_flu",
+          "cost": 2473,
+          "attendees": 55,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 39.05
+          "perperson": 42.13
         },
         {
-          "condition": "paedology",
-          "cost": 488247.01,
-          "attendees": 16216,
-          "events": 609,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 27.17
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
-          "cost": 8263.21,
-          "attendees": 182,
-          "events": 12,
+          "condition": "stroke",
+          "cost": 733492.57,
+          "attendees": 717,
+          "events": 22,
           "alcohol": 0,
-          "perperson": 38.12
+          "perperson": 457.17
         },
         {
-          "condition": "diabetes",
-          "cost": 960926.88,
-          "attendees": 10830,
-          "events": 358,
+          "condition": "sexual_health",
+          "cost": 489893.64,
+          "attendees": 2548,
+          "events": 64,
           "alcohol": 3,
-          "perperson": 57.22
+          "perperson": 182.91
+        },
+        {
+          "condition": "hiv",
+          "cost": 26899.54,
+          "attendees": 173,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 102.97
+        },
+        {
+          "condition": "auto_immune",
+          "cost": 301.18,
+          "attendees": 29,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 12.4
         },
         {
           "condition": "heart_disease",
-          "cost": 7819817.64,
-          "attendees": 75289,
-          "events": 3047,
-          "alcohol": 4,
-          "perperson": 58.03
+          "cost": 7865868.11,
+          "attendees": 76112,
+          "events": 3070,
+          "alcohol": 6,
+          "perperson": 57.95
         },
         {
-          "condition": "sexual",
-          "cost": 1233066.26,
-          "attendees": 5892,
-          "events": 160,
-          "alcohol": 2,
-          "perperson": 143.57
+          "condition": "paediatrics",
+          "cost": 185658.85,
+          "attendees": 8479,
+          "events": 322,
+          "alcohol": 0,
+          "perperson": 19.7
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 638159.33,
+          "attendees": 7471,
+          "events": 283,
+          "alcohol": 1,
+          "perperson": 72.8
         },
         {
           "condition": "mental_illness",
@@ -10239,6 +13719,78 @@ window.stats = {
           "events": 48,
           "alcohol": 1,
           "perperson": 224.73
+        },
+        {
+          "condition": "addiction",
+          "cost": 131269.03,
+          "attendees": 2102,
+          "events": 63,
+          "alcohol": 2,
+          "perperson": 62.35
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 95610.18,
+          "attendees": 1252,
+          "events": 32,
+          "alcohol": 2,
+          "perperson": 76.06
+        },
+        {
+          "condition": "fertility",
+          "cost": 31236.66,
+          "attendees": 730,
+          "events": 26,
+          "alcohol": 0,
+          "perperson": 39.05
+        },
+        {
+          "condition": "allergies",
+          "cost": 17213.17,
+          "attendees": 969,
+          "events": 50,
+          "alcohol": 0,
+          "perperson": 17.37
+        },
+        {
+          "condition": "obesity",
+          "cost": 89455.98,
+          "attendees": 1145,
+          "events": 33,
+          "alcohol": 0,
+          "perperson": 77.34
+        },
+        {
+          "condition": "diabetes",
+          "cost": 960926.88,
+          "attendees": 10830,
+          "events": 358,
+          "alcohol": 3,
+          "perperson": 57.22
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 1631182.3,
+          "attendees": 23535,
+          "events": 1651,
+          "alcohol": 3,
+          "perperson": 54.12
         }
       ],
       "perheadBins": [
@@ -10423,7 +13975,79 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 1618,
+          "attendees": 92,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 19.32
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 12302,
+          "attendees": 860,
+          "events": 70,
+          "alcohol": 0,
+          "perperson": 24.39
+        },
+        {
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10439,6 +14063,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "heart_disease",
           "cost": null,
           "attendees": null,
@@ -10447,7 +14079,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10455,7 +14087,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10479,15 +14111,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 10044,
-          "attendees": 94,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 65.88
-        },
-        {
-          "condition": "dementia",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10495,15 +14119,39 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 12302,
-          "attendees": 860,
-          "events": 70,
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 24.39
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10701,38 +14349,6 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual",
-          "cost": 353979,
-          "attendees": 1629,
-          "events": 49,
-          "alcohol": 0,
-          "perperson": 120.63
-        },
-        {
-          "condition": "fertility",
-          "cost": 419,
-          "attendees": 36,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 12.12
-        },
-        {
-          "condition": "hiv",
-          "cost": 48178,
-          "attendees": 1270,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 25.75
-        },
-        {
-          "condition": "paedology",
-          "cost": 71312,
-          "attendees": 2737,
-          "events": 129,
-          "alcohol": 0,
-          "perperson": 15.63
-        },
-        {
           "condition": "mental_illness",
           "cost": 28547,
           "attendees": 454,
@@ -10741,44 +14357,52 @@ window.stats = {
           "perperson": 35.04
         },
         {
-          "condition": "diabetes",
-          "cost": 46563,
-          "attendees": 107,
-          "events": 3,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 635.1
+          "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 905048,
-          "attendees": 1279,
-          "events": 46,
+          "condition": "stroke",
+          "cost": 2009,
+          "attendees": 102,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 184.8
+          "perperson": 17.18
         },
         {
-          "condition": "heart_disease",
-          "cost": 220678,
-          "attendees": 5204,
-          "events": 161,
-          "alcohol": 1,
-          "perperson": 29.48
-        },
-        {
-          "condition": "hypertension",
-          "cost": 1961,
-          "attendees": 24,
-          "events": 3,
+          "condition": "cold_and_flu",
+          "cost": 1870,
+          "attendees": 147,
+          "events": 8,
           "alcohol": 0,
-          "perperson": 81.96
+          "perperson": 26.65
         },
         {
-          "condition": "cancer",
-          "cost": 6433363,
-          "attendees": 108117,
-          "events": 5374,
-          "alcohol": 1,
-          "perperson": 22.01
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 911943,
+          "attendees": 941,
+          "events": 24,
+          "alcohol": 0,
+          "perperson": 314.21
+        },
+        {
+          "condition": "respiratory",
+          "cost": 2106,
+          "attendees": 44,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 63.29
         },
         {
           "condition": "dementia",
@@ -10789,12 +14413,132 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "auto_immune",
+          "cost": 997,
+          "attendees": 31,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 38.36
+        },
+        {
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 419,
+          "attendees": 36,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 12.12
+        },
+        {
+          "condition": "allergies",
+          "cost": 3454,
+          "attendees": 105,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 27.57
+        },
+        {
+          "condition": "cancer",
+          "cost": 6436676,
+          "attendees": 108190,
+          "events": 5377,
+          "alcohol": 1,
+          "perperson": 22.02
+        },
+        {
+          "condition": "ageing",
+          "cost": 907992,
+          "attendees": 1379,
+          "events": 51,
+          "alcohol": 0,
+          "perperson": 170.98
+        },
+        {
+          "condition": "hiv",
+          "cost": 48268,
+          "attendees": 1279,
+          "events": 10,
+          "alcohol": 0,
+          "perperson": 24.18
+        },
+        {
+          "condition": "gastro",
+          "cost": 15946,
+          "attendees": 174,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 53.2
+        },
+        {
+          "condition": "diabetes",
+          "cost": 46563,
+          "attendees": 107,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 635.1
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 220678,
+          "attendees": 5204,
+          "events": 161,
+          "alcohol": 1,
+          "perperson": 29.48
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 16829,
+          "attendees": 1528,
+          "events": 94,
+          "alcohol": 0,
+          "perperson": 11.16
+        },
+        {
+          "condition": "hypertension",
+          "cost": 1961,
+          "attendees": 24,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 81.96
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 59481,
+          "attendees": 1549,
+          "events": 30,
+          "alcohol": 0,
+          "perperson": 27.48
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 2244263,
+          "attendees": 10247,
+          "events": 407,
+          "alcohol": 7,
+          "perperson": 72.95
+        },
+        {
+          "condition": "addiction",
+          "cost": 3954,
+          "attendees": 191,
+          "events": 8,
+          "alcohol": 4,
+          "perperson": 17.91
         }
       ],
       "perheadBins": [
@@ -10987,14 +14731,6 @@ window.stats = {
           "perperson": 90.31
         },
         {
-          "condition": "fertility",
-          "cost": 6720.52,
-          "attendees": 212,
-          "events": 10,
-          "alcohol": 1,
-          "perperson": 29.66
-        },
-        {
           "condition": "hiv",
           "cost": 3571.2,
           "attendees": 43,
@@ -11003,20 +14739,28 @@ window.stats = {
           "perperson": 83.05
         },
         {
-          "condition": "paedology",
-          "cost": 418383.62,
-          "attendees": 10461,
-          "events": 315,
-          "alcohol": 2,
-          "perperson": 27.54
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 184487.1,
-          "attendees": 2349,
-          "events": 99,
+          "condition": "stroke",
+          "cost": 13340.03,
+          "attendees": 324,
+          "events": 27,
           "alcohol": 1,
-          "perperson": 85.82
+          "perperson": 24.32
+        },
+        {
+          "condition": "obesity",
+          "cost": 4510,
+          "attendees": 88,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 36.18
         },
         {
           "condition": "dementia",
@@ -11027,28 +14771,108 @@ window.stats = {
           "perperson": 7.1
         },
         {
+          "condition": "gastro",
+          "cost": 10158.9,
+          "attendees": 140,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 90.63
+        },
+        {
           "condition": "heart_disease",
-          "cost": 1788398.38,
-          "attendees": 28944,
-          "events": 1037,
+          "cost": 1821437.05,
+          "attendees": 29716,
+          "events": 1076,
+          "alcohol": 3,
+          "perperson": 51.86
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 32153.1,
+          "attendees": 3087,
+          "events": 57,
+          "alcohol": 1,
+          "perperson": 16.04
+        },
+        {
+          "condition": "ageing",
+          "cost": 1306859.02,
+          "attendees": 11714,
+          "events": 440,
           "alcohol": 2,
-          "perperson": 52.45
+          "perperson": 48.84
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 25153.52,
+          "attendees": 462,
+          "events": 14,
+          "alcohol": 0,
+          "perperson": 500.72
+        },
+        {
+          "condition": "allergies",
+          "cost": 1999.2,
+          "attendees": 72,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 27.77
         },
         {
           "condition": "cancer",
-          "cost": 1090885.91,
-          "attendees": 33348,
-          "events": 1437,
+          "cost": 1090924.41,
+          "attendees": 33368,
+          "events": 1438,
           "alcohol": 2,
-          "perperson": 46.01
+          "perperson": 45.98
         },
         {
-          "condition": "osteoporosis",
-          "cost": 446012.75,
-          "attendees": 7288,
-          "events": 309,
+          "condition": "sexual_health",
+          "cost": 33740.77,
+          "attendees": 381,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 235.01
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 6720.52,
+          "attendees": 212,
+          "events": 10,
+          "alcohol": 1,
+          "perperson": 29.66
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 458555.45,
+          "attendees": 7640,
+          "events": 317,
           "alcohol": 2,
-          "perperson": 39.34
+          "perperson": 39.01
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "hypertension",
@@ -11059,12 +14883,12 @@ window.stats = {
           "perperson": 55.68
         },
         {
-          "condition": "ageing",
-          "cost": 549278.23,
-          "attendees": 2892,
-          "events": 115,
-          "alcohol": 2,
-          "perperson": 81.69
+          "condition": "virus",
+          "cost": 62287.42,
+          "attendees": 1986,
+          "events": 79,
+          "alcohol": 1,
+          "perperson": 109.41
         },
         {
           "condition": "diabetes",
@@ -11073,6 +14897,22 @@ window.stats = {
           "events": 942,
           "alcohol": 1,
           "perperson": 69.4
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 104409.04,
+          "attendees": 1446,
+          "events": 82,
+          "alcohol": 2,
+          "perperson": 48.79
         }
       ],
       "perheadBins": [
@@ -11257,7 +15097,111 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 14843,
+          "attendees": 432,
+          "events": 12,
+          "alcohol": 5,
+          "perperson": 35.8
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 2886,
+          "attendees": 73,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 48.37
+        },
+        {
+          "condition": "hiv",
+          "cost": 2056,
+          "attendees": 26,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 79.08
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 745,
+          "attendees": 101,
+          "events": 4,
+          "alcohol": 1,
+          "perperson": 8.31
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 4200,
+          "attendees": 465,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 13.12
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -11273,7 +15217,7 @@ window.stats = {
           "perperson": 68.18
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -11281,12 +15225,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": 2056,
-          "attendees": 26,
-          "events": 1,
-          "alcohol": 1,
-          "perperson": 79.08
+          "condition": "mental_illness",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "diabetes",
@@ -11305,23 +15249,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 745,
-          "attendees": 101,
-          "events": 4,
-          "alcohol": 1,
-          "perperson": 8.31
-        },
-        {
-          "condition": "paedology",
-          "cost": 5791,
-          "attendees": 488,
-          "events": 4,
-          "alcohol": 2,
-          "perperson": 27.13
-        },
-        {
-          "condition": "cancer",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -11329,15 +15257,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 4500,
-          "attendees": 110,
-          "events": 2,
-          "alcohol": 1,
-          "perperson": 42.86
-        },
-        {
-          "condition": "dementia",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -11345,12 +15265,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 7988,
+          "attendees": 192,
+          "events": 5,
+          "alcohol": 3,
+          "perperson": 35.83
         }
       ],
       "perheadBins": [
@@ -11536,36 +15472,36 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "cancer",
-          "cost": 698406.31,
-          "attendees": 16224,
-          "events": 852,
-          "alcohol": 1,
-          "perperson": 47.73
-        },
-        {
-          "condition": "fertility",
-          "cost": 406367.37,
-          "attendees": 2579,
-          "events": 184,
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 808.02
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
-          "cost": 4500,
-          "attendees": 160,
+          "condition": "obesity",
+          "cost": 11600,
+          "attendees": 130,
           "events": 2,
           "alcohol": 0,
-          "perperson": 32.5
+          "perperson": 110.28
         },
         {
-          "condition": "mental_illness",
-          "cost": 42792.51,
-          "attendees": 2111,
-          "events": 92,
-          "alcohol": 1,
-          "perperson": 17.6
+          "condition": "gastro",
+          "cost": 1681.82,
+          "attendees": 52,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 38.13
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "diabetes",
@@ -11576,36 +15512,12 @@ window.stats = {
           "perperson": 73.79
         },
         {
-          "condition": "sexual",
-          "cost": 154235.34,
-          "attendees": 1191,
-          "events": 50,
-          "alcohol": 2,
-          "perperson": 135.02
-        },
-        {
-          "condition": "ageing",
-          "cost": 53353.9,
-          "attendees": 787,
-          "events": 44,
-          "alcohol": 0,
-          "perperson": 58.42
-        },
-        {
-          "condition": "hiv",
-          "cost": 6955.55,
-          "attendees": 241,
-          "events": 16,
-          "alcohol": 0,
-          "perperson": 27.17
-        },
-        {
-          "condition": "paedology",
-          "cost": 99190.8,
-          "attendees": 2108,
-          "events": 102,
-          "alcohol": 0,
-          "perperson": 71.23
+          "condition": "heart_disease",
+          "cost": 1093192.05,
+          "attendees": 18092,
+          "events": 858,
+          "alcohol": 4,
+          "perperson": 95.35
         },
         {
           "condition": "hypertension",
@@ -11616,6 +15528,22 @@ window.stats = {
           "perperson": 107.46
         },
         {
+          "condition": "respiratory",
+          "cost": 345189.04,
+          "attendees": 3567,
+          "events": 162,
+          "alcohol": 0,
+          "perperson": 110.62
+        },
+        {
+          "condition": "addiction",
+          "cost": 121.18,
+          "attendees": 15,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 8.08
+        },
+        {
           "condition": "dementia",
           "cost": null,
           "attendees": null,
@@ -11624,12 +15552,116 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 1079010.44,
-          "attendees": 17931,
-          "events": 854,
-          "alcohol": 4,
-          "perperson": 95.08
+          "condition": "ageing",
+          "cost": 55807.58,
+          "attendees": 971,
+          "events": 50,
+          "alcohol": 0,
+          "perperson": 53.86
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 1017704.81,
+          "attendees": 16579,
+          "events": 865,
+          "alcohol": 1,
+          "perperson": 52.14
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 324449.55,
+          "attendees": 337,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 747.44
+        },
+        {
+          "condition": "fertility",
+          "cost": 406367.37,
+          "attendees": 2579,
+          "events": 184,
+          "alcohol": 0,
+          "perperson": 808.02
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 42792.51,
+          "attendees": 2111,
+          "events": 92,
+          "alcohol": 1,
+          "perperson": 17.6
+        },
+        {
+          "condition": "hiv",
+          "cost": 6955.55,
+          "attendees": 241,
+          "events": 16,
+          "alcohol": 0,
+          "perperson": 27.17
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 778965.8,
+          "attendees": 3705,
+          "events": 231,
+          "alcohol": 2,
+          "perperson": 242.08
+        },
+        {
+          "condition": "allergies",
+          "cost": 258796.02,
+          "attendees": 2737,
+          "events": 99,
+          "alcohol": 0,
+          "perperson": 128.25
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 40044.93,
+          "attendees": 1199,
+          "events": 68,
+          "alcohol": 0,
+          "perperson": 58.56
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 73957.36,
+          "attendees": 774,
+          "events": 46,
+          "alcohol": 1,
+          "perperson": 95.63
         }
       ],
       "perheadBins": [
@@ -11814,12 +15846,92 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "osteoporosis",
-          "cost": 1349758.33,
-          "attendees": 22592,
-          "events": 1045,
-          "alcohol": 720,
-          "perperson": 59.26
+          "condition": "cold_and_flu",
+          "cost": 88,
+          "attendees": 7,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 12.57
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": 3489.74,
+          "attendees": 191,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 20.77
+        },
+        {
+          "condition": "obesity",
+          "cost": 2543.85,
+          "attendees": 83,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 37.61
+        },
+        {
+          "condition": "gastro",
+          "cost": 1771.96,
+          "attendees": 95,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 29.99
+        },
+        {
+          "condition": "ageing",
+          "cost": 574646.57,
+          "attendees": 20158,
+          "events": 776,
+          "alcohol": 50,
+          "perperson": 28.2
+        },
+        {
+          "condition": "virus",
+          "cost": 2314,
+          "attendees": 167,
+          "events": 5,
+          "alcohol": 1,
+          "perperson": 14.2
+        },
+        {
+          "condition": "auto_immune",
+          "cost": 1414,
+          "attendees": 161,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 8.75
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 2365366.11,
+          "attendees": 45020,
+          "events": 1676,
+          "alcohol": 548,
+          "perperson": 43.94
+        },
+        {
+          "condition": "respiratory",
+          "cost": 99264.16,
+          "attendees": 2618,
+          "events": 137,
+          "alcohol": 33,
+          "perperson": 45.98
         },
         {
           "condition": "mental_illness",
@@ -11830,12 +15942,12 @@ window.stats = {
           "perperson": 62.5
         },
         {
-          "condition": "hiv",
-          "cost": 5368,
-          "attendees": 179,
-          "events": 9,
-          "alcohol": 6,
-          "perperson": 118.64
+          "condition": "sexual_health",
+          "cost": 19076.37,
+          "attendees": 393,
+          "events": 15,
+          "alcohol": 8,
+          "perperson": 98.9
         },
         {
           "condition": "fertility",
@@ -11846,12 +15958,28 @@ window.stats = {
           "perperson": 14.62
         },
         {
-          "condition": "cancer",
-          "cost": 35019.01,
-          "attendees": 1424,
-          "events": 49,
-          "alcohol": 7,
-          "perperson": 45.26
+          "condition": "allergies",
+          "cost": 272.73,
+          "attendees": 30,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 9.09
+        },
+        {
+          "condition": "stroke",
+          "cost": 5753.22,
+          "attendees": 235,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 24.93
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 1350338.15,
+          "attendees": 22652,
+          "events": 1050,
+          "alcohol": 720,
+          "perperson": 59.04
         },
         {
           "condition": "dementia",
@@ -11862,30 +15990,6 @@ window.stats = {
           "perperson": 11.16
         },
         {
-          "condition": "ageing",
-          "cost": 79494.18,
-          "attendees": 4690,
-          "events": 179,
-          "alcohol": 10,
-          "perperson": 19.17
-        },
-        {
-          "condition": "sexual",
-          "cost": 1290361.43,
-          "attendees": 3812,
-          "events": 109,
-          "alcohol": 84,
-          "perperson": 193.39
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 2355305.97,
-          "attendees": 44752,
-          "events": 1659,
-          "alcohol": 543,
-          "perperson": 44.12
-        },
-        {
           "condition": "hypertension",
           "cost": 49345.22,
           "attendees": 1688,
@@ -11894,12 +15998,20 @@ window.stats = {
           "perperson": 27.75
         },
         {
-          "condition": "paedology",
-          "cost": 59008.34,
-          "attendees": 1839,
-          "events": 67,
-          "alcohol": 7,
-          "perperson": 25.71
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": 15368,
+          "attendees": 302,
+          "events": 11,
+          "alcohol": 6,
+          "perperson": 111.86
         },
         {
           "condition": "diabetes",
@@ -11908,6 +16020,22 @@ window.stats = {
           "events": 479,
           "alcohol": 196,
           "perperson": 47.94
+        },
+        {
+          "condition": "cancer",
+          "cost": 38077.29,
+          "attendees": 1567,
+          "events": 54,
+          "alcohol": 7,
+          "perperson": 42.83
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 7039.01,
+          "attendees": 136,
+          "events": 7,
+          "alcohol": 1,
+          "perperson": 51.22
         }
       ],
       "perheadBins": [
@@ -12116,14 +16244,6 @@ window.stats = {
           "perperson": 6.2
         },
         {
-          "condition": "paedology",
-          "cost": 13065.93,
-          "attendees": 208,
-          "events": 6,
-          "alcohol": 1,
-          "perperson": 84.47
-        },
-        {
           "condition": "mental_illness",
           "cost": 179067.18,
           "attendees": 231,
@@ -12132,20 +16252,52 @@ window.stats = {
           "perperson": 418.74
         },
         {
-          "condition": "heart_disease",
-          "cost": 3197.48,
-          "attendees": 199,
-          "events": 8,
-          "alcohol": 1,
-          "perperson": 13.73
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": 286.37,
+          "attendees": 31,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 9.24
         },
         {
           "condition": "cancer",
-          "cost": 145446.91,
-          "attendees": 753,
-          "events": 32,
+          "cost": 146216.02,
+          "attendees": 821,
+          "events": 36,
           "alcohol": 2,
-          "perperson": 70.63
+          "perperson": 64.09
+        },
+        {
+          "condition": "obesity",
+          "cost": 264.27,
+          "attendees": 20,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 13.21
+        },
+        {
+          "condition": "respiratory",
+          "cost": 964.68,
+          "attendees": 90,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 10.96
+        },
+        {
+          "condition": "stroke",
+          "cost": 1192.01,
+          "attendees": 102,
+          "events": 5,
+          "alcohol": 2,
+          "perperson": 10.9
         },
         {
           "condition": "dementia",
@@ -12156,12 +16308,12 @@ window.stats = {
           "perperson": 18
         },
         {
-          "condition": "sexual",
-          "cost": 2912.18,
-          "attendees": 53,
-          "events": 2,
+          "condition": "paediatrics",
+          "cost": 8119.29,
+          "attendees": 134,
+          "events": 4,
           "alcohol": 1,
-          "perperson": 64.3
+          "perperson": 99.22
         },
         {
           "condition": "ageing",
@@ -12172,7 +16324,79 @@ window.stats = {
           "perperson": 164.43
         },
         {
-          "condition": "osteoporosis",
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 1378.91,
+          "attendees": 116,
+          "events": 5,
+          "alcohol": 2,
+          "perperson": 12.1
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 3197.48,
+          "attendees": 199,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 13.73
+        },
+        {
+          "condition": "auto_immune",
+          "cost": 1120.36,
+          "attendees": 106,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 10.7
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 258.85,
+          "attendees": 24,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 10.79
+        },
+        {
+          "condition": "allergies",
+          "cost": 156347.7,
+          "attendees": 252,
+          "events": 10,
+          "alcohol": 2,
+          "perperson": 335.21
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12370,7 +16594,79 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12386,7 +16682,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
+          "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12402,7 +16698,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12410,7 +16706,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12434,7 +16730,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12442,7 +16738,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12450,7 +16746,31 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12648,7 +16968,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "hiv",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12656,12 +16976,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 6693.6,
-          "attendees": 135,
-          "events": 4,
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 52.74
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 4743.01,
+          "attendees": 110,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 53.02
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "fertility",
@@ -12672,12 +17008,100 @@ window.stats = {
           "perperson": 59.17
         },
         {
-          "condition": "paedology",
-          "cost": 4743.01,
-          "attendees": 110,
-          "events": 3,
+          "condition": "musculoskeletal",
+          "cost": 1084.16,
+          "attendees": 40,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 53.02
+          "perperson": 27.1
+        },
+        {
+          "condition": "hypertension",
+          "cost": 112630.29,
+          "attendees": 1059,
+          "events": 42,
+          "alcohol": 0,
+          "perperson": 117.85
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 2000,
+          "attendees": 50,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 40
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 2200,
+          "attendees": 70,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 31.43
+        },
+        {
+          "condition": "diabetes",
+          "cost": 463680.41,
+          "attendees": 3793,
+          "events": 125,
+          "alcohol": 0,
+          "perperson": 114.34
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 7438.51,
+          "attendees": 206,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 40.41
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 107673.66,
+          "attendees": 1076,
+          "events": 40,
+          "alcohol": 0,
+          "perperson": 114.09
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "mental_illness",
@@ -12696,52 +17120,44 @@ window.stats = {
           "perperson": 60.93
         },
         {
-          "condition": "osteoporosis",
-          "cost": 1084.16,
-          "attendees": 40,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 27.1
-        },
-        {
-          "condition": "hypertension",
-          "cost": 112630.29,
-          "attendees": 1059,
-          "events": 42,
-          "alcohol": 0,
-          "perperson": 117.85
-        },
-        {
           "condition": "heart_disease",
-          "cost": 568188.03,
-          "attendees": 3318,
-          "events": 112,
+          "cost": 572916.02,
+          "attendees": 3396,
+          "events": 114,
           "alcohol": 0,
-          "perperson": 149.09
+          "perperson": 147.51
         },
         {
-          "condition": "ageing",
-          "cost": 20910.04,
-          "attendees": 218,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 90.42
-        },
-        {
-          "condition": "diabetes",
-          "cost": 463680.41,
-          "attendees": 3793,
-          "events": 125,
-          "alcohol": 0,
-          "perperson": 114.34
-        },
-        {
-          "condition": "dementia",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": 1000,
+          "attendees": 60,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 16.67
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 22201.27,
+          "attendees": 243,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 86.11
         }
       ],
       "perheadBins": [
@@ -12926,7 +17342,7 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "paedology",
+          "condition": "auto_immune",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12934,7 +17350,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hypertension",
+          "condition": "sexual_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12942,23 +17358,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "heart_disease",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "mental_illness",
+          "condition": "kidney_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -12974,14 +17374,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "diabetes",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
           "condition": "cancer",
           "cost": 3313,
           "attendees": 104,
@@ -12990,7 +17382,15 @@ window.stats = {
           "perperson": 43.49
         },
         {
-          "condition": "fertility",
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13006,7 +17406,119 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hypertension",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13204,6 +17716,110 @@ window.stats = {
       ],
       "conditions": [
         {
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 131795.57,
+          "attendees": 1050,
+          "events": 31,
+          "alcohol": 0,
+          "perperson": 115.1
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 34677.37,
+          "attendees": 1534,
+          "events": 40,
+          "alcohol": 0,
+          "perperson": 19.27
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 1172.5,
+          "attendees": 265,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 5.62
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 146321.47,
+          "attendees": 335,
+          "events": 11,
+          "alcohol": 0,
+          "perperson": 410.93
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
           "condition": "hypertension",
           "cost": null,
           "attendees": null,
@@ -13212,15 +17828,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
-          "cost": 955.25,
-          "attendees": 104,
-          "events": 5,
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 9.17
+          "perperson": null
         },
         {
-          "condition": "hiv",
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13244,14 +17860,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 120029.85,
-          "attendees": 292,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 349.98
-        },
-        {
           "condition": "fertility",
           "cost": null,
           "attendees": null,
@@ -13260,12 +17868,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 1172.5,
-          "attendees": 265,
-          "events": 3,
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 5.62
+          "perperson": null
         },
         {
           "condition": "cancer",
@@ -13276,15 +17884,7 @@ window.stats = {
           "perperson": 9.85
         },
         {
-          "condition": "paedology",
-          "cost": 204086.18,
-          "attendees": 3787,
-          "events": 123,
-          "alcohol": 0,
-          "perperson": 35.23
-        },
-        {
-          "condition": "dementia",
+          "condition": "oral_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13292,7 +17892,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13483,7 +18091,71 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "heart_disease",
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "hiv",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "dementia",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cancer",
           "cost": 50390.19,
           "attendees": 66,
           "events": 1,
@@ -13491,12 +18163,20 @@ window.stats = {
           "perperson": 763.49
         },
         {
-          "condition": "paedology",
+          "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 50390.19,
+          "attendees": 66,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 763.49
         },
         {
           "condition": "hypertension",
@@ -13507,7 +18187,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual",
+          "condition": "addiction",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13516,14 +18204,6 @@ window.stats = {
         },
         {
           "condition": "mental_illness",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "hiv",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13547,7 +18227,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
+          "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13555,15 +18235,39 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 50390.19,
-          "attendees": 66,
-          "events": 1,
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 763.49
+          "perperson": null
         },
         {
-          "condition": "osteoporosis",
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "paediatrics",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13761,12 +18465,76 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "ageing",
-          "cost": 52331,
-          "attendees": 717,
-          "events": 39,
-          "alcohol": 5,
-          "perperson": 86.05
+          "condition": "auto_immune",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "kidney_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 72919,
+          "attendees": 619,
+          "events": 17,
+          "alcohol": 0,
+          "perperson": 131.31
+        },
+        {
+          "condition": "addiction",
+          "cost": 6521,
+          "attendees": 107,
+          "events": 4,
+          "alcohol": 1,
+          "perperson": 77.96
+        },
+        {
+          "condition": "dementia",
+          "cost": 94914.81,
+          "attendees": 142,
+          "events": 6,
+          "alcohol": 1,
+          "perperson": 369.57
+        },
+        {
+          "condition": "obesity",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 111587,
+          "attendees": 189,
+          "events": 7,
+          "alcohol": 1,
+          "perperson": 338.71
+        },
+        {
+          "condition": "hiv",
+          "cost": 89243,
+          "attendees": 79,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 912.59
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         },
         {
           "condition": "fertility",
@@ -13785,20 +18553,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 235906,
-          "attendees": 2368,
-          "events": 59,
-          "alcohol": 2,
-          "perperson": 92.9
+          "condition": "allergies",
+          "cost": 600,
+          "attendees": 45,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 13.33
         },
         {
-          "condition": "heart_disease",
-          "cost": 72919,
-          "attendees": 619,
-          "events": 17,
-          "alcohol": 0,
-          "perperson": 131.31
+          "condition": "paediatrics",
+          "cost": 68588.86,
+          "attendees": 4925,
+          "events": 63,
+          "alcohol": 1,
+          "perperson": 26.91
         },
         {
           "condition": "mental_illness",
@@ -13817,44 +18585,76 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
-          "cost": 94914.81,
-          "attendees": 142,
-          "events": 6,
-          "alcohol": 1,
-          "perperson": 369.57
+          "condition": "musculoskeletal",
+          "cost": 201859,
+          "attendees": 1067,
+          "events": 75,
+          "alcohol": 22,
+          "perperson": 148.51
         },
         {
-          "condition": "osteoporosis",
-          "cost": 3689,
-          "attendees": 48,
-          "events": 3,
+          "condition": "cancer",
+          "cost": 241130,
+          "attendees": 2408,
+          "events": 61,
+          "alcohol": 2,
+          "perperson": 93.66
+        },
+        {
+          "condition": "ageing",
+          "cost": 176403,
+          "attendees": 1811,
+          "events": 77,
+          "alcohol": 8,
+          "perperson": 94.57
+        },
+        {
+          "condition": "respiratory",
+          "cost": 101,
+          "attendees": 15,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 77.66
+          "perperson": 6.73
         },
         {
-          "condition": "paedology",
-          "cost": 220641.86,
-          "attendees": 6414,
-          "events": 98,
-          "alcohol": 7,
-          "perperson": 58.24
-        },
-        {
-          "condition": "hiv",
-          "cost": 89243,
-          "attendees": 79,
-          "events": 2,
-          "alcohol": 1,
-          "perperson": 912.59
-        },
-        {
-          "condition": "sexual",
-          "cost": 332372.58,
-          "attendees": 353,
-          "events": 12,
+          "condition": "stroke",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
           "alcohol": 0,
-          "perperson": 272.42
+          "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 492,
+          "attendees": 120,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 3.78
+        },
+        {
+          "condition": "oral_health",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         }
       ],
       "perheadBins": [
@@ -13931,52 +18731,100 @@ window.stats = {
       "perperson": 67.86
     },
     {
-      "condition": "heart_disease",
-      "cost": 41828944.89,
-      "attendees": 434496,
-      "events": 15768,
-      "alcohol": 3883,
-      "perperson": 76.92
+      "condition": "cold_and_flu",
+      "cost": 118721.47,
+      "attendees": 2745,
+      "events": 67,
+      "alcohol": 8,
+      "perperson": 132.31
+    },
+    {
+      "condition": "sexual_health",
+      "cost": 9173564.15,
+      "attendees": 98334,
+      "events": 3098,
+      "alcohol": 588,
+      "perperson": 76.64
+    },
+    {
+      "condition": "addiction",
+      "cost": 598631.59,
+      "attendees": 4812,
+      "events": 136,
+      "alcohol": 27,
+      "perperson": 74.77
     },
     {
       "condition": "ageing",
-      "cost": 19468152.92,
-      "attendees": 107503,
-      "events": 3900,
-      "alcohol": 1560,
-      "perperson": 125.08
+      "cost": 26886946.2,
+      "attendees": 203952,
+      "events": 7244,
+      "alcohol": 2142,
+      "perperson": 90.06
+    },
+    {
+      "condition": "kidney_disease",
+      "cost": null,
+      "attendees": null,
+      "events": 0,
+      "alcohol": 0,
+      "perperson": null
+    },
+    {
+      "condition": "auto_immune",
+      "cost": 261367.21,
+      "attendees": 745,
+      "events": 28,
+      "alcohol": 3,
+      "perperson": 111.17
+    },
+    {
+      "condition": "allergies",
+      "cost": 6922071.23,
+      "attendees": 118495,
+      "events": 2546,
+      "alcohol": 287,
+      "perperson": 168.93
+    },
+    {
+      "condition": "respiratory",
+      "cost": 19934698.09,
+      "attendees": 160891,
+      "events": 7540,
+      "alcohol": 2677,
+      "perperson": 84.28
     },
     {
       "condition": "cancer",
-      "cost": 33246805.23,
-      "attendees": 615525,
-      "events": 26438,
-      "alcohol": 2055,
-      "perperson": 40.67
+      "cost": 34587710.19,
+      "attendees": 621859,
+      "events": 26724,
+      "alcohol": 2093,
+      "perperson": 41.03
     },
     {
-      "condition": "osteoporosis",
-      "cost": 6941872.19,
-      "attendees": 67573,
-      "events": 3120,
-      "alcohol": 1453,
-      "perperson": 76.42
+      "condition": "obesity",
+      "cost": 1657012.89,
+      "attendees": 11622,
+      "events": 470,
+      "alcohol": 272,
+      "perperson": 129.86
     },
     {
-      "condition": "paedology",
-      "cost": 9220492.69,
-      "attendees": 163716,
-      "events": 5459,
-      "alcohol": 970,
-      "perperson": 53.28
+      "condition": "oral_health",
+      "cost": 2224.27,
+      "attendees": 29,
+      "events": 2,
+      "alcohol": 1,
+      "perperson": 71
     },
     {
-      "condition": "hiv",
-      "cost": 5251202.61,
-      "attendees": 55226,
-      "events": 1400,
-      "alcohol": 194,
-      "perperson": 78.57
+      "condition": "paediatrics",
+      "cost": 3175721.47,
+      "attendees": 83513,
+      "events": 2844,
+      "alcohol": 418,
+      "perperson": 39.86
     },
     {
       "condition": "hypertension",
@@ -13987,6 +18835,14 @@ window.stats = {
       "perperson": 94.96
     },
     {
+      "condition": "gastro",
+      "cost": 1024360.12,
+      "attendees": 6270,
+      "events": 222,
+      "alcohol": 86,
+      "perperson": 73.65
+    },
+    {
       "condition": "diabetes",
       "cost": 26241733.2,
       "attendees": 231486,
@@ -13995,12 +18851,52 @@ window.stats = {
       "perperson": 96.72
     },
     {
-      "condition": "sexual",
-      "cost": 17470568.22,
-      "attendees": 147064,
-      "events": 5288,
-      "alcohol": 2554,
-      "perperson": 106.84
+      "condition": "parkinsons_disease",
+      "cost": null,
+      "attendees": null,
+      "events": 0,
+      "alcohol": 0,
+      "perperson": null
+    },
+    {
+      "condition": "heart_disease",
+      "cost": 42041960.32,
+      "attendees": 438953,
+      "events": 15934,
+      "alcohol": 3906,
+      "perperson": 76.65
+    },
+    {
+      "condition": "stroke",
+      "cost": 3540542.75,
+      "attendees": 17223,
+      "events": 586,
+      "alcohol": 322,
+      "perperson": 129.43
+    },
+    {
+      "condition": "musculoskeletal",
+      "cost": 10187660.45,
+      "attendees": 85649,
+      "events": 3823,
+      "alcohol": 1685,
+      "perperson": 86.23
+    },
+    {
+      "condition": "hiv",
+      "cost": 5960896.26,
+      "attendees": 57689,
+      "events": 1477,
+      "alcohol": 220,
+      "perperson": 80.45
+    },
+    {
+      "condition": "virus",
+      "cost": 9011987.71,
+      "attendees": 71201,
+      "events": 3187,
+      "alcohol": 437,
+      "perperson": 75.77
     },
     {
       "condition": "fertility",

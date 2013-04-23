@@ -164,8 +164,21 @@ tgm = window.tgm || {};
   function companyList(id, list, name){
     var top3 = _.sortBy(list, 'events').reverse().slice(0, 3);
     $(id).html(_.map(top3, function(item){
-      var itemName = item[name] === 'gp' ? 'General Practioners' : item[name];
-      return '<li>' + _.string.humanize(itemName) + ' <span>' + niceNumber(item.events) + ' events</span></li>';
+      var itemName = item[name];
+      if (itemName === 'gp'){
+        itemName = 'General Practioners';
+      }else if (itemName === 'hiv'){
+        itemName = 'HIV';
+      }else if (itemName === 'auto_immune'){
+        itemName = 'Auto-immune';
+      }else if (itemName === 'respiratory'){
+        itemName = 'Respiratory/Asthma';
+      }else if (itemName === 'parkinsons_disease'){
+        itemName = 'Parkinson\'s Disease';
+      }else{
+        itemName = _.string.humanize(itemName);
+      }
+      return '<li>' + itemName + ' <span>' + niceNumber(item.events) + ' events</span></li>';
     }).join(''));
   }
 
