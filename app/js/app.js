@@ -141,6 +141,10 @@ tgm = window.tgm || {};
     $('#company-revenueGlobal').text(company.revenueGlobal || '');
 
     $('#company-total-events').text(niceNumber(company.events));
+    // pluralize the profession names names
+    _.each(company.professions, function(profession){
+      profession.profession += 's';
+    });
     companyList('#company-top-professions', company.professions, 'profession');
     companyList('#company-top-conditions', company.conditions, 'condition');
     var bins = extractBins(company.perheadBins);
@@ -158,7 +162,7 @@ tgm = window.tgm || {};
       } else {
         text = value && value.replace(/;/gm, ',');
       }
-      $('#company-expensive-event-' + metric).text(text);
+      $('#company-expensive-event-' + metric).text(text || '');
     });
     $('#profile').modal();
   }
@@ -167,7 +171,7 @@ tgm = window.tgm || {};
     var top3 = _.sortBy(list, 'events').reverse().slice(0, 3);
     $(id).html(_.map(top3, function(item){
       var itemName = item[name];
-      if (itemName === 'gp'){
+      if (itemName === 'gps'){
         itemName = 'General Practioners';
       }else if (itemName === 'hiv'){
         itemName = 'HIV';
