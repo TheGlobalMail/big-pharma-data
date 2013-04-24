@@ -277,7 +277,7 @@ tgm = window.tgm || {};
       datum.binLabel = previousBin + '-' + datum.bin;
     });
 
-    _.last(data).binLabel = 'Over ' + _.last(data).bin;
+    _.last(data).binLabel = 'Over ' + data[data.length - 2].bin;
 
     var chart = new BarChart({
       id: "#perperson-chart",
