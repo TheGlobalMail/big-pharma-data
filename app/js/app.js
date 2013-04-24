@@ -126,6 +126,7 @@ tgm = window.tgm || {};
     window.company = company;
     $('#company-name').text(company.name || company.company);
     $('#company-products').text(niceNumber(company.products));
+    $('#company-products').attr('href', company.tgaLink);
     $('#company-total-cost').text(toDollars(company.cost));
     $('#company-pbs2012').text(company.pbs2012);
     _.each(['summary', 'blurb'], function(detail){
