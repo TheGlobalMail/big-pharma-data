@@ -143,7 +143,10 @@ tgm = window.tgm || {};
     $('#company-total-events').text(niceNumber(company.events));
     // pluralize the profession names names
     _.each(company.professions, function(profession){
-      profession.profession += 's';
+      if (_.last(profession.profession) !== 's'){
+        profession.profession += 's';
+      } 
+
     });
     companyList('#company-top-professions', company.professions, 'profession');
     companyList('#company-top-conditions', company.conditions, 'condition');
