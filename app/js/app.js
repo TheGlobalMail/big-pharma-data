@@ -126,7 +126,9 @@ tgm = window.tgm || {};
     window.company = company;
     $('#company-name').text(company.name || company.company);
     $('#company-products').text(niceNumber(company.products));
+    $('#company-products').attr('href', company.tgaLink);
     $('#company-total-cost').text(toDollars(company.cost));
+    $('#company-pbs2012').text(company.pbs2012);
     _.each(['summary', 'blurb'], function(detail){
       var $detail = $('#company-' + detail);
       if (company[detail]){
@@ -139,6 +141,10 @@ tgm = window.tgm || {};
     $('#company-revenueGlobal').text(company.revenueGlobal || '');
 
     $('#company-total-events').text(niceNumber(company.events));
+    // pluralize the profession names names
+    _.each(company.professions, function(profession){
+      profession.profession += 's';
+    });
     companyList('#company-top-professions', company.professions, 'profession');
     companyList('#company-top-conditions', company.conditions, 'condition');
     var bins = extractBins(company.perheadBins);
@@ -156,7 +162,7 @@ tgm = window.tgm || {};
       } else {
         text = value && value.replace(/;/gm, ',');
       }
-      $('#company-expensive-event-' + metric).text(text);
+      $('#company-expensive-event-' + metric).text(text || '');
     });
     $('#profile').modal();
   }
@@ -165,7 +171,7 @@ tgm = window.tgm || {};
     var top3 = _.sortBy(list, 'events').reverse().slice(0, 3);
     $(id).html(_.map(top3, function(item){
       var itemName = item[name];
-      if (itemName === 'gp'){
+      if (itemName === 'gps'){
         itemName = 'General Practioners';
       }else if (itemName === 'hiv'){
         itemName = 'HIV';
@@ -277,7 +283,7 @@ tgm = window.tgm || {};
       datum.binLabel = previousBin + '-' + datum.bin;
     });
 
-    _.last(data).binLabel = 'Over ' + _.last(data).bin;
+    _.last(data).binLabel = 'Over ' + data[data.length - 2].bin;
 
     var chart = new BarChart({
       id: "#perperson-chart",
