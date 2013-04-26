@@ -175,8 +175,10 @@ tgm = window.tgm || {};
         itemName = 'General Practioners';
       }else if (itemName === 'hiv'){
         itemName = 'HIV';
-      }else if (itemName === 'auto_immune'){
-        itemName = 'Auto-immune';
+      }else if (itemName === 'auto_immune_disorders'){
+        itemName = 'Auto-immune Disorders';
+      }else if (itemName === 'blood_specific_illness'){
+        itemName = 'Blood-Specific Illness';
       }else if (itemName === 'respiratory'){
         itemName = 'Respiratory/Asthma';
       }else if (itemName === 'parkinsons_disease'){
