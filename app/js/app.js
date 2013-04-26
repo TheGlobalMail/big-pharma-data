@@ -179,6 +179,8 @@ tgm = window.tgm || {};
         itemName = 'Auto-immune Disorders';
       }else if (itemName === 'blood_specific_illness'){
         itemName = 'Blood-Specific Illness';
+      }else if (itemName === 'gastro'){
+        itemName = 'Gastroenterology';
       }else if (itemName === 'respiratory'){
         itemName = 'Respiratory/Asthma';
       }else if (itemName === 'parkinsons_disease'){
