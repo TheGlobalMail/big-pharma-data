@@ -446,7 +446,7 @@ tgm = window.tgm || {};
           c.childElementIndex--;
           c.currentElement = $(c.childElements.get(c.childElementIndex));
           c.currentElement.removeClass('inactive');
-          c.current = c.stringValue[c.stringIndex];
+          c.current = parseInt(c.stringValue[c.stringIndex]);
         }
         setTimeout(c.animationFunction, 50);
       };
