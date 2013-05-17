@@ -895,7 +895,7 @@ window.stats = {
     },
     {
       "company": "alcon",
-      "cost": 10332335.4,
+      "cost": 1579566.4,
       "attendees": 27885,
       "events": 230,
       "alcohol": 62,
@@ -908,6 +908,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "nurse",
+          "cost": 92145.09,
+          "attendees": 1445,
+          "events": 5,
+          "alcohol": 1,
+          "perperson": 63.77
         },
         {
           "profession": "registrar",
@@ -940,14 +948,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "nurse",
-          "cost": 8844914.09,
-          "attendees": 1445,
-          "events": 5,
-          "alcohol": 1,
-          "perperson": 6121.05
         },
         {
           "profession": "consultant",
@@ -1303,7 +1303,7 @@ window.stats = {
         },
         {
           "bin": 200,
-          "hospitalitycount": 130
+          "hospitalitycount": 131
         },
         {
           "bin": 1000,
@@ -1311,7 +1311,7 @@ window.stats = {
         },
         {
           "bin": 10000,
-          "hospitalitycount": 2
+          "hospitalitycount": 1
         },
         {
           "bin": 100000,
@@ -1319,13 +1319,13 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Alcon was a major sponsor of the Royal Australian and New Zealand College of Ophthalmologists Annual Scientific Meeting. The event was organsed by the College. Alcon was not responsible for organising educational content; hospitality or travel. The majority of the meeting content is surgical (approx 70%) ie not concerning Prescription medicines.",
-        "venue": "Burswood Function Centre; WA",
-        "cost": 4646440,
-        "hospitality": null,
-        "attendees": 990,
-        "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "description": "Royal Australian & New Zealand College of Opthamologists National 41st Annual Scientific Congress. Topics: Opthamology Note: The event was organised by the Royal Australian & New Zeaand College of Opthamologists and Alcon was not responsible for inviting the attendees or oganising the educational content; the hospitality; accommodation or travel. CPD Points: None Duration: 4 days (26.5 hours)",
+        "venue": "Brisbane Convention & Exhibition Centre; QLD",
+        "cost": 52451.59,
+        "hospitality": "Catering & Beverages",
+        "attendees": 1000,
+        "hospitalitycost": 2925.46,
+        "hospitality_spendratio": 2.93
       },
       "code": "alcon",
       "name": "Alcon Laboratories Australia Pty Ltd",
@@ -22310,11 +22310,11 @@ window.stats = {
     }
   ],
   "summary": {
-    "cost": 300486715.65,
+    "cost": 291733946.65,
     "attendees": 4382039,
     "events": 155802,
     "alcohol": 25622,
-    "perperson": 62.47,
+    "perperson": 62.35,
     "max_perperson": 45574.5,
     "completed": 403,
     "days": 1888,
@@ -22630,10 +22630,10 @@ window.stats = {
     },
     {
       "state": "wa",
-      "cost": 27800680,
+      "cost": 19047911,
       "attendees": 357714,
       "events": 13095,
-      "perperson": 60.03,
+      "perperson": 58.62,
       "alcohol": 1807
     },
     {
@@ -22674,13 +22674,13 @@ window.stats = {
     },
     {
       "bin": 50,
-      "count": 13798,
+      "count": 13799,
       "hospitalitycount": 13026
     },
     {
       "bin": 200,
-      "count": 35761,
-      "hospitalitycount": 29089
+      "count": 35762,
+      "hospitalitycount": 29090
     },
     {
       "bin": 1000,
@@ -22689,12 +22689,12 @@ window.stats = {
     },
     {
       "bin": 10000,
-      "count": 998,
-      "hospitalitycount": 350
+      "count": 997,
+      "hospitalitycount": 349
     },
     {
       "bin": 100000,
-      "count": 40,
+      "count": 39,
       "hospitalitycount": 38
     }
   ],
@@ -22796,14 +22796,6 @@ window.stats = {
       "perperson": 38.85
     },
     {
-      "profession": "nurse",
-      "cost": 87009075.28,
-      "attendees": 1359584,
-      "events": 54893,
-      "alcohol": 6125,
-      "perperson": 64
-    },
-    {
       "profession": "consultant",
       "cost": 16244707.99,
       "attendees": 277630,
@@ -22818,6 +22810,14 @@ window.stats = {
       "events": 8445,
       "alcohol": 675,
       "perperson": 83.06
+    },
+    {
+      "profession": "nurse",
+      "cost": 78256306.28,
+      "attendees": 1359584,
+      "events": 54893,
+      "alcohol": 6125,
+      "perperson": 57.56
     }
   ],
   "countries": [
@@ -22950,20 +22950,20 @@ window.stats = {
       "alcohol": 17
     },
     {
-      "country": "China",
-      "cost": 180336.82,
-      "attendees": 832,
-      "events": 23,
-      "perperson": 482.59,
-      "alcohol": 7
-    },
-    {
       "country": "Turkey",
       "cost": 95156.26,
       "attendees": 412,
       "events": 23,
       "perperson": 570.58,
       "alcohol": 8
+    },
+    {
+      "country": "China",
+      "cost": 180336.82,
+      "attendees": 832,
+      "events": 23,
+      "perperson": 482.59,
+      "alcohol": 7
     },
     {
       "country": "Thailand",
@@ -23022,6 +23022,14 @@ window.stats = {
       "alcohol": 1
     },
     {
+      "country": "Brazil",
+      "cost": 21192.84,
+      "attendees": 246,
+      "events": 8,
+      "perperson": 108.96,
+      "alcohol": 3
+    },
+    {
       "country": "Iran",
       "cost": 2736.3,
       "attendees": 93,
@@ -23030,12 +23038,12 @@ window.stats = {
       "alcohol": 1
     },
     {
-      "country": "Brazil",
-      "cost": 21192.84,
-      "attendees": 246,
-      "events": 8,
-      "perperson": 108.96,
-      "alcohol": 3
+      "country": "Finland",
+      "cost": 72720.45,
+      "attendees": 29,
+      "events": 5,
+      "perperson": 2078.33,
+      "alcohol": 5
     },
     {
       "country": "Malaysia",
@@ -23054,28 +23062,12 @@ window.stats = {
       "alcohol": 3
     },
     {
-      "country": "Finland",
-      "cost": 72720.45,
-      "attendees": 29,
-      "events": 5,
-      "perperson": 2078.33,
-      "alcohol": 5
-    },
-    {
       "country": "Monaco",
       "cost": 6702,
       "attendees": 42,
       "events": 4,
       "perperson": 150.63,
       "alcohol": 3
-    },
-    {
-      "country": "Peru",
-      "cost": 89420,
-      "attendees": 60,
-      "events": 3,
-      "perperson": 3583.11,
-      "alcohol": 1
     },
     {
       "country": "Indonesia",
@@ -23091,6 +23083,14 @@ window.stats = {
       "attendees": 194,
       "events": 3,
       "perperson": 129.42,
+      "alcohol": 1
+    },
+    {
+      "country": "Peru",
+      "cost": 89420,
+      "attendees": 60,
+      "events": 3,
+      "perperson": 3583.11,
       "alcohol": 1
     },
     {
