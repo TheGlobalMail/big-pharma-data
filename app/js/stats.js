@@ -2,19 +2,35 @@ window.stats = {
   "companies": [
     {
       "company": "abbott",
-      "cost": 4251164.56,
-      "attendees": 128078,
-      "events": 2933,
-      "alcohol": 304,
+      "cost": 4281080.46,
+      "attendees": 49170,
+      "events": 2705,
+      "alcohol": 252,
       "completed": 10,
       "professions": [
         {
           "profession": "nurse",
-          "cost": 1720316.76,
-          "attendees": 18091,
-          "events": 954,
-          "alcohol": 101,
-          "perperson": 95.09
+          "cost": 1725663.39,
+          "attendees": 17960,
+          "events": 948,
+          "alcohol": 100,
+          "perperson": 96.08
+        },
+        {
+          "profession": "registrar",
+          "cost": 969881.14,
+          "attendees": 17757,
+          "events": 980,
+          "alcohol": 72,
+          "perperson": 54.62
+        },
+        {
+          "profession": "haematologist",
+          "cost": 124.1,
+          "attendees": 10,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 12.41
         },
         {
           "profession": "anaesthetist",
@@ -26,11 +42,11 @@ window.stats = {
         },
         {
           "profession": "specialist",
-          "cost": 1581847.45,
-          "attendees": 25385,
-          "events": 1408,
-          "alcohol": 173,
-          "perperson": 62.31
+          "cost": 1600361,
+          "attendees": 24569,
+          "events": 1341,
+          "alcohol": 156,
+          "perperson": 65.14
         },
         {
           "profession": "neurologist",
@@ -39,14 +55,6 @@ window.stats = {
           "events": 4,
           "alcohol": 2,
           "perperson": 50.34
-        },
-        {
-          "profession": "haematologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
         },
         {
           "profession": "consultant",
@@ -58,27 +66,27 @@ window.stats = {
         },
         {
           "profession": "gastroenterologist",
-          "cost": 307843.34,
-          "attendees": 3222,
-          "events": 176,
+          "cost": 312658.56,
+          "attendees": 3493,
+          "events": 201,
           "alcohol": 13,
-          "perperson": 95.54
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 350427.8,
-          "attendees": 5034,
-          "events": 209,
-          "alcohol": 14,
-          "perperson": 69.61
+          "perperson": 89.51
         },
         {
           "profession": "oncologist",
-          "cost": 39105.96,
-          "attendees": 801,
-          "events": 60,
+          "cost": 39319.16,
+          "attendees": 809,
+          "events": 61,
           "alcohol": 5,
-          "perperson": 48.82
+          "perperson": 48.6
+        },
+        {
+          "profession": "gp",
+          "cost": 1082356.82,
+          "attendees": 11855,
+          "events": 485,
+          "alcohol": 76,
+          "perperson": 91.3
         },
         {
           "profession": "psychiatrist",
@@ -89,12 +97,12 @@ window.stats = {
           "perperson": 111.52
         },
         {
-          "profession": "registrar",
-          "cost": 960682.42,
-          "attendees": 18164,
-          "events": 1001,
-          "alcohol": 79,
-          "perperson": 52.89
+          "profession": "urologist",
+          "cost": 24878.21,
+          "attendees": 922,
+          "events": 110,
+          "alcohol": 3,
+          "perperson": 26.98
         },
         {
           "profession": "physician",
@@ -113,20 +121,12 @@ window.stats = {
           "perperson": 215.84
         },
         {
-          "profession": "gp",
-          "cost": 1063303.45,
-          "attendees": 11712,
-          "events": 479,
-          "alcohol": 78,
-          "perperson": 90.79
-        },
-        {
-          "profession": "urologist",
-          "cost": 24878.21,
-          "attendees": 961,
-          "events": 115,
-          "alcohol": 5,
-          "perperson": 25.89
+          "profession": "pharmacist",
+          "cost": 353539.75,
+          "attendees": 5027,
+          "events": 208,
+          "alcohol": 14,
+          "perperson": 70.33
         }
       ],
       "conditions": [
@@ -139,12 +139,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "urology",
+          "cost": 153556.38,
+          "attendees": 3690,
+          "events": 318,
+          "alcohol": 36,
+          "perperson": 31.16
+        },
+        {
           "condition": "parkinsons_disease",
           "cost": 9381.21,
           "attendees": 108,
           "events": 6,
           "alcohol": 1,
           "perperson": 69.45
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 163149.28,
+          "attendees": 2798,
+          "events": 170,
+          "alcohol": 29,
+          "perperson": 48.43
         },
         {
           "condition": "fertility",
@@ -155,20 +171,12 @@ window.stats = {
           "perperson": 31.03
         },
         {
-          "condition": "hypertension",
-          "cost": 363353.38,
-          "attendees": 6130,
-          "events": 151,
-          "alcohol": 20,
-          "perperson": 91.99
-        },
-        {
-          "condition": "gastro",
-          "cost": 375343.02,
-          "attendees": 9570,
-          "events": 314,
-          "alcohol": 17,
-          "perperson": 39.3
+          "condition": "blood_specific_illness",
+          "cost": 624.1,
+          "attendees": 40,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 14.54
         },
         {
           "condition": "addiction",
@@ -179,20 +187,20 @@ window.stats = {
           "perperson": 12.64
         },
         {
+          "condition": "cancer",
+          "cost": 152409.52,
+          "attendees": 3436,
+          "events": 237,
+          "alcohol": 24,
+          "perperson": 35.87
+        },
+        {
           "condition": "oral_health",
           "cost": 2224.27,
           "attendees": 29,
           "events": 2,
           "alcohol": 1,
           "perperson": 71
-        },
-        {
-          "condition": "respiratory",
-          "cost": 338884.61,
-          "attendees": 6104,
-          "events": 151,
-          "alcohol": 20,
-          "perperson": 83.55
         },
         {
           "condition": "allergies",
@@ -203,14 +211,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": 70295.27,
-          "attendees": 1494,
-          "events": 44,
-          "alcohol": 21,
-          "perperson": 51.5
-        },
-        {
           "condition": "kidney_function",
           "cost": 84123.11,
           "attendees": 486,
@@ -219,36 +219,20 @@ window.stats = {
           "perperson": 175.69
         },
         {
-          "condition": "diabetes",
-          "cost": 595379.04,
-          "attendees": 4470,
-          "events": 162,
-          "alcohol": 6,
-          "perperson": 104.8
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 115532.45,
-          "attendees": 12655,
-          "events": 95,
-          "alcohol": 26,
-          "perperson": 55.93
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 1047095.17,
-          "attendees": 8642,
-          "events": 312,
-          "alcohol": 16,
-          "perperson": 83.02
+          "condition": "anaesthesia",
+          "cost": 92080.02,
+          "attendees": 3218,
+          "events": 148,
+          "alcohol": 14,
+          "perperson": 25.69
         },
         {
           "condition": "nervous_system",
           "cost": 102102.25,
-          "attendees": 1159,
-          "events": 42,
-          "alcohol": 4,
-          "perperson": 83.06
+          "attendees": 1130,
+          "events": 41,
+          "alcohol": 3,
+          "perperson": 85.09
         },
         {
           "condition": "cold_and_flu",
@@ -275,12 +259,12 @@ window.stats = {
           "perperson": 56.76
         },
         {
-          "condition": "ageing",
-          "cost": 249083.74,
-          "attendees": 1824,
-          "events": 62,
-          "alcohol": 8,
-          "perperson": 127.99
+          "condition": "diabetes",
+          "cost": 598243.04,
+          "attendees": 4508,
+          "events": 163,
+          "alcohol": 6,
+          "perperson": 104.62
         },
         {
           "condition": "wound_management",
@@ -299,12 +283,12 @@ window.stats = {
           "perperson": 18.35
         },
         {
-          "condition": "urology",
-          "cost": 153604.5,
-          "attendees": 14570,
-          "events": 366,
-          "alcohol": 42,
-          "perperson": 26.89
+          "condition": "obesity",
+          "cost": 70262.27,
+          "attendees": 902,
+          "events": 41,
+          "alcohol": 21,
+          "perperson": 55.27
         },
         {
           "condition": "mental_illness",
@@ -315,20 +299,12 @@ window.stats = {
           "perperson": 51.79
         },
         {
-          "condition": "paediatrics",
-          "cost": 50140.12,
-          "attendees": 358,
-          "events": 19,
-          "alcohol": 10,
-          "perperson": 133.68
-        },
-        {
-          "condition": "cancer",
-          "cost": 152695.32,
-          "attendees": 12507,
-          "events": 289,
-          "alcohol": 29,
-          "perperson": 29.34
+          "condition": "gastro",
+          "cost": 380698.15,
+          "attendees": 5424,
+          "events": 327,
+          "alcohol": 15,
+          "perperson": 39.38
         },
         {
           "condition": "dementia",
@@ -339,6 +315,38 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "ageing",
+          "cost": 251627.84,
+          "attendees": 1867,
+          "events": 64,
+          "alcohol": 8,
+          "perperson": 125.35
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 1054205.1,
+          "attendees": 8063,
+          "events": 311,
+          "alcohol": 15,
+          "perperson": 84.37
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 26014.64,
+          "attendees": 476,
+          "events": 19,
+          "alcohol": 0,
+          "perperson": 48.52
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 50140.12,
+          "attendees": 293,
+          "events": 18,
+          "alcohol": 9,
+          "perperson": 141.11
+        },
+        {
           "condition": "stroke",
           "cost": null,
           "attendees": null,
@@ -347,36 +355,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 500,
-          "attendees": 30,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 16.67
+          "condition": "respiratory",
+          "cost": 339774.44,
+          "attendees": 3572,
+          "events": 154,
+          "alcohol": 18,
+          "perperson": 82.87
         },
         {
-          "condition": "hiv",
-          "cost": 149459.79,
-          "attendees": 16053,
-          "events": 146,
-          "alcohol": 32,
-          "perperson": 50.93
+          "condition": "hypertension",
+          "cost": 363310.38,
+          "attendees": 3556,
+          "events": 149,
+          "alcohol": 18,
+          "perperson": 93.23
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 23594.64,
-          "attendees": 462,
-          "events": 20,
-          "alcohol": 2,
-          "perperson": 42.32
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 163352.28,
-          "attendees": 16510,
-          "events": 178,
-          "alcohol": 34,
-          "perperson": 46.25
+          "condition": "skin disorders",
+          "cost": 115341.45,
+          "attendees": 1463,
+          "events": 75,
+          "alcohol": 15,
+          "perperson": 70.84
         },
         {
           "condition": "cosmetic_surgery",
@@ -387,26 +387,26 @@ window.stats = {
           "perperson": 36.09
         },
         {
-          "condition": "anaesthesia",
-          "cost": 92100.02,
-          "attendees": 3743,
-          "events": 156,
-          "alcohol": 15,
-          "perperson": 24.37
+          "condition": "hiv",
+          "cost": 149256.79,
+          "attendees": 2341,
+          "events": 138,
+          "alcohol": 27,
+          "perperson": 53.88
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 816
+          "hospitalitycount": 606
         },
         {
           "bin": 20,
-          "hospitalitycount": 1007
+          "hospitalitycount": 984
         },
         {
           "bin": 50,
-          "hospitalitycount": 371
+          "hospitalitycount": 375
         },
         {
           "bin": 200,
@@ -418,7 +418,7 @@ window.stats = {
         },
         {
           "bin": 10000,
-          "hospitalitycount": 5
+          "hospitalitycount": 6
         },
         {
           "bin": 100000,
@@ -432,29 +432,39 @@ window.stats = {
         "hospitality": "Dinner for Friday evening 2 pax Accommodation with breakfast Return economy class flights Return airport transfers to the hotel Half day delegate package for 2 days Dinner & beverages in meeting room",
         "attendees": 135,
         "hospitalitycost": 137703.64,
-        "hospitality_spendratio": 1020.03
+        "hospitality_spendratio": 1020.03,
+        "date": "2011-09-01T00:00:00.000Z",
+        "period": "April 2011 - September 2011"
       },
       "incomplete": 1,
       "code": "abbott",
       "name": "Abbott Australasia Pty Ltd*",
       "summary": "Abbott was founded in Chicago and has been in Australia for over 70 years. It has 500 employees in Australia and New Zealand.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$297,987,920",
       "revenueAu": "-",
       "revenueGlobal": "USD23b (2011)",
       "products": "296",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Abbott%20Australasia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=12&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "actelion",
-      "cost": 1421328.3,
-      "attendees": 31577,
-      "events": 643,
+      "cost": 1517141.3,
+      "attendees": 32637,
+      "events": 692,
       "alcohol": 2,
-      "completed": 11,
+      "completed": 12,
       "professions": [
+        {
+          "profession": "registrar",
+          "cost": 204917.35,
+          "attendees": 7219,
+          "events": 289,
+          "alcohol": 2,
+          "perperson": 28.39
+        },
         {
           "profession": "anaesthetist",
           "cost": null,
@@ -462,22 +472,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "consultant",
-          "cost": 31264.2,
-          "attendees": 1437,
-          "events": 61,
-          "alcohol": 1,
-          "perperson": 21.76
-        },
-        {
-          "profession": "registrar",
-          "cost": 185068.35,
-          "attendees": 7054,
-          "events": 281,
-          "alcohol": 2,
-          "perperson": 26.24
         },
         {
           "profession": "neurologist",
@@ -488,20 +482,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "physician",
-          "cost": 210706.18,
-          "attendees": 4694,
-          "events": 167,
-          "alcohol": 1,
-          "perperson": 44.89
+          "profession": "nurse",
+          "cost": 851732.69,
+          "attendees": 9373,
+          "events": 328,
+          "alcohol": 2,
+          "perperson": 90.87
         },
         {
-          "profession": "gp",
-          "cost": 23244.57,
-          "attendees": 435,
-          "events": 16,
+          "profession": "consultant",
+          "cost": 50943.2,
+          "attendees": 1582,
+          "events": 68,
           "alcohol": 1,
-          "perperson": 53.44
+          "perperson": 32.2
         },
         {
           "profession": "haematologist",
@@ -544,12 +538,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "nurse",
-          "cost": 822311.69,
-          "attendees": 8989,
-          "events": 309,
-          "alcohol": 2,
-          "perperson": 91.48
+          "profession": "gp",
+          "cost": 41871.57,
+          "attendees": 530,
+          "events": 21,
+          "alcohol": 1,
+          "perperson": 79
         },
         {
           "profession": "gastroenterologist",
@@ -574,16 +568,24 @@ window.stats = {
           "events": 21,
           "alcohol": 0,
           "perperson": 91.17
+        },
+        {
+          "profession": "physician",
+          "cost": 255667.18,
+          "attendees": 5017,
+          "events": 182,
+          "alcohol": 1,
+          "perperson": 50.96
         }
       ],
       "conditions": [
         {
-          "condition": "heart_disease",
-          "cost": 1075933.18,
-          "attendees": 19460,
-          "events": 349,
+          "condition": "auto_immune_disorders",
+          "cost": 17335.05,
+          "attendees": 459,
+          "events": 20,
           "alcohol": 0,
-          "perperson": 56.16
+          "perperson": 33.67
         },
         {
           "condition": "endocrinology",
@@ -592,14 +594,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "auto_immune_disorders",
-          "cost": 15127.05,
-          "attendees": 434,
-          "events": 19,
-          "alcohol": 0,
-          "perperson": 30.79
         },
         {
           "condition": "cancer",
@@ -650,20 +644,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual_health",
-          "cost": 23211.7,
-          "attendees": 487,
-          "events": 18,
-          "alcohol": 0,
-          "perperson": 50.43
-        },
-        {
           "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "stroke",
+          "cost": 352085.8,
+          "attendees": 1583,
+          "events": 75,
+          "alcohol": 2,
+          "perperson": 103.4
         },
         {
           "condition": "diabetes",
@@ -714,6 +708,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "sexual_health",
+          "cost": 33237.7,
+          "attendees": 568,
+          "events": 21,
+          "alcohol": 0,
+          "perperson": 58.27
+        },
+        {
           "condition": "skin disorders",
           "cost": null,
           "attendees": null,
@@ -746,6 +748,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "heart_disease",
+          "cost": 1162441.18,
+          "attendees": 20326,
+          "events": 388,
+          "alcohol": 0,
+          "perperson": 71.3
+        },
+        {
           "condition": "obesity",
           "cost": null,
           "attendees": null,
@@ -754,12 +764,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hypertension",
-          "cost": 527103.73,
-          "attendees": 3387,
-          "events": 165,
+          "condition": "respiratory",
+          "cost": 842690.23,
+          "attendees": 3832,
+          "events": 177,
           "alcohol": 2,
-          "perperson": 88.61
+          "perperson": 132.06
+        },
+        {
+          "condition": "hypertension",
+          "cost": 581951.73,
+          "attendees": 3644,
+          "events": 174,
+          "alcohol": 2,
+          "perperson": 121.77
         },
         {
           "condition": "virus",
@@ -776,22 +794,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "respiratory",
-          "cost": 787842.23,
-          "attendees": 3575,
-          "events": 168,
-          "alcohol": 2,
-          "perperson": 100.04
-        },
-        {
-          "condition": "stroke",
-          "cost": 342578.8,
-          "attendees": 1466,
-          "events": 71,
-          "alcohol": 2,
-          "perperson": 105.09
         },
         {
           "condition": "parkinsons_disease",
@@ -845,27 +847,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 207
+          "hospitalitycount": 213
         },
         {
           "bin": 20,
-          "hospitalitycount": 268
+          "hospitalitycount": 291
         },
         {
           "bin": 50,
-          "hospitalitycount": 56
+          "hospitalitycount": 58
         },
         {
           "bin": 200,
-          "hospitalitycount": 104
+          "hospitalitycount": 118
         },
         {
           "bin": 1000,
-          "hospitalitycount": 8
+          "hospitalitycount": 10
         },
         {
           "bin": 10000,
-          "hospitalitycount": 0
+          "hospitalitycount": 2
         },
         {
           "bin": 100000,
@@ -879,28 +881,38 @@ window.stats = {
         "hospitality": "1.5 Day Scientific Program (9.5hrs on 6-7 Mar) + Satellite Poster session (3 hrs on 5 Mar) inc Morning and afternoon teas; lunch; dinner; accom; flights for interstate speakers; transfers",
         "attendees": 120,
         "hospitalitycost": 301,
-        "hospitality_spendratio": 2.51
+        "hospitality_spendratio": 2.51,
+        "date": "2010-03-01T00:00:00.000Z",
+        "period": "January 2010 - March 2010"
       },
       "code": "actelion",
       "name": "Actelion Pharmaceuticals Australia Pty Ltd",
       "summary": "A biopharmaceutical company headquartered in Switzerland.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "CHF417.5m (2012)",
       "products": "3",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Actelion&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "alcon",
-      "cost": 1579566.4,
-      "attendees": 27885,
-      "events": 230,
-      "alcohol": 62,
-      "completed": 11,
+      "cost": 1726808.86,
+      "attendees": 29525,
+      "events": 273,
+      "alcohol": 85,
+      "completed": 12,
       "professions": [
+        {
+          "profession": "nurse",
+          "cost": 148145.09,
+          "attendees": 2245,
+          "events": 6,
+          "alcohol": 1,
+          "perperson": 65.99
+        },
         {
           "profession": "anaesthetist",
           "cost": null,
@@ -908,14 +920,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "nurse",
-          "cost": 92145.09,
-          "attendees": 1445,
-          "events": 5,
-          "alcohol": 1,
-          "perperson": 63.77
         },
         {
           "profession": "registrar",
@@ -958,14 +962,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gp",
-          "cost": 135255.81,
-          "attendees": 7146,
-          "events": 46,
-          "alcohol": 14,
-          "perperson": 18.93
-        },
-        {
           "profession": "psychiatrist",
           "cost": null,
           "attendees": null,
@@ -980,6 +976,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "gp",
+          "cost": 191255.81,
+          "attendees": 7946,
+          "events": 47,
+          "alcohol": 14,
+          "perperson": 24.07
         },
         {
           "profession": "oncologist",
@@ -1291,19 +1295,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 57
+          "hospitalitycount": 58
         },
         {
           "bin": 20,
-          "hospitalitycount": 7
+          "hospitalitycount": 8
         },
         {
           "bin": 50,
-          "hospitalitycount": 26
+          "hospitalitycount": 31
         },
         {
           "bin": 200,
-          "hospitalitycount": 131
+          "hospitalitycount": 167
         },
         {
           "bin": 1000,
@@ -1319,13 +1323,15 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Royal Australian & New Zealand College of Opthamologists National 41st Annual Scientific Congress. Topics: Opthamology Note: The event was organised by the Royal Australian & New Zeaand College of Opthamologists and Alcon was not responsible for inviting the attendees or oganising the educational content; the hospitality; accommodation or travel. CPD Points: None Duration: 4 days (26.5 hours)",
-        "venue": "Brisbane Convention & Exhibition Centre; QLD",
-        "cost": 52451.59,
-        "hospitality": "Catering & Beverages",
-        "attendees": 1000,
-        "hospitalitycost": 2925.46,
-        "hospitality_spendratio": 2.93
+        "description": "Educational Event Sponsorship : RANZCO Major Sponsor Ophthalmology Frontiers",
+        "venue": "Melbourne Convention Centre; VIC",
+        "cost": 56000,
+        "hospitality": "Sponsorship of four day educational meeting",
+        "attendees": 800,
+        "hospitalitycost": 112000,
+        "hospitality_spendratio": 140,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "alcon",
       "name": "Alcon Laboratories Australia Pty Ltd",
@@ -1336,17 +1342,49 @@ window.stats = {
       "revenueGlobal": "USD10.2b (2012)",
       "products": "218",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=alcon&sortPref=ascending&sortField=0&Page=1&PageMax=9&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "allergan",
-      "cost": 4402399.14,
-      "attendees": 91216,
-      "events": 1591,
+      "cost": 6244389.06,
+      "attendees": 98076,
+      "events": 1737,
       "alcohol": 0,
-      "completed": 11,
+      "completed": 12,
       "professions": [
+        {
+          "profession": "anaesthetist",
+          "cost": 15974.82,
+          "attendees": 1948,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 8.2
+        },
+        {
+          "profession": "specialist",
+          "cost": 290355.43,
+          "attendees": 15324,
+          "events": 129,
+          "alcohol": 0,
+          "perperson": 18.95
+        },
+        {
+          "profession": "nurse",
+          "cost": 3809251.67,
+          "attendees": 29474,
+          "events": 1056,
+          "alcohol": 0,
+          "perperson": 129.24
+        },
+        {
+          "profession": "registrar",
+          "cost": 538712.23,
+          "attendees": 12822,
+          "events": 94,
+          "alcohol": 0,
+          "perperson": 42.01
+        },
         {
           "profession": "consultant",
           "cost": 10849,
@@ -1356,44 +1394,20 @@ window.stats = {
           "perperson": 13.02
         },
         {
-          "profession": "neurologist",
-          "cost": 547523.77,
-          "attendees": 18694,
-          "events": 158,
+          "profession": "gp",
+          "cost": 2293822.02,
+          "attendees": 7961,
+          "events": 848,
           "alcohol": 0,
-          "perperson": 29.29
+          "perperson": 288.13
         },
         {
           "profession": "physician",
-          "cost": 2791069.33,
-          "attendees": 25089,
-          "events": 963,
+          "cost": 4088770.98,
+          "attendees": 26610,
+          "events": 1020,
           "alcohol": 0,
-          "perperson": 111.25
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": 11974.82,
-          "attendees": 1948,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 6.15
-        },
-        {
-          "profession": "registrar",
-          "cost": 460247.31,
-          "attendees": 11584,
-          "events": 75,
-          "alcohol": 0,
-          "perperson": 39.73
-        },
-        {
-          "profession": "gp",
-          "cost": 1654837.27,
-          "attendees": 7121,
-          "events": 801,
-          "alcohol": 0,
-          "perperson": 232.39
+          "perperson": 153.66
         },
         {
           "profession": "haematologist",
@@ -1402,14 +1416,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "nurse",
-          "cost": 2559521.73,
-          "attendees": 26412,
-          "events": 977,
-          "alcohol": 0,
-          "perperson": 96.91
         },
         {
           "profession": "pharmacist",
@@ -1428,6 +1434,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "neurologist",
+          "cost": 615980.77,
+          "attendees": 19693,
+          "events": 174,
+          "alcohol": 0,
+          "perperson": 31.28
+        },
+        {
           "profession": "oncologist",
           "cost": null,
           "attendees": null,
@@ -1444,28 +1458,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "urologist",
-          "cost": 6909.09,
-          "attendees": 760,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 9.09
-        },
-        {
-          "profession": "specialist",
-          "cost": 224618.09,
-          "attendees": 14662,
-          "events": 107,
-          "alcohol": 0,
-          "perperson": 15.32
-        },
-        {
           "profession": "endocrinologist",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "urologist",
+          "cost": 26772.73,
+          "attendees": 1499,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 17.86
         }
       ],
       "conditions": [
@@ -1502,12 +1508,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "allergies",
-          "cost": 711667.98,
-          "attendees": 24409,
-          "events": 164,
+          "condition": "skin disorders",
+          "cost": 1323612.31,
+          "attendees": 8467,
+          "events": 409,
           "alcohol": 0,
-          "perperson": 117.05
+          "perperson": 550.38
         },
         {
           "condition": "mental_illness",
@@ -1518,20 +1524,28 @@ window.stats = {
           "perperson": 5.93
         },
         {
+          "condition": "musculoskeletal",
+          "cost": 2710.48,
+          "attendees": 13,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 150.58
+        },
+        {
+          "condition": "ageing",
+          "cost": 175215.82,
+          "attendees": 3155,
+          "events": 17,
+          "alcohol": 0,
+          "perperson": 579.28
+        },
+        {
           "condition": "respiratory",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "ageing",
-          "cost": 126669.09,
-          "attendees": 3125,
-          "events": 15,
-          "alcohol": 0,
-          "perperson": 57.62
         },
         {
           "condition": "fertility",
@@ -1566,12 +1580,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "urology",
-          "cost": 9815.39,
-          "attendees": 926,
-          "events": 3,
+          "condition": "cosmetic_surgery",
+          "cost": 4164995.08,
+          "attendees": 22434,
+          "events": 976,
           "alcohol": 0,
-          "perperson": 59.85
+          "perperson": 386.27
         },
         {
           "condition": "sexual_health",
@@ -1590,12 +1604,12 @@ window.stats = {
           "perperson": 13.67
         },
         {
-          "condition": "cosmetic_surgery",
-          "cost": 2862369.89,
-          "attendees": 21078,
-          "events": 921,
+          "condition": "paediatrics",
+          "cost": 30876.48,
+          "attendees": 883,
+          "events": 12,
           "alcohol": 0,
-          "perperson": 332.78
+          "perperson": 43.23
         },
         {
           "condition": "kidney_function",
@@ -1604,14 +1618,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 549311.28,
-          "attendees": 18929,
-          "events": 164,
-          "alcohol": 0,
-          "perperson": 74.3
         },
         {
           "condition": "wound_management",
@@ -1623,11 +1629,11 @@ window.stats = {
         },
         {
           "condition": "anaesthesia",
-          "cost": 11974.82,
+          "cost": 15974.82,
           "attendees": 1975,
           "events": 4,
           "alcohol": 0,
-          "perperson": 327.62
+          "perperson": 334.52
         },
         {
           "condition": "blood_specific_illness",
@@ -1636,6 +1642,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "allergies",
+          "cost": 712667.98,
+          "attendees": 24409,
+          "events": 164,
+          "alcohol": 0,
+          "perperson": 117.13
         },
         {
           "condition": "obesity",
@@ -1686,20 +1700,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "nervous_system",
+          "cost": 624145.55,
+          "attendees": 19974,
+          "events": 181,
+          "alcohol": 0,
+          "perperson": 119.33
+        },
+        {
           "condition": "vaccination",
           "cost": 357,
           "attendees": 30,
           "events": 1,
           "alcohol": 0,
           "perperson": 11.9
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 1252175.98,
-          "attendees": 8426,
-          "events": 406,
-          "alcohol": 0,
-          "perperson": 531.18
         },
         {
           "condition": "diabetes",
@@ -1718,46 +1732,38 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 0,
-          "attendees": 13,
-          "events": 2,
+          "condition": "urology",
+          "cost": 31890.3,
+          "attendees": 1851,
+          "events": 12,
           "alcohol": 0,
-          "perperson": 0
-        },
-        {
-          "condition": "paediatrics",
-          "cost": 12713.5,
-          "attendees": 683,
-          "events": 11,
-          "alcohol": 0,
-          "perperson": 30.21
+          "perperson": 46.05
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 319
+          "hospitalitycount": 366
         },
         {
           "bin": 20,
-          "hospitalitycount": 216
+          "hospitalitycount": 243
         },
         {
           "bin": 50,
-          "hospitalitycount": 602
+          "hospitalitycount": 631
         },
         {
           "bin": 200,
-          "hospitalitycount": 426
+          "hospitalitycount": 460
         },
         {
           "bin": 1000,
-          "hospitalitycount": 26
+          "hospitalitycount": 30
         },
         {
           "bin": 10000,
-          "hospitalitycount": 2
+          "hospitalitycount": 7
         },
         {
           "bin": 100000,
@@ -1771,19 +1777,21 @@ window.stats = {
         "hospitality": null,
         "attendees": 400,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2008-06-01T00:00:00.000Z",
+        "period": "January 2008 - June 2008"
       },
       "code": "allergan",
       "name": "Allergan Australia Pty Ltd",
       "summary": "Allergan employs 130 people in Australia and New Zealand.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$31,801,723",
       "revenueAu": "-",
       "revenueGlobal": "USD5.8b",
       "products": "105",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Allergan&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "alphapharm",
@@ -2217,7 +2225,9 @@ window.stats = {
         "hospitality": "3 course dinner and alcoholic drinks. Held in private dining room",
         "attendees": 69,
         "hospitalitycost": 5729,
-        "hospitality_spendratio": 83.03
+        "hospitality_spendratio": 83.03,
+        "date": "2008-06-01T00:00:00.000Z",
+        "period": "January 2008 - June 2008"
       },
       "code": "alphapharm",
       "name": "Alphapharm Pty Ltd",
@@ -2229,15 +2239,15 @@ window.stats = {
       "products": "1184",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Alphapharm&sortPref=ascending&sortField=0&Page=1&PageMax=48&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "Can't find revenue data. May be behind paywall here http://www.manta.com/ic/mvmpy8j/au/alphapharm-pty-ltd",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "amgen",
-      "cost": 12355176.03,
-      "attendees": 122976,
-      "events": 6101,
+      "cost": 13261931.77,
+      "attendees": 138229,
+      "events": 6786,
       "alcohol": 151,
-      "completed": 11,
+      "completed": 12,
       "professions": [
         {
           "profession": "neurologist",
@@ -2248,12 +2258,12 @@ window.stats = {
           "perperson": 12.46
         },
         {
-          "profession": "endocrinologist",
-          "cost": 1180921.15,
-          "attendees": 4747,
-          "events": 119,
-          "alcohol": 1,
-          "perperson": 248.77
+          "profession": "physician",
+          "cost": 1071313.43,
+          "attendees": 4517,
+          "events": 159,
+          "alcohol": 7,
+          "perperson": 237.17
         },
         {
           "profession": "anaesthetist",
@@ -2264,22 +2274,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "urologist",
-          "cost": 3709.33,
-          "attendees": 267,
-          "events": 17,
-          "alcohol": 0,
-          "perperson": 13.89
-        },
-        {
-          "profession": "haematologist",
-          "cost": 2885094.08,
-          "attendees": 29240,
-          "events": 1332,
-          "alcohol": 53,
-          "perperson": 98.67
-        },
-        {
           "profession": "psychiatrist",
           "cost": 2212.78,
           "attendees": 174,
@@ -2288,60 +2282,76 @@ window.stats = {
           "perperson": 12.72
         },
         {
-          "profession": "consultant",
-          "cost": 3528534.49,
-          "attendees": 23450,
-          "events": 1074,
-          "alcohol": 20,
-          "perperson": 150.47
+          "profession": "endocrinologist",
+          "cost": 1214669.84,
+          "attendees": 5716,
+          "events": 164,
+          "alcohol": 1,
+          "perperson": 212.5
         },
         {
           "profession": "nurse",
-          "cost": 3870316.23,
-          "attendees": 77885,
-          "events": 4293,
+          "cost": 4326288.25,
+          "attendees": 87064,
+          "events": 4708,
           "alcohol": 82,
           "perperson": 49.69
         },
         {
-          "profession": "gp",
-          "cost": 203480.15,
-          "attendees": 2240,
-          "events": 71,
-          "alcohol": 6,
-          "perperson": 90.84
+          "profession": "consultant",
+          "cost": 3639748.25,
+          "attendees": 26250,
+          "events": 1215,
+          "alcohol": 20,
+          "perperson": 138.66
         },
         {
-          "profession": "oncologist",
-          "cost": 2844352.7,
-          "attendees": 39850,
-          "events": 1842,
-          "alcohol": 64,
-          "perperson": 71.38
+          "profession": "haematologist",
+          "cost": 3096221.61,
+          "attendees": 32326,
+          "events": 1423,
+          "alcohol": 53,
+          "perperson": 95.78
         },
         {
           "profession": "registrar",
-          "cost": 1535496,
-          "attendees": 34465,
-          "events": 1644,
+          "cost": 1644823.85,
+          "attendees": 39557,
+          "events": 1891,
           "alcohol": 22,
-          "perperson": 44.55
+          "perperson": 41.58
+        },
+        {
+          "profession": "oncologist",
+          "cost": 3045174.67,
+          "attendees": 44290,
+          "events": 2057,
+          "alcohol": 64,
+          "perperson": 68.76
+        },
+        {
+          "profession": "urologist",
+          "cost": 9547.97,
+          "attendees": 570,
+          "events": 31,
+          "alcohol": 0,
+          "perperson": 16.75
         },
         {
           "profession": "pharmacist",
-          "cost": 3394147.2,
-          "attendees": 30083,
-          "events": 1228,
+          "cost": 3651511.43,
+          "attendees": 34427,
+          "events": 1342,
           "alcohol": 21,
-          "perperson": 112.83
+          "perperson": 106.07
         },
         {
-          "profession": "specialist",
-          "cost": 842909.8,
-          "attendees": 2010,
-          "events": 84,
-          "alcohol": 7,
-          "perperson": 419.36
+          "profession": "gp",
+          "cost": 347003.31,
+          "attendees": 2567,
+          "events": 82,
+          "alcohol": 6,
+          "perperson": 135.18
         },
         {
           "profession": "gastroenterologist",
@@ -2352,38 +2362,62 @@ window.stats = {
           "perperson": 2198.76
         },
         {
-          "profession": "physician",
-          "cost": 1062676.42,
-          "attendees": 4167,
-          "events": 145,
+          "profession": "specialist",
+          "cost": 999389.04,
+          "attendees": 2165,
+          "events": 88,
           "alcohol": 7,
-          "perperson": 255.02
+          "perperson": 461.61
         }
       ],
       "conditions": [
         {
-          "condition": "diabetes",
-          "cost": 295353.46,
-          "attendees": 1027,
-          "events": 43,
+          "condition": "vaccination",
+          "cost": 22330.84,
+          "attendees": 592,
+          "events": 14,
+          "alcohol": 1,
+          "perperson": 37.57
+        },
+        {
+          "condition": "virus",
+          "cost": 345971.47,
+          "attendees": 847,
+          "events": 30,
+          "alcohol": 1,
+          "perperson": 408.25
+        },
+        {
+          "condition": "kidney_function",
+          "cost": 2903483.68,
+          "attendees": 6910,
+          "events": 221,
+          "alcohol": 3,
+          "perperson": 208.37
+        },
+        {
+          "condition": "hypertension",
+          "cost": 544101.93,
+          "attendees": 875,
+          "events": 33,
           "alcohol": 0,
-          "perperson": 238.19
+          "perperson": 141.31
         },
         {
           "condition": "nervous_system",
-          "cost": 42401.63,
-          "attendees": 399,
-          "events": 15,
+          "cost": 43069.63,
+          "attendees": 425,
+          "events": 17,
           "alcohol": 0,
-          "perperson": 649.02
+          "perperson": 575.59
         },
         {
-          "condition": "respiratory",
-          "cost": 538894.28,
-          "attendees": 682,
-          "events": 21,
+          "condition": "stroke",
+          "cost": 269166.52,
+          "attendees": 300,
+          "events": 9,
           "alcohol": 0,
-          "perperson": 208.77
+          "perperson": 217.7
         },
         {
           "condition": "allergies",
@@ -2394,36 +2428,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 1290260.21,
-          "attendees": 2650,
-          "events": 83,
-          "alcohol": 2,
-          "perperson": 188.96
-        },
-        {
-          "condition": "stroke",
-          "cost": 268909.52,
-          "attendees": 268,
-          "events": 7,
-          "alcohol": 0,
-          "perperson": 277.44
-        },
-        {
-          "condition": "kidney_function",
-          "cost": 2845981.92,
-          "attendees": 6010,
-          "events": 188,
-          "alcohol": 3,
-          "perperson": 237.23
-        },
-        {
           "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": 299690.21,
+          "attendees": 1149,
+          "events": 51,
+          "alcohol": 0,
+          "perperson": 205.72
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 259531.57,
+          "attendees": 572,
+          "events": 19,
+          "alcohol": 1,
+          "perperson": 146.92
         },
         {
           "condition": "endocrinology",
@@ -2434,38 +2460,6 @@ window.stats = {
           "perperson": 32.39
         },
         {
-          "condition": "urology",
-          "cost": 64992.88,
-          "attendees": 1077,
-          "events": 51,
-          "alcohol": 2,
-          "perperson": 208.34
-        },
-        {
-          "condition": "paediatrics",
-          "cost": 29675.44,
-          "attendees": 1524,
-          "events": 34,
-          "alcohol": 1,
-          "perperson": 14.28
-        },
-        {
-          "condition": "virus",
-          "cost": 331244.9,
-          "attendees": 660,
-          "events": 27,
-          "alcohol": 1,
-          "perperson": 449.38
-        },
-        {
-          "condition": "cold_and_flu",
-          "cost": 5130,
-          "attendees": 57,
-          "events": 1,
-          "alcohol": 1,
-          "perperson": 90
-        },
-        {
           "condition": "oral_health",
           "cost": null,
           "attendees": null,
@@ -2474,20 +2468,44 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hypertension",
-          "cost": 543627.05,
-          "attendees": 855,
-          "events": 31,
+          "condition": "mental_illness",
+          "cost": 660666.3,
+          "attendees": 2145,
+          "events": 41,
           "alcohol": 0,
-          "perperson": 149.22
+          "perperson": 243.34
         },
         {
-          "condition": "ageing",
-          "cost": 1478522.87,
-          "attendees": 5809,
-          "events": 192,
+          "condition": "musculoskeletal",
+          "cost": 1145980.3,
+          "attendees": 3297,
+          "events": 117,
           "alcohol": 0,
-          "perperson": 103.79
+          "perperson": 159.35
+        },
+        {
+          "condition": "respiratory",
+          "cost": 539356.18,
+          "attendees": 695,
+          "events": 22,
+          "alcohol": 0,
+          "perperson": 200.9
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 30965.2,
+          "attendees": 1587,
+          "events": 36,
+          "alcohol": 1,
+          "perperson": 15.94
+        },
+        {
+          "condition": "urology",
+          "cost": 105459.82,
+          "attendees": 1899,
+          "events": 90,
+          "alcohol": 2,
+          "perperson": 132.2
         },
         {
           "condition": "wound_management",
@@ -2514,36 +2532,20 @@ window.stats = {
           "perperson": 165.94
         },
         {
-          "condition": "vaccination",
-          "cost": 22212.54,
-          "attendees": 579,
-          "events": 13,
+          "condition": "cold_and_flu",
+          "cost": 5248.3,
+          "attendees": 70,
+          "events": 2,
           "alcohol": 1,
-          "perperson": 39.76
+          "perperson": 49.55
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 989308.38,
-          "attendees": 2285,
-          "events": 73,
-          "alcohol": 0,
-          "perperson": 221.2
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 354581.02,
-          "attendees": 721,
-          "events": 20,
-          "alcohol": 0,
-          "perperson": 586.67
-        },
-        {
-          "condition": "fertility",
-          "cost": 220816.36,
-          "attendees": 961,
-          "events": 25,
-          "alcohol": 1,
-          "perperson": 103.55
+          "condition": "blood_specific_illness",
+          "cost": 3329528.01,
+          "attendees": 36817,
+          "events": 1602,
+          "alcohol": 57,
+          "perperson": 61.84
         },
         {
           "condition": "parkinsons_disease",
@@ -2562,20 +2564,12 @@ window.stats = {
           "perperson": 15.19
         },
         {
-          "condition": "cancer",
-          "cost": 3502475.09,
-          "attendees": 47128,
-          "events": 2100,
-          "alcohol": 70,
-          "perperson": 54.04
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 3083870.73,
-          "attendees": 32881,
-          "events": 1476,
-          "alcohol": 57,
-          "perperson": 60.16
+          "condition": "sexual_health",
+          "cost": 361852.84,
+          "attendees": 817,
+          "events": 23,
+          "alcohol": 0,
+          "perperson": 515.81
         },
         {
           "condition": "addiction",
@@ -2584,6 +2578,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 222488.05,
+          "attendees": 1049,
+          "events": 30,
+          "alcohol": 1,
+          "perperson": 90.62
         },
         {
           "condition": "skin disorders",
@@ -2594,14 +2596,6 @@ window.stats = {
           "perperson": 8.84
         },
         {
-          "condition": "mental_illness",
-          "cost": 618903.26,
-          "attendees": 2145,
-          "events": 40,
-          "alcohol": 0,
-          "perperson": 249.43
-        },
-        {
           "condition": "obesity",
           "cost": 256882.55,
           "attendees": 181,
@@ -2610,12 +2604,20 @@ window.stats = {
           "perperson": 1280.94
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 251405.43,
-          "attendees": 530,
-          "events": 17,
-          "alcohol": 1,
-          "perperson": 149.48
+          "condition": "heart_disease",
+          "cost": 1313968.9,
+          "attendees": 2992,
+          "events": 93,
+          "alcohol": 2,
+          "perperson": 200.11
+        },
+        {
+          "condition": "ageing",
+          "cost": 1501377.23,
+          "attendees": 7084,
+          "events": 250,
+          "alcohol": 0,
+          "perperson": 83.77
         },
         {
           "condition": "gastro",
@@ -2624,36 +2626,44 @@ window.stats = {
           "events": 13,
           "alcohol": 0,
           "perperson": 746.85
+        },
+        {
+          "condition": "cancer",
+          "cost": 3758149.67,
+          "attendees": 52356,
+          "events": 2346,
+          "alcohol": 70,
+          "perperson": 51.37
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2608
+          "hospitalitycount": 2863
         },
         {
           "bin": 20,
-          "hospitalitycount": 2550
+          "hospitalitycount": 2881
         },
         {
           "bin": 50,
-          "hospitalitycount": 434
+          "hospitalitycount": 482
         },
         {
           "bin": 200,
-          "hospitalitycount": 429
+          "hospitalitycount": 469
         },
         {
           "bin": 1000,
-          "hospitalitycount": 61
+          "hospitalitycount": 67
         },
         {
           "bin": 10000,
-          "hospitalitycount": 18
+          "hospitalitycount": 22
         },
         {
           "bin": 100000,
-          "hospitalitycount": 1
+          "hospitalitycount": 2
         }
       ],
       "mostExpensive": {
@@ -2663,36 +2673,30 @@ window.stats = {
         "hospitality": "Breakfast allowance US$23 per day per head: $2;232.43 (US$2;139) Dinner 35 pax: $3;297.09 (US$3;159.10) International flights 10 pax: $106;687.24 Accommodation 93 room nights: $30;574.60 (US$29;295) An exchange rate of 1.04368 is used",
         "attendees": 17,
         "hospitalitycost": 142791.36,
-        "hospitality_spendratio": 8399.49
+        "hospitality_spendratio": 8399.49,
+        "date": "2012-03-01T00:00:00.000Z",
+        "period": "October 2011 - March 2012"
       },
       "code": "amgen",
       "name": "Amgen Australia Pty Ltd",
       "summary": "Established in Australia in 1991, with 150 staff in 2013.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "$228.5m",
       "revenueGlobal": "USD17.3b",
       "products": "65",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=amgen&sortPref=ascending&sortField=0&Page=1&PageMax=3&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "astellas",
-      "cost": 84114.75,
-      "attendees": 1530,
-      "events": 55,
+      "cost": 126904.47,
+      "attendees": 2184,
+      "events": 93,
       "alcohol": 0,
-      "completed": 2,
+      "completed": 3,
       "professions": [
-        {
-          "profession": "gp",
-          "cost": 63144.09,
-          "attendees": 768,
-          "events": 25,
-          "alcohol": 0,
-          "perperson": 82.22
-        },
         {
           "profession": "anaesthetist",
           "cost": null,
@@ -2710,36 +2714,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "oncologist",
-          "cost": 109.38,
-          "attendees": 14,
-          "events": 1,
+          "profession": "consultant",
+          "cost": 2589.66,
+          "attendees": 148,
+          "events": 9,
           "alcohol": 0,
-          "perperson": 7.81
+          "perperson": 17.5
         },
         {
-          "profession": "specialist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "profession": "registrar",
+          "cost": 5665.8,
+          "attendees": 228,
+          "events": 16,
           "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "urologist",
-          "cost": 1530.19,
-          "attendees": 242,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 6.32
-        },
-        {
-          "profession": "nurse",
-          "cost": 9004.39,
-          "attendees": 550,
-          "events": 17,
-          "alcohol": 0,
-          "perperson": 16.37
+          "perperson": 24.85
         },
         {
           "profession": "neurologist",
@@ -2766,6 +2754,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "nurse",
+          "cost": 16152.26,
+          "attendees": 727,
+          "events": 26,
+          "alcohol": 0,
+          "perperson": 22.22
+        },
+        {
+          "profession": "specialist",
+          "cost": 154.44,
+          "attendees": 9,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 17.16
+        },
+        {
           "profession": "psychiatrist",
           "cost": null,
           "attendees": null,
@@ -2774,20 +2778,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "registrar",
-          "cost": 2151.04,
-          "attendees": 97,
-          "events": 6,
+          "profession": "oncologist",
+          "cost": 262.38,
+          "attendees": 26,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 22.18
+          "perperson": 10.09
         },
         {
-          "profession": "consultant",
-          "cost": 646.71,
-          "attendees": 47,
-          "events": 3,
+          "profession": "urologist",
+          "cost": 16176.53,
+          "attendees": 407,
+          "events": 20,
           "alcohol": 0,
-          "perperson": 13.76
+          "perperson": 39.75
         },
         {
           "profession": "gastroenterologist",
@@ -2796,6 +2800,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "gp",
+          "cost": 87238.22,
+          "attendees": 1123,
+          "events": 40,
+          "alcohol": 0,
+          "perperson": 77.68
         },
         {
           "profession": "endocrinologist",
@@ -2824,12 +2836,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 4642.13,
-          "attendees": 143,
-          "events": 5,
+          "condition": "fertility",
+          "cost": 440,
+          "attendees": 12,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 32.4
+          "perperson": 36.67
+        },
+        {
+          "condition": "urology",
+          "cost": 98094.38,
+          "attendees": 1551,
+          "events": 62,
+          "alcohol": 0,
+          "perperson": 206.62
         },
         {
           "condition": "allergies",
@@ -2896,22 +2916,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "fertility",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "urology",
-          "cost": 59400.3,
-          "attendees": 1013,
-          "events": 31,
-          "alcohol": 0,
-          "perperson": 83.03
-        },
-        {
           "condition": "auto_immune_disorders",
           "cost": null,
           "attendees": null,
@@ -2926,6 +2930,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 262.38,
+          "attendees": 26,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 10.28
         },
         {
           "condition": "cold_and_flu",
@@ -2968,14 +2980,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 109.38,
-          "attendees": 14,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 7.81
-        },
-        {
           "condition": "kidney_function",
           "cost": null,
           "attendees": null,
@@ -2998,6 +3002,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 5617.13,
+          "attendees": 182,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 30.62
         },
         {
           "condition": "obesity",
@@ -3075,23 +3087,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 14
+          "hospitalitycount": 25
         },
         {
           "bin": 20,
-          "hospitalitycount": 12
+          "hospitalitycount": 23
         },
         {
           "bin": 50,
-          "hospitalitycount": 7
+          "hospitalitycount": 15
         },
         {
           "bin": 200,
-          "hospitalitycount": 22
+          "hospitalitycount": 27
         },
         {
           "bin": 1000,
-          "hospitalitycount": 0
+          "hospitalitycount": 3
         },
         {
           "bin": 10000,
@@ -3103,227 +3115,197 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "URGE MEETING. Topic: Lower Urinary Tract Symptoms in Overactive Bladder General Practitioner Education Program; 4hr education content",
-        "venue": "The Sebel; Albert Park Lake VIC",
-        "cost": 6642.47,
-        "hospitality": "Food & Beverage",
-        "attendees": 51,
-        "hospitalitycost": 2690.27,
-        "hospitality_spendratio": 52.75
+        "description": "URGE MEETING. Topic: Lower Urinary Tract Symptoms in Overactive Bladder General Practitioner Education Program (RACGP accredited educational event). Four hours of educational content.",
+        "venue": "Novotel Brisbane Hotel; Spring Hill; QLD",
+        "cost": 7381.27,
+        "hospitality": "Food and Beverages",
+        "attendees": 26,
+        "hospitalitycost": 2127.27,
+        "hospitality_spendratio": 81.82,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "astellas",
       "name": "Astellas Pharma Australia Pty Ltd",
       "summary": "Astellas is a Japanese company that has been operating since 1926.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "¥953.9b (2011)",
       "products": "2",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=astellas&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "astrazeneca",
-      "cost": 36631357.62,
-      "attendees": 480276,
-      "events": 18429,
-      "alcohol": 5027,
-      "completed": 11,
+      "cost": 39449394.9,
+      "attendees": 532845,
+      "events": 20096,
+      "alcohol": 5395,
+      "completed": 12,
       "professions": [
         {
-          "profession": "anaesthetist",
-          "cost": 1644893.1,
-          "attendees": 24559,
-          "events": 656,
-          "alcohol": 176,
-          "perperson": 66.98
-        },
-        {
-          "profession": "specialist",
-          "cost": 4762332.15,
-          "attendees": 45786,
-          "events": 1648,
-          "alcohol": 238,
-          "perperson": 104.01
-        },
-        {
-          "profession": "gp",
-          "cost": 19433626.01,
-          "attendees": 134290,
-          "events": 5682,
-          "alcohol": 3379,
-          "perperson": 144.71
-        },
-        {
-          "profession": "oncologist",
-          "cost": 1717972.19,
-          "attendees": 53333,
-          "events": 2058,
-          "alcohol": 245,
-          "perperson": 32.21
-        },
-        {
-          "profession": "physician",
-          "cost": 8532767.46,
-          "attendees": 75245,
-          "events": 2618,
+          "profession": "psychiatrist",
+          "cost": 6435444.23,
+          "attendees": 67932,
+          "events": 2569,
           "alcohol": 898,
-          "perperson": 113.4
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 1795156.42,
-          "attendees": 28575,
-          "events": 739,
-          "alcohol": 349,
-          "perperson": 62.82
-        },
-        {
-          "profession": "registrar",
-          "cost": 4181102.9,
-          "attendees": 102398,
-          "events": 4111,
-          "alcohol": 380,
-          "perperson": 40.83
+          "perperson": 94.73
         },
         {
           "profession": "endocrinologist",
-          "cost": 3536252.25,
-          "attendees": 18899,
-          "events": 586,
-          "alcohol": 250,
-          "perperson": 187.11
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": 6057337.5,
-          "attendees": 62663,
-          "events": 2341,
-          "alcohol": 828,
-          "perperson": 96.67
+          "cost": 3798538.35,
+          "attendees": 21390,
+          "events": 686,
+          "alcohol": 287,
+          "perperson": 177.58
         },
         {
           "profession": "gastroenterologist",
-          "cost": 4415553.31,
-          "attendees": 30084,
-          "events": 1160,
-          "alcohol": 564,
-          "perperson": 146.77
+          "cost": 5001583.12,
+          "attendees": 31933,
+          "events": 1235,
+          "alcohol": 587,
+          "perperson": 156.63
         },
         {
-          "profession": "consultant",
-          "cost": 3580107.55,
-          "attendees": 52893,
-          "events": 2129,
-          "alcohol": 420,
-          "perperson": 67.69
+          "profession": "specialist",
+          "cost": 4802236.01,
+          "attendees": 46430,
+          "events": 1668,
+          "alcohol": 251,
+          "perperson": 103.43
         },
         {
-          "profession": "haematologist",
-          "cost": 232859.4,
-          "attendees": 3971,
-          "events": 153,
-          "alcohol": 33,
-          "perperson": 58.64
+          "profession": "anaesthetist",
+          "cost": 1736957.41,
+          "attendees": 26750,
+          "events": 724,
+          "alcohol": 197,
+          "perperson": 64.93
         },
         {
-          "profession": "neurologist",
-          "cost": 114087.42,
-          "attendees": 2859,
-          "events": 90,
-          "alcohol": 29,
-          "perperson": 39.9
+          "profession": "gp",
+          "cost": 21215813.39,
+          "attendees": 145908,
+          "events": 6070,
+          "alcohol": 3634,
+          "perperson": 145.41
         },
         {
-          "profession": "urologist",
-          "cost": 1123774.17,
-          "attendees": 16931,
-          "events": 683,
-          "alcohol": 68,
-          "perperson": 66.37
+          "profession": "registrar",
+          "cost": 4377364.33,
+          "attendees": 112567,
+          "events": 4501,
+          "alcohol": 397,
+          "perperson": 38.89
         },
         {
           "profession": "nurse",
-          "cost": 7458915.38,
-          "attendees": 139206,
-          "events": 5018,
-          "alcohol": 1130,
-          "perperson": 53.58
+          "cost": 8217628.92,
+          "attendees": 156450,
+          "events": 5485,
+          "alcohol": 1261,
+          "perperson": 52.53
+        },
+        {
+          "profession": "haematologist",
+          "cost": 246573.48,
+          "attendees": 4152,
+          "events": 160,
+          "alcohol": 37,
+          "perperson": 59.39
+        },
+        {
+          "profession": "physician",
+          "cost": 9174817.71,
+          "attendees": 84490,
+          "events": 2885,
+          "alcohol": 997,
+          "perperson": 108.59
+        },
+        {
+          "profession": "consultant",
+          "cost": 3973044.09,
+          "attendees": 58095,
+          "events": 2285,
+          "alcohol": 488,
+          "perperson": 68.39
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 2117047.53,
+          "attendees": 37780,
+          "events": 821,
+          "alcohol": 397,
+          "perperson": 56.04
+        },
+        {
+          "profession": "oncologist",
+          "cost": 1922565.46,
+          "attendees": 63859,
+          "events": 2403,
+          "alcohol": 274,
+          "perperson": 30.11
+        },
+        {
+          "profession": "urologist",
+          "cost": 1202404.74,
+          "attendees": 18579,
+          "events": 765,
+          "alcohol": 73,
+          "perperson": 64.72
+        },
+        {
+          "profession": "neurologist",
+          "cost": 119464.3,
+          "attendees": 2971,
+          "events": 96,
+          "alcohol": 32,
+          "perperson": 40.21
         }
       ],
       "conditions": [
         {
-          "condition": "respiratory",
-          "cost": 8202432.37,
-          "attendees": 44622,
-          "events": 1713,
-          "alcohol": 1218,
-          "perperson": 117.21
+          "condition": "gastro",
+          "cost": 5660664.15,
+          "attendees": 35910,
+          "events": 1368,
+          "alcohol": 645,
+          "perperson": 92.77
         },
         {
-          "condition": "cold_and_flu",
-          "cost": 371764.39,
-          "attendees": 2777,
-          "events": 108,
-          "alcohol": 83,
-          "perperson": 127.41
+          "condition": "stroke",
+          "cost": 980644.19,
+          "attendees": 3334,
+          "events": 76,
+          "alcohol": 30,
+          "perperson": 247.21
         },
         {
-          "condition": "urology",
-          "cost": 2650474.31,
-          "attendees": 31566,
-          "events": 1112,
-          "alcohol": 239,
-          "perperson": 48.7
+          "condition": "fertility",
+          "cost": 648320.71,
+          "attendees": 4540,
+          "events": 95,
+          "alcohol": 44,
+          "perperson": 155.92
         },
         {
-          "condition": "mental_illness",
-          "cost": 8687339.4,
-          "attendees": 76462,
-          "events": 2771,
-          "alcohol": 950,
-          "perperson": 80.94
-        },
-        {
-          "condition": "musculoskeletal",
-          "cost": 28035.63,
-          "attendees": 342,
-          "events": 17,
-          "alcohol": 9,
-          "perperson": 90.83
-        },
-        {
-          "condition": "allergies",
-          "cost": 627708.08,
-          "attendees": 5088,
-          "events": 187,
-          "alcohol": 114,
-          "perperson": 100.52
-        },
-        {
-          "condition": "obesity",
-          "cost": 508903.11,
-          "attendees": 4482,
-          "events": 244,
-          "alcohol": 228,
-          "perperson": 114.18
+          "condition": "hypertension",
+          "cost": 2294757.52,
+          "attendees": 11358,
+          "events": 484,
+          "alcohol": 444,
+          "perperson": 119.77
         },
         {
           "condition": "vaccination",
-          "cost": 211265.9,
-          "attendees": 2279,
-          "events": 44,
+          "cost": 211665.9,
+          "attendees": 2309,
+          "events": 45,
           "alcohol": 29,
-          "perperson": 130.39
-        },
-        {
-          "condition": "addiction",
-          "cost": 47843.92,
-          "attendees": 720,
-          "events": 13,
-          "alcohol": 7,
-          "perperson": 81.18
+          "perperson": 127.79
         },
         {
           "condition": "parkinsons_disease",
@@ -3334,44 +3316,68 @@ window.stats = {
           "perperson": 25.51
         },
         {
-          "condition": "paediatrics",
-          "cost": 827683.22,
-          "attendees": 7041,
-          "events": 223,
-          "alcohol": 155,
-          "perperson": 114.72
+          "condition": "heart_disease",
+          "cost": 13661107.22,
+          "attendees": 109057,
+          "events": 3492,
+          "alcohol": 1559,
+          "perperson": 90
         },
         {
-          "condition": "fertility",
-          "cost": 631295.68,
-          "attendees": 3425,
-          "events": 90,
-          "alcohol": 42,
-          "perperson": 159.45
+          "condition": "sexual_health",
+          "cost": 1088177.99,
+          "attendees": 7791,
+          "events": 164,
+          "alcohol": 107,
+          "perperson": 122.42
+        },
+        {
+          "condition": "dementia",
+          "cost": 50834.92,
+          "attendees": 757,
+          "events": 21,
+          "alcohol": 15,
+          "perperson": 78.08
         },
         {
           "condition": "cosmetic_surgery",
-          "cost": 128534.03,
-          "attendees": 1155,
-          "events": 43,
-          "alcohol": 24,
-          "perperson": 77.91
+          "cost": 138936.21,
+          "attendees": 1276,
+          "events": 48,
+          "alcohol": 27,
+          "perperson": 76.4
         },
         {
-          "condition": "hiv",
-          "cost": 644243.3,
-          "attendees": 1316,
-          "events": 31,
-          "alcohol": 20,
-          "perperson": 197.26
+          "condition": "virus",
+          "cost": 1948443.11,
+          "attendees": 10324,
+          "events": 260,
+          "alcohol": 187,
+          "perperson": 146.97
         },
         {
-          "condition": "anaesthesia",
-          "cost": 2061900.79,
-          "attendees": 26555,
-          "events": 714,
-          "alcohol": 184,
-          "perperson": 64.06
+          "condition": "cancer",
+          "cost": 5310463.44,
+          "attendees": 86554,
+          "events": 3104,
+          "alcohol": 546,
+          "perperson": 37.62
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 34949.31,
+          "attendees": 439,
+          "events": 20,
+          "alcohol": 11,
+          "perperson": 91.51
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 446515.56,
+          "attendees": 3426,
+          "events": 139,
+          "alcohol": 103,
+          "perperson": 123.46
         },
         {
           "condition": "oral_health",
@@ -3382,36 +3388,52 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "skin disorders",
+          "cost": 126097.57,
+          "attendees": 1062,
+          "events": 35,
+          "alcohol": 19,
+          "perperson": 98.44
+        },
+        {
           "condition": "auto_immune_disorders",
-          "cost": 15973.91,
-          "attendees": 254,
-          "events": 9,
-          "alcohol": 3,
-          "perperson": 77.34
+          "cost": 18210.27,
+          "attendees": 272,
+          "events": 10,
+          "alcohol": 4,
+          "perperson": 82.03
         },
         {
-          "condition": "diabetes",
-          "cost": 3536833.63,
-          "attendees": 19744,
-          "events": 754,
-          "alcohol": 517,
-          "perperson": 135.69
+          "condition": "urology",
+          "cost": 2803207.84,
+          "attendees": 35647,
+          "events": 1265,
+          "alcohol": 261,
+          "perperson": 45.96
         },
         {
-          "condition": "gastro",
-          "cost": 5069663.53,
-          "attendees": 33932,
-          "events": 1290,
-          "alcohol": 621,
-          "perperson": 84.96
+          "condition": "anaesthesia",
+          "cost": 2155235.15,
+          "attendees": 28906,
+          "events": 786,
+          "alcohol": 205,
+          "perperson": 62.17
         },
         {
-          "condition": "dementia",
-          "cost": 48753.1,
-          "attendees": 743,
-          "events": 20,
-          "alcohol": 14,
-          "perperson": 74.55
+          "condition": "paediatrics",
+          "cost": 892077.44,
+          "attendees": 8339,
+          "events": 236,
+          "alcohol": 165,
+          "perperson": 113.67
+        },
+        {
+          "condition": "blood_specific_illness",
+          "cost": 276166.4,
+          "attendees": 5110,
+          "events": 189,
+          "alcohol": 39,
+          "perperson": 35.84
         },
         {
           "condition": "wound_management",
@@ -3422,28 +3444,12 @@ window.stats = {
           "perperson": 68.73
         },
         {
-          "condition": "hypertension",
-          "cost": 2261277.22,
-          "attendees": 11135,
-          "events": 478,
-          "alcohol": 442,
-          "perperson": 119.56
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 122783.93,
-          "attendees": 1015,
-          "events": 33,
-          "alcohol": 18,
-          "perperson": 99.66
-        },
-        {
-          "condition": "cancer",
-          "cost": 5055947.39,
-          "attendees": 74936,
-          "events": 2724,
-          "alcohol": 503,
-          "perperson": 39.99
+          "condition": "diabetes",
+          "cost": 4302790.71,
+          "attendees": 21656,
+          "events": 829,
+          "alcohol": 556,
+          "perperson": 154.67
         },
         {
           "condition": "endocrinology",
@@ -3454,20 +3460,20 @@ window.stats = {
           "perperson": 69.65
         },
         {
-          "condition": "virus",
-          "cost": 1876709.86,
-          "attendees": 9599,
-          "events": 238,
-          "alcohol": 175,
-          "perperson": 150.76
+          "condition": "ageing",
+          "cost": 6806547.17,
+          "attendees": 31182,
+          "events": 960,
+          "alcohol": 570,
+          "perperson": 133.9
         },
         {
-          "condition": "sexual_health",
-          "cost": 1054342.02,
-          "attendees": 7662,
-          "events": 157,
-          "alcohol": 102,
-          "perperson": 112.29
+          "condition": "allergies",
+          "cost": 654617.22,
+          "attendees": 5420,
+          "events": 198,
+          "alcohol": 122,
+          "perperson": 99.4
         },
         {
           "condition": "kidney_function",
@@ -3478,66 +3484,74 @@ window.stats = {
           "perperson": 106.86
         },
         {
+          "condition": "obesity",
+          "cost": 522609.92,
+          "attendees": 4612,
+          "events": 247,
+          "alcohol": 229,
+          "perperson": 114
+        },
+        {
+          "condition": "hiv",
+          "cost": 666825.12,
+          "attendees": 1328,
+          "events": 32,
+          "alcohol": 20,
+          "perperson": 249.91
+        },
+        {
+          "condition": "respiratory",
+          "cost": 8389022.56,
+          "attendees": 47538,
+          "events": 1785,
+          "alcohol": 1255,
+          "perperson": 115.75
+        },
+        {
+          "condition": "addiction",
+          "cost": 49125.14,
+          "attendees": 739,
+          "events": 15,
+          "alcohol": 9,
+          "perperson": 79.32
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 9082932.28,
+          "attendees": 82008,
+          "events": 3013,
+          "alcohol": 1025,
+          "perperson": 79.69
+        },
+        {
           "condition": "nervous_system",
-          "cost": 1740590.4,
-          "attendees": 6819,
-          "events": 165,
-          "alcohol": 67,
-          "perperson": 86.21
-        },
-        {
-          "condition": "ageing",
-          "cost": 6645335.03,
-          "attendees": 29422,
-          "events": 891,
-          "alcohol": 523,
-          "perperson": 136.73
-        },
-        {
-          "condition": "stroke",
-          "cost": 972727.83,
-          "attendees": 3278,
-          "events": 74,
-          "alcohol": 29,
-          "perperson": 249.17
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 12821685.45,
-          "attendees": 96472,
-          "events": 3012,
-          "alcohol": 1411,
-          "perperson": 94.4
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 262202.32,
-          "attendees": 4910,
-          "events": 181,
-          "alcohol": 35,
-          "perperson": 34.79
+          "cost": 1749989.1,
+          "attendees": 7425,
+          "events": 176,
+          "alcohol": 72,
+          "perperson": 83.7
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 5889
+          "hospitalitycount": 6469
         },
         {
           "bin": 20,
-          "hospitalitycount": 6576
+          "hospitalitycount": 7253
         },
         {
           "bin": 50,
-          "hospitalitycount": 1315
+          "hospitalitycount": 1382
         },
         {
           "bin": 200,
-          "hospitalitycount": 4501
+          "hospitalitycount": 4842
         },
         {
           "bin": 1000,
-          "hospitalitycount": 141
+          "hospitalitycount": 143
         },
         {
           "bin": 10000,
@@ -3549,49 +3563,67 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "National Specialist Symposium Challenges in Gastroenterology. The educational content for this meeting was devised by a Scientific Committee comprising key GI specialists. Content included presentations by two international speakers and a choice of eight workshops facilited by Australian specialists. Agenda was as follows: Plenary Session 1. Optimising GORD Treatment; GORD-IBS overlap; Ablating the oesophageal mucosa. Plenary Session 2; Imaging the small intestine; Capsule for Crohn's; CT enteroclysis; MRI; Ultrasound of the small bowel; Double balloon enteroscopy. Workshops consisting of 8 topics included: Balancing GI and Cardiac risk: NSAIDs; aspirin and PPIs. Endoluminal resection of GI neoplasia. Modern management of portal hyperstension. Using immunomodulators wisely. Hepatitis C: who and how to treat. Assessing genetic risk of gut disease/CRC. Pain management for the gastroenterologist. Taking care of the doctor. 6 hours education content",
-        "venue": "Crown Promenade; Melbourne VIC",
-        "cost": 514452.13,
-        "hospitality": "Friday Transfers from airport to hotel Finger food with alcoholic and non alcoholic beverages on arrival Accommodation Saturday Breakfast Morning tea Buffet lunch with non alcoholic beverages Afternoon tea Three course dinner with alcoholic and non alcoholic beverages Accommodation on Saturday night Sunday Breakfast Transfers to airport Flights Return flights for interstate attendees",
-        "attendees": 226,
-        "hospitalitycost": 296284.18,
-        "hospitality_spendratio": 1310.99
+        "description": "Educational dinner meeting for General Practitioners with specialist presentations on Exploring Outcomes in Type 2 Diabetes - Offering Extra Help to Patients. 4 CPD Points (Group 2) in the RACGP QI & CPD Program 2 hours educational content",
+        "venue": "Must Winebar Highgate WA",
+        "cost": 515455,
+        "hospitality": "Dinner with alcoholic and non alcoholic beverages",
+        "attendees": 36,
+        "hospitalitycost": 3254.55,
+        "hospitality_spendratio": 90.4,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "astrazeneca",
       "name": "AstraZeneca Pty Ltd",
       "summary": "AstraZeneca employes 900 people in Australia.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$923,251,160",
       "revenueAu": "USD1.09b (Aus and NZ)",
       "revenueGlobal": "USD28b (2012)",
       "products": "272",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=astrazeneca%20pty%20ltd&sortPref=ascending&sortField=0&Page=1&PageMax=11&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "baxter",
-      "cost": 916974.88,
-      "attendees": 13642,
-      "events": 721,
+      "cost": 961949.51,
+      "attendees": 14489,
+      "events": 796,
       "alcohol": 0,
-      "completed": 10,
+      "completed": 11,
       "professions": [
         {
-          "profession": "gp",
-          "cost": 61863.07,
-          "attendees": 681,
-          "events": 15,
+          "profession": "nurse",
+          "cost": 647352.24,
+          "attendees": 6866,
+          "events": 435,
           "alcohol": 0,
-          "perperson": 90.84
+          "perperson": 94.28
         },
         {
-          "profession": "anaesthetist",
-          "cost": 111552.22,
-          "attendees": 4516,
-          "events": 219,
+          "profession": "registrar",
+          "cost": 30060.29,
+          "attendees": 1435,
+          "events": 81,
           "alcohol": 0,
-          "perperson": 24.7
+          "perperson": 20.95
+        },
+        {
+          "profession": "haematologist",
+          "cost": 121299.4,
+          "attendees": 204,
+          "events": 10,
+          "alcohol": 0,
+          "perperson": 594.6
+        },
+        {
+          "profession": "neurologist",
+          "cost": 741.63,
+          "attendees": 62,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 11.96
         },
         {
           "profession": "physician",
@@ -3610,12 +3642,12 @@ window.stats = {
           "perperson": 446.93
         },
         {
-          "profession": "neurologist",
-          "cost": 268.03,
-          "attendees": 27,
-          "events": 2,
+          "profession": "gp",
+          "cost": 65519,
+          "attendees": 681,
+          "events": 17,
           "alcohol": 0,
-          "perperson": 9.93
+          "perperson": 96.21
         },
         {
           "profession": "psychiatrist",
@@ -3642,28 +3674,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "registrar",
-          "cost": 28388.61,
-          "attendees": 1361,
-          "events": 74,
-          "alcohol": 0,
-          "perperson": 20.86
-        },
-        {
-          "profession": "nurse",
-          "cost": 630154.73,
-          "attendees": 6564,
-          "events": 401,
-          "alcohol": 0,
-          "perperson": 96
-        },
-        {
           "profession": "pharmacist",
-          "cost": 210267.96,
-          "attendees": 2388,
-          "events": 67,
+          "cost": 213222.09,
+          "attendees": 2454,
+          "events": 72,
           "alcohol": 0,
-          "perperson": 88.05
+          "perperson": 86.89
+        },
+        {
+          "profession": "consultant",
+          "cost": 4171.9,
+          "attendees": 304,
+          "events": 21,
+          "alcohol": 0,
+          "perperson": 13.72
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 122461.87,
+          "attendees": 5021,
+          "events": 252,
+          "alcohol": 0,
+          "perperson": 24.39
         },
         {
           "profession": "gastroenterologist",
@@ -3680,22 +3712,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "consultant",
-          "cost": 3643.9,
-          "attendees": 304,
-          "events": 19,
-          "alcohol": 0,
-          "perperson": 11.99
-        },
-        {
-          "profession": "haematologist",
-          "cost": 118837,
-          "attendees": 178,
-          "events": 7,
-          "alcohol": 0,
-          "perperson": 667.62
         }
       ],
       "conditions": [
@@ -3722,6 +3738,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "blood_specific_illness",
+          "cost": 250184.62,
+          "attendees": 309,
+          "events": 16,
+          "alcohol": 0,
+          "perperson": 634.4
         },
         {
           "condition": "urology",
@@ -3820,14 +3844,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "nervous_system",
-          "cost": 318.03,
-          "attendees": 68,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 7.25
-        },
-        {
           "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
@@ -3876,20 +3892,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "virus",
-          "cost": 113440.65,
-          "attendees": 2900,
-          "events": 174,
-          "alcohol": 0,
-          "perperson": 19.14
-        },
-        {
           "condition": "anaesthesia",
-          "cost": 124097.31,
-          "attendees": 5469,
-          "events": 280,
+          "cost": 142623.33,
+          "attendees": 5974,
+          "events": 315,
           "alcohol": 0,
-          "perperson": 17.96
+          "perperson": 17.28
         },
         {
           "condition": "dementia",
@@ -3924,20 +3932,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 247294.27,
-          "attendees": 278,
-          "events": 11,
-          "alcohol": 0,
-          "perperson": 827.94
-        },
-        {
           "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 113834.96,
+          "attendees": 2966,
+          "events": 177,
+          "alcohol": 0,
+          "perperson": 18.92
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 791.63,
+          "attendees": 103,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 10.23
         },
         {
           "condition": "musculoskeletal",
@@ -3967,27 +3983,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 388
+          "hospitalitycount": 429
         },
         {
           "bin": 20,
-          "hospitalitycount": 212
+          "hospitalitycount": 234
         },
         {
           "bin": 50,
-          "hospitalitycount": 57
+          "hospitalitycount": 61
         },
         {
           "bin": 200,
-          "hospitalitycount": 58
+          "hospitalitycount": 61
         },
         {
           "bin": 1000,
-          "hospitalitycount": 4
+          "hospitalitycount": 7
         },
         {
           "bin": 10000,
-          "hospitalitycount": 2
+          "hospitalitycount": 4
         },
         {
           "bin": 100000,
@@ -4001,52 +4017,54 @@ window.stats = {
         "hospitality": "Food; Beverages; Accommodation; Travel; Entertainment",
         "attendees": 82,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2008-06-01T00:00:00.000Z",
+        "period": "January 2008 - June 2008"
       },
       "incomplete": 1,
       "code": "baxter",
       "name": "Baxter Healthcare Pty Ltd*",
       "summary": "Baxter began operating in Australia in 1963, and the global group currently has 48,500 employees.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "USD14.2b (2012)",
       "products": "434",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Baxter%20Healthcare%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=18&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "bayer",
-      "cost": 2951090.38,
-      "attendees": 72867,
-      "events": 3113,
-      "alcohol": 4,
-      "completed": 11,
+      "cost": 3598396.9,
+      "attendees": 80622,
+      "events": 3374,
+      "alcohol": 5,
+      "completed": 12,
       "professions": [
         {
-          "profession": "psychiatrist",
-          "cost": 163794.78,
-          "attendees": 1128,
-          "events": 24,
+          "profession": "neurologist",
+          "cost": 678538.52,
+          "attendees": 9393,
+          "events": 416,
           "alcohol": 0,
-          "perperson": 145.21
+          "perperson": 72.24
         },
         {
-          "profession": "anaesthetist",
-          "cost": 70590.33,
-          "attendees": 1102,
-          "events": 28,
+          "profession": "pharmacist",
+          "cost": 293591.68,
+          "attendees": 3793,
+          "events": 144,
           "alcohol": 0,
-          "perperson": 64.06
+          "perperson": 77.4
         },
         {
-          "profession": "registrar",
-          "cost": 1436246.99,
-          "attendees": 39718,
-          "events": 1861,
-          "alcohol": 2,
-          "perperson": 36.16
+          "profession": "physician",
+          "cost": 581642.91,
+          "attendees": 12487,
+          "events": 491,
+          "alcohol": 1,
+          "perperson": 46.58
         },
         {
           "profession": "endocrinologist",
@@ -4057,20 +4075,20 @@ window.stats = {
           "perperson": 75.92
         },
         {
-          "profession": "physician",
-          "cost": 519105.87,
-          "attendees": 11871,
-          "events": 477,
-          "alcohol": 1,
-          "perperson": 43.73
+          "profession": "registrar",
+          "cost": 1521172.25,
+          "attendees": 41621,
+          "events": 1945,
+          "alcohol": 2,
+          "perperson": 36.55
         },
         {
-          "profession": "pharmacist",
-          "cost": 267406.75,
-          "attendees": 3324,
-          "events": 127,
+          "profession": "psychiatrist",
+          "cost": 168925.32,
+          "attendees": 1179,
+          "events": 25,
           "alcohol": 0,
-          "perperson": 80.45
+          "perperson": 143.28
         },
         {
           "profession": "urologist",
@@ -4081,68 +4099,68 @@ window.stats = {
           "perperson": 11.85
         },
         {
-          "profession": "consultant",
-          "cost": 327058.58,
-          "attendees": 5784,
-          "events": 222,
-          "alcohol": 1,
-          "perperson": 56.55
+          "profession": "nurse",
+          "cost": 1358134.41,
+          "attendees": 29162,
+          "events": 1204,
+          "alcohol": 0,
+          "perperson": 46.57
         },
         {
-          "profession": "neurologist",
-          "cost": 661878.29,
-          "attendees": 8753,
-          "events": 391,
+          "profession": "anaesthetist",
+          "cost": 79887.78,
+          "attendees": 1200,
+          "events": 29,
           "alcohol": 0,
-          "perperson": 75.62
+          "perperson": 66.57
         },
         {
           "profession": "haematologist",
-          "cost": 292966.31,
-          "attendees": 6070,
-          "events": 266,
+          "cost": 342038.18,
+          "attendees": 6588,
+          "events": 274,
           "alcohol": 1,
-          "perperson": 48.26
-        },
-        {
-          "profession": "specialist",
-          "cost": 368524.79,
-          "attendees": 6643,
-          "events": 189,
-          "alcohol": 0,
-          "perperson": 55.48
+          "perperson": 51.92
         },
         {
           "profession": "gp",
-          "cost": 1122599.98,
-          "attendees": 15304,
-          "events": 344,
+          "cost": 1629275.31,
+          "attendees": 19307,
+          "events": 425,
           "alcohol": 1,
-          "perperson": 73.35
+          "perperson": 84.39
         },
         {
-          "profession": "nurse",
-          "cost": 1104407.29,
-          "attendees": 25755,
-          "events": 1111,
+          "profession": "specialist",
+          "cost": 391540.05,
+          "attendees": 6815,
+          "events": 195,
           "alcohol": 0,
-          "perperson": 42.88
+          "perperson": 57.45
         },
         {
           "profession": "gastroenterologist",
-          "cost": 109835.8,
-          "attendees": 4300,
-          "events": 210,
+          "cost": 131428.86,
+          "attendees": 4926,
+          "events": 246,
           "alcohol": 0,
-          "perperson": 25.54
+          "perperson": 26.68
         },
         {
           "profession": "oncologist",
-          "cost": 295866.02,
-          "attendees": 11116,
-          "events": 535,
+          "cost": 313039.38,
+          "attendees": 11653,
+          "events": 562,
           "alcohol": 0,
-          "perperson": 26.62
+          "perperson": 26.86
+        },
+        {
+          "profession": "consultant",
+          "cost": 364915.64,
+          "attendees": 6206,
+          "events": 234,
+          "alcohol": 1,
+          "perperson": 58.8
         }
       ],
       "conditions": [
@@ -4155,20 +4173,20 @@ window.stats = {
           "perperson": 135.43
         },
         {
-          "condition": "virus",
-          "cost": 5672.65,
-          "attendees": 518,
-          "events": 32,
-          "alcohol": 2,
-          "perperson": 13.03
-        },
-        {
           "condition": "dementia",
           "cost": 551.27,
           "attendees": 65,
           "events": 2,
           "alcohol": 0,
           "perperson": 8.97
+        },
+        {
+          "condition": "fertility",
+          "cost": 262671.41,
+          "attendees": 2440,
+          "events": 66,
+          "alcohol": 0,
+          "perperson": 101.63
         },
         {
           "condition": "musculoskeletal",
@@ -4179,6 +4197,14 @@ window.stats = {
           "perperson": 19.24
         },
         {
+          "condition": "blood_specific_illness",
+          "cost": 346238.08,
+          "attendees": 6938,
+          "events": 294,
+          "alcohol": 1,
+          "perperson": 35.59
+        },
+        {
           "condition": "allergies",
           "cost": null,
           "attendees": null,
@@ -4187,36 +4213,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "anaesthesia",
-          "cost": 70777.33,
-          "attendees": 1118,
-          "events": 29,
+          "condition": "heart_disease",
+          "cost": 410715.89,
+          "attendees": 5112,
+          "events": 173,
           "alcohol": 0,
-          "perperson": 40.6
+          "perperson": 112.65
+        },
+        {
+          "condition": "obesity",
+          "cost": 22715.67,
+          "attendees": 286,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 73.26
         },
         {
           "condition": "cosmetic_surgery",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "cost": 3086.67,
+          "attendees": 31,
+          "events": 1,
           "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 297166.21,
-          "attendees": 6420,
-          "events": 286,
-          "alcohol": 1,
-          "perperson": 34.83
-        },
-        {
-          "condition": "gastro",
-          "cost": 111951.37,
-          "attendees": 4475,
-          "events": 221,
-          "alcohol": 0,
-          "perperson": 17.96
+          "perperson": 99.57
         },
         {
           "condition": "oral_health",
@@ -4227,6 +4245,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "ageing",
+          "cost": 170259.96,
+          "attendees": 3447,
+          "events": 137,
+          "alcohol": 0,
+          "perperson": 29.92
+        },
+        {
           "condition": "cold_and_flu",
           "cost": 200,
           "attendees": 20,
@@ -4235,12 +4261,12 @@ window.stats = {
           "perperson": 10
         },
         {
-          "condition": "diabetes",
-          "cost": 146969.34,
-          "attendees": 2313,
-          "events": 74,
+          "condition": "nervous_system",
+          "cost": 685182.16,
+          "attendees": 9708,
+          "events": 421,
           "alcohol": 0,
-          "perperson": 52.34
+          "perperson": 44.98
         },
         {
           "condition": "hiv",
@@ -4251,6 +4277,14 @@ window.stats = {
           "perperson": 11.45
         },
         {
+          "condition": "anaesthesia",
+          "cost": 80074.78,
+          "attendees": 1216,
+          "events": 30,
+          "alcohol": 0,
+          "perperson": 42.41
+        },
+        {
           "condition": "auto_immune_disorders",
           "cost": 1910.92,
           "attendees": 101,
@@ -4259,28 +4293,28 @@ window.stats = {
           "perperson": 16.92
         },
         {
+          "condition": "urology",
+          "cost": 415563.83,
+          "attendees": 9551,
+          "events": 583,
+          "alcohol": 0,
+          "perperson": 21.7
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 169161.14,
+          "attendees": 1204,
+          "events": 26,
+          "alcohol": 0,
+          "perperson": 126.94
+        },
+        {
           "condition": "vaccination",
           "cost": 20802.17,
           "attendees": 847,
           "events": 7,
           "alcohol": 0,
           "perperson": 37.73
-        },
-        {
-          "condition": "respiratory",
-          "cost": 72711,
-          "attendees": 828,
-          "events": 34,
-          "alcohol": 0,
-          "perperson": 75.12
-        },
-        {
-          "condition": "stroke",
-          "cost": 68969,
-          "attendees": 427,
-          "events": 22,
-          "alcohol": 0,
-          "perperson": 112.71
         },
         {
           "condition": "kidney_function",
@@ -4299,6 +4333,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "diabetes",
+          "cost": 154569.1,
+          "attendees": 2386,
+          "events": 76,
+          "alcohol": 0,
+          "perperson": 53.67
+        },
+        {
           "condition": "endocrinology",
           "cost": 6000,
           "attendees": 800,
@@ -4307,12 +4349,20 @@ window.stats = {
           "perperson": 7.5
         },
         {
-          "condition": "cancer",
-          "cost": 345822.21,
-          "attendees": 13355,
-          "events": 630,
+          "condition": "respiratory",
+          "cost": 117630.35,
+          "attendees": 1226,
+          "events": 42,
           "alcohol": 0,
-          "perperson": 19.55
+          "perperson": 80.67
+        },
+        {
+          "condition": "cancer",
+          "cost": 363385.85,
+          "attendees": 13931,
+          "events": 661,
+          "alcohol": 0,
+          "perperson": 19.93
         },
         {
           "condition": "parkinsons_disease",
@@ -4331,28 +4381,12 @@ window.stats = {
           "perperson": 59.07
         },
         {
-          "condition": "skin disorders",
-          "cost": 49118.16,
-          "attendees": 476,
-          "events": 17,
-          "alcohol": 0,
-          "perperson": 93.46
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 164030.6,
-          "attendees": 1153,
-          "events": 25,
-          "alcohol": 0,
-          "perperson": 127.99
-        },
-        {
-          "condition": "ageing",
-          "cost": 119864.48,
-          "attendees": 2791,
-          "events": 120,
-          "alcohol": 0,
-          "perperson": 29.06
+          "condition": "sexual_health",
+          "cost": 444314.25,
+          "attendees": 5960,
+          "events": 107,
+          "alcohol": 1,
+          "perperson": 96.9
         },
         {
           "condition": "addiction",
@@ -4363,82 +4397,66 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": 19715.67,
-          "attendees": 266,
-          "events": 7,
+          "condition": "skin disorders",
+          "cost": 166168.01,
+          "attendees": 711,
+          "events": 19,
           "alcohol": 0,
-          "perperson": 62.3
+          "perperson": 140.68
         },
         {
-          "condition": "fertility",
-          "cost": 236786.33,
-          "attendees": 2152,
-          "events": 54,
+          "condition": "gastro",
+          "cost": 133657.28,
+          "attendees": 5117,
+          "events": 258,
           "alcohol": 0,
-          "perperson": 104.07
+          "perperson": 19.66
         },
         {
-          "condition": "nervous_system",
-          "cost": 665435.26,
-          "attendees": 9037,
-          "events": 395,
-          "alcohol": 0,
-          "perperson": 46.57
+          "condition": "virus",
+          "cost": 5843.39,
+          "attendees": 533,
+          "events": 33,
+          "alcohol": 2,
+          "perperson": 12.98
         },
         {
-          "condition": "heart_disease",
-          "cost": 274760.14,
-          "attendees": 4090,
-          "events": 143,
+          "condition": "stroke",
+          "cost": 69066.6,
+          "attendees": 439,
+          "events": 23,
           "alcohol": 0,
-          "perperson": 60.91
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 420428.25,
-          "attendees": 5772,
-          "events": 99,
-          "alcohol": 1,
-          "perperson": 89.2
-        },
-        {
-          "condition": "urology",
-          "cost": 415256.07,
-          "attendees": 9530,
-          "events": 581,
-          "alcohol": 0,
-          "perperson": 21.72
+          "perperson": 108.16
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2465
+          "hospitalitycount": 2522
         },
         {
           "bin": 20,
-          "hospitalitycount": 210
+          "hospitalitycount": 275
         },
         {
           "bin": 50,
-          "hospitalitycount": 113
+          "hospitalitycount": 152
         },
         {
           "bin": 200,
-          "hospitalitycount": 317
+          "hospitalitycount": 413
         },
         {
           "bin": 1000,
-          "hospitalitycount": 8
+          "hospitalitycount": 10
         },
         {
           "bin": 10000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         }
       ],
       "mostExpensive": {
@@ -4448,27 +4466,29 @@ window.stats = {
         "hospitality": "Accommodation; Flights/Travel/Pa rking/Taxi; Meal & Beverage",
         "attendees": 163,
         "hospitalitycost": 40374.92,
-        "hospitality_spendratio": 247.7
+        "hospitality_spendratio": 247.7,
+        "date": "2010-03-01T00:00:00.000Z",
+        "period": "January 2010 - March 2010"
       },
       "code": "bayer",
       "name": "Bayer Australia Ltd",
       "summary": "800 employees in Australia, 245 in New Zealand.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$97,689,036",
       "revenueAu": "$891m (2012)",
       "revenueGlobal": "€2496 m (2012)",
       "products": "274",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Bayer%20Australia%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=11&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "biogen",
-      "cost": 2865601.3,
-      "attendees": 28868,
-      "events": 1055,
+      "cost": 3382994.84,
+      "attendees": 30327,
+      "events": 1123,
       "alcohol": 23,
-      "completed": 11,
+      "completed": 12,
       "professions": [
         {
           "profession": "anaesthetist",
@@ -4480,11 +4500,11 @@ window.stats = {
         },
         {
           "profession": "specialist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "cost": 144.39,
+          "attendees": 15,
+          "events": 1,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 9.63
         },
         {
           "profession": "gp",
@@ -4503,14 +4523,6 @@ window.stats = {
           "perperson": 51.7
         },
         {
-          "profession": "registrar",
-          "cost": 476021.34,
-          "attendees": 8223,
-          "events": 281,
-          "alcohol": 0,
-          "perperson": 57.89
-        },
-        {
           "profession": "haematologist",
           "cost": null,
           "attendees": null,
@@ -4527,20 +4539,20 @@ window.stats = {
           "perperson": 111.84
         },
         {
+          "profession": "physician",
+          "cost": 24602.78,
+          "attendees": 1645,
+          "events": 10,
+          "alcohol": 0,
+          "perperson": 14.96
+        },
+        {
           "profession": "urologist",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "nurse",
-          "cost": 1287521.4,
-          "attendees": 11751,
-          "events": 498,
-          "alcohol": 7,
-          "perperson": 109.57
         },
         {
           "profession": "oncologist",
@@ -4551,12 +4563,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "physician",
-          "cost": 24171.75,
-          "attendees": 1612,
-          "events": 8,
+          "profession": "nurse",
+          "cost": 1564252.94,
+          "attendees": 12948,
+          "events": 549,
+          "alcohol": 7,
+          "perperson": 120.81
+        },
+        {
+          "profession": "registrar",
+          "cost": 486362.53,
+          "attendees": 8999,
+          "events": 315,
           "alcohol": 0,
-          "perperson": 14.99
+          "perperson": 54.05
+        },
+        {
+          "profession": "neurologist",
+          "cost": 2670433.05,
+          "attendees": 27265,
+          "events": 920,
+          "alcohol": 21,
+          "perperson": 97.94
         },
         {
           "profession": "gastroenterologist",
@@ -4565,14 +4593,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "neurologist",
-          "cost": 2164305.81,
-          "attendees": 25921,
-          "events": 860,
-          "alcohol": 21,
-          "perperson": 83.5
         },
         {
           "profession": "endocrinologist",
@@ -4599,14 +4619,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "auto_immune_disorders",
-          "cost": 1444903.11,
-          "attendees": 3253,
-          "events": 181,
-          "alcohol": 21,
-          "perperson": 243.88
         },
         {
           "condition": "cancer",
@@ -4639,14 +4651,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 2175791.68,
-          "attendees": 26350,
-          "events": 891,
-          "alcohol": 21,
-          "perperson": 81.36
         },
         {
           "condition": "vaccination",
@@ -4735,6 +4739,22 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 2682477.47,
+          "attendees": 27748,
+          "events": 956,
+          "alcohol": 21,
+          "perperson": 95.32
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 1466609.23,
+          "attendees": 3411,
+          "events": 191,
+          "alcohol": 21,
+          "perperson": 238.27
         },
         {
           "condition": "sexual_health",
@@ -4860,23 +4880,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 296
+          "hospitalitycount": 309
         },
         {
           "bin": 20,
-          "hospitalitycount": 483
+          "hospitalitycount": 521
         },
         {
           "bin": 50,
-          "hospitalitycount": 73
+          "hospitalitycount": 77
         },
         {
           "bin": 200,
-          "hospitalitycount": 181
+          "hospitalitycount": 191
         },
         {
           "bin": 1000,
-          "hospitalitycount": 14
+          "hospitalitycount": 16
         },
         {
           "bin": 10000,
@@ -4884,17 +4904,19 @@ window.stats = {
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         }
       ],
       "mostExpensive": {
-        "description": "Postgraduate Neurology Weekend A symposium on practical treatment advice; controversies in mutiple sclerosis (MS); paediatric neurology; neuroimaging in MS and cutting-edge scientific updates: Educational Component - 8.5 Hrs",
-        "venue": "The Westin Sydney Hotel; Sydney NSW",
-        "cost": 224221.37,
-        "hospitality": "Conference meal package; dinner and beverages; flights; transfers and accommodation",
-        "attendees": 66,
-        "hospitalitycost": 126118.11,
-        "hospitality_spendratio": 1910.88
+        "description": "Biogen Idee stand alone event (Summit Meeting) with international& local guest speakers. Invited MS Nurses and Neurologists EducationalComponent- 12.25 Hrs",
+        "venue": "Crown Metropol Hotel; South Bank Melbourne VIC",
+        "cost": 238714.67,
+        "hospitality": "Accommodation; breakfast; lunch; dinner; tea breaks; return airfares",
+        "attendees": 142,
+        "hospitalitycost": 126138.01,
+        "hospitality_spendratio": 888.3,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "biogen",
       "name": "Biogen Idec Australia Pty Ltd",
@@ -4905,80 +4927,72 @@ window.stats = {
       "revenueGlobal": "USD5.05b (2011)",
       "products": "12",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Biogen%20Idec%20Australia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "bms",
-      "cost": 7273522.61,
-      "attendees": 73733,
-      "events": 2610,
-      "alcohol": 117,
-      "completed": 10,
+      "cost": 8248167.57,
+      "attendees": 85797,
+      "events": 2996,
+      "alcohol": 118,
+      "completed": 11,
       "professions": [
         {
-          "profession": "consultant",
-          "cost": 128633.35,
-          "attendees": 1339,
-          "events": 57,
-          "alcohol": 8,
-          "perperson": 96.07
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": 811033.97,
-          "attendees": 12556,
-          "events": 290,
-          "alcohol": 3,
-          "perperson": 64.59
-        },
-        {
-          "profession": "gp",
-          "cost": 2124970.92,
-          "attendees": 19157,
-          "events": 895,
-          "alcohol": 48,
-          "perperson": 110.92
+          "profession": "nurse",
+          "cost": 2710745.25,
+          "attendees": 39704,
+          "events": 1198,
+          "alcohol": 24,
+          "perperson": 68.27
         },
         {
           "profession": "haematologist",
-          "cost": 1003201.68,
-          "attendees": 12921,
-          "events": 395,
+          "cost": 1235956.91,
+          "attendees": 15515,
+          "events": 463,
           "alcohol": 9,
-          "perperson": 77.64
+          "perperson": 79.66
+        },
+        {
+          "profession": "consultant",
+          "cost": 141139.87,
+          "attendees": 1492,
+          "events": 63,
+          "alcohol": 8,
+          "perperson": 94.6
         },
         {
           "profession": "specialist",
-          "cost": 481085.58,
-          "attendees": 2766,
-          "events": 25,
+          "cost": 481855.58,
+          "attendees": 2894,
+          "events": 26,
           "alcohol": 4,
-          "perperson": 173.93
+          "perperson": 166.5
         },
         {
-          "profession": "nurse",
-          "cost": 2353575.39,
-          "attendees": 33693,
-          "events": 1018,
-          "alcohol": 24,
-          "perperson": 69.85
+          "profession": "registrar",
+          "cost": 2032709.48,
+          "attendees": 22392,
+          "events": 561,
+          "alcohol": 21,
+          "perperson": 90.78
         },
         {
-          "profession": "psychiatrist",
-          "cost": 707968.17,
-          "attendees": 7097,
-          "events": 288,
-          "alcohol": 28,
-          "perperson": 99.76
+          "profession": "endocrinologist",
+          "cost": 771376.14,
+          "attendees": 4184,
+          "events": 36,
+          "alcohol": 1,
+          "perperson": 184.36
         },
         {
-          "profession": "pharmacist",
-          "cost": 884829,
-          "attendees": 9825,
-          "events": 208,
-          "alcohol": 16,
-          "perperson": 90.06
+          "profession": "oncologist",
+          "cost": 699515.08,
+          "attendees": 5249,
+          "events": 53,
+          "alcohol": 0,
+          "perperson": 133.27
         },
         {
           "profession": "urologist",
@@ -4989,36 +5003,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "oncologist",
-          "cost": 505456.9,
-          "attendees": 2959,
-          "events": 50,
-          "alcohol": 0,
-          "perperson": 170.82
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": 600796.44,
-          "attendees": 3848,
-          "events": 25,
-          "alcohol": 1,
-          "perperson": 156.13
-        },
-        {
-          "profession": "registrar",
-          "cost": 1783740.6,
-          "attendees": 18957,
-          "events": 495,
-          "alcohol": 21,
-          "perperson": 94.09
-        },
-        {
           "profession": "physician",
-          "cost": 1186661.8,
-          "attendees": 13764,
-          "events": 252,
+          "cost": 1285832.94,
+          "attendees": 15872,
+          "events": 284,
           "alcohol": 7,
-          "perperson": 86.21
+          "perperson": 81.01
+        },
+        {
+          "profession": "gp",
+          "cost": 2430180.05,
+          "attendees": 23748,
+          "events": 1086,
+          "alcohol": 49,
+          "perperson": 102.33
+        },
+        {
+          "profession": "psychiatrist",
+          "cost": 708418.17,
+          "attendees": 7110,
+          "events": 289,
+          "alcohol": 28,
+          "perperson": 99.64
         },
         {
           "profession": "neurologist",
@@ -5029,22 +5035,38 @@ window.stats = {
           "perperson": 60.03
         },
         {
+          "profession": "pharmacist",
+          "cost": 950665.71,
+          "attendees": 12272,
+          "events": 259,
+          "alcohol": 16,
+          "perperson": 77.47
+        },
+        {
           "profession": "anaesthetist",
           "cost": 13326.23,
           "attendees": 98,
           "events": 3,
           "alcohol": 1,
           "perperson": 135.98
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 860650.19,
+          "attendees": 14580,
+          "events": 330,
+          "alcohol": 3,
+          "perperson": 59.03
         }
       ],
       "conditions": [
         {
-          "condition": "gastro",
-          "cost": 815247.44,
-          "attendees": 12612,
-          "events": 297,
-          "alcohol": 3,
-          "perperson": 67.03
+          "condition": "auto_immune_disorders",
+          "cost": 419207.27,
+          "attendees": 1033,
+          "events": 36,
+          "alcohol": 14,
+          "perperson": 471.79
         },
         {
           "condition": "paediatrics",
@@ -5056,11 +5078,19 @@ window.stats = {
         },
         {
           "condition": "diabetes",
-          "cost": 786172.33,
-          "attendees": 5412,
-          "events": 124,
+          "cost": 981352.06,
+          "attendees": 5972,
+          "events": 143,
           "alcohol": 4,
-          "perperson": 209.85
+          "perperson": 252.58
+        },
+        {
+          "condition": "hiv",
+          "cost": 1122357.06,
+          "attendees": 8641,
+          "events": 175,
+          "alcohol": 9,
+          "perperson": 137.2
         },
         {
           "condition": "allergies",
@@ -5079,6 +5109,14 @@ window.stats = {
           "perperson": 297.16
         },
         {
+          "condition": "sexual_health",
+          "cost": 1877172.77,
+          "attendees": 15223,
+          "events": 780,
+          "alcohol": 24,
+          "perperson": 67.4
+        },
+        {
           "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
@@ -5087,12 +5125,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 256396.92,
-          "attendees": 1400,
-          "events": 53,
-          "alcohol": 3,
-          "perperson": 149.12
+          "condition": "blood_specific_illness",
+          "cost": 1251431.82,
+          "attendees": 15811,
+          "events": 476,
+          "alcohol": 10,
+          "perperson": 67.55
         },
         {
           "condition": "oral_health",
@@ -5101,6 +5139,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "vaccination",
+          "cost": 270697.91,
+          "attendees": 1866,
+          "events": 58,
+          "alcohol": 0,
+          "perperson": 165.31
         },
         {
           "condition": "fertility",
@@ -5127,44 +5173,12 @@ window.stats = {
           "perperson": 79.31
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 417707.27,
-          "attendees": 978,
-          "events": 35,
-          "alcohol": 14,
-          "perperson": 484.49
-        },
-        {
           "condition": "urology",
           "cost": 8421.68,
           "attendees": 149,
           "events": 4,
           "alcohol": 0,
           "perperson": 45.53
-        },
-        {
-          "condition": "virus",
-          "cost": 849619.18,
-          "attendees": 6083,
-          "events": 527,
-          "alcohol": 18,
-          "perperson": 53.29
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 1013481.4,
-          "attendees": 13137,
-          "events": 403,
-          "alcohol": 9,
-          "perperson": 72.52
-        },
-        {
-          "condition": "musculoskeletal",
-          "cost": 422191.7,
-          "attendees": 1472,
-          "events": 41,
-          "alcohol": 14,
-          "perperson": 419.69
         },
         {
           "condition": "wound_management",
@@ -5175,6 +5189,30 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "musculoskeletal",
+          "cost": 424055.34,
+          "attendees": 1719,
+          "events": 43,
+          "alcohol": 14,
+          "perperson": 400.85
+        },
+        {
+          "condition": "ageing",
+          "cost": 256760.56,
+          "attendees": 1592,
+          "events": 54,
+          "alcohol": 3,
+          "perperson": 146.39
+        },
+        {
+          "condition": "virus",
+          "cost": 887874.45,
+          "attendees": 6911,
+          "events": 659,
+          "alcohol": 18,
+          "perperson": 46.74
+        },
+        {
           "condition": "respiratory",
           "cost": 218700.96,
           "attendees": 651,
@@ -5183,12 +5221,12 @@ window.stats = {
           "perperson": 297.16
         },
         {
-          "condition": "hiv",
-          "cost": 1013990.05,
-          "attendees": 6818,
-          "events": 158,
-          "alcohol": 9,
-          "perperson": 132.84
+          "condition": "mental_illness",
+          "cost": 745276.44,
+          "attendees": 7504,
+          "events": 305,
+          "alcohol": 29,
+          "perperson": 61.28
         },
         {
           "condition": "endocrinology",
@@ -5205,14 +5243,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "vaccination",
-          "cost": 249609.09,
-          "attendees": 803,
-          "events": 49,
-          "alcohol": 0,
-          "perperson": 192.52
         },
         {
           "condition": "parkinsons_disease",
@@ -5263,12 +5293,12 @@ window.stats = {
           "perperson": 37.96
         },
         {
-          "condition": "mental_illness",
-          "cost": 744826.44,
-          "attendees": 7491,
-          "events": 304,
-          "alcohol": 29,
-          "perperson": 61.37
+          "condition": "cancer",
+          "cost": 750582.26,
+          "attendees": 6385,
+          "events": 106,
+          "alcohol": 0,
+          "perperson": 92
         },
         {
           "condition": "skin disorders",
@@ -5279,20 +5309,12 @@ window.stats = {
           "perperson": 54.08
         },
         {
-          "condition": "cancer",
-          "cost": 519768.32,
-          "attendees": 3764,
-          "events": 90,
-          "alcohol": 0,
-          "perperson": 87.63
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 1741300.02,
-          "attendees": 12478,
-          "events": 625,
-          "alcohol": 24,
-          "perperson": 75.58
+          "condition": "gastro",
+          "cost": 864916.21,
+          "attendees": 14639,
+          "events": 338,
+          "alcohol": 3,
+          "perperson": 63.22
         },
         {
           "condition": "stroke",
@@ -5306,23 +5328,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 484
+          "hospitalitycount": 573
         },
         {
           "bin": 20,
-          "hospitalitycount": 1054
+          "hospitalitycount": 1250
         },
         {
           "bin": 50,
-          "hospitalitycount": 442
+          "hospitalitycount": 483
         },
         {
           "bin": 200,
-          "hospitalitycount": 581
+          "hospitalitycount": 639
         },
         {
           "bin": 1000,
-          "hospitalitycount": 43
+          "hospitalitycount": 45
         },
         {
           "bin": 10000,
@@ -5340,36 +5362,38 @@ window.stats = {
         "hospitality": "Modest morning tea; lunch and afternoon tea. Travel for 33 interstate attendees; car parking for 20 local attendees; accommodation for 53 attendees.",
         "attendees": 66,
         "hospitalitycost": 28736.2,
-        "hospitality_spendratio": 435.4
+        "hospitality_spendratio": 435.4,
+        "date": "2008-06-01T00:00:00.000Z",
+        "period": "January 2008 - June 2008"
       },
       "incomplete": 1,
       "code": "bms",
       "name": "Bristol-Myers Squibb Australia Pty Ltd*",
       "summary": "A global biopharmaceutical that has had a presence in Australia for 80 years.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$129,254,619",
       "revenueAu": "$211m (2011)",
       "revenueGlobal": "USD17.6b (2012)",
       "products": "97",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=%20Bristol-Myers%20Squibb&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "boehringer",
-      "cost": 11579785.8,
-      "attendees": 92563,
-      "events": 3314,
-      "alcohol": 2946,
-      "completed": 11,
+      "cost": 12174310.1,
+      "attendees": 96181,
+      "events": 3468,
+      "alcohol": 3052,
+      "completed": 12,
       "professions": [
         {
-          "profession": "physician",
-          "cost": 3917512.17,
-          "attendees": 27095,
-          "events": 1006,
-          "alcohol": 952,
-          "perperson": 144.58
+          "profession": "oncologist",
+          "cost": 48798.28,
+          "attendees": 1894,
+          "events": 26,
+          "alcohol": 24,
+          "perperson": 25.76
         },
         {
           "profession": "anaesthetist",
@@ -5380,68 +5404,44 @@ window.stats = {
           "perperson": 80.14
         },
         {
-          "profession": "pharmacist",
-          "cost": 471500.53,
-          "attendees": 5273,
-          "events": 180,
-          "alcohol": 176,
-          "perperson": 89.42
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": 1311308.97,
-          "attendees": 5130,
-          "events": 210,
-          "alcohol": 200,
-          "perperson": 255.62
-        },
-        {
-          "profession": "nurse",
-          "cost": 4525612.96,
-          "attendees": 33629,
-          "events": 1015,
-          "alcohol": 784,
-          "perperson": 134.57
-        },
-        {
-          "profession": "consultant",
-          "cost": 37987.67,
-          "attendees": 569,
-          "events": 21,
-          "alcohol": 18,
-          "perperson": 66.76
-        },
-        {
-          "profession": "specialist",
-          "cost": 448053.84,
-          "attendees": 4084,
-          "events": 45,
-          "alcohol": 31,
-          "perperson": 109.71
-        },
-        {
-          "profession": "haematologist",
-          "cost": 186615.9,
-          "attendees": 835,
-          "events": 21,
-          "alcohol": 18,
-          "perperson": 223.49
+          "profession": "psychiatrist",
+          "cost": 643285.69,
+          "attendees": 5727,
+          "events": 243,
+          "alcohol": 227,
+          "perperson": 112.33
         },
         {
           "profession": "registrar",
-          "cost": 157496.47,
-          "attendees": 1971,
-          "events": 83,
-          "alcohol": 78,
-          "perperson": 79.91
+          "cost": 162319.04,
+          "attendees": 2156,
+          "events": 88,
+          "alcohol": 80,
+          "perperson": 75.29
         },
         {
-          "profession": "oncologist",
-          "cost": 48512.49,
-          "attendees": 1837,
+          "profession": "pharmacist",
+          "cost": 482815.43,
+          "attendees": 5392,
+          "events": 184,
+          "alcohol": 180,
+          "perperson": 89.54
+        },
+        {
+          "profession": "consultant",
+          "cost": 46581.86,
+          "attendees": 727,
           "events": 25,
-          "alcohol": 24,
-          "perperson": 26.41
+          "alcohol": 21,
+          "perperson": 64.07
+        },
+        {
+          "profession": "endocrinologist",
+          "cost": 1585843.39,
+          "attendees": 5782,
+          "events": 232,
+          "alcohol": 213,
+          "perperson": 274.27
         },
         {
           "profession": "urologist",
@@ -5452,12 +5452,20 @@ window.stats = {
           "perperson": 117.42
         },
         {
-          "profession": "psychiatrist",
-          "cost": 640191.07,
-          "attendees": 5650,
-          "events": 240,
-          "alcohol": 225,
-          "perperson": 113.31
+          "profession": "haematologist",
+          "cost": 186916.45,
+          "attendees": 883,
+          "events": 22,
+          "alcohol": 18,
+          "perperson": 211.68
+        },
+        {
+          "profession": "neurologist",
+          "cost": 1628886.37,
+          "attendees": 5774,
+          "events": 153,
+          "alcohol": 131,
+          "perperson": 282.11
         },
         {
           "profession": "gastroenterologist",
@@ -5468,20 +5476,36 @@ window.stats = {
           "perperson": 68.19
         },
         {
-          "profession": "gp",
-          "cost": 9060281.59,
-          "attendees": 72701,
-          "events": 2875,
-          "alcohol": 2597,
-          "perperson": 124.62
+          "profession": "nurse",
+          "cost": 4669013.06,
+          "attendees": 34574,
+          "events": 1048,
+          "alcohol": 810,
+          "perperson": 135.04
         },
         {
-          "profession": "neurologist",
-          "cost": 1376856.22,
-          "attendees": 5451,
-          "events": 147,
-          "alcohol": 127,
-          "perperson": 252.59
+          "profession": "specialist",
+          "cost": 465631.41,
+          "attendees": 4644,
+          "events": 48,
+          "alcohol": 31,
+          "perperson": 100.27
+        },
+        {
+          "profession": "gp",
+          "cost": 9275916.39,
+          "attendees": 74877,
+          "events": 2992,
+          "alcohol": 2698,
+          "perperson": 123.88
+        },
+        {
+          "profession": "physician",
+          "cost": 4361103.86,
+          "attendees": 29106,
+          "events": 1074,
+          "alcohol": 989,
+          "perperson": 149.84
         }
       ],
       "conditions": [
@@ -5492,14 +5516,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "cancer",
-          "cost": 230403.71,
-          "attendees": 1889,
-          "events": 28,
-          "alcohol": 25,
-          "perperson": 440.19
         },
         {
           "condition": "gastro",
@@ -5542,6 +5558,22 @@ window.stats = {
           "perperson": 65.8
         },
         {
+          "condition": "hiv",
+          "cost": 44458.06,
+          "attendees": 619,
+          "events": 31,
+          "alcohol": 27,
+          "perperson": 73.67
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 2083.51,
+          "attendees": 17,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 122.56
+        },
+        {
           "condition": "allergies",
           "cost": null,
           "attendees": null,
@@ -5550,12 +5582,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 1225828.04,
-          "attendees": 7619,
-          "events": 358,
-          "alcohol": 342,
-          "perperson": 116.71
+          "condition": "sexual_health",
+          "cost": 55520.3,
+          "attendees": 744,
+          "events": 38,
+          "alcohol": 34,
+          "perperson": 76.31
+        },
+        {
+          "condition": "obesity",
+          "cost": 269883.79,
+          "attendees": 2694,
+          "events": 120,
+          "alcohol": 105,
+          "perperson": 105.84
         },
         {
           "condition": "fertility",
@@ -5566,22 +5606,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": 224764.32,
-          "attendees": 2193,
-          "events": 89,
-          "alcohol": 87,
-          "perperson": 109.08
-        },
-        {
-          "condition": "respiratory",
-          "cost": 1169898.93,
-          "attendees": 9257,
-          "events": 371,
-          "alcohol": 345,
-          "perperson": 125.22
-        },
-        {
           "condition": "oral_health",
           "cost": null,
           "attendees": null,
@@ -5590,12 +5614,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paediatrics",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "condition": "respiratory",
+          "cost": 1218542.9,
+          "attendees": 9765,
+          "events": 397,
+          "alcohol": 366,
+          "perperson": 123.68
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 5013635.78,
+          "attendees": 41719,
+          "events": 1548,
+          "alcohol": 1434,
+          "perperson": 124.31
         },
         {
           "condition": "virus",
@@ -5614,36 +5646,20 @@ window.stats = {
           "perperson": 61.66
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 186615.9,
-          "attendees": 835,
-          "events": 21,
-          "alcohol": 18,
-          "perperson": 195.73
+          "condition": "stroke",
+          "cost": 821389.68,
+          "attendees": 8996,
+          "events": 298,
+          "alcohol": 287,
+          "perperson": 97.61
         },
         {
-          "condition": "diabetes",
-          "cost": 573822.69,
-          "attendees": 3387,
-          "events": 114,
-          "alcohol": 111,
-          "perperson": 131.86
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 4528940.1,
-          "attendees": 39754,
-          "events": 1451,
-          "alcohol": 1371,
-          "perperson": 118.17
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 1384632.77,
-          "attendees": 5559,
-          "events": 151,
-          "alcohol": 131,
-          "perperson": 170.54
+          "condition": "mental_illness",
+          "cost": 958941.58,
+          "attendees": 8067,
+          "events": 361,
+          "alcohol": 339,
+          "perperson": 112.03
         },
         {
           "condition": "vaccination",
@@ -5654,20 +5670,20 @@ window.stats = {
           "perperson": 127.9
         },
         {
-          "condition": "hiv",
-          "cost": 43655.07,
-          "attendees": 581,
-          "events": 29,
-          "alcohol": 25,
-          "perperson": 75.62
-        },
-        {
           "condition": "wound_management",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 230689.5,
+          "attendees": 1946,
+          "events": 29,
+          "alcohol": 25,
+          "perperson": 425.18
         },
         {
           "condition": "cold_and_flu",
@@ -5678,20 +5694,20 @@ window.stats = {
           "perperson": 127.9
         },
         {
+          "condition": "ageing",
+          "cost": 1283687.09,
+          "attendees": 8357,
+          "events": 399,
+          "alcohol": 363,
+          "perperson": 113.73
+        },
+        {
           "condition": "dementia",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "parkinsons_disease",
-          "cost": 147621.16,
-          "attendees": 1210,
-          "events": 49,
-          "alcohol": 44,
-          "perperson": 105.68
         },
         {
           "condition": "musculoskeletal",
@@ -5710,12 +5726,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
-          "cost": 955846.96,
-          "attendees": 7990,
-          "events": 358,
-          "alcohol": 337,
-          "perperson": 112.59
+          "condition": "nervous_system",
+          "cost": 1657352.92,
+          "attendees": 5884,
+          "events": 158,
+          "alcohol": 135,
+          "perperson": 238.99
         },
         {
           "condition": "urology",
@@ -5726,20 +5742,20 @@ window.stats = {
           "perperson": 86.68
         },
         {
-          "condition": "stroke",
-          "cost": 775324.17,
-          "attendees": 8540,
-          "events": 276,
-          "alcohol": 266,
-          "perperson": 96.89
+          "condition": "diabetes",
+          "cost": 625038.65,
+          "attendees": 3962,
+          "events": 148,
+          "alcohol": 130,
+          "perperson": 123.57
         },
         {
-          "condition": "sexual_health",
-          "cost": 54717.31,
-          "attendees": 706,
-          "events": 36,
-          "alcohol": 32,
-          "perperson": 78.03
+          "condition": "blood_specific_illness",
+          "cost": 186916.45,
+          "attendees": 883,
+          "events": 22,
+          "alcohol": 18,
+          "perperson": 187.12
         },
         {
           "condition": "cosmetic_surgery",
@@ -5748,28 +5764,36 @@ window.stats = {
           "events": 2,
           "alcohol": 2,
           "perperson": 102.77
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": 152088.77,
+          "attendees": 1269,
+          "events": 51,
+          "alcohol": 46,
+          "perperson": 105.02
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 63
+          "hospitalitycount": 78
         },
         {
           "bin": 20,
-          "hospitalitycount": 51
+          "hospitalitycount": 64
         },
         {
           "bin": 50,
-          "hospitalitycount": 664
+          "hospitalitycount": 715
         },
         {
           "bin": 200,
-          "hospitalitycount": 2497
+          "hospitalitycount": 2569
         },
         {
           "bin": 1000,
-          "hospitalitycount": 35
+          "hospitalitycount": 37
         },
         {
           "bin": 10000,
@@ -5777,46 +5801,40 @@ window.stats = {
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         }
       ],
       "mostExpensive": {
-        "description": "Educational grant including sponsorship of specialist physician delegates to a cross functional post graduate weekend educational meeting exploring cardiovascular; cerebrovascular and metabolic disease. The meeting included 4 plenary sessions; delivered by 9 specialist opinion leaders and a total of 17 one-hour workshops run over 3 concurrent sessions; delivered by a faculty of 11 opinion leaders.",
-        "venue": "Sheraton on the Park Hotel; Sydney",
-        "cost": 233094.28,
-        "hospitality": "Accommodation (1 night) Lunch x 2; Afternoon Tea; Dinner; Breakfast; Morning Tea & Lunch",
-        "attendees": 200,
-        "hospitalitycost": 87587,
-        "hospitality_spendratio": 437.94
+        "description": "The 4th Hearts & Minds Cardiovascular Conference. 2 day cross functional meeting of different specialist groups which aims to encourage cross displinary debate on key issues in vascular disease.",
+        "venue": "Grand Hyatt; Melbourne VIC 3000",
+        "cost": 242814.29,
+        "hospitality": "Flights; Transfers; Accommodation with Breakfast; Conference meals and dinner;parking",
+        "attendees": 186,
+        "hospitalitycost": 138464.2,
+        "hospitality_spendratio": 744.43,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "boehringer",
       "name": "Boehringer Ingelheim Pty Ltd",
       "summary": "A German human and veterinary Pharmaceutical company that started in Australia in the 1960s. ",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$224,475,635",
       "revenueAu": "-",
       "revenueGlobal": "€14.5b (2011)",
       "products": "129",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Boehringer%20Ingelheim%20&sortPref=ascending&sortField=0&Page=1&PageMax=6&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "celgene",
-      "cost": 739579.3,
-      "attendees": 11703,
-      "events": 469,
-      "alcohol": 0,
-      "completed": 11,
+      "cost": 861924.44,
+      "attendees": 13871,
+      "events": 574,
+      "alcohol": 1,
+      "completed": 12,
       "professions": [
-        {
-          "profession": "consultant",
-          "cost": 11225.9,
-          "attendees": 97,
-          "events": 5,
-          "alcohol": 0,
-          "perperson": 115.73
-        },
         {
           "profession": "anaesthetist",
           "cost": null,
@@ -5826,12 +5844,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "nurse",
-          "cost": 374233.94,
-          "attendees": 5548,
-          "events": 213,
-          "alcohol": 0,
-          "perperson": 67.45
+          "profession": "gp",
+          "cost": 11968,
+          "attendees": 283,
+          "events": 9,
+          "alcohol": 1,
+          "perperson": 42.29
         },
         {
           "profession": "specialist",
@@ -5850,20 +5868,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "oncologist",
+          "cost": 78775.84,
+          "attendees": 2219,
+          "events": 81,
+          "alcohol": 0,
+          "perperson": 35.5
+        },
+        {
           "profession": "physician",
           "cost": 9540,
           "attendees": 193,
           "events": 5,
           "alcohol": 0,
           "perperson": 49.43
-        },
-        {
-          "profession": "haematologist",
-          "cost": 612471.47,
-          "attendees": 10253,
-          "events": 414,
-          "alcohol": 0,
-          "perperson": 59.74
         },
         {
           "profession": "psychiatrist",
@@ -5882,20 +5900,44 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "oncologist",
-          "cost": 75695.11,
-          "attendees": 2095,
-          "events": 74,
+          "profession": "haematologist",
+          "cost": 721927.41,
+          "attendees": 12169,
+          "events": 513,
+          "alcohol": 1,
+          "perperson": 59.33
+        },
+        {
+          "profession": "consultant",
+          "cost": 11580.8,
+          "attendees": 129,
+          "events": 7,
           "alcohol": 0,
-          "perperson": 36.13
+          "perperson": 89.77
+        },
+        {
+          "profession": "nurse",
+          "cost": 418222.12,
+          "attendees": 6585,
+          "events": 259,
+          "alcohol": 1,
+          "perperson": 63.51
         },
         {
           "profession": "pharmacist",
-          "cost": 190665.89,
-          "attendees": 3464,
-          "events": 152,
+          "cost": 209703.4,
+          "attendees": 3746,
+          "events": 170,
           "alcohol": 0,
-          "perperson": 55.04
+          "perperson": 55.98
+        },
+        {
+          "profession": "registrar",
+          "cost": 307321.76,
+          "attendees": 5827,
+          "events": 301,
+          "alcohol": 0,
+          "perperson": 52.74
         },
         {
           "profession": "gastroenterologist",
@@ -5906,28 +5948,12 @@ window.stats = {
           "perperson": 10.47
         },
         {
-          "profession": "gp",
-          "cost": 10461,
-          "attendees": 235,
-          "events": 7,
-          "alcohol": 0,
-          "perperson": 44.51
-        },
-        {
           "profession": "endocrinologist",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "registrar",
-          "cost": 244601.78,
-          "attendees": 4271,
-          "events": 216,
-          "alcohol": 0,
-          "perperson": 57.27
         }
       ],
       "conditions": [
@@ -5956,12 +5982,12 @@ window.stats = {
           "perperson": 11.38
         },
         {
-          "condition": "fertility",
-          "cost": 1946.7,
-          "attendees": 60,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 32.45
+          "condition": "blood_specific_illness",
+          "cost": 767215.46,
+          "attendees": 12907,
+          "events": 532,
+          "alcohol": 1,
+          "perperson": 40.69
         },
         {
           "condition": "urology",
@@ -5988,7 +6014,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "vaccination",
+          "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -5996,12 +6022,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cosmetic_surgery",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "cancer",
+          "cost": 99793.64,
+          "attendees": 2783,
+          "events": 101,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 29.41
         },
         {
           "condition": "heart_disease",
@@ -6076,14 +6102,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 94803.01,
-          "attendees": 2616,
-          "events": 91,
-          "alcohol": 0,
-          "perperson": 28.89
-        },
-        {
           "condition": "paediatrics",
           "cost": 0,
           "attendees": 20,
@@ -6098,6 +6116,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "vaccination",
+          "cost": 1689,
+          "attendees": 20,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 84.45
         },
         {
           "condition": "wound_management",
@@ -6122,14 +6148,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 645225.22,
-          "attendees": 10771,
-          "events": 429,
-          "alcohol": 0,
-          "perperson": 37.72
         },
         {
           "condition": "dementia",
@@ -6180,6 +6198,14 @@ window.stats = {
           "perperson": 12
         },
         {
+          "condition": "fertility",
+          "cost": 6046.7,
+          "attendees": 94,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 76.52
+        },
+        {
           "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
@@ -6199,19 +6225,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 91
+          "hospitalitycount": 117
         },
         {
           "bin": 20,
-          "hospitalitycount": 256
+          "hospitalitycount": 310
         },
         {
           "bin": 50,
-          "hospitalitycount": 56
+          "hospitalitycount": 70
         },
         {
           "bin": 200,
-          "hospitalitycount": 59
+          "hospitalitycount": 70
         },
         {
           "bin": 1000,
@@ -6227,33 +6253,35 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Description: Multiple Myeloma Educational Symposium Duration of Event: Friday 24th July to Sunday 26th July Educational Content : 13.5 hours",
-        "venue": "Educational Symposium: The Langham hotel; Melbourne VIC Dinner : Champions; Federation Square; Melbourne; VIC",
+        "description": "Description: Multiple Myeloma Educational Symposium Duration of Event: Friday 24th July to Sunday 26th July Educational Content: 13.5 hours",
+        "venue": "Educational Symposium: The Langham hotel; Melbourne VIC Dinner: Champions; Federation Square; Melbourne; VIC",
         "cost": 152912.1,
         "hospitality": "Food and beverages Flights; accommodation and transport",
         "attendees": 96,
         "hospitalitycost": 79479.22,
-        "hospitality_spendratio": 827.91
+        "hospitality_spendratio": 827.91,
+        "date": "2009-12-01T00:00:00.000Z",
+        "period": "July 2009 - December 2009"
       },
       "code": "celgene",
       "name": "Celgene Australia Pty Ltd",
       "summary": "Established in Australia in 2006, and has 4,500 employees worldwide.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "USD5.5b (2012)",
       "products": "11",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Celgene&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "csl",
-      "cost": 4580188,
-      "attendees": 85780,
-      "events": 2394,
-      "alcohol": 726,
-      "completed": 11,
+      "cost": 5099327.1,
+      "attendees": 97006,
+      "events": 2721,
+      "alcohol": 771,
+      "completed": 12,
       "professions": [
         {
           "profession": "consultant",
@@ -6264,108 +6292,108 @@ window.stats = {
           "perperson": 22.34
         },
         {
-          "profession": "anaesthetist",
-          "cost": 168836,
-          "attendees": 6856,
-          "events": 221,
-          "alcohol": 53,
-          "perperson": 24.63
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 87652,
-          "attendees": 1574,
-          "events": 46,
-          "alcohol": 19,
-          "perperson": 55.69
-        },
-        {
-          "profession": "gp",
-          "cost": 1728626,
-          "attendees": 30675,
-          "events": 765,
-          "alcohol": 386,
-          "perperson": 56.35
-        },
-        {
-          "profession": "haematologist",
-          "cost": 538209,
-          "attendees": 11413,
-          "events": 181,
-          "alcohol": 39,
-          "perperson": 47.16
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": 4644,
-          "attendees": 549,
-          "events": 28,
-          "alcohol": 6,
-          "perperson": 8.46
-        },
-        {
-          "profession": "nurse",
-          "cost": 1814130,
-          "attendees": 32624,
-          "events": 694,
-          "alcohol": 144,
-          "perperson": 55.61
-        },
-        {
-          "profession": "physician",
-          "cost": 263913,
-          "attendees": 5371,
-          "events": 121,
-          "alcohol": 34,
-          "perperson": 49.14
+          "profession": "specialist",
+          "cost": 192347,
+          "attendees": 4176,
+          "events": 55,
+          "alcohol": 16,
+          "perperson": 46.06
         },
         {
           "profession": "psychiatrist",
-          "cost": 208804,
-          "attendees": 2028,
-          "events": 21,
-          "alcohol": 11,
-          "perperson": 102.96
-        },
-        {
-          "profession": "neurologist",
-          "cost": 475725,
-          "attendees": 6752,
-          "events": 152,
-          "alcohol": 43,
-          "perperson": 70.46
-        },
-        {
-          "profession": "oncologist",
-          "cost": 74967,
-          "attendees": 1171,
-          "events": 24,
-          "alcohol": 9,
-          "perperson": 64.02
+          "cost": 248443,
+          "attendees": 2604,
+          "events": 29,
+          "alcohol": 12,
+          "perperson": 95.41
         },
         {
           "profession": "urologist",
-          "cost": 194114,
-          "attendees": 2641,
-          "events": 116,
+          "cost": 266774,
+          "attendees": 3759,
+          "events": 167,
           "alcohol": 32,
-          "perperson": 73.5
+          "perperson": 70.97
+        },
+        {
+          "profession": "nurse",
+          "cost": 2075369.46,
+          "attendees": 37360,
+          "events": 788,
+          "alcohol": 155,
+          "perperson": 55.55
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 4759,
+          "attendees": 558,
+          "events": 29,
+          "alcohol": 6,
+          "perperson": 8.53
+        },
+        {
+          "profession": "oncologist",
+          "cost": 75663,
+          "attendees": 1233,
+          "events": 28,
+          "alcohol": 9,
+          "perperson": 61.36
+        },
+        {
+          "profession": "physician",
+          "cost": 289506,
+          "attendees": 6520,
+          "events": 151,
+          "alcohol": 36,
+          "perperson": 44.4
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 187842.64,
+          "attendees": 7957,
+          "events": 250,
+          "alcohol": 53,
+          "perperson": 23.61
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 110438,
+          "attendees": 2022,
+          "events": 58,
+          "alcohol": 25,
+          "perperson": 54.62
+        },
+        {
+          "profession": "gp",
+          "cost": 1933375.46,
+          "attendees": 35333,
+          "events": 873,
+          "alcohol": 422,
+          "perperson": 54.72
+        },
+        {
+          "profession": "neurologist",
+          "cost": 489702,
+          "attendees": 7388,
+          "events": 178,
+          "alcohol": 46,
+          "perperson": 66.28
         },
         {
           "profession": "registrar",
-          "cost": 1062734,
-          "attendees": 30921,
-          "events": 1105,
-          "alcohol": 230,
-          "perperson": 34.37
+          "cost": 1220829.64,
+          "attendees": 34989,
+          "events": 1270,
+          "alcohol": 233,
+          "perperson": 34.89
         },
         {
-          "profession": "specialist",
-          "cost": 172161,
-          "attendees": 3584,
-          "events": 48,
-          "alcohol": 15,
-          "perperson": 48.04
+          "profession": "haematologist",
+          "cost": 651987,
+          "attendees": 12823,
+          "events": 200,
+          "alcohol": 39,
+          "perperson": 50.85
         },
         {
           "profession": "endocrinologist",
@@ -6378,12 +6406,12 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "heart_disease",
-          "cost": 783183,
-          "attendees": 8546,
-          "events": 313,
-          "alcohol": 99,
-          "perperson": 72.99
+          "condition": "anaesthesia",
+          "cost": 189223.64,
+          "attendees": 8100,
+          "events": 259,
+          "alcohol": 56,
+          "perperson": 16.55
         },
         {
           "condition": "diabetes",
@@ -6394,28 +6422,36 @@ window.stats = {
           "perperson": 10.74
         },
         {
-          "condition": "mental_illness",
-          "cost": 210760,
-          "attendees": 2088,
-          "events": 24,
-          "alcohol": 12,
-          "perperson": 173.23
-        },
-        {
-          "condition": "hiv",
-          "cost": 30163,
-          "attendees": 429,
-          "events": 6,
+          "condition": "musculoskeletal",
+          "cost": 2090,
+          "attendees": 54,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 45.08
+          "perperson": 35.98
         },
         {
-          "condition": "sexual_health",
-          "cost": 154498,
-          "attendees": 2870,
-          "events": 74,
-          "alcohol": 23,
-          "perperson": 55.49
+          "condition": "cancer",
+          "cost": 210053,
+          "attendees": 5855,
+          "events": 109,
+          "alcohol": 26,
+          "perperson": 44.26
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 513041,
+          "attendees": 8837,
+          "events": 209,
+          "alcohol": 48,
+          "perperson": 86.4
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 784947,
+          "attendees": 8709,
+          "events": 321,
+          "alcohol": 99,
+          "perperson": 71.43
         },
         {
           "condition": "dementia",
@@ -6426,12 +6462,20 @@ window.stats = {
           "perperson": 44.26
         },
         {
-          "condition": "ageing",
-          "cost": 23133,
-          "attendees": 611,
-          "events": 31,
-          "alcohol": 7,
-          "perperson": 41.99
+          "condition": "blood_specific_illness",
+          "cost": 671835,
+          "attendees": 13296,
+          "events": 208,
+          "alcohol": 41,
+          "perperson": 22.43
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 250399,
+          "attendees": 2664,
+          "events": 32,
+          "alcohol": 13,
+          "perperson": 152.53
         },
         {
           "condition": "cosmetic_surgery",
@@ -6442,20 +6486,44 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "virus",
-          "cost": 144026,
-          "attendees": 2992,
-          "events": 103,
-          "alcohol": 19,
-          "perperson": 31.23
+          "condition": "gastro",
+          "cost": 10564,
+          "attendees": 714,
+          "events": 34,
+          "alcohol": 6,
+          "perperson": 12.33
         },
         {
-          "condition": "vaccination",
-          "cost": 788934,
-          "attendees": 10492,
-          "events": 162,
-          "alcohol": 51,
-          "perperson": 110.81
+          "condition": "skin disorders",
+          "cost": 301398,
+          "attendees": 4085,
+          "events": 136,
+          "alcohol": 98,
+          "perperson": 80.29
+        },
+        {
+          "condition": "urology",
+          "cost": 797121,
+          "attendees": 12132,
+          "events": 472,
+          "alcohol": 205,
+          "perperson": 58.36
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 229899,
+          "attendees": 698,
+          "events": 31,
+          "alcohol": 13,
+          "perperson": 466.49
+        },
+        {
+          "condition": "hypertension",
+          "cost": 29086,
+          "attendees": 371,
+          "events": 15,
+          "alcohol": 9,
+          "perperson": 77.28
         },
         {
           "condition": "oral_health",
@@ -6466,44 +6534,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "anaesthesia",
-          "cost": 169972,
-          "attendees": 6984,
-          "events": 229,
-          "alcohol": 56,
-          "perperson": 15.7
+          "condition": "respiratory",
+          "cost": 44227,
+          "attendees": 1003,
+          "events": 28,
+          "alcohol": 9,
+          "perperson": 50.42
         },
         {
-          "condition": "paediatrics",
-          "cost": 6348,
-          "attendees": 414,
-          "events": 11,
-          "alcohol": 4,
-          "perperson": 12.68
-        },
-        {
-          "condition": "musculoskeletal",
-          "cost": 1817,
-          "attendees": 30,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 60.57
-        },
-        {
-          "condition": "urology",
-          "cost": 587766,
-          "attendees": 9011,
-          "events": 342,
-          "alcohol": 171,
-          "perperson": 61.98
-        },
-        {
-          "condition": "fertility",
-          "cost": 32955,
-          "attendees": 531,
-          "events": 10,
-          "alcohol": 3,
-          "perperson": 36.91
+          "condition": "ageing",
+          "cost": 24231,
+          "attendees": 647,
+          "events": 34,
+          "alcohol": 8,
+          "perperson": 41.53
         },
         {
           "condition": "wound_management",
@@ -6514,20 +6558,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "gastro",
-          "cost": 10449,
-          "attendees": 705,
-          "events": 33,
-          "alcohol": 6,
-          "perperson": 12.32
-        },
-        {
-          "condition": "auto_immune_disorders",
-          "cost": 220985,
-          "attendees": 589,
-          "events": 24,
-          "alcohol": 11,
-          "perperson": 574.8
+          "condition": "fertility",
+          "cost": 33705,
+          "attendees": 561,
+          "events": 11,
+          "alcohol": 3,
+          "perperson": 35.83
         },
         {
           "condition": "parkinsons_disease",
@@ -6538,12 +6574,36 @@ window.stats = {
           "perperson": 3.25
         },
         {
-          "condition": "allergies",
-          "cost": 364100,
-          "attendees": 2688,
-          "events": 27,
-          "alcohol": 11,
-          "perperson": 355.32
+          "condition": "paediatrics",
+          "cost": 17029,
+          "attendees": 889,
+          "events": 14,
+          "alcohol": 4,
+          "perperson": 15.92
+        },
+        {
+          "condition": "virus",
+          "cost": 157805,
+          "attendees": 3456,
+          "events": 116,
+          "alcohol": 19,
+          "perperson": 30.61
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 158224,
+          "attendees": 2992,
+          "events": 78,
+          "alcohol": 24,
+          "perperson": 53.97
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 57548,
+          "attendees": 1747,
+          "events": 35,
+          "alcohol": 2,
+          "perperson": 28
         },
         {
           "condition": "addiction",
@@ -6554,20 +6614,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "nervous_system",
-          "cost": 498338,
-          "attendees": 8148,
-          "events": 180,
-          "alcohol": 45,
-          "perperson": 96.06
+          "condition": "allergies",
+          "cost": 366514,
+          "attendees": 2721,
+          "events": 28,
+          "alcohol": 11,
+          "perperson": 345.25
         },
         {
           "condition": "obesity",
-          "cost": 1371,
-          "attendees": 112,
-          "events": 4,
+          "cost": 1569,
+          "attendees": 132,
+          "events": 5,
           "alcohol": 0,
-          "perperson": 12.19
+          "perperson": 11.73
         },
         {
           "condition": "kidney_function",
@@ -6578,44 +6638,12 @@ window.stats = {
           "perperson": 13.5
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 558057,
-          "attendees": 11886,
-          "events": 189,
-          "alcohol": 41,
-          "perperson": 22.52
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 300716,
-          "attendees": 4065,
-          "events": 135,
-          "alcohol": 98,
-          "perperson": 80.64
-        },
-        {
-          "condition": "cancer",
-          "cost": 202910,
-          "attendees": 5583,
-          "events": 94,
-          "alcohol": 26,
-          "perperson": 48.27
-        },
-        {
-          "condition": "cold_and_flu",
-          "cost": 50827,
-          "attendees": 1470,
-          "events": 29,
-          "alcohol": 2,
-          "perperson": 29.58
-        },
-        {
-          "condition": "hypertension",
-          "cost": 28940,
-          "attendees": 351,
-          "events": 14,
-          "alcohol": 9,
-          "perperson": 82.28
+          "condition": "vaccination",
+          "cost": 803261,
+          "attendees": 11103,
+          "events": 173,
+          "alcohol": 51,
+          "perperson": 105.34
         },
         {
           "condition": "endocrinology",
@@ -6626,12 +6654,12 @@ window.stats = {
           "perperson": 15.42
         },
         {
-          "condition": "respiratory",
-          "cost": 43300,
-          "attendees": 921,
-          "events": 24,
-          "alcohol": 9,
-          "perperson": 56.83
+          "condition": "hiv",
+          "cost": 30408,
+          "attendees": 449,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 40.39
         },
         {
           "condition": "stroke",
@@ -6645,23 +6673,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1142
+          "hospitalitycount": 1282
         },
         {
           "bin": 20,
-          "hospitalitycount": 679
+          "hospitalitycount": 806
         },
         {
           "bin": 50,
-          "hospitalitycount": 128
+          "hospitalitycount": 151
         },
         {
           "bin": 200,
-          "hospitalitycount": 439
+          "hospitalitycount": 475
         },
         {
           "bin": 1000,
-          "hospitalitycount": 5
+          "hospitalitycount": 6
         },
         {
           "bin": 10000,
@@ -6679,157 +6707,159 @@ window.stats = {
         "hospitality": "Breakfast; morning tea; buffet lunch; afternoon tea ; 3 course dinner with alcoholic & non-alcoholic drinks provided with accommodation for 5 nights for 22 attendees",
         "attendees": 22,
         "hospitalitycost": 34822,
-        "hospitality_spendratio": 1582.82
+        "hospitality_spendratio": 1582.82,
+        "date": "2010-09-01T00:00:00.000Z",
+        "period": "April 2010 - September 2010"
       },
       "code": "csl",
       "name": "CSL Limited",
       "summary": "CSL group has its headquarters in Australia and 10,000 global employees.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "USD237.9m (2012)",
       "revenueGlobal": "USD4.81b (2012)",
       "products": "294",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=CSL%20Limited&sortPref=ascending&sortField=0&Page=1&PageMax=12&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": " CSL Group includes: bioCSL (incorporating Immunohaematology) and CSL Behring (incorporating CSL Plasma) http://www.csl.com.au/businesses",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "eli",
-      "cost": 12678611.51,
-      "attendees": 151079,
-      "events": 7649,
-      "alcohol": 1883,
+      "cost": 12984199.8,
+      "attendees": 166506,
+      "events": 8060,
+      "alcohol": 1855,
       "completed": 8,
       "professions": [
         {
-          "profession": "urologist",
-          "cost": 3021.82,
-          "attendees": 89,
-          "events": 8,
-          "alcohol": 2,
-          "perperson": 33.95
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "consultant",
-          "cost": 58846,
-          "attendees": 744,
-          "events": 31,
-          "alcohol": 2,
-          "perperson": 79.09
-        },
-        {
-          "profession": "specialist",
-          "cost": 322986.01,
-          "attendees": 3937,
-          "events": 249,
-          "alcohol": 6,
-          "perperson": 82.04
-        },
-        {
-          "profession": "nurse",
-          "cost": 1587088.99,
-          "attendees": 46559,
-          "events": 3160,
-          "alcohol": 191,
-          "perperson": 34.09
-        },
-        {
-          "profession": "neurologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 166459.66,
-          "attendees": 10816,
-          "events": 135,
-          "alcohol": 30,
-          "perperson": 15.39
-        },
-        {
-          "profession": "gp",
-          "cost": 5226073.21,
-          "attendees": 43228,
-          "events": 1577,
-          "alcohol": 1252,
-          "perperson": 120.9
-        },
-        {
           "profession": "physician",
-          "cost": 24329.36,
-          "attendees": 1535,
-          "events": 73,
-          "alcohol": 4,
-          "perperson": 15.85
+          "cost": 121077.43,
+          "attendees": 4195,
+          "events": 138,
+          "alcohol": 7,
+          "perperson": 28.86
         },
         {
           "profession": "psychiatrist",
-          "cost": 3736450.44,
-          "attendees": 57157,
-          "events": 3363,
-          "alcohol": 578,
-          "perperson": 65.37
+          "cost": 3649098.02,
+          "attendees": 57032,
+          "events": 3321,
+          "alcohol": 527,
+          "perperson": 63.98
         },
         {
           "profession": "oncologist",
-          "cost": 1758078.37,
-          "attendees": 19147,
-          "events": 1228,
-          "alcohol": 60,
-          "perperson": 91.82
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": 1580750.94,
-          "attendees": 12915,
-          "events": 498,
-          "alcohol": 47,
-          "perperson": 122.4
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "cost": 1908268.04,
+          "attendees": 20734,
+          "events": 1255,
+          "alcohol": 62,
+          "perperson": 92.04
         },
         {
           "profession": "registrar",
-          "cost": 2454692.69,
-          "attendees": 27315,
-          "events": 1243,
-          "alcohol": 187,
-          "perperson": 89.87
+          "cost": 2348442.54,
+          "attendees": 26317,
+          "events": 1114,
+          "alcohol": 149,
+          "perperson": 89.24
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 31274.56,
+          "attendees": 193,
+          "events": 9,
+          "alcohol": 2,
+          "perperson": 162.04
         },
         {
           "profession": "haematologist",
-          "cost": 1475,
-          "attendees": 218,
-          "events": 10,
+          "cost": 4337.49,
+          "attendees": 641,
+          "events": 29,
           "alcohol": 0,
           "perperson": 6.77
+        },
+        {
+          "profession": "nurse",
+          "cost": 1505767.76,
+          "attendees": 46366,
+          "events": 3039,
+          "alcohol": 166,
+          "perperson": 32.48
+        },
+        {
+          "profession": "urologist",
+          "cost": 7627.32,
+          "attendees": 481,
+          "events": 11,
+          "alcohol": 2,
+          "perperson": 15.86
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 2873,
+          "attendees": 19,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 151.21
+        },
+        {
+          "profession": "specialist",
+          "cost": 204694.1,
+          "attendees": 3215,
+          "events": 177,
+          "alcohol": 7,
+          "perperson": 63.67
+        },
+        {
+          "profession": "endocrinologist",
+          "cost": 1985528.99,
+          "attendees": 16469,
+          "events": 568,
+          "alcohol": 64,
+          "perperson": 120.56
+        },
+        {
+          "profession": "gp",
+          "cost": 5463330.89,
+          "attendees": 47138,
+          "events": 1937,
+          "alcohol": 1263,
+          "perperson": 115.9
+        },
+        {
+          "profession": "consultant",
+          "cost": 72721.3,
+          "attendees": 1126,
+          "events": 49,
+          "alcohol": 5,
+          "perperson": 64.58
+        },
+        {
+          "profession": "neurologist",
+          "cost": 110,
+          "attendees": 28,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 3.93
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 288406.35,
+          "attendees": 18162,
+          "events": 202,
+          "alcohol": 41,
+          "perperson": 15.88
         }
       ],
       "conditions": [
         {
-          "condition": "paediatrics",
-          "cost": 182856.64,
-          "attendees": 1204,
-          "events": 51,
-          "alcohol": 21,
-          "perperson": 259.63
+          "condition": "cancer",
+          "cost": 1932287.53,
+          "attendees": 21111,
+          "events": 1268,
+          "alcohol": 67,
+          "perperson": 58.49
         },
         {
           "condition": "wound_management",
@@ -6848,6 +6878,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "diabetes",
+          "cost": 3581080.42,
+          "attendees": 27687,
+          "events": 1206,
+          "alcohol": 528,
+          "perperson": 127.82
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 127095.55,
+          "attendees": 735,
+          "events": 15,
+          "alcohol": 5,
+          "perperson": 1651.83
+        },
+        {
           "condition": "virus",
           "cost": 2479,
           "attendees": 35,
@@ -6864,14 +6910,6 @@ window.stats = {
           "perperson": 132.97
         },
         {
-          "condition": "skin disorders",
-          "cost": 2934,
-          "attendees": 25,
-          "events": 1,
-          "alcohol": 1,
-          "perperson": 117.36
-        },
-        {
           "condition": "musculoskeletal",
           "cost": 166027.58,
           "attendees": 1629,
@@ -6880,28 +6918,36 @@ window.stats = {
           "perperson": 99.48
         },
         {
+          "condition": "respiratory",
+          "cost": 5760,
+          "attendees": 48,
+          "events": 4,
+          "alcohol": 2,
+          "perperson": 73.89
+        },
+        {
+          "condition": "blood_specific_illness",
+          "cost": 4599.49,
+          "attendees": 659,
+          "events": 31,
+          "alcohol": 0,
+          "perperson": 7.82
+        },
+        {
           "condition": "vaccination",
-          "cost": 0,
-          "attendees": 39,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 0
-        },
-        {
-          "condition": "gastro",
-          "cost": 126,
-          "attendees": 30,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 4.2
-        },
-        {
-          "condition": "allergies",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": 2999,
+          "attendees": 49,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 77.71
         },
         {
           "condition": "cosmetic_surgery",
@@ -6912,20 +6958,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "paediatrics",
+          "cost": 209943.95,
+          "attendees": 1662,
+          "events": 69,
+          "alcohol": 15,
+          "perperson": 227.75
+        },
+        {
           "condition": "hypertension",
           "cost": 22,
           "attendees": 2,
           "events": 2,
           "alcohol": 0,
           "perperson": 11
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 64948.5,
-          "attendees": 432,
-          "events": 23,
-          "alcohol": 11,
-          "perperson": 505.76
         },
         {
           "condition": "auto_immune_disorders",
@@ -6952,28 +6998,20 @@ window.stats = {
           "perperson": 11
         },
         {
+          "condition": "mental_illness",
+          "cost": 4908724.98,
+          "attendees": 68471,
+          "events": 3875,
+          "alcohol": 953,
+          "perperson": 54.16
+        },
+        {
           "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 5028882.3,
-          "attendees": 68806,
-          "events": 3926,
-          "alcohol": 1011,
-          "perperson": 54.49
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 5695,
-          "attendees": 63,
-          "events": 2,
-          "alcohol": 1,
-          "perperson": 61.09
         },
         {
           "condition": "endocrinology",
@@ -6984,28 +7022,28 @@ window.stats = {
           "perperson": 100
         },
         {
-          "condition": "ageing",
-          "cost": 446934,
-          "attendees": 2947,
-          "events": 118,
-          "alcohol": 55,
-          "perperson": 89.42
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 1737,
-          "attendees": 236,
-          "events": 12,
-          "alcohol": 0,
-          "perperson": 9.14
-        },
-        {
           "condition": "kidney_function",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 682701.76,
+          "attendees": 9548,
+          "events": 327,
+          "alcohol": 19,
+          "perperson": 292.69
+        },
+        {
+          "condition": "allergies",
+          "cost": 206.2,
+          "attendees": 17,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 12.13
         },
         {
           "condition": "fertility",
@@ -7016,28 +7054,12 @@ window.stats = {
           "perperson": 373.38
         },
         {
-          "condition": "heart_disease",
-          "cost": 904948.76,
-          "attendees": 9824,
-          "events": 371,
-          "alcohol": 19,
-          "perperson": 298.8
-        },
-        {
-          "condition": "cancer",
-          "cost": 1777415.86,
-          "attendees": 19537,
-          "events": 1241,
-          "alcohol": 65,
-          "perperson": 56.9
-        },
-        {
-          "condition": "respiratory",
-          "cost": 2650,
-          "attendees": 31,
-          "events": 3,
+          "condition": "nervous_system",
+          "cost": 6096.8,
+          "attendees": 100,
+          "events": 4,
           "alcohol": 1,
-          "perperson": 37.54
+          "perperson": 39.63
         },
         {
           "condition": "parkinsons_disease",
@@ -7048,12 +7070,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
-          "cost": 2020.98,
-          "attendees": 45,
+          "condition": "skin disorders",
+          "cost": 28511,
+          "attendees": 185,
           "events": 2,
           "alcohol": 2,
-          "perperson": 49.15
+          "perperson": 138.61
         },
         {
           "condition": "addiction",
@@ -7064,54 +7086,62 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "anaesthesia",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
           "condition": "urology",
-          "cost": 51001,
-          "attendees": 829,
-          "events": 25,
-          "alcohol": 10,
-          "perperson": 59.72
+          "cost": 124937.4,
+          "attendees": 1899,
+          "events": 39,
+          "alcohol": 13,
+          "perperson": 59.02
         },
         {
-          "condition": "diabetes",
-          "cost": 3271527.82,
-          "attendees": 24664,
-          "events": 1082,
-          "alcohol": 496,
-          "perperson": 107.93
+          "condition": "dementia",
+          "cost": 1129.98,
+          "attendees": 17,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 66.47
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 31274.56,
+          "attendees": 193,
+          "events": 9,
+          "alcohol": 2,
+          "perperson": 1389.94
+        },
+        {
+          "condition": "ageing",
+          "cost": 446378.56,
+          "attendees": 4042,
+          "events": 167,
+          "alcohol": 88,
+          "perperson": 94.15
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3174
+          "hospitalitycount": 3286
         },
         {
           "bin": 20,
-          "hospitalitycount": 2173
+          "hospitalitycount": 2381
         },
         {
           "bin": 50,
-          "hospitalitycount": 527
+          "hospitalitycount": 608
         },
         {
           "bin": 200,
-          "hospitalitycount": 1714
+          "hospitalitycount": 1722
         },
         {
           "bin": 1000,
-          "hospitalitycount": 28
+          "hospitalitycount": 27
         },
         {
           "bin": 10000,
-          "hospitalitycount": 20
+          "hospitalitycount": 23
         },
         {
           "bin": 100000,
@@ -7125,20 +7155,22 @@ window.stats = {
         "hospitality": "3 Dinners provided (see below for itemisation of costs)",
         "attendees": 42,
         "hospitalitycost": 487930.75,
-        "hospitality_spendratio": 11617.4
+        "hospitality_spendratio": 11617.4,
+        "date": "2009-12-01T00:00:00.000Z",
+        "period": "July 2009 - December 2009"
       },
       "incomplete": 3,
       "code": "eli",
       "name": "Eli Lilly Australia Pty Ltd*",
       "summary": "Operating in Australia since 1960, with 350 employees there in 2013.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$278,703,592",
       "revenueAu": "-",
       "revenueGlobal": "USD22.6b (2012)",
       "products": "103",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=eli%20lilly&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "fitbioceuticals",
@@ -7572,7 +7604,9 @@ window.stats = {
         "hospitality": "No hospitality provided",
         "attendees": 15000,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2012-03-01T00:00:00.000Z",
+        "period": "October 2011 - March 2012"
       },
       "code": "fitbioceuticals",
       "name": "Fit BioCeuticals Pty Ltd",
@@ -7583,32 +7617,40 @@ window.stats = {
       "revenueGlobal": "-",
       "products": "107",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=fit%20bioceuticals&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "freseniuskabi",
-      "cost": 159745.32,
-      "attendees": 8154,
-      "events": 415,
+      "cost": 203455.51,
+      "attendees": 10578,
+      "events": 574,
       "alcohol": 2,
-      "completed": 3,
+      "completed": 4,
       "professions": [
         {
-          "profession": "pharmacist",
-          "cost": 10599.89,
-          "attendees": 457,
-          "events": 30,
+          "profession": "gastroenterologist",
+          "cost": 36944.22,
+          "attendees": 1562,
+          "events": 85,
+          "alcohol": 1,
+          "perperson": 23.65
+        },
+        {
+          "profession": "endocrinologist",
+          "cost": 118,
+          "attendees": 10,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 23.19
+          "perperson": 11.8
         },
         {
           "profession": "registrar",
-          "cost": 41947.06,
-          "attendees": 2984,
-          "events": 154,
+          "cost": 61131.34,
+          "attendees": 4013,
+          "events": 211,
           "alcohol": 1,
-          "perperson": 14.06
+          "perperson": 15.23
         },
         {
           "profession": "neurologist",
@@ -7617,14 +7659,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": 42639.38,
-          "attendees": 3069,
-          "events": 165,
-          "alcohol": 0,
-          "perperson": 13.89
         },
         {
           "profession": "physician",
@@ -7636,11 +7670,19 @@ window.stats = {
         },
         {
           "profession": "nurse",
-          "cost": 86867.37,
-          "attendees": 3694,
-          "events": 176,
+          "cost": 110784.98,
+          "attendees": 5110,
+          "events": 250,
           "alcohol": 1,
-          "perperson": 23.52
+          "perperson": 21.68
+        },
+        {
+          "profession": "oncologist",
+          "cost": 1792.47,
+          "attendees": 60,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 29.87
         },
         {
           "profession": "haematologist",
@@ -7651,20 +7693,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "pharmacist",
+          "cost": 12499.75,
+          "attendees": 613,
+          "events": 47,
+          "alcohol": 0,
+          "perperson": 20.39
+        },
+        {
+          "profession": "gp",
+          "cost": 1722.96,
+          "attendees": 70,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 24.61
+        },
+        {
           "profession": "psychiatrist",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "specialist",
-          "cost": 3178.8,
-          "attendees": 315,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 10.09
         },
         {
           "profession": "urologist",
@@ -7675,44 +7725,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gastroenterologist",
-          "cost": 29740.87,
-          "attendees": 1244,
-          "events": 66,
-          "alcohol": 1,
-          "perperson": 23.91
+          "profession": "anaesthetist",
+          "cost": 56825.35,
+          "attendees": 4327,
+          "events": 221,
+          "alcohol": 0,
+          "perperson": 13.13
         },
         {
-          "profession": "gp",
-          "cost": 222.96,
-          "attendees": 30,
-          "events": 2,
+          "profession": "specialist",
+          "cost": 8869.27,
+          "attendees": 489,
+          "events": 21,
           "alcohol": 0,
-          "perperson": 7.43
-        },
-        {
-          "profession": "oncologist",
-          "cost": 292.47,
-          "attendees": 20,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 14.62
+          "perperson": 18.14
         },
         {
           "profession": "consultant",
-          "cost": 14391.34,
-          "attendees": 985,
-          "events": 37,
+          "cost": 20344.02,
+          "attendees": 1235,
+          "events": 50,
           "alcohol": 1,
-          "perperson": 14.61
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "perperson": 16.47
         }
       ],
       "conditions": [
@@ -7739,14 +7773,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 44746.24,
-          "attendees": 3292,
-          "events": 172,
-          "alcohol": 0,
-          "perperson": 13.53
         },
         {
           "condition": "urology",
@@ -7813,6 +7839,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "anaesthesia",
+          "cost": 59035.62,
+          "attendees": 4587,
+          "events": 232,
+          "alcohol": 0,
+          "perperson": 12.93
+        },
+        {
           "condition": "diabetes",
           "cost": null,
           "attendees": null,
@@ -7845,20 +7879,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "gastro",
+          "cost": 44313,
+          "attendees": 1848,
+          "events": 102,
+          "alcohol": 1,
+          "perperson": 17.69
+        },
+        {
           "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "gastro",
-          "cost": 31463.83,
-          "attendees": 1342,
-          "events": 69,
-          "alcohol": 1,
-          "perperson": 17.79
         },
         {
           "condition": "skin disorders",
@@ -7958,11 +7992,11 @@ window.stats = {
         },
         {
           "condition": "cancer",
-          "cost": 8891.47,
-          "attendees": 72,
-          "events": 3,
+          "cost": 10391.47,
+          "attendees": 112,
+          "events": 4,
           "alcohol": 0,
-          "perperson": 116.98
+          "perperson": 97.11
         },
         {
           "condition": "virus",
@@ -7984,27 +8018,27 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 177
+          "hospitalitycount": 243
         },
         {
           "bin": 20,
-          "hospitalitycount": 199
+          "hospitalitycount": 276
         },
         {
           "bin": 50,
-          "hospitalitycount": 22
+          "hospitalitycount": 34
         },
         {
           "bin": 200,
-          "hospitalitycount": 16
+          "hospitalitycount": 18
         },
         {
           "bin": 1000,
-          "hospitalitycount": 1
+          "hospitalitycount": 2
         },
         {
           "bin": 10000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         },
         {
           "bin": 100000,
@@ -8018,19 +8052,21 @@ window.stats = {
         "hospitality": "Catering for food & soft drinks for 55 guests at $25 per head - beer and wines on consumption = $65 - 2 staff at $150 each travel costs for speaker : $13;701 travel 1 person interstate: 235.20 accommodation for Prof. Singer: $243 accommodation: 1 person interstate $191",
         "attendees": 55,
         "hospitalitycost": 1740,
-        "hospitality_spendratio": 31.64
+        "hospitality_spendratio": 31.64,
+        "date": "2010-09-01T00:00:00.000Z",
+        "period": "April 2010 - September 2010"
       },
       "code": "freseniuskabi",
       "name": "Fresenius Kabi Australia Pty Ltd",
       "summary": "Fresenius Kabi was founded in Germany in 1999. Its Australian arm employees 290 people in Australia and New Zealand.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "€863m (all Asia-Pacific, 2012)",
       "revenueGlobal": "€4.54b (2012)",
       "products": "213",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=fresenius%20kabi&sortPref=ascending&sortField=0&Page=1&PageMax=9&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "genzyme",
@@ -8464,7 +8500,9 @@ window.stats = {
         "hospitality": "All day catering (1.75 days); accomodation for max 2 nights if/as applicable",
         "attendees": 90,
         "hospitalitycost": 62176,
-        "hospitality_spendratio": 690.84
+        "hospitality_spendratio": 690.84,
+        "date": "2011-09-01T00:00:00.000Z",
+        "period": "April 2011 - September 2011"
       },
       "incomplete": 2,
       "code": "genzyme",
@@ -8476,33 +8514,17 @@ window.stats = {
       "revenueGlobal": "€1.79b (2012)",
       "products": "19",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Genzyme%20Australasia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "gilead",
-      "cost": 3195704.55,
-      "attendees": 47080,
-      "events": 2407,
+      "cost": 3443095.77,
+      "attendees": 50789,
+      "events": 2606,
       "alcohol": 3,
-      "completed": 11,
+      "completed": 12,
       "professions": [
-        {
-          "profession": "pharmacist",
-          "cost": 413893.72,
-          "attendees": 7114,
-          "events": 354,
-          "alcohol": 1,
-          "perperson": 58.18
-        },
-        {
-          "profession": "registrar",
-          "cost": 702765.05,
-          "attendees": 20646,
-          "events": 1050,
-          "alcohol": 2,
-          "perperson": 34.04
-        },
         {
           "profession": "neurologist",
           "cost": 250,
@@ -8512,20 +8534,28 @@ window.stats = {
           "perperson": 12.5
         },
         {
-          "profession": "gastroenterologist",
-          "cost": 496691,
-          "attendees": 10478,
-          "events": 509,
+          "profession": "pharmacist",
+          "cost": 527892.03,
+          "attendees": 7538,
+          "events": 374,
           "alcohol": 1,
-          "perperson": 47.4
+          "perperson": 70.03
         },
         {
-          "profession": "specialist",
-          "cost": 1840358.29,
-          "attendees": 8723,
-          "events": 399,
+          "profession": "gastroenterologist",
+          "cost": 543890.73,
+          "attendees": 11387,
+          "events": 555,
+          "alcohol": 1,
+          "perperson": 47.76
+        },
+        {
+          "profession": "physician",
+          "cost": 206373.83,
+          "attendees": 5692,
+          "events": 310,
           "alcohol": 0,
-          "perperson": 210.98
+          "perperson": 36.26
         },
         {
           "profession": "anaesthetist",
@@ -8536,20 +8566,44 @@ window.stats = {
           "perperson": 12.32
         },
         {
-          "profession": "oncologist",
-          "cost": 63340.62,
-          "attendees": 3367,
-          "events": 188,
-          "alcohol": 1,
-          "perperson": 18.81
+          "profession": "nurse",
+          "cost": 1165066.82,
+          "attendees": 28025,
+          "events": 1450,
+          "alcohol": 2,
+          "perperson": 41.57
         },
         {
           "profession": "consultant",
-          "cost": 93476.07,
-          "attendees": 3739,
-          "events": 170,
+          "cost": 93570.67,
+          "attendees": 3743,
+          "events": 171,
           "alcohol": 0,
           "perperson": 25
+        },
+        {
+          "profession": "oncologist",
+          "cost": 67314.21,
+          "attendees": 3647,
+          "events": 203,
+          "alcohol": 1,
+          "perperson": 18.46
+        },
+        {
+          "profession": "haematologist",
+          "cost": 520157.15,
+          "attendees": 13286,
+          "events": 599,
+          "alcohol": 1,
+          "perperson": 39.15
+        },
+        {
+          "profession": "registrar",
+          "cost": 725913.36,
+          "attendees": 21718,
+          "events": 1109,
+          "alcohol": 2,
+          "perperson": 33.42
         },
         {
           "profession": "urologist",
@@ -8558,14 +8612,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "haematologist",
-          "cost": 493598.17,
-          "attendees": 12257,
-          "events": 547,
-          "alcohol": 1,
-          "perperson": 40.27
         },
         {
           "profession": "psychiatrist",
@@ -8577,27 +8623,19 @@ window.stats = {
         },
         {
           "profession": "gp",
-          "cost": 638295.82,
-          "attendees": 6681,
-          "events": 337,
+          "cost": 754466.1,
+          "attendees": 6979,
+          "events": 344,
           "alcohol": 0,
-          "perperson": 95.54
+          "perperson": 108.11
         },
         {
-          "profession": "physician",
-          "cost": 148398.57,
-          "attendees": 4429,
-          "events": 231,
+          "profession": "specialist",
+          "cost": 1973051.58,
+          "attendees": 8930,
+          "events": 406,
           "alcohol": 0,
-          "perperson": 33.51
-        },
-        {
-          "profession": "nurse",
-          "cost": 1023474.05,
-          "attendees": 26631,
-          "events": 1375,
-          "alcohol": 2,
-          "perperson": 38.43
+          "perperson": 220.95
         },
         {
           "profession": "endocrinologist",
@@ -8642,20 +8680,28 @@ window.stats = {
           "perperson": 4.5
         },
         {
+          "condition": "virus",
+          "cost": 1183719.67,
+          "attendees": 4489,
+          "events": 191,
+          "alcohol": 0,
+          "perperson": 130.22
+        },
+        {
+          "condition": "gastro",
+          "cost": 545765.61,
+          "attendees": 11570,
+          "events": 564,
+          "alcohol": 1,
+          "perperson": 41.93
+        },
+        {
           "condition": "respiratory",
           "cost": 240,
           "attendees": 13,
           "events": 2,
           "alcohol": 0,
           "perperson": 18.57
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 2214584.88,
-          "attendees": 15074,
-          "events": 765,
-          "alcohol": 0,
-          "perperson": 54.9
         },
         {
           "condition": "urology",
@@ -8674,20 +8720,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": 2106018.96,
-          "attendees": 10892,
-          "events": 529,
-          "alcohol": 0,
-          "perperson": 69.54
-        },
-        {
           "condition": "diabetes",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 77658.9,
+          "attendees": 4287,
+          "events": 242,
+          "alcohol": 1,
+          "perperson": 17.31
         },
         {
           "condition": "auto_immune_disorders",
@@ -8723,11 +8769,11 @@ window.stats = {
         },
         {
           "condition": "blood_specific_illness",
-          "cost": 502326.34,
-          "attendees": 12992,
-          "events": 578,
+          "cost": 532560.32,
+          "attendees": 14086,
+          "events": 632,
           "alcohol": 1,
-          "perperson": 32
+          "perperson": 33.66
         },
         {
           "condition": "nervous_system",
@@ -8736,22 +8782,6 @@ window.stats = {
           "events": 2,
           "alcohol": 0,
           "perperson": 39.63
-        },
-        {
-          "condition": "gastro",
-          "cost": 497643.26,
-          "attendees": 10601,
-          "events": 516,
-          "alcohol": 1,
-          "perperson": 25.52
-        },
-        {
-          "condition": "virus",
-          "cost": 1156749.52,
-          "attendees": 4213,
-          "events": 177,
-          "alcohol": 0,
-          "perperson": 85.46
         },
         {
           "condition": "addiction",
@@ -8778,20 +8808,20 @@ window.stats = {
           "perperson": 43.56
         },
         {
+          "condition": "hiv",
+          "cost": 2236778.51,
+          "attendees": 11830,
+          "events": 582,
+          "alcohol": 0,
+          "perperson": 69.17
+        },
+        {
           "condition": "wound_management",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "cancer",
-          "cost": 73435.31,
-          "attendees": 3992,
-          "events": 226,
-          "alcohol": 1,
-          "perperson": 17.57
         },
         {
           "condition": "mental_illness",
@@ -8842,12 +8872,28 @@ window.stats = {
           "perperson": 18.17
         },
         {
+          "condition": "sexual_health",
+          "cost": 2388067.44,
+          "attendees": 16514,
+          "events": 839,
+          "alcohol": 0,
+          "perperson": 58.79
+        },
+        {
           "condition": "stroke",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "vaccination",
+          "cost": 20444.6,
+          "attendees": 1563,
+          "events": 115,
+          "alcohol": 0,
+          "perperson": 14.65
         },
         {
           "condition": "musculoskeletal",
@@ -8864,32 +8910,24 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "vaccination",
-          "cost": 18953.27,
-          "attendees": 1452,
-          "events": 107,
-          "alcohol": 0,
-          "perperson": 14.6
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 741
+          "hospitalitycount": 774
         },
         {
           "bin": 20,
-          "hospitalitycount": 1155
+          "hospitalitycount": 1289
         },
         {
           "bin": 50,
-          "hospitalitycount": 283
+          "hospitalitycount": 304
         },
         {
           "bin": 200,
-          "hospitalitycount": 206
+          "hospitalitycount": 217
         },
         {
           "bin": 1000,
@@ -8911,51 +8949,53 @@ window.stats = {
         "hospitality": "Food & beverage x 96 TOTAL = $22;676.74. Includes breakfasts; morning tea; lunch and afternoon tea - as part of day package for 1.5 days = $17;295.22 & Conference dinner Friday night x96 = $6;847.06. Travel TOTAL: $72;961.76; includes: $50;720.86 in domestic flights x 55; $18;654.20 in accommodation; $2;908.50 in transfers; and $678.20 in parking.",
         "attendees": 96,
         "hospitalitycost": 95638.5,
-        "hospitality_spendratio": 996.23
+        "hospitality_spendratio": 996.23,
+        "date": "2008-12-01T00:00:00.000Z",
+        "period": "July 2008 - December 2008"
       },
       "code": "gilead",
       "name": "Gilead Sciences Pty Ltd",
       "summary": "A biopharmaceutical company that focuses on HIV/AIDS, liver disease and cardiovascular and respiratory conditions.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "USD9.7b (2012)",
       "products": "15",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Gilead&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "gsk",
-      "cost": 9543331.49,
-      "attendees": 199781,
-      "events": 6267,
-      "alcohol": 987,
-      "completed": 11,
+      "cost": 10012852.1,
+      "attendees": 210104,
+      "events": 6629,
+      "alcohol": 1030,
+      "completed": 12,
       "professions": [
         {
-          "profession": "consultant",
-          "cost": 7989.56,
-          "attendees": 261,
-          "events": 14,
-          "alcohol": 1,
-          "perperson": 30.61
+          "profession": "registrar",
+          "cost": 1397625.7,
+          "attendees": 67264,
+          "events": 3272,
+          "alcohol": 175,
+          "perperson": 20.78
         },
         {
-          "profession": "anaesthetist",
-          "cost": 150670.3,
-          "attendees": 14452,
-          "events": 458,
-          "alcohol": 20,
-          "perperson": 10.43
+          "profession": "gp",
+          "cost": 5734828.25,
+          "attendees": 80277,
+          "events": 1786,
+          "alcohol": 774,
+          "perperson": 71.44
         },
         {
-          "profession": "nurse",
-          "cost": 3471529.74,
-          "attendees": 95205,
-          "events": 3243,
-          "alcohol": 401,
-          "perperson": 36.46
+          "profession": "physician",
+          "cost": 2310336.41,
+          "attendees": 51562,
+          "events": 1943,
+          "alcohol": 274,
+          "perperson": 44.81
         },
         {
           "profession": "urologist",
@@ -8974,22 +9014,6 @@ window.stats = {
           "perperson": 66.82
         },
         {
-          "profession": "physician",
-          "cost": 2235583.74,
-          "attendees": 49635,
-          "events": 1860,
-          "alcohol": 268,
-          "perperson": 45.04
-        },
-        {
-          "profession": "registrar",
-          "cost": 1335120.41,
-          "attendees": 63091,
-          "events": 3045,
-          "alcohol": 173,
-          "perperson": 21.16
-        },
-        {
           "profession": "neurologist",
           "cost": 809.17,
           "attendees": 97,
@@ -8998,28 +9022,36 @@ window.stats = {
           "perperson": 8.34
         },
         {
+          "profession": "nurse",
+          "cost": 3644884.73,
+          "attendees": 100178,
+          "events": 3471,
+          "alcohol": 416,
+          "perperson": 36.38
+        },
+        {
+          "profession": "consultant",
+          "cost": 8235.96,
+          "attendees": 277,
+          "events": 15,
+          "alcohol": 1,
+          "perperson": 29.73
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 157160,
+          "attendees": 15046,
+          "events": 479,
+          "alcohol": 20,
+          "perperson": 10.45
+        },
+        {
           "profession": "oncologist",
-          "cost": 1402916.28,
-          "attendees": 34633,
-          "events": 1178,
-          "alcohol": 97,
-          "perperson": 40.51
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 1169718.08,
-          "attendees": 38619,
-          "events": 1261,
-          "alcohol": 183,
-          "perperson": 30.29
-        },
-        {
-          "profession": "gp",
-          "cost": 5505626.37,
-          "attendees": 75116,
-          "events": 1705,
-          "alcohol": 735,
-          "perperson": 73.29
+          "cost": 1487412.02,
+          "attendees": 36803,
+          "events": 1302,
+          "alcohol": 98,
+          "perperson": 40.42
         },
         {
           "profession": "psychiatrist",
@@ -9038,38 +9070,38 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "pharmacist",
+          "cost": 1203594.47,
+          "attendees": 39772,
+          "events": 1320,
+          "alcohol": 191,
+          "perperson": 30.26
+        },
+        {
           "profession": "haematologist",
-          "cost": 99811.03,
-          "attendees": 5271,
-          "events": 228,
+          "cost": 101824.13,
+          "attendees": 5462,
+          "events": 238,
           "alcohol": 12,
-          "perperson": 18.94
+          "perperson": 18.64
         },
         {
           "profession": "endocrinologist",
-          "cost": 854412.1,
-          "attendees": 11237,
-          "events": 324,
-          "alcohol": 88,
-          "perperson": 76.04
+          "cost": 865098.01,
+          "attendees": 11348,
+          "events": 332,
+          "alcohol": 92,
+          "perperson": 76.23
         }
       ],
       "conditions": [
         {
-          "condition": "hypertension",
-          "cost": 171334.63,
-          "attendees": 524,
-          "events": 45,
-          "alcohol": 8,
-          "perperson": 92.56
-        },
-        {
-          "condition": "musculoskeletal",
-          "cost": 524560.79,
-          "attendees": 3109,
-          "events": 130,
-          "alcohol": 73,
-          "perperson": 158.93
+          "condition": "urology",
+          "cost": 434544.22,
+          "attendees": 7386,
+          "events": 314,
+          "alcohol": 85,
+          "perperson": 95.09
         },
         {
           "condition": "obesity",
@@ -9080,20 +9112,20 @@ window.stats = {
           "perperson": 52.42
         },
         {
-          "condition": "urology",
-          "cost": 369349.48,
-          "attendees": 6721,
-          "events": 271,
-          "alcohol": 85,
-          "perperson": 58.94
+          "condition": "sexual_health",
+          "cost": 668465.9,
+          "attendees": 11891,
+          "events": 410,
+          "alcohol": 83,
+          "perperson": 50.28
         },
         {
-          "condition": "cancer",
-          "cost": 1781246.17,
-          "attendees": 40359,
-          "events": 1390,
-          "alcohol": 113,
-          "perperson": 30.66
+          "condition": "diabetes",
+          "cost": 1467491.85,
+          "attendees": 14551,
+          "events": 503,
+          "alcohol": 106,
+          "perperson": 77.27
         },
         {
           "condition": "mental_illness",
@@ -9104,20 +9136,36 @@ window.stats = {
           "perperson": 24.45
         },
         {
-          "condition": "paediatrics",
-          "cost": 291980,
-          "attendees": 8232,
-          "events": 54,
-          "alcohol": 3,
-          "perperson": 46.65
+          "condition": "musculoskeletal",
+          "cost": 566456.54,
+          "attendees": 3426,
+          "events": 152,
+          "alcohol": 89,
+          "perperson": 154.81
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 100995.03,
-          "attendees": 5408,
-          "events": 236,
-          "alcohol": 13,
-          "perperson": 19.37
+          "condition": "cancer",
+          "cost": 1866105.86,
+          "attendees": 42561,
+          "events": 1516,
+          "alcohol": 114,
+          "perperson": 38.56
+        },
+        {
+          "condition": "stroke",
+          "cost": 169085.73,
+          "attendees": 396,
+          "events": 30,
+          "alcohol": 5,
+          "perperson": 128.62
+        },
+        {
+          "condition": "vaccination",
+          "cost": 516359.78,
+          "attendees": 5826,
+          "events": 148,
+          "alcohol": 24,
+          "perperson": 67.57
         },
         {
           "condition": "dementia",
@@ -9128,6 +9176,14 @@ window.stats = {
           "perperson": 66.23
         },
         {
+          "condition": "ageing",
+          "cost": 107983.76,
+          "attendees": 2608,
+          "events": 135,
+          "alcohol": 21,
+          "perperson": 35.32
+        },
+        {
           "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
@@ -9136,20 +9192,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "skin disorders",
+          "cost": 252830.74,
+          "attendees": 3036,
+          "events": 80,
+          "alcohol": 39,
+          "perperson": 85.34
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 159479.05,
+          "attendees": 15290,
+          "events": 500,
+          "alcohol": 21,
+          "perperson": 11.32
+        },
+        {
           "condition": "fertility",
           "cost": 86949,
           "attendees": 3489,
           "events": 15,
           "alcohol": 4,
           "perperson": 27.83
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 249643.53,
-          "attendees": 3020,
-          "events": 79,
-          "alcohol": 39,
-          "perperson": 83.9
         },
         {
           "condition": "cold_and_flu",
@@ -9176,28 +9240,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 265540.15,
-          "attendees": 3585,
-          "events": 62,
-          "alcohol": 18,
-          "perperson": 95.48
+          "condition": "hypertension",
+          "cost": 238620.58,
+          "attendees": 578,
+          "events": 50,
+          "alcohol": 9,
+          "perperson": 251.15
         },
         {
-          "condition": "anaesthesia",
-          "cost": 152989.35,
-          "attendees": 14696,
-          "events": 479,
-          "alcohol": 21,
-          "perperson": 11.36
-        },
-        {
-          "condition": "diabetes",
-          "cost": 1467087.6,
-          "attendees": 14488,
-          "events": 502,
-          "alcohol": 106,
-          "perperson": 77.41
+          "condition": "blood_specific_illness",
+          "cost": 103008.13,
+          "attendees": 5599,
+          "events": 246,
+          "alcohol": 13,
+          "perperson": 19.07
         },
         {
           "condition": "virus",
@@ -9224,28 +9280,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "vaccination",
-          "cost": 505516.91,
-          "attendees": 5251,
-          "events": 143,
-          "alcohol": 24,
-          "perperson": 69.24
-        },
-        {
           "condition": "gastro",
           "cost": 400,
           "attendees": 7,
           "events": 1,
           "alcohol": 0,
           "perperson": 57.14
-        },
-        {
-          "condition": "ageing",
-          "cost": 97960.36,
-          "attendees": 2358,
-          "events": 122,
-          "alcohol": 19,
-          "perperson": 35.42
         },
         {
           "condition": "addiction",
@@ -9256,6 +9296,14 @@ window.stats = {
           "perperson": 11.86
         },
         {
+          "condition": "paediatrics",
+          "cost": 327280,
+          "attendees": 8464,
+          "events": 59,
+          "alcohol": 3,
+          "perperson": 55.69
+        },
+        {
           "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
@@ -9264,12 +9312,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual_health",
-          "cost": 665465.9,
-          "attendees": 11851,
-          "events": 409,
-          "alcohol": 83,
-          "perperson": 50.22
+          "condition": "allergies",
+          "cost": 507770.4,
+          "attendees": 7284,
+          "events": 266,
+          "alcohol": 99,
+          "perperson": 64.38
         },
         {
           "condition": "hiv",
@@ -9280,14 +9328,6 @@ window.stats = {
           "perperson": 38.98
         },
         {
-          "condition": "stroke",
-          "cost": 168486.63,
-          "attendees": 350,
-          "events": 26,
-          "alcohol": 5,
-          "perperson": 146.23
-        },
-        {
           "condition": "nervous_system",
           "cost": 12270.17,
           "attendees": 664,
@@ -9296,20 +9336,20 @@ window.stats = {
           "perperson": 19.86
         },
         {
-          "condition": "respiratory",
-          "cost": 1307057.48,
-          "attendees": 16112,
-          "events": 675,
-          "alcohol": 220,
-          "perperson": 70.9
+          "condition": "heart_disease",
+          "cost": 268828.35,
+          "attendees": 3727,
+          "events": 69,
+          "alcohol": 18,
+          "perperson": 87.58
         },
         {
-          "condition": "allergies",
-          "cost": 501781,
-          "attendees": 7168,
-          "events": 258,
-          "alcohol": 98,
-          "perperson": 64.89
+          "condition": "respiratory",
+          "cost": 1429337.6,
+          "attendees": 16890,
+          "events": 710,
+          "alcohol": 232,
+          "perperson": 81.83
         },
         {
           "condition": "endocrinology",
@@ -9323,31 +9363,31 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2477
+          "hospitalitycount": 2570
         },
         {
           "bin": 20,
-          "hospitalitycount": 2008
+          "hospitalitycount": 2179
         },
         {
           "bin": 50,
-          "hospitalitycount": 421
+          "hospitalitycount": 464
         },
         {
           "bin": 200,
-          "hospitalitycount": 1321
+          "hospitalitycount": 1370
         },
         {
           "bin": 1000,
-          "hospitalitycount": 37
+          "hospitalitycount": 40
         },
         {
           "bin": 10000,
-          "hospitalitycount": 3
+          "hospitalitycount": 5
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         }
       ],
       "mostExpensive": {
@@ -9357,19 +9397,21 @@ window.stats = {
         "hospitality": "Breakfast; Morning tea ; Buffet lunch; Afternoon tea; 3 course dinner; Juice/Water; Alcoholic and non-alcoholic drinks; Airfares; Transfers; Parking; Accommodation",
         "attendees": 102,
         "hospitalitycost": 83385,
-        "hospitality_spendratio": 817.5
+        "hospitality_spendratio": 817.5,
+        "date": "2011-03-01T00:00:00.000Z",
+        "period": "October 2010 - March 2011"
       },
       "code": "gsk",
       "name": "GlaxoSmithKline Australia Pty Ltd",
       "summary": "GlaxoSmithKline operates in more than 100 countries and employs more than 100,000 people world-wide.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$327,444,751",
       "revenueAu": "-",
       "revenueGlobal": "€26.4 b (2012)",
       "products": "422",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=GlaxoSmithKline%20Australia%20Pty%20Ltd&filterAppArea=&filterSearch=GlaxoSmithKline%20Australia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=17&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "*HTML link does not include a further 196 entries for \"GlaxoSmithKline Australia Pty Ltd Consumer Healthcare Division\"",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "innovex",
@@ -9803,7 +9845,9 @@ window.stats = {
         "hospitality": "Friday: Meal with alcohol/non alcoholic drinks provided. Accommodation for Regional and interstate delegates. Saturday: Meals with non alcoholic drinks provided.",
         "attendees": 76,
         "hospitalitycost": 31534.55,
-        "hospitality_spendratio": 414.93
+        "hospitality_spendratio": 414.93,
+        "date": "2009-06-01T00:00:00.000Z",
+        "period": "January 2009 - June 2009"
       },
       "code": "innovex",
       "name": "Innovex",
@@ -9814,16 +9858,16 @@ window.stats = {
       "revenueGlobal": "USD3b (2011 – Quintiles group)",
       "products": "0",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "inova",
-      "cost": 398879.47,
-      "attendees": 4358,
-      "events": 186,
+      "cost": 455215.1,
+      "attendees": 4986,
+      "events": 212,
       "alcohol": 6,
-      "completed": 9,
+      "completed": 10,
       "professions": [
         {
           "profession": "anaesthetist",
@@ -9842,12 +9886,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gp",
-          "cost": 345164.75,
-          "attendees": 3413,
-          "events": 129,
-          "alcohol": 4,
-          "perperson": 101.13
+          "profession": "registrar",
+          "cost": 2742,
+          "attendees": 223,
+          "events": 16,
+          "alcohol": 0,
+          "perperson": 12.3
+        },
+        {
+          "profession": "specialist",
+          "cost": 181162.06,
+          "attendees": 2290,
+          "events": 73,
+          "alcohol": 3,
+          "perperson": 79.11
         },
         {
           "profession": "neurologist",
@@ -9866,14 +9918,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "endocrinologist",
-          "cost": 300,
-          "attendees": 14,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 21.43
-        },
-        {
           "profession": "physician",
           "cost": 950,
           "attendees": 31,
@@ -9882,12 +9926,12 @@ window.stats = {
           "perperson": 30.65
         },
         {
-          "profession": "nurse",
-          "cost": 6486.79,
-          "attendees": 111,
-          "events": 9,
-          "alcohol": 0,
-          "perperson": 58.44
+          "profession": "gp",
+          "cost": 396237.29,
+          "attendees": 3834,
+          "events": 150,
+          "alcohol": 4,
+          "perperson": 103.35
         },
         {
           "profession": "psychiatrist",
@@ -9904,14 +9948,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "registrar",
-          "cost": 1392,
-          "attendees": 113,
-          "events": 12,
-          "alcohol": 0,
-          "perperson": 12.32
         },
         {
           "profession": "consultant",
@@ -9938,15 +9974,31 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "specialist",
-          "cost": 167106.21,
-          "attendees": 2246,
-          "events": 71,
-          "alcohol": 3,
-          "perperson": 74.4
+          "profession": "endocrinologist",
+          "cost": 300,
+          "attendees": 34,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 8.82
+        },
+        {
+          "profession": "nurse",
+          "cost": 6486.79,
+          "attendees": 136,
+          "events": 10,
+          "alcohol": 0,
+          "perperson": 47.7
         }
       ],
       "conditions": [
+        {
+          "condition": "cosmetic_surgery",
+          "cost": 5813.82,
+          "attendees": 101,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 80.14
+        },
         {
           "condition": "endocrinology",
           "cost": null,
@@ -9954,6 +10006,38 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 31265.8,
+          "attendees": 302,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 105.07
+        },
+        {
+          "condition": "ageing",
+          "cost": 12218.89,
+          "attendees": 336,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 65.98
+        },
+        {
+          "condition": "obesity",
+          "cost": 273325.55,
+          "attendees": 2031,
+          "events": 95,
+          "alcohol": 2,
+          "perperson": 151.52
+        },
+        {
+          "condition": "diabetes",
+          "cost": 8343.07,
+          "attendees": 114,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 84.51
         },
         {
           "condition": "urology",
@@ -9988,22 +10072,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "ageing",
-          "cost": 6004.88,
-          "attendees": 205,
-          "events": 5,
-          "alcohol": 0,
-          "perperson": 55.4
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 28602.1,
-          "attendees": 231,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 126.5
-        },
-        {
           "condition": "sexual_health",
           "cost": 18225.61,
           "attendees": 603,
@@ -10018,14 +10086,6 @@ window.stats = {
           "events": 7,
           "alcohol": 0,
           "perperson": 116.47
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 16617.88,
-          "attendees": 225,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 62.96
         },
         {
           "condition": "auto_immune_disorders",
@@ -10044,20 +10104,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "skin disorders",
-          "cost": 57933.55,
-          "attendees": 774,
-          "events": 43,
-          "alcohol": 1,
-          "perperson": 104.41
-        },
-        {
-          "condition": "diabetes",
-          "cost": 1957.4,
-          "attendees": 53,
-          "events": 3,
+          "condition": "nervous_system",
+          "cost": 25617.4,
+          "attendees": 329,
+          "events": 11,
           "alcohol": 0,
-          "perperson": 46.16
+          "perperson": 69.86
         },
         {
           "condition": "cold_and_flu",
@@ -10084,20 +10136,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "cancer",
+          "cost": 54257.72,
+          "attendees": 869,
+          "events": 31,
+          "alcohol": 2,
+          "perperson": 86.34
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 6744.47,
+          "attendees": 36,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 187.35
+        },
+        {
           "condition": "kidney_function",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "cosmetic_surgery",
-          "cost": 5192,
-          "attendees": 68,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 95.47
         },
         {
           "condition": "wound_management",
@@ -10164,12 +10224,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": 227780.96,
-          "attendees": 1651,
-          "events": 74,
-          "alcohol": 2,
-          "perperson": 156.65
+          "condition": "skin disorders",
+          "cost": 60365.82,
+          "attendees": 864,
+          "events": 46,
+          "alcohol": 1,
+          "perperson": 99.35
         },
         {
           "condition": "stroke",
@@ -10188,22 +10248,6 @@ window.stats = {
           "perperson": 62.8
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 5558.64,
-          "attendees": 59,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 95.08
-        },
-        {
-          "condition": "cancer",
-          "cost": 51000.46,
-          "attendees": 704,
-          "events": 28,
-          "alcohol": 2,
-          "perperson": 93.32
-        },
-        {
           "condition": "fertility",
           "cost": 2479.58,
           "attendees": 33,
@@ -10215,7 +10259,7 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 35
+          "hospitalitycount": 61
         },
         {
           "bin": 20,
@@ -10223,11 +10267,11 @@ window.stats = {
         },
         {
           "bin": 50,
-          "hospitalitycount": 40
+          "hospitalitycount": 41
         },
         {
           "bin": 200,
-          "hospitalitycount": 90
+          "hospitalitycount": 89
         },
         {
           "bin": 1000,
@@ -10249,7 +10293,9 @@ window.stats = {
         "hospitality": "0",
         "attendees": 514,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2009-12-01T00:00:00.000Z",
+        "period": "July 2009 - December 2009"
       },
       "code": "inova",
       "name": "iNova Pharmaceuticals Australia Pty Ltd",
@@ -10260,24 +10306,24 @@ window.stats = {
       "revenueGlobal": "USD3.55b (2012 – Valeant)",
       "products": "388",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=iNova%20Pharmaceuticals%20Australia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=16&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "invida",
-      "cost": 12721.83,
-      "attendees": 127,
-      "events": 4,
+      "cost": 33430.84,
+      "attendees": 2090,
+      "events": 94,
       "alcohol": 2,
-      "completed": 2,
+      "completed": 3,
       "professions": [
         {
-          "profession": "nurse",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "profession": "pharmacist",
+          "cost": 1507.37,
+          "attendees": 186,
+          "events": 9,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 8.1
         },
         {
           "profession": "anaesthetist",
@@ -10288,23 +10334,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "profession": "nurse",
+          "cost": 6509.43,
+          "attendees": 681,
+          "events": 29,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 9.56
         },
         {
           "profession": "neurologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "physician",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10320,20 +10358,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "consultant",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
           "profession": "psychiatrist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "cost": 188.5,
+          "attendees": 15,
+          "events": 1,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 12.57
         },
         {
           "profession": "urologist",
@@ -10342,6 +10372,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "registrar",
+          "cost": 22279.87,
+          "attendees": 1667,
+          "events": 71,
+          "alcohol": 0,
+          "perperson": 13.37
         },
         {
           "profession": "oncologist",
@@ -10368,6 +10406,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "consultant",
+          "cost": 8442.82,
+          "attendees": 811,
+          "events": 36,
+          "alcohol": 0,
+          "perperson": 10.41
+        },
+        {
+          "profession": "physician",
+          "cost": 5228.78,
+          "attendees": 486,
+          "events": 20,
+          "alcohol": 0,
+          "perperson": 10.76
+        },
+        {
           "profession": "endocrinologist",
           "cost": null,
           "attendees": null,
@@ -10382,14 +10436,6 @@ window.stats = {
           "events": 2,
           "alcohol": 2,
           "perperson": 109.01
-        },
-        {
-          "profession": "registrar",
-          "cost": 5417.93,
-          "attendees": 60,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 90.3
         }
       ],
       "conditions": [
@@ -10408,6 +10454,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "virus",
+          "cost": 301,
+          "attendees": 15,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 20.07
         },
         {
           "condition": "cancer",
@@ -10458,23 +10512,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 9486.73,
-          "attendees": 95,
-          "events": 3,
-          "alcohol": 1,
-          "perperson": 104.49
-        },
-        {
           "condition": "respiratory",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "mental_illness",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10538,12 +10576,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "heart_disease",
+          "cost": 24271.77,
+          "attendees": 1457,
+          "events": 64,
+          "alcohol": 1,
+          "perperson": 14.99
+        },
+        {
           "condition": "skin disorders",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "ageing",
+          "cost": 3948.18,
+          "attendees": 389,
+          "events": 14,
+          "alcohol": 0,
+          "perperson": 10.34
         },
         {
           "condition": "sexual_health",
@@ -10578,15 +10632,15 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "mental_illness",
+          "cost": 188.5,
+          "attendees": 15,
+          "events": 1,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 12.57
         },
         {
-          "condition": "virus",
+          "condition": "obesity",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -10648,32 +10702,24 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "ageing",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 0
+          "hospitalitycount": 41
         },
         {
           "bin": 20,
-          "hospitalitycount": 1
+          "hospitalitycount": 48
         },
         {
           "bin": 50,
-          "hospitalitycount": 1
+          "hospitalitycount": 2
         },
         {
           "bin": 200,
-          "hospitalitycount": 2
+          "hospitalitycount": 3
         },
         {
           "bin": 1000,
@@ -10695,7 +10741,9 @@ window.stats = {
         "hospitality": "Meal with alcoholic & non alcoholic drinks provided.",
         "attendees": 35,
         "hospitalitycost": 3033.86,
-        "hospitality_spendratio": 86.68
+        "hospitality_spendratio": 86.68,
+        "date": "2010-09-01T00:00:00.000Z",
+        "period": "April 2010 - September 2010"
       },
       "code": "invida",
       "name": "A Menarini Australia Pty Ltd",
@@ -10706,24 +10754,32 @@ window.stats = {
       "revenueGlobal": "Invida: USD220m (2011); Menarini Group: USD4.13b (2011)",
       "products": "24",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=menarini&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "ipsen",
-      "cost": 2904177.65,
-      "attendees": 72100,
-      "events": 2139,
+      "cost": 3275468.53,
+      "attendees": 80802,
+      "events": 2498,
       "alcohol": 3,
-      "completed": 11,
+      "completed": 12,
       "professions": [
         {
-          "profession": "consultant",
-          "cost": 280072.89,
-          "attendees": 13896,
-          "events": 642,
+          "profession": "physician",
+          "cost": 1086426.87,
+          "attendees": 17779,
+          "events": 380,
           "alcohol": 0,
-          "perperson": 20.15
+          "perperson": 61.11
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 37998.95,
+          "attendees": 2100,
+          "events": 46,
+          "alcohol": 0,
+          "perperson": 18.09
         },
         {
           "profession": "anaesthetist",
@@ -10735,27 +10791,19 @@ window.stats = {
         },
         {
           "profession": "gp",
-          "cost": 230792.11,
-          "attendees": 2458,
-          "events": 61,
+          "cost": 231792.11,
+          "attendees": 2498,
+          "events": 62,
           "alcohol": 0,
-          "perperson": 93.89
-        },
-        {
-          "profession": "nurse",
-          "cost": 1396236.18,
-          "attendees": 39786,
-          "events": 1241,
-          "alcohol": 2,
-          "perperson": 35.09
+          "perperson": 92.79
         },
         {
           "profession": "registrar",
-          "cost": 910589.04,
-          "attendees": 36960,
-          "events": 1344,
+          "cost": 1059023.59,
+          "attendees": 42159,
+          "events": 1587,
           "alcohol": 0,
-          "perperson": 24.64
+          "perperson": 25.12
         },
         {
           "profession": "gastroenterologist",
@@ -10766,14 +10814,6 @@ window.stats = {
           "perperson": 45.66
         },
         {
-          "profession": "endocrinologist",
-          "cost": 427194.41,
-          "attendees": 12784,
-          "events": 307,
-          "alcohol": 0,
-          "perperson": 33.42
-        },
-        {
           "profession": "psychiatrist",
           "cost": null,
           "attendees": null,
@@ -10782,36 +10822,52 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "oncologist",
-          "cost": 460608.02,
-          "attendees": 13813,
-          "events": 382,
+          "profession": "specialist",
+          "cost": 67719.09,
+          "attendees": 1056,
+          "events": 29,
           "alcohol": 0,
-          "perperson": 33.35
-        },
-        {
-          "profession": "physician",
-          "cost": 1029279.71,
-          "attendees": 17369,
-          "events": 361,
-          "alcohol": 0,
-          "perperson": 59.26
+          "perperson": 64.13
         },
         {
           "profession": "urologist",
-          "cost": 324715.5,
-          "attendees": 6320,
-          "events": 148,
+          "cost": 387498.15,
+          "attendees": 7450,
+          "events": 202,
           "alcohol": 1,
-          "perperson": 51.38
+          "perperson": 52.01
         },
         {
-          "profession": "pharmacist",
-          "cost": 22233.83,
-          "attendees": 951,
-          "events": 40,
+          "profession": "endocrinologist",
+          "cost": 522064.89,
+          "attendees": 14102,
+          "events": 371,
           "alcohol": 0,
-          "perperson": 23.38
+          "perperson": 37.02
+        },
+        {
+          "profession": "nurse",
+          "cost": 1529204.35,
+          "attendees": 46028,
+          "events": 1473,
+          "alcohol": 2,
+          "perperson": 33.22
+        },
+        {
+          "profession": "neurologist",
+          "cost": 557468.43,
+          "attendees": 9092,
+          "events": 255,
+          "alcohol": 1,
+          "perperson": 61.31
+        },
+        {
+          "profession": "oncologist",
+          "cost": 641798.32,
+          "attendees": 17399,
+          "events": 512,
+          "alcohol": 0,
+          "perperson": 36.89
         },
         {
           "profession": "haematologist",
@@ -10822,20 +10878,12 @@ window.stats = {
           "perperson": 11.79
         },
         {
-          "profession": "neurologist",
-          "cost": 500865.53,
-          "attendees": 8381,
-          "events": 225,
-          "alcohol": 1,
-          "perperson": 59.76
-        },
-        {
-          "profession": "specialist",
-          "cost": 55410.57,
-          "attendees": 990,
-          "events": 26,
+          "profession": "consultant",
+          "cost": 334392.83,
+          "attendees": 16309,
+          "events": 754,
           "alcohol": 0,
-          "perperson": 55.97
+          "perperson": 20.5
         }
       ],
       "conditions": [
@@ -10846,22 +10894,6 @@ window.stats = {
           "events": 4,
           "alcohol": 0,
           "perperson": 25.75
-        },
-        {
-          "condition": "diabetes",
-          "cost": 27228.43,
-          "attendees": 2562,
-          "events": 71,
-          "alcohol": 0,
-          "perperson": 13.14
-        },
-        {
-          "condition": "urology",
-          "cost": 368035.84,
-          "attendees": 7456,
-          "events": 197,
-          "alcohol": 1,
-          "perperson": 42.89
         },
         {
           "condition": "hiv",
@@ -10888,12 +10920,12 @@ window.stats = {
           "perperson": 12.23
         },
         {
-          "condition": "mental_illness",
-          "cost": 495.35,
-          "attendees": 40,
-          "events": 3,
+          "condition": "dementia",
+          "cost": 8302.39,
+          "attendees": 1,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 12.02
+          "perperson": 8302.39
         },
         {
           "condition": "allergies",
@@ -10904,12 +10936,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "parkinsons_disease",
-          "cost": 5978.52,
-          "attendees": 41,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 135.61
+          "condition": "nervous_system",
+          "cost": 590841.51,
+          "attendees": 11629,
+          "events": 355,
+          "alcohol": 1,
+          "perperson": 104.9
         },
         {
           "condition": "vaccination",
@@ -10918,14 +10950,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "gastro",
-          "cost": 32728.51,
-          "attendees": 1715,
-          "events": 81,
-          "alcohol": 0,
-          "perperson": 17.7
         },
         {
           "condition": "respiratory",
@@ -10952,6 +10976,22 @@ window.stats = {
           "perperson": 251.64
         },
         {
+          "condition": "urology",
+          "cost": 455445.42,
+          "attendees": 9031,
+          "events": 267,
+          "alcohol": 1,
+          "perperson": 96.44
+        },
+        {
+          "condition": "gastro",
+          "cost": 35191.68,
+          "attendees": 1934,
+          "events": 92,
+          "alcohol": 0,
+          "perperson": 17
+        },
+        {
           "condition": "auto_immune_disorders",
           "cost": null,
           "attendees": null,
@@ -10968,20 +11008,36 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 527093.08,
-          "attendees": 17020,
-          "events": 547,
-          "alcohol": 0,
-          "perperson": 27.2
-        },
-        {
           "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 25956.6,
+          "attendees": 1251,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 27.89
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": 14280.91,
+          "attendees": 42,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 2857.87
+        },
+        {
+          "condition": "cancer",
+          "cost": 715629.07,
+          "attendees": 21195,
+          "events": 702,
+          "alcohol": 0,
+          "perperson": 66.06
         },
         {
           "condition": "kidney_function",
@@ -11016,6 +11072,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "diabetes",
+          "cost": 30428.25,
+          "attendees": 2816,
+          "events": 86,
+          "alcohol": 0,
+          "perperson": 13.07
+        },
+        {
           "condition": "virus",
           "cost": null,
           "attendees": null,
@@ -11024,12 +11088,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "dementia",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "condition": "ageing",
+          "cost": 161431.03,
+          "attendees": 3243,
+          "events": 64,
+          "alcohol": 1,
+          "perperson": 116.66
         },
         {
           "condition": "hypertension",
@@ -11064,22 +11128,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "nervous_system",
-          "cost": 532112.51,
-          "attendees": 10759,
-          "events": 317,
-          "alcohol": 1,
-          "perperson": 47.26
-        },
-        {
-          "condition": "ageing",
-          "cost": 158789.83,
-          "attendees": 3088,
-          "events": 58,
-          "alcohol": 1,
-          "perperson": 126.94
-        },
-        {
           "condition": "stroke",
           "cost": null,
           "attendees": null,
@@ -11107,31 +11155,31 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 853
+          "hospitalitycount": 963
         },
         {
           "bin": 20,
-          "hospitalitycount": 1025
+          "hospitalitycount": 1239
         },
         {
           "bin": 50,
-          "hospitalitycount": 116
+          "hospitalitycount": 123
         },
         {
           "bin": 200,
-          "hospitalitycount": 143
+          "hospitalitycount": 162
         },
         {
           "bin": 1000,
-          "hospitalitycount": 2
+          "hospitalitycount": 3
         },
         {
           "bin": 10000,
-          "hospitalitycount": 0
+          "hospitalitycount": 6
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 2
         }
       ],
       "mostExpensive": {
@@ -11141,59 +11189,69 @@ window.stats = {
         "hospitality": null,
         "attendees": 250,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2011-09-01T00:00:00.000Z",
+        "period": "April 2011 - September 2011"
       },
       "code": "ipsen",
       "name": "Ipsen Pty Ltd",
       "summary": "A global specialty-driven pharmaceutical company.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "€1.28b (2012)",
       "products": "13",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Ipsen&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "janssen",
-      "cost": 21169952,
-      "attendees": 259606,
-      "events": 8514,
-      "alcohol": 4140,
-      "completed": 11,
+      "cost": 22652021.5,
+      "attendees": 275185,
+      "events": 8913,
+      "alcohol": 4460,
+      "completed": 12,
       "professions": [
         {
+          "profession": "neurologist",
+          "cost": 220059,
+          "attendees": 7448,
+          "events": 162,
+          "alcohol": 63,
+          "perperson": 29.55
+        },
+        {
           "profession": "anaesthetist",
-          "cost": 179032,
-          "attendees": 4077,
-          "events": 65,
+          "cost": 182957,
+          "attendees": 4369,
+          "events": 74,
           "alcohol": 18,
-          "perperson": 43.91
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": 7185425,
-          "attendees": 78221,
-          "events": 2730,
-          "alcohol": 1289,
-          "perperson": 91.86
-        },
-        {
-          "profession": "specialist",
-          "cost": 1365708,
-          "attendees": 13484,
-          "events": 251,
-          "alcohol": 113,
-          "perperson": 101.28
+          "perperson": 41.88
         },
         {
           "profession": "consultant",
-          "cost": 3631860,
-          "attendees": 79493,
-          "events": 2669,
-          "alcohol": 1166,
-          "perperson": 45.69
+          "cost": 4045098.79,
+          "attendees": 85754,
+          "events": 2901,
+          "alcohol": 1324,
+          "perperson": 47.17
+        },
+        {
+          "profession": "gp",
+          "cost": 5830779,
+          "attendees": 50139,
+          "events": 1970,
+          "alcohol": 1429,
+          "perperson": 116.29
+        },
+        {
+          "profession": "registrar",
+          "cost": 7206924.75,
+          "attendees": 116179,
+          "events": 4224,
+          "alcohol": 1923,
+          "perperson": 62.03
         },
         {
           "profession": "urologist",
@@ -11204,110 +11262,110 @@ window.stats = {
           "perperson": 74.47
         },
         {
+          "profession": "psychiatrist",
+          "cost": 7236311.47,
+          "attendees": 80553,
+          "events": 2832,
+          "alcohol": 1370,
+          "perperson": 89.83
+        },
+        {
           "profession": "oncologist",
-          "cost": 493743,
-          "attendees": 14202,
-          "events": 570,
-          "alcohol": 270,
-          "perperson": 34.77
+          "cost": 537446.17,
+          "attendees": 15761,
+          "events": 632,
+          "alcohol": 281,
+          "perperson": 34.1
         },
         {
           "profession": "haematologist",
-          "cost": 1314863,
-          "attendees": 13468,
-          "events": 481,
-          "alcohol": 212,
-          "perperson": 97.63
+          "cost": 1403932.58,
+          "attendees": 16237,
+          "events": 519,
+          "alcohol": 232,
+          "perperson": 86.47
         },
         {
           "profession": "gastroenterologist",
-          "cost": 1654868,
-          "attendees": 18706,
-          "events": 748,
-          "alcohol": 358,
-          "perperson": 88.47
-        },
-        {
-          "profession": "gp",
-          "cost": 5659170,
-          "attendees": 47529,
-          "events": 1883,
-          "alcohol": 1328,
-          "perperson": 119.07
-        },
-        {
-          "profession": "nurse",
-          "cost": 5723983,
-          "attendees": 100747,
-          "events": 3040,
-          "alcohol": 1336,
-          "perperson": 56.82
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 1868129,
-          "attendees": 26646,
-          "events": 713,
-          "alcohol": 361,
-          "perperson": 70.11
-        },
-        {
-          "profession": "neurologist",
-          "cost": 219733,
-          "attendees": 7422,
-          "events": 160,
-          "alcohol": 52,
-          "perperson": 29.61
+          "cost": 2224737.23,
+          "attendees": 20919,
+          "events": 815,
+          "alcohol": 395,
+          "perperson": 106.35
         },
         {
           "profession": "physician",
-          "cost": 812671,
-          "attendees": 13574,
-          "events": 322,
-          "alcohol": 142,
-          "perperson": 59.87
+          "cost": 871026,
+          "attendees": 14164,
+          "events": 340,
+          "alcohol": 153,
+          "perperson": 61.5
+        },
+        {
+          "profession": "nurse",
+          "cost": 6467158.11,
+          "attendees": 106232,
+          "events": 3232,
+          "alcohol": 1426,
+          "perperson": 60.88
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 1936901.51,
+          "attendees": 28353,
+          "events": 769,
+          "alcohol": 387,
+          "perperson": 68.31
+        },
+        {
+          "profession": "specialist",
+          "cost": 1385253.1,
+          "attendees": 14197,
+          "events": 262,
+          "alcohol": 117,
+          "perperson": 97.57
         },
         {
           "profession": "endocrinologist",
-          "cost": 33905,
-          "attendees": 769,
-          "events": 25,
-          "alcohol": 14,
-          "perperson": 44.09
-        },
-        {
-          "profession": "registrar",
-          "cost": 5976530,
-          "attendees": 106308,
-          "events": 3963,
-          "alcohol": 1791,
-          "perperson": 56.22
+          "cost": 42807,
+          "attendees": 997,
+          "events": 30,
+          "alcohol": 15,
+          "perperson": 42.94
         }
       ],
       "conditions": [
         {
-          "condition": "cold_and_flu",
-          "cost": 1886,
-          "attendees": 37,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 40.08
+          "condition": "skin disorders",
+          "cost": 1001789.1,
+          "attendees": 6142,
+          "events": 134,
+          "alcohol": 79,
+          "perperson": 131.63
         },
         {
-          "condition": "gastro",
-          "cost": 1896478,
-          "attendees": 20962,
-          "events": 850,
-          "alcohol": 431,
-          "perperson": 45.63
+          "condition": "cosmetic_surgery",
+          "cost": 1975,
+          "attendees": 105,
+          "events": 8,
+          "alcohol": 2,
+          "perperson": 18.03
         },
         {
-          "condition": "anaesthesia",
-          "cost": 264452,
-          "attendees": 5746,
-          "events": 79,
-          "alcohol": 22,
-          "perperson": 51.43
+          "condition": "heart_disease",
+          "cost": 117778,
+          "attendees": 3914,
+          "events": 120,
+          "alcohol": 57,
+          "perperson": 26.95
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 941370,
+          "attendees": 18780,
+          "events": 527,
+          "alcohol": 286,
+          "perperson": 56.28
         },
         {
           "condition": "kidney_function",
@@ -11318,22 +11376,6 @@ window.stats = {
           "perperson": 43.26
         },
         {
-          "condition": "vaccination",
-          "cost": 100830,
-          "attendees": 1601,
-          "events": 57,
-          "alcohol": 29,
-          "perperson": 39.14
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 587253,
-          "attendees": 5313,
-          "events": 105,
-          "alcohol": 60,
-          "perperson": 99.66
-        },
-        {
           "condition": "wound_management",
           "cost": 641,
           "attendees": 34,
@@ -11342,12 +11384,28 @@ window.stats = {
           "perperson": 23.49
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 1503914,
-          "attendees": 16331,
-          "events": 521,
-          "alcohol": 225,
-          "perperson": 54.38
+          "condition": "auto_immune_disorders",
+          "cost": 8920,
+          "attendees": 307,
+          "events": 14,
+          "alcohol": 10,
+          "perperson": 29.9
+        },
+        {
+          "condition": "vaccination",
+          "cost": 134972,
+          "attendees": 1806,
+          "events": 62,
+          "alcohol": 36,
+          "perperson": 85.86
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 1174542.7,
+          "attendees": 11339,
+          "events": 223,
+          "alcohol": 114,
+          "perperson": 99.43
         },
         {
           "condition": "endocrinology",
@@ -11358,44 +11416,68 @@ window.stats = {
           "perperson": 9.45
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 8620,
-          "attendees": 296,
-          "events": 13,
-          "alcohol": 10,
-          "perperson": 30.1
+          "condition": "allergies",
+          "cost": 112937,
+          "attendees": 1719,
+          "events": 61,
+          "alcohol": 36,
+          "perperson": 41.91
         },
         {
           "condition": "hiv",
-          "cost": 864597,
-          "attendees": 7096,
-          "events": 121,
-          "alcohol": 63,
-          "perperson": 112.87
+          "cost": 929421,
+          "attendees": 8090,
+          "events": 127,
+          "alcohol": 70,
+          "perperson": 110.66
+        },
+        {
+          "condition": "gastro",
+          "cost": 2519140.23,
+          "attendees": 24061,
+          "events": 924,
+          "alcohol": 473,
+          "perperson": 52.41
+        },
+        {
+          "condition": "ageing",
+          "cost": 1671622,
+          "attendees": 17144,
+          "events": 597,
+          "alcohol": 281,
+          "perperson": 57.65
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 1886,
+          "attendees": 37,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 40.08
         },
         {
           "condition": "cancer",
-          "cost": 2071969,
-          "attendees": 24417,
-          "events": 873,
-          "alcohol": 427,
-          "perperson": 57.04
+          "cost": 2136095.17,
+          "attendees": 26539,
+          "events": 944,
+          "alcohol": 444,
+          "perperson": 55.55
         },
         {
           "condition": "mental_illness",
-          "cost": 7807755,
-          "attendees": 86839,
-          "events": 3081,
-          "alcohol": 1453,
-          "perperson": 65.37
+          "cost": 7875149.47,
+          "attendees": 90338,
+          "events": 3188,
+          "alcohol": 1546,
+          "perperson": 64.34
         },
         {
-          "condition": "sexual_health",
-          "cost": 1099796,
-          "attendees": 9946,
-          "events": 208,
-          "alcohol": 105,
-          "perperson": 103.6
+          "condition": "obesity",
+          "cost": 5171,
+          "attendees": 339,
+          "events": 11,
+          "alcohol": 5,
+          "perperson": 16.79
         },
         {
           "condition": "oral_health",
@@ -11406,12 +11488,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "parkinsons_disease",
-          "cost": 3871,
-          "attendees": 196,
-          "events": 10,
-          "alcohol": 6,
-          "perperson": 20.97
+          "condition": "virus",
+          "cost": 359635.7,
+          "attendees": 3951,
+          "events": 170,
+          "alcohol": 112,
+          "perperson": 63.62
         },
         {
           "condition": "addiction",
@@ -11422,14 +11504,6 @@ window.stats = {
           "perperson": 247.76
         },
         {
-          "condition": "virus",
-          "cost": 347788,
-          "attendees": 3607,
-          "events": 160,
-          "alcohol": 105,
-          "perperson": 65.06
-        },
-        {
           "condition": "hypertension",
           "cost": 1416,
           "attendees": 84,
@@ -11438,36 +11512,60 @@ window.stats = {
           "perperson": 25.66
         },
         {
-          "condition": "diabetes",
-          "cost": 11428,
-          "attendees": 593,
-          "events": 20,
-          "alcohol": 12,
-          "perperson": 24.15
-        },
-        {
           "condition": "musculoskeletal",
-          "cost": 14072,
-          "attendees": 525,
-          "events": 19,
-          "alcohol": 9,
-          "perperson": 19.73
+          "cost": 17698,
+          "attendees": 627,
+          "events": 24,
+          "alcohol": 12,
+          "perperson": 25.43
         },
         {
-          "condition": "ageing",
-          "cost": 1600878,
-          "attendees": 16252,
-          "events": 560,
-          "alcohol": 248,
-          "perperson": 52.62
+          "condition": "paediatrics",
+          "cost": 684036,
+          "attendees": 6704,
+          "events": 240,
+          "alcohol": 170,
+          "perperson": 85.53
         },
         {
-          "condition": "nervous_system",
-          "cost": 936801,
-          "attendees": 18491,
-          "events": 518,
-          "alcohol": 270,
-          "perperson": 56.99
+          "condition": "urology",
+          "cost": 153643,
+          "attendees": 1642,
+          "events": 49,
+          "alcohol": 17,
+          "perperson": 43.22
+        },
+        {
+          "condition": "diabetes",
+          "cost": 12177,
+          "attendees": 638,
+          "events": 23,
+          "alcohol": 12,
+          "perperson": 23.01
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": 4048,
+          "attendees": 211,
+          "events": 11,
+          "alcohol": 6,
+          "perperson": 20.14
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 268377,
+          "attendees": 6038,
+          "events": 88,
+          "alcohol": 22,
+          "perperson": 47.66
+        },
+        {
+          "condition": "fertility",
+          "cost": 18262,
+          "attendees": 580,
+          "events": 24,
+          "alcohol": 11,
+          "perperson": 29.87
         },
         {
           "condition": "respiratory",
@@ -11486,94 +11584,46 @@ window.stats = {
           "perperson": 14.09
         },
         {
-          "condition": "obesity",
-          "cost": 5171,
-          "attendees": 339,
-          "events": 11,
-          "alcohol": 4,
-          "perperson": 16.79
-        },
-        {
-          "condition": "cosmetic_surgery",
-          "cost": 1861,
-          "attendees": 93,
-          "events": 7,
-          "alcohol": 1,
-          "perperson": 19.25
-        },
-        {
-          "condition": "paediatrics",
-          "cost": 665296,
-          "attendees": 5934,
-          "events": 222,
-          "alcohol": 153,
-          "perperson": 89.49
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 113267,
-          "attendees": 3787,
-          "events": 118,
-          "alcohol": 53,
-          "perperson": 26.1
-        },
-        {
-          "condition": "fertility",
-          "cost": 18217,
-          "attendees": 575,
-          "events": 23,
-          "alcohol": 11,
-          "perperson": 30.78
-        },
-        {
           "condition": "dementia",
-          "cost": 71710,
-          "attendees": 1487,
-          "events": 64,
-          "alcohol": 33,
-          "perperson": 42.96
+          "cost": 72456,
+          "attendees": 1591,
+          "events": 67,
+          "alcohol": 35,
+          "perperson": 41.38
         },
         {
-          "condition": "allergies",
-          "cost": 98512,
-          "attendees": 1521,
-          "events": 57,
-          "alcohol": 30,
-          "perperson": 40.01
-        },
-        {
-          "condition": "urology",
-          "cost": 144005,
-          "attendees": 1341,
-          "events": 34,
-          "alcohol": 14,
-          "perperson": 47.09
+          "condition": "blood_specific_illness",
+          "cost": 1592983.58,
+          "attendees": 19100,
+          "events": 559,
+          "alcohol": 245,
+          "perperson": 52.7
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3756
+          "hospitalitycount": 3936
         },
         {
           "bin": 20,
-          "hospitalitycount": 2523
+          "hospitalitycount": 2638
         },
         {
           "bin": 50,
-          "hospitalitycount": 577
+          "hospitalitycount": 602
         },
         {
           "bin": 200,
-          "hospitalitycount": 1589
+          "hospitalitycount": 1659
         },
         {
           "bin": 1000,
-          "hospitalitycount": 44
+          "hospitalitycount": 49
         },
         {
           "bin": 10000,
-          "hospitalitycount": 25
+          "hospitalitycount": 29
         },
         {
           "bin": 100000,
@@ -11587,7 +11637,9 @@ window.stats = {
         "hospitality": "Travel; accommodation; meals$27;523 conference package for 2 days (179); $8;840 dinner for Friday night (111); $17;896 dinner Saturday night (155); $64;480 bed and breakfast; 1 night for some VIC participants (46) and 2 nights for most interstate and NZ delegates (110); $51;146 airfares for interstate and NZ delegates (114); $12;527 car transfers or parking; $2;365 transfer to Saturday conference dinner",
         "attendees": 184,
         "hospitalitycost": 184777,
-        "hospitality_spendratio": 1004.22
+        "hospitality_spendratio": 1004.22,
+        "date": "2012-09-01T00:00:00.000Z",
+        "period": "April 2012 - September 2012"
       },
       "code": "janssen",
       "name": "Janssen-Cilag Pty Ltd",
@@ -11599,16 +11651,24 @@ window.stats = {
       "products": "118",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=janssen&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "Can't find revenue numbers separate from overall Johnson & Johnson figures",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "leopharma",
-      "cost": 266896.88,
-      "attendees": 2074,
-      "events": 98,
-      "alcohol": 1,
-      "completed": 3,
+      "cost": 399169.78,
+      "attendees": 3516,
+      "events": 161,
+      "alcohol": 2,
+      "completed": 4,
       "professions": [
+        {
+          "profession": "registrar",
+          "cost": 7980.47,
+          "attendees": 165,
+          "events": 12,
+          "alcohol": 0,
+          "perperson": 48.37
+        },
         {
           "profession": "anaesthetist",
           "cost": null,
@@ -11618,20 +11678,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "registrar",
-          "cost": 2575.91,
-          "attendees": 109,
-          "events": 8,
+          "profession": "specialist",
+          "cost": 5121.38,
+          "attendees": 84,
+          "events": 7,
           "alcohol": 0,
-          "perperson": 23.63
+          "perperson": 60.97
         },
         {
-          "profession": "specialist",
-          "cost": 2631.38,
-          "attendees": 58,
-          "events": 6,
+          "profession": "nurse",
+          "cost": 184437.1,
+          "attendees": 1343,
+          "events": 50,
           "alcohol": 0,
-          "perperson": 45.37
+          "perperson": 137.33
         },
         {
           "profession": "neurologist",
@@ -11642,12 +11702,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gp",
-          "cost": 252280.41,
-          "attendees": 1805,
-          "events": 82,
-          "alcohol": 1,
-          "perperson": 139.77
+          "profession": "physician",
+          "cost": 6317.12,
+          "attendees": 67,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 94.29
         },
         {
           "profession": "haematologist",
@@ -11658,20 +11718,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "consultant",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "profession": "physician",
-          "cost": 318,
-          "attendees": 26,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 12.23
+          "profession": "gp",
+          "cost": 335752.29,
+          "attendees": 2822,
+          "events": 125,
+          "alcohol": 1,
+          "perperson": 118.98
         },
         {
           "profession": "psychiatrist",
@@ -11690,12 +11742,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": 24702.36,
-          "attendees": 27,
-          "events": 2,
+          "profession": "consultant",
+          "cost": 31319.4,
+          "attendees": 199,
+          "events": 6,
           "alcohol": 0,
-          "perperson": 914.9
+          "perperson": 157.38
         },
         {
           "profession": "oncologist",
@@ -11706,20 +11758,20 @@ window.stats = {
           "perperson": 115.36
         },
         {
+          "profession": "pharmacist",
+          "cost": 49870.11,
+          "attendees": 353,
+          "events": 14,
+          "alcohol": 0,
+          "perperson": 141.28
+        },
+        {
           "profession": "gastroenterologist",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "nurse",
-          "cost": 133274.33,
-          "attendees": 770,
-          "events": 29,
-          "alcohol": 0,
-          "perperson": 173.08
         },
         {
           "profession": "endocrinologist",
@@ -11860,6 +11912,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "cancer",
+          "cost": 20440.14,
+          "attendees": 395,
+          "events": 17,
+          "alcohol": 0,
+          "perperson": 56.98
+        },
+        {
           "condition": "sexual_health",
           "cost": null,
           "attendees": null,
@@ -11909,11 +11969,11 @@ window.stats = {
         },
         {
           "condition": "skin disorders",
-          "cost": 174376.86,
-          "attendees": 1502,
-          "events": 82,
-          "alcohol": 1,
-          "perperson": 106.28
+          "cost": 298069.58,
+          "attendees": 2824,
+          "events": 142,
+          "alcohol": 2,
+          "perperson": 94.27
         },
         {
           "condition": "dementia",
@@ -11980,14 +12040,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "cancer",
-          "cost": 16394.41,
-          "attendees": 352,
-          "events": 15,
-          "alcohol": 0,
-          "perperson": 55.94
-        },
-        {
           "condition": "musculoskeletal",
           "cost": null,
           "attendees": null,
@@ -11999,23 +12051,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 11
-        },
-        {
-          "bin": 20,
-          "hospitalitycount": 16
-        },
-        {
-          "bin": 50,
           "hospitalitycount": 18
         },
         {
+          "bin": 20,
+          "hospitalitycount": 30
+        },
+        {
+          "bin": 50,
+          "hospitalitycount": 26
+        },
+        {
           "bin": 200,
-          "hospitalitycount": 53
+          "hospitalitycount": 86
         },
         {
           "bin": 1000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         },
         {
           "bin": 10000,
@@ -12033,27 +12085,29 @@ window.stats = {
         "hospitality": "Basic range buffet lunch; tea; coffee; soft drinks; breakfast as a package : $725; economy travel $ 736.90; standard room accommodation $460.00; Venue Hire 595.00; Parking and taxis $251.86",
         "attendees": 19,
         "hospitalitycost": 2768.76,
-        "hospitality_spendratio": 145.72
+        "hospitality_spendratio": 145.72,
+        "date": "2012-09-01T00:00:00.000Z",
+        "period": "April 2012 - September 2012"
       },
       "code": "leopharma",
       "name": "LEO Pharma Pty Ltd",
       "summary": "LEO Pharma is a Danish company founded in 1908, now with multiple global subsidiaries and 2,500 employees. LEO began operating in Australia in 2011.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "DKK8.2b (2012)",
       "products": "8",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=leo%20pharma&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "lundbeck",
-      "cost": 3516036.16,
-      "attendees": 39279,
-      "events": 2176,
-      "alcohol": 859,
-      "completed": 11,
+      "cost": 3797410.71,
+      "attendees": 42692,
+      "events": 2356,
+      "alcohol": 899,
+      "completed": 12,
       "professions": [
         {
           "profession": "anaesthetist",
@@ -12065,27 +12119,35 @@ window.stats = {
         },
         {
           "profession": "gp",
-          "cost": 1329425.54,
-          "attendees": 12247,
-          "events": 745,
-          "alcohol": 530,
-          "perperson": 108.55
+          "cost": 1337349.91,
+          "attendees": 12414,
+          "events": 754,
+          "alcohol": 534,
+          "perperson": 107.73
         },
         {
-          "profession": "registrar",
-          "cost": 122303.12,
-          "attendees": 2146,
-          "events": 98,
-          "alcohol": 14,
-          "perperson": 56.99
+          "profession": "physician",
+          "cost": 39861.39,
+          "attendees": 414,
+          "events": 14,
+          "alcohol": 5,
+          "perperson": 96.28
         },
         {
-          "profession": "specialist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "profession": "neurologist",
+          "cost": 299965.11,
+          "attendees": 3966,
+          "events": 170,
+          "alcohol": 31,
+          "perperson": 75.63
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 62402.26,
+          "attendees": 876,
+          "events": 29,
+          "alcohol": 8,
+          "perperson": 71.24
         },
         {
           "profession": "haematologist",
@@ -12096,30 +12158,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "nurse",
-          "cost": 117540.9,
-          "attendees": 1147,
-          "events": 44,
-          "alcohol": 10,
-          "perperson": 102.48
-        },
-        {
-          "profession": "consultant",
-          "cost": 37988.58,
-          "attendees": 256,
-          "events": 8,
-          "alcohol": 4,
-          "perperson": 148.39
-        },
-        {
-          "profession": "neurologist",
-          "cost": 182799.91,
-          "attendees": 3359,
-          "events": 141,
-          "alcohol": 21,
-          "perperson": 54.42
-        },
-        {
           "profession": "urologist",
           "cost": null,
           "attendees": null,
@@ -12128,12 +12166,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": 60699.26,
-          "attendees": 812,
-          "events": 26,
-          "alcohol": 8,
-          "perperson": 74.75
+          "profession": "psychiatrist",
+          "cost": 2654023.59,
+          "attendees": 27836,
+          "events": 1417,
+          "alcohol": 439,
+          "perperson": 95.35
+        },
+        {
+          "profession": "consultant",
+          "cost": 38658.58,
+          "attendees": 337,
+          "events": 10,
+          "alcohol": 4,
+          "perperson": 114.71
         },
         {
           "profession": "oncologist",
@@ -12144,12 +12190,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "physician",
-          "cost": 39191.39,
-          "attendees": 333,
-          "events": 12,
-          "alcohol": 5,
-          "perperson": 117.69
+          "profession": "specialist",
+          "cost": 3053,
+          "attendees": 23,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 132.74
+        },
+        {
+          "profession": "registrar",
+          "cost": 378628.05,
+          "attendees": 4752,
+          "events": 222,
+          "alcohol": 40,
+          "perperson": 79.68
         },
         {
           "profession": "gastroenterologist",
@@ -12160,20 +12214,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "nurse",
+          "cost": 207246.9,
+          "attendees": 1617,
+          "events": 60,
+          "alcohol": 17,
+          "perperson": 128.17
+        },
+        {
           "profession": "endocrinologist",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": 2491540.24,
-          "attendees": 25101,
-          "events": 1271,
-          "alcohol": 411,
-          "perperson": 99.26
         }
       ],
       "conditions": [
@@ -12200,14 +12254,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 184231.73,
-          "attendees": 3380,
-          "events": 142,
-          "alcohol": 21,
-          "perperson": 42.96
         },
         {
           "condition": "urology",
@@ -12314,14 +12360,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
-          "cost": 3263642.29,
-          "attendees": 31198,
-          "events": 1779,
-          "alcohol": 784,
-          "perperson": 90.76
-        },
-        {
           "condition": "sexual_health",
           "cost": null,
           "attendees": null,
@@ -12344,22 +12382,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "ageing",
-          "cost": 355627.5,
-          "attendees": 4059,
-          "events": 174,
-          "alcohol": 42,
-          "perperson": 105.96
-        },
-        {
-          "condition": "parkinsons_disease",
-          "cost": 90886.13,
-          "attendees": 167,
-          "events": 6,
-          "alcohol": 6,
-          "perperson": 513.62
         },
         {
           "condition": "blood_specific_illness",
@@ -12386,20 +12408,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "ageing",
+          "cost": 458864.5,
+          "attendees": 4515,
+          "events": 193,
+          "alcohol": 53,
+          "perperson": 116.75
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": 210388.13,
+          "attendees": 458,
+          "events": 17,
+          "alcohol": 16,
+          "perperson": 485.43
+        },
+        {
           "condition": "hypertension",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "dementia",
-          "cost": 253686.4,
-          "attendees": 1451,
-          "events": 56,
-          "alcohol": 50,
-          "perperson": 273.37
         },
         {
           "condition": "addiction",
@@ -12410,12 +12440,20 @@ window.stats = {
           "perperson": 5.71
         },
         {
-          "condition": "anaesthesia",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "condition": "mental_illness",
+          "cost": 3431287.64,
+          "attendees": 34046,
+          "events": 1933,
+          "alcohol": 814,
+          "perperson": 87.24
+        },
+        {
+          "condition": "dementia",
+          "cost": 254036.4,
+          "attendees": 1471,
+          "events": 57,
+          "alcohol": 50,
+          "perperson": 268.88
         },
         {
           "condition": "stroke",
@@ -12426,12 +12464,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "anaesthesia",
+          "cost": 535,
+          "attendees": 30,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 17.83
+        },
+        {
           "condition": "paediatrics",
           "cost": 2208.28,
           "attendees": 99,
           "events": 2,
           "alcohol": 0,
           "perperson": 43.59
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 301396.93,
+          "attendees": 3987,
+          "events": 171,
+          "alcohol": 31,
+          "perperson": 62.68
         },
         {
           "condition": "musculoskeletal",
@@ -12445,19 +12499,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 486
+          "hospitalitycount": 518
         },
         {
           "bin": 20,
-          "hospitalitycount": 762
+          "hospitalitycount": 863
         },
         {
           "bin": 50,
-          "hospitalitycount": 287
+          "hospitalitycount": 298
         },
         {
           "bin": 200,
-          "hospitalitycount": 607
+          "hospitalitycount": 643
         },
         {
           "bin": 1000,
@@ -12479,83 +12533,85 @@ window.stats = {
         "hospitality": "Lunch and Dinner Friday. Breakfast; Buffet Lunch and Dinner Saturday. Breakfast and Buffet Lunch Sunday. Alcohol served with 3 Course Dinners only; on Friday and Saturday. Accommodation provided for 127 GPs - no partners. Interstate flights and transfers for 106 delegates (4 x ACT; 32 x NSW; 1 x NT; 12 x SA; 3 x TAS; 33 x VIC; 17 x WA). No entertainment.",
         "attendees": 128,
         "hospitalitycost": 115220.17,
-        "hospitality_spendratio": 900.16
+        "hospitality_spendratio": 900.16,
+        "date": "2008-06-01T00:00:00.000Z",
+        "period": "January 2008 - June 2008"
       },
       "code": "lundbeck",
       "name": "Lundbeck Australia Pty Ltd",
       "summary": "Entered the Australasian market in 1997.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "DKK14.8b (2011)",
       "products": "24",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Lundbeck&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "merck",
-      "cost": 14899971.57,
-      "attendees": 221214,
-      "events": 10525,
-      "alcohol": 638,
-      "completed": 10,
+      "cost": 16437891.66,
+      "attendees": 246312,
+      "events": 11546,
+      "alcohol": 643,
+      "completed": 11,
       "professions": [
         {
-          "profession": "haematologist",
-          "cost": 221247.91,
-          "attendees": 9287,
-          "events": 406,
-          "alcohol": 5,
-          "perperson": 23.82
-        },
-        {
-          "profession": "registrar",
-          "cost": 1280231.5,
-          "attendees": 30166,
-          "events": 1419,
-          "alcohol": 33,
-          "perperson": 42.44
-        },
-        {
-          "profession": "oncologist",
-          "cost": 790458.08,
-          "attendees": 25528,
-          "events": 1084,
-          "alcohol": 14,
-          "perperson": 30.96
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": 2718757.14,
-          "attendees": 19081,
-          "events": 749,
-          "alcohol": 30,
-          "perperson": 142.49
-        },
-        {
           "profession": "consultant",
-          "cost": 189493.28,
-          "attendees": 4854,
-          "events": 198,
+          "cost": 205534.41,
+          "attendees": 5080,
+          "events": 207,
           "alcohol": 8,
-          "perperson": 39.04
+          "perperson": 40.46
         },
         {
-          "profession": "psychiatrist",
-          "cost": 17264.97,
-          "attendees": 173,
-          "events": 7,
+          "profession": "neurologist",
+          "cost": 95768.84,
+          "attendees": 3337,
+          "events": 189,
+          "alcohol": 4,
+          "perperson": 28.7
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 1069812.25,
+          "attendees": 5795,
+          "events": 301,
           "alcohol": 0,
-          "perperson": 99.8
+          "perperson": 184.61
+        },
+        {
+          "profession": "gp",
+          "cost": 7303252.75,
+          "attendees": 71665,
+          "events": 3937,
+          "alcohol": 487,
+          "perperson": 101.91
         },
         {
           "profession": "nurse",
-          "cost": 4239122.19,
-          "attendees": 76041,
-          "events": 4307,
-          "alcohol": 110,
-          "perperson": 55.75
+          "cost": 4507972.02,
+          "attendees": 81834,
+          "events": 4578,
+          "alcohol": 115,
+          "perperson": 55.09
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 382315.93,
+          "attendees": 15464,
+          "events": 591,
+          "alcohol": 1,
+          "perperson": 24.72
+        },
+        {
+          "profession": "specialist",
+          "cost": 2728811.18,
+          "attendees": 33316,
+          "events": 1433,
+          "alcohol": 152,
+          "perperson": 81.91
         },
         {
           "profession": "urologist",
@@ -12566,71 +12622,63 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "neurologist",
-          "cost": 95441.56,
-          "attendees": 3293,
-          "events": 187,
-          "alcohol": 4,
-          "perperson": 28.98
+          "profession": "registrar",
+          "cost": 1318467.9,
+          "attendees": 32970,
+          "events": 1541,
+          "alcohol": 33,
+          "perperson": 39.99
         },
         {
-          "profession": "gastroenterologist",
-          "cost": 962520.26,
-          "attendees": 4836,
-          "events": 239,
+          "profession": "psychiatrist",
+          "cost": 18884.6,
+          "attendees": 192,
+          "events": 8,
           "alcohol": 0,
-          "perperson": 199.03
+          "perperson": 98.36
         },
         {
           "profession": "pharmacist",
-          "cost": 616457.66,
-          "attendees": 12038,
-          "events": 423,
+          "cost": 667792.27,
+          "attendees": 13475,
+          "events": 479,
           "alcohol": 18,
-          "perperson": 51.21
+          "perperson": 49.56
         },
         {
-          "profession": "anaesthetist",
-          "cost": 282562.67,
-          "attendees": 12074,
-          "events": 498,
-          "alcohol": 1,
-          "perperson": 23.4
+          "profession": "oncologist",
+          "cost": 828383.13,
+          "attendees": 27418,
+          "events": 1173,
+          "alcohol": 14,
+          "perperson": 30.21
         },
         {
-          "profession": "gp",
-          "cost": 6714634.71,
-          "attendees": 65865,
-          "events": 3700,
-          "alcohol": 487,
-          "perperson": 101.95
-        },
-        {
-          "profession": "specialist",
-          "cost": 2556777.45,
-          "attendees": 29003,
-          "events": 1295,
-          "alcohol": 152,
-          "perperson": 88.16
+          "profession": "endocrinologist",
+          "cost": 3012271.62,
+          "attendees": 20923,
+          "events": 814,
+          "alcohol": 30,
+          "perperson": 143.97
         },
         {
           "profession": "physician",
-          "cost": 748839.3,
-          "attendees": 18427,
-          "events": 645,
-          "alcohol": 24,
-          "perperson": 40.64
+          "cost": 837138.28,
+          "attendees": 20591,
+          "events": 723,
+          "alcohol": 29,
+          "perperson": 40.66
+        },
+        {
+          "profession": "haematologist",
+          "cost": 260012.06,
+          "attendees": 11006,
+          "events": 473,
+          "alcohol": 5,
+          "perperson": 23.62
         }
       ],
       "conditions": [
-        {
-          "condition": "skin disorders",
-          "cost": 113510.89,
-          "attendees": 1698,
-          "events": 134,
-          "alcohol": 7,
-          "perperson": 63.72
-        },
         {
           "condition": "urology",
           "cost": 3705,
@@ -12640,12 +12688,12 @@ window.stats = {
           "perperson": 57.86
         },
         {
-          "condition": "respiratory",
-          "cost": 931795.18,
-          "attendees": 4856,
-          "events": 284,
-          "alcohol": 10,
-          "perperson": 97.15
+          "condition": "musculoskeletal",
+          "cost": 1050802.88,
+          "attendees": 5529,
+          "events": 157,
+          "alcohol": 48,
+          "perperson": 148.25
         },
         {
           "condition": "addiction",
@@ -12656,6 +12704,14 @@ window.stats = {
           "perperson": 5.07
         },
         {
+          "condition": "blood_specific_illness",
+          "cost": 291493.1,
+          "attendees": 12089,
+          "events": 530,
+          "alcohol": 6,
+          "perperson": 36.55
+        },
+        {
           "condition": "paediatrics",
           "cost": 86129.16,
           "attendees": 1227,
@@ -12664,20 +12720,12 @@ window.stats = {
           "perperson": 151.4
         },
         {
-          "condition": "cancer",
-          "cost": 891896.06,
-          "attendees": 28982,
-          "events": 1206,
-          "alcohol": 18,
-          "perperson": 38.32
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 294570.71,
-          "attendees": 13206,
-          "events": 564,
-          "alcohol": 1,
-          "perperson": 68.61
+          "condition": "nervous_system",
+          "cost": 143178.25,
+          "attendees": 3990,
+          "events": 220,
+          "alcohol": 5,
+          "perperson": 33.05
         },
         {
           "condition": "obesity",
@@ -12688,6 +12736,14 @@ window.stats = {
           "perperson": 186.44
         },
         {
+          "condition": "ageing",
+          "cost": 1555687.39,
+          "attendees": 10792,
+          "events": 361,
+          "alcohol": 10,
+          "perperson": 104
+        },
+        {
           "condition": "wound_management",
           "cost": 21716,
           "attendees": 451,
@@ -12696,44 +12752,36 @@ window.stats = {
           "perperson": 64.25
         },
         {
-          "condition": "fertility",
-          "cost": 1379215.99,
-          "attendees": 16334,
-          "events": 861,
-          "alcohol": 18,
-          "perperson": 109.26
-        },
-        {
-          "condition": "ageing",
-          "cost": 1532594.59,
-          "attendees": 10194,
-          "events": 343,
-          "alcohol": 10,
-          "perperson": 107.58
+          "condition": "allergies",
+          "cost": 347256.39,
+          "attendees": 2283,
+          "events": 75,
+          "alcohol": 4,
+          "perperson": 97.61
         },
         {
           "condition": "cosmetic_surgery",
-          "cost": 1918,
-          "attendees": 82,
-          "events": 4,
+          "cost": 2385.18,
+          "attendees": 95,
+          "events": 5,
           "alcohol": 0,
-          "perperson": 31.74
+          "perperson": 32.58
         },
         {
-          "condition": "kidney_function",
-          "cost": 86584.98,
-          "attendees": 622,
-          "events": 24,
-          "alcohol": 0,
-          "perperson": 160.03
+          "condition": "fertility",
+          "cost": 1483942.77,
+          "attendees": 18083,
+          "events": 935,
+          "alcohol": 18,
+          "perperson": 117.49
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 751032.05,
-          "attendees": 5186,
-          "events": 153,
-          "alcohol": 48,
-          "perperson": 136.42
+          "condition": "gastro",
+          "cost": 1097268.49,
+          "attendees": 6392,
+          "events": 353,
+          "alcohol": 0,
+          "perperson": 170.1
         },
         {
           "condition": "oral_health",
@@ -12744,60 +12792,68 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "vaccination",
-          "cost": 25443.97,
-          "attendees": 1545,
-          "events": 100,
+          "condition": "hypertension",
+          "cost": 805265.77,
+          "attendees": 2017,
+          "events": 54,
+          "alcohol": 2,
+          "perperson": 487.85
+        },
+        {
+          "condition": "cold_and_flu",
+          "cost": 408.18,
+          "attendees": 29,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 17.64
-        },
-        {
-          "condition": "virus",
-          "cost": 486545.25,
-          "attendees": 2397,
-          "events": 114,
-          "alcohol": 7,
-          "perperson": 140.47
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 246234.39,
-          "attendees": 10276,
-          "events": 452,
-          "alcohol": 6,
-          "perperson": 32.28
-        },
-        {
-          "condition": "endocrinology",
-          "cost": 20492.74,
-          "attendees": 412,
-          "events": 20,
-          "alcohol": 1,
-          "perperson": 54.81
-        },
-        {
-          "condition": "allergies",
-          "cost": 321987.49,
-          "attendees": 2000,
-          "events": 67,
-          "alcohol": 4,
-          "perperson": 99.62
-        },
-        {
-          "condition": "gastro",
-          "cost": 984597.52,
-          "attendees": 5418,
-          "events": 287,
-          "alcohol": 0,
-          "perperson": 156
+          "perperson": 12.96
         },
         {
           "condition": "heart_disease",
-          "cost": 2980898.01,
-          "attendees": 30100,
-          "events": 1264,
+          "cost": 3194468.98,
+          "attendees": 33026,
+          "events": 1403,
           "alcohol": 51,
-          "perperson": 56.1
+          "perperson": 62.4
+        },
+        {
+          "condition": "cancer",
+          "cost": 946229.81,
+          "attendees": 31167,
+          "events": 1306,
+          "alcohol": 18,
+          "perperson": 47.79
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 395027.97,
+          "attendees": 16758,
+          "events": 668,
+          "alcohol": 1,
+          "perperson": 70.13
+        },
+        {
+          "condition": "diabetes",
+          "cost": 3153748.3,
+          "attendees": 20539,
+          "events": 873,
+          "alcohol": 185,
+          "perperson": 131.37
+        },
+        {
+          "condition": "virus",
+          "cost": 614608.91,
+          "attendees": 3332,
+          "events": 171,
+          "alcohol": 7,
+          "perperson": 312.24
+        },
+        {
+          "condition": "endocrinology",
+          "cost": 58117.69,
+          "attendees": 872,
+          "events": 22,
+          "alcohol": 1,
+          "perperson": 57.03
         },
         {
           "condition": "parkinsons_disease",
@@ -12808,12 +12864,36 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "skin disorders",
+          "cost": 116841.09,
+          "attendees": 1733,
+          "events": 135,
+          "alcohol": 7,
+          "perperson": 63.95
+        },
+        {
           "condition": "auto_immune_disorders",
           "cost": 52890.9,
           "attendees": 699,
           "events": 40,
           "alcohol": 1,
           "perperson": 66.2
+        },
+        {
+          "condition": "kidney_function",
+          "cost": 190280.5,
+          "attendees": 1473,
+          "events": 58,
+          "alcohol": 0,
+          "perperson": 140.33
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 218533.85,
+          "attendees": 1203,
+          "events": 65,
+          "alcohol": 6,
+          "perperson": 162.64
         },
         {
           "condition": "dementia",
@@ -12824,98 +12904,74 @@ window.stats = {
           "perperson": 41.47
         },
         {
-          "condition": "diabetes",
-          "cost": 2726041.43,
-          "attendees": 18983,
-          "events": 829,
-          "alcohol": 185,
-          "perperson": 130.81
-        },
-        {
           "condition": "hiv",
-          "cost": 493641.15,
-          "attendees": 2299,
-          "events": 87,
+          "cost": 530083.08,
+          "attendees": 2508,
+          "events": 95,
           "alcohol": 14,
-          "perperson": 166.05
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 139850.97,
-          "attendees": 3886,
-          "events": 217,
-          "alcohol": 5,
-          "perperson": 33.21
-        },
-        {
-          "condition": "stroke",
-          "cost": 196,
-          "attendees": 10,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 19.6
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 212396.42,
-          "attendees": 1162,
-          "events": 63,
-          "alcohol": 6,
-          "perperson": 163.19
-        },
-        {
-          "condition": "hypertension",
-          "cost": 764123.09,
-          "attendees": 1794,
-          "events": 49,
-          "alcohol": 2,
-          "perperson": 321.89
+          "perperson": 214.12
         },
         {
           "condition": "sexual_health",
-          "cost": 978246.97,
-          "attendees": 5892,
-          "events": 262,
+          "cost": 1148758.55,
+          "attendees": 7421,
+          "events": 343,
           "alcohol": 20,
-          "perperson": 121.5
+          "perperson": 232.04
         },
         {
-          "condition": "cold_and_flu",
-          "cost": 90,
-          "attendees": 9,
-          "events": 1,
+          "condition": "respiratory",
+          "cost": 982530.5,
+          "attendees": 5231,
+          "events": 297,
+          "alcohol": 10,
+          "perperson": 129.9
+        },
+        {
+          "condition": "stroke",
+          "cost": 10413.4,
+          "attendees": 11,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 10
+          "perperson": 5118.5
+        },
+        {
+          "condition": "vaccination",
+          "cost": 29542.8,
+          "attendees": 1806,
+          "events": 118,
+          "alcohol": 0,
+          "perperson": 24.33
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 4675
+          "hospitalitycount": 5120
         },
         {
           "bin": 20,
-          "hospitalitycount": 3459
+          "hospitalitycount": 3844
         },
         {
           "bin": 50,
-          "hospitalitycount": 729
+          "hospitalitycount": 783
         },
         {
           "bin": 200,
-          "hospitalitycount": 1495
+          "hospitalitycount": 1612
         },
         {
           "bin": 1000,
-          "hospitalitycount": 139
+          "hospitalitycount": 157
         },
         {
           "bin": 10000,
-          "hospitalitycount": 28
+          "hospitalitycount": 29
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         }
       ],
       "mostExpensive": {
@@ -12925,7 +12981,9 @@ window.stats = {
         "hospitality": "Friday: Transfers from Airport to Hotel; Buffet dinner with alcoholic and non-alcoholic beverages; accommodation. Saturday: Breakfast workshops; Morning Tea; Buffet lunch with non-alcoholic beverages. Three course dinner and debate with alcoholic and non- alcoholic beverages. Accommodation. Sunday: Breakfast workshops; Morning Tea; Buffet Lunch with non-alcoholic beverages; transfers to airport. Flights: Return flights for 170 interstate attendees and 24 New Zealand Delegates. Two nights accommodation for 170 delegates only.",
         "attendees": 217,
         "hospitalitycost": 305010,
-        "hospitality_spendratio": 1405.58
+        "hospitality_spendratio": 1405.58,
+        "date": "2009-06-01T00:00:00.000Z",
+        "period": "January 2009 - June 2009"
       },
       "code": "merck",
       "name": "Merck Sharp & Dohme Australia Pty Ltd\n\n",
@@ -12936,16 +12994,16 @@ window.stats = {
       "revenueGlobal": "USD47.3b (2012)",
       "products": "595",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Merck%20Sharp%20&%20Dohme%20Australia%20Pty%20Ltd&sortPref=ascending&sortField=0&Page=1&PageMax=24&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "merckserono",
-      "cost": 2581965.03,
-      "attendees": 35238,
-      "events": 1429,
-      "alcohol": 7,
-      "completed": 6,
+      "cost": 2894859.61,
+      "attendees": 40129,
+      "events": 1608,
+      "alcohol": 8,
+      "completed": 7,
       "professions": [
         {
           "profession": "anaesthetist",
@@ -12956,14 +13014,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": 96328.91,
-          "attendees": 1489,
-          "events": 57,
-          "alcohol": 0,
-          "perperson": 64.69
-        },
-        {
           "profession": "consultant",
           "cost": 37271.53,
           "attendees": 731,
@@ -12972,20 +13022,20 @@ window.stats = {
           "perperson": 50.99
         },
         {
-          "profession": "neurologist",
-          "cost": 277165.26,
-          "attendees": 5411,
-          "events": 251,
+          "profession": "physician",
+          "cost": 15867.5,
+          "attendees": 630,
+          "events": 29,
           "alcohol": 0,
-          "perperson": 51.22
+          "perperson": 25.19
         },
         {
-          "profession": "oncologist",
-          "cost": 831715.48,
-          "attendees": 12194,
-          "events": 469,
-          "alcohol": 2,
-          "perperson": 68.21
+          "profession": "gp",
+          "cost": 427403.07,
+          "attendees": 5894,
+          "events": 189,
+          "alcohol": 0,
+          "perperson": 72.51
         },
         {
           "profession": "haematologist",
@@ -12996,12 +13046,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gp",
-          "cost": 403182.74,
-          "attendees": 5552,
-          "events": 180,
+          "profession": "pharmacist",
+          "cost": 100196.5,
+          "attendees": 1822,
+          "events": 71,
           "alcohol": 0,
-          "perperson": 72.62
+          "perperson": 54.99
+        },
+        {
+          "profession": "neurologist",
+          "cost": 306969.88,
+          "attendees": 5819,
+          "events": 270,
+          "alcohol": 0,
+          "perperson": 52.75
+        },
+        {
+          "profession": "nurse",
+          "cost": 1671831.45,
+          "attendees": 25467,
+          "events": 1026,
+          "alcohol": 5,
+          "perperson": 65.65
         },
         {
           "profession": "psychiatrist",
@@ -13012,6 +13078,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "specialist",
+          "cost": 115978.09,
+          "attendees": 1091,
+          "events": 21,
+          "alcohol": 0,
+          "perperson": 106.3
+        },
+        {
           "profession": "urologist",
           "cost": 3412,
           "attendees": 51,
@@ -13020,20 +13094,20 @@ window.stats = {
           "perperson": 66.9
         },
         {
-          "profession": "endocrinologist",
-          "cost": 42346.26,
-          "attendees": 2761,
-          "events": 149,
+          "profession": "oncologist",
+          "cost": 1018790.01,
+          "attendees": 14942,
+          "events": 567,
           "alcohol": 2,
-          "perperson": 15.34
+          "perperson": 68.18
         },
         {
-          "profession": "registrar",
-          "cost": 274953.36,
-          "attendees": 12527,
-          "events": 625,
-          "alcohol": 0,
-          "perperson": 21.95
+          "profession": "endocrinologist",
+          "cost": 42612.26,
+          "attendees": 2791,
+          "events": 150,
+          "alcohol": 2,
+          "perperson": 15.27
         },
         {
           "profession": "gastroenterologist",
@@ -13044,28 +13118,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "specialist",
-          "cost": 115821.06,
-          "attendees": 1076,
-          "events": 20,
+          "profession": "registrar",
+          "cost": 457907.76,
+          "attendees": 15063,
+          "events": 707,
           "alcohol": 0,
-          "perperson": 107.64
-        },
-        {
-          "profession": "physician",
-          "cost": 13531.4,
-          "attendees": 543,
-          "events": 25,
-          "alcohol": 0,
-          "perperson": 24.92
-        },
-        {
-          "profession": "nurse",
-          "cost": 1414349.51,
-          "attendees": 21393,
-          "events": 889,
-          "alcohol": 5,
-          "perperson": 66.11
+          "perperson": 30.4
         }
       ],
       "conditions": [
@@ -13078,14 +13136,6 @@ window.stats = {
           "perperson": 14.53
         },
         {
-          "condition": "cancer",
-          "cost": 833947.23,
-          "attendees": 12438,
-          "events": 490,
-          "alcohol": 2,
-          "perperson": 31.56
-        },
-        {
           "condition": "hiv",
           "cost": null,
           "attendees": null,
@@ -13094,28 +13144,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
-          "cost": 48774.67,
-          "attendees": 326,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 87.42
-        },
-        {
           "condition": "allergies",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 343315.93,
-          "attendees": 5814,
-          "events": 276,
-          "alcohol": 0,
-          "perperson": 41.94
         },
         {
           "condition": "vaccination",
@@ -13150,14 +13184,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paediatrics",
-          "cost": 14557.27,
-          "attendees": 1373,
-          "events": 56,
-          "alcohol": 0,
-          "perperson": 11.59
-        },
-        {
           "condition": "oral_health",
           "cost": null,
           "attendees": null,
@@ -13188,6 +13214,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 373120.55,
+          "attendees": 6222,
+          "events": 295,
+          "alcohol": 0,
+          "perperson": 44.57
         },
         {
           "condition": "skin disorders",
@@ -13222,7 +13256,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "blood_specific_illness",
+          "condition": "obesity",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -13230,12 +13264,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "cancer",
+          "cost": 1021021.76,
+          "attendees": 15186,
+          "events": 588,
+          "alcohol": 2,
+          "perperson": 31.44
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 16684.95,
+          "attendees": 1442,
+          "events": 59,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 12.72
         },
         {
           "condition": "virus",
@@ -13260,6 +13302,22 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "fertility",
+          "cost": 1067308.57,
+          "attendees": 11797,
+          "events": 417,
+          "alcohol": 3,
+          "perperson": 75.82
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 116659.04,
+          "attendees": 1041,
+          "events": 57,
+          "alcohol": 0,
+          "perperson": 81.32
         },
         {
           "condition": "hypertension",
@@ -13292,14 +13350,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "fertility",
-          "cost": 985702.27,
-          "attendees": 10206,
-          "events": 364,
-          "alcohol": 2,
-          "perperson": 73.22
         },
         {
           "condition": "endocrinology",
@@ -13318,6 +13368,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "mental_illness",
+          "cost": 59083.67,
+          "attendees": 526,
+          "events": 7,
+          "alcohol": 0,
+          "perperson": 82.3
+        },
+        {
           "condition": "ageing",
           "cost": null,
           "attendees": null,
@@ -13326,42 +13384,42 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 90476.04,
-          "attendees": 945,
-          "events": 52,
+          "condition": "blood_specific_illness",
+          "cost": 964.97,
+          "attendees": 30,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 63.57
+          "perperson": 32.17
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 373
+          "hospitalitycount": 438
         },
         {
           "bin": 20,
-          "hospitalitycount": 478
+          "hospitalitycount": 530
         },
         {
           "bin": 50,
-          "hospitalitycount": 182
+          "hospitalitycount": 201
         },
         {
           "bin": 200,
-          "hospitalitycount": 375
+          "hospitalitycount": 407
         },
         {
           "bin": 1000,
-          "hospitalitycount": 19
+          "hospitalitycount": 25
         },
         {
           "bin": 10000,
-          "hospitalitycount": 2
+          "hospitalitycount": 5
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 2
         }
       ],
       "mostExpensive": {
@@ -13371,7 +13429,9 @@ window.stats = {
         "hospitality": "Speaker flights $1;785.37 (4) Speaker accomm $440.00 (1) Transfers $500.00 Speaker dinner $1;138.00 (18) Sponsored flights $16;445.89 Sponsored accommodation $48;435.30 Day delegate package; includes morning tea; lunch & afternoon tea (188) $13;405.00",
         "attendees": 188,
         "hospitalitycost": 82149.56,
-        "hospitality_spendratio": 436.97
+        "hospitality_spendratio": 436.97,
+        "date": "2011-03-01T00:00:00.000Z",
+        "period": "October 2010 - March 2011"
       },
       "code": "merckserono",
       "name": "Merck Serono Australia Pty Ltd",
@@ -13383,79 +13443,55 @@ window.stats = {
       "products": "39",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Merck%20Serono&sortPref=ascending&sortField=0&Page=1&PageMax=2&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "(known as EMD in US)",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "mundipharma",
-      "cost": 6648517.55,
-      "attendees": 116021,
-      "events": 2964,
-      "alcohol": 948,
-      "completed": 11,
+      "cost": 7723080.96,
+      "attendees": 130923,
+      "events": 3481,
+      "alcohol": 1096,
+      "completed": 12,
       "professions": [
         {
-          "profession": "nurse",
-          "cost": 2149341.44,
-          "attendees": 48887,
-          "events": 1496,
-          "alcohol": 432,
-          "perperson": 43.97
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": 5972.59,
-          "attendees": 412,
-          "events": 14,
-          "alcohol": 0,
-          "perperson": 14.5
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": 1729.17,
-          "attendees": 69,
-          "events": 4,
-          "alcohol": 1,
-          "perperson": 25.06
-        },
-        {
-          "profession": "neurologist",
-          "cost": 5972.87,
-          "attendees": 126,
-          "events": 5,
-          "alcohol": 1,
-          "perperson": 47.4
-        },
-        {
-          "profession": "oncologist",
-          "cost": 223374.97,
-          "attendees": 12298,
-          "events": 460,
-          "alcohol": 23,
-          "perperson": 18.16
+          "profession": "specialist",
+          "cost": 1528395.42,
+          "attendees": 32849,
+          "events": 785,
+          "alcohol": 101,
+          "perperson": 46.53
         },
         {
           "profession": "registrar",
-          "cost": 906299.1,
-          "attendees": 31324,
-          "events": 1279,
-          "alcohol": 159,
-          "perperson": 28.93
+          "cost": 1092421.54,
+          "attendees": 38326,
+          "events": 1564,
+          "alcohol": 200,
+          "perperson": 28.5
         },
         {
-          "profession": "anaesthetist",
-          "cost": 1212288.24,
-          "attendees": 25907,
-          "events": 372,
-          "alcohol": 91,
-          "perperson": 46.79
+          "profession": "oncologist",
+          "cost": 261399.78,
+          "attendees": 14432,
+          "events": 562,
+          "alcohol": 27,
+          "perperson": 18.11
         },
         {
           "profession": "haematologist",
-          "cost": 2273.11,
-          "attendees": 322,
-          "events": 13,
+          "cost": 3630.1,
+          "attendees": 497,
+          "events": 22,
           "alcohol": 1,
-          "perperson": 7.06
+          "perperson": 7.3
+        },
+        {
+          "profession": "nurse",
+          "cost": 2533927.85,
+          "attendees": 57414,
+          "events": 1794,
+          "alcohol": 519,
+          "perperson": 44.13
         },
         {
           "profession": "urologist",
@@ -13466,62 +13502,86 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": 1769097.42,
-          "attendees": 27592,
-          "events": 603,
-          "alcohol": 306,
-          "perperson": 64.12
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": 143414.5,
-          "attendees": 2810,
-          "events": 29,
-          "alcohol": 5,
-          "perperson": 51.04
+          "profession": "endocrinologist",
+          "cost": 5400.32,
+          "attendees": 133,
+          "events": 6,
+          "alcohol": 2,
+          "perperson": 40.6
         },
         {
           "profession": "consultant",
-          "cost": 39452.38,
-          "attendees": 1693,
-          "events": 57,
-          "alcohol": 3,
-          "perperson": 23.3
+          "cost": 47349.11,
+          "attendees": 2128,
+          "events": 74,
+          "alcohol": 5,
+          "perperson": 22.25
         },
         {
-          "profession": "specialist",
-          "cost": 1415659.81,
-          "attendees": 28887,
-          "events": 680,
-          "alcohol": 93,
-          "perperson": 49.01
+          "profession": "gastroenterologist",
+          "cost": 7756.52,
+          "attendees": 567,
+          "events": 20,
+          "alcohol": 0,
+          "perperson": 13.68
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 1313290.49,
+          "attendees": 28953,
+          "events": 458,
+          "alcohol": 112,
+          "perperson": 45.36
         },
         {
           "profession": "physician",
-          "cost": 1064995.53,
-          "attendees": 20368,
-          "events": 382,
-          "alcohol": 48,
-          "perperson": 52.29
+          "cost": 1172575.76,
+          "attendees": 23954,
+          "events": 484,
+          "alcohol": 58,
+          "perperson": 48.95
+        },
+        {
+          "profession": "neurologist",
+          "cost": 6092.87,
+          "attendees": 141,
+          "events": 6,
+          "alcohol": 1,
+          "perperson": 43.21
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 2079034.5,
+          "attendees": 32064,
+          "events": 729,
+          "alcohol": 366,
+          "perperson": 64.84
         },
         {
           "profession": "gp",
-          "cost": 4660112.91,
-          "attendees": 52158,
-          "events": 1253,
-          "alcohol": 789,
-          "perperson": 89.35
+          "cost": 5615719.09,
+          "attendees": 59161,
+          "events": 1457,
+          "alcohol": 922,
+          "perperson": 94.92
+        },
+        {
+          "profession": "psychiatrist",
+          "cost": 161209.49,
+          "attendees": 3133,
+          "events": 43,
+          "alcohol": 8,
+          "perperson": 51.46
         }
       ],
       "conditions": [
         {
-          "condition": "blood_specific_illness",
-          "cost": 3552.66,
-          "attendees": 422,
-          "events": 15,
-          "alcohol": 1,
-          "perperson": 9.5
+          "condition": "ageing",
+          "cost": 1054997.19,
+          "attendees": 19067,
+          "events": 543,
+          "alcohol": 119,
+          "perperson": 45.26
         },
         {
           "condition": "addiction",
@@ -13556,12 +13616,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "respiratory",
-          "cost": 1558.43,
-          "attendees": 28,
-          "events": 2,
+          "condition": "blood_specific_illness",
+          "cost": 4909.65,
+          "attendees": 597,
+          "events": 24,
           "alcohol": 1,
-          "perperson": 57.61
+          "perperson": 8.81
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 7069.57,
+          "attendees": 249,
+          "events": 10,
+          "alcohol": 1,
+          "perperson": 25.76
         },
         {
           "condition": "allergies",
@@ -13572,6 +13640,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "cancer",
+          "cost": 769641.36,
+          "attendees": 20427,
+          "events": 769,
+          "alcohol": 181,
+          "perperson": 37.05
+        },
+        {
           "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
@@ -13580,28 +13656,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "mental_illness",
-          "cost": 318485.68,
-          "attendees": 5340,
-          "events": 68,
-          "alcohol": 17,
-          "perperson": 72.71
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 1232204.34,
-          "attendees": 26268,
-          "events": 377,
-          "alcohol": 91,
-          "perperson": 44.98
-        },
-        {
-          "condition": "musculoskeletal",
-          "cost": 281723.67,
-          "attendees": 2635,
-          "events": 97,
-          "alcohol": 84,
-          "perperson": 118.37
+          "condition": "nervous_system",
+          "cost": 3465122.61,
+          "attendees": 19387,
+          "events": 552,
+          "alcohol": 436,
+          "perperson": 166.42
         },
         {
           "condition": "fertility",
@@ -13636,38 +13696,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 6350.32,
-          "attendees": 219,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 26.2
-        },
-        {
-          "condition": "ageing",
-          "cost": 882692.65,
-          "attendees": 15837,
-          "events": 429,
-          "alcohol": 77,
-          "perperson": 40.04
-        },
-        {
-          "condition": "gastro",
-          "cost": 14951.91,
-          "attendees": 1680,
-          "events": 17,
-          "alcohol": 0,
-          "perperson": 18.68
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 2768273.41,
-          "attendees": 16248,
-          "events": 450,
-          "alcohol": 349,
-          "perperson": 163.47
-        },
-        {
           "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
@@ -13692,12 +13720,28 @@ window.stats = {
           "perperson": 61.06
         },
         {
+          "condition": "gastro",
+          "cost": 16735.84,
+          "attendees": 1835,
+          "events": 23,
+          "alcohol": 0,
+          "perperson": 16.91
+        },
+        {
           "condition": "kidney_function",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 2158.43,
+          "attendees": 43,
+          "events": 3,
+          "alcohol": 2,
+          "perperson": 51.74
         },
         {
           "condition": "obesity",
@@ -13732,6 +13776,14 @@ window.stats = {
           "perperson": 48.71
         },
         {
+          "condition": "anaesthesia",
+          "cost": 1333567.49,
+          "attendees": 29404,
+          "events": 464,
+          "alcohol": 112,
+          "perperson": 42.75
+        },
+        {
           "condition": "sexual_health",
           "cost": 1792.01,
           "attendees": 45,
@@ -13749,19 +13801,11 @@ window.stats = {
         },
         {
           "condition": "parkinsons_disease",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
-        },
-        {
-          "condition": "cancer",
-          "cost": 693566.71,
-          "attendees": 17677,
-          "events": 653,
-          "alcohol": 169,
-          "perperson": 39.98
+          "cost": 781.55,
+          "attendees": 11,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 71.05
         },
         {
           "condition": "stroke",
@@ -13778,28 +13822,44 @@ window.stats = {
           "events": 2,
           "alcohol": 0,
           "perperson": 14.11
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 351386.21,
+          "attendees": 6060,
+          "events": 95,
+          "alcohol": 24,
+          "perperson": 62.63
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 287663.92,
+          "attendees": 2811,
+          "events": 102,
+          "alcohol": 84,
+          "perperson": 114.76
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1309
+          "hospitalitycount": 1543
         },
         {
           "bin": 20,
-          "hospitalitycount": 548
+          "hospitalitycount": 680
         },
         {
           "bin": 50,
-          "hospitalitycount": 298
+          "hospitalitycount": 333
         },
         {
           "bin": 200,
-          "hospitalitycount": 797
+          "hospitalitycount": 911
         },
         {
           "bin": 1000,
-          "hospitalitycount": 11
+          "hospitalitycount": 13
         },
         {
           "bin": 10000,
@@ -13817,51 +13877,45 @@ window.stats = {
         "hospitality": "Day Conference Package (Incl. Morning tea; Buffet Lunch; Afternoon Tea and Non-Alcoholic Beverages)156 Delegates at $84.50 per delegate - $13;182 Light Dinner for 150 delegates at $59.92 per person - $8988 Accommodation (incl. Breakfast) for 146 non Sydney based delegates for 1 night at $210 per night - $30;660 Flights (incl. Transfers & Service Fee) for 116 delegates - $79;820 Parking for 43 delegates at $45 per day - $1;935",
         "attendees": 156,
         "hospitalitycost": 136968.7,
-        "hospitality_spendratio": 878
+        "hospitality_spendratio": 878,
+        "date": "2010-09-01T00:00:00.000Z",
+        "period": "April 2010 - September 2010"
       },
       "code": "mundipharma",
       "name": "Mundipharma Pty Ltd",
       "summary": "Established in Australia in 1998. ",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$141,384,985",
       "revenueAu": "-",
       "revenueGlobal": "USD1b",
       "products": "82",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Mundipharma&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "strangely hard to find revenue details",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "norgine",
-      "cost": 384325.74,
-      "attendees": 13968,
-      "events": 246,
-      "alcohol": 81,
-      "completed": 11,
+      "cost": 450624.74,
+      "attendees": 16338,
+      "events": 273,
+      "alcohol": 87,
+      "completed": 12,
       "professions": [
         {
           "profession": "nurse",
-          "cost": 276176.49,
-          "attendees": 10104,
-          "events": 118,
-          "alcohol": 49,
-          "perperson": 27.33
+          "cost": 294742.49,
+          "attendees": 10975,
+          "events": 130,
+          "alcohol": 50,
+          "perperson": 26.86
         },
         {
           "profession": "gp",
-          "cost": 245054.51,
-          "attendees": 8007,
-          "events": 115,
-          "alcohol": 20,
-          "perperson": 30.61
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": 66793.59,
-          "attendees": 3240,
-          "events": 69,
-          "alcohol": 19,
-          "perperson": 20.62
+          "cost": 292757.51,
+          "attendees": 9674,
+          "events": 126,
+          "alcohol": 21,
+          "perperson": 30.26
         },
         {
           "profession": "anaesthetist",
@@ -13872,14 +13926,6 @@ window.stats = {
           "perperson": 10.65
         },
         {
-          "profession": "specialist",
-          "cost": 88128.08,
-          "attendees": 3685,
-          "events": 63,
-          "alcohol": 34,
-          "perperson": 23.92
-        },
-        {
           "profession": "neurologist",
           "cost": 1033,
           "attendees": 26,
@@ -13888,12 +13934,20 @@ window.stats = {
           "perperson": 39.73
         },
         {
-          "profession": "consultant",
-          "cost": 13273,
-          "attendees": 464,
-          "events": 21,
-          "alcohol": 10,
-          "perperson": 28.61
+          "profession": "gastroenterologist",
+          "cost": 122473.59,
+          "attendees": 4923,
+          "events": 81,
+          "alcohol": 19,
+          "perperson": 24.88
+        },
+        {
+          "profession": "physician",
+          "cost": 62343.4,
+          "attendees": 1252,
+          "events": 5,
+          "alcohol": 2,
+          "perperson": 49.8
         },
         {
           "profession": "haematologist",
@@ -13904,20 +13958,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": 39315.1,
-          "attendees": 2608,
-          "events": 25,
-          "alcohol": 9,
-          "perperson": 15.07
-        },
-        {
           "profession": "oncologist",
           "cost": 6271.95,
           "attendees": 362,
           "events": 5,
           "alcohol": 4,
           "perperson": 17.33
+        },
+        {
+          "profession": "specialist",
+          "cost": 88834.08,
+          "attendees": 3768,
+          "events": 65,
+          "alcohol": 35,
+          "perperson": 23.58
         },
         {
           "profession": "psychiatrist",
@@ -13936,20 +13990,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "physician",
-          "cost": 61822.4,
-          "attendees": 1235,
-          "events": 4,
-          "alcohol": 1,
-          "perperson": 50.06
+          "profession": "registrar",
+          "cost": 31031.46,
+          "attendees": 1994,
+          "events": 47,
+          "alcohol": 19,
+          "perperson": 15.56
         },
         {
-          "profession": "registrar",
-          "cost": 29003.46,
-          "attendees": 1863,
-          "events": 39,
-          "alcohol": 19,
-          "perperson": 15.57
+          "profession": "consultant",
+          "cost": 13926,
+          "attendees": 498,
+          "events": 24,
+          "alcohol": 10,
+          "perperson": 27.96
         },
         {
           "profession": "endocrinologist",
@@ -13958,9 +14012,25 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 40482.1,
+          "attendees": 2634,
+          "events": 27,
+          "alcohol": 10,
+          "perperson": 15.37
         }
       ],
       "conditions": [
+        {
+          "condition": "mental_illness",
+          "cost": 9676.41,
+          "attendees": 1011,
+          "events": 4,
+          "alcohol": 1,
+          "perperson": 10.26
+        },
         {
           "condition": "endocrinology",
           "cost": null,
@@ -13986,28 +14056,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "gastro",
-          "cost": 87047.59,
-          "attendees": 3626,
-          "events": 87,
-          "alcohol": 24,
-          "perperson": 47.27
+          "condition": "urology",
+          "cost": 5087,
+          "attendees": 304,
+          "events": 5,
+          "alcohol": 2,
+          "perperson": 18.18
         },
         {
-          "condition": "mental_illness",
-          "cost": 9676.41,
-          "attendees": 1011,
-          "events": 4,
+          "condition": "virus",
+          "cost": 40958,
+          "attendees": 1245,
+          "events": 3,
           "alcohol": 0,
-          "perperson": 10.26
-        },
-        {
-          "condition": "ageing",
-          "cost": 203413.55,
-          "attendees": 5896,
-          "events": 59,
-          "alcohol": 20,
-          "perperson": 43.47
+          "perperson": 32.09
         },
         {
           "condition": "vaccination",
@@ -14034,12 +14096,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "virus",
-          "cost": 1344,
-          "attendees": 45,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 31.63
+          "condition": "ageing",
+          "cost": 244785.55,
+          "attendees": 7163,
+          "events": 62,
+          "alcohol": 21,
+          "perperson": 42.63
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 5189,
+          "attendees": 650,
+          "events": 8,
+          "alcohol": 2,
+          "perperson": 13.73
         },
         {
           "condition": "diabetes",
@@ -14048,6 +14118,14 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 25.64
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 6014.09,
+          "attendees": 466,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 20.08
         },
         {
           "condition": "auto_immune_disorders",
@@ -14066,6 +14144,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "cancer",
+          "cost": 64323.95,
+          "attendees": 1953,
+          "events": 19,
+          "alcohol": 9,
+          "perperson": 53.3
+        },
+        {
           "condition": "cold_and_flu",
           "cost": null,
           "attendees": null,
@@ -14080,14 +14166,6 @@ window.stats = {
           "events": 2,
           "alcohol": 0,
           "perperson": 7.96
-        },
-        {
-          "condition": "fertility",
-          "cost": 455,
-          "attendees": 221,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 2.06
         },
         {
           "condition": "skin disorders",
@@ -14112,6 +14190,14 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 10.65
+        },
+        {
+          "condition": "gastro",
+          "cost": 143380.59,
+          "attendees": 5343,
+          "events": 102,
+          "alcohol": 24,
+          "perperson": 45.13
         },
         {
           "condition": "allergies",
@@ -14154,22 +14240,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paediatrics",
-          "cost": 4514.09,
-          "attendees": 416,
-          "events": 7,
-          "alcohol": 1,
-          "perperson": 18.66
-        },
-        {
-          "condition": "urology",
-          "cost": 4639,
-          "attendees": 238,
-          "events": 4,
-          "alcohol": 2,
-          "perperson": 21.03
-        },
-        {
           "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
@@ -14210,38 +14280,30 @@ window.stats = {
           "perperson": 41.45
         },
         {
-          "condition": "nervous_system",
-          "cost": 3689,
-          "attendees": 450,
-          "events": 7,
-          "alcohol": 2,
-          "perperson": 14.62
-        },
-        {
-          "condition": "cancer",
-          "cost": 24261.95,
-          "attendees": 687,
-          "events": 17,
-          "alcohol": 9,
-          "perperson": 57.23
+          "condition": "fertility",
+          "cost": 40069,
+          "attendees": 1421,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 17.54
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 91
+          "hospitalitycount": 101
         },
         {
           "bin": 20,
-          "hospitalitycount": 54
+          "hospitalitycount": 61
         },
         {
           "bin": 50,
-          "hospitalitycount": 57
+          "hospitalitycount": 66
         },
         {
           "bin": 200,
-          "hospitalitycount": 43
+          "hospitalitycount": 44
         },
         {
           "bin": 1000,
@@ -14257,57 +14319,51 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Continence Foundation of Australia; CFA 17th Annual NationalConference on Incontinence 4 day conference. 5 - 8 November 2008.Presentations and discussion on all continence health related issues.This event was organised by a Conference Organising Committee andNorgine was not responsible for inviting the attendees or organising theducational content; accommodation or travel",
-        "venue": "Hotel Grand ChancellorHobart; Tasmania",
-        "cost": 28001.9,
-        "hospitality": "Lollies for display stand",
-        "attendees": 540,
-        "hospitalitycost": 78.69,
-        "hospitality_spendratio": 0.15
+        "description": "Australian Gastroenterology Week 2012. 16-19 October 2012. 26 Hours. AGW 2012 commenced with Clinical Updates in Viral Hepatitis; Endoscopy and Inflammatory Bowel Disease. The themes for the AGW 2012 included in endoscopy; early detection and treatment of GI cancer; endoscopic and surgical aspects of bariatric; and new imaging techniques whilst in herpetology; exciting advances from bench-to bedside in viral hepatitis was discussed. Management of the adolescent with inflammatory bowel disease; transition to adult card; issues surrounding pregnancy and conception and cancer surveillance are also focus topics. Nutrition support in patients with gastrointestinal cancer in critically ill will be explored in multidisciplinary sessions from AuSPEN. The Digestive Health Foundation symposium presented the challenges of under- nutrition in Australia. Norgine provided sponsorship to AGW 2012.",
+        "venue": "Adelaide Convention Centre Adelaide SA",
+        "cost": 39614,
+        "hospitality": "None provided",
+        "attendees": 1200,
+        "hospitalitycost": 0,
+        "hospitality_spendratio": 0,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "norgine",
       "name": "Norgine Pty Ltd",
       "summary": "Founded in 1906, now with 1,000 global employees.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "€247m (2011)",
       "products": "15",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=norgine&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "novartis",
-      "cost": 18183877.16,
-      "attendees": 253746,
-      "events": 12432,
-      "alcohol": 3739,
-      "completed": 11,
+      "cost": 21961581.12,
+      "attendees": 280182,
+      "events": 13456,
+      "alcohol": 4100,
+      "completed": 12,
       "professions": [
         {
-          "profession": "haematologist",
-          "cost": 3153599,
-          "attendees": 26071,
-          "events": 1177,
-          "alcohol": 230,
-          "perperson": 120.96
+          "profession": "physician",
+          "cost": 2584254.34,
+          "attendees": 30988,
+          "events": 1360,
+          "alcohol": 273,
+          "perperson": 83.4
         },
         {
-          "profession": "psychiatrist",
-          "cost": 144655,
-          "attendees": 3182,
-          "events": 149,
-          "alcohol": 56,
-          "perperson": 45.46
-        },
-        {
-          "profession": "neurologist",
-          "cost": 770486,
-          "attendees": 10122,
-          "events": 429,
-          "alcohol": 142,
-          "perperson": 76.12
+          "profession": "gp",
+          "cost": 7685236.78,
+          "attendees": 64933,
+          "events": 3383,
+          "alcohol": 1890,
+          "perperson": 118.36
         },
         {
           "profession": "anaesthetist",
@@ -14326,12 +14382,36 @@ window.stats = {
           "perperson": 28
         },
         {
+          "profession": "registrar",
+          "cost": 2699768,
+          "attendees": 95308,
+          "events": 4737,
+          "alcohol": 630,
+          "perperson": 28.33
+        },
+        {
+          "profession": "oncologist",
+          "cost": 2576463,
+          "attendees": 61710,
+          "events": 3289,
+          "alcohol": 489,
+          "perperson": 41.75
+        },
+        {
           "profession": "nurse",
-          "cost": 4091371.82,
-          "attendees": 102027,
-          "events": 5036,
-          "alcohol": 943,
-          "perperson": 40.1
+          "cost": 4772852,
+          "attendees": 115274,
+          "events": 5601,
+          "alcohol": 1107,
+          "perperson": 41.4
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 1038441,
+          "attendees": 16702,
+          "events": 633,
+          "alcohol": 256,
+          "perperson": 62.17
         },
         {
           "profession": "consultant",
@@ -14342,78 +14422,62 @@ window.stats = {
           "perperson": 24.75
         },
         {
-          "profession": "gp",
-          "cost": 6853469.82,
-          "attendees": 61129,
-          "events": 3180,
-          "alcohol": 1764,
-          "perperson": 112.11
+          "profession": "haematologist",
+          "cost": 3394010,
+          "attendees": 29812,
+          "events": 1290,
+          "alcohol": 260,
+          "perperson": 113.85
+        },
+        {
+          "profession": "psychiatrist",
+          "cost": 146156,
+          "attendees": 3182,
+          "events": 149,
+          "alcohol": 56,
+          "perperson": 45.93
         },
         {
           "profession": "specialist",
-          "cost": 796945,
-          "attendees": 9621,
-          "events": 362,
-          "alcohol": 125,
-          "perperson": 82.83
+          "cost": 1089139,
+          "attendees": 12046,
+          "events": 403,
+          "alcohol": 149,
+          "perperson": 90.41
         },
         {
           "profession": "gastroenterologist",
-          "cost": 238191,
-          "attendees": 5271,
-          "events": 210,
-          "alcohol": 32,
-          "perperson": 45.19
+          "cost": 255572,
+          "attendees": 6267,
+          "events": 257,
+          "alcohol": 46,
+          "perperson": 40.78
         },
         {
-          "profession": "physician",
-          "cost": 1630458.34,
-          "attendees": 26690,
-          "events": 1176,
-          "alcohol": 229,
-          "perperson": 61.09
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 950791,
-          "attendees": 14747,
-          "events": 560,
-          "alcohol": 228,
-          "perperson": 64.47
-        },
-        {
-          "profession": "registrar",
-          "cost": 2466547,
-          "attendees": 85964,
-          "events": 4328,
-          "alcohol": 532,
-          "perperson": 28.69
-        },
-        {
-          "profession": "oncologist",
-          "cost": 2424297,
-          "attendees": 56132,
-          "events": 3008,
-          "alcohol": 428,
-          "perperson": 43.19
+          "profession": "neurologist",
+          "cost": 1134386,
+          "attendees": 10960,
+          "events": 461,
+          "alcohol": 153,
+          "perperson": 103.5
         },
         {
           "profession": "endocrinologist",
-          "cost": 2928786,
-          "attendees": 23120,
-          "events": 1064,
-          "alcohol": 339,
-          "perperson": 126.68
+          "cost": 3741824,
+          "attendees": 25468,
+          "events": 1173,
+          "alcohol": 365,
+          "perperson": 146.92
         }
       ],
       "conditions": [
         {
-          "condition": "hypertension",
-          "cost": 3219233,
-          "attendees": 27824,
-          "events": 1362,
-          "alcohol": 573,
-          "perperson": 72.46
+          "condition": "heart_disease",
+          "cost": 2185734,
+          "attendees": 22658,
+          "events": 995,
+          "alcohol": 287,
+          "perperson": 55.13
         },
         {
           "condition": "vaccination",
@@ -14424,20 +14488,12 @@ window.stats = {
           "perperson": 82.79
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 74572,
-          "attendees": 1763,
-          "events": 90,
-          "alcohol": 21,
-          "perperson": 52.52
-        },
-        {
-          "condition": "parkinsons_disease",
-          "cost": 594758,
-          "attendees": 7040,
-          "events": 303,
-          "alcohol": 99,
-          "perperson": 50.85
+          "condition": "sexual_health",
+          "cost": 813586,
+          "attendees": 10216,
+          "events": 555,
+          "alcohol": 183,
+          "perperson": 57.03
         },
         {
           "condition": "stroke",
@@ -14456,12 +14512,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 2346619,
-          "attendees": 22813,
-          "events": 1194,
-          "alcohol": 459,
-          "perperson": 72.82
+          "condition": "respiratory",
+          "cost": 4863265.78,
+          "attendees": 44169,
+          "events": 2166,
+          "alcohol": 882,
+          "perperson": 77.36
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 1142646,
+          "attendees": 11309,
+          "events": 480,
+          "alcohol": 156,
+          "perperson": 94.42
         },
         {
           "condition": "paediatrics",
@@ -14472,12 +14536,20 @@ window.stats = {
           "perperson": 23.63
         },
         {
-          "condition": "allergies",
-          "cost": 83309,
-          "attendees": 3458,
-          "events": 162,
-          "alcohol": 22,
-          "perperson": 22.76
+          "condition": "musculoskeletal",
+          "cost": 2423273,
+          "attendees": 23357,
+          "events": 1218,
+          "alcohol": 468,
+          "perperson": 74.34
+        },
+        {
+          "condition": "hypertension",
+          "cost": 3692208.78,
+          "attendees": 29228,
+          "events": 1423,
+          "alcohol": 587,
+          "perperson": 77.11
         },
         {
           "condition": "oral_health",
@@ -14496,6 +14568,46 @@ window.stats = {
           "perperson": 9.38
         },
         {
+          "condition": "parkinsons_disease",
+          "cost": 622284,
+          "attendees": 7598,
+          "events": 320,
+          "alcohol": 104,
+          "perperson": 77.19
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 479658,
+          "attendees": 6708,
+          "events": 281,
+          "alcohol": 85,
+          "perperson": 40.52
+        },
+        {
+          "condition": "gastro",
+          "cost": 269889,
+          "attendees": 6554,
+          "events": 264,
+          "alcohol": 48,
+          "perperson": 61.31
+        },
+        {
+          "condition": "urology",
+          "cost": 153652,
+          "attendees": 6914,
+          "events": 386,
+          "alcohol": 51,
+          "perperson": 15.72
+        },
+        {
+          "condition": "allergies",
+          "cost": 119794,
+          "attendees": 5024,
+          "events": 227,
+          "alcohol": 33,
+          "perperson": 22.59
+        },
+        {
           "condition": "kidney_function",
           "cost": 2477,
           "attendees": 61,
@@ -14504,20 +14616,44 @@ window.stats = {
           "perperson": 36.06
         },
         {
-          "condition": "cancer",
-          "cost": 3467407,
-          "attendees": 72256,
-          "events": 3750,
-          "alcohol": 582,
-          "perperson": 64.75
+          "condition": "diabetes",
+          "cost": 3808710,
+          "attendees": 30042,
+          "events": 1495,
+          "alcohol": 647,
+          "perperson": 103.19
         },
         {
-          "condition": "ageing",
-          "cost": 1879210,
-          "attendees": 22064,
-          "events": 872,
-          "alcohol": 325,
-          "perperson": 49.98
+          "condition": "blood_specific_illness",
+          "cost": 3549797,
+          "attendees": 30866,
+          "events": 1343,
+          "alcohol": 272,
+          "perperson": 170.67
+        },
+        {
+          "condition": "dementia",
+          "cost": 1016388,
+          "attendees": 9675,
+          "events": 437,
+          "alcohol": 137,
+          "perperson": 62.51
+        },
+        {
+          "condition": "cancer",
+          "cost": 3908647,
+          "attendees": 78974,
+          "events": 4062,
+          "alcohol": 649,
+          "perperson": 65.65
+        },
+        {
+          "condition": "virus",
+          "cost": 269366,
+          "attendees": 4497,
+          "events": 298,
+          "alcohol": 95,
+          "perperson": 36.85
         },
         {
           "condition": "wound_management",
@@ -14536,52 +14672,12 @@ window.stats = {
           "perperson": 18.3
         },
         {
-          "condition": "virus",
-          "cost": 269197,
-          "attendees": 4495,
-          "events": 297,
-          "alcohol": 94,
-          "perperson": 36.69
-        },
-        {
           "condition": "fertility",
           "cost": 4548,
           "attendees": 116,
           "events": 5,
           "alcohol": 2,
           "perperson": 33.54
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 790640,
-          "attendees": 10003,
-          "events": 549,
-          "alcohol": 179,
-          "perperson": 55.66
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 3178235,
-          "attendees": 27027,
-          "events": 1224,
-          "alcohol": 241,
-          "perperson": 160.43
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 472412,
-          "attendees": 6617,
-          "events": 277,
-          "alcohol": 84,
-          "perperson": 40.05
-        },
-        {
-          "condition": "diabetes",
-          "cost": 3447843,
-          "attendees": 26527,
-          "events": 1321,
-          "alcohol": 584,
-          "perperson": 98.52
         },
         {
           "condition": "addiction",
@@ -14592,44 +14688,20 @@ window.stats = {
           "perperson": 10.41
         },
         {
+          "condition": "ageing",
+          "cost": 1915088,
+          "attendees": 22976,
+          "events": 894,
+          "alcohol": 331,
+          "perperson": 49.82
+        },
+        {
           "condition": "cold_and_flu",
           "cost": 2565,
           "attendees": 41,
           "events": 1,
           "alcohol": 1,
           "perperson": 62.56
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 778746,
-          "attendees": 10471,
-          "events": 448,
-          "alcohol": 145,
-          "perperson": 48.13
-        },
-        {
-          "condition": "dementia",
-          "cost": 989570,
-          "attendees": 9638,
-          "events": 435,
-          "alcohol": 137,
-          "perperson": 41.15
-        },
-        {
-          "condition": "gastro",
-          "cost": 252508,
-          "attendees": 5558,
-          "events": 217,
-          "alcohol": 34,
-          "perperson": 71.27
-        },
-        {
-          "condition": "respiratory",
-          "cost": 3933100,
-          "attendees": 38680,
-          "events": 1911,
-          "alcohol": 788,
-          "perperson": 73.41
         },
         {
           "condition": "obesity",
@@ -14648,68 +14720,62 @@ window.stats = {
           "perperson": 23.83
         },
         {
-          "condition": "heart_disease",
-          "cost": 1537956,
-          "attendees": 21585,
-          "events": 951,
-          "alcohol": 277,
-          "perperson": 48.49
-        },
-        {
           "condition": "skin disorders",
-          "cost": 96351,
-          "attendees": 2543,
-          "events": 137,
-          "alcohol": 28,
-          "perperson": 106.37
+          "cost": 97609,
+          "attendees": 2595,
+          "events": 140,
+          "alcohol": 31,
+          "perperson": 104.75
         },
         {
-          "condition": "urology",
-          "cost": 147297,
-          "attendees": 6714,
-          "events": 377,
-          "alcohol": 50,
-          "perperson": 15.46
+          "condition": "auto_immune_disorders",
+          "cost": 95071,
+          "attendees": 2364,
+          "events": 120,
+          "alcohol": 32,
+          "perperson": 51.17
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3196
+          "hospitalitycount": 3580
         },
         {
           "bin": 20,
-          "hospitalitycount": 5633
+          "hospitalitycount": 5989
         },
         {
           "bin": 50,
-          "hospitalitycount": 1223
+          "hospitalitycount": 1302
         },
         {
           "bin": 200,
-          "hospitalitycount": 2218
+          "hospitalitycount": 2401
         },
         {
           "bin": 1000,
-          "hospitalitycount": 113
+          "hospitalitycount": 124
         },
         {
           "bin": 10000,
-          "hospitalitycount": 37
+          "hospitalitycount": 46
         },
         {
           "bin": 100000,
-          "hospitalitycount": 12
+          "hospitalitycount": 14
         }
       ],
       "mostExpensive": {
-        "description": "Weekend Meeting on Hypertension; Diabetes 2 days duration 12.0 hours educational content",
-        "venue": "Grand Hyatt Melbourne VIC",
-        "cost": 353413,
-        "hospitality": "Full Day Conference Pax & Alcoholic And Non-Alcoholic beverages provided",
-        "attendees": 123,
-        "hospitalitycost": 100815,
-        "hospitality_spendratio": 819.63
+        "description": "11 hours of education - Dimensions - Clinical meeting about cardiovascular health over 2 days (February 7 and 8; 2009)",
+        "venue": "Hilton George Street; Sydney; NSW",
+        "cost": 647920,
+        "hospitality": "2 course dinner with alcoholic and non alcoholic beverages provided. Light lunch with non-alcoholic beverages provided. Morning and afternoon tea with non-alcoholic beverages provided.",
+        "attendees": 251,
+        "hospitalitycost": 347984,
+        "hospitality_spendratio": 1386.39,
+        "date": "2009-06-01T00:00:00.000Z",
+        "period": "January 2009 - June 2009"
       },
       "code": "novartis",
       "name": "Novartis Pharmaceuticals Australia Pty Ltd",
@@ -14725,19 +14791,35 @@ window.stats = {
     },
     {
       "company": "novo",
-      "cost": 6078570.37,
-      "attendees": 90200,
-      "events": 2876,
-      "alcohol": 645,
-      "completed": 11,
+      "cost": 6742579.55,
+      "attendees": 96575,
+      "events": 3040,
+      "alcohol": 694,
+      "completed": 12,
       "professions": [
         {
-          "profession": "pharmacist",
-          "cost": 182604.52,
-          "attendees": 6135,
-          "events": 226,
-          "alcohol": 58,
-          "perperson": 29.76
+          "profession": "endocrinologist",
+          "cost": 3708269.75,
+          "attendees": 45669,
+          "events": 1246,
+          "alcohol": 312,
+          "perperson": 81.2
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 145964.45,
+          "attendees": 7460,
+          "events": 216,
+          "alcohol": 12,
+          "perperson": 19.57
+        },
+        {
+          "profession": "registrar",
+          "cost": 2729805.16,
+          "attendees": 42863,
+          "events": 1463,
+          "alcohol": 184,
+          "perperson": 63.69
         },
         {
           "profession": "neurologist",
@@ -14746,22 +14828,6 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 88.78
-        },
-        {
-          "profession": "registrar",
-          "cost": 2592882.52,
-          "attendees": 39789,
-          "events": 1391,
-          "alcohol": 172,
-          "perperson": 65.17
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": 145785.72,
-          "attendees": 7440,
-          "events": 215,
-          "alcohol": 12,
-          "perperson": 19.59
         },
         {
           "profession": "oncologist",
@@ -14773,11 +14839,19 @@ window.stats = {
         },
         {
           "profession": "nurse",
-          "cost": 1980799.55,
-          "attendees": 40671,
-          "events": 978,
-          "alcohol": 162,
-          "perperson": 48.7
+          "cost": 2102572.17,
+          "attendees": 43919,
+          "events": 1029,
+          "alcohol": 171,
+          "perperson": 47.87
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 192377.87,
+          "attendees": 6474,
+          "events": 234,
+          "alcohol": 60,
+          "perperson": 29.72
         },
         {
           "profession": "psychiatrist",
@@ -14796,6 +14870,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "gp",
+          "cost": 2498902.11,
+          "attendees": 23325,
+          "events": 658,
+          "alcohol": 392,
+          "perperson": 107.13
+        },
+        {
+          "profession": "haematologist",
+          "cost": 582106.76,
+          "attendees": 9156,
+          "events": 238,
+          "alcohol": 38,
+          "perperson": 63.58
+        },
+        {
           "profession": "specialist",
           "cost": 62779.08,
           "attendees": 3177,
@@ -14804,12 +14894,12 @@ window.stats = {
           "perperson": 19.76
         },
         {
-          "profession": "endocrinologist",
-          "cost": 3621207.56,
-          "attendees": 43512,
-          "events": 1165,
-          "alcohol": 298,
-          "perperson": 83.22
+          "profession": "physician",
+          "cost": 1126940.21,
+          "attendees": 14068,
+          "events": 428,
+          "alcohol": 112,
+          "perperson": 80.11
         },
         {
           "profession": "gastroenterologist",
@@ -14826,48 +14916,16 @@ window.stats = {
           "events": 29,
           "alcohol": 3,
           "perperson": 34.24
-        },
-        {
-          "profession": "gp",
-          "cost": 2026357.93,
-          "attendees": 21369,
-          "events": 605,
-          "alcohol": 358,
-          "perperson": 94.83
-        },
-        {
-          "profession": "haematologist",
-          "cost": 546848.1,
-          "attendees": 7283,
-          "events": 230,
-          "alcohol": 38,
-          "perperson": 75.09
-        },
-        {
-          "profession": "physician",
-          "cost": 1071888.46,
-          "attendees": 13378,
-          "events": 399,
-          "alcohol": 105,
-          "perperson": 80.12
         }
       ],
       "conditions": [
         {
-          "condition": "mental_illness",
-          "cost": 177278.64,
-          "attendees": 1227,
-          "events": 39,
-          "alcohol": 14,
-          "perperson": 115
-        },
-        {
-          "condition": "endocrinology",
-          "cost": 224392,
-          "attendees": 2335,
-          "events": 125,
-          "alcohol": 10,
-          "perperson": 34.88
+          "condition": "allergies",
+          "cost": 26615.5,
+          "attendees": 66,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 553.49
         },
         {
           "condition": "urology",
@@ -14878,12 +14936,12 @@ window.stats = {
           "perperson": 35.49
         },
         {
-          "condition": "diabetes",
-          "cost": 4715750.71,
-          "attendees": 49474,
-          "events": 1524,
-          "alcohol": 498,
-          "perperson": 112.29
+          "condition": "hypertension",
+          "cost": 140523.26,
+          "attendees": 504,
+          "events": 14,
+          "alcohol": 4,
+          "perperson": 192.49
         },
         {
           "condition": "vaccination",
@@ -14894,14 +14952,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "obesity",
-          "cost": 384859.77,
-          "attendees": 1105,
-          "events": 32,
-          "alcohol": 9,
-          "perperson": 247.58
-        },
-        {
           "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
@@ -14910,20 +14960,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "paediatrics",
-          "cost": 204405.84,
-          "attendees": 4909,
-          "events": 58,
-          "alcohol": 17,
-          "perperson": 72.51
-        },
-        {
-          "condition": "ageing",
-          "cost": 660067.93,
-          "attendees": 3632,
-          "events": 159,
-          "alcohol": 94,
-          "perperson": 180.39
+          "condition": "anaesthesia",
+          "cost": 147838.67,
+          "attendees": 7644,
+          "events": 219,
+          "alcohol": 12,
+          "perperson": 13.76
         },
         {
           "condition": "kidney_function",
@@ -14934,6 +14976,14 @@ window.stats = {
           "perperson": 39
         },
         {
+          "condition": "mental_illness",
+          "cost": 203781.64,
+          "attendees": 1251,
+          "events": 40,
+          "alcohol": 15,
+          "perperson": 139.74
+        },
+        {
           "condition": "skin disorders",
           "cost": 1584.98,
           "attendees": 19,
@@ -14942,12 +14992,20 @@ window.stats = {
           "perperson": 83.42
         },
         {
-          "condition": "hypertension",
-          "cost": 132909.26,
-          "attendees": 435,
-          "events": 12,
-          "alcohol": 3,
-          "perperson": 210.49
+          "condition": "endocrinology",
+          "cost": 225004.08,
+          "attendees": 2380,
+          "events": 129,
+          "alcohol": 10,
+          "perperson": 34.19
+        },
+        {
+          "condition": "ageing",
+          "cost": 831862.13,
+          "attendees": 3981,
+          "events": 170,
+          "alcohol": 103,
+          "perperson": 195.46
         },
         {
           "condition": "oral_health",
@@ -14966,36 +15024,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "fertility",
-          "cost": 864587.09,
-          "attendees": 6616,
-          "events": 68,
-          "alcohol": 30,
-          "perperson": 163.38
-        },
-        {
-          "condition": "respiratory",
-          "cost": 218591.8,
-          "attendees": 681,
-          "events": 17,
-          "alcohol": 4,
-          "perperson": 201.04
-        },
-        {
           "condition": "cancer",
-          "cost": 306536.19,
-          "attendees": 1299,
-          "events": 39,
-          "alcohol": 7,
-          "perperson": 126.09
+          "cost": 313361.19,
+          "attendees": 1336,
+          "events": 40,
+          "alcohol": 8,
+          "perperson": 127.55
         },
         {
-          "condition": "anaesthesia",
-          "cost": 147659.94,
-          "attendees": 7624,
-          "events": 218,
-          "alcohol": 12,
-          "perperson": 13.78
+          "condition": "blood_specific_illness",
+          "cost": 611971.95,
+          "attendees": 10164,
+          "events": 288,
+          "alcohol": 40,
+          "perperson": 54.16
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 555268.09,
+          "attendees": 2432,
+          "events": 72,
+          "alcohol": 10,
+          "perperson": 166.34
         },
         {
           "condition": "wound_management",
@@ -15006,14 +15056,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 532562.7,
-          "attendees": 2119,
-          "events": 67,
-          "alcohol": 10,
-          "perperson": 175.31
-        },
-        {
           "condition": "musculoskeletal",
           "cost": 273209.78,
           "attendees": 438,
@@ -15022,12 +15064,28 @@ window.stats = {
           "perperson": 400.14
         },
         {
+          "condition": "obesity",
+          "cost": 461265.27,
+          "attendees": 1245,
+          "events": 34,
+          "alcohol": 10,
+          "perperson": 262.53
+        },
+        {
+          "condition": "diabetes",
+          "cost": 5301209.37,
+          "attendees": 52479,
+          "events": 1628,
+          "alcohol": 541,
+          "perperson": 121.06
+        },
+        {
           "condition": "dementia",
-          "cost": 235.71,
-          "attendees": 25,
-          "events": 1,
+          "cost": 685.71,
+          "attendees": 55,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 9.43
+          "perperson": 12.22
         },
         {
           "condition": "sexual_health",
@@ -15046,12 +15104,36 @@ window.stats = {
           "perperson": 10.68
         },
         {
+          "condition": "fertility",
+          "cost": 1047791.81,
+          "attendees": 7050,
+          "events": 80,
+          "alcohol": 37,
+          "perperson": 199.79
+        },
+        {
           "condition": "addiction",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 226551.74,
+          "attendees": 786,
+          "events": 21,
+          "alcohol": 5,
+          "perperson": 171.77
+        },
+        {
+          "condition": "paediatrics",
+          "cost": 276836.22,
+          "attendees": 5090,
+          "events": 61,
+          "alcohol": 18,
+          "perperson": 84.3
         },
         {
           "condition": "virus",
@@ -15086,28 +15168,12 @@ window.stats = {
           "perperson": 431.27
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 576713.29,
-          "attendees": 8291,
-          "events": 280,
-          "alcohol": 40,
-          "perperson": 55.1
-        },
-        {
           "condition": "nervous_system",
           "cost": 44827.58,
           "attendees": 318,
           "events": 5,
           "alcohol": 0,
           "perperson": 220.95
-        },
-        {
-          "condition": "allergies",
-          "cost": 112.5,
-          "attendees": 42,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 2.68
         },
         {
           "condition": "parkinsons_disease",
@@ -15121,23 +15187,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1082
+          "hospitalitycount": 1138
         },
         {
           "bin": 20,
-          "hospitalitycount": 971
+          "hospitalitycount": 1026
         },
         {
           "bin": 50,
-          "hospitalitycount": 210
+          "hospitalitycount": 214
         },
         {
           "bin": 200,
-          "hospitalitycount": 580
+          "hospitalitycount": 624
         },
         {
           "bin": 1000,
-          "hospitalitycount": 27
+          "hospitalitycount": 32
         },
         {
           "bin": 10000,
@@ -15149,13 +15215,15 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Novo Nordisk Scientific and Clinical Update Meeting. Presentations by three key international speakers alongside a faculty of Australian endocrinologists. Topics included: Emerging science in the incretin field; obesity and diabetes; cardiovascular disease risk and type 2 diabetes; genetics; pharmacogenetics and beta cells and shifting the paradigm of diabetes treatment. 9.5 hours of education",
-        "venue": "Novotel Twin Waters Queensland",
-        "cost": 163350.93,
-        "hospitality": "Day 1: Buffet dinner in private room with alcoholic and non alcoholic drinks for 80 delegates at $85.00 each. Day 2: Morning tea; buffet lunch and afternoon tea with non alcoholic drinks for 83 delegates at $54.54 each. 3 course dinner with alcoholic and non alcoholic drinks provided in private function room at $90.45 each. Day 3: Morning tea; boxed lunch with non alcoholic drinks for 82 delegates at $50.90 each. 2 night accommodation and breakfast for 80 interstate or regional delegates; 1 night accommodation and breakfast for 6 delegates. Return flights and airport transfers for 68 interstate or regional delegates.",
-        "attendees": 90,
-        "hospitalitycost": 93996.06,
-        "hospitality_spendratio": 1044.4
+        "description": "1.5 hour presentation on insulin therapy in type 2 diabetes & renal disease & glycaemic management",
+        "venue": "Quills Restaurant Bendigo VIC",
+        "cost": 214141,
+        "hospitality": "3 course meal with alcoholic and non alcoholic beverages provided in private function room",
+        "attendees": 15,
+        "hospitalitycost": 1284.09,
+        "hospitality_spendratio": 85.61,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "novo",
       "name": "Novo Nordisk Pharmaceuticals Pty Ltd",
@@ -15166,40 +15234,56 @@ window.stats = {
       "revenueGlobal": "DKK78b (2012)",
       "products": "79",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Novo&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "nycomed",
-      "cost": 904329.63,
-      "attendees": 19378,
-      "events": 822,
+      "cost": 991594.09,
+      "attendees": 22339,
+      "events": 960,
       "alcohol": 12,
-      "completed": 8,
+      "completed": 9,
       "professions": [
         {
           "profession": "nurse",
-          "cost": 78245.39,
-          "attendees": 5174,
-          "events": 218,
+          "cost": 88448.19,
+          "attendees": 5960,
+          "events": 256,
           "alcohol": 1,
-          "perperson": 15.12
-        },
-        {
-          "profession": "physician",
-          "cost": 53544.11,
-          "attendees": 3996,
-          "events": 175,
-          "alcohol": 1,
-          "perperson": 13.4
+          "perperson": 14.84
         },
         {
           "profession": "pharmacist",
-          "cost": 31011.91,
-          "attendees": 840,
-          "events": 34,
+          "cost": 31136.55,
+          "attendees": 859,
+          "events": 35,
           "alcohol": 0,
-          "perperson": 36.92
+          "perperson": 36.25
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 302039.83,
+          "attendees": 7049,
+          "events": 310,
+          "alcohol": 5,
+          "perperson": 42.85
+        },
+        {
+          "profession": "specialist",
+          "cost": 59391.54,
+          "attendees": 2321,
+          "events": 99,
+          "alcohol": 1,
+          "perperson": 25.59
+        },
+        {
+          "profession": "oncologist",
+          "cost": 15102.96,
+          "attendees": 948,
+          "events": 36,
+          "alcohol": 0,
+          "perperson": 15.93
         },
         {
           "profession": "anaesthetist",
@@ -15210,12 +15294,20 @@ window.stats = {
           "perperson": 14.67
         },
         {
-          "profession": "psychiatrist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "profession": "registrar",
+          "cost": 223351.31,
+          "attendees": 10832,
+          "events": 519,
+          "alcohol": 1,
+          "perperson": 20.62
+        },
+        {
+          "profession": "consultant",
+          "cost": 33463.71,
+          "attendees": 2195,
+          "events": 111,
+          "alcohol": 1,
+          "perperson": 15.25
         },
         {
           "profession": "neurologist",
@@ -15226,14 +15318,6 @@ window.stats = {
           "perperson": 8
         },
         {
-          "profession": "specialist",
-          "cost": 43956.28,
-          "attendees": 1720,
-          "events": 77,
-          "alcohol": 1,
-          "perperson": 25.56
-        },
-        {
           "profession": "urologist",
           "cost": null,
           "attendees": null,
@@ -15242,36 +15326,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "registrar",
-          "cost": 206090.52,
-          "attendees": 9329,
-          "events": 443,
-          "alcohol": 1,
-          "perperson": 22.09
-        },
-        {
           "profession": "gp",
-          "cost": 526936.04,
-          "attendees": 5944,
-          "events": 231,
+          "cost": 563760.42,
+          "attendees": 6658,
+          "events": 256,
           "alcohol": 5,
-          "perperson": 88.65
+          "perperson": 84.67
         },
         {
-          "profession": "oncologist",
-          "cost": 9132.85,
-          "attendees": 629,
-          "events": 24,
+          "profession": "psychiatrist",
+          "cost": 0,
+          "attendees": 44,
+          "events": 1,
           "alcohol": 0,
-          "perperson": 14.52
+          "perperson": 0
         },
         {
-          "profession": "gastroenterologist",
-          "cost": 290374.97,
-          "attendees": 6430,
-          "events": 273,
-          "alcohol": 5,
-          "perperson": 45.16
+          "profession": "physician",
+          "cost": 78458.31,
+          "attendees": 5360,
+          "events": 236,
+          "alcohol": 1,
+          "perperson": 14.64
         },
         {
           "profession": "endocrinologist",
@@ -15280,14 +15356,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "profession": "consultant",
-          "cost": 27848.09,
-          "attendees": 1814,
-          "events": 96,
-          "alcohol": 1,
-          "perperson": 15.35
         },
         {
           "profession": "haematologist",
@@ -15316,28 +15384,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 10917.15,
-          "attendees": 618,
-          "events": 29,
-          "alcohol": 0,
-          "perperson": 25.45
-        },
-        {
           "condition": "hiv",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "vaccination",
-          "cost": 3221,
-          "attendees": 52,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 62.79
         },
         {
           "condition": "diabetes",
@@ -15348,6 +15400,14 @@ window.stats = {
           "perperson": 95.24
         },
         {
+          "condition": "heart_disease",
+          "cost": 11280.79,
+          "attendees": 678,
+          "events": 30,
+          "alcohol": 0,
+          "perperson": 24.81
+        },
+        {
           "condition": "urology",
           "cost": 2038.98,
           "attendees": 27,
@@ -15356,12 +15416,12 @@ window.stats = {
           "perperson": 75.52
         },
         {
-          "condition": "mental_illness",
-          "cost": 943.73,
-          "attendees": 101,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 9.56
+          "condition": "gastro",
+          "cost": 453066.92,
+          "attendees": 7975,
+          "events": 347,
+          "alcohol": 7,
+          "perperson": 35.29
         },
         {
           "condition": "paediatrics",
@@ -15380,6 +15440,14 @@ window.stats = {
           "perperson": 12.24
         },
         {
+          "condition": "mental_illness",
+          "cost": 943.73,
+          "attendees": 145,
+          "events": 5,
+          "alcohol": 0,
+          "perperson": 7.65
+        },
+        {
           "condition": "nervous_system",
           "cost": 5381.51,
           "attendees": 317,
@@ -15394,14 +15462,6 @@ window.stats = {
           "events": 7,
           "alcohol": 0,
           "perperson": 21.77
-        },
-        {
-          "condition": "respiratory",
-          "cost": 49569.14,
-          "attendees": 1343,
-          "events": 53,
-          "alcohol": 2,
-          "perperson": 44.83
         },
         {
           "condition": "obesity",
@@ -15436,20 +15496,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "allergies",
-          "cost": 4460.73,
-          "attendees": 182,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 20.01
-        },
-        {
           "condition": "sexual_health",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "respiratory",
+          "cost": 59578.4,
+          "attendees": 1773,
+          "events": 72,
+          "alcohol": 2,
+          "perperson": 37.94
         },
         {
           "condition": "cosmetic_surgery",
@@ -15466,14 +15526,6 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 81.23
-        },
-        {
-          "condition": "cancer",
-          "cost": 123569.52,
-          "attendees": 1095,
-          "events": 37,
-          "alcohol": 0,
-          "perperson": 58.67
         },
         {
           "condition": "wound_management",
@@ -15508,20 +15560,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "gastro",
-          "cost": 441017.56,
-          "attendees": 7311,
-          "events": 308,
-          "alcohol": 7,
-          "perperson": 38.08
-        },
-        {
           "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "cancer",
+          "cost": 131597.63,
+          "attendees": 1435,
+          "events": 50,
+          "alcohol": 0,
+          "perperson": 48.24
         },
         {
           "condition": "addiction",
@@ -15548,6 +15600,22 @@ window.stats = {
           "perperson": 23.9
         },
         {
+          "condition": "vaccination",
+          "cost": 8445.76,
+          "attendees": 122,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 165.34
+        },
+        {
+          "condition": "allergies",
+          "cost": 13457.31,
+          "attendees": 450,
+          "events": 20,
+          "alcohol": 0,
+          "perperson": 67.65
+        },
+        {
           "condition": "virus",
           "cost": 54755,
           "attendees": 517,
@@ -15567,19 +15635,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 360
+          "hospitalitycount": 428
         },
         {
           "bin": 20,
-          "hospitalitycount": 204
+          "hospitalitycount": 249
         },
         {
           "bin": 50,
-          "hospitalitycount": 109
+          "hospitalitycount": 113
         },
         {
           "bin": 200,
-          "hospitalitycount": 142
+          "hospitalitycount": 163
         },
         {
           "bin": 1000,
@@ -15601,7 +15669,9 @@ window.stats = {
         "hospitality": "Accommodation with breakfast for 1 night for 120; Morning Tea; Lunch; Afternoon Tea & dinner with beverages for 120.",
         "attendees": 120,
         "hospitalitycost": 64130,
-        "hospitality_spendratio": 534.42
+        "hospitality_spendratio": 534.42,
+        "date": "2007-12-01T00:00:00.000Z",
+        "period": "July 2007 - December 2007"
       },
       "incomplete": 2,
       "code": "nycomed",
@@ -15613,40 +15683,32 @@ window.stats = {
       "revenueGlobal": "¥1,550b (2012 – Takeda group)",
       "products": "0",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "organon",
-      "cost": 767852.96,
-      "attendees": 14155,
-      "events": 487,
-      "alcohol": 2,
-      "completed": 3,
+      "cost": 311979.96,
+      "attendees": 7439,
+      "events": 215,
+      "alcohol": 1,
+      "completed": 2,
       "professions": [
         {
           "profession": "pharmacist",
-          "cost": 2967,
-          "attendees": 100,
-          "events": 4,
+          "cost": 407,
+          "attendees": 50,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 29.67
+          "perperson": 8.14
         },
         {
-          "profession": "specialist",
-          "cost": 15525,
-          "attendees": 119,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 130.46
-        },
-        {
-          "profession": "registrar",
-          "cost": 29943.7,
-          "attendees": 327,
-          "events": 12,
-          "alcohol": 0,
-          "perperson": 91.57
+          "profession": "gp",
+          "cost": 169123.8,
+          "attendees": 3922,
+          "events": 65,
+          "alcohol": 1,
+          "perperson": 43.12
         },
         {
           "profession": "neurologist",
@@ -15665,12 +15727,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "psychiatrist",
-          "cost": 54068,
-          "attendees": 1445,
-          "events": 87,
+          "profession": "registrar",
+          "cost": 28423.7,
+          "attendees": 314,
+          "events": 11,
           "alcohol": 0,
-          "perperson": 37.42
+          "perperson": 90.52
+        },
+        {
+          "profession": "specialist",
+          "cost": 3400,
+          "attendees": 40,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 85
         },
         {
           "profession": "haematologist",
@@ -15681,12 +15751,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "anaesthetist",
-          "cost": 131348.34,
-          "attendees": 3844,
-          "events": 154,
+          "profession": "psychiatrist",
+          "cost": 203,
+          "attendees": 17,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 34.17
+          "perperson": 11.94
         },
         {
           "profession": "urologist",
@@ -15705,14 +15775,6 @@ window.stats = {
           "perperson": 39.63
         },
         {
-          "profession": "nurse",
-          "cost": 101362.24,
-          "attendees": 802,
-          "events": 50,
-          "alcohol": 0,
-          "perperson": 126.39
-        },
-        {
           "profession": "oncologist",
           "cost": null,
           "attendees": null,
@@ -15721,12 +15783,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "gp",
-          "cost": 362768.8,
-          "attendees": 6333,
-          "events": 143,
-          "alcohol": 2,
-          "perperson": 57.28
+          "profession": "nurse",
+          "cost": 14968.24,
+          "attendees": 516,
+          "events": 28,
+          "alcohol": 0,
+          "perperson": 29.01
         },
         {
           "profession": "gastroenterologist",
@@ -15737,38 +15799,30 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "endocrinologist",
-          "cost": 900,
-          "attendees": 10,
-          "events": 1,
+          "profession": "anaesthetist",
+          "cost": 70668.34,
+          "attendees": 2177,
+          "events": 88,
           "alcohol": 0,
-          "perperson": 90
+          "perperson": 32.46
+        },
+        {
+          "profession": "endocrinologist",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
         }
       ],
       "conditions": [
         {
-          "condition": "ageing",
-          "cost": 9840.15,
-          "attendees": 105,
-          "events": 3,
+          "condition": "anaesthesia",
+          "cost": 78827.43,
+          "attendees": 2416,
+          "events": 99,
           "alcohol": 0,
-          "perperson": 70.09
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 60388,
-          "attendees": 1521,
-          "events": 90,
-          "alcohol": 0,
-          "perperson": 70.03
-        },
-        {
-          "condition": "fertility",
-          "cost": 251294.08,
-          "attendees": 2584,
-          "events": 112,
-          "alcohol": 1,
-          "perperson": 118.97
+          "perperson": 24.06
         },
         {
           "condition": "hiv",
@@ -15796,6 +15850,14 @@ window.stats = {
         },
         {
           "condition": "urology",
+          "cost": null,
+          "attendees": null,
+          "events": 0,
+          "alcohol": 0,
+          "perperson": null
+        },
+        {
+          "condition": "nervous_system",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -15867,20 +15929,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "ageing",
+          "cost": 9725.15,
+          "attendees": 95,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 99.39
+        },
+        {
           "condition": "gastro",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 140572.43,
-          "attendees": 4197,
-          "events": 173,
-          "alcohol": 0,
-          "perperson": 26.35
         },
         {
           "condition": "skin disorders",
@@ -15891,20 +15953,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "fertility",
+          "cost": 116299.08,
+          "attendees": 1817,
+          "events": 83,
+          "alcohol": 1,
+          "perperson": 73.46
+        },
+        {
           "condition": "kidney_function",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 45105,
-          "attendees": 882,
-          "events": 37,
-          "alcohol": 0,
-          "perperson": 44.82
         },
         {
           "condition": "wound_management",
@@ -15979,20 +16041,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "endocrinology",
-          "cost": 78506.3,
-          "attendees": 787,
-          "events": 30,
-          "alcohol": 1,
-          "perperson": 85.85
+          "condition": "sexual_health",
+          "cost": 148,
+          "attendees": 21,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 7.05
         },
         {
-          "condition": "sexual_health",
-          "cost": 37143,
-          "attendees": 342,
-          "events": 8,
+          "condition": "endocrinology",
+          "cost": 44816.3,
+          "attendees": 456,
+          "events": 14,
           "alcohol": 0,
-          "perperson": 99.01
+          "perperson": 91.84
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 203,
+          "attendees": 17,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 12.45
         },
         {
           "condition": "stroke",
@@ -16014,23 +16084,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 149
+          "hospitalitycount": 75
         },
         {
           "bin": 20,
-          "hospitalitycount": 117
+          "hospitalitycount": 55
         },
         {
           "bin": 50,
-          "hospitalitycount": 57
+          "hospitalitycount": 23
         },
         {
           "bin": 200,
-          "hospitalitycount": 163
+          "hospitalitycount": 62
         },
         {
           "bin": 1000,
-          "hospitalitycount": 1
+          "hospitalitycount": 0
         },
         {
           "bin": 10000,
@@ -16042,171 +16112,173 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "Fertility Society of Australia Annual Scientific Meeting. Platuinum Sponsor",
-        "venue": "Hobart Tasmania",
-        "cost": 77600,
-        "hospitality": "Accom. Airfares & Registrations",
-        "attendees": 15,
-        "hospitalitycost": 12600,
-        "hospitality_spendratio": 840
+        "description": "Part sponsorship of women's health educational symposium organised by Healthed [Hours of Education = 40]",
+        "venue": "Held in Sydney; Melbourne; Adelaide; Perth and Brisbane",
+        "cost": 40000,
+        "hospitality": null,
+        "attendees": 2100,
+        "hospitalitycost": 0,
+        "hospitality_spendratio": 0,
+        "date": "2008-06-01T00:00:00.000Z",
+        "period": "January 2008 - June 2008"
       },
       "code": "organon",
       "name": "Organon (Australia) Pty Ltd",
-      "summary": null,
+      "summary": "",
       "blurb": "In 2007 Organon was acquired by Schering-Plough. Susequently, in 2009, Schering-Plough merged with Merck & Co. to create a company known as MSD in Australia and Merck in the USA.",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "-",
       "products": "0",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "pfizer",
-      "cost": 38417622.34,
-      "attendees": 454628,
-      "events": 16174,
-      "alcohol": 90,
-      "completed": 11,
+      "cost": 40964705.97,
+      "attendees": 479415,
+      "events": 16982,
+      "alcohol": 98,
+      "completed": 12,
       "professions": [
         {
-          "profession": "anaesthetist",
-          "cost": 476037.32,
-          "attendees": 12674,
-          "events": 361,
-          "alcohol": 0,
-          "perperson": 37.56
-        },
-        {
-          "profession": "urologist",
-          "cost": 36521.47,
-          "attendees": 2017,
-          "events": 118,
-          "alcohol": 0,
-          "perperson": 18.11
-        },
-        {
-          "profession": "physician",
-          "cost": 2235399.85,
-          "attendees": 41145,
-          "events": 1661,
-          "alcohol": 33,
-          "perperson": 54.33
-        },
-        {
-          "profession": "nurse",
-          "cost": 2590812.17,
-          "attendees": 27141,
-          "events": 1156,
+          "profession": "psychiatrist",
+          "cost": 2958003.13,
+          "attendees": 32288,
+          "events": 1510,
           "alcohol": 3,
-          "perperson": 95.46
-        },
-        {
-          "profession": "haematologist",
-          "cost": 207517.38,
-          "attendees": 8748,
-          "events": 426,
-          "alcohol": 0,
-          "perperson": 23.72
-        },
-        {
-          "profession": "registrar",
-          "cost": 1734312.71,
-          "attendees": 11608,
-          "events": 488,
-          "alcohol": 0,
-          "perperson": 149.41
+          "perperson": 91.61
         },
         {
           "profession": "endocrinologist",
-          "cost": 505477.4,
-          "attendees": 6671,
-          "events": 304,
+          "cost": 511120.4,
+          "attendees": 7124,
+          "events": 324,
           "alcohol": 0,
-          "perperson": 75.77
+          "perperson": 71.75
         },
         {
-          "profession": "consultant",
-          "cost": 79762.77,
-          "attendees": 2745,
-          "events": 95,
+          "profession": "urologist",
+          "cost": 36969.47,
+          "attendees": 2046,
+          "events": 121,
           "alcohol": 0,
-          "perperson": 29.06
+          "perperson": 18.07
         },
         {
-          "profession": "gastroenterologist",
-          "cost": 12894.33,
-          "attendees": 1038,
-          "events": 35,
-          "alcohol": 0,
-          "perperson": 12.42
+          "profession": "nurse",
+          "cost": 3206764.17,
+          "attendees": 35410,
+          "events": 1484,
+          "alcohol": 5,
+          "perperson": 90.56
         },
         {
-          "profession": "specialist",
-          "cost": 3410858.36,
-          "attendees": 15767,
-          "events": 173,
-          "alcohol": 0,
-          "perperson": 216.33
-        },
-        {
-          "profession": "gp",
-          "cost": 15368676.13,
-          "attendees": 153399,
-          "events": 5866,
-          "alcohol": 30,
-          "perperson": 100.19
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": 2351292.13,
-          "attendees": 29921,
-          "events": 1407,
-          "alcohol": 2,
-          "perperson": 78.58
-        },
-        {
-          "profession": "oncologist",
-          "cost": 1804956.92,
-          "attendees": 24438,
-          "events": 928,
-          "alcohol": 0,
-          "perperson": 73.86
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 545977.77,
-          "attendees": 6075,
-          "events": 138,
-          "alcohol": 0,
-          "perperson": 89.87
+          "profession": "physician",
+          "cost": 2904085.85,
+          "attendees": 45786,
+          "events": 1820,
+          "alcohol": 38,
+          "perperson": 63.43
         },
         {
           "profession": "neurologist",
-          "cost": 494424.45,
-          "attendees": 5655,
-          "events": 220,
+          "cost": 1040366.45,
+          "attendees": 6067,
+          "events": 229,
           "alcohol": 2,
-          "perperson": 87.43
+          "perperson": 171.48
+        },
+        {
+          "profession": "haematologist",
+          "cost": 221445.38,
+          "attendees": 9851,
+          "events": 479,
+          "alcohol": 0,
+          "perperson": 22.48
+        },
+        {
+          "profession": "registrar",
+          "cost": 1789036.89,
+          "attendees": 14627,
+          "events": 633,
+          "alcohol": 0,
+          "perperson": 122.31
+        },
+        {
+          "profession": "gp",
+          "cost": 16488868.13,
+          "attendees": 160161,
+          "events": 6132,
+          "alcohol": 30,
+          "perperson": 102.95
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 15088.33,
+          "attendees": 1248,
+          "events": 46,
+          "alcohol": 0,
+          "perperson": 12.09
+        },
+        {
+          "profession": "specialist",
+          "cost": 3796701.36,
+          "attendees": 16915,
+          "events": 194,
+          "alcohol": 0,
+          "perperson": 224.46
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 718213.77,
+          "attendees": 13217,
+          "events": 165,
+          "alcohol": 0,
+          "perperson": 54.34
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 1021930.32,
+          "attendees": 13163,
+          "events": 372,
+          "alcohol": 0,
+          "perperson": 77.64
+        },
+        {
+          "profession": "oncologist",
+          "cost": 1848939.92,
+          "attendees": 28115,
+          "events": 1058,
+          "alcohol": 0,
+          "perperson": 65.76
+        },
+        {
+          "profession": "consultant",
+          "cost": 89145.77,
+          "attendees": 3359,
+          "events": 115,
+          "alcohol": 0,
+          "perperson": 26.54
         }
       ],
       "conditions": [
         {
-          "condition": "cold_and_flu",
-          "cost": 2473,
-          "attendees": 55,
-          "events": 2,
+          "condition": "paediatrics",
+          "cost": 138354.65,
+          "attendees": 5116,
+          "events": 103,
           "alcohol": 0,
-          "perperson": 42.13
+          "perperson": 28.83
         },
         {
-          "condition": "vaccination",
-          "cost": 52645.23,
-          "attendees": 1342,
-          "events": 35,
-          "alcohol": 0,
-          "perperson": 35.56
+          "condition": "ageing",
+          "cost": 1575110.18,
+          "attendees": 17826,
+          "events": 560,
+          "alcohol": 4,
+          "perperson": 48.97
         },
         {
           "condition": "stroke",
@@ -16217,84 +16289,60 @@ window.stats = {
           "perperson": 457.17
         },
         {
-          "condition": "diabetes",
-          "cost": 959288.88,
-          "attendees": 10667,
-          "events": 350,
+          "condition": "respiratory",
+          "cost": 1649464.3,
+          "attendees": 24030,
+          "events": 1691,
           "alcohol": 3,
-          "perperson": 58.27
-        },
-        {
-          "condition": "paediatrics",
-          "cost": 121968.65,
-          "attendees": 4526,
-          "events": 90,
-          "alcohol": 0,
-          "perperson": 27.64
-        },
-        {
-          "condition": "virus",
-          "cost": 92168.18,
-          "attendees": 1177,
-          "events": 31,
-          "alcohol": 2,
-          "perperson": 77.03
-        },
-        {
-          "condition": "blood_specific_illness",
-          "cost": 349511.42,
-          "attendees": 14237,
-          "events": 502,
-          "alcohol": 0,
-          "perperson": 21.7
-        },
-        {
-          "condition": "hypertension",
-          "cost": 624154.8,
-          "attendees": 1283,
-          "events": 50,
-          "alcohol": 1,
-          "perperson": 250.57
-        },
-        {
-          "condition": "hiv",
-          "cost": 27659.54,
-          "attendees": 223,
-          "events": 7,
-          "alcohol": 0,
-          "perperson": 90.43
+          "perperson": 54.16
         },
         {
           "condition": "gastro",
-          "cost": 50179,
-          "attendees": 2424,
-          "events": 77,
+          "cost": 52455,
+          "attendees": 2644,
+          "events": 89,
           "alcohol": 1,
-          "perperson": 24.7
+          "perperson": 22.76
         },
         {
-          "condition": "respiratory",
-          "cost": 1631785.3,
-          "attendees": 23602,
-          "events": 1656,
+          "condition": "obesity",
+          "cost": 97870.8,
+          "attendees": 1282,
+          "events": 45,
+          "alcohol": 0,
+          "perperson": 66.95
+        },
+        {
+          "condition": "blood_specific_illness",
+          "cost": 363657.42,
+          "attendees": 15359,
+          "events": 556,
+          "alcohol": 0,
+          "perperson": 20.85
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 646926.33,
+          "attendees": 7402,
+          "events": 290,
+          "alcohol": 1,
+          "perperson": 72.69
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 523019.64,
+          "attendees": 3422,
+          "events": 72,
           "alcohol": 3,
-          "perperson": 53.98
+          "perperson": 165.37
         },
         {
-          "condition": "kidney_function",
-          "cost": 176116.34,
-          "attendees": 739,
-          "events": 20,
-          "alcohol": 1,
-          "perperson": 111.04
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 7937255.03,
-          "attendees": 76463,
-          "events": 3081,
-          "alcohol": 6,
-          "perperson": 58.33
+          "condition": "dementia",
+          "cost": 2315890.51,
+          "attendees": 19430,
+          "events": 577,
+          "alcohol": 5,
+          "perperson": 57.09
         },
         {
           "condition": "oral_health",
@@ -16305,6 +16353,30 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "auto_immune_disorders",
+          "cost": 69810.9,
+          "attendees": 1679,
+          "events": 61,
+          "alcohol": 0,
+          "perperson": 41.63
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 1466797.22,
+          "attendees": 15708,
+          "events": 417,
+          "alcohol": 0,
+          "perperson": 33.88
+        },
+        {
+          "condition": "endocrinology",
+          "cost": 14133.64,
+          "attendees": 660,
+          "events": 20,
+          "alcohol": 0,
+          "perperson": 28.95
+        },
+        {
           "condition": "cosmetic_surgery",
           "cost": 6770.83,
           "attendees": 164,
@@ -16313,12 +16385,12 @@ window.stats = {
           "perperson": 37.24
         },
         {
-          "condition": "obesity",
-          "cost": 97340.8,
-          "attendees": 1248,
-          "events": 38,
-          "alcohol": 0,
-          "perperson": 76.37
+          "condition": "virus",
+          "cost": 109878.18,
+          "attendees": 1364,
+          "events": 35,
+          "alcohol": 2,
+          "perperson": 85.46
         },
         {
           "condition": "wound_management",
@@ -16329,52 +16401,44 @@ window.stats = {
           "perperson": 55.03
         },
         {
-          "condition": "dementia",
-          "cost": 2304792.51,
-          "attendees": 19269,
-          "events": 568,
-          "alcohol": 5,
-          "perperson": 57.34
+          "condition": "cold_and_flu",
+          "cost": 12723,
+          "attendees": 205,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 67.31
+        },
+        {
+          "condition": "kidney_function",
+          "cost": 176816.34,
+          "attendees": 789,
+          "events": 21,
+          "alcohol": 1,
+          "perperson": 106.42
+        },
+        {
+          "condition": "diabetes",
+          "cost": 981642.88,
+          "attendees": 10997,
+          "events": 362,
+          "alcohol": 3,
+          "perperson": 57.7
         },
         {
           "condition": "cancer",
-          "cost": 2646760.67,
-          "attendees": 44993,
-          "events": 1669,
+          "cost": 2700719.67,
+          "attendees": 48818,
+          "events": 1809,
           "alcohol": 1,
-          "perperson": 30.61
+          "perperson": 29.98
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 68915.9,
-          "attendees": 1635,
-          "events": 58,
-          "alcohol": 0,
-          "perperson": 42.6
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 2452603.54,
-          "attendees": 6731,
-          "events": 122,
-          "alcohol": 0,
-          "perperson": 158.92
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 920904.22,
-          "attendees": 15219,
-          "events": 406,
-          "alcohol": 0,
-          "perperson": 28.94
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 1196956.64,
-          "attendees": 18483,
-          "events": 602,
-          "alcohol": 4,
-          "perperson": 41.56
+          "condition": "heart_disease",
+          "cost": 7971801.48,
+          "attendees": 77299,
+          "events": 3120,
+          "alcohol": 6,
+          "perperson": 58.07
         },
         {
           "condition": "parkinsons_disease",
@@ -16385,28 +16449,12 @@ window.stats = {
           "perperson": 25.07
         },
         {
-          "condition": "mental_illness",
-          "cost": 3900534.25,
-          "attendees": 48952,
-          "events": 1986,
-          "alcohol": 6,
-          "perperson": 44.11
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 493693.64,
-          "attendees": 2698,
-          "events": 68,
-          "alcohol": 3,
-          "perperson": 173.48
-        },
-        {
-          "condition": "ageing",
-          "cost": 1564858.18,
-          "attendees": 17347,
-          "events": 530,
-          "alcohol": 4,
-          "perperson": 50.44
+          "condition": "hypertension",
+          "cost": 626484.8,
+          "attendees": 1314,
+          "events": 57,
+          "alcohol": 1,
+          "perperson": 237.57
         },
         {
           "condition": "addiction",
@@ -16417,12 +16465,28 @@ window.stats = {
           "perperson": 62.35
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 633699.33,
-          "attendees": 7256,
-          "events": 277,
-          "alcohol": 1,
-          "perperson": 73.92
+          "condition": "skin disorders",
+          "cost": 2457086.54,
+          "attendees": 6826,
+          "events": 128,
+          "alcohol": 0,
+          "perperson": 160.94
+        },
+        {
+          "condition": "urology",
+          "cost": 240733.61,
+          "attendees": 6911,
+          "events": 313,
+          "alcohol": 0,
+          "perperson": 24.13
+        },
+        {
+          "condition": "vaccination",
+          "cost": 103485.23,
+          "attendees": 1872,
+          "events": 43,
+          "alcohol": 0,
+          "perperson": 326.69
         },
         {
           "condition": "allergies",
@@ -16433,6 +16497,22 @@ window.stats = {
           "perperson": 17.37
         },
         {
+          "condition": "hiv",
+          "cost": 56659.54,
+          "attendees": 923,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 79.54
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 1770043.64,
+          "attendees": 19395,
+          "events": 634,
+          "alcohol": 4,
+          "perperson": 44.91
+        },
+        {
           "condition": "fertility",
           "cost": 35458.66,
           "attendees": 820,
@@ -16441,50 +16521,42 @@ window.stats = {
           "perperson": 39.37
         },
         {
-          "condition": "urology",
-          "cost": 236406.61,
-          "attendees": 6564,
-          "events": 290,
-          "alcohol": 0,
-          "perperson": 25.03
-        },
-        {
-          "condition": "endocrinology",
-          "cost": 13906.64,
-          "attendees": 640,
-          "events": 18,
-          "alcohol": 0,
-          "perperson": 30.9
+          "condition": "mental_illness",
+          "cost": 4560763.25,
+          "attendees": 51971,
+          "events": 2128,
+          "alcohol": 7,
+          "perperson": 45.24
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 7576
+          "hospitalitycount": 7822
         },
         {
           "bin": 20,
-          "hospitalitycount": 5301
+          "hospitalitycount": 5681
         },
         {
           "bin": 50,
-          "hospitalitycount": 1147
+          "hospitalitycount": 1220
         },
         {
           "bin": 200,
-          "hospitalitycount": 2016
+          "hospitalitycount": 2111
         },
         {
           "bin": 1000,
-          "hospitalitycount": 120
+          "hospitalitycount": 127
         },
         {
           "bin": 10000,
-          "hospitalitycount": 14
+          "hospitalitycount": 20
         },
         {
           "bin": 100000,
-          "hospitalitycount": 0
+          "hospitalitycount": 1
         }
       ],
       "mostExpensive": {
@@ -16494,7 +16566,9 @@ window.stats = {
         "hospitality": "Accommodation (633 Room Nights $161;128; Day 1; 112 Attendees; Day 2; 205; Day 3; 29; Day 4; 6); Meal / Drinks (Breakfast 654 Attendees; $19;931; Conf Pack 1; 142 Attendees $9;811; Conf Pack 2; 418 Attendees; $32;695; Conf Pack 3; 419 Attendees; $26;113; Dinner 1; 226 Attendees; $22;435; Dinner 2; 252 Attendees; $32;508; Travel (294 Flight $131;740; Transfers $13;456; Parking $8;207) Other Costs: Speaker Costs (incl Hon) $56;857; Audio $23;534; Room Hire $7;473; Printed Materials $80;150; Equipment $1;510; Other $132;526",
         "attendees": 419,
         "hospitalitycost": 458025.47,
-        "hospitality_spendratio": 1093.14
+        "hospitality_spendratio": 1093.14,
+        "date": "2012-09-01T00:00:00.000Z",
+        "period": "April 2012 - September 2012"
       },
       "code": "pfizer",
       "name": "Pfizer Australia Pty Ltd",
@@ -16506,7 +16580,7 @@ window.stats = {
       "products": "935",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=pfizer%20australia&sortPref=ascending&sortField=0&Page=1&PageMax=37&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "not including 28 results for \"Pfizer (Perth) Pty Ltd\"",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "pharmion",
@@ -16940,7 +17014,9 @@ window.stats = {
         "hospitality": "Dinner; breakfast; lunch; morning and afternoon teas; dinner",
         "attendees": 53,
         "hospitalitycost": 88557,
-        "hospitality_spendratio": 1670.89
+        "hospitality_spendratio": 1670.89,
+        "date": "2007-12-01T00:00:00.000Z",
+        "period": "July 2007 - December 2007"
       },
       "code": "pharmion",
       "name": "Pharmion",
@@ -16951,48 +17027,40 @@ window.stats = {
       "revenueGlobal": "USD5.5b (2012 – Celgene)",
       "products": "0",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "roche",
-      "cost": 17116251,
-      "attendees": 219255,
-      "events": 9952,
-      "alcohol": 31,
-      "completed": 11,
+      "cost": 18879296,
+      "attendees": 240587,
+      "events": 10822,
+      "alcohol": 35,
+      "completed": 12,
       "professions": [
         {
-          "profession": "pharmacist",
-          "cost": 3996154,
-          "attendees": 34898,
-          "events": 1188,
-          "alcohol": 3,
-          "perperson": 114.51
+          "profession": "physician",
+          "cost": 1947710,
+          "attendees": 43173,
+          "events": 1356,
+          "alcohol": 5,
+          "perperson": 45.11
         },
         {
-          "profession": "oncologist",
-          "cost": 6048548,
-          "attendees": 98236,
-          "events": 4972,
-          "alcohol": 1,
-          "perperson": 61.57
-        },
-        {
-          "profession": "registrar",
-          "cost": 3165042,
-          "attendees": 42616,
-          "events": 2219,
-          "alcohol": 4,
-          "perperson": 74.27
+          "profession": "consultant",
+          "cost": 1283509,
+          "attendees": 30007,
+          "events": 1709,
+          "alcohol": 5,
+          "perperson": 42.77
         },
         {
           "profession": "gastroenterologist",
-          "cost": 2650429,
-          "attendees": 22598,
-          "events": 1045,
+          "cost": 2677460,
+          "attendees": 23425,
+          "events": 1104,
           "alcohol": 7,
-          "perperson": 117.29
+          "perperson": 114.3
         },
         {
           "profession": "urologist",
@@ -17003,20 +17071,36 @@ window.stats = {
           "perperson": 25.09
         },
         {
-          "profession": "consultant",
-          "cost": 1166644,
-          "attendees": 26747,
-          "events": 1548,
-          "alcohol": 5,
-          "perperson": 43.62
+          "profession": "specialist",
+          "cost": 2795633,
+          "attendees": 11499,
+          "events": 381,
+          "alcohol": 1,
+          "perperson": 243.12
         },
         {
-          "profession": "gp",
-          "cost": 1153451,
-          "attendees": 6847,
-          "events": 180,
+          "profession": "pharmacist",
+          "cost": 5051019,
+          "attendees": 38904,
+          "events": 1260,
           "alcohol": 4,
-          "perperson": 168.46
+          "perperson": 129.83
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 2012,
+          "attendees": 246,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 8.18
+        },
+        {
+          "profession": "oncologist",
+          "cost": 7277768,
+          "attendees": 107646,
+          "events": 5303,
+          "alcohol": 3,
+          "perperson": 67.61
         },
         {
           "profession": "psychiatrist",
@@ -17028,11 +17112,27 @@ window.stats = {
         },
         {
           "profession": "nurse",
-          "cost": 12061523,
-          "attendees": 131488,
-          "events": 5636,
-          "alcohol": 24,
-          "perperson": 91.73
+          "cost": 12563469,
+          "attendees": 142194,
+          "events": 5967,
+          "alcohol": 26,
+          "perperson": 88.35
+        },
+        {
+          "profession": "gp",
+          "cost": 1155407,
+          "attendees": 6906,
+          "events": 183,
+          "alcohol": 4,
+          "perperson": 167.3
+        },
+        {
+          "profession": "registrar",
+          "cost": 3296632,
+          "attendees": 46630,
+          "events": 2414,
+          "alcohol": 4,
+          "perperson": 70.7
         },
         {
           "profession": "neurologist",
@@ -17041,30 +17141,6 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 11.5
-        },
-        {
-          "profession": "physician",
-          "cost": 1818646,
-          "attendees": 40405,
-          "events": 1267,
-          "alcohol": 4,
-          "perperson": 45.01
-        },
-        {
-          "profession": "specialist",
-          "cost": 2786769,
-          "attendees": 11206,
-          "events": 369,
-          "alcohol": 1,
-          "perperson": 248.69
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": 1672,
-          "attendees": 186,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 8.99
         },
         {
           "profession": "endocrinologist",
@@ -17076,37 +17152,37 @@ window.stats = {
         },
         {
           "profession": "haematologist",
-          "cost": 3891028,
-          "attendees": 32266,
-          "events": 1363,
-          "alcohol": 2,
-          "perperson": 120.59
+          "cost": 4882198,
+          "attendees": 34734,
+          "events": 1455,
+          "alcohol": 3,
+          "perperson": 140.56
         }
       ],
       "conditions": [
         {
-          "condition": "vaccination",
-          "cost": 5815,
-          "attendees": 258,
-          "events": 12,
+          "condition": "ageing",
+          "cost": 947865,
+          "attendees": 1137,
+          "events": 40,
           "alcohol": 0,
-          "perperson": 19.88
+          "perperson": 280.8
         },
         {
-          "condition": "mental_illness",
-          "cost": 28547,
-          "attendees": 454,
-          "events": 16,
-          "alcohol": 0,
-          "perperson": 35.04
+          "condition": "hiv",
+          "cost": 29348,
+          "attendees": 686,
+          "events": 7,
+          "alcohol": 1,
+          "perperson": 31.81
         },
         {
-          "condition": "skin disorders",
-          "cost": 103699,
-          "attendees": 2279,
-          "events": 70,
+          "condition": "musculoskeletal",
+          "cost": 956448,
+          "attendees": 1127,
+          "events": 33,
           "alcohol": 0,
-          "perperson": 28.02
+          "perperson": 307.5
         },
         {
           "condition": "cold_and_flu",
@@ -17117,12 +17193,52 @@ window.stats = {
           "perperson": 26.65
         },
         {
+          "condition": "mental_illness",
+          "cost": 118719,
+          "attendees": 2730,
+          "events": 19,
+          "alcohol": 0,
+          "perperson": 121.11
+        },
+        {
+          "condition": "kidney_function",
+          "cost": 24818,
+          "attendees": 302,
+          "events": 14,
+          "alcohol": 0,
+          "perperson": 111.05
+        },
+        {
           "condition": "urology",
           "cost": 17218,
           "attendees": 364,
           "events": 16,
           "alcohol": 0,
           "perperson": 44.78
+        },
+        {
+          "condition": "fertility",
+          "cost": 51984,
+          "attendees": 115,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 146.5
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 233272,
+          "attendees": 5250,
+          "events": 160,
+          "alcohol": 1,
+          "perperson": 31.09
+        },
+        {
+          "condition": "blood_specific_illness",
+          "cost": 5047305,
+          "attendees": 38543,
+          "events": 1599,
+          "alcohol": 4,
+          "perperson": 35.55
         },
         {
           "condition": "cosmetic_surgery",
@@ -17133,28 +17249,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 3975866,
-          "attendees": 34934,
-          "events": 1483,
-          "alcohol": 2,
-          "perperson": 31.23
-        },
-        {
-          "condition": "virus",
-          "cost": 2233926,
-          "attendees": 9838,
-          "events": 389,
-          "alcohol": 7,
-          "perperson": 75.35
-        },
-        {
-          "condition": "ageing",
-          "cost": 903644,
-          "attendees": 1021,
-          "events": 31,
-          "alcohol": 0,
-          "perperson": 273.98
+          "condition": "sexual_health",
+          "cost": 1463924,
+          "attendees": 5274,
+          "events": 232,
+          "alcohol": 5,
+          "perperson": 81.81
         },
         {
           "condition": "diabetes",
@@ -17181,12 +17281,12 @@ window.stats = {
           "perperson": 10.96
         },
         {
-          "condition": "heart_disease",
-          "cost": 220932,
-          "attendees": 5010,
-          "events": 158,
-          "alcohol": 1,
-          "perperson": 31.03
+          "condition": "skin disorders",
+          "cost": 113760,
+          "attendees": 2435,
+          "events": 72,
+          "alcohol": 0,
+          "perperson": 29.6
         },
         {
           "condition": "oral_health",
@@ -17197,6 +17297,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "vaccination",
+          "cost": 6074,
+          "attendees": 289,
+          "events": 14,
+          "alcohol": 0,
+          "perperson": 18.31
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 2012,
+          "attendees": 246,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 9.19
+        },
+        {
           "condition": "paediatrics",
           "cost": 2390,
           "attendees": 238,
@@ -17205,36 +17321,12 @@ window.stats = {
           "perperson": 9.43
         },
         {
-          "condition": "hiv",
-          "cost": 29088,
-          "attendees": 664,
-          "events": 6,
-          "alcohol": 1,
-          "perperson": 35.15
-        },
-        {
           "condition": "stroke",
           "cost": 2009,
           "attendees": 102,
           "events": 2,
           "alcohol": 0,
           "perperson": 17.18
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 1460666,
-          "attendees": 5179,
-          "events": 225,
-          "alcohol": 5,
-          "perperson": 83.08
-        },
-        {
-          "condition": "gastro",
-          "cost": 2690198,
-          "attendees": 24235,
-          "events": 1093,
-          "alcohol": 7,
-          "perperson": 38.89
         },
         {
           "condition": "obesity",
@@ -17253,14 +17345,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 909313,
-          "attendees": 879,
-          "events": 21,
-          "alcohol": 0,
-          "perperson": 343.59
-        },
-        {
           "condition": "parkinsons_disease",
           "cost": null,
           "attendees": null,
@@ -17269,36 +17353,28 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "cancer",
+          "cost": 7698695,
+          "attendees": 119063,
+          "events": 5803,
+          "alcohol": 3,
+          "perperson": 24.64
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 949747,
+          "attendees": 978,
+          "events": 29,
+          "alcohol": 0,
+          "perperson": 337.13
+        },
+        {
           "condition": "allergies",
           "cost": 3454,
           "attendees": 105,
           "events": 2,
           "alcohol": 0,
           "perperson": 27.57
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 1672,
-          "attendees": 186,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 9.63
-        },
-        {
-          "condition": "cancer",
-          "cost": 6408534,
-          "attendees": 106838,
-          "events": 5308,
-          "alcohol": 1,
-          "perperson": 22.16
-        },
-        {
-          "condition": "fertility",
-          "cost": 222,
-          "attendees": 21,
-          "events": 3,
-          "alcohol": 0,
-          "perperson": 11.78
         },
         {
           "condition": "addiction",
@@ -17325,20 +17401,12 @@ window.stats = {
           "perperson": 81.96
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 911888,
-          "attendees": 938,
-          "events": 23,
-          "alcohol": 0,
-          "perperson": 327.08
-        },
-        {
-          "condition": "kidney_function",
-          "cost": 23793,
-          "attendees": 291,
-          "events": 13,
-          "alcohol": 0,
-          "perperson": 112.42
+          "condition": "virus",
+          "cost": 2238450,
+          "attendees": 9951,
+          "events": 398,
+          "alcohol": 7,
+          "perperson": 74.72
         },
         {
           "condition": "nervous_system",
@@ -17347,32 +17415,40 @@ window.stats = {
           "events": 6,
           "alcohol": 1,
           "perperson": 29.61
+        },
+        {
+          "condition": "gastro",
+          "cost": 2834770,
+          "attendees": 26806,
+          "events": 1167,
+          "alcohol": 7,
+          "perperson": 38.15
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 3466
+          "hospitalitycount": 3762
         },
         {
           "bin": 20,
-          "hospitalitycount": 4800
+          "hospitalitycount": 5233
         },
         {
           "bin": 50,
-          "hospitalitycount": 709
+          "hospitalitycount": 734
         },
         {
           "bin": 200,
-          "hospitalitycount": 906
+          "hospitalitycount": 1013
         },
         {
           "bin": 1000,
-          "hospitalitycount": 55
+          "hospitalitycount": 60
         },
         {
           "bin": 10000,
-          "hospitalitycount": 16
+          "hospitalitycount": 20
         },
         {
           "bin": 100000,
@@ -17380,171 +17456,173 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "The 9th Annual Haematology & Oncology Targeted Therapies (HOTT) Symposium 4-6 March 2011 A Comprehensive review of current oncology and malignant haematology issues Educational Content = 10 hrs",
-        "venue": "Symposium and Welcome Dinner held at: Hilton Hotel Sydney 488 George Street Sydney NSW Conference dinner held at: Ivy Function Room 320 George Street Sydney NSW",
-        "cost": 810242,
-        "hospitality": null,
-        "attendees": 300,
-        "hospitalitycost": 332637,
-        "hospitality_spendratio": 1108.79
+        "description": "The 11th Annual Haematology & Oncology Targeted Therapies (HOTT) Symposium A comprehensive review of current oncology and malignant haematology issues involving a number of international experts. Educational Content = 10 hrs",
+        "venue": "Hilton Hotel Sydney 488 George Street Sydney NSW 2000",
+        "cost": 832688,
+        "hospitality": "Hospitality included: Friday 1 March: Welcome Dinner (F&B) x 189 = $22;336 Accommodation (inc B'Fast) x 285 = $81;648 Saturday 2 March: Saturday night (F&B) x 189 = $21;478 Accommodation (inc B'Fast) x 280 = $80;198 Conference Package (morning tea; lunch & afternoon tea) x 350 = $32;008 Sunday 3 March: Conference Package (morning tea & lunch) x 320 = $26;496 8 Kosher Meals (over 2 days) for 1 doctor = $526 Domestic Airfares x 254 from various cities = $114;378 Car Parking (over 2 days ) x 115 = $7;883 Transfers (Coach & Taxis) = $9;315",
+        "attendees": 350,
+        "hospitalitycost": 396266,
+        "hospitality_spendratio": 1132.19,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "code": "roche",
       "name": "Roche Products Pty Ltd",
       "summary": "Roche has operated in Australia for 60 years and employs 737 people in 2013.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$176,266,813",
       "revenueAu": "-",
       "revenueGlobal": "CHF45.5b (2012)",
       "products": "116",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=roche%20products&sortPref=ascending&sortField=0&Page=1&PageMax=5&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "In Australia, the Roche group has two companies: \"Roche Products Pty Ltd\" (pharmaceuticals) and \"Roche Diagnostics Australia Pty Ltd\"... We're only looking at \"Products\", but hard to separate employee/revenue data of the two.... 2012 global annual report: http://www.roche.com/gb12e.pdf",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "sanofi",
-      "cost": 12518498.8,
-      "attendees": 208680,
-      "events": 8178,
-      "alcohol": 14,
-      "completed": 9,
+      "cost": 14832095.96,
+      "attendees": 236807,
+      "events": 8892,
+      "alcohol": 17,
+      "completed": 10,
       "professions": [
         {
-          "profession": "pharmacist",
-          "cost": 1395670.99,
-          "attendees": 24765,
-          "events": 635,
-          "alcohol": 1,
-          "perperson": 56.36
-        },
-        {
           "profession": "gp",
-          "cost": 5618383.1,
-          "attendees": 42234,
-          "events": 1263,
+          "cost": 6665306.21,
+          "attendees": 49212,
+          "events": 1325,
           "alcohol": 5,
-          "perperson": 133.03
-        },
-        {
-          "profession": "specialist",
-          "cost": 545089.64,
-          "attendees": 7532,
-          "events": 263,
-          "alcohol": 0,
-          "perperson": 72.37
-        },
-        {
-          "profession": "nurse",
-          "cost": 1869684.11,
-          "attendees": 57162,
-          "events": 1975,
-          "alcohol": 2,
-          "perperson": 32.71
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": 82166.64,
-          "attendees": 1697,
-          "events": 47,
-          "alcohol": 0,
-          "perperson": 48.42
-        },
-        {
-          "profession": "physician",
-          "cost": 1674352.84,
-          "attendees": 28710,
-          "events": 1092,
-          "alcohol": 2,
-          "perperson": 58.32
-        },
-        {
-          "profession": "oncologist",
-          "cost": 914737.87,
-          "attendees": 27146,
-          "events": 1258,
-          "alcohol": 1,
-          "perperson": 33.7
-        },
-        {
-          "profession": "neurologist",
-          "cost": 1657447.46,
-          "attendees": 11185,
-          "events": 436,
-          "alcohol": 3,
-          "perperson": 148.18
-        },
-        {
-          "profession": "endocrinologist",
-          "cost": 1491192.12,
-          "attendees": 19223,
-          "events": 728,
-          "alcohol": 1,
-          "perperson": 77.57
-        },
-        {
-          "profession": "haematologist",
-          "cost": 373146.07,
-          "attendees": 6463,
-          "events": 181,
-          "alcohol": 1,
-          "perperson": 57.74
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": 33165.04,
-          "attendees": 961,
-          "events": 31,
-          "alcohol": 0,
-          "perperson": 34.51
-        },
-        {
-          "profession": "urologist",
-          "cost": 119648.81,
-          "attendees": 5596,
-          "events": 221,
-          "alcohol": 0,
-          "perperson": 21.38
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": 233669.2,
-          "attendees": 1441,
-          "events": 49,
-          "alcohol": 0,
-          "perperson": 162.16
-        },
-        {
-          "profession": "consultant",
-          "cost": 1475071.33,
-          "attendees": 22878,
-          "events": 882,
-          "alcohol": 1,
-          "perperson": 64.48
+          "perperson": 135.44
         },
         {
           "profession": "registrar",
-          "cost": 602192.87,
-          "attendees": 42356,
-          "events": 1862,
+          "cost": 630033.61,
+          "attendees": 43895,
+          "events": 1935,
           "alcohol": 1,
-          "perperson": 14.22
+          "perperson": 14.35
+        },
+        {
+          "profession": "consultant",
+          "cost": 2087830.68,
+          "attendees": 24417,
+          "events": 938,
+          "alcohol": 1,
+          "perperson": 85.51
+        },
+        {
+          "profession": "oncologist",
+          "cost": 1171814.82,
+          "attendees": 30561,
+          "events": 1371,
+          "alcohol": 1,
+          "perperson": 38.34
+        },
+        {
+          "profession": "physician",
+          "cost": 2322282.68,
+          "attendees": 30734,
+          "events": 1169,
+          "alcohol": 2,
+          "perperson": 75.56
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 44188.3,
+          "attendees": 1037,
+          "events": 35,
+          "alcohol": 0,
+          "perperson": 42.61
+        },
+        {
+          "profession": "urologist",
+          "cost": 178091.45,
+          "attendees": 6443,
+          "events": 269,
+          "alcohol": 0,
+          "perperson": 27.64
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 106220.16,
+          "attendees": 1943,
+          "events": 53,
+          "alcohol": 0,
+          "perperson": 54.67
+        },
+        {
+          "profession": "specialist",
+          "cost": 950186.75,
+          "attendees": 8471,
+          "events": 271,
+          "alcohol": 0,
+          "perperson": 112.17
+        },
+        {
+          "profession": "endocrinologist",
+          "cost": 2167668.12,
+          "attendees": 21859,
+          "events": 827,
+          "alcohol": 1,
+          "perperson": 99.17
+        },
+        {
+          "profession": "nurse",
+          "cost": 2744386.79,
+          "attendees": 65652,
+          "events": 2136,
+          "alcohol": 5,
+          "perperson": 41.8
+        },
+        {
+          "profession": "neurologist",
+          "cost": 1868316.94,
+          "attendees": 13346,
+          "events": 516,
+          "alcohol": 4,
+          "perperson": 139.99
+        },
+        {
+          "profession": "psychiatrist",
+          "cost": 245549.6,
+          "attendees": 1461,
+          "events": 50,
+          "alcohol": 0,
+          "perperson": 168.07
+        },
+        {
+          "profession": "haematologist",
+          "cost": 498165.24,
+          "attendees": 7831,
+          "events": 244,
+          "alcohol": 1,
+          "perperson": 63.61
+        },
+        {
+          "profession": "pharmacist",
+          "cost": 1582459.84,
+          "attendees": 29857,
+          "events": 669,
+          "alcohol": 1,
+          "perperson": 53
         }
       ],
       "conditions": [
         {
-          "condition": "stroke",
-          "cost": 13340.03,
-          "attendees": 324,
-          "events": 27,
+          "condition": "mental_illness",
+          "cost": 306586.3,
+          "attendees": 3322,
+          "events": 58,
           "alcohol": 1,
-          "perperson": 24.32
+          "perperson": 97.46
         },
         {
-          "condition": "diabetes",
-          "cost": 2037024.03,
-          "attendees": 22389,
-          "events": 936,
-          "alcohol": 1,
-          "perperson": 69.65
+          "condition": "fertility",
+          "cost": 10125.52,
+          "attendees": 261,
+          "events": 9,
+          "alcohol": 0,
+          "perperson": 34.25
         },
         {
           "condition": "dementia",
@@ -17553,14 +17631,6 @@ window.stats = {
           "events": 1,
           "alcohol": 0,
           "perperson": 7.1
-        },
-        {
-          "condition": "ageing",
-          "cost": 791480.3,
-          "attendees": 12154,
-          "events": 419,
-          "alcohol": 1,
-          "perperson": 33.32
         },
         {
           "condition": "hiv",
@@ -17587,44 +17657,52 @@ window.stats = {
           "perperson": 5.81
         },
         {
-          "condition": "cold_and_flu",
-          "cost": 36690.52,
-          "attendees": 702,
-          "events": 18,
-          "alcohol": 0,
-          "perperson": 397.31
+          "condition": "anaesthesia",
+          "cost": 106376.01,
+          "attendees": 1973,
+          "events": 56,
+          "alcohol": 1,
+          "perperson": 43.3
         },
         {
-          "condition": "gastro",
-          "cost": 39265.63,
-          "attendees": 1278,
-          "events": 50,
-          "alcohol": 0,
-          "perperson": 29.04
+          "condition": "paediatrics",
+          "cost": 24558.9,
+          "attendees": 2132,
+          "events": 12,
+          "alcohol": 1,
+          "perperson": 36.4
         },
         {
-          "condition": "kidney_function",
-          "cost": 1874.88,
-          "attendees": 26,
-          "events": 1,
+          "condition": "vaccination",
+          "cost": 89210.18,
+          "attendees": 1160,
+          "events": 21,
           "alcohol": 0,
-          "perperson": 72.11
+          "perperson": 1042.56
         },
         {
           "condition": "skin disorders",
-          "cost": 8437.86,
-          "attendees": 114,
-          "events": 3,
+          "cost": 12002.86,
+          "attendees": 148,
+          "events": 4,
           "alcohol": 0,
-          "perperson": 69.04
+          "perperson": 78
         },
         {
-          "condition": "urology",
-          "cost": 347365.79,
-          "attendees": 8989,
-          "events": 337,
+          "condition": "diabetes",
+          "cost": 2997463.05,
+          "attendees": 24806,
+          "events": 1021,
           "alcohol": 1,
-          "perperson": 50.36
+          "perperson": 132
+        },
+        {
+          "condition": "virus",
+          "cost": 81627.09,
+          "attendees": 915,
+          "events": 23,
+          "alcohol": 0,
+          "perperson": 1673.25
         },
         {
           "condition": "cosmetic_surgery",
@@ -17643,52 +17721,44 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "musculoskeletal",
-          "cost": 458309.45,
-          "attendees": 7621,
-          "events": 315,
-          "alcohol": 2,
-          "perperson": 39.17
-        },
-        {
-          "condition": "virus",
-          "cost": 36840.52,
-          "attendees": 726,
-          "events": 19,
+          "condition": "sexual_health",
+          "cost": 31940.17,
+          "attendees": 338,
+          "events": 6,
           "alcohol": 0,
-          "perperson": 376.73
+          "perperson": 555.43
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 91983.9,
-          "attendees": 696,
-          "events": 41,
+          "condition": "stroke",
+          "cost": 17500.03,
+          "attendees": 383,
+          "events": 29,
           "alcohol": 1,
-          "perperson": 184.54
+          "perperson": 28.28
+        },
+        {
+          "condition": "ageing",
+          "cost": 893959.71,
+          "attendees": 13172,
+          "events": 449,
+          "alcohol": 1,
+          "perperson": 34.62
         },
         {
           "condition": "blood_specific_illness",
-          "cost": 383825.54,
-          "attendees": 7239,
-          "events": 208,
+          "cost": 544649.47,
+          "attendees": 9275,
+          "events": 274,
           "alcohol": 2,
-          "perperson": 64.46
+          "perperson": 159.59
         },
         {
-          "condition": "mental_illness",
-          "cost": 272705.9,
-          "attendees": 3302,
-          "events": 57,
-          "alcohol": 1,
-          "perperson": 90.31
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 82322.49,
-          "attendees": 1727,
-          "events": 50,
-          "alcohol": 1,
-          "perperson": 33.94
+          "condition": "heart_disease",
+          "cost": 2241504.53,
+          "attendees": 31798,
+          "events": 1155,
+          "alcohol": 4,
+          "perperson": 61.84
         },
         {
           "condition": "allergies",
@@ -17699,14 +17769,6 @@ window.stats = {
           "perperson": 27.77
         },
         {
-          "condition": "fertility",
-          "cost": 5975.52,
-          "attendees": 197,
-          "events": 8,
-          "alcohol": 0,
-          "perperson": 30.43
-        },
-        {
           "condition": "wound_management",
           "cost": null,
           "attendees": null,
@@ -17715,12 +17777,36 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "nervous_system",
-          "cost": 1695404.61,
-          "attendees": 12460,
-          "events": 492,
-          "alcohol": 4,
-          "perperson": 82.66
+          "condition": "cold_and_flu",
+          "cost": 81477.09,
+          "attendees": 891,
+          "events": 22,
+          "alcohol": 0,
+          "perperson": 1749.02
+        },
+        {
+          "condition": "urology",
+          "cost": 483590.28,
+          "attendees": 10315,
+          "events": 406,
+          "alcohol": 1,
+          "perperson": 49.99
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 499003.48,
+          "attendees": 8073,
+          "events": 332,
+          "alcohol": 2,
+          "perperson": 41.89
+        },
+        {
+          "condition": "respiratory",
+          "cost": 105909.04,
+          "attendees": 1489,
+          "events": 83,
+          "alcohol": 2,
+          "perperson": 48.62
         },
         {
           "condition": "parkinsons_disease",
@@ -17739,12 +17825,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "sexual_health",
-          "cost": 30169.57,
-          "attendees": 338,
-          "events": 6,
+          "condition": "gastro",
+          "cost": 54948.89,
+          "attendees": 1470,
+          "events": 55,
           "alcohol": 0,
-          "perperson": 260.33
+          "perperson": 36.74
+        },
+        {
+          "condition": "cancer",
+          "cost": 1376834.56,
+          "attendees": 37108,
+          "events": 1546,
+          "alcohol": 2,
+          "perperson": 63.79
+        },
+        {
+          "condition": "nervous_system",
+          "cost": 1956769.35,
+          "attendees": 15161,
+          "events": 575,
+          "alcohol": 5,
+          "perperson": 188.04
         },
         {
           "condition": "endocrinology",
@@ -17755,74 +17857,50 @@ window.stats = {
           "perperson": 12.73
         },
         {
-          "condition": "paediatrics",
-          "cost": 22348.9,
-          "attendees": 2116,
-          "events": 11,
-          "alcohol": 1,
-          "perperson": 36.86
-        },
-        {
-          "condition": "cancer",
-          "cost": 1085044.95,
-          "attendees": 33082,
-          "events": 1416,
-          "alcohol": 2,
-          "perperson": 46.53
-        },
-        {
-          "condition": "respiratory",
-          "cost": 104409.04,
-          "attendees": 1446,
-          "events": 82,
-          "alcohol": 2,
-          "perperson": 48.79
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 2154993.02,
-          "attendees": 31205,
-          "events": 1134,
-          "alcohol": 4,
-          "perperson": 52.04
-        },
-        {
-          "condition": "vaccination",
-          "cost": 53823,
-          "attendees": 755,
-          "events": 14,
+          "condition": "kidney_function",
+          "cost": 4669.88,
+          "attendees": 115,
+          "events": 4,
           "alcohol": 0,
-          "perperson": 83.42
+          "perperson": 49.7
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 200500.35,
+          "attendees": 1149,
+          "events": 72,
+          "alcohol": 3,
+          "perperson": 468.35
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 4448
+          "hospitalitycount": 4751
         },
         {
           "bin": 20,
-          "hospitalitycount": 2309
+          "hospitalitycount": 2580
         },
         {
           "bin": 50,
-          "hospitalitycount": 460
+          "hospitalitycount": 482
         },
         {
           "bin": 200,
-          "hospitalitycount": 801
+          "hospitalitycount": 871
         },
         {
           "bin": 1000,
-          "hospitalitycount": 107
+          "hospitalitycount": 126
         },
         {
           "bin": 10000,
-          "hospitalitycount": 45
+          "hospitalitycount": 66
         },
         {
           "bin": 100000,
-          "hospitalitycount": 8
+          "hospitalitycount": 16
         }
       ],
       "mostExpensive": {
@@ -17832,19 +17910,21 @@ window.stats = {
         "hospitality": "*Return economy class flights from home ports for 18 pax 11;488.46 * Accommodation for 25 pax on Friday night 4381.85 * Accommodation for 33 pax on Saturday night 5672.75 * Accommodation for x 1 HCP from regional centre for flights not available on Sunday night 163.64 * Breakfast in the hotel restaurant (58 pax x 18.18 p/p - total of 1054.55) * Dinner vouchers in hotel restaurant on Friday (7 pax @ total of 278.64) * Saturday - conference catering including morning tea; lunch & afternoon tea (72 pax x 65.45 @ total cost of 4712.73) * Conference dinner on Saturday night at Mecure Hotel; Perth - 3 course meal and beverages (60 pax x 62.29p/p @ total of 3737.45) * Sunday - conference catering including morning tea and lunch (71 pax X 61.82 @ total of 4389.09) * Speaker soft drinks 36.82 * Speaker briefing on Friday evening at Lamont's Restaurant; Perth - food & beverage 13 pax @ total of 1008.73 * less 10% discount for contract negotiation with hotel for F&B &",
         "attendees": 72,
         "hospitalitycost": 33842.06,
-        "hospitality_spendratio": 470.03
+        "hospitality_spendratio": 470.03,
+        "date": "2011-09-01T00:00:00.000Z",
+        "period": "April 2011 - September 2011"
       },
       "code": "sanofi",
       "name": "Sanofi-Aventis Australia Pty Ltd",
       "summary": "Sanofi-Aventis is the pharmaceuticals division of the Sanofi group in Australia.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$525,934,355",
       "revenueAu": "-",
       "revenueGlobal": "€28.9b (2012 – global pharmaceuticals division)",
       "products": "514",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=sanofi-aventis%20australia&sortPref=ascending&sortField=0&Page=1&PageMax=21&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
       "notes": "2012 report here: http://en.sanofi.com/Images/31972_20-F_2012.pdf",
-      "moreNotes": null
+      "moreNotes": ""
     },
     {
       "company": "sanofipasteur",
@@ -18278,37 +18358,31 @@ window.stats = {
         "hospitality": "Smoothies; internet access",
         "attendees": 500,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2008-12-01T00:00:00.000Z",
+        "period": "July 2008 - December 2008"
       },
       "incomplete": 2,
       "code": "sanofipasteur",
       "name": "Sanofi Pasteur Pty Ltd*",
       "summary": "Sanofi Pasteur is the vaccines division of Sanofi in Australia.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "€3.9b (2012 – global vaccines division)",
       "products": "2",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=sanofi%20pasteur&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "schering",
-      "cost": 7574856.38,
-      "attendees": 90072,
-      "events": 4611,
+      "cost": 7697583.35,
+      "attendees": 90540,
+      "events": 4633,
       "alcohol": 13,
       "completed": 6,
       "professions": [
-        {
-          "profession": "gastroenterologist",
-          "cost": 1050824.9,
-          "attendees": 7060,
-          "events": 396,
-          "alcohol": 0,
-          "perperson": 148.84
-        },
         {
           "profession": "endocrinologist",
           "cost": 92446.7,
@@ -18318,36 +18392,36 @@ window.stats = {
           "perperson": 36.77
         },
         {
-          "profession": "oncologist",
-          "cost": 521165.98,
-          "attendees": 13234,
-          "events": 682,
-          "alcohol": 1,
-          "perperson": 39.38
-        },
-        {
-          "profession": "specialist",
-          "cost": 612532.07,
-          "attendees": 7660,
-          "events": 368,
-          "alcohol": 1,
-          "perperson": 79.97
-        },
-        {
-          "profession": "gp",
-          "cost": 2167707.55,
-          "attendees": 24358,
-          "events": 1026,
-          "alcohol": 10,
-          "perperson": 88.99
-        },
-        {
-          "profession": "anaesthetist",
-          "cost": 422692.02,
-          "attendees": 9692,
-          "events": 483,
+          "profession": "consultant",
+          "cost": 140738.13,
+          "attendees": 4095,
+          "events": 200,
           "alcohol": 0,
-          "perperson": 43.61
+          "perperson": 34.37
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 1052824.9,
+          "attendees": 7063,
+          "events": 398,
+          "alcohol": 0,
+          "perperson": 149.06
+        },
+        {
+          "profession": "oncologist",
+          "cost": 534660.22,
+          "attendees": 13290,
+          "events": 687,
+          "alcohol": 1,
+          "perperson": 40.23
+        },
+        {
+          "profession": "nurse",
+          "cost": 2216129.59,
+          "attendees": 29394,
+          "events": 1705,
+          "alcohol": 1,
+          "perperson": 75.39
         },
         {
           "profession": "haematologist",
@@ -18358,12 +18432,28 @@ window.stats = {
           "perperson": 119.87
         },
         {
+          "profession": "registrar",
+          "cost": 626243.32,
+          "attendees": 24077,
+          "events": 1213,
+          "alcohol": 2,
+          "perperson": 26.01
+        },
+        {
           "profession": "psychiatrist",
           "cost": 31791.45,
           "attendees": 1590,
           "events": 72,
           "alcohol": 1,
           "perperson": 19.99
+        },
+        {
+          "profession": "neurologist",
+          "cost": 9291.06,
+          "attendees": 592,
+          "events": 28,
+          "alcohol": 0,
+          "perperson": 15.69
         },
         {
           "profession": "urologist",
@@ -18374,44 +18464,36 @@ window.stats = {
           "perperson": null
         },
         {
+          "profession": "gp",
+          "cost": 2212971.64,
+          "attendees": 24684,
+          "events": 1036,
+          "alcohol": 10,
+          "perperson": 89.65
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 422692.02,
+          "attendees": 9692,
+          "events": 484,
+          "alcohol": 0,
+          "perperson": 43.61
+        },
+        {
           "profession": "pharmacist",
-          "cost": 356493.7,
-          "attendees": 4080,
-          "events": 194,
+          "cost": 357393.7,
+          "attendees": 4131,
+          "events": 196,
           "alcohol": 0,
-          "perperson": 87.38
+          "perperson": 86.52
         },
         {
-          "profession": "nurse",
-          "cost": 2207265.95,
-          "attendees": 29265,
-          "events": 1701,
+          "profession": "specialist",
+          "cost": 623332.07,
+          "attendees": 7661,
+          "events": 369,
           "alcohol": 1,
-          "perperson": 75.42
-        },
-        {
-          "profession": "registrar",
-          "cost": 622743.32,
-          "attendees": 24010,
-          "events": 1209,
-          "alcohol": 2,
-          "perperson": 25.94
-        },
-        {
-          "profession": "consultant",
-          "cost": 139438.13,
-          "attendees": 4043,
-          "events": 198,
-          "alcohol": 0,
-          "perperson": 34.49
-        },
-        {
-          "profession": "neurologist",
-          "cost": 8791.06,
-          "attendees": 542,
-          "events": 27,
-          "alcohol": 0,
-          "perperson": 16.22
+          "perperson": 81.36
         },
         {
           "profession": "physician",
@@ -18424,20 +18506,20 @@ window.stats = {
       ],
       "conditions": [
         {
-          "condition": "sexual_health",
-          "cost": 606147.97,
-          "attendees": 3417,
-          "events": 219,
-          "alcohol": 2,
-          "perperson": 215.37
+          "condition": "hypertension",
+          "cost": 466215.05,
+          "attendees": 4107,
+          "events": 177,
+          "alcohol": 1,
+          "perperson": 115.53
         },
         {
-          "condition": "respiratory",
-          "cost": 345189.04,
-          "attendees": 3567,
-          "events": 162,
+          "condition": "diabetes",
+          "cost": 34046.1,
+          "attendees": 956,
+          "events": 44,
           "alcohol": 0,
-          "perperson": 110.62
+          "perperson": 73.93
         },
         {
           "condition": "addiction",
@@ -18480,6 +18562,14 @@ window.stats = {
           "perperson": 59.63
         },
         {
+          "condition": "skin disorders",
+          "cost": 663079.06,
+          "attendees": 2578,
+          "events": 159,
+          "alcohol": 0,
+          "perperson": 137.14
+        },
+        {
           "condition": "wound_management",
           "cost": 315,
           "attendees": 9,
@@ -18496,20 +18586,20 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "heart_disease",
+          "cost": 1126109.08,
+          "attendees": 18286,
+          "events": 862,
+          "alcohol": 4,
+          "perperson": 96.27
+        },
+        {
           "condition": "endocrinology",
           "cost": 43984.09,
           "attendees": 347,
           "events": 14,
           "alcohol": 0,
           "perperson": 137.77
-        },
-        {
-          "condition": "hypertension",
-          "cost": 436215.05,
-          "attendees": 4027,
-          "events": 176,
-          "alcohol": 1,
-          "perperson": 114.05
         },
         {
           "condition": "musculoskeletal",
@@ -18520,12 +18610,20 @@ window.stats = {
           "perperson": 747.44
         },
         {
-          "condition": "mental_illness",
-          "cost": 42792.51,
-          "attendees": 2111,
-          "events": 92,
-          "alcohol": 1,
-          "perperson": 17.6
+          "condition": "gastro",
+          "cost": 1108924.9,
+          "attendees": 7810,
+          "events": 465,
+          "alcohol": 0,
+          "perperson": 159.41
+        },
+        {
+          "condition": "parkinsons_disease",
+          "cost": 500,
+          "attendees": 50,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 10
         },
         {
           "condition": "allergies",
@@ -18560,20 +18658,28 @@ window.stats = {
           "perperson": 107.51
         },
         {
+          "condition": "mental_illness",
+          "cost": 46792.51,
+          "attendees": 2161,
+          "events": 93,
+          "alcohol": 1,
+          "perperson": 18.28
+        },
+        {
+          "condition": "sexual_health",
+          "cost": 607047.97,
+          "attendees": 3434,
+          "events": 220,
+          "alcohol": 2,
+          "perperson": 214.63
+        },
+        {
           "condition": "urology",
           "cost": 6081.82,
           "attendees": 95,
           "events": 4,
           "alcohol": 0,
           "perperson": 119.64
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 179444.66,
-          "attendees": 1951,
-          "events": 82,
-          "alcohol": 0,
-          "perperson": 63.05
         },
         {
           "condition": "virus",
@@ -18584,12 +18690,12 @@ window.stats = {
           "perperson": 253.6
         },
         {
-          "condition": "gastro",
-          "cost": 1096124.9,
-          "attendees": 7806,
-          "events": 462,
+          "condition": "nervous_system",
+          "cost": 179944.66,
+          "attendees": 2001,
+          "events": 84,
           "alcohol": 0,
-          "perperson": 135.62
+          "perperson": 61.67
         },
         {
           "condition": "kidney_function",
@@ -18598,14 +18704,6 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "diabetes",
-          "cost": 30046.1,
-          "attendees": 906,
-          "events": 43,
-          "alcohol": 0,
-          "perperson": 73.79
         },
         {
           "condition": "vaccination",
@@ -18624,20 +18722,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "parkinsons_disease",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "condition": "respiratory",
+          "cost": 375189.04,
+          "attendees": 3647,
+          "events": 163,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 112.24
         },
         {
-          "condition": "heart_disease",
-          "cost": 1084609.08,
-          "attendees": 18056,
-          "events": 859,
-          "alcohol": 4,
-          "perperson": 95.99
+          "condition": "anaesthesia",
+          "cost": 431572.13,
+          "attendees": 10512,
+          "events": 531,
+          "alcohol": 0,
+          "perperson": 165.09
+        },
+        {
+          "condition": "fertility",
+          "cost": 549507.65,
+          "attendees": 4032,
+          "events": 243,
+          "alcohol": 1,
+          "perperson": 635.47
         },
         {
           "condition": "obesity",
@@ -18649,19 +18755,11 @@ window.stats = {
         },
         {
           "condition": "cancer",
-          "cost": 1014523.32,
-          "attendees": 16354,
-          "events": 846,
+          "cost": 1028817.56,
+          "attendees": 16412,
+          "events": 852,
           "alcohol": 1,
-          "perperson": 53.02
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 619074.06,
-          "attendees": 2572,
-          "events": 158,
-          "alcohol": 0,
-          "perperson": 91.59
+          "perperson": 67.44
         },
         {
           "condition": "stroke",
@@ -18670,28 +18768,12 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
-        },
-        {
-          "condition": "fertility",
-          "cost": 548607.65,
-          "attendees": 4015,
-          "events": 242,
-          "alcohol": 1,
-          "perperson": 637.87
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 431572.13,
-          "attendees": 10512,
-          "events": 530,
-          "alcohol": 0,
-          "perperson": 165.4
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 1969
+          "hospitalitycount": 1991
         },
         {
           "bin": 20,
@@ -18725,7 +18807,9 @@ window.stats = {
         "hospitality": "food & bev; travel; accomm;",
         "attendees": 200,
         "hospitalitycost": 125682.48,
-        "hospitality_spendratio": 628.41
+        "hospitality_spendratio": 628.41,
+        "date": "2010-03-01T00:00:00.000Z",
+        "period": "January 2010 - March 2010"
       },
       "code": "schering",
       "name": "Schering-Plough Pty Ltd",
@@ -18736,64 +18820,56 @@ window.stats = {
       "revenueGlobal": "USD18.5b (2008)",
       "products": "1",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=schering-plough%20pty&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "servier",
-      "cost": 9207902.98,
-      "attendees": 136912,
-      "events": 5133,
-      "alcohol": 1597,
-      "completed": 11,
+      "cost": 10997452.72,
+      "attendees": 155913,
+      "events": 5704,
+      "alcohol": 1793,
+      "completed": 12,
       "professions": [
         {
-          "profession": "nurse",
-          "cost": 388183.9,
-          "attendees": 16953,
-          "events": 671,
-          "alcohol": 54,
-          "perperson": 22.9
-        },
-        {
-          "profession": "haematologist",
-          "cost": 26687.43,
-          "attendees": 1173,
-          "events": 37,
-          "alcohol": 4,
-          "perperson": 22.75
-        },
-        {
-          "profession": "pharmacist",
-          "cost": 288796.77,
-          "attendees": 9761,
-          "events": 335,
-          "alcohol": 67,
-          "perperson": 29.59
-        },
-        {
-          "profession": "gp",
-          "cost": 5147091.83,
-          "attendees": 49279,
-          "events": 1952,
-          "alcohol": 1463,
-          "perperson": 104.45
+          "profession": "specialist",
+          "cost": 663120.53,
+          "attendees": 9569,
+          "events": 341,
+          "alcohol": 186,
+          "perperson": 69.3
         },
         {
           "profession": "oncologist",
-          "cost": 29410.01,
-          "attendees": 1181,
-          "events": 38,
+          "cost": 30941.83,
+          "attendees": 1306,
+          "events": 40,
           "alcohol": 7,
-          "perperson": 24.9
+          "perperson": 23.69
         },
         {
-          "profession": "psychiatrist",
-          "cost": 1206442.63,
-          "attendees": 10931,
-          "events": 355,
-          "alcohol": 38,
-          "perperson": 110.37
+          "profession": "endocrinologist",
+          "cost": 1479673.81,
+          "attendees": 22768,
+          "events": 710,
+          "alcohol": 57,
+          "perperson": 64.99
+        },
+        {
+          "profession": "neurologist",
+          "cost": 304615.64,
+          "attendees": 5900,
+          "events": 220,
+          "alcohol": 11,
+          "perperson": 51.63
+        },
+        {
+          "profession": "gastroenterologist",
+          "cost": 77844.82,
+          "attendees": 576,
+          "events": 18,
+          "alcohol": 7,
+          "perperson": 135.15
         },
         {
           "profession": "registrar",
@@ -18804,20 +18880,28 @@ window.stats = {
           "perperson": 13.75
         },
         {
-          "profession": "neurologist",
-          "cost": 298144.64,
-          "attendees": 5387,
-          "events": 202,
-          "alcohol": 10,
-          "perperson": 55.35
+          "profession": "consultant",
+          "cost": 625844.5,
+          "attendees": 5404,
+          "events": 187,
+          "alcohol": 63,
+          "perperson": 115.81
         },
         {
-          "profession": "physician",
-          "cost": 1369249.42,
-          "attendees": 22836,
-          "events": 914,
-          "alcohol": 74,
-          "perperson": 59.96
+          "profession": "gp",
+          "cost": 6463422.65,
+          "attendees": 59718,
+          "events": 2170,
+          "alcohol": 1603,
+          "perperson": 108.23
+        },
+        {
+          "profession": "anaesthetist",
+          "cost": 17150.88,
+          "attendees": 223,
+          "events": 7,
+          "alcohol": 7,
+          "perperson": 76.91
         },
         {
           "profession": "urologist",
@@ -18828,78 +18912,62 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "consultant",
-          "cost": 545992.44,
-          "attendees": 4812,
-          "events": 165,
-          "alcohol": 42,
-          "perperson": 113.46
+          "profession": "pharmacist",
+          "cost": 345197.82,
+          "attendees": 10795,
+          "events": 369,
+          "alcohol": 83,
+          "perperson": 31.98
         },
         {
-          "profession": "anaesthetist",
-          "cost": 10250.2,
-          "attendees": 157,
-          "events": 5,
-          "alcohol": 5,
-          "perperson": 65.29
-        },
-        {
-          "profession": "gastroenterologist",
-          "cost": 57581.37,
-          "attendees": 454,
-          "events": 15,
+          "profession": "haematologist",
+          "cost": 27711.98,
+          "attendees": 1311,
+          "events": 41,
           "alcohol": 4,
-          "perperson": 126.83
+          "perperson": 21.14
         },
         {
-          "profession": "endocrinologist",
-          "cost": 1412583.67,
-          "attendees": 21060,
-          "events": 650,
-          "alcohol": 44,
-          "perperson": 67.07
+          "profession": "nurse",
+          "cost": 502169.14,
+          "attendees": 20283,
+          "events": 803,
+          "alcohol": 83,
+          "perperson": 24.76
         },
         {
-          "profession": "specialist",
-          "cost": 661625,
-          "attendees": 9558,
-          "events": 340,
-          "alcohol": 185,
-          "perperson": 69.22
+          "profession": "psychiatrist",
+          "cost": 1503340.66,
+          "attendees": 13110,
+          "events": 435,
+          "alcohol": 77,
+          "perperson": 114.67
+        },
+        {
+          "profession": "physician",
+          "cost": 1594476.43,
+          "attendees": 26268,
+          "events": 1043,
+          "alcohol": 109,
+          "perperson": 60.7
         }
       ],
       "conditions": [
         {
-          "condition": "vaccination",
-          "cost": 817,
-          "attendees": 75,
-          "events": 3,
+          "condition": "hypertension",
+          "cost": 293260.1,
+          "attendees": 5121,
+          "events": 225,
+          "alcohol": 151,
+          "perperson": 55.41
+        },
+        {
+          "condition": "allergies",
+          "cost": 689.41,
+          "attendees": 45,
+          "events": 2,
           "alcohol": 0,
-          "perperson": 10.58
-        },
-        {
-          "condition": "skin disorders",
-          "cost": 1420,
-          "attendees": 26,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 54.62
-        },
-        {
-          "condition": "anaesthesia",
-          "cost": 10250.2,
-          "attendees": 157,
-          "events": 5,
-          "alcohol": 5,
-          "perperson": 74.14
-        },
-        {
-          "condition": "addiction",
-          "cost": 3489.74,
-          "attendees": 191,
-          "events": 8,
-          "alcohol": 1,
-          "perperson": 20.77
+          "perperson": 18.44
         },
         {
           "condition": "parkinsons_disease",
@@ -18911,59 +18979,19 @@ window.stats = {
         },
         {
           "condition": "paediatrics",
-          "cost": 6708.01,
-          "attendees": 106,
-          "events": 6,
-          "alcohol": 1,
-          "perperson": 57.92
+          "cost": 20383.77,
+          "attendees": 201,
+          "events": 10,
+          "alcohol": 5,
+          "perperson": 93.68
         },
         {
-          "condition": "respiratory",
-          "cost": 99264.16,
-          "attendees": 2618,
-          "events": 137,
-          "alcohol": 33,
-          "perperson": 45.98
-        },
-        {
-          "condition": "nervous_system",
-          "cost": 316383.89,
-          "attendees": 6033,
-          "events": 231,
-          "alcohol": 12,
-          "perperson": 40.15
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 1366550.36,
-          "attendees": 12276,
-          "events": 410,
-          "alcohol": 55,
-          "perperson": 62.5
-        },
-        {
-          "condition": "diabetes",
-          "cost": 845143.86,
-          "attendees": 14670,
-          "events": 476,
-          "alcohol": 196,
-          "perperson": 47.98
-        },
-        {
-          "condition": "kidney_function",
-          "cost": 15542.97,
-          "attendees": 525,
-          "events": 18,
-          "alcohol": 11,
-          "perperson": 29.59
-        },
-        {
-          "condition": "hypertension",
-          "cost": 285561.01,
-          "attendees": 5033,
-          "events": 223,
-          "alcohol": 150,
-          "perperson": 55.29
+          "condition": "gastro",
+          "cost": 79080.78,
+          "attendees": 713,
+          "events": 26,
+          "alcohol": 7,
+          "perperson": 84.3
         },
         {
           "condition": "fertility",
@@ -18974,12 +19002,36 @@ window.stats = {
           "perperson": 14.62
         },
         {
-          "condition": "dementia",
-          "cost": 5693.17,
-          "attendees": 562,
-          "events": 25,
+          "condition": "respiratory",
+          "cost": 111190.02,
+          "attendees": 2833,
+          "events": 150,
+          "alcohol": 35,
+          "perperson": 45.37
+        },
+        {
+          "condition": "vaccination",
+          "cost": 2133.82,
+          "attendees": 94,
+          "events": 4,
           "alcohol": 1,
-          "perperson": 11.16
+          "perperson": 25.26
+        },
+        {
+          "condition": "cancer",
+          "cost": 44609.11,
+          "attendees": 1722,
+          "events": 57,
+          "alcohol": 7,
+          "perperson": 43.9
+        },
+        {
+          "condition": "ageing",
+          "cost": 679294.19,
+          "attendees": 22271,
+          "events": 855,
+          "alcohol": 68,
+          "perperson": 28.87
         },
         {
           "condition": "auto_immune_disorders",
@@ -18990,12 +19042,28 @@ window.stats = {
           "perperson": 12.03
         },
         {
+          "condition": "kidney_function",
+          "cost": 18019.33,
+          "attendees": 545,
+          "events": 19,
+          "alcohol": 12,
+          "perperson": 34.55
+        },
+        {
           "condition": "cosmetic_surgery",
           "cost": 227,
           "attendees": 21,
           "events": 1,
           "alcohol": 0,
           "perperson": 10.81
+        },
+        {
+          "condition": "musculoskeletal",
+          "cost": 1462348.46,
+          "attendees": 23979,
+          "events": 1107,
+          "alcohol": 756,
+          "perperson": 60.51
         },
         {
           "condition": "oral_health",
@@ -19006,6 +19074,22 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "nervous_system",
+          "cost": 323167.06,
+          "attendees": 6555,
+          "events": 250,
+          "alcohol": 13,
+          "perperson": 38.34
+        },
+        {
+          "condition": "stroke",
+          "cost": 4791.77,
+          "attendees": 200,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 26.76
+        },
+        {
           "condition": "obesity",
           "cost": 4483.85,
           "attendees": 215,
@@ -19014,12 +19098,20 @@ window.stats = {
           "perperson": 27.55
         },
         {
-          "condition": "ageing",
-          "cost": 565115.57,
-          "attendees": 19991,
-          "events": 763,
-          "alcohol": 48,
-          "perperson": 27.52
+          "condition": "sexual_health",
+          "cost": 8102.26,
+          "attendees": 257,
+          "events": 10,
+          "alcohol": 4,
+          "perperson": 51.66
+        },
+        {
+          "condition": "anaesthesia",
+          "cost": 17150.88,
+          "attendees": 223,
+          "events": 7,
+          "alcohol": 7,
+          "perperson": 83.02
         },
         {
           "condition": "endocrinology",
@@ -19030,12 +19122,44 @@ window.stats = {
           "perperson": 17.6
         },
         {
+          "condition": "skin disorders",
+          "cost": 4842.54,
+          "attendees": 62,
+          "events": 2,
+          "alcohol": 1,
+          "perperson": 74.85
+        },
+        {
+          "condition": "mental_illness",
+          "cost": 2083158.24,
+          "attendees": 15748,
+          "events": 530,
+          "alcohol": 119,
+          "perperson": 70.65
+        },
+        {
+          "condition": "addiction",
+          "cost": 6439.41,
+          "attendees": 239,
+          "events": 12,
+          "alcohol": 5,
+          "perperson": 34.33
+        },
+        {
+          "condition": "diabetes",
+          "cost": 883044.25,
+          "attendees": 15598,
+          "events": 507,
+          "alcohol": 206,
+          "perperson": 47.72
+        },
+        {
           "condition": "blood_specific_illness",
-          "cost": 27698.43,
-          "attendees": 1271,
-          "events": 41,
+          "cost": 28722.98,
+          "attendees": 1409,
+          "events": 45,
           "alcohol": 4,
-          "perperson": 23.46
+          "perperson": 22.12
         },
         {
           "condition": "virus",
@@ -19046,12 +19170,12 @@ window.stats = {
           "perperson": 13.86
         },
         {
-          "condition": "stroke",
-          "cost": 4065.22,
-          "attendees": 185,
-          "events": 7,
-          "alcohol": 0,
-          "perperson": 23.66
+          "condition": "dementia",
+          "cost": 7253.17,
+          "attendees": 577,
+          "events": 26,
+          "alcohol": 2,
+          "perperson": 14.73
         },
         {
           "condition": "urology",
@@ -19070,30 +19194,6 @@ window.stats = {
           "perperson": 95.07
         },
         {
-          "condition": "allergies",
-          "cost": 272.73,
-          "attendees": 30,
-          "events": 1,
-          "alcohol": 0,
-          "perperson": 9.09
-        },
-        {
-          "condition": "musculoskeletal",
-          "cost": 1350338.15,
-          "attendees": 22652,
-          "events": 1050,
-          "alcohol": 720,
-          "perperson": 59.04
-        },
-        {
-          "condition": "heart_disease",
-          "cost": 2374147.57,
-          "attendees": 45179,
-          "events": 1685,
-          "alcohol": 556,
-          "perperson": 43.95
-        },
-        {
           "condition": "cold_and_flu",
           "cost": 497,
           "attendees": 52,
@@ -19102,58 +19202,42 @@ window.stats = {
           "perperson": 10.83
         },
         {
+          "condition": "heart_disease",
+          "cost": 2713221.22,
+          "attendees": 50500,
+          "events": 1890,
+          "alcohol": 630,
+          "perperson": 45.99
+        },
+        {
           "condition": "hiv",
-          "cost": 1039.18,
-          "attendees": 135,
-          "events": 4,
-          "alcohol": 0,
-          "perperson": 8.65
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 4747.55,
-          "attendees": 226,
-          "events": 8,
-          "alcohol": 2,
-          "perperson": 35.97
-        },
-        {
-          "condition": "cancer",
-          "cost": 38077.29,
-          "attendees": 1567,
-          "events": 54,
-          "alcohol": 7,
-          "perperson": 42.83
-        },
-        {
-          "condition": "gastro",
-          "cost": 58817.33,
-          "attendees": 591,
-          "events": 23,
-          "alcohol": 4,
-          "perperson": 72.43
+          "cost": 2898.36,
+          "attendees": 155,
+          "events": 5,
+          "alcohol": 1,
+          "perperson": 25.51
         }
       ],
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 2973
+          "hospitalitycount": 3214
         },
         {
           "bin": 20,
-          "hospitalitycount": 396
+          "hospitalitycount": 506
         },
         {
           "bin": 50,
-          "hospitalitycount": 389
+          "hospitalitycount": 420
         },
         {
           "bin": 200,
-          "hospitalitycount": 1270
+          "hospitalitycount": 1444
         },
         {
           "bin": 1000,
-          "hospitalitycount": 101
+          "hospitalitycount": 116
         },
         {
           "bin": 10000,
@@ -19171,43 +19255,53 @@ window.stats = {
         "hospitality": "Delegate package 2 x morning tea 2 x afternoon tea 2 x lunch for 315 attendees $23257 Friday Dinner - Incl beverages for 116 attendees $8580 Saturday Dinner - Incl beverages for 130 attendees $12429 Accommodation incl. breakfast for 175 attendees $82202 Travel for 157 attendees $123639",
         "attendees": 228,
         "hospitalitycost": 250108,
-        "hospitality_spendratio": 1096.96
+        "hospitality_spendratio": 1096.96,
+        "date": "2010-09-01T00:00:00.000Z",
+        "period": "April 2010 - September 2010"
       },
       "code": "servier",
       "name": "Servier Laboratories (Australia) Pty Ltd",
       "summary": "Servier is a French research-based pharmaceutical entity, employing over 200 people in Australia.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "$93,462,141",
       "revenueAu": "$107m (2009)",
       "revenueGlobal": "€3.9b 2012",
       "products": "66",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Servier&sortPref=ascending&sortField=0&Page=1&PageMax=3&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "shire",
-      "cost": 949546.65,
-      "attendees": 13035,
-      "events": 700,
-      "alcohol": 80,
-      "completed": 8,
+      "cost": 953173.66,
+      "attendees": 16741,
+      "events": 861,
+      "alcohol": 88,
+      "completed": 9,
       "professions": [
         {
-          "profession": "registrar",
-          "cost": 134583.66,
-          "attendees": 8711,
-          "events": 436,
-          "alcohol": 60,
-          "perperson": 15.45
+          "profession": "physician",
+          "cost": 188249.88,
+          "attendees": 938,
+          "events": 43,
+          "alcohol": 1,
+          "perperson": 200.69
         },
         {
-          "profession": "specialist",
-          "cost": 808.28,
-          "attendees": 218,
-          "events": 9,
-          "alcohol": 1,
-          "perperson": 3.71
+          "profession": "registrar",
+          "cost": 134585.66,
+          "attendees": 10758,
+          "events": 541,
+          "alcohol": 67,
+          "perperson": 12.51
+        },
+        {
+          "profession": "haematologist",
+          "cost": 372517.53,
+          "attendees": 3560,
+          "events": 176,
+          "alcohol": 15,
+          "perperson": 104.64
         },
         {
           "profession": "neurologist",
@@ -19218,36 +19312,36 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "oncologist",
-          "cost": 140647.18,
-          "attendees": 398,
+          "profession": "psychiatrist",
+          "cost": 289.3,
+          "attendees": 544,
+          "events": 2,
+          "alcohol": 0,
+          "perperson": 0.53
+        },
+        {
+          "profession": "specialist",
+          "cost": 808.28,
+          "attendees": 417,
           "events": 16,
           "alcohol": 1,
-          "perperson": 353.38
+          "perperson": 1.94
         },
         {
-          "profession": "haematologist",
-          "cost": 372517.53,
-          "attendees": 3246,
-          "events": 157,
-          "alcohol": 15,
-          "perperson": 114.76
+          "profession": "pharmacist",
+          "cost": 349178.2,
+          "attendees": 2576,
+          "events": 119,
+          "alcohol": 11,
+          "perperson": 135.55
         },
         {
-          "profession": "physician",
-          "cost": 188249.88,
-          "attendees": 871,
-          "events": 39,
+          "profession": "oncologist",
+          "cost": 140647.18,
+          "attendees": 428,
+          "events": 18,
           "alcohol": 1,
-          "perperson": 216.13
-        },
-        {
-          "profession": "psychiatrist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "perperson": 328.61
         },
         {
           "profession": "urologist",
@@ -19256,6 +19350,22 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "profession": "nurse",
+          "cost": 283834.94,
+          "attendees": 10078,
+          "events": 486,
+          "alcohol": 54,
+          "perperson": 28.16
+        },
+        {
+          "profession": "consultant",
+          "cost": 106768.11,
+          "attendees": 4185,
+          "events": 234,
+          "alcohol": 49,
+          "perperson": 25.51
         },
         {
           "profession": "anaesthetist",
@@ -19267,35 +19377,11 @@ window.stats = {
         },
         {
           "profession": "gastroenterologist",
-          "cost": 8670.62,
-          "attendees": 493,
-          "events": 27,
-          "alcohol": 1,
-          "perperson": 17.59
-        },
-        {
-          "profession": "consultant",
-          "cost": 106768.11,
-          "attendees": 3843,
-          "events": 221,
-          "alcohol": 43,
-          "perperson": 27.78
-        },
-        {
-          "profession": "nurse",
-          "cost": 281630.2,
-          "attendees": 8150,
-          "events": 412,
-          "alcohol": 47,
-          "perperson": 34.56
-        },
-        {
-          "profession": "gp",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "cost": 9391.19,
+          "attendees": 1953,
+          "events": 87,
+          "alcohol": 3,
+          "perperson": 4.81
         },
         {
           "profession": "endocrinologist",
@@ -19306,30 +19392,54 @@ window.stats = {
           "perperson": 11.15
         },
         {
-          "profession": "pharmacist",
-          "cost": 349178.2,
-          "attendees": 2331,
-          "events": 110,
-          "alcohol": 10,
-          "perperson": 149.8
+          "profession": "gp",
+          "cost": 0,
+          "attendees": 17,
+          "events": 1,
+          "alcohol": 1,
+          "perperson": 0
         }
       ],
       "conditions": [
         {
-          "condition": "endocrinology",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "condition": "blood_specific_illness",
+          "cost": 376671.94,
+          "attendees": 3689,
+          "events": 184,
+          "alcohol": 16,
+          "perperson": 33.13
         },
         {
-          "condition": "respiratory",
-          "cost": 964.68,
-          "attendees": 90,
-          "events": 5,
+          "condition": "hiv",
+          "cost": 258.85,
+          "attendees": 34,
+          "events": 3,
           "alcohol": 0,
-          "perperson": 10.96
+          "perperson": 7.19
+        },
+        {
+          "condition": "auto_immune_disorders",
+          "cost": 1682.18,
+          "attendees": 193,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 8.14
+        },
+        {
+          "condition": "cancer",
+          "cost": 144397.25,
+          "attendees": 702,
+          "events": 31,
+          "alcohol": 1,
+          "perperson": 71.32
+        },
+        {
+          "condition": "kidney_function",
+          "cost": 433677.22,
+          "attendees": 1020,
+          "events": 33,
+          "alcohol": 6,
+          "perperson": 174.26
         },
         {
           "condition": "dementia",
@@ -19340,20 +19450,20 @@ window.stats = {
           "perperson": 18
         },
         {
-          "condition": "auto_immune_disorders",
-          "cost": 1682.18,
-          "attendees": 158,
-          "events": 6,
-          "alcohol": 0,
-          "perperson": 10.85
-        },
-        {
           "condition": "urology",
           "cost": null,
           "attendees": null,
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "diabetes",
+          "cost": 1412.55,
+          "attendees": 125,
+          "events": 6,
+          "alcohol": 0,
+          "perperson": 10.16
         },
         {
           "condition": "ageing",
@@ -19372,6 +19482,14 @@ window.stats = {
           "perperson": null
         },
         {
+          "condition": "vaccination",
+          "cost": 159379.48,
+          "attendees": 585,
+          "events": 35,
+          "alcohol": 2,
+          "perperson": 103.22
+        },
+        {
           "condition": "nervous_system",
           "cost": 467.68,
           "attendees": 26,
@@ -19380,12 +19498,36 @@ window.stats = {
           "perperson": 17.99
         },
         {
-          "condition": "gastro",
-          "cost": 9800.3,
-          "attendees": 552,
-          "events": 29,
+          "condition": "mental_illness",
+          "cost": 179356.48,
+          "attendees": 775,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 209.63
+        },
+        {
+          "condition": "heart_disease",
+          "cost": 206783.32,
+          "attendees": 507,
+          "events": 23,
           "alcohol": 2,
-          "perperson": 18.19
+          "perperson": 183.05
+        },
+        {
+          "condition": "virus",
+          "cost": 725.73,
+          "attendees": 153,
+          "events": 8,
+          "alcohol": 1,
+          "perperson": 4.62
+        },
+        {
+          "condition": "respiratory",
+          "cost": 964.68,
+          "attendees": 137,
+          "events": 8,
+          "alcohol": 0,
+          "perperson": 6.85
         },
         {
           "condition": "oral_health",
@@ -19396,20 +19538,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "allergies",
-          "cost": 156347.7,
-          "attendees": 252,
-          "events": 10,
-          "alcohol": 2,
-          "perperson": 335.21
-        },
-        {
-          "condition": "kidney_function",
-          "cost": 433677.22,
-          "attendees": 900,
-          "events": 28,
-          "alcohol": 4,
-          "perperson": 205.38
+          "condition": "hypertension",
+          "cost": 2985.8,
+          "attendees": 199,
+          "events": 9,
+          "alcohol": 1,
+          "perperson": 16.42
         },
         {
           "condition": "cold_and_flu",
@@ -19420,36 +19554,28 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "hiv",
-          "cost": 258.85,
-          "attendees": 24,
+          "condition": "allergies",
+          "cost": 156347.7,
+          "attendees": 278,
+          "events": 12,
+          "alcohol": 2,
+          "perperson": 279.34
+        },
+        {
+          "condition": "gastro",
+          "cost": 12436.31,
+          "attendees": 2134,
+          "events": 94,
+          "alcohol": 4,
+          "perperson": 11.91
+        },
+        {
+          "condition": "endocrinology",
+          "cost": 0,
+          "attendees": 85,
           "events": 2,
           "alcohol": 0,
-          "perperson": 10.79
-        },
-        {
-          "condition": "diabetes",
-          "cost": 1412.55,
-          "attendees": 118,
-          "events": 5,
-          "alcohol": 0,
-          "perperson": 12.19
-        },
-        {
-          "condition": "mental_illness",
-          "cost": 179067.18,
-          "attendees": 231,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 418.74
-        },
-        {
-          "condition": "hypertension",
-          "cost": 2985.8,
-          "attendees": 172,
-          "events": 7,
-          "alcohol": 1,
-          "perperson": 21.11
+          "perperson": 0
         },
         {
           "condition": "wound_management",
@@ -19460,20 +19586,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "heart_disease",
-          "cost": 206783.32,
-          "attendees": 492,
-          "events": 22,
-          "alcohol": 2,
-          "perperson": 191.37
-        },
-        {
-          "condition": "fertility",
-          "cost": 1545.56,
-          "attendees": 142,
-          "events": 7,
-          "alcohol": 1,
-          "perperson": 11.23
+          "condition": "sexual_health",
+          "cost": 258.85,
+          "attendees": 49,
+          "events": 4,
+          "alcohol": 0,
+          "perperson": 5.39
         },
         {
           "condition": "stroke",
@@ -19484,20 +19602,12 @@ window.stats = {
           "perperson": 10.9
         },
         {
-          "condition": "blood_specific_illness",
-          "cost": 376671.94,
-          "attendees": 3375,
-          "events": 165,
-          "alcohol": 16,
-          "perperson": 36.95
-        },
-        {
-          "condition": "paediatrics",
-          "cost": 829.64,
-          "attendees": 80,
-          "events": 2,
+          "condition": "fertility",
+          "cost": 1545.56,
+          "attendees": 182,
+          "events": 10,
           "alcohol": 1,
-          "perperson": 10.07
+          "perperson": 7.86
         },
         {
           "condition": "parkinsons_disease",
@@ -19516,6 +19626,14 @@ window.stats = {
           "perperson": 8.84
         },
         {
+          "condition": "paediatrics",
+          "cost": 829.64,
+          "attendees": 480,
+          "events": 3,
+          "alcohol": 1,
+          "perperson": 6.71
+        },
+        {
           "condition": "addiction",
           "cost": null,
           "attendees": null,
@@ -19524,44 +19642,12 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "vaccination",
-          "cost": 159379.48,
-          "attendees": 440,
-          "events": 24,
-          "alcohol": 2,
-          "perperson": 150.53
-        },
-        {
-          "condition": "cancer",
-          "cost": 144397.25,
-          "attendees": 649,
-          "events": 27,
-          "alcohol": 1,
-          "perperson": 81.89
-        },
-        {
           "condition": "anaesthesia",
           "cost": 283.55,
           "attendees": 10,
           "events": 1,
           "alcohol": 0,
           "perperson": 28.36
-        },
-        {
-          "condition": "virus",
-          "cost": 725.73,
-          "attendees": 61,
-          "events": 3,
-          "alcohol": 1,
-          "perperson": 12.31
-        },
-        {
-          "condition": "sexual_health",
-          "cost": 258.85,
-          "attendees": 24,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 10.79
         },
         {
           "condition": "obesity",
@@ -19583,23 +19669,23 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 249
+          "hospitalitycount": 317
         },
         {
           "bin": 20,
-          "hospitalitycount": 370
+          "hospitalitycount": 452
         },
         {
           "bin": 50,
-          "hospitalitycount": 34
+          "hospitalitycount": 37
         },
         {
           "bin": 200,
-          "hospitalitycount": 41
+          "hospitalitycount": 48
         },
         {
           "bin": 1000,
-          "hospitalitycount": 6
+          "hospitalitycount": 7
         },
         {
           "bin": 10000,
@@ -19617,19 +19703,21 @@ window.stats = {
         "hospitality": "Dinner for Interstate and local delegates was provided on the Friday evening. Delegate day package on Saturday included breakfast; lunch; morning and afternoon tea. Accommodation was provided for interstate or rural NSW delegates for 1 night. Flights and transfers were provided for interstate delegates. Parking was provided on site for local delegates.",
         "attendees": 56,
         "hospitalitycost": 7036,
-        "hospitality_spendratio": 125.64
+        "hospitality_spendratio": 125.64,
+        "date": "2011-09-01T00:00:00.000Z",
+        "period": "April 2011 - September 2011"
       },
       "code": "shire",
       "name": "Shire Australia Pty Ltd",
       "summary": "A UK company established in 1986, and started business in Australia in 2008.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "US$4681m (2012)",
       "products": "11",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Shire&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "smith",
@@ -20063,19 +20151,21 @@ window.stats = {
         "hospitality": null,
         "attendees": 117,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2008-12-01T00:00:00.000Z",
+        "period": "July 2008 - December 2008"
       },
       "code": "smith",
       "name": "Smith & Nephew Pty Ltd",
       "summary": "Smith & Nephew Pty Ltd is the healthcare division of Smith & Nephew in Australia. The group also has a surgical arm - Smith & Nephew Surgical - not referred to here.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "USD4037m (2012)",
       "products": "78",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=smith%20&%20nephew%20pty%20ltd&sortPref=ascending&sortField=0&Page=1&PageMax=4&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "solvay",
@@ -20509,19 +20599,21 @@ window.stats = {
         "hospitality": "Food and Beverage: Saturday: Light lunch and Dinner (inc presentation) Sunday: Breakfast and lunch Travel and accommodation: Friday and Saturday accommodation for attendees from WA only Saturday night accommodation for interstate attendees only airfare for interstate travel: 12 WA; 27 Victoria; 9 South Australia; 35 Queensland; 5 ACT cab charge/parking for local attendees",
         "attendees": 138,
         "hospitalitycost": 95175.75,
-        "hospitality_spendratio": 689.68
+        "hospitality_spendratio": 689.68,
+        "date": "2009-06-01T00:00:00.000Z",
+        "period": "January 2009 - June 2009"
       },
       "code": "solvay",
       "name": "\nSolvay Pharmaceuticals Pty Ltd",
-      "summary": null,
+      "summary": "",
       "blurb": "Abbott bought the pharmaceutical division of the Belgian chemical company Solvay in 2009.",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "Solvay Group: €9.49b (2008); Abbott: USD23b (2011)",
       "products": "0",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "stiefel",
@@ -20955,7 +21047,9 @@ window.stats = {
         "hospitality": "No hospitality provided by Stiefel",
         "attendees": 73,
         "hospitalitycost": 0,
-        "hospitality_spendratio": 0
+        "hospitality_spendratio": 0,
+        "date": "2009-12-01T00:00:00.000Z",
+        "period": "July 2009 - December 2009"
       },
       "code": "stiefel",
       "name": "Stiefel Laboratories, Inc.",
@@ -20966,24 +21060,24 @@ window.stats = {
       "revenueGlobal": "USD833.5m (2009)",
       "products": "0",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "ucb",
-      "cost": 1688372.61,
-      "attendees": 274486,
-      "events": 845,
+      "cost": 2218372.81,
+      "attendees": 275274,
+      "events": 893,
       "alcohol": 3,
-      "completed": 11,
+      "completed": 12,
       "professions": [
         {
-          "profession": "neurologist",
-          "cost": 1228481.94,
-          "attendees": 16925,
-          "events": 557,
-          "alcohol": 0,
-          "perperson": 72.58
+          "profession": "pharmacist",
+          "cost": 9387.35,
+          "attendees": 599,
+          "events": 27,
+          "alcohol": 1,
+          "perperson": 15.67
         },
         {
           "profession": "anaesthetist",
@@ -20994,14 +21088,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "pharmacist",
-          "cost": 8625.68,
-          "attendees": 551,
-          "events": 25,
-          "alcohol": 1,
-          "perperson": 15.65
-        },
-        {
           "profession": "psychiatrist",
           "cost": 2870.71,
           "attendees": 109,
@@ -21010,20 +21096,20 @@ window.stats = {
           "perperson": 26.34
         },
         {
-          "profession": "physician",
-          "cost": 6156.97,
-          "attendees": 401,
-          "events": 14,
+          "profession": "neurologist",
+          "cost": 1232702.95,
+          "attendees": 17255,
+          "events": 575,
           "alcohol": 0,
-          "perperson": 15.35
+          "perperson": 71.44
         },
         {
-          "profession": "registrar",
-          "cost": 829222.64,
-          "attendees": 10121,
-          "events": 365,
-          "alcohol": 1,
-          "perperson": 81.93
+          "profession": "gastroenterologist",
+          "cost": 318.72,
+          "attendees": 0,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 0
         },
         {
           "profession": "haematologist",
@@ -21034,20 +21120,20 @@ window.stats = {
           "perperson": null
         },
         {
-          "profession": "nurse",
-          "cost": 923871.15,
-          "attendees": 9793,
-          "events": 290,
-          "alcohol": 3,
-          "perperson": 94.34
-        },
-        {
           "profession": "specialist",
           "cost": 7432.21,
           "attendees": 260,
           "events": 16,
           "alcohol": 0,
           "perperson": 28.59
+        },
+        {
+          "profession": "endocrinologist",
+          "cost": 1160.49,
+          "attendees": 94,
+          "events": 3,
+          "alcohol": 0,
+          "perperson": 12.35
         },
         {
           "profession": "oncologist",
@@ -21074,28 +21160,36 @@ window.stats = {
           "perperson": 155
         },
         {
-          "profession": "endocrinologist",
-          "cost": 1017,
-          "attendees": 80,
-          "events": 2,
-          "alcohol": 0,
-          "perperson": 12.71
+          "profession": "registrar",
+          "cost": 845541.83,
+          "attendees": 10381,
+          "events": 382,
+          "alcohol": 1,
+          "perperson": 81.45
         },
         {
-          "profession": "gastroenterologist",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
+          "profession": "physician",
+          "cost": 6775.15,
+          "attendees": 435,
+          "events": 15,
           "alcohol": 0,
-          "perperson": null
+          "perperson": 15.58
+        },
+        {
+          "profession": "nurse",
+          "cost": 939254.38,
+          "attendees": 10265,
+          "events": 320,
+          "alcohol": 3,
+          "perperson": 91.5
         },
         {
           "profession": "gp",
-          "cost": 25653.96,
-          "attendees": 1204,
-          "events": 41,
+          "cost": 29210.77,
+          "attendees": 1281,
+          "events": 47,
           "alcohol": 0,
-          "perperson": 21.31
+          "perperson": 22.8
         }
       ],
       "conditions": [
@@ -21164,14 +21258,6 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "nervous_system",
-          "cost": 1332449.67,
-          "attendees": 18442,
-          "events": 645,
-          "alcohol": 0,
-          "perperson": 32.37
-        },
-        {
           "condition": "cosmetic_surgery",
           "cost": null,
           "attendees": null,
@@ -21236,7 +21322,7 @@ window.stats = {
           "perperson": null
         },
         {
-          "condition": "gastro",
+          "condition": "sexual_health",
           "cost": null,
           "attendees": null,
           "events": 0,
@@ -21245,19 +21331,11 @@ window.stats = {
         },
         {
           "condition": "vaccination",
-          "cost": 5589.13,
-          "attendees": 80,
-          "events": 7,
+          "cost": 502874.71,
+          "attendees": 185,
+          "events": 11,
           "alcohol": 0,
-          "perperson": 67.82
-        },
-        {
-          "condition": "sexual_health",
-          "cost": null,
-          "attendees": null,
-          "events": 0,
-          "alcohol": 0,
-          "perperson": null
+          "perperson": 1784.95
         },
         {
           "condition": "kidney_function",
@@ -21282,6 +21360,14 @@ window.stats = {
           "events": 0,
           "alcohol": 0,
           "perperson": null
+        },
+        {
+          "condition": "gastro",
+          "cost": 318.72,
+          "attendees": 0,
+          "events": 1,
+          "alcohol": 0,
+          "perperson": 0
         },
         {
           "condition": "blood_specific_illness",
@@ -21356,6 +21442,14 @@ window.stats = {
           "perperson": 9.85
         },
         {
+          "condition": "nervous_system",
+          "cost": 1337245.82,
+          "attendees": 18808,
+          "events": 667,
+          "alcohol": 0,
+          "perperson": 31.76
+        },
+        {
           "condition": "skin disorders",
           "cost": 259.2,
           "attendees": 5,
@@ -21367,19 +21461,19 @@ window.stats = {
       "perheadBins": [
         {
           "bin": 10,
-          "hospitalitycount": 320
+          "hospitalitycount": 331
         },
         {
           "bin": 20,
-          "hospitalitycount": 370
+          "hospitalitycount": 396
         },
         {
           "bin": 50,
-          "hospitalitycount": 48
+          "hospitalitycount": 50
         },
         {
           "bin": 200,
-          "hospitalitycount": 94
+          "hospitalitycount": 101
         },
         {
           "bin": 1000,
@@ -21387,7 +21481,7 @@ window.stats = {
         },
         {
           "bin": 10000,
-          "hospitalitycount": 1
+          "hospitalitycount": 3
         },
         {
           "bin": 100000,
@@ -21395,26 +21489,28 @@ window.stats = {
         }
       ],
       "mostExpensive": {
-        "description": "8th Asian Oceanian Epilepsy Congress Gold Sponsor. This event organized by an independent Managemnet Committee and UCB Australia was not responsible for inviting attendees or organizing the educational content; the accommodation or travel Educational content = 20 hours",
-        "venue": "Melbourne Convention & Exhibition Centre South Wharf Melbourne VIC 3006",
-        "cost": 156849.59,
-        "hospitality": "Gold sponsorship of AOEC for the year of 2010. Waffles and coffee provided over 3 days = $6;477.59",
-        "attendees": 356,
-        "hospitalitycost": 6477.59,
-        "hospitality_spendratio": 18.2
+        "description": "St ponlsorship of healthcare professionals to attend the International Immunology Summit: 21-23 Feb 2013 Educational Content: 17hrs",
+        "venue": "Hilton Prague Czech Republic",
+        "cost": 410949.92,
+        "hospitality": "Conference dinner for 42 Accomodation (1 night) for 40 Flights for 42 Taxi/Transfer Delegate Package (registration; 2 nights accomodation; food & beverage) for 42",
+        "attendees": 42,
+        "hospitalitycost": 375116,
+        "hospitality_spendratio": 8931.33,
+        "date": "2013-03-01T00:00:00.000Z",
+        "period": "October 2012 - March 2013"
       },
       "incomplete": 1,
       "code": "ucb",
       "name": "UCB Australia Pty Ltd*",
       "summary": "More than 8,500 employees globally, 35 employees in Australia.",
-      "blurb": null,
+      "blurb": "",
       "pbs2012": "not publicly available",
       "revenueAu": "-",
       "revenueGlobal": "€3.4b (2012)",
       "products": "40",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=ucb&sortPref=ascending&sortField=0&Page=1&PageMax=2&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "vifor",
@@ -21848,7 +21944,9 @@ window.stats = {
         "hospitality": "Meal/Drinks - $7017 Accommodation for interstate travellers ($9867.80 total; 1 or 2 nights for 25 attendees) Flights for interstate attendees: $8075.68 for 25 return flights Parking for Victorian attendees: $873 for 30 prepaid tickets",
         "attendees": 66,
         "hospitalitycost": 24960,
-        "hospitality_spendratio": 378.18
+        "hospitality_spendratio": 378.18,
+        "date": "2012-09-01T00:00:00.000Z",
+        "period": "April 2012 - September 2012"
       },
       "code": "vifor",
       "name": "Vifor Pharma Pty Ltd",
@@ -21859,8 +21957,8 @@ window.stats = {
       "revenueGlobal": "CHF3.3b",
       "products": "15",
       "tgaLink": "https://www.ebs.tga.gov.au/ebs/home.nsf/(PortalExport)?OpenAgent&exporttype=HTML&state=RP&system=RegisterPublic&cat=SearchARTGPublic&title=Australian%20Register%20of%20Therapeutic%20Goods%20(ARTG)&filterCol=0&filterVal=&filterSponsor=&filterAppArea=&filterSearch=Vifor&sortPref=ascending&sortField=0&Page=1&PageMax=1&DisplaySearchBarFilter=Y&DisplayWorkAreaFilter=Y&DisplaySponsorFilter=Y",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     },
     {
       "company": "wyeth",
@@ -22294,7 +22392,9 @@ window.stats = {
         "hospitality": "Welcome canapes and beverages Buffet Breakfast (choice of hot and cold options) with non alcoholic beverages Morning Tea (biscuits; muffins and tea/coffee) 2 course lunch with beverages Afternoon Tea (biscuits; muffins and tea/coffee) 3 course dinner with beverages Buffet breakfast (choice of hot and cold options) with beverages Morning Tea (biscuits; muffins and tea/coffee) 2 course lunch with beverages Afternoon Tea (biscuits; muffins and tea/coffee) Accommodation for 423 Travel for 408",
         "attendees": 441,
         "hospitalitycost": 448929,
-        "hospitality_spendratio": 1017.98
+        "hospitality_spendratio": 1017.98,
+        "date": "2009-06-01T00:00:00.000Z",
+        "period": "January 2009 - June 2009"
       },
       "code": "wyeth",
       "name": "Wyeth Australia Pty Ltd",
@@ -22305,46 +22405,30 @@ window.stats = {
       "revenueGlobal": "USD55b (2012 – Pfizer)",
       "products": "-",
       "tgaLink": "-",
-      "notes": null,
-      "moreNotes": null
+      "notes": "",
+      "moreNotes": ""
     }
   ],
   "summary": {
-    "cost": 291733946.65,
-    "attendees": 4382039,
-    "events": 155802,
-    "alcohol": 25622,
-    "perperson": 62.35,
+    "cost": 320581493.03,
+    "attendees": 4658440,
+    "events": 167818,
+    "alcohol": 27279,
+    "perperson": 67.95,
     "max_perperson": 45574.5,
-    "completed": 403,
-    "days": 1888,
-    "eventsPerDay": 83,
-    "attendeesPerDay": 2321
+    "completed": 437,
+    "days": 2070,
+    "eventsPerDay": 81,
+    "attendeesPerDay": 2250
   },
   "conditions": [
     {
-      "condition": "stroke",
-      "cost": 3529582.55,
-      "attendees": 17045,
-      "events": 581,
-      "alcohol": 321,
-      "perperson": 130.19
-    },
-    {
-      "condition": "fertility",
-      "cost": 5491187.29,
-      "attendees": 56429,
-      "events": 1959,
-      "alcohol": 119,
-      "perperson": 167.4
-    },
-    {
-      "condition": "cosmetic_surgery",
-      "cost": 3665462.08,
-      "attendees": 30048,
-      "events": 1170,
-      "alcohol": 29,
-      "perperson": 333.94
+      "condition": "skin disorders",
+      "cost": 7803641.36,
+      "attendees": 53146,
+      "events": 1848,
+      "alcohol": 320,
+      "perperson": 204.5
     },
     {
       "condition": "wound_management",
@@ -22355,60 +22439,52 @@ window.stats = {
       "perperson": 59.92
     },
     {
-      "condition": "dementia",
-      "cost": 3869248.34,
-      "attendees": 36217,
-      "events": 1221,
-      "alcohol": 254,
-      "perperson": 60.98
+      "condition": "ageing",
+      "cost": 24421805.65,
+      "attendees": 215698,
+      "events": 7303,
+      "alcohol": 2071,
+      "perperson": 78.05
+    },
+    {
+      "condition": "kidney_function",
+      "cost": 3945971.99,
+      "attendees": 12761,
+      "events": 426,
+      "alcohol": 37,
+      "perperson": 164.43
+    },
+    {
+      "condition": "anaesthesia",
+      "cost": 7344706.51,
+      "attendees": 162612,
+      "events": 4898,
+      "alcohol": 476,
+      "perperson": 55.42
+    },
+    {
+      "condition": "vaccination",
+      "cost": 3368307.5,
+      "attendees": 37439,
+      "events": 1041,
+      "alcohol": 155,
+      "perperson": 119.51
     },
     {
       "condition": "auto_immune_disorders",
-      "cost": 4232194.92,
-      "attendees": 14561,
-      "events": 680,
-      "alcohol": 93,
-      "perperson": 179.36
+      "cost": 4473712.99,
+      "attendees": 16307,
+      "events": 782,
+      "alcohol": 110,
+      "perperson": 199.55
     },
     {
-      "condition": "obesity",
-      "cost": 2160180.76,
-      "attendees": 16443,
-      "events": 655,
-      "alcohol": 366,
-      "perperson": 121.49
-    },
-    {
-      "condition": "skin disorders",
-      "cost": 6971800.5,
-      "attendees": 61164,
-      "events": 1751,
-      "alcohol": 305,
-      "perperson": 197.49
-    },
-    {
-      "condition": "cold_and_flu",
-      "cost": 505860.25,
-      "attendees": 6319,
-      "events": 194,
-      "alcohol": 100,
-      "perperson": 119.21
-    },
-    {
-      "condition": "virus",
-      "cost": 9101426.19,
-      "attendees": 61289,
-      "events": 2751,
-      "alcohol": 477,
-      "perperson": 88.19
-    },
-    {
-      "condition": "diabetes",
-      "cost": 26227797.29,
-      "attendees": 230726,
-      "events": 9057,
-      "alcohol": 2752,
-      "perperson": 97.08
+      "condition": "nervous_system",
+      "cost": 20832818.54,
+      "attendees": 222641,
+      "events": 7119,
+      "alcohol": 1222,
+      "perperson": 88.95
     },
     {
       "condition": "oral_health",
@@ -22419,463 +22495,479 @@ window.stats = {
       "perperson": 71
     },
     {
-      "condition": "gastro",
-      "cost": 14986149.17,
-      "attendees": 158862,
-      "events": 6379,
-      "alcohol": 1173,
-      "perperson": 62.83
-    },
-    {
-      "condition": "hypertension",
-      "cost": 10453086.7,
-      "attendees": 72137,
-      "events": 3216,
-      "alcohol": 1444,
-      "perperson": 95.14
-    },
-    {
-      "condition": "ageing",
-      "cost": 23164247.23,
-      "attendees": 197322,
-      "events": 6640,
-      "alcohol": 1845,
-      "perperson": 77.02
-    },
-    {
-      "condition": "hiv",
-      "cost": 5870540.61,
-      "attendees": 55374,
-      "events": 1387,
-      "alcohol": 200,
-      "perperson": 83.01
-    },
-    {
-      "condition": "anaesthesia",
-      "cost": 6426362.06,
-      "attendees": 150875,
-      "events": 4529,
-      "alcohol": 431,
-      "perperson": 53.29
-    },
-    {
-      "condition": "parkinsons_disease",
-      "cost": 865948.91,
-      "attendees": 9543,
-      "events": 393,
-      "alcohol": 156,
-      "perperson": 63.55
-    },
-    {
-      "condition": "kidney_function",
-      "cost": 3777778.35,
-      "attendees": 10720,
-      "events": 348,
-      "alcohol": 34,
-      "perperson": 183.74
+      "condition": "sexual_health",
+      "cost": 13353665.86,
+      "attendees": 109319,
+      "events": 4350,
+      "alcohol": 646,
+      "perperson": 98.35
     },
     {
       "condition": "addiction",
-      "cost": 598075.59,
-      "attendees": 4723,
-      "events": 133,
-      "alcohol": 26,
-      "perperson": 76.28
-    },
-    {
-      "condition": "allergies",
-      "cost": 3231217.07,
-      "attendees": 51681,
-      "events": 1118,
-      "alcohol": 287,
-      "perperson": 85.43
-    },
-    {
-      "condition": "cancer",
-      "cost": 34442361.17,
-      "attendees": 611322,
-      "events": 26076,
-      "alcohol": 2063,
-      "perperson": 41.74
+      "cost": 602306.48,
+      "attendees": 4790,
+      "events": 139,
+      "alcohol": 32,
+      "perperson": 75.72
     },
     {
       "condition": "endocrinology",
-      "cost": 479894.03,
-      "attendees": 8388,
-      "events": 362,
-      "alcohol": 23,
-      "perperson": 41.32
+      "cost": 484668.06,
+      "attendees": 8667,
+      "events": 356,
+      "alcohol": 22,
+      "perperson": 39.04
     },
     {
-      "condition": "sexual_health",
-      "cost": 12629999.13,
-      "attendees": 114143,
-      "events": 3998,
-      "alcohol": 634,
-      "perperson": 86.59
+      "condition": "hiv",
+      "cost": 6265479.09,
+      "attendees": 46448,
+      "events": 1472,
+      "alcohol": 205,
+      "perperson": 88.38
     },
     {
-      "condition": "urology",
-      "cost": 5671897.71,
-      "attendees": 107813,
-      "events": 4063,
-      "alcohol": 623,
-      "perperson": 42.16
+      "condition": "allergies",
+      "cost": 3379830.97,
+      "attendees": 54559,
+      "events": 1232,
+      "alcohol": 314,
+      "perperson": 82.44
+    },
+    {
+      "condition": "hypertension",
+      "cost": 11171040.38,
+      "attendees": 72059,
+      "events": 3317,
+      "alcohol": 1461,
+      "perperson": 104.04
+    },
+    {
+      "condition": "obesity",
+      "cost": 2344652.13,
+      "attendees": 17076,
+      "events": 718,
+      "alcohol": 387,
+      "perperson": 121.09
     },
     {
       "condition": "mental_illness",
-      "cost": 37733709.79,
-      "attendees": 410905,
-      "events": 16501,
-      "alcohol": 4862,
-      "perperson": 67.96
-    },
-    {
-      "condition": "nervous_system",
-      "cost": 17846916.45,
-      "attendees": 207610,
-      "events": 6602,
-      "alcohol": 1085,
-      "perperson": 68.22
-    },
-    {
-      "condition": "heart_disease",
-      "cost": 43793787.42,
-      "attendees": 446665,
-      "events": 16138,
-      "alcohol": 3957,
-      "perperson": 77.54
-    },
-    {
-      "condition": "respiratory",
-      "cost": 20194236.24,
-      "attendees": 164494,
-      "events": 7692,
-      "alcohol": 2683,
-      "perperson": 83.31
-    },
-    {
-      "condition": "musculoskeletal",
-      "cost": 10178383.72,
-      "attendees": 85176,
-      "events": 3805,
-      "alcohol": 1683,
-      "perperson": 86.56
-    },
-    {
-      "condition": "paediatrics",
-      "cost": 2714845.52,
-      "attendees": 48683,
-      "events": 1041,
-      "alcohol": 386,
-      "perperson": 82.27
-    },
-    {
-      "condition": "vaccination",
-      "cost": 2689796.01,
-      "attendees": 33284,
-      "events": 946,
-      "alcohol": 147,
-      "perperson": 69.35
+      "cost": 39890665.36,
+      "attendees": 433474,
+      "events": 17190,
+      "alcohol": 5080,
+      "perperson": 67.74
     },
     {
       "condition": "blood_specific_illness",
-      "cost": 18359069.37,
-      "attendees": 233060,
-      "events": 9224,
-      "alcohol": 715,
-      "perperson": 60.04
+      "cost": 20970810.22,
+      "attendees": 263449,
+      "events": 10163,
+      "alcohol": 774,
+      "perperson": 64.8
+    },
+    {
+      "condition": "stroke",
+      "cost": 3609129.07,
+      "attendees": 17839,
+      "events": 620,
+      "alcohol": 344,
+      "perperson": 143.78
+    },
+    {
+      "condition": "cosmetic_surgery",
+      "cost": 4982779.12,
+      "attendees": 31614,
+      "events": 1234,
+      "alcohol": 33,
+      "perperson": 374.15
+    },
+    {
+      "condition": "paediatrics",
+      "cost": 3000914.12,
+      "attendees": 53532,
+      "events": 1127,
+      "alcohol": 411,
+      "perperson": 82.91
+    },
+    {
+      "condition": "urology",
+      "cost": 6519015.02,
+      "attendees": 111991,
+      "events": 4623,
+      "alcohol": 680,
+      "perperson": 49.75
+    },
+    {
+      "condition": "dementia",
+      "cost": 3919763.55,
+      "attendees": 36571,
+      "events": 1239,
+      "alcohol": 257,
+      "perperson": 74.92
+    },
+    {
+      "condition": "fertility",
+      "cost": 5872072.89,
+      "attendees": 62423,
+      "events": 2102,
+      "alcohol": 129,
+      "perperson": 165.98
+    },
+    {
+      "condition": "diabetes",
+      "cost": 29973967.85,
+      "attendees": 249260,
+      "events": 9795,
+      "alcohol": 2958,
+      "perperson": 110.77
+    },
+    {
+      "condition": "respiratory",
+      "cost": 21717481.76,
+      "attendees": 174158,
+      "events": 8196,
+      "alcohol": 2850,
+      "perperson": 86.54
+    },
+    {
+      "condition": "heart_disease",
+      "cost": 46572397.34,
+      "attendees": 476021,
+      "events": 17289,
+      "alcohol": 4256,
+      "perperson": 78.85
+    },
+    {
+      "condition": "parkinsons_disease",
+      "cost": 1027205.46,
+      "attendees": 10528,
+      "events": 427,
+      "alcohol": 174,
+      "perperson": 112.44
+    },
+    {
+      "condition": "virus",
+      "cost": 9514471.41,
+      "attendees": 66927,
+      "events": 3031,
+      "alcohol": 497,
+      "perperson": 108.27
+    },
+    {
+      "condition": "cancer",
+      "cost": 38189009.81,
+      "attendees": 669804,
+      "events": 28545,
+      "alcohol": 2203,
+      "perperson": 44.86
+    },
+    {
+      "condition": "cold_and_flu",
+      "cost": 642805.47,
+      "attendees": 7617,
+      "events": 239,
+      "alcohol": 121,
+      "perperson": 243.46
+    },
+    {
+      "condition": "musculoskeletal",
+      "cost": 10988800.44,
+      "attendees": 90143,
+      "events": 4010,
+      "alcohol": 1747,
+      "perperson": 87.71
+    },
+    {
+      "condition": "gastro",
+      "cost": 16741732.22,
+      "attendees": 173381,
+      "events": 7052,
+      "alcohol": 1257,
+      "perperson": 67.29
     }
   ],
   "states": [
     {
       "state": null,
-      "cost": 33706492.96,
-      "attendees": 746693,
-      "events": 21166,
-      "perperson": 89.59,
-      "alcohol": 6696
+      "cost": 37456035.09,
+      "attendees": 737646,
+      "events": 21388,
+      "perperson": 122.8,
+      "alcohol": 6919
     },
     {
       "state": "qld",
-      "cost": 39589788.26,
-      "attendees": 653474,
-      "events": 24794,
-      "perperson": 57.51,
-      "alcohol": 3872
+      "cost": 43292856.5,
+      "attendees": 712042,
+      "events": 26977,
+      "perperson": 58.53,
+      "alcohol": 4179
     },
     {
       "state": "nsw",
-      "cost": 96215876.44,
-      "attendees": 1148731,
-      "events": 43108,
-      "perperson": 57.98,
-      "alcohol": 6086
+      "cost": 104898405.04,
+      "attendees": 1223099,
+      "events": 46780,
+      "perperson": 59.05,
+      "alcohol": 6527
     },
     {
       "state": "nt",
-      "cost": 2564354.94,
-      "attendees": 29856,
-      "events": 585,
-      "perperson": 192.69,
-      "alcohol": 97
+      "cost": 2880714.59,
+      "attendees": 32652,
+      "events": 635,
+      "perperson": 213.78,
+      "alcohol": 103
     },
     {
       "state": "tas",
-      "cost": 3866907.81,
-      "attendees": 67571,
-      "events": 2539,
-      "perperson": 63.16,
-      "alcohol": 421
+      "cost": 4045173.38,
+      "attendees": 71880,
+      "events": 2741,
+      "perperson": 61.15,
+      "alcohol": 458
     },
     {
       "state": "wa",
-      "cost": 19047911,
-      "attendees": 357714,
-      "events": 13095,
-      "perperson": 58.62,
-      "alcohol": 1807
+      "cost": 21131056.94,
+      "attendees": 377841,
+      "events": 14245,
+      "perperson": 60.98,
+      "alcohol": 1938
     },
     {
       "state": "act",
-      "cost": 4389699.27,
-      "attendees": 63971,
-      "events": 2342,
-      "perperson": 68.83,
-      "alcohol": 434
+      "cost": 5113162.34,
+      "attendees": 75836,
+      "events": 2582,
+      "perperson": 83.13,
+      "alcohol": 469
     },
     {
       "state": "vic",
-      "cost": 74159355.18,
-      "attendees": 972974,
-      "events": 35878,
-      "perperson": 54.76,
-      "alcohol": 4324
+      "cost": 81829620.3,
+      "attendees": 1066290,
+      "events": 39202,
+      "perperson": 56.97,
+      "alcohol": 4651
     },
     {
       "state": "sa",
-      "cost": 18193560.79,
-      "attendees": 341055,
-      "events": 12295,
-      "perperson": 59.04,
-      "alcohol": 1885
+      "cost": 19934468.85,
+      "attendees": 361154,
+      "events": 13268,
+      "perperson": 61.38,
+      "alcohol": 2035
     }
   ],
   "perheadBins": [
     {
       "bin": 10,
-      "count": 48705,
-      "hospitalitycount": 60995
+      "count": 51728,
+      "hospitalitycount": 65141
     },
     {
       "bin": 20,
-      "count": 51650,
-      "hospitalitycount": 50910
+      "count": 56403,
+      "hospitalitycount": 55825
     },
     {
       "bin": 50,
-      "count": 13799,
-      "hospitalitycount": 13026
+      "count": 14812,
+      "hospitalitycount": 13901
     },
     {
       "bin": 200,
-      "count": 35762,
-      "hospitalitycount": 29090
+      "count": 38219,
+      "hospitalitycount": 30945
     },
     {
       "bin": 1000,
-      "count": 4850,
-      "hospitalitycount": 1394
+      "count": 5402,
+      "hospitalitycount": 1521
     },
     {
       "bin": 10000,
-      "count": 997,
-      "hospitalitycount": 349
+      "count": 1180,
+      "hospitalitycount": 426
     },
     {
       "bin": 100000,
-      "count": 39,
-      "hospitalitycount": 38
+      "count": 74,
+      "hospitalitycount": 59
     }
   ],
   "professions": [
     {
-      "profession": "neurologist",
-      "cost": 11128459.9,
-      "attendees": 147588,
-      "events": 4689,
-      "alcohol": 459,
-      "perperson": 75.4
-    },
-    {
-      "profession": "psychiatrist",
-      "cost": 27676662.43,
-      "attendees": 308061,
-      "events": 13058,
-      "alcohol": 3508,
-      "perperson": 89.84
-    },
-    {
-      "profession": "urologist",
-      "cost": 1958309.7,
-      "attendees": 40131,
-      "events": 1750,
-      "alcohol": 138,
-      "perperson": 48.8
-    },
-    {
-      "profession": "gp",
-      "cost": 111758164.33,
-      "attendees": 1069071,
-      "events": 40184,
-      "alcohol": 15647,
-      "perperson": 104.54
-    },
-    {
-      "profession": "registrar",
-      "cost": 39959885.1,
-      "attendees": 923761,
-      "events": 39602,
-      "alcohol": 4022,
-      "perperson": 43.26
-    },
-    {
       "profession": "gastroenterologist",
-      "cost": 13633878.04,
-      "attendees": 136477,
-      "events": 5599,
-      "alcohol": 1026,
-      "perperson": 99.9
-    },
-    {
-      "profession": "oncologist",
-      "cost": 23720653.15,
-      "attendees": 473012,
-      "events": 21251,
-      "alcohol": 1258,
-      "perperson": 50.15
-    },
-    {
-      "profession": "physician",
-      "cost": 36226340.3,
-      "attendees": 491181,
-      "events": 17064,
-      "alcohol": 2864,
-      "perperson": 73.75
-    },
-    {
-      "profession": "pharmacist",
-      "cost": 22921547.86,
-      "attendees": 345737,
-      "events": 10379,
-      "alcohol": 1903,
-      "perperson": 66.3
+      "cost": 15180545.44,
+      "attendees": 151825,
+      "events": 6213,
+      "alcohol": 1106,
+      "perperson": 99.99
     },
     {
       "profession": "endocrinologist",
-      "cost": 23548654.6,
-      "attendees": 221537,
-      "events": 7468,
-      "alcohol": 1331,
-      "perperson": 106.3
-    },
-    {
-      "profession": "specialist",
-      "cost": 28124638.93,
-      "attendees": 298331,
-      "events": 9266,
-      "alcohol": 1278,
-      "perperson": 94.27
-    },
-    {
-      "profession": "anaesthetist",
-      "cost": 5353002.51,
-      "attendees": 137790,
-      "events": 4078,
-      "alcohol": 407,
-      "perperson": 38.85
-    },
-    {
-      "profession": "consultant",
-      "cost": 16244707.99,
-      "attendees": 277630,
-      "events": 11288,
-      "alcohol": 1826,
-      "perperson": 58.51
+      "cost": 26755162.4,
+      "attendees": 242468,
+      "events": 8232,
+      "alcohol": 1457,
+      "perperson": 110.35
     },
     {
       "profession": "haematologist",
-      "cost": 17376494.99,
-      "attendees": 209208,
-      "events": 8445,
-      "alcohol": 675,
-      "perperson": 83.06
+      "cost": 19676721.36,
+      "attendees": 236308,
+      "events": 9289,
+      "alcohol": 731,
+      "perperson": 83.27
     },
     {
       "profession": "nurse",
-      "cost": 78256306.28,
-      "attendees": 1359584,
-      "events": 54893,
-      "alcohol": 6125,
-      "perperson": 57.56
+      "cost": 87242739.98,
+      "attendees": 1498584,
+      "events": 59565,
+      "alcohol": 6689,
+      "perperson": 58.22
+    },
+    {
+      "profession": "psychiatrist",
+      "cost": 29112118.57,
+      "attendees": 323072,
+      "events": 13623,
+      "alcohol": 3682,
+      "perperson": 90.11
+    },
+    {
+      "profession": "physician",
+      "cost": 42111913.46,
+      "attendees": 541167,
+      "events": 18768,
+      "alcohol": 3130,
+      "perperson": 77.82
+    },
+    {
+      "profession": "gp",
+      "cost": 122875134.3,
+      "attendees": 1155922,
+      "events": 42998,
+      "alcohol": 16628,
+      "perperson": 106.3
+    },
+    {
+      "profession": "anaesthetist",
+      "cost": 6261597.23,
+      "attendees": 149672,
+      "events": 4439,
+      "alcohol": 453,
+      "perperson": 41.84
+    },
+    {
+      "profession": "pharmacist",
+      "cost": 25969913.17,
+      "attendees": 401770,
+      "events": 11388,
+      "alcohol": 2115,
+      "perperson": 64.64
+    },
+    {
+      "profession": "oncologist",
+      "cost": 26773247.63,
+      "attendees": 529672,
+      "events": 23379,
+      "alcohol": 1368,
+      "perperson": 50.55
+    },
+    {
+      "profession": "consultant",
+      "cost": 18208846.73,
+      "attendees": 304535,
+      "events": 12363,
+      "alcohol": 2087,
+      "perperson": 59.79
+    },
+    {
+      "profession": "specialist",
+      "cost": 29931901.17,
+      "attendees": 314894,
+      "events": 9587,
+      "alcohol": 1315,
+      "perperson": 95.05
+    },
+    {
+      "profession": "neurologist",
+      "cost": 13327921.49,
+      "attendees": 157820,
+      "events": 5072,
+      "alcohol": 503,
+      "perperson": 84.45
+    },
+    {
+      "profession": "urologist",
+      "cost": 2276227.68,
+      "attendees": 46463,
+      "events": 2018,
+      "alcohol": 141,
+      "perperson": 48.99
+    },
+    {
+      "profession": "registrar",
+      "cost": 43634607.22,
+      "attendees": 1014198,
+      "events": 43212,
+      "alcohol": 4317,
+      "perperson": 43.02
     }
   ],
   "countries": [
     {
       "country": "United States",
-      "cost": 3916676.26,
-      "attendees": 43952,
-      "events": 1610,
-      "perperson": 134.24,
-      "alcohol": 614
+      "cost": 4971487.67,
+      "attendees": 35312,
+      "events": 1660,
+      "perperson": 218.01,
+      "alcohol": 628
     },
     {
       "country": "New Zealand",
-      "cost": 1763910.79,
-      "attendees": 17086,
-      "events": 149,
-      "perperson": 546.77,
-      "alcohol": 65
+      "cost": 1785291.03,
+      "attendees": 17147,
+      "events": 154,
+      "perperson": 546.98,
+      "alcohol": 67
     },
     {
       "country": "Germany",
-      "cost": 215581.88,
-      "attendees": 3536,
-      "events": 99,
-      "perperson": 373.58,
-      "alcohol": 37
+      "cost": 568352.47,
+      "attendees": 1235,
+      "events": 115,
+      "perperson": 1516.57,
+      "alcohol": 36
     },
     {
       "country": "Spain",
-      "cost": 374963.12,
-      "attendees": 1659,
-      "events": 92,
-      "perperson": 601.5,
-      "alcohol": 41
+      "cost": 498548.54,
+      "attendees": 1680,
+      "events": 96,
+      "perperson": 899.33,
+      "alcohol": 42
     },
     {
       "country": "France",
-      "cost": 121420.28,
-      "attendees": 764,
-      "events": 77,
-      "perperson": 325.2,
-      "alcohol": 14
+      "cost": 292229.05,
+      "attendees": 899,
+      "events": 89,
+      "perperson": 671.82,
+      "alcohol": 15
     },
     {
       "country": "Italy",
-      "cost": 233663.85,
-      "attendees": 1005,
-      "events": 72,
-      "perperson": 554.22,
-      "alcohol": 21
-    },
-    {
-      "country": "India",
-      "cost": 167950.98,
-      "attendees": 1351,
-      "events": 63,
-      "perperson": 209.99,
-      "alcohol": 50
+      "cost": 275580.64,
+      "attendees": 1042,
+      "events": 80,
+      "perperson": 891.7,
+      "alcohol": 22
     },
     {
       "country": "Sweden",
@@ -22886,6 +22978,30 @@ window.stats = {
       "alcohol": 27
     },
     {
+      "country": "India",
+      "cost": 183423.04,
+      "attendees": 1301,
+      "events": 62,
+      "perperson": 383.8,
+      "alcohol": 48
+    },
+    {
+      "country": "Australia",
+      "cost": 48678.75,
+      "attendees": 989,
+      "events": 49,
+      "perperson": 43.64,
+      "alcohol": 15
+    },
+    {
+      "country": "Austria",
+      "cost": 149273.62,
+      "attendees": 561,
+      "events": 47,
+      "perperson": 516.57,
+      "alcohol": 23
+    },
+    {
       "country": "Canada",
       "cost": 63519.04,
       "attendees": 511,
@@ -22894,60 +23010,52 @@ window.stats = {
       "alcohol": 10
     },
     {
-      "country": "Austria",
-      "cost": 138497.21,
-      "attendees": 549,
-      "events": 45,
-      "perperson": 328.02,
-      "alcohol": 22
-    },
-    {
-      "country": "Australia",
-      "cost": 47743.45,
-      "attendees": 849,
-      "events": 39,
-      "perperson": 47.97,
-      "alcohol": 14
-    },
-    {
       "country": "Japan",
-      "cost": 66487.88,
-      "attendees": 481,
-      "events": 38,
-      "perperson": 135.22,
+      "cost": 69386.82,
+      "attendees": 483,
+      "events": 40,
+      "perperson": 200.93,
       "alcohol": 21
     },
     {
       "country": "Netherlands",
-      "cost": 134291.61,
-      "attendees": 590,
-      "events": 36,
-      "perperson": 541.28,
-      "alcohol": 11
+      "cost": 191785.47,
+      "attendees": 595,
+      "events": 38,
+      "perperson": 899.92,
+      "alcohol": 12
     },
     {
       "country": "Denmark",
-      "cost": 404144.35,
-      "attendees": 412,
-      "events": 33,
-      "perperson": 1954.5,
-      "alcohol": 10
+      "cost": 491647.35,
+      "attendees": 425,
+      "events": 35,
+      "perperson": 2156.17,
+      "alcohol": 12
     },
     {
       "country": "Switzerland",
-      "cost": 256750.54,
-      "attendees": 270,
-      "events": 31,
-      "perperson": 1526.19,
-      "alcohol": 18
+      "cost": 265664.54,
+      "attendees": 271,
+      "events": 32,
+      "perperson": 1757.06,
+      "alcohol": 19
     },
     {
       "country": "Portugal",
-      "cost": 27296.77,
-      "attendees": 302,
-      "events": 29,
-      "perperson": 75.15,
+      "cost": 27324.66,
+      "attendees": 306,
+      "events": 30,
+      "perperson": 72.87,
       "alcohol": 17
+    },
+    {
+      "country": "China",
+      "cost": 240408.99,
+      "attendees": 839,
+      "events": 30,
+      "perperson": 2357.39,
+      "alcohol": 7
     },
     {
       "country": "Turkey",
@@ -22958,28 +23066,28 @@ window.stats = {
       "alcohol": 8
     },
     {
-      "country": "China",
-      "cost": 180336.82,
-      "attendees": 832,
-      "events": 23,
-      "perperson": 482.59,
-      "alcohol": 7
-    },
-    {
       "country": "Thailand",
-      "cost": 105318.24,
+      "cost": 130314.62,
       "attendees": 372,
       "events": 22,
-      "perperson": 347.6,
+      "perperson": 1245.26,
       "alcohol": 6
     },
     {
       "country": "Singapore",
-      "cost": 38793.53,
+      "cost": 44170.45,
       "attendees": 497,
       "events": 18,
-      "perperson": 541.66,
+      "perperson": 798.71,
       "alcohol": 0
+    },
+    {
+      "country": "Georgia",
+      "cost": 59630.11,
+      "attendees": 233,
+      "events": 18,
+      "perperson": 1256.05,
+      "alcohol": 3
     },
     {
       "country": "Oman",
@@ -22987,7 +23095,7 @@ window.stats = {
       "attendees": 210,
       "events": 17,
       "perperson": 90.65,
-      "alcohol": 10
+      "alcohol": 11
     },
     {
       "country": "Argentina",
@@ -22999,26 +23107,18 @@ window.stats = {
     },
     {
       "country": "Greece",
-      "cost": 39638.24,
+      "cost": 51337.71,
       "attendees": 45,
       "events": 13,
-      "perperson": 989.57,
+      "perperson": 1889.53,
       "alcohol": 6
     },
     {
       "country": "Belgium",
-      "cost": 79648.08,
-      "attendees": 58,
-      "events": 9,
-      "perperson": 1246.83,
-      "alcohol": 1
-    },
-    {
-      "country": "Georgia",
-      "cost": 94568.39,
-      "attendees": 105,
-      "events": 8,
-      "perperson": 1808.8,
+      "cost": 85018.08,
+      "attendees": 75,
+      "events": 12,
+      "perperson": 1333.01,
       "alcohol": 1
     },
     {
@@ -23030,6 +23130,14 @@ window.stats = {
       "alcohol": 3
     },
     {
+      "country": "Malaysia",
+      "cost": 30510.21,
+      "attendees": 72,
+      "events": 8,
+      "perperson": 1340.36,
+      "alcohol": 1
+    },
+    {
       "country": "Iran",
       "cost": 2736.3,
       "attendees": 93,
@@ -23039,19 +23147,11 @@ window.stats = {
     },
     {
       "country": "Finland",
-      "cost": 72720.45,
-      "attendees": 29,
-      "events": 5,
-      "perperson": 2078.33,
-      "alcohol": 5
-    },
-    {
-      "country": "Malaysia",
-      "cost": 16360.21,
-      "attendees": 58,
-      "events": 5,
-      "perperson": 1216.25,
-      "alcohol": 1
+      "cost": 202894.45,
+      "attendees": 42,
+      "events": 6,
+      "perperson": 3400.84,
+      "alcohol": 6
     },
     {
       "country": "Mexico",
@@ -23110,6 +23210,14 @@ window.stats = {
       "alcohol": 1
     },
     {
+      "country": "Philippines",
+      "cost": 138487.16,
+      "attendees": 28,
+      "events": 2,
+      "perperson": 4479.04,
+      "alcohol": 1
+    },
+    {
       "country": "Iceland",
       "cost": 1615,
       "attendees": 24,
@@ -23124,6 +23232,14 @@ window.stats = {
       "events": 2,
       "perperson": 123.65,
       "alcohol": 2
+    },
+    {
+      "country": "Jersey",
+      "cost": 10258.22,
+      "attendees": 1,
+      "events": 1,
+      "perperson": 10258.22,
+      "alcohol": 0
     },
     {
       "country": "Botswana",
@@ -23150,27 +23266,11 @@ window.stats = {
       "alcohol": 0
     },
     {
-      "country": "Philippines",
-      "cost": 25300,
-      "attendees": 11,
-      "events": 1,
-      "perperson": 2300,
-      "alcohol": 1
-    },
-    {
       "country": "Jordan",
       "cost": 4.94,
       "attendees": 1,
       "events": 1,
       "perperson": 4.94,
-      "alcohol": 0
-    },
-    {
-      "country": "Algeria",
-      "cost": 399.41,
-      "attendees": 40,
-      "events": 1,
-      "perperson": 9.99,
       "alcohol": 0
     },
     {

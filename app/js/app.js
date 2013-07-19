@@ -155,7 +155,7 @@ tgm = window.tgm || {};
     $('#company-perperson strong[data-perperson=under-20-person]').text(bins[1]);
     $('#company-perperson strong[data-perperson=under-50-person]').text(bins[2]);
     $('#company-perperson strong[data-perperson=over-50-person]').text(bins[3]);
-    _.each(['description', 'venue', 'hospitality', 'hospitalitycost', 'cost', 'attendees', 'hospitality_spendratio'], function(metric){
+    _.each(['description', 'venue', 'hospitality', 'hospitalitycost', 'cost', 'attendees', 'period', 'hospitality_spendratio'], function(metric){
       var value = company.mostExpensive[metric];
       var text;
       if (metric.match(/cost|spend/)){
