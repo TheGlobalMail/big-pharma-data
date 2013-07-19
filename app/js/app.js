@@ -438,15 +438,15 @@ tgm = window.tgm || {};
           // Animation finished
           return;
         } else {
-          c.currentElement = $(c.childElements.get(c.childElementIndex));
-          c.currentElement.removeClass('inactive');
-          c.current = parseInt(c.stringValue[c.stringIndex]);
           // Move to the next char
           if (c.current === c.fragments[c.fragmentIndex]) {
             c.fragmentIndex--;
           }
           c.stringIndex--;
           c.childElementIndex--;
+          c.currentElement = $(c.childElements.get(c.childElementIndex));
+          c.currentElement.removeClass('inactive');
+          c.current = parseInt(c.stringValue[c.stringIndex]);
         }
         setTimeout(c.animationFunction, 50);
       };
