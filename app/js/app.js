@@ -425,14 +425,18 @@ tgm = window.tgm || {};
 
       var animationFunction = function() {
         var c = tgm.counter;
-        if (!isNaN(c.current) && c.current <= 8 && c.current !== c.fragments[c.fragmentIndex]) {
+        if (c.currentElement.hasClass('inactive')) {
+          c.currentElement.removeClass('inactive');
+        }
+        if (
+          !isNaN(c.current) &&
+          c.current <= 8 &&
+          c.current !== c.fragments[c.fragmentIndex]
+        ) {
           // Increment the char and update the DOM
           c.current++;
           // Replace the char in the string
           c.stringValue = c.stringValue.slice(0, c.stringIndex) + c.current + c.stringValue.slice(c.stringIndex + 1);
-          if (c.currentElement.hasClass('inactive')) {
-            c.currentElement.removeClass('inactive');
-          }
           c.currentElement.text(c.current);
         } else if (c.stringIndex == 0) {
           // Animation finished
@@ -445,7 +449,6 @@ tgm = window.tgm || {};
           c.stringIndex--;
           c.childElementIndex--;
           c.currentElement = $(c.childElements.get(c.childElementIndex));
-          c.currentElement.removeClass('inactive');
           c.current = parseInt(c.stringValue[c.stringIndex]);
         }
         setTimeout(c.animationFunction, 50);
